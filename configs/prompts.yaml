@@ -1,0 +1,19 @@
+prompt_version: draft_v1_NOT_FROZEN
+canonical_outputs:
+  binary: ['YES', 'NO']
+  fine_grained: [A, B, C, D, E, F, G, H]
+object_existence:
+  en: '{question} Reply with only YES or NO.'
+  vi: '{question} Chỉ trả lời YES hoặc NO.'
+spatial:
+  en: 'Is this statement true for the image: "{question}"? Reply with only YES or NO.'
+  vi: 'Mệnh đề sau có đúng với ảnh không: "{question}"? Chỉ trả lời YES hoặc NO.'
+counting:
+  en: '{question} Reply with one integer.'
+  vi: '{question} Chỉ trả lời một số nguyên.'
+fine_grained:
+  en: 'Which dog breed is shown? {candidates} Reply with one letter A–H.'
+  vi: 'Ảnh cho thấy giống chó nào? {candidates} Chỉ trả lời một chữ cái A–H.'
+negation:
+  en: 'Is this statement true for the image: "{question}"? Reply with only YES or NO.'
+  vi: 'Mệnh đề sau có đúng với ảnh không: "{question}"? Chỉ trả lời YES hoặc NO.'

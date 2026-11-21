@@ -1,0 +1,14 @@
+# New reruns use human-QA-approved pilot data; historical configs stay unchanged.
+experiment_id: team_qwen_pilot_v1
+manifest: data/pilot/stage1_qa_v1/pilot_manifest.csv
+prompts: configs/prompts.yaml
+models: configs/models.yaml
+seed: 42
+precision: nf4_fp16
+attention: eager
+max_new_tokens: 8
+image_max_edge: 512
+qwen_min_pixels: 200704
+qwen_max_pixels: 401408
+# Legacy runtime schema token, not the live QA status; read image_qa_status/qa_status.
+scope: engineering_pilot_image_qa_pending

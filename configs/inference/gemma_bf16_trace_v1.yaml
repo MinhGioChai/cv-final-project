@@ -1,0 +1,13 @@
+experiment_id: gemma_dtype_trace_v1
+manifest: data/pilot/stage1_v3/pilot_manifest.csv
+prompts: configs/prompts.yaml
+models: configs/models.yaml
+seed: 42
+precision: nf4_bf16
+attention: eager
+max_new_tokens: 8
+image_max_edge: 512
+qwen_min_pixels: 200704
+qwen_max_pixels: 401408
+scope: engineering_pilot_image_qa_pending
+trace_version: gemma_token_logits_v1

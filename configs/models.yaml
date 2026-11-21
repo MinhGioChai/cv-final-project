@@ -1,0 +1,12 @@
+# Exact Hub revisions read 2026-11-09; portable Stage 1 pilot.
+models:
+  qwen:
+    model_id: Qwen/Qwen2.5-VL-3B-Instruct
+    revision: 66285546d2b821cf421d4f5eb2576359d3770cd3
+  gemma:
+    model_id: google/gemma-3-4b-it
+    revision: 093f9f388b31de276ce2de164bdc2081324b9767
+    requires_license_acceptance: true
+generation:
+  do_sample: false
+  batch_size: 1

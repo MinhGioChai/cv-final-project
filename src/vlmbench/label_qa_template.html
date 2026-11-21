@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QA ảnh và nhãn — EN–VI VLM</title>
+<style>
+:root{font:16px system-ui,sans-serif;color:#16243b;background:#f3f5f8}body{max-width:1250px;margin:auto;padding:24px}h1{font-size:25px;margin:0 0 8px}p{line-height:1.55}.bar{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:18px 0}.panel{background:white;border:1px solid #d7deea;border-radius:14px;padding:22px}.grid{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}img{width:100%;max-height:660px;object-fit:contain;background:#e9eef5}label{display:block;margin:12px 0 6px}input,select,textarea,button{font:inherit;padding:10px;border:1px solid #b7c3d6;border-radius:7px}input,select,textarea{box-sizing:border-box;max-width:100%}textarea{width:100%;min-height:90px}button{cursor:pointer;background:#fff}button.primary{background:#2056a0;color:white}.muted{color:#52627a;font-size:14px}.question{font-size:19px}.badge{background:#e7effa;border-radius:8px;padding:8px}#notice{min-height:24px;color:#973500}#reviewer{width:250px}@media(max-width:800px){.grid{grid-template-columns:1fr}body{padding:12px}}:focus-visible{outline:3px solid #edb44a}
+</style>
+<h1>Kiểm tra ảnh và nhãn pilot</h1>
+<p>Đối chiếu vật thể trong ảnh với hai câu hỏi và nhãn nguồn. Ghi rõ ảnh mơ hồ hoặc nhãn nghi sai; giữ nguyên nhãn nguồn. Bản dịch đã được chấp nhận và được giữ nguyên. Trang này không hiển thị đáp án model.</p>
+<div class="bar"><label for="reviewer">ID người review <input id="reviewer" placeholder="Tự nhập ID/pseudonym của bạn" autocomplete="off"></label><button id="download" class="primary">Tải JSON review</button><label for="restore">Mở lại JSON đã lưu <input type="file" id="restore" accept=".json,application/json"></label></div>
+<p class="muted">Review nằm trong trình duyệt cho tới khi bạn tải JSON và import bằng CLI. Không có quyết định nào được tự động duyệt; chưa xem thì giữ pending. Ảnh được nhúng nguyên bản, không cần Internet. Bấm vào ảnh để mở lớn.</p>
+<div class="bar"><button id="prev">← Trước</button><select id="jump" aria-label="Chọn mẫu"></select><button id="next">Sau →</button><span id="progress" class="badge"></span></div>
+<div class="grid"><div class="panel"><a id="imageLink" target="_blank" rel="noopener"><img id="image" alt="Ảnh cần kiểm tra"></a><p id="identity" class="muted"></p></div>
+<div class="panel"><p id="en" class="question"></p><p id="vi" class="question"></p><p id="truth" class="badge"></p><p id="languageStatus" class="muted"></p>
+<label for="observed">Bạn quan sát thấy vật thể được hỏi?</label><select id="observed"><option value="">Chưa kiểm tra</option><option value="yes">Có — YES</option><option value="no">Không — NO</option><option value="uncertain">Không chắc / ảnh mơ hồ</option></select>
+<label for="status">Quyết định QA ảnh/nhãn</label><select id="status"><option value="pending">Pending — chưa chốt</option><option value="approved">Approved — ảnh rõ, nhãn nguồn đúng</option><option value="rejected">Rejected — có vấn đề, cần xử lý</option></select>
+<label for="notes">Ghi chú (bắt buộc khi rejected hoặc không chắc)</label><textarea id="notes" placeholder="Ví dụ: vật thể rất nhỏ, bị che khuất, không thấy bằng chứng rõ..."></textarea>
+<div class="bar"><button id="save" class="primary">Lưu quyết định mẫu này</button></div><p id="decisionInfo" class="muted"></p><p id="notice" role="status"></p></div></div>
+<dialog id="zoom" aria-label="Xem ảnh lớn"><button id="closeZoom">Đóng ảnh lớn</button><img id="largeImage" alt="Ảnh QA phóng lớn"></dialog>
+<script type="application/json" id="payload">__LABEL_QA_PAYLOAD__</script>
+<script>
+'use strict';
+const payload=JSON.parse(document.getElementById('payload').textContent);
+const cards=payload.cards;let review=payload.review,index=0;
+const $=id=>document.getElementById(id);
+const storageKey='vlmbench-label-qa:'+review.context.manifest_sha256;
+const sameContext=x=>JSON.stringify(x.context)===JSON.stringify(payload.review.context);
+function validateShape(x){
+ if(!sameContext(x)||!Array.isArray(x.decisions)||x.decisions.length!==cards.length)throw Error('JSON không đúng manifest/context');
+ const ids=new Set(x.decisions.map(d=>d.sample_id));
+ if(ids.size!==cards.length||!cards.every(c=>ids.has(c.sample_id)))throw Error('JSON thiếu/trùng ID');
+ const allowed=['sample_id','status','observed_answer','reviewer_id','reviewed_at','notes'].sort().join('|');
+ for(const d of x.decisions){if(Object.keys(d).sort().join('|')!==allowed||!['pending','approved','rejected'].includes(d.status)||!['','yes','no','uncertain'].includes(d.observed_answer)||!['reviewer_id','reviewed_at','notes'].every(k=>typeof d[k]==='string'))throw Error('JSON có trường/trạng thái không hợp lệ');}
+ return x;
+}
+try{const saved=localStorage.getItem(storageKey);if(saved)review=validateShape(JSON.parse(saved));}catch(e){console.info('Local restore unavailable',e.message);}
+function decision(){return review.decisions.find(d=>d.sample_id===cards[index].sample_id);}
+function stash(){try{localStorage.setItem(storageKey,JSON.stringify(review));}catch(e){$('notice').textContent='Trình duyệt không lưu tự động được; hãy tải JSON trước khi đóng trang.';}}
+function render(){const c=cards[index],d=decision();$('image').src=c.image;$('imageLink').href=c.image;$('image').alt='Ảnh '+c.image_id;$('identity').textContent=c.sample_id+' · ảnh '+c.image_id+' · '+c.category;$('en').textContent=c.question_en;$('vi').textContent=c.question_vi;$('truth').textContent='Nhãn nguồn: '+c.ground_truth.toUpperCase();$('languageStatus').textContent='Bản dịch: '+c.translation_status+' (không thay đổi ở luồng QA này)';$('observed').value=d.observed_answer;$('status').value=d.status;$('notes').value=d.notes;$('decisionInfo').textContent=d.reviewer_id?'Đã ghi bởi '+d.reviewer_id+' · '+d.reviewed_at:'Chưa có người review được ghi nhận';$('jump').value=String(index);$('prev').disabled=index===0;$('next').disabled=index===cards.length-1;const n=review.decisions.filter(d=>d.status!=='pending').length;$('progress').textContent=n+'/'+cards.length+' mẫu đã chốt';$('notice').textContent='';}
+cards.forEach((c,i)=>{const o=document.createElement('option');o.value=i;o.textContent=(i+1)+' / '+cards.length+' · '+c.image_id;$('jump').append(o);});
+function dirty(){const d=decision();return $('observed').value!==d.observed_answer||$('status').value!==d.status||$('notes').value!==d.notes;}
+function navigate(n){if(dirty()){$('notice').textContent='Bạn có thay đổi chưa lưu. Bấm Lưu quyết định mẫu này trước khi chuyển.';$('jump').value=String(index);return;}index=n;render();}
+$('prev').onclick=()=>navigate(index-1);$('next').onclick=()=>navigate(index+1);$('jump').onchange=()=>navigate(Number($('jump').value));
+$('imageLink').onclick=e=>{e.preventDefault();$('largeImage').src=$('image').src;$('zoom').showModal();};$('closeZoom').onclick=()=>$('zoom').close();
+$('save').onclick=()=>{const c=cards[index],status=$('status').value,observed=$('observed').value,notes=$('notes').value.trim(),reviewer=$('reviewer').value.trim();
+ if(status!=='pending'&&(!reviewer||!observed)){$('notice').textContent='Nhập ID người review và quan sát trước khi chốt.';return;}
+ if(status==='approved'&&observed!==c.ground_truth){$('notice').textContent='Quan sát chưa khớp nhãn nguồn. Giữ pending hoặc rejected và ghi chú; không sửa nhãn.';return;}
+ if((status==='rejected'||observed==='uncertain')&&!notes){$('notice').textContent='Cần ghi chú cho rejected/không chắc.';return;}
+ Object.assign(decision(),{status,observed_answer:observed,reviewer_id:status==='pending'?'':reviewer,reviewed_at:status==='pending'?'':new Date().toISOString(),notes});stash();render();$('notice').textContent='Đã lưu mẫu này trong trình duyệt. Tải JSON để giữ kết quả.';};
+$('download').onclick=()=>{if(dirty()){$('notice').textContent='Hãy lưu thay đổi của mẫu hiện tại trước khi tải JSON.';return;}const blob=new Blob([JSON.stringify(review,null,2)+'\n'],{type:'application/json;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='label_qa_reviewed_v1.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
+$('restore').onchange=async()=>{try{const f=$('restore').files[0];if(!f)return;review=validateShape(JSON.parse(await f.text()));stash();render();$('notice').textContent='Đã mở lại JSON. CLI sẽ kiểm tra đầy đủ trước khi import.';}catch(e){$('notice').textContent=e.message;}};
+render();
+</script></html>

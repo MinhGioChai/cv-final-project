@@ -17,10 +17,14 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=9,<10"]
 
+[project.scripts]
+vlmbench = "vlmbench.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+vlmbench = ["label_qa_template.html"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
