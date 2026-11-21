@@ -55,9 +55,18 @@
       "pushed": true,
       "files_staged": 61,
       "remote_head_verified": true
+    },
+    {
+      "phase": 6,
+      "title": "docs: publish research protocol and team reproduction guide",
+      "commit": "803390813b776589bcb296eab9a7e6dfd841c650",
+      "tree": "e7c35c1d20b1ae5def2d5b64eb0bc96b49b691b2",
+      "tests_passed": 334,
+      "pushed": true,
+      "files_staged": 150,
+      "remote_head_verified": true
     }
   ],
-  "documentation_part": "This part publishes docs; its final SHA is added in the subsequent publication audit.",
   "external_private_archives": [
     {
       "filename": "team_workspace_v1.zip",
@@ -76,5 +85,6 @@
   "new_human_approvals": 0,
   "main_frozen": false,
   "visual_browser_qa": false,
-  "remote_ci_status": "not inspected; test counts are local isolated-tree runs"
+  "remote_ci_status": "not inspected; test counts are local isolated-tree runs",
+  "publication_audit": "The subsequent docs-only audit commit records all six published SHAs; identify its own SHA in git log."
 }

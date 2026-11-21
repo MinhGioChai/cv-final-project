@@ -13,10 +13,11 @@ và giới hạn; đã push riêng và đối chiếu SHA trên remote.
 | 3 | [32d6bec](https://github.com/MinhGioChai/cv-final-project/commit/32d6bec2c7671ae2ca87dcf6905d3352079142aa) | feat(eval): add paired scoring and image-cluster confidence intervals | 178 |
 | 4 | [35b1ec8](https://github.com/MinhGioChai/cv-final-project/commit/35b1ec812e91bf2d2327f9d92e706bcbdcab1256) | feat(pilot): add bounded Qwen and Gemma BF16 runs across local and cloud | 309 |
 | 5 | [6ff3287](https://github.com/MinhGioChai/cv-final-project/commit/6ff3287b4f452700ae643132a345ba37dcc636af) | feat(review): add offline HTML workflow for 22 main review packets | 334 |
+| 6 | [8033908](https://github.com/MinhGioChai/cv-final-project/commit/803390813b776589bcb296eab9a7e6dfd841c650) | docs: publish research protocol and team reproduction guide | 334 |
 
-Phần 6 trong đợt này công bố protocol, hướng dẫn nhóm và evidence nhỏ. SHA
-cuối cùng của phần đó được ghi ở commit audit kế tiếp để tránh tự tham chiếu.
-Nguồn chi tiết: [publication.json](publication.json).
+Cả sáu phần đã push và đối chiếu remote HEAD. Commit audit tài liệu này
+ghi đủ SHA/receipts, không thêm code hoặc inference. Nguồn chi tiết:
+[publication.json](publication.json), [validation.json](validation.json).
 
 ## Cách tái lập
 
@@ -89,3 +90,18 @@ và QA ảnh/nhãn; import theo version mới. Song song hoàn thiện metadata/
 runner. Main chưa frozen, 4.000 inference chưa chạy; RQ1/RQ2 là P0, RQ3/RQ4
 có gate riêng. Các lần push tới tiếp tục một việc/commit, kiểm staged diff và
 ghi rõ kiểm chứng, theo mục 8 của hướng dẫn nhóm.
+
+## Kiểm gói cài đặt và bảo toàn bằng chứng
+
+Từ Git tree phần 6, build wheel offline bằng pip --no-index --no-deps
+--no-build-isolation --no-cache-dir rồi cài vào một target riêng. Đã import
+CLI từ wheel đó, chạy --help và xác nhận có cả hai HTML templates. Đối chiếu
+đủ 15 dependency pins CPU với môi trường hiện tại. Lần build đầu gặp quyền
+ghi cache pip, dùng --no-cache-dir thì đạt; không đổi source hoặc bỏ checks.
+[Package receipt](package_reproduction.json). Đây không phải thử tải dependency
+trên máy trắng; chưa kiểm GitHub Actions hoặc cloud GPU.
+
+Đối chiếu protected source/config/manifests/history với Git blobs; raw pilot
+snapshots giống bản gốc và SHA hai ZIP không đổi. [Preservation receipt](preservation.json).
+Commit audit chỉ cập nhật tài liệu/receipts, không chạy lại full suite sau
+334 tests của phần 6. Working tree và remote HEAD được kiểm sau push cuối.

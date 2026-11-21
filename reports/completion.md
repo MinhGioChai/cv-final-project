@@ -38,8 +38,8 @@
 | Main drafts | Đủ ảnh/EN–VI nháp cho 1.000 row, 783 JPEG/hash khác nhau; source và ID/byte leakage checks đạt; tất cả main requires_review/QA pending |
 | Review main | 22 gói tối đa 50 câu, offline HTML + fixed CSV/JSON; hai reviewer dịch, QA riêng; chưa có main human import |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
-| Tests | Ngày 21/11: 334 passed/5,96 s trên đúng Git tree phần review (6ff3287); từng phần trước cũng được kiểm từ cây Git riêng. Không phải inference/QA mới |
-| Git/team handoff | Đã push riêng 5 phần code/data/eval/pilot/review lên origin/main; tài liệu đang được công bố trong phần 6. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
+| Tests | Ngày 21/11: 334 passed/5,56 s trên đúng Git tree phần tài liệu (8033908); từng phần trước cũng được kiểm từ cây Git riêng. Không phải inference/QA mới |
+| Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
 | Hướng dẫn/structure | Một HUONG_DAN_NHOM.md từ mục tiêu đến push; root scripts 19→9, data/8 và legacy/2. Data/config/runtime paths giữ nguyên |
 
@@ -151,10 +151,14 @@ không stage/commit/push/upload hoặc thay code/config/data/ZIP.
 
 Theo yêu cầu người dùng, công bố từng phần với commit body nêu mục đích,
 hoàn thành và kiểm chứng; không gom một bulk commit hoặc ghi lùi ngày.
-Năm phần đầu đã push và đối chiếu remote HEAD: foundation 78 tests, data 166,
-evaluation 178, pilot 309 và review 334. Tất cả chạy từ cây Git riêng của
+Sáu phần đã push và đối chiếu remote HEAD: foundation 78 tests, data 166,
+evaluation 178, pilot 309, review 334 và tài liệu 334 (5,56 s). Tất cả chạy từ cây Git riêng của
 chính phần đó, không mượn file chưa commit trong workspace. Phần 6 là protocol,
-hướng dẫn nhóm và evidence nhỏ. Xem release log/manifest cho SHA và trạng thái.
+hướng dẫn nhóm và evidence nhỏ; audit cuối chỉ docs/receipts, không lặp suite.
+Khôi phục ZIP từ tree phần 5: 861 file, đủ 1.000 row/783 ảnh, sinh lại 22 gói/23
+HTML giống bytes, main_ready=false đúng gate. Build/cài wheel offline vào target
+riêng đạt, đủ 2 HTML templates/CLI và 15 CPU pins. Xem release log/manifest cho
+SHA, receipts, lỗi temp/cache permissions đã xử lý và giới hạn kiểm chứng.
 
 Git giữ nguồn/template/generator cho 22 gói, không chứa HTML nhúng ảnh hoặc
 ZIP/model/env. Các dữ liệu/runner/config/raw lịch sử và lịch sử completion

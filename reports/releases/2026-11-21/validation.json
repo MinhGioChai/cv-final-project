@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-21",
+  "scope": "isolated archived Git index trees; counts are not new benchmark inferences",
+  "runs": [
+    {
+      "phase": 1,
+      "tree": "a6521696d5486da308f089557100938b8d951596",
+      "files_in_commit_tree": 26,
+      "tests_passed": 78,
+      "pytest_output": "........................................................................ [ 92%]\n......                                                                   [100%]\n78 passed in 0.49s",
+      "new_inferences": 0,
+      "network_calls_during_validation": 0,
+      "git_candidate_audit_ready": true,
+      "pilot_analysis_without_images": false,
+      "cli_help_passed": false
+    },
+    {
+      "phase": 2,
+      "tree": "01999f49042ccf5c1083b19b44989e120823435f",
+      "files_in_commit_tree": 101,
+      "tests_passed": 166,
+      "pytest_output": "........................................................................ [ 43%]\n........................................................................ [ 86%]\n......................                                                   [100%]\n166 passed in 1.44s",
+      "new_inferences": 0,
+      "network_calls_during_validation": 0,
+      "git_candidate_audit_ready": true,
+      "pilot_analysis_without_images": false,
+      "cli_help_passed": false
+    },
+    {
+      "phase": 3,
+      "tree": "2142ced0b0ba89f20b6354d02671415c56a189c2",
+      "files_in_commit_tree": 109,
+      "tests_passed": 178,
+      "pytest_output": "........................................................................ [ 40%]\n........................................................................ [ 80%]\n..................................                                       [100%]\n178 passed in 1.03s",
+      "new_inferences": 0,
+      "network_calls_during_validation": 0,
+      "git_candidate_audit_ready": true,
+      "pilot_analysis_without_images": true,
+      "cli_help_passed": false
+    },
+    {
+      "phase": 4,
+      "tree": "ac15b4a6e8a1523004cfb8cac174fc8eb48af2a8",
+      "files_in_commit_tree": 139,
+      "tests_passed": 309,
+      "pytest_output": "........................................................................ [ 23%]\n........................................................................ [ 46%]\n........................................................................ [ 69%]\n........................................................................ [ 93%]\n.....................                                                    [100%]\n309 passed in 5.84s",
+      "new_inferences": 0,
+      "network_calls_during_validation": 0,
+      "git_candidate_audit_ready": true,
+      "pilot_analysis_without_images": true,
+      "cli_help_passed": true
+    },
+    {
+      "phase": 5,
+      "tree": "5b21d925d4fbd7913e088fda3010c88540e2774d",
+      "files_in_commit_tree": 198,
+      "tests_passed": 334,
+      "pytest_output": "........................................................................ [ 21%]\n........................................................................ [ 43%]\n........................................................................ [ 64%]\n........................................................................ [ 86%]\n..............................................                           [100%]\n334 passed in 5.96s",
+      "new_inferences": 0,
+      "network_calls_during_validation": 0,
+      "git_candidate_audit_ready": true,
+      "pilot_analysis_without_images": true,
+      "cli_help_passed": true
+    },
+    {
+      "phase": 6,
+      "tree": "e7c35c1d20b1ae5def2d5b64eb0bc96b49b691b2",
+      "files_in_commit_tree": 343,
+      "tests_passed": 334,
+      "pytest_output": "........................................................................ [ 21%]\n........................................................................ [ 43%]\n........................................................................ [ 64%]\n........................................................................ [ 86%]\n..............................................                           [100%]\n334 passed in 5.56s",
+      "new_inferences": 0,
+      "network_calls_during_validation": 0,
+      "git_candidate_audit_ready": true,
+      "pilot_analysis_without_images": true,
+      "cli_help_passed": true
+    }
+  ],
+  "final_audit_changes": "documentation/receipts only; no repeated full suite after part 6"
+}

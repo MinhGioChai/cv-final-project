@@ -1,0 +1,29 @@
+{
+  "source_commit": "803390813b776589bcb296eab9a7e6dfd841c650",
+  "wheel_built_offline": true,
+  "wheel_installed_to_isolated_target": true,
+  "cli_imported_from_installed_wheel": true,
+  "cli_help_passed": true,
+  "both_html_templates_in_wheel": true,
+  "cpu_lock_pins_matched": {
+    "annotated-types": "0.8.0",
+    "colorama": "0.4.6",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pillow": "12.3.0",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.3",
+    "pydantic_core": "2.50.4",
+    "Pygments": "2.21.0",
+    "pytest": "9.2.0",
+    "PyYAML": "6.0.3",
+    "setuptools": "80.10.2",
+    "typing-inspection": "0.4.5",
+    "typing_extensions": "4.16.0",
+    "wheel": "0.45.1"
+  },
+  "new_inferences": 0,
+  "network_calls": 0,
+  "fresh_dependency_download_tested": false,
+  "github_actions_status": "not inspected"
+}
