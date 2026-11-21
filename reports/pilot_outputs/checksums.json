@@ -1,0 +1,18 @@
+{
+  "qwen_smoke_v1.jsonl": {
+    "source": "results/pilot/local/qwen_smoke_v1.jsonl",
+    "sha256": "4e4f911296c4baf79df1f27e91c6b23ad39f51f9beae46fc625a847838a9eb25"
+  },
+  "qwen_smoke_v1.summary.json": {
+    "source": "results/pilot/local/qwen_smoke_v1.summary.json",
+    "sha256": "2bf6cba480b4dfc9b9b8040c59176c5d8a957f025633926c3d7265ae78de26d0"
+  },
+  "gemma_bf16_trace_v2.jsonl": {
+    "source": "results/pilot/local/gemma_bf16_trace_v2.jsonl",
+    "sha256": "b976b663ab017a5837728590884cd8928855b8d77a5eba170e7ca4ef4a136de1"
+  },
+  "gemma_bf16_trace_v2.summary.json": {
+    "source": "results/pilot/local/gemma_bf16_trace_v2.summary.json",
+    "sha256": "c59cfa56c8b8475909b4dce00d8b9cf428313c0d781a46a050e5ddaeefd6bb17"
+  }
+}

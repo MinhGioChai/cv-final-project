@@ -1,8 +1,8 @@
 # EN-VI VLM benchmark
 
-Incremental publication - part 2/6: pinned sources, deterministic sampling and EN-VI drafts.
+Incremental publication - part 3/6: paired evaluation and image-cluster bootstrap.
 
-Pinned adapters cover RePOPE, VSR, TallyQA and the 8-class Pet subset. Metadata, pilot exclusions and unapproved main drafts are versioned. Images/cache stay outside Git.
+Paired task metrics and image-cluster confidence intervals are available through Python APIs. Small real pilot output snapshots permit CPU analysis without images; the CLI arrives in part 4.
 
 ## Check this snapshot (Python 3.12)
 

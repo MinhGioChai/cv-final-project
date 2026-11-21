@@ -1,0 +1,37 @@
+{
+  "model": "gemma",
+  "platform": "local",
+  "protocol_hash": "762b9688985e2a006cdebff34d510b8134ef1699a6ef05b02b42fa7df1504101",
+  "selected_rows": 10,
+  "expected_inferences": 20,
+  "sample_ids": [
+    "repope_random_0c85be5b0dd173fb",
+    "repope_random_4496c746473fff08",
+    "repope_popular_2986dcb00859aac0",
+    "repope_popular_369fd6c407dcd82a",
+    "repope_adversarial_104803044cb7c965",
+    "repope_adversarial_16ad496cf15413f6",
+    "repope_random_18d195a3eee26a4f",
+    "repope_random_60bde3ffdbeb915a",
+    "repope_popular_6ee7711adb839ddf",
+    "repope_popular_5bc6635955bf7758"
+  ],
+  "dry_run": false,
+  "image_qa_status": {
+    "pending": 10
+  },
+  "scope": "engineering_pilot_image_qa_pending",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "precision": "nf4_bf16",
+  "runner": "gemma_dtype_trace_v1",
+  "run_config_hash": "b9369a8d90f48c07e13fa6f699a965e051052c7be90029a7bb132c0696fc06a1",
+  "stop_reason": null,
+  "success": 20,
+  "valid": 20,
+  "invalid": 0,
+  "nonfinite": 0,
+  "failed": 0,
+  "missing": 0,
+  "total_attempts_in_file": 20,
+  "output": "C:/Users/ADMIN/cv-final-project/results/pilot/local/gemma_bf16_trace_v2.jsonl"
+}
