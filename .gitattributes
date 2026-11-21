@@ -19,6 +19,7 @@
 # Research receipts bind exact bytes; preserve their source line endings.
 data/** -text
 configs/** -text
-reports/** -text
-docs/archive/** -text
-docs/handoffs/** -text
+reports/** -text whitespace=cr-at-eol
+# Source Markdown keeps intentional two-space hard breaks and original CRLF.
+docs/archive/** -text whitespace=cr-at-eol,-blank-at-eol
+docs/handoffs/** -text whitespace=cr-at-eol,-blank-at-eol

@@ -1,0 +1,56 @@
+{
+  "statistics_version": "paired_image_bootstrap_v1",
+  "evaluation_hash": "79af387159cce69ce7a2123eca34632bf5235a17f079ad9bcd39851d6df5fc3c",
+  "scope": "engineering_pilot",
+  "run": {
+    "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "protocol_hash": "223b9800b7965aaca6663a13f3b1bb9ce3019081f5cc1248d27e4463ba2077aa",
+    "run_config_hash": "174f2c5ac5f9e45629be541f3889a6bf8fd6c5bdc34271525b7c9b0616562428"
+  },
+  "primary_repope": {
+    "metric": "delta_fpr_pp",
+    "unit": "image_namespace plus image_id",
+    "weighting": "pooled rows within resampled images",
+    "method": "percentile with linear quantile interpolation",
+    "confidence_level": 0.95,
+    "seed": 42,
+    "n_resamples_requested": 5000,
+    "n_resamples_used": 5000,
+    "n_image_clusters": 5,
+    "n_rows": 5,
+    "estimate_pp": 20.0,
+    "lower_pp": 0.0,
+    "upper_pp": 60.0,
+    "status": "ok",
+    "empirical_distribution_degenerate": false
+  },
+  "accuracy_by_task": [
+    {
+      "dataset": "repope",
+      "task": "object_existence",
+      "metric": "delta_accuracy_pp",
+      "unit": "image_namespace plus image_id",
+      "weighting": "pooled rows within resampled images",
+      "method": "percentile with linear quantile interpolation",
+      "confidence_level": 0.95,
+      "seed": 42,
+      "n_resamples_requested": 5000,
+      "n_resamples_used": 5000,
+      "n_image_clusters": 10,
+      "n_rows": 10,
+      "estimate_pp": -10.0,
+      "lower_pp": -30.0,
+      "upper_pp": 0.0,
+      "status": "ok",
+      "empirical_distribution_degenerate": false
+    }
+  ],
+  "interpretation": "Conditional empirical intervals on the selected data and scoring policy; scope and QA are recorded in the evaluation",
+  "inputs": {
+    "evaluation": "reports/stage1/v5/qwen_evaluation.json",
+    "evaluation_file_sha256": "25e346626b06902785706207fc65575da1acfcd186a0f524f3f138fa39228693",
+    "statistics_implementation_sha256": "fc59654e130d8049d7d576c1566248441a6f644455433cf28654de88cfaabfbf"
+  }
+}

@@ -1,0 +1,31 @@
+﻿sample_id,image_id,image_path,category,question_en,ground_truth,question_vi,reviewer_1_status,reviewer_2_status,notes,final_status
+repope_random_c4c6ed415738856a,000000310196,data/raw/repope/stage1_v2/images/000000310196.jpg,random,Is there a car in the image?,no,,pending,pending,,pending
+repope_random_60bde3ffdbeb915a,000000210789,data/raw/repope/stage1_v2/images/000000210789.jpg,random,Is there a cell phone in the image?,no,,pending,pending,,pending
+repope_random_0c85be5b0dd173fb,000000429109,data/raw/repope/stage0/images/000000429109.jpg,random,Is there a bicycle in the image?,yes,,pending,pending,,pending
+repope_random_18d195a3eee26a4f,000000458338,data/raw/repope/stage0/images/000000458338.jpg,random,Is there a person in the image?,yes,,pending,pending,,pending
+repope_random_64834620fb6341a2,000000283412,data/raw/repope/stage1_v2/images/000000283412.jpg,random,Is there a dog in the image?,yes,,pending,pending,,pending
+repope_popular_5bc6635955bf7758,000000456178,data/raw/repope/stage1_v2/images/000000456178.jpg,popular,Is there a cup in the image?,no,,pending,pending,,pending
+repope_popular_7fc690337f8b692a,000000485564,data/raw/repope/stage1_v2/images/000000485564.jpg,popular,Is there a person in the image?,yes,,pending,pending,,pending
+repope_popular_716a10b680cf69a9,000000205729,data/raw/repope/stage1_v2/images/000000205729.jpg,popular,Is there a backpack in the image?,yes,,pending,pending,,pending
+repope_popular_e7d5cec624c594ce,000000329717,data/raw/repope/stage1_v2/images/000000329717.jpg,popular,Is there a handbag in the image?,no,,pending,pending,,pending
+repope_popular_cc7655930e0f0b02,000000515904,data/raw/repope/stage0/images/000000515904.jpg,popular,Is there a vase in the image?,yes,,pending,pending,,pending
+repope_popular_2986dcb00859aac0,000000437347,data/raw/repope/stage1_v2/images/000000437347.jpg,popular,Is there a person in the image?,yes,,pending,pending,,pending
+repope_popular_da4866dafa3c2514,000000236865,data/raw/repope/stage1_v2/images/000000236865.jpg,popular,Is there an orange in the image?,no,,pending,pending,,pending
+repope_popular_bc6010056e9bc682,000000217397,data/raw/repope/stage1_v2/images/000000217397.jpg,popular,Is there a car in the image?,no,,pending,pending,,pending
+repope_popular_6ee7711adb839ddf,000000060213,data/raw/repope/stage0/images/000000060213.jpg,popular,Is there a bed in the image?,yes,,pending,pending,,pending
+repope_popular_369fd6c407dcd82a,000000054025,data/raw/repope/stage0/images/000000054025.jpg,popular,Is there a dining table in the image?,no,,pending,pending,,pending
+repope_random_d4666a3393309c75,000000265719,data/raw/repope/stage1_v2/images/000000265719.jpg,random,Is there a person in the image?,yes,,pending,pending,,pending
+repope_random_7f3a44891819162f,000000461331,data/raw/repope/stage0/images/000000461331.jpg,random,Is there a bowl in the image?,no,,pending,pending,,pending
+repope_random_bdb8917227abab2f,000000017708,data/raw/repope/stage0/images/000000017708.jpg,random,Is there a fire hydrant in the image?,no,,pending,pending,,pending
+repope_adversarial_e66ab178648ded94,000000209755,data/raw/repope/stage1_v2/images/000000209755.jpg,adversarial,Is there a dining table in the image?,no,,pending,pending,,pending
+repope_adversarial_9ec964d4498569af,000000397705,data/raw/repope/stage0/images/000000397705.jpg,adversarial,Is there a couch in the image?,no,,pending,pending,,pending
+repope_adversarial_919d5a55becf4a0b,000000287305,data/raw/repope/stage1_v2/images/000000287305.jpg,adversarial,Is there a bus in the image?,yes,,pending,pending,,pending
+repope_adversarial_6fd41e8b495f07ed,000000105732,data/raw/repope/stage1_v2/images/000000105732.jpg,adversarial,Is there a backpack in the image?,yes,,pending,pending,,pending
+repope_adversarial_104803044cb7c965,000000534121,data/raw/repope/stage0/images/000000534121.jpg,adversarial,Is there a boat in the image?,yes,,pending,pending,,pending
+repope_adversarial_afe87003b3234d90,000000520524,data/raw/repope/stage1_v2/images/000000520524.jpg,adversarial,Is there a car in the image?,yes,,pending,pending,,pending
+repope_adversarial_1883a30c14dd472b,000000094944,data/raw/repope/stage0/images/000000094944.jpg,adversarial,Is there a handbag in the image?,no,,pending,pending,,pending
+repope_adversarial_8cb9a375076dc3ac,000000572075,data/raw/repope/stage1_v2/images/000000572075.jpg,adversarial,Is there a cup in the image?,no,,pending,pending,,pending
+repope_adversarial_16ad496cf15413f6,000000387098,data/raw/repope/stage1_v2/images/000000387098.jpg,adversarial,Is there a couch in the image?,no,,pending,pending,,pending
+repope_adversarial_2542d07233dd67d6,000000237767,data/raw/repope/stage1_v2/images/000000237767.jpg,adversarial,Is there a remote in the image?,yes,,pending,pending,,pending
+repope_random_4e1f26c1af41c444,000000353180,data/raw/repope/stage1_v2/images/000000353180.jpg,random,Is there a bus in the image?,yes,,pending,pending,,pending
+repope_random_4496c746473fff08,000000300368,data/raw/repope/stage1_v2/images/000000300368.jpg,random,Is there a teddy bear in the image?,no,,pending,pending,,pending

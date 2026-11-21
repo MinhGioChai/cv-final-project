@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-12",
+  "scope": "repository audit and documentation organization only",
+  "archived_snapshots": [
+    {
+      "original": "README.md",
+      "archive": "docs/archive/pre_v3/README.md",
+      "sha256": "02eb9496d22ede98569604836ab9b93d45f618abff57185b8858bc6542d351b8"
+    },
+    {
+      "original": "README_START_HERE.md",
+      "archive": "docs/archive/pre_v3/README_START_HERE.md",
+      "sha256": "4ed8de767be45f0b72301e3dfa666abe827f663e9c6ff866adba1ca187ea4755"
+    },
+    {
+      "original": "AGENTS.md",
+      "archive": "docs/archive/pre_v3/AGENTS.md",
+      "sha256": "8931f53828cb9741235fb2e0204e6097e71a5afb92d8a1cc7b107c9a62647d8e"
+    },
+    {
+      "original": "reports/completion.md",
+      "archive": "docs/archive/pre_v3/reports/completion.md",
+      "sha256": "aef65cf2fdddcd0ebf583d035c58560f6c71af568e2b7aafbae72c44727916ae"
+    },
+    {
+      "original": "docs/experiment_protocol.md",
+      "archive": "docs/archive/pre_v3/docs/experiment_protocol.md",
+      "sha256": "f276a75b2827ca160f3a5ceec608f3fb247aba8ec8b8e9e5a6125ea1ea416520"
+    },
+    {
+      "original": "docs/limitations.md",
+      "archive": "docs/archive/pre_v3/docs/limitations.md",
+      "sha256": "63c1c473f8b23300686cd58f7faa381b0288574e9b9a055a3ccaf4407a8dd568"
+    },
+    {
+      "original": "docs/pilot_findings.md",
+      "archive": "docs/archive/pre_v3/docs/pilot_findings.md",
+      "sha256": "4f6459cf8bf95fe299bb78b9099e0a8078dab165618f75ffcc7c786fcfe61df4"
+    },
+    {
+      "original": "docs/translation_guidelines.md",
+      "archive": "docs/archive/pre_v3/docs/translation_guidelines.md",
+      "sha256": "434be19cb73af8b768442841230877548a756ae8c789d5c3199b5aaa16df3624"
+    },
+    {
+      "original": "docs/run_local_colab_kaggle.md",
+      "archive": "docs/archive/pre_v3/docs/run_local_colab_kaggle.md",
+      "sha256": "9192c0687eb63de890d0c1a6185ec4477954515d9119e1ea1889bd7393b4cc5f"
+    },
+    {
+      "original": "docs/review_workflow.md",
+      "archive": "docs/archive/pre_v3/docs/review_workflow.md",
+      "sha256": "078e0f668b6fc9ce281418b3e1219c0c417be3107e3e2039e33ac590e110ec0d"
+    },
+    {
+      "original": "docs/sampling_protocol.md",
+      "archive": "docs/archive/pre_v3/docs/sampling_protocol.md",
+      "sha256": "1d69eef36cb683fbea915fb6da01e979b3680abbacb6fbc5ba432e1404e076e7"
+    },
+    {
+      "original": "docs/data_sources.md",
+      "archive": "docs/archive/pre_v3/docs/data_sources.md",
+      "sha256": "796afe3a9bc53de3e08c17da60d2c7c4faf7e841d615e45c5f5cd87959727725"
+    }
+  ],
+  "legacy_documents_moved_with_redirects_to_be_added": [
+    {
+      "original": "01_RESEARCH_OUTLINE_V42.md",
+      "archive": "docs/archive/v42/01_RESEARCH_OUTLINE_V42.md",
+      "sha256": "9d4d00e52bc46dad355ca065ed7f04facd931b625bae79bdc18f0d4be61ec53b"
+    },
+    {
+      "original": "02_DRAFT_CONG_VIEC_V42.md",
+      "archive": "docs/archive/v42/02_DRAFT_CONG_VIEC_V42.md",
+      "sha256": "8ea5a14200997a3df6367bd954f1f7c50028d1bed8c74d83a7b8180310354561"
+    },
+    {
+      "original": "03_CODEX_HANDOFF_V42.md",
+      "archive": "docs/archive/v42/03_CODEX_HANDOFF_V42.md",
+      "sha256": "204947f4b75ef81810b85fe8861e172ccbc00b54cbbe54a0981e42d3d35516e5"
+    }
+  ],
+  "handoff": {
+    "source": "reports/proposal/EN–VI VLM Research — Codex Handoff V3.md",
+    "canonical": "docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md",
+    "sha256": "b7195ab647d6c289bff34bd85939b12decdff13e517749695f8f90c35c3ebad5"
+  },
+  "protected_files": 118
+}

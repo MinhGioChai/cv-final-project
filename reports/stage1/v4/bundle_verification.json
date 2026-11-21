@@ -1,0 +1,165 @@
+{
+  "all_bundle_hashes_valid": true,
+  "qwen_protocol_and_10_sample_ids_match_actual_local_run": true,
+  "dry_run_plans": [
+    {
+      "model": "qwen",
+      "platform": "local",
+      "protocol_hash": "223b9800b7965aaca6663a13f3b1bb9ce3019081f5cc1248d27e4463ba2077aa",
+      "selected_rows": 10,
+      "expected_inferences": 20,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08",
+        "repope_popular_2986dcb00859aac0",
+        "repope_popular_369fd6c407dcd82a",
+        "repope_adversarial_104803044cb7c965",
+        "repope_adversarial_16ad496cf15413f6",
+        "repope_random_18d195a3eee26a4f",
+        "repope_random_60bde3ffdbeb915a",
+        "repope_popular_6ee7711adb839ddf",
+        "repope_popular_5bc6635955bf7758"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "pending": 10
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "precision": "nf4_fp16"
+    },
+    {
+      "model": "qwen",
+      "platform": "colab",
+      "protocol_hash": "223b9800b7965aaca6663a13f3b1bb9ce3019081f5cc1248d27e4463ba2077aa",
+      "selected_rows": 10,
+      "expected_inferences": 20,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08",
+        "repope_popular_2986dcb00859aac0",
+        "repope_popular_369fd6c407dcd82a",
+        "repope_adversarial_104803044cb7c965",
+        "repope_adversarial_16ad496cf15413f6",
+        "repope_random_18d195a3eee26a4f",
+        "repope_random_60bde3ffdbeb915a",
+        "repope_popular_6ee7711adb839ddf",
+        "repope_popular_5bc6635955bf7758"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "pending": 10
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "precision": "nf4_fp16"
+    },
+    {
+      "model": "qwen",
+      "platform": "kaggle",
+      "protocol_hash": "223b9800b7965aaca6663a13f3b1bb9ce3019081f5cc1248d27e4463ba2077aa",
+      "selected_rows": 10,
+      "expected_inferences": 20,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08",
+        "repope_popular_2986dcb00859aac0",
+        "repope_popular_369fd6c407dcd82a",
+        "repope_adversarial_104803044cb7c965",
+        "repope_adversarial_16ad496cf15413f6",
+        "repope_random_18d195a3eee26a4f",
+        "repope_random_60bde3ffdbeb915a",
+        "repope_popular_6ee7711adb839ddf",
+        "repope_popular_5bc6635955bf7758"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "pending": 10
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "precision": "nf4_fp16"
+    },
+    {
+      "model": "gemma",
+      "platform": "local",
+      "protocol_hash": "e1b96887db25c76b4203daf14aae3409cb14076b9e8ef558c3f9392a758ff1f3",
+      "selected_rows": 10,
+      "expected_inferences": 20,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08",
+        "repope_popular_2986dcb00859aac0",
+        "repope_popular_369fd6c407dcd82a",
+        "repope_adversarial_104803044cb7c965",
+        "repope_adversarial_16ad496cf15413f6",
+        "repope_random_18d195a3eee26a4f",
+        "repope_random_60bde3ffdbeb915a",
+        "repope_popular_6ee7711adb839ddf",
+        "repope_popular_5bc6635955bf7758"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "pending": 10
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "precision": "nf4_fp16"
+    },
+    {
+      "model": "gemma",
+      "platform": "colab",
+      "protocol_hash": "e1b96887db25c76b4203daf14aae3409cb14076b9e8ef558c3f9392a758ff1f3",
+      "selected_rows": 10,
+      "expected_inferences": 20,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08",
+        "repope_popular_2986dcb00859aac0",
+        "repope_popular_369fd6c407dcd82a",
+        "repope_adversarial_104803044cb7c965",
+        "repope_adversarial_16ad496cf15413f6",
+        "repope_random_18d195a3eee26a4f",
+        "repope_random_60bde3ffdbeb915a",
+        "repope_popular_6ee7711adb839ddf",
+        "repope_popular_5bc6635955bf7758"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "pending": 10
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "precision": "nf4_fp16"
+    },
+    {
+      "model": "gemma",
+      "platform": "kaggle",
+      "protocol_hash": "e1b96887db25c76b4203daf14aae3409cb14076b9e8ef558c3f9392a758ff1f3",
+      "selected_rows": 10,
+      "expected_inferences": 20,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08",
+        "repope_popular_2986dcb00859aac0",
+        "repope_popular_369fd6c407dcd82a",
+        "repope_adversarial_104803044cb7c965",
+        "repope_adversarial_16ad496cf15413f6",
+        "repope_random_18d195a3eee26a4f",
+        "repope_random_60bde3ffdbeb915a",
+        "repope_popular_6ee7711adb839ddf",
+        "repope_popular_5bc6635955bf7758"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "pending": 10
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "precision": "nf4_fp16"
+    }
+  ],
+  "real_local_inferences": 20,
+  "cloud_real_inference_executed": false,
+  "raw_predictions_not_in_bundle": true
+}

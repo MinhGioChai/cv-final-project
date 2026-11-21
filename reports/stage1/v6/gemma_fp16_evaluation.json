@@ -1,0 +1,340 @@
+{
+  "evaluation_version": "paired_evaluation_v1",
+  "run": {
+    "model_id": "google/gemma-3-4b-it",
+    "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "processor_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "protocol_hash": "e1b96887db25c76b4203daf14aae3409cb14076b9e8ef558c3f9392a758ff1f3",
+    "run_config_hash": "0fede060f18873f52a4c78cc28c309e95d62706a790001c59d6bb6f13cecf26a"
+  },
+  "scope": "engineering_pilot",
+  "n_selected_rows": 2,
+  "n_manifest_rows": 30,
+  "expected_inferences": 4,
+  "total_raw_attempts": 4,
+  "selection_policy": "explicit_selection",
+  "qa_status": {
+    "pending": 2
+  },
+  "translation_status": {
+    "approved": 2
+  },
+  "recorded_inference_scopes": [
+    "engineering_pilot_image_qa_pending"
+  ],
+  "policies": {
+    "accuracy_denominator": "all expected rows; invalid, failed and missing count as incorrect",
+    "binary_secondary": "language-specific valid predictions",
+    "primary": "jointly valid RePOPE negatives",
+    "disagreement": "jointly valid pairs",
+    "mae": "valid counting predictions",
+    "attempts": "unique attempt numbers; retry after failure; final attempt selected",
+    "parser": "saved prediction checked against current full-answer parser"
+  },
+  "primary_repope": {
+    "negative_rows_expected": 1,
+    "negative_images_expected": 1,
+    "jointly_valid_negative_pairs": 0,
+    "excluded_negative_pairs": 1,
+    "complete_case_image_clusters": 0,
+    "fp_en": 0,
+    "fp_vi": 0,
+    "fpr_en": null,
+    "fpr_vi": null,
+    "delta_fpr_pp": null,
+    "sensitivity_all_expected_negatives": {
+      "en": {
+        "observed_fp": 0,
+        "unknown": 1,
+        "fpr_lower": 0.0,
+        "fpr_upper": 1.0
+      },
+      "vi": {
+        "observed_fp": 0,
+        "unknown": 1,
+        "fpr_lower": 0.0,
+        "fpr_upper": 1.0
+      },
+      "delta_fpr_lower_pp": -100.0,
+      "delta_fpr_upper_pp": 100.0,
+      "unknown_policy": "invalid, failed and missing predictions may each be either YES or NO"
+    }
+  },
+  "groups": [
+    {
+      "dataset": "repope",
+      "task": "object_existence",
+      "n_rows": 2,
+      "n_unique_images": 2,
+      "languages": {
+        "en": {
+          "expected": 2,
+          "valid": 0,
+          "invalid": 2,
+          "failed": 0,
+          "missing": 0,
+          "correct": 0,
+          "accuracy": 0.0,
+          "accuracy_valid_only": null,
+          "valid_rate": 0.0,
+          "invalid_rate": 1.0,
+          "invalid_rate_generated": 1.0,
+          "binary_valid_only": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 0,
+            "fn": 0,
+            "fpr": null,
+            "fnr": null,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "balanced_accuracy": null
+          }
+        },
+        "vi": {
+          "expected": 2,
+          "valid": 0,
+          "invalid": 2,
+          "failed": 0,
+          "missing": 0,
+          "correct": 0,
+          "accuracy": 0.0,
+          "accuracy_valid_only": null,
+          "valid_rate": 0.0,
+          "invalid_rate": 1.0,
+          "invalid_rate_generated": 1.0,
+          "binary_valid_only": {
+            "tp": 0,
+            "fp": 0,
+            "tn": 0,
+            "fn": 0,
+            "fpr": null,
+            "fnr": null,
+            "precision": null,
+            "recall": null,
+            "f1": null,
+            "balanced_accuracy": null
+          }
+        }
+      },
+      "paired": {
+        "expected_pairs": 2,
+        "jointly_valid": 0,
+        "excluded_pairs": 2,
+        "excluded_status_counts": {
+          "en_invalid__vi_invalid": 2
+        },
+        "disagreements": 0,
+        "disagreement_rate": null,
+        "en_correct_vi_wrong": 0,
+        "en_wrong_vi_correct": 0,
+        "delta_accuracy_pp": 0.0
+      },
+      "primary_repope": {
+        "negative_rows_expected": 1,
+        "negative_images_expected": 1,
+        "jointly_valid_negative_pairs": 0,
+        "excluded_negative_pairs": 1,
+        "complete_case_image_clusters": 0,
+        "fp_en": 0,
+        "fp_vi": 0,
+        "fpr_en": null,
+        "fpr_vi": null,
+        "delta_fpr_pp": null,
+        "sensitivity_all_expected_negatives": {
+          "en": {
+            "observed_fp": 0,
+            "unknown": 1,
+            "fpr_lower": 0.0,
+            "fpr_upper": 1.0
+          },
+          "vi": {
+            "observed_fp": 0,
+            "unknown": 1,
+            "fpr_lower": 0.0,
+            "fpr_upper": 1.0
+          },
+          "delta_fpr_lower_pp": -100.0,
+          "delta_fpr_upper_pp": 100.0,
+          "unknown_policy": "invalid, failed and missing predictions may each be either YES or NO"
+        }
+      },
+      "categories": {
+        "random": {
+          "n_rows": 2,
+          "n_unique_images": 2,
+          "languages": {
+            "en": {
+              "expected": 2,
+              "valid": 0,
+              "invalid": 2,
+              "failed": 0,
+              "missing": 0,
+              "correct": 0,
+              "accuracy": 0.0,
+              "accuracy_valid_only": null,
+              "valid_rate": 0.0,
+              "invalid_rate": 1.0,
+              "invalid_rate_generated": 1.0,
+              "binary_valid_only": {
+                "tp": 0,
+                "fp": 0,
+                "tn": 0,
+                "fn": 0,
+                "fpr": null,
+                "fnr": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "balanced_accuracy": null
+              }
+            },
+            "vi": {
+              "expected": 2,
+              "valid": 0,
+              "invalid": 2,
+              "failed": 0,
+              "missing": 0,
+              "correct": 0,
+              "accuracy": 0.0,
+              "accuracy_valid_only": null,
+              "valid_rate": 0.0,
+              "invalid_rate": 1.0,
+              "invalid_rate_generated": 1.0,
+              "binary_valid_only": {
+                "tp": 0,
+                "fp": 0,
+                "tn": 0,
+                "fn": 0,
+                "fpr": null,
+                "fnr": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "balanced_accuracy": null
+              }
+            }
+          },
+          "paired": {
+            "expected_pairs": 2,
+            "jointly_valid": 0,
+            "excluded_pairs": 2,
+            "excluded_status_counts": {
+              "en_invalid__vi_invalid": 2
+            },
+            "disagreements": 0,
+            "disagreement_rate": null,
+            "en_correct_vi_wrong": 0,
+            "en_wrong_vi_correct": 0,
+            "delta_accuracy_pp": 0.0
+          },
+          "primary_repope": {
+            "negative_rows_expected": 1,
+            "negative_images_expected": 1,
+            "jointly_valid_negative_pairs": 0,
+            "excluded_negative_pairs": 1,
+            "complete_case_image_clusters": 0,
+            "fp_en": 0,
+            "fp_vi": 0,
+            "fpr_en": null,
+            "fpr_vi": null,
+            "delta_fpr_pp": null,
+            "sensitivity_all_expected_negatives": {
+              "en": {
+                "observed_fp": 0,
+                "unknown": 1,
+                "fpr_lower": 0.0,
+                "fpr_upper": 1.0
+              },
+              "vi": {
+                "observed_fp": 0,
+                "unknown": 1,
+                "fpr_lower": 0.0,
+                "fpr_upper": 1.0
+              },
+              "delta_fpr_lower_pp": -100.0,
+              "delta_fpr_upper_pp": 100.0,
+              "unknown_policy": "invalid, failed and missing predictions may each be either YES or NO"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "paired_rows": [
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "dataset": "repope",
+      "task": "object_existence",
+      "category": "random",
+      "image_namespace": "coco",
+      "image_id": "000000429109",
+      "image_sha256": "4f5b25f4fd26e7d405d87b412e62743ff525b2a7cb7b7944d5afeef3d374e941",
+      "ground_truth": "yes",
+      "ground_truth_source": "repope_hf_original_label",
+      "is_pilot": true,
+      "qa_status": "pending",
+      "translation_status": "approved",
+      "en": {
+        "status": "invalid",
+        "prediction": null,
+        "attempts": 1,
+        "selected_attempt": 1,
+        "source_line": 1,
+        "reason": "INVALID_EMPTY"
+      },
+      "vi": {
+        "status": "invalid",
+        "prediction": null,
+        "attempts": 1,
+        "selected_attempt": 1,
+        "source_line": 2,
+        "reason": "INVALID_EMPTY"
+      }
+    },
+    {
+      "sample_id": "repope_random_4496c746473fff08",
+      "dataset": "repope",
+      "task": "object_existence",
+      "category": "random",
+      "image_namespace": "coco",
+      "image_id": "000000300368",
+      "image_sha256": "9e7aa1e50425a7a31cbf9262399ec811d3d81921308b1f307a3f2c6e1758599b",
+      "ground_truth": "no",
+      "ground_truth_source": "repope_hf_original_label",
+      "is_pilot": true,
+      "qa_status": "pending",
+      "translation_status": "approved",
+      "en": {
+        "status": "invalid",
+        "prediction": null,
+        "attempts": 1,
+        "selected_attempt": 1,
+        "source_line": 3,
+        "reason": "INVALID_EMPTY"
+      },
+      "vi": {
+        "status": "invalid",
+        "prediction": null,
+        "attempts": 1,
+        "selected_attempt": 1,
+        "source_line": 4,
+        "reason": "INVALID_EMPTY"
+      }
+    }
+  ],
+  "inputs": {
+    "manifest": "data/pilot/stage1_v3/pilot_manifest.csv",
+    "manifest_sha256": "4e9d8eb2537f410f1357fdd0301b1159c0ece240b7432cf7988f947262e51fd3",
+    "predictions": "results/pilot/local/gemma_smoke_v1.jsonl",
+    "predictions_sha256": "1d9fe3eb9f3b3135dc471d416038cb10594e2a47535ab1827d307744dc4cd6a1",
+    "selection": "results/pilot/local/gemma_smoke_v1.summary.json",
+    "selection_sha256": "06cd960bdb6bb61fd0836925ac9c6bbf84d0db6a30965209732cd3c66bab0ba4"
+  },
+  "implementation": {
+    "evaluate.py": "c9a98cc4865e200fd2f3538571cec1b37b322a2d3cdd9b0d1f1fd378c9fb02e3",
+    "parse.py": "5423ae0dd0846746d5e55c43cbe26178838763510fdfcf2bb31dd39d7c4212fb"
+  },
+  "report_hash": "311501765a638b1b6934f66897821181eeb4a97f5ea7755b9e604865305c50e0"
+}

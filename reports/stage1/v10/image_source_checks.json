@@ -1,0 +1,47 @@
+{
+  "checked_on_local": "2026-11-20",
+  "official_references": {
+    "vsr": "https://github.com/cambridgeltl/visual-spatial-reasoning/blob/b27a0af0ee1462d2b6b92c8c83e869d9254a241a/data/README.md",
+    "visual_genome": "https://visualgenome.org/api/v0/api_home",
+    "pet": "https://www.robots.ox.ac.uk/~vgg/data/pets/"
+  },
+  "head_probes": {
+    "coco_s3_selected_image": {
+      "http_status": 200,
+      "content_length": 167571
+    },
+    "vg_selected_jpeg": {
+      "http_status": 200,
+      "content_length": 133648
+    },
+    "vg_part2_zip": {
+      "http_status": 200,
+      "content_length": 9731705982,
+      "downloaded": false
+    },
+    "guessed_pet_individual_image": {
+      "http_status": 404,
+      "used": false
+    },
+    "pet_official_tar_gz": {
+      "http_status": 200,
+      "content_length": 791918971,
+      "etag": "\"62e39dec-2f33b97b\""
+    }
+  },
+  "security": "TLS verification enabled; initial sandbox socket restriction resolved through approved network tool execution",
+  "publication": "local research cache only, no redistribution",
+  "concurrent_tasks": "VSR/TallyQA direct loop and Pet stream may run concurrently; final global SHA256 overlap check required",
+  "interruptions": [
+    {
+      "dataset": "tallyqa",
+      "cached_images_before_stop": 110,
+      "error": "Windows PermissionError WinError 5 during atomic receipt replacement",
+      "orphan_image_id": "2354629",
+      "recovery": "Reacquired original official JPEG; matching SHA256, reused file without overwriting; then completed 120 images",
+      "correction": "Bounded 3-attempt PermissionError backoff for new task receipts; matching orphan recovery only",
+      "downloaded_bytes_first_failed_attempt": null,
+      "later_success_report_bytes_scope": "resume attempt only"
+    }
+  ]
+}

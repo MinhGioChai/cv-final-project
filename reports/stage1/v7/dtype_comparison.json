@@ -1,0 +1,159 @@
+{
+  "scope": "engineering numerical diagnostic; image QA pending",
+  "same_code_prompt_images_model_revision": true,
+  "changed_setting": "NF4 compute/model/input dtype FP16 versus BF16",
+  "pairs": [
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "language": "en",
+      "ground_truth": "yes",
+      "fp16": {
+        "raw_response": "",
+        "generated_token_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_step": {
+          "n_values": 262208,
+          "n_nan": 262208,
+          "n_posinf": 0,
+          "n_neginf": 0,
+          "all_finite": false
+        },
+        "run_status": "failed"
+      },
+      "bf16": {
+        "raw_response": "YES",
+        "generated_token_ids": [
+          26915,
+          106
+        ],
+        "terminal_eos_token_ids": [
+          106
+        ],
+        "all_raw_logits_finite": true,
+        "parse_status": "valid"
+      }
+    },
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "language": "vi",
+      "ground_truth": "yes",
+      "fp16": {
+        "raw_response": "",
+        "generated_token_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_step": {
+          "n_values": 262208,
+          "n_nan": 262208,
+          "n_posinf": 0,
+          "n_neginf": 0,
+          "all_finite": false
+        },
+        "run_status": "failed"
+      },
+      "bf16": {
+        "raw_response": "YES",
+        "generated_token_ids": [
+          26915,
+          106
+        ],
+        "terminal_eos_token_ids": [
+          106
+        ],
+        "all_raw_logits_finite": true,
+        "parse_status": "valid"
+      }
+    },
+    {
+      "sample_id": "repope_random_4496c746473fff08",
+      "language": "en",
+      "ground_truth": "no",
+      "fp16": {
+        "raw_response": "",
+        "generated_token_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_step": {
+          "n_values": 262208,
+          "n_nan": 262208,
+          "n_posinf": 0,
+          "n_neginf": 0,
+          "all_finite": false
+        },
+        "run_status": "failed"
+      },
+      "bf16": {
+        "raw_response": "YES",
+        "generated_token_ids": [
+          26915,
+          106
+        ],
+        "terminal_eos_token_ids": [
+          106
+        ],
+        "all_raw_logits_finite": true,
+        "parse_status": "valid"
+      }
+    },
+    {
+      "sample_id": "repope_random_4496c746473fff08",
+      "language": "vi",
+      "ground_truth": "no",
+      "fp16": {
+        "raw_response": "",
+        "generated_token_ids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "first_step": {
+          "n_values": 262208,
+          "n_nan": 262208,
+          "n_posinf": 0,
+          "n_neginf": 0,
+          "all_finite": false
+        },
+        "run_status": "failed"
+      },
+      "bf16": {
+        "raw_response": "NO",
+        "generated_token_ids": [
+          7018,
+          106
+        ],
+        "terminal_eos_token_ids": [
+          106
+        ],
+        "all_raw_logits_finite": true,
+        "parse_status": "valid"
+      }
+    }
+  ]
+}

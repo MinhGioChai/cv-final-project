@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-16",
+  "status": "passed",
+  "full_suite": {
+    "command": ".venv/Scripts/python.exe -m pytest -q --tb=short",
+    "passed": 175,
+    "new_tests": 31,
+    "observed_exit_code": 0
+  },
+  "analysis_environment": {
+    "python": "3.12.10",
+    "pydantic": "2.14.3"
+  },
+  "artifacts": {
+    "qwen_evaluation.json": "25e346626b06902785706207fc65575da1acfcd186a0f524f3f138fa39228693",
+    "qwen_evaluation.md": "d45c7ea453fda1fa342aa93d6b85280e025b36710bf7112753e52ff160b75ded",
+    "qwen_statistics.json": "b6cbb42f70ee5ed93a3c75072011ed085b069e9f9b20861ceae1af3132272b52"
+  },
+  "cli_replay_identical": true,
+  "legacy_raw_sha256": "4e4f911296c4baf79df1f27e91c6b23ad39f51f9beae46fc625a847838a9eb25",
+  "legacy_raw_record_count": 20,
+  "protected_files_checked": 118,
+  "intentional_changes_to_previous_protected_files": [
+    "src/vlmbench/cli.py"
+  ],
+  "other_previously_protected_files_unchanged": true,
+  "pilot_validation": {
+    "valid": true,
+    "mode": "pilot",
+    "n_rows": 30,
+    "n_unique_images": 30,
+    "qa_status": {
+      "pending": 30
+    },
+    "translation_status": {
+      "approved": 30
+    },
+    "warnings": [
+      "Pilot validation does not approve translations or source labels for final evaluation"
+    ],
+    "issues": []
+  },
+  "qwen_inference_protocol_unchanged": true,
+  "links_checked": 138,
+  "broken_links": [],
+  "gemma": {
+    "hf_token_in_environment": false,
+    "known_cached_token_present": false,
+    "license_status": "not_checked",
+    "new_generation_attempted": false
+  },
+  "new_model_generations": 0,
+  "new_human_qa_decisions": 0
+}

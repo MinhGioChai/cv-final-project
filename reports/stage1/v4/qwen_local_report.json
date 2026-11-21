@@ -1,0 +1,133 @@
+{
+  "client_date": "2026-11-10",
+  "platform": "local",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+  "precision": "nf4_fp16",
+  "n_rows": 10,
+  "n_inferences": 20,
+  "success": 20,
+  "invalid": 0,
+  "failed": 0,
+  "missing": 0,
+  "median_elapsed_ms": 492.132200015476,
+  "min_elapsed_ms": 459.5026000170037,
+  "max_elapsed_ms": 2092.8540999884717,
+  "peak_allocated_mib": 2483.908203125,
+  "peak_allocated_gib": 2.425691604614258,
+  "latency_scope": "processor plus generation, excluding download/model load and PIL file I/O/thumbnail",
+  "protocol_hash": "223b9800b7965aaca6663a13f3b1bb9ce3019081f5cc1248d27e4463ba2077aa",
+  "run_config_hash": "174f2c5ac5f9e45629be541f3889a6bf8fd6c5bdc34271525b7c9b0616562428",
+  "predictions_file": "results/pilot/local/qwen_smoke_v1.jsonl",
+  "predictions_sha256": "4e4f911296c4baf79df1f27e91c6b23ad39f51f9beae46fc625a847838a9eb25",
+  "resume_verified_no_duplicate_or_file_change": true,
+  "descriptive_matches_to_source_labels": {
+    "en": 10,
+    "vi": 9
+  },
+  "en_vi_disagreements": 1,
+  "scope": "Engineering pilot only; image/label QA pending. Ten cases do not support final benchmark or language-generalization conclusions.",
+  "cases": [
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "ground_truth": "yes",
+      "prediction_en": "yes",
+      "prediction_vi": "yes",
+      "raw_en": "YES",
+      "raw_vi": "YES",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_random_4496c746473fff08",
+      "ground_truth": "no",
+      "prediction_en": "no",
+      "prediction_vi": "no",
+      "raw_en": "NO",
+      "raw_vi": "NO",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_popular_2986dcb00859aac0",
+      "ground_truth": "yes",
+      "prediction_en": "yes",
+      "prediction_vi": "yes",
+      "raw_en": "YES",
+      "raw_vi": "YES",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_popular_369fd6c407dcd82a",
+      "ground_truth": "no",
+      "prediction_en": "no",
+      "prediction_vi": "no",
+      "raw_en": "NO",
+      "raw_vi": "NO",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "ground_truth": "yes",
+      "prediction_en": "yes",
+      "prediction_vi": "yes",
+      "raw_en": "YES",
+      "raw_vi": "YES",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_adversarial_16ad496cf15413f6",
+      "ground_truth": "no",
+      "prediction_en": "no",
+      "prediction_vi": "no",
+      "raw_en": "NO",
+      "raw_vi": "NO",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "ground_truth": "yes",
+      "prediction_en": "yes",
+      "prediction_vi": "yes",
+      "raw_en": "YES",
+      "raw_vi": "YES",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_random_60bde3ffdbeb915a",
+      "ground_truth": "no",
+      "prediction_en": "no",
+      "prediction_vi": "no",
+      "raw_en": "NO",
+      "raw_vi": "NO",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_popular_6ee7711adb839ddf",
+      "ground_truth": "yes",
+      "prediction_en": "yes",
+      "prediction_vi": "yes",
+      "raw_en": "YES",
+      "raw_vi": "YES",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": true
+    },
+    {
+      "sample_id": "repope_popular_5bc6635955bf7758",
+      "ground_truth": "no",
+      "prediction_en": "no",
+      "prediction_vi": "yes",
+      "raw_en": "NO",
+      "raw_vi": "YES",
+      "en_matches_source_label": true,
+      "vi_matches_source_label": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "n_rows": 30,
+  "n_unique_images": 30,
+  "retained_rows": 10,
+  "added_rows": 20,
+  "revised_old_translations": 9,
+  "unchanged_old_translations": 1,
+  "upstream_matched": 30,
+  "source_fields_and_v1_artifacts_preserved": true,
+  "offline_prepare_replay": true,
+  "import_audit_replay_unchanged": true,
+  "registry_images": 30,
+  "user_feedback_recorded": true,
+  "formal_qa_approvals_created": 0,
+  "observed_test_run": {
+    "passed": 132,
+    "command": ".venv/Scripts/python.exe -m pytest -q",
+    "note": "Observed in this session; this verifier does not rerun pytest"
+  },
+  "artifact_sha256": {
+    "data/pilot/stage1_v2/pilot_manifest.csv": "522d7fc680e4a694ffb11d7e54b4b8ce4556db565d2d96ac3bc8a8aab2b0f88d",
+    "data/pilot/stage1_v2/source_verified_manifest.csv": "abd5c5b89f271f3fe1b6f2e514b27c465567b98a5caae03bf7743ce75024a4d6",
+    "data/pilot/stage1_v2/draft_manifest.csv": "4e10d46adfbb0e3c1753c8b398993f39d050e43a58502ac7dca7256b9f89d55f",
+    "reports/stage1/v2/draft_import_audit.json": "dc220ec24d6f5a616d1aa6196146eaf369748a8a3841d4d78a4ec6d7264273ad",
+    "data/reviews/stage1_v2/translation_review.csv": "ca6ff61b1d17df0aeb6759c7fb55bca9f048f8bd3e4f855cf46c98d8fd5211d2",
+    "data/dictionaries/versions/object_en_vi_v2.csv": "400fa35745ee316519fb27344c97f41a40d8273bbea69adae0a5fab63e4d2f31"
+  }
+}

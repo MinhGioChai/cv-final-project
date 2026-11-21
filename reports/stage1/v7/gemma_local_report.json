@@ -1,0 +1,48 @@
+{
+  "date_local": "2026-11-19",
+  "scope": "engineering_pilot_image_qa_pending",
+  "model_id": "google/gemma-3-4b-it",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "precision": "nf4_bf16",
+  "selected_rows": 10,
+  "real_generations": 20,
+  "valid": 20,
+  "invalid": 0,
+  "failed": 0,
+  "missing": 0,
+  "nonfinite": 0,
+  "processor_generation_median_ms": 10208.954649977386,
+  "processor_generation_min_ms": 8005.89279999258,
+  "processor_generation_max_ms": 14660.607099998742,
+  "peak_pytorch_allocated_mib": 5720.9345703125,
+  "measurement_note": "processor+generation with raw logits retention; excludes model loading and CPU trace/decode; not total GPU VRAM; not directly comparable timing with uninstrumented Qwen",
+  "protocol_hash": "762b9688985e2a006cdebff34d510b8134ef1699a6ef05b02b42fa7df1504101",
+  "run_config_hash": "b9369a8d90f48c07e13fa6f699a965e051052c7be90029a7bb132c0696fc06a1",
+  "raw_sha256": "b976b663ab017a5837728590884cd8928855b8d77a5eba170e7ca4ef4a136de1",
+  "resume_identical_raw_and_summary": true,
+  "first_4_smoke_rows_preserved_byte_for_byte": true,
+  "same_10_sample_ids_as_qwen": true,
+  "manifest_sha256": "4e9d8eb2537f410f1357fdd0301b1159c0ece240b7432cf7988f947262e51fd3",
+  "source_code_sha256": {
+    "gemma_diagnostic.py": "3fa5ce9fe0d052be253805c668343d84a09b0633d7c4c4c389bded282b236bb8",
+    "legacy_pilot_runtime.py": "2dab35bf0f8dc01249f035b7dc28812fb441f12e9eef164e9b3896d5c14377c5",
+    "parse.py": "5423ae0dd0846746d5e55c43cbe26178838763510fdfcf2bb31dd39d7c4212fb"
+  },
+  "new_model_generations_this_session": 28,
+  "generation_breakdown": {
+    "initial_bf16_decoder_diagnostic": 4,
+    "fp16_nonfinite_diagnostic": 4,
+    "final_bf16_pilot_including_smoke": 20
+  },
+  "unit_tests": {
+    "passed": 197,
+    "new_tests": 22,
+    "environment": ".venv",
+    "elapsed_seconds": 3.13
+  },
+  "protected_v6_source_files_unchanged": 8,
+  "qwen_raw_unchanged": true,
+  "human_qa_added": false,
+  "main_inference_started": false,
+  "network_weights_downloads": false
+}

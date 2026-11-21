@@ -1,0 +1,13 @@
+{
+  "date_local": "2026-11-20",
+  "full_pytest": {
+    "passed": 302,
+    "elapsed_seconds": 4.13,
+    "new_tests_vs_v9": 33,
+    "command": ".venv/Scripts/python.exe -m pytest -q -p no:cacheprovider"
+  },
+  "javascript_syntax_passed": true,
+  "visual_browser_QA": "not performed; no retry/bypass of previous Computer Use stop",
+  "model_inferences_this_session": 0,
+  "windows_settings_changed": false
+}

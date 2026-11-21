@@ -1,0 +1,50 @@
+{
+  "scope": "bounded_pilot_pool_not_full_dataset",
+  "seed": 42,
+  "requested": 30,
+  "max_rows_per_image": 1,
+  "quotas": {
+    "random/yes": 5,
+    "random/no": 5,
+    "popular/yes": 5,
+    "popular/no": 5,
+    "adversarial/yes": 5,
+    "adversarial/no": 5
+  },
+  "available": {
+    "n_rows": 300,
+    "n_unique_images": 57,
+    "rows_per_image": {
+      "median": 6.0,
+      "max": 6
+    },
+    "strata": {
+      "adversarial/no": 57,
+      "adversarial/yes": 43,
+      "popular/no": 57,
+      "popular/yes": 43,
+      "random/no": 56,
+      "random/yes": 44
+    }
+  },
+  "selected": {
+    "n_rows": 30,
+    "n_unique_images": 30,
+    "rows_per_image": {
+      "median": 1.0,
+      "max": 1
+    },
+    "strata": {
+      "adversarial/no": 5,
+      "adversarial/yes": 5,
+      "popular/no": 5,
+      "popular/yes": 5,
+      "random/no": 5,
+      "random/yes": 5
+    }
+  },
+  "retained_rows": 10,
+  "added_rows": 20,
+  "retained_manifest": "data/pilot/pilot_manifest.csv",
+  "retained_manifest_sha256": "e72e06d2fb5a6ba486fdaf580935e428d6c8a01f73742b7ea9a91b606973a1e9"
+}

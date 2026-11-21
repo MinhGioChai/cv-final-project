@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-11-09T14:16:52.840448+00:00",
+  "python": "3.12.10",
+  "os": "Windows",
+  "packages": {
+    "torch": null,
+    "torchvision": null,
+    "transformers": null,
+    "accelerate": null,
+    "bitsandbytes": null,
+    "qwen-vl-utils": null,
+    "Pillow": "12.3.0",
+    "tokenizers": null,
+    "huggingface-hub": null,
+    "safetensors": null,
+    "numpy": null,
+    "sentencepiece": null,
+    "protobuf": null
+  },
+  "nvidia_smi_status": "ok",
+  "gpus": [
+    {
+      "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "total_memory_mib": 6144,
+      "driver_version": "581.95"
+    }
+  ],
+  "missing_core_inference_packages": [
+    "torch",
+    "transformers",
+    "accelerate"
+  ],
+  "torch_cuda_runtime_tested": false,
+  "model_weights_downloaded_by_check": false,
+  "status": "inference_dependencies_missing",
+  "next_step": "Choose the inference environment, pin/install model dependencies there, then test CUDA and model loading on a QA-ready subset"
+}

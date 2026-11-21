@@ -1,0 +1,44 @@
+{
+  "recorded_at_utc": "2026-11-18T07:32:45.745525+00:00",
+  "source_error": "results/pilot/local/gemma_smoke_v1.load_error.json",
+  "source_error_sha256": "ce9f5c22c4b47a55999feeef7918444f52005694a91aac328d8ccfaa13c69383",
+  "source_meta_sha256": "69bf8581cda03d00ca3e40252636f6c1cf660dad53d079f0a41f8679788b12e1",
+  "observed_error": {
+    "type": "OSError",
+    "message": "The paging file is too small for this operation to complete. (os error 1455)"
+  },
+  "memory_snapshot_read_only": {
+    "physical_total_gib": 15.69,
+    "physical_free_gib": 1.63,
+    "virtual_total_gib": 29.76,
+    "virtual_free_gib": 6.09,
+    "automatic_managed_pagefile": true,
+    "pagefile_path": "C:\\pagefile.sys",
+    "pagefile_allocated_mib": 14408,
+    "pagefile_current_usage_mib": 2053,
+    "pagefile_peak_usage_mib": 2597,
+    "disk_free_gib": {
+      "C:": 2.03,
+      "F:": 37.94
+    }
+  },
+  "cache_observed": [
+    {
+      "name": "model-00001-of-00002.safetensors",
+      "bytes": 4961251752
+    },
+    {
+      "name": "model-00002-of-00002.safetensors",
+      "bytes": 3639026128
+    }
+  ],
+  "cache_check_scope": "File presence and size only; not a full integrity/hash verification or proof of current remote access",
+  "prediction_file_exists": false,
+  "actions_this_session": {
+    "system_settings_changed": false,
+    "files_deleted_or_moved": false,
+    "model_load_or_generation_started": false,
+    "unit_tests_run": false
+  },
+  "next_action": "Save work, free RAM/disk and configure an additional pagefile on F: while retaining system-managed C:; restart manually, then rerun the same 2-row smoke command."
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "abd5c5b89f271f3fe1b6f2e514b27c465567b98a5caae03bf7743ce75024a4d6",
+  "dictionary_sha256": "400fa35745ee316519fb27344c97f41a40d8273bbea69adae0a5fab63e4d2f31",
+  "template_version": "repope_object_existence_vi_v2_classifiers",
+  "sample_ids": [
+    "repope_random_c4c6ed415738856a",
+    "repope_random_60bde3ffdbeb915a",
+    "repope_random_0c85be5b0dd173fb",
+    "repope_random_18d195a3eee26a4f",
+    "repope_random_64834620fb6341a2",
+    "repope_popular_5bc6635955bf7758",
+    "repope_popular_7fc690337f8b692a",
+    "repope_popular_716a10b680cf69a9",
+    "repope_popular_e7d5cec624c594ce",
+    "repope_popular_cc7655930e0f0b02",
+    "repope_popular_2986dcb00859aac0",
+    "repope_popular_da4866dafa3c2514",
+    "repope_popular_bc6010056e9bc682",
+    "repope_popular_6ee7711adb839ddf",
+    "repope_popular_369fd6c407dcd82a",
+    "repope_random_d4666a3393309c75",
+    "repope_random_7f3a44891819162f",
+    "repope_random_bdb8917227abab2f",
+    "repope_adversarial_e66ab178648ded94",
+    "repope_adversarial_9ec964d4498569af",
+    "repope_adversarial_919d5a55becf4a0b",
+    "repope_adversarial_6fd41e8b495f07ed",
+    "repope_adversarial_104803044cb7c965",
+    "repope_adversarial_afe87003b3234d90",
+    "repope_adversarial_1883a30c14dd472b",
+    "repope_adversarial_8cb9a375076dc3ac",
+    "repope_adversarial_16ad496cf15413f6",
+    "repope_adversarial_2542d07233dd67d6",
+    "repope_random_4e1f26c1af41c444",
+    "repope_random_4496c746473fff08"
+  ],
+  "n_rows": 30,
+  "draft_reasons": {
+    "DRAFT_REQUIRES_HUMAN_REVIEW": 30
+  },
+  "dictionary_statuses": {
+    "pending": 30
+  },
+  "existing_review_preserved": false,
+  "human_approvals_created": 0,
+  "warning": "Drafts remain pending; the import step validates human decisions"
+}

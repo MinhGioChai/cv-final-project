@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-21",
+  "timezone": "Asia/Saigon",
+  "repository": "https://github.com/MinhGioChai/cv-final-project",
+  "branch": "main",
+  "base_commit": "2b89e0384e51b715d0f5bebaa458984fc318b1e1",
+  "scope": "incremental publication of existing work, not new benchmark inference",
+  "commits": [
+    {
+      "phase": 1,
+      "title": "build: pin CPU environment and validate benchmark foundation",
+      "commit": "aab4a4ae888435218503899cb3f638ace8c5094b",
+      "tree": "a6521696d5486da308f089557100938b8d951596",
+      "tests_passed": 78,
+      "pushed": true,
+      "files_staged": 24,
+      "remote_head_verified": true
+    },
+    {
+      "phase": 2,
+      "title": "feat(data): publish pinned sources and reproducible EN-VI draft selection",
+      "commit": "a345e822d4860abd6c5f79372f835fa450ef5b63",
+      "tree": "01999f49042ccf5c1083b19b44989e120823435f",
+      "tests_passed": 166,
+      "pushed": true,
+      "files_staged": 76,
+      "remote_head_verified": true
+    },
+    {
+      "phase": 3,
+      "title": "feat(eval): add paired scoring and image-cluster confidence intervals",
+      "commit": "32d6bec2c7671ae2ca87dcf6905d3352079142aa",
+      "tree": "2142ced0b0ba89f20b6354d02671415c56a189c2",
+      "tests_passed": 178,
+      "pushed": true,
+      "files_staged": 9,
+      "remote_head_verified": true
+    },
+    {
+      "phase": 4,
+      "title": "feat(pilot): add bounded Qwen and Gemma BF16 runs across local and cloud",
+      "commit": "35b1ec812e91bf2d2327f9d92e706bcbdcab1256",
+      "tree": "ac15b4a6e8a1523004cfb8cac174fc8eb48af2a8",
+      "tests_passed": 309,
+      "pushed": true,
+      "files_staged": 32,
+      "remote_head_verified": true
+    },
+    {
+      "phase": 5,
+      "title": "feat(review): add offline HTML workflow for 22 main review packets",
+      "commit": "6ff3287b4f452700ae643132a345ba37dcc636af",
+      "tree": "5b21d925d4fbd7913e088fda3010c88540e2774d",
+      "tests_passed": 334,
+      "pushed": true,
+      "files_staged": 61,
+      "remote_head_verified": true
+    }
+  ],
+  "documentation_part": "This part publishes docs; its final SHA is added in the subsequent publication audit.",
+  "external_private_archives": [
+    {
+      "filename": "team_workspace_v1.zip",
+      "bytes": 193306828,
+      "sha256": "6c9fe114e03fdbede6f214b9de5d2621f71ddfe070a0650ff077191c17ae21be",
+      "purpose": "raw images/cache and offline main review HTML"
+    },
+    {
+      "filename": "pilot_team_v1.zip",
+      "bytes": 2526785,
+      "sha256": "11474aa05ff8945850886f3f830d7d277b1bc6210513891ca6f8aea1579995ee",
+      "purpose": "self-contained pilot snapshot for optional local/cloud engineering checks"
+    }
+  ],
+  "new_inferences": 0,
+  "new_human_approvals": 0,
+  "main_frozen": false,
+  "visual_browser_qa": false,
+  "remote_ci_status": "not inspected; test counts are local isolated-tree runs"
+}

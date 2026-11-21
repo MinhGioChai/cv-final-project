@@ -1,0 +1,46 @@
+{
+  "scope": "bounded_stage0_pool_not_full_dataset",
+  "seed": 42,
+  "requested": 10,
+  "max_rows_per_image": 1,
+  "quotas": {
+    "random/yes": 2,
+    "random/no": 2,
+    "popular/yes": 2,
+    "popular/no": 1,
+    "adversarial/yes": 1,
+    "adversarial/no": 2
+  },
+  "available": {
+    "n_rows": 300,
+    "n_unique_images": 57,
+    "rows_per_image": {
+      "median": 6.0,
+      "max": 6
+    },
+    "strata": {
+      "adversarial/no": 57,
+      "adversarial/yes": 43,
+      "popular/no": 57,
+      "popular/yes": 43,
+      "random/no": 56,
+      "random/yes": 44
+    }
+  },
+  "selected": {
+    "n_rows": 10,
+    "n_unique_images": 10,
+    "rows_per_image": {
+      "median": 1.0,
+      "max": 1
+    },
+    "strata": {
+      "adversarial/no": 2,
+      "adversarial/yes": 1,
+      "popular/no": 1,
+      "popular/yes": 2,
+      "random/no": 2,
+      "random/yes": 2
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "dataset": "MM-Hallu/RePOPE",
+  "revision": "032906d23542254438e3bfd6ace379902b0b6847",
+  "retrieved_at_utc": "2026-11-09T12:00:09.685086+00:00",
+  "split": "train",
+  "source_card_license": "mit",
+  "pool_rows_per_page": 100,
+  "pool_page_offsets": [
+    0,
+    3000,
+    6000
+  ],
+  "pool_sha256": "223cff49f8a6de96b1169818518153ca6e976d8cbcaf4acccac9f5afbae6e99e",
+  "pool_rows": 300,
+  "viewer_reported_total_rows": 8185,
+  "selection_scope": "three_bounded_pages_not_representative_final_sample",
+  "revision_check": "Hub HEAD before/after + revision in every image asset URL",
+  "upstream_annotation_equivalence": "not_yet_independently_verified",
+  "image_license": "MS COCO underlying images: review individual image rights before redistribution"
+}

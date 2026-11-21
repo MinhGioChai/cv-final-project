@@ -1,0 +1,50 @@
+{
+  "scope": "local Git candidate audit; no remote publishing",
+  "ready": true,
+  "candidate_files": 386,
+  "candidate_bytes": 9869604,
+  "largest_files": [
+    {
+      "path": "data/main/preparation_v2/repope_bilingual_draft_manifest.csv",
+      "bytes": 1065103
+    },
+    {
+      "path": "data/main/preparation_v1/repope_draft_manifest.csv",
+      "bytes": 751810
+    },
+    {
+      "path": "data/main/preparation_v2/all_candidates.jsonl",
+      "bytes": 716369
+    },
+    {
+      "path": "data/main/preparation_v1/repope_candidates.jsonl",
+      "bytes": 403413
+    },
+    {
+      "path": "data/main/preparation_v2/repope_candidates.jsonl",
+      "bytes": 403413
+    },
+    {
+      "path": "data/main/preparation_v3/oxford_pet_bilingual_draft.csv",
+      "bytes": 289345
+    },
+    {
+      "path": "data/main/preparation_v2/repope_vi_proposals_v1.json",
+      "bytes": 242560
+    },
+    {
+      "path": "data/main/preparation_v3/oxford_pet_image_draft.csv",
+      "bytes": 192865
+    },
+    {
+      "path": "data/main/preparation_v3/vsr_bilingual_draft.csv",
+      "bytes": 149613
+    },
+    {
+      "path": "data/main/preparation_v2/oxford_pet_candidates.jsonl",
+      "bytes": 147591
+    }
+  ],
+  "issues": [],
+  "credential_check": "pattern-based; reports paths/rules/line numbers only"
+}

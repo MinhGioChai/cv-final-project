@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-12",
+  "status": "passed",
+  "protected_files_unchanged": 118,
+  "legacy_documents_preserved": 3,
+  "archived_snapshots_preserved": 12,
+  "source_and_canonical_v3_identical": true,
+  "pilot_validation": {
+    "valid": true,
+    "rows": 30,
+    "images": 30,
+    "translation_status": {
+      "approved": 30
+    },
+    "qa_status": {
+      "pending": 30
+    }
+  },
+  "raw_qwen_records": 20,
+  "raw_qwen_sha_unchanged": true,
+  "dry_run_plans": 6,
+  "qwen_protocol_and_ten_cases_match_real_v4": true,
+  "temporary_packaging_check": {
+    "kind": "temporary_offline_smoke_not_new_cloud_release",
+    "rows": 30,
+    "images": 30,
+    "files": 182,
+    "all_archived_file_checksums_match": true,
+    "current_v3_docs_included": true,
+    "original_exports_zip_unchanged": true
+  },
+  "markdown_files_checked": 41,
+  "local_links_checked": 280,
+  "broken_local_links": 0,
+  "model_adapter_instantiated": false,
+  "new_real_model_inferences": 0,
+  "new_human_qa_approvals": 0,
+  "unit_test_suite_rerun": false,
+  "note": "144 tests are historical v4 evidence; today ran read-only validation/dry runs and temporary packaging/link/hash checks."
+}

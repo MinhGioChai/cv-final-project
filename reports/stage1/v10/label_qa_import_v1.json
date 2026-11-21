@@ -1,0 +1,538 @@
+{
+  "schema_version": "label_qa_v1",
+  "run_key": "dd17280dab6ab60e847eb9ef3f5ee494b616e781823a644b4331161a8caf0d81",
+  "operator": "codex_import_20261120",
+  "imported_at_utc": "2026-11-20T09:36:55.954580+00:00",
+  "context": {
+    "schema_version": "label_qa_v1",
+    "manifest_sha256": "4e9d8eb2537f410f1357fdd0301b1159c0ece240b7432cf7988f947262e51fd3",
+    "sample_ids": [
+      "repope_random_c4c6ed415738856a",
+      "repope_random_60bde3ffdbeb915a",
+      "repope_random_0c85be5b0dd173fb",
+      "repope_random_18d195a3eee26a4f",
+      "repope_random_64834620fb6341a2",
+      "repope_popular_5bc6635955bf7758",
+      "repope_popular_7fc690337f8b692a",
+      "repope_popular_716a10b680cf69a9",
+      "repope_popular_e7d5cec624c594ce",
+      "repope_popular_cc7655930e0f0b02",
+      "repope_popular_2986dcb00859aac0",
+      "repope_popular_da4866dafa3c2514",
+      "repope_popular_bc6010056e9bc682",
+      "repope_popular_6ee7711adb839ddf",
+      "repope_popular_369fd6c407dcd82a",
+      "repope_random_d4666a3393309c75",
+      "repope_random_7f3a44891819162f",
+      "repope_random_bdb8917227abab2f",
+      "repope_adversarial_e66ab178648ded94",
+      "repope_adversarial_9ec964d4498569af",
+      "repope_adversarial_919d5a55becf4a0b",
+      "repope_adversarial_6fd41e8b495f07ed",
+      "repope_adversarial_104803044cb7c965",
+      "repope_adversarial_afe87003b3234d90",
+      "repope_adversarial_1883a30c14dd472b",
+      "repope_adversarial_8cb9a375076dc3ac",
+      "repope_adversarial_16ad496cf15413f6",
+      "repope_adversarial_2542d07233dd67d6",
+      "repope_random_4e1f26c1af41c444",
+      "repope_random_4496c746473fff08"
+    ],
+    "source_row_sha256": {
+      "repope_random_c4c6ed415738856a": "2854364c07bc655439a6c6d181f5119d5fc5c59efa340dd5674690ddf3ade5ed",
+      "repope_random_60bde3ffdbeb915a": "a5addff0f9d5f2a25ad1905d19f358cb974985454952df500337bdd87d8a4578",
+      "repope_random_0c85be5b0dd173fb": "6593fe16dd402267d5fd649f71e15327ac82219856b4837645eaa50a3a178de3",
+      "repope_random_18d195a3eee26a4f": "71f74ad0642fdec969c3724e6482294c8f8d94e1c6ea4d61519cc4c95bd83ee1",
+      "repope_random_64834620fb6341a2": "5e71a383c0d33ae2210dc692c711afdac7c8a18d2aa1b1347ad5eb5dc2450f29",
+      "repope_popular_5bc6635955bf7758": "1309ec344d5ec343cab3ff771906b7aeb6a9b5354f7f22e4c2775ed754a2d163",
+      "repope_popular_7fc690337f8b692a": "c0d7819fde9cb66527f8a0ee8ff1a769ff33cac8672ca0196f6a75d93b7547a0",
+      "repope_popular_716a10b680cf69a9": "c18b4c55cbd3df43370535f3a7c17fff98af189c6dbedc2107b698feaf2f26fb",
+      "repope_popular_e7d5cec624c594ce": "4c302ddff445aff3bea46144083b257b0811873780a03291361e17dcf158994e",
+      "repope_popular_cc7655930e0f0b02": "314d272d98d9497e08efff21eab08aabee1935548418ff13ae01237ceebcd9a4",
+      "repope_popular_2986dcb00859aac0": "6e56e763959a347ee1118bf4a7f13df6bb77efe8c5d29d5df27afa4e78052ecd",
+      "repope_popular_da4866dafa3c2514": "8f8aca5d52d411348122c14eb22c7c73c2bf79351d0a8b62b3aba932bfe8ac2f",
+      "repope_popular_bc6010056e9bc682": "e15387da9ed2d9fd9d03895b383b5ba8402a8a81c9b4a8132bcc4a0755c5e3ef",
+      "repope_popular_6ee7711adb839ddf": "69f8259bf1a5f0f99eab254cc468000c626e64a3573c365ab76ebc3b47b86650",
+      "repope_popular_369fd6c407dcd82a": "7ed02f0479c64bd02abe24b186810eaf6c24e0b107a013b34763d2a6da7490da",
+      "repope_random_d4666a3393309c75": "1ac6081aa0be217b45ab00eb6ba783bee1886744eed558940fd7628cde7d54d5",
+      "repope_random_7f3a44891819162f": "14e974eb62c0afcb2bfbdaf050063293e3901f441a21d1f8a30b9c0509bf40f4",
+      "repope_random_bdb8917227abab2f": "8f62587ce3cae54f14d066ad01ffb41c36270279f01cb66feb7573194fa0af65",
+      "repope_adversarial_e66ab178648ded94": "a110964235e31c12e5c98235455453c306124ee945272e91b8ff2b473d96f1e3",
+      "repope_adversarial_9ec964d4498569af": "6b1b88117c15f572cc6c680c9548931019d4fe3c2ec4bf80ceee766b21c710f4",
+      "repope_adversarial_919d5a55becf4a0b": "835cef2713948398e624c8320bd607a29adef752f05517eed5bf8bb3e4b6c956",
+      "repope_adversarial_6fd41e8b495f07ed": "d0d3d8318d9bb4689d8bc1746aff623fa1e940ff1da906c65a06a796d2f74f58",
+      "repope_adversarial_104803044cb7c965": "bd0f89ba7501e0e5a15180ac0ecdeff3b1d4538898af01d4e8cd8225164ddd3e",
+      "repope_adversarial_afe87003b3234d90": "0c16347941d061ca46dcda44e7738dcfab66351a337da6c9f51c850b3e5dfd1d",
+      "repope_adversarial_1883a30c14dd472b": "f485f84872d5870d754ac7eaa797779f646c35d72a6d7781b4b8f896ab18e963",
+      "repope_adversarial_8cb9a375076dc3ac": "d1645f0d62c66c3622eb5706489147084c2bf78787bc45e71021451324e7c47c",
+      "repope_adversarial_16ad496cf15413f6": "c3ca317ed04b1ad3b8f7d3e4d50837fad249b979f8a1375791c26eed194f936a",
+      "repope_adversarial_2542d07233dd67d6": "d4b473a0f211380caaf661a1db5927622ca8c2a0a73b9cb7bb098ac1341ac859",
+      "repope_random_4e1f26c1af41c444": "dd52402bc20125699ba79d449ceac8dbe85f5e223754a4b86f2c6348f2e41f06",
+      "repope_random_4496c746473fff08": "4b1bfe5056d17dbf8a214183923e4e7e8f559bc76cde0948c5b5929984019b58"
+    }
+  },
+  "review_sha256": "111a147816f89e029d6fffc8a36281bcf5bb87fd3ee1c3afa6b7c4cb1dffe7d9",
+  "policy": "image_label_qa_preserve_translation_v1",
+  "qa_status": {
+    "approved": 30
+  },
+  "translation_status": {
+    "approved": 30
+  },
+  "events": [
+    {
+      "sample_id": "repope_random_c4c6ed415738856a",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_c4c6ed415738856a",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:30:58.820Z",
+        "notes": ""
+      },
+      "source_row_sha256": "2854364c07bc655439a6c6d181f5119d5fc5c59efa340dd5674690ddf3ade5ed",
+      "output_row_sha256": "c3988d8d92c298153d6021188cf990af7b670be0d9962f48c1a8198660a47788"
+    },
+    {
+      "sample_id": "repope_random_60bde3ffdbeb915a",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_60bde3ffdbeb915a",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:30:46.068Z",
+        "notes": ""
+      },
+      "source_row_sha256": "a5addff0f9d5f2a25ad1905d19f358cb974985454952df500337bdd87d8a4578",
+      "output_row_sha256": "2602c36f4a47cced94412a701ab82891f91f59a1c6caeae033b57e296b99fe3e"
+    },
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_0c85be5b0dd173fb",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:31:08.653Z",
+        "notes": ""
+      },
+      "source_row_sha256": "6593fe16dd402267d5fd649f71e15327ac82219856b4837645eaa50a3a178de3",
+      "output_row_sha256": "1b88ff55c0b4dacaf5ea00169730bf2443e8152adbbd2ce59dd293c1ee8a6456"
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_18d195a3eee26a4f",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:31:24.563Z",
+        "notes": ""
+      },
+      "source_row_sha256": "71f74ad0642fdec969c3724e6482294c8f8d94e1c6ea4d61519cc4c95bd83ee1",
+      "output_row_sha256": "9afa4133358600f790d24258137bc4cbf3b8f41a788ef8b07f84b297edc8eb6e"
+    },
+    {
+      "sample_id": "repope_random_64834620fb6341a2",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_64834620fb6341a2",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:31:32.590Z",
+        "notes": ""
+      },
+      "source_row_sha256": "5e71a383c0d33ae2210dc692c711afdac7c8a18d2aa1b1347ad5eb5dc2450f29",
+      "output_row_sha256": "ec231ddcf49ae68d5a3cd7b5d38d8a7f44afef3d5ba868083a72d303f45cea47"
+    },
+    {
+      "sample_id": "repope_popular_5bc6635955bf7758",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_5bc6635955bf7758",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:31:41.610Z",
+        "notes": ""
+      },
+      "source_row_sha256": "1309ec344d5ec343cab3ff771906b7aeb6a9b5354f7f22e4c2775ed754a2d163",
+      "output_row_sha256": "cffd0eee8e1c0b6312f1f5d2b995d47d6fa8f43982e08a3cad49ddd0ece0e36e"
+    },
+    {
+      "sample_id": "repope_popular_7fc690337f8b692a",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_7fc690337f8b692a",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:31:46.876Z",
+        "notes": ""
+      },
+      "source_row_sha256": "c0d7819fde9cb66527f8a0ee8ff1a769ff33cac8672ca0196f6a75d93b7547a0",
+      "output_row_sha256": "f77fc22ec3595c3eaf50507f4d053865378c80d4129095c1e0baa99e6990fcd5"
+    },
+    {
+      "sample_id": "repope_popular_716a10b680cf69a9",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_716a10b680cf69a9",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:31:54.211Z",
+        "notes": ""
+      },
+      "source_row_sha256": "c18b4c55cbd3df43370535f3a7c17fff98af189c6dbedc2107b698feaf2f26fb",
+      "output_row_sha256": "0948e4d3128c2435352d347925851338ae4402dd0c660cbc4c42d385634b6a90"
+    },
+    {
+      "sample_id": "repope_popular_e7d5cec624c594ce",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_e7d5cec624c594ce",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:00.291Z",
+        "notes": ""
+      },
+      "source_row_sha256": "4c302ddff445aff3bea46144083b257b0811873780a03291361e17dcf158994e",
+      "output_row_sha256": "cf77f2928a69c2d5ceeb90216d90d6587e51d036338b21a0c07833192fc63a36"
+    },
+    {
+      "sample_id": "repope_popular_cc7655930e0f0b02",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_cc7655930e0f0b02",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:09.575Z",
+        "notes": ""
+      },
+      "source_row_sha256": "314d272d98d9497e08efff21eab08aabee1935548418ff13ae01237ceebcd9a4",
+      "output_row_sha256": "ba2dc5e03a743bb05c68000c300fe08292602263efe86e3cc5d562038a43c042"
+    },
+    {
+      "sample_id": "repope_popular_2986dcb00859aac0",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_2986dcb00859aac0",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:14.955Z",
+        "notes": ""
+      },
+      "source_row_sha256": "6e56e763959a347ee1118bf4a7f13df6bb77efe8c5d29d5df27afa4e78052ecd",
+      "output_row_sha256": "45541db3d6abcf65e8845e4537c2174d3aa649ae7d2e6ed1b99bfa30e775f5d2"
+    },
+    {
+      "sample_id": "repope_popular_da4866dafa3c2514",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_da4866dafa3c2514",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:20.993Z",
+        "notes": ""
+      },
+      "source_row_sha256": "8f8aca5d52d411348122c14eb22c7c73c2bf79351d0a8b62b3aba932bfe8ac2f",
+      "output_row_sha256": "b520f3f39be588a41fcd08d0a52793e2ac9a72d72af131f09f6f6b4d559121d9"
+    },
+    {
+      "sample_id": "repope_popular_bc6010056e9bc682",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_bc6010056e9bc682",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:26.641Z",
+        "notes": ""
+      },
+      "source_row_sha256": "e15387da9ed2d9fd9d03895b383b5ba8402a8a81c9b4a8132bcc4a0755c5e3ef",
+      "output_row_sha256": "21b2533c2a8cfe0804204791b7e914d42fd0382bad821adf706eedb81fee4c4e"
+    },
+    {
+      "sample_id": "repope_popular_6ee7711adb839ddf",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_6ee7711adb839ddf",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:34.144Z",
+        "notes": ""
+      },
+      "source_row_sha256": "69f8259bf1a5f0f99eab254cc468000c626e64a3573c365ab76ebc3b47b86650",
+      "output_row_sha256": "6db5601dff0a8ecd516ddef9318b5a7de16071969bd3738eda464e98cfbb813b"
+    },
+    {
+      "sample_id": "repope_popular_369fd6c407dcd82a",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_popular_369fd6c407dcd82a",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:46.309Z",
+        "notes": ""
+      },
+      "source_row_sha256": "7ed02f0479c64bd02abe24b186810eaf6c24e0b107a013b34763d2a6da7490da",
+      "output_row_sha256": "b03da91ce6864cc3f028e5bd9c5590ae139b994fd8017360597c32ccc8e1a8b5"
+    },
+    {
+      "sample_id": "repope_random_d4666a3393309c75",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_d4666a3393309c75",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:50.411Z",
+        "notes": ""
+      },
+      "source_row_sha256": "1ac6081aa0be217b45ab00eb6ba783bee1886744eed558940fd7628cde7d54d5",
+      "output_row_sha256": "8f307b6ee6b1656d79e364ad8926b9eb28571ea78b6afeac6a30b03a748eb5fc"
+    },
+    {
+      "sample_id": "repope_random_7f3a44891819162f",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_7f3a44891819162f",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:32:55.802Z",
+        "notes": ""
+      },
+      "source_row_sha256": "14e974eb62c0afcb2bfbdaf050063293e3901f441a21d1f8a30b9c0509bf40f4",
+      "output_row_sha256": "a66ff46d5e73b9495b9d71635f39db206bad9a0a2ef84603b496cc13c1d59a42"
+    },
+    {
+      "sample_id": "repope_random_bdb8917227abab2f",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_bdb8917227abab2f",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:33:03.558Z",
+        "notes": ""
+      },
+      "source_row_sha256": "8f62587ce3cae54f14d066ad01ffb41c36270279f01cb66feb7573194fa0af65",
+      "output_row_sha256": "1afa4ab7a38d8aa10baed32fb700c6a73c7a52c98d782a5fcf3dd71a894e7005"
+    },
+    {
+      "sample_id": "repope_adversarial_e66ab178648ded94",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_e66ab178648ded94",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:33:10.130Z",
+        "notes": ""
+      },
+      "source_row_sha256": "a110964235e31c12e5c98235455453c306124ee945272e91b8ff2b473d96f1e3",
+      "output_row_sha256": "853b9a674660a4bb91b555362dae931e2eeebd9a8d67cca3fc58eb59127014dc"
+    },
+    {
+      "sample_id": "repope_adversarial_9ec964d4498569af",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_9ec964d4498569af",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:33:16.703Z",
+        "notes": ""
+      },
+      "source_row_sha256": "6b1b88117c15f572cc6c680c9548931019d4fe3c2ec4bf80ceee766b21c710f4",
+      "output_row_sha256": "d8c1b50cfec5f7ac7dedbba8b555cedef425fcf123d531280beb14ef2b3d4012"
+    },
+    {
+      "sample_id": "repope_adversarial_919d5a55becf4a0b",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_919d5a55becf4a0b",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:33:25.517Z",
+        "notes": ""
+      },
+      "source_row_sha256": "835cef2713948398e624c8320bd607a29adef752f05517eed5bf8bb3e4b6c956",
+      "output_row_sha256": "5a90f604f85fa7814363661d55892957bf00d8c36fce12cfcef17c444e0d7448"
+    },
+    {
+      "sample_id": "repope_adversarial_6fd41e8b495f07ed",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_6fd41e8b495f07ed",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:33:30.009Z",
+        "notes": ""
+      },
+      "source_row_sha256": "d0d3d8318d9bb4689d8bc1746aff623fa1e940ff1da906c65a06a796d2f74f58",
+      "output_row_sha256": "0233d8c48f535687c7d04816cf46ee73462507a00e92a802aa56c2106106f68b"
+    },
+    {
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_104803044cb7c965",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:33:35.701Z",
+        "notes": ""
+      },
+      "source_row_sha256": "bd0f89ba7501e0e5a15180ac0ecdeff3b1d4538898af01d4e8cd8225164ddd3e",
+      "output_row_sha256": "29c2ad8c2db28976170bbd5c16491866441406f5057af2f63933f0e3862c0623"
+    },
+    {
+      "sample_id": "repope_adversarial_afe87003b3234d90",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_afe87003b3234d90",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:34:08.146Z",
+        "notes": ""
+      },
+      "source_row_sha256": "0c16347941d061ca46dcda44e7738dcfab66351a337da6c9f51c850b3e5dfd1d",
+      "output_row_sha256": "ad4f077b91db2f41985637f3ff89f04b124186c67aa60cbca9f508ae03a1cd57"
+    },
+    {
+      "sample_id": "repope_adversarial_1883a30c14dd472b",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_1883a30c14dd472b",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:34:15.463Z",
+        "notes": ""
+      },
+      "source_row_sha256": "f485f84872d5870d754ac7eaa797779f646c35d72a6d7781b4b8f896ab18e963",
+      "output_row_sha256": "f7fa8256af1bdc0c54ec3bc006805d55621958e6fb3aec4de16002f4625e3f4f"
+    },
+    {
+      "sample_id": "repope_adversarial_8cb9a375076dc3ac",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_8cb9a375076dc3ac",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:34:21.550Z",
+        "notes": ""
+      },
+      "source_row_sha256": "d1645f0d62c66c3622eb5706489147084c2bf78787bc45e71021451324e7c47c",
+      "output_row_sha256": "94434f6b4adf4226bbf62a4fbfbc3fade165679abb938b32406baf858555671b"
+    },
+    {
+      "sample_id": "repope_adversarial_16ad496cf15413f6",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_16ad496cf15413f6",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:34:26.174Z",
+        "notes": ""
+      },
+      "source_row_sha256": "c3ca317ed04b1ad3b8f7d3e4d50837fad249b979f8a1375791c26eed194f936a",
+      "output_row_sha256": "c1bd9f0ef23bbcbc236b39bf6b7d4a0a7ebcba798dcfa4d0d412e0094114aa14"
+    },
+    {
+      "sample_id": "repope_adversarial_2542d07233dd67d6",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_adversarial_2542d07233dd67d6",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:34:34.265Z",
+        "notes": ""
+      },
+      "source_row_sha256": "d4b473a0f211380caaf661a1db5927622ca8c2a0a73b9cb7bb098ac1341ac859",
+      "output_row_sha256": "a83487aff9b7547fa533e4c6c9e271c6dfe899220ab903c564ba426b7f614bff"
+    },
+    {
+      "sample_id": "repope_random_4e1f26c1af41c444",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_4e1f26c1af41c444",
+        "status": "approved",
+        "observed_answer": "yes",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:34:41.394Z",
+        "notes": ""
+      },
+      "source_row_sha256": "dd52402bc20125699ba79d449ceac8dbe85f5e223754a4b86f2c6348f2e41f06",
+      "output_row_sha256": "d79d25f4ca5be4735fe369d763e21d7a541b0e662abe80560bbec77e088efce0"
+    },
+    {
+      "sample_id": "repope_random_4496c746473fff08",
+      "before": "pending",
+      "after": "approved",
+      "decision": {
+        "sample_id": "repope_random_4496c746473fff08",
+        "status": "approved",
+        "observed_answer": "no",
+        "reviewer_id": "Khôi",
+        "reviewed_at": "2026-11-20T09:34:47.342Z",
+        "notes": ""
+      },
+      "source_row_sha256": "4b1bfe5056d17dbf8a214183923e4e7e8f559bc76cde0948c5b5929984019b58",
+      "output_row_sha256": "ab0e4a09c9b5bf98d0d701fb85107dbf7c7157bbaa06b3b8dab0e4d1fa09bbb3"
+    }
+  ],
+  "limitations": [
+    "Records reviewer attestations; does not authenticate identity or prove human review"
+  ],
+  "output_manifest_sha256": "e19b8601a9f0771ebc79c35ac347abf8a1764a9e2aa183c44288b961d3fc30b3"
+}

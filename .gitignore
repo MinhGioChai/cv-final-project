@@ -23,6 +23,7 @@ results/
 
 # Local working history and render/source snapshots are not release inputs.
 /reports/maintenance/
+/reports/audits/2026-11-12/verify_audit.py
 /reports/proposal/
 /reports/progress_*.md
 /reports/stage1/**/development/

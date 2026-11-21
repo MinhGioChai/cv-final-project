@@ -1,0 +1,17 @@
+{
+  "dataset": "oxford_pet",
+  "rows": 160,
+  "verified_images": 160,
+  "downloaded_bytes_this_run": 791918971,
+  "image_bytes": 20749153,
+  "manifest": "data/main/preparation_v3/oxford_pet_image_draft.csv",
+  "manifest_sha256": "d9f92b6bd752cffa8f1049a123eb6a04cc628e16babe0dbc9f2f2e1da5a44d91",
+  "receipt_sha256": "48f36a2c326394aeb666c5f2c7c8b54b0e23f047ddb92677a329b5db30d304be",
+  "qa_status": "pending",
+  "translation_status": "missing",
+  "frozen": false,
+  "new_human_approvals": 0,
+  "pilot_id_overlap": 0,
+  "pilot_sha256_overlap": 0,
+  "other_main_sha256_overlap": 0
+}

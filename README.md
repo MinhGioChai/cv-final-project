@@ -1,27 +1,36 @@
-# EN-VI VLM benchmark
+# Benchmark VLM Anh–Việt
 
-Incremental publication - part 5/6: 22-packet main review and private workspace handoff.
+Zero-shot benchmark với Qwen2.5-VL-3B và Gemma 3 4B IT: khi cùng ảnh/nghĩa
+câu hỏi, đổi EN ↔ VI có làm thay đổi đáp án và hallucination không?
 
-Offline HTML templates/generator and pending review packets cover 1,000 rows in 22 batches. Two distinct translation reviewers and separate image QA are required. Main is not frozen or inference-ready.
+## Thành viên mới bắt đầu ở đây
 
-## Check this snapshot (Python 3.12)
+**[HUONG_DAN_NHOM.md — hướng dẫn tổng hợp từ clone đến pull request](HUONG_DAN_NHOM.md)**
 
-```powershell
-python -m venv .venv
-.venv/Scripts/python.exe -m pip install -r requirements-stage0.lock.txt
-.venv/Scripts/python.exe -m pip install --no-build-isolation --no-deps -e .
-.venv/Scripts/python.exe -m pytest -q -p no:cacheprovider
-.venv/Scripts/python.exe scripts/check_repository.py
-```
+File này giải thích đề tài, cấu trúc, cài CPU/GPU, nhận hai ZIP dữ liệu,
+review, pilot, analysis, chọn việc và commit/push. Không cần đọc toàn bộ lịch
+sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
 
-Linux/macOS: replace `Scripts/python.exe` with `bin/python`. Tests are synthetic,
-CPU-only, and do not download images or model weights. Full research/team
-documentation is published in the final documentation part. Do not run the
-main benchmark before human QA, baseline freeze and explicit run approval.
+## Trạng thái hiện tại
 
-CLI inventory: `.venv/Scripts/python.exe -m vlmbench.cli --help`.
+- Pilot: mỗi model 20 lượt thật valid; 30 mẫu pilot đã human QA approved.
+- Main: đủ 1.000 câu EN–VI nháp/783 ảnh, đang chờ human review.
+- Chưa freeze hoặc chạy 4.000 inference chính. RQ1–RQ2 là core;
+  RQ3–RQ4 là mở rộng có điều kiện. Không training/fine-tuning.
+- Không cần GPU để làm review, tests hoặc phân tích pilot đã có.
 
-Get `team_workspace_v1.zip` privately from the project owner. Restore with
-`.venv/Scripts/python.exe scripts/team_workspace.py restore --archive exports/team_workspace_v1.zip`,
-then open `reports/stage1/v10/main_review/index.html`. Images/generated pages
-are intentionally excluded from Git; the generator is `scripts/review_main.py export`.
+Trạng thái có bằng chứng và bước tiếp: [completion](reports/completion.md).
+Nguồn yêu cầu: [Handoff V3](docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md).
+Git chứa code/manifests/reviews/evidence nhỏ; ảnh, weights, venv, ZIP và
+private results được giữ ngoài Git.
+
+## Tra cứu
+
+| Cần gì | Mở đâu |
+|---|---|
+| Hiểu project và tham gia | [Hướng dẫn nhóm](HUONG_DAN_NHOM.md) |
+| Việc P0 còn thiếu | [Implementation plan](docs/research/IMPLEMENTATION_PLAN_V3.md) |
+| Protocol và tài liệu chuyên sâu | [Docs](docs/README.md) |
+| Bằng chứng/lịch sử | [Reports](reports/README.md) |
+
+Lịch công bố theo từng phần và kiểm chứng tái lập: [release 21/11/2026](reports/releases/2026-11-21/README.md).

@@ -1,0 +1,29 @@
+{
+  "model": "gemma",
+  "platform": "local",
+  "protocol_hash": "762b9688985e2a006cdebff34d510b8134ef1699a6ef05b02b42fa7df1504101",
+  "selected_rows": 2,
+  "expected_inferences": 4,
+  "sample_ids": [
+    "repope_random_0c85be5b0dd173fb",
+    "repope_random_4496c746473fff08"
+  ],
+  "dry_run": false,
+  "image_qa_status": {
+    "pending": 2
+  },
+  "scope": "engineering_pilot_image_qa_pending",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "precision": "nf4_bf16",
+  "runner": "gemma_dtype_trace_v1",
+  "run_config_hash": "b9369a8d90f48c07e13fa6f699a965e051052c7be90029a7bb132c0696fc06a1",
+  "stop_reason": null,
+  "success": 4,
+  "valid": 4,
+  "invalid": 0,
+  "nonfinite": 0,
+  "failed": 0,
+  "missing": 0,
+  "total_attempts_in_file": 4,
+  "output": "C:/Users/ADMIN/cv-final-project/results/pilot/local/gemma_bf16_trace_v2.jsonl"
+}

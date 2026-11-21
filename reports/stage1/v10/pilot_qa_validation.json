@@ -1,0 +1,21 @@
+{
+  "valid": true,
+  "mode": "pilot",
+  "n_rows": 30,
+  "n_unique_images": 30,
+  "qa_status": {
+    "approved": 30
+  },
+  "translation_status": {
+    "approved": 30
+  },
+  "warnings": [
+    "Pilot validation does not approve translations or source labels for final evaluation"
+  ],
+  "issues": [],
+  "source_manifest_sha256": "4e9d8eb2537f410f1357fdd0301b1159c0ece240b7432cf7988f947262e51fd3",
+  "review_sha256": "111a147816f89e029d6fffc8a36281bcf5bb87fd3ee1c3afa6b7c4cb1dffe7d9",
+  "reviewed_manifest_sha256": "e19b8601a9f0771ebc79c35ac347abf8a1764a9e2aa183c44288b961d3fc30b3",
+  "protected_fields_preserved": true,
+  "new_inferences": 0
+}

@@ -1,0 +1,13 @@
+{
+  "rows": 600,
+  "translation_status": {
+    "requires_review": 600
+  },
+  "vocabulary": 72,
+  "human_approvals_created": 0,
+  "bilingual_manifest_created": true,
+  "outputs": {
+    "data/main/preparation_v2/repope_vi_proposals_v1.json": "27891bfc513454bea6cbf89463dabeac1ae988b00d99573337d9f38aec35b417",
+    "data/main/preparation_v2/repope_bilingual_draft_manifest.csv": "2b96cf96836e6a1dc9f2600bdffac967e0827916b6c901cf06c5181b535b2734"
+  }
+}

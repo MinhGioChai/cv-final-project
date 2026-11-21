@@ -1,0 +1,126 @@
+{
+  "scope": "actual pilot ZIP extracted by notebook safe_extract; local CPU dry-runs, not actual cloud generation",
+  "archive_sha256": "11474aa05ff8945850886f3f830d7d277b1bc6210513891ca6f8aea1579995ee",
+  "files_verified": 377,
+  "pilot_rows": 30,
+  "extracted_bundle_dry_runs": 6,
+  "all_qa_approved": true,
+  "gemma_precision": "nf4_bf16",
+  "qwen_precision": "nf4_fp16",
+  "prediction_files_created": 0,
+  "new_model_inferences": 0,
+  "contains_private_results_or_weights": false,
+  "plans": [
+    {
+      "model": "qwen",
+      "platform": "local",
+      "protocol_hash": "2d0990b419be0a307e7edc21374e6d3f926a2977c7d5172a2efebf69eadd0a67",
+      "selected_rows": 2,
+      "expected_inferences": 4,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "approved": 2
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "precision": "nf4_fp16"
+    },
+    {
+      "model": "gemma",
+      "platform": "local",
+      "protocol_hash": "28226f93eab799ade3404fa5e8b8e297db25eb79ca96a6418343e186532f1e20",
+      "selected_rows": 2,
+      "expected_inferences": 4,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "approved": 2
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "precision": "nf4_bf16",
+      "runner": "gemma_dtype_trace_v1"
+    },
+    {
+      "model": "qwen",
+      "platform": "colab",
+      "protocol_hash": "2d0990b419be0a307e7edc21374e6d3f926a2977c7d5172a2efebf69eadd0a67",
+      "selected_rows": 2,
+      "expected_inferences": 4,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "approved": 2
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "precision": "nf4_fp16"
+    },
+    {
+      "model": "gemma",
+      "platform": "colab",
+      "protocol_hash": "28226f93eab799ade3404fa5e8b8e297db25eb79ca96a6418343e186532f1e20",
+      "selected_rows": 2,
+      "expected_inferences": 4,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "approved": 2
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "precision": "nf4_bf16",
+      "runner": "gemma_dtype_trace_v1"
+    },
+    {
+      "model": "qwen",
+      "platform": "kaggle",
+      "protocol_hash": "2d0990b419be0a307e7edc21374e6d3f926a2977c7d5172a2efebf69eadd0a67",
+      "selected_rows": 2,
+      "expected_inferences": 4,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "approved": 2
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "precision": "nf4_fp16"
+    },
+    {
+      "model": "gemma",
+      "platform": "kaggle",
+      "protocol_hash": "28226f93eab799ade3404fa5e8b8e297db25eb79ca96a6418343e186532f1e20",
+      "selected_rows": 2,
+      "expected_inferences": 4,
+      "sample_ids": [
+        "repope_random_0c85be5b0dd173fb",
+        "repope_random_4496c746473fff08"
+      ],
+      "dry_run": true,
+      "image_qa_status": {
+        "approved": 2
+      },
+      "scope": "engineering_pilot_image_qa_pending",
+      "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "precision": "nf4_bf16",
+      "runner": "gemma_dtype_trace_v1"
+    }
+  ]
+}

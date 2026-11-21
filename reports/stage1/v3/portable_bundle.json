@@ -1,0 +1,8 @@
+{
+  "output": "exports/vlmbench_pilot.zip",
+  "bytes": 1783485,
+  "sha256": "c9ff1ca8ec0852c05231911e94962772707763d1c9a154ef5c474a9ce6b15130",
+  "images": 30,
+  "files": 137,
+  "uploaded_or_published": false
+}

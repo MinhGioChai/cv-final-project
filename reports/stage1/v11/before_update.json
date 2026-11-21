@@ -1,0 +1,22 @@
+{
+  "date_local": "2026-11-20",
+  "protected_sha256": {
+    "src/vlmbench/pilot_runtime.py": "2dab35bf0f8dc01249f035b7dc28812fb441f12e9eef164e9b3896d5c14377c5",
+    "src/vlmbench/gemma_diagnostic.py": "3fa5ce9fe0d052be253805c668343d84a09b0633d7c4c4c389bded282b236bb8",
+    "src/vlmbench/parse.py": "5423ae0dd0846746d5e55c43cbe26178838763510fdfcf2bb31dd39d7c4212fb",
+    "data/pilot/stage1_v3/pilot_manifest.csv": "4e9d8eb2537f410f1357fdd0301b1159c0ece240b7432cf7988f947262e51fd3",
+    "data/pilot/stage1_qa_v1/pilot_manifest.csv": "e19b8601a9f0771ebc79c35ac347abf8a1764a9e2aa183c44288b961d3fc30b3",
+    "configs/inference/pilot_4bit.yaml": "f433bec065767546a2d9fd7b4d1da26bc25419ba3dbab294f44a0f9df36b141a",
+    "configs/inference/gemma_bf16_trace_v1.yaml": "7c8a1a00f1ab92933a4505c95d09c9536df35343171da9ee0710dbca8c77ed42",
+    "results/pilot/local/qwen_smoke_v1.jsonl": "4e4f911296c4baf79df1f27e91c6b23ad39f51f9beae46fc625a847838a9eb25",
+    "results/pilot/local/gemma_bf16_trace_v2.jsonl": "b976b663ab017a5837728590884cd8928855b8d77a5eba170e7ca4ef4a136de1",
+    "exports/team_workspace_v1.zip": "6c9fe114e03fdbede6f214b9de5d2621f71ddfe070a0650ff077191c17ae21be"
+  },
+  "legacy_entrypoints_sha256": {
+    "scripts/run_local_pilot.py": "d1da8993a9fb809cb145d4685ad7e4dae532338f00af04f26f2cd92a338b67d3",
+    "scripts/run_gemma_pilot.py": "dde044a1d3abb9792bac8c03c8d11180b1d9c26f40868982c6d2b5eadc88beb8",
+    "scripts/generate_cloud_notebooks.py": "d9de5905d0915436a67a4d280a6e82119d3d614e2c97621cd3278b5b51a1a28e",
+    "notebooks/pilot_colab.ipynb": "397bcf6ea85c0c3a63da021290dd704e7b73876b1434b62857f392e8db7c54bd",
+    "notebooks/pilot_kaggle.ipynb": "bd74625627b93ab321ec4fa0c710b7f12a6c2f25c8a92f280e7afeccaa845aa9"
+  }
+}

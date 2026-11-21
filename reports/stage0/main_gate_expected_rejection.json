@@ -1,0 +1,215 @@
+{
+  "valid": false,
+  "mode": "main",
+  "n_rows": 10,
+  "n_unique_images": 10,
+  "qa_status": {
+    "pending": 10
+  },
+  "translation_status": {
+    "missing": 10
+  },
+  "warnings": [],
+  "issues": [
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_popular_cc7655930e0f0b02",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_popular_cc7655930e0f0b02",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_popular_6ee7711adb839ddf",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_popular_6ee7711adb839ddf",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_popular_369fd6c407dcd82a",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_popular_369fd6c407dcd82a",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_random_7f3a44891819162f",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_random_7f3a44891819162f",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_random_bdb8917227abab2f",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_random_bdb8917227abab2f",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_adversarial_9ec964d4498569af",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_adversarial_9ec964d4498569af",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_adversarial_1883a30c14dd472b",
+      "code": "PILOT_ROW_IN_MAIN"
+    },
+    {
+      "sample_id": "repope_adversarial_1883a30c14dd472b",
+      "code": "MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_cc7655930e0f0b02",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_cc7655930e0f0b02",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_6ee7711adb839ddf",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_6ee7711adb839ddf",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_369fd6c407dcd82a",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_369fd6c407dcd82a",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_7f3a44891819162f",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_7f3a44891819162f",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_bdb8917227abab2f",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_bdb8917227abab2f",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_9ec964d4498569af",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_9ec964d4498569af",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_1883a30c14dd472b",
+      "code": "PILOT_IMAGE_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_1883a30c14dd472b",
+      "code": "PILOT_CHECKSUM_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_cc7655930e0f0b02",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_6ee7711adb839ddf",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_popular_369fd6c407dcd82a",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_7f3a44891819162f",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_random_bdb8917227abab2f",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_9ec964d4498569af",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    },
+    {
+      "sample_id": "repope_adversarial_1883a30c14dd472b",
+      "code": "PILOT_REGISTRY_OVERLAP"
+    }
+  ]
+}

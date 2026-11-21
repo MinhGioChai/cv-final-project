@@ -1,0 +1,40 @@
+{
+  "date_local": "2026-11-19",
+  "official_coco_https_probe": {
+    "status": "failed",
+    "error": "CERTIFICATE_VERIFY_FAILED: hostname mismatch",
+    "tls_verification_disabled": false
+  },
+  "huggingface_provider": {
+    "dataset": "MM-Hallu/RePOPE",
+    "revision": "032906d23542254438e3bfd6ace379902b0b6847",
+    "head_before_after_matched": true,
+    "wanted_images": 383,
+    "metadata_pages_used": 28,
+    "image_index_sha256": "10b9e0687b9d54d26eb86f3fc831e3b050b4034c42b318a047f6f119883a05a6"
+  },
+  "acquisition_corrections": [
+    {
+      "attempt": "initial_index",
+      "failure": "HTTP429 at offset2500",
+      "matched_selected_ids_before_failure": 337,
+      "completed_pages_retained": 0,
+      "correction": "Initial implementation only persisted a complete index; replaced with page-level cache and paced calls before resuming."
+    },
+    {
+      "attempt": "paced_index",
+      "failure": "HTTP502 at offset600",
+      "completed_pages_retained": 6,
+      "correction": "Added limited backoff for 5xx; later run reused six cached pages and finished index."
+    }
+  ],
+  "retry_policy": {
+    "http429": "stop immediately, retain pages; no rapid retry or limit evasion",
+    "http5xx": "up to two bounded retries with backoff"
+  },
+  "bytes_of_failed_initial_metadata_attempt": "not_recorded; do not present final successful run bytes as a total including failed attempts",
+  "notes": [
+    "Source image bytes are pinned provider assets; original COCO byte-equivalence is not independently proven.",
+    "No model inference or human approvals during this preparation."
+  ]
+}

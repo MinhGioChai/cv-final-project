@@ -1,0 +1,24 @@
+{
+  "python_version": "3.12.10",
+  "platform": "Windows",
+  "upstream_matched_rows": 10,
+  "upstream_revision": "bcf22e5690d587cce34e1728af3efdcfaf747d29",
+  "upstream_annotation_bytes": 1002905,
+  "draft_rows": 10,
+  "human_approvals": 0,
+  "offline_source_replay": true,
+  "import_replay_keeps_audit": true,
+  "source_labels_questions_images_preserved": true,
+  "artifact_sha256": {
+    "data/pilot/pilot_manifest.csv": "e72e06d2fb5a6ba486fdaf580935e428d6c8a01f73742b7ea9a91b606973a1e9",
+    "data/pilot/stage1_v1/source_verified_manifest.csv": "f0abd24b039539d06f5a3081980de5e3a48bb5f0b9c1dfc5dd96a21d42c960a8",
+    "data/pilot/stage1_v1/draft_manifest.csv": "b1a5f872937959ce913b63764822404af93eff84100e2b0b452ba17a058bfdda",
+    "reports/stage1/v1/draft_import_audit.json": "5da83e61caad7a4755c68fb718f96e78d58a94e2ee2b1df7d990c10e8aba0464",
+    "data/reviews/stage1_v1/translation_review.csv": "801510d3638929bc4ecfa162e27858e48898af415de0860e535b0883e97e6062"
+  },
+  "observed_test_run": {
+    "command": ".venv/Scripts/python.exe -m pytest -q",
+    "passed": 119,
+    "note": "Recorded from test run in this session; this artifact verifier does not execute pytest"
+  }
+}

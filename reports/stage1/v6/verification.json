@@ -1,0 +1,33 @@
+{
+  "date_local": "2026-11-19",
+  "scope": "engineering_pilot_image_qa_pending",
+  "generation_source": "User executed local helper; this analysis session did not start generation",
+  "n_rows": 2,
+  "n_inferences": 4,
+  "success": 4,
+  "valid": 0,
+  "invalid": 4,
+  "invalid_reason": "INVALID_EMPTY",
+  "failed": 0,
+  "missing": 0,
+  "median_processor_generation_ms": 2281.6266499867197,
+  "peak_pytorch_allocated_mib": 5200.2373046875,
+  "primary_delta_fpr": null,
+  "bf16_supported_check": true,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "hypothesis": "FP16 numerical instability; not yet confirmed by token/logit trace or BF16 run",
+  "recommended_next_action": "An explicit versioned NF4/BF16 diagnostic on the same 2 paired examples, with generated-token IDs and finite-logit checks; do not expand or resume v1 as if outputs were valid",
+  "implementation_changed": false,
+  "new_model_generation_started": false,
+  "unit_tests_run": false,
+  "source_sha256": {
+    "results/pilot/local/gemma_smoke_v1.jsonl": "1d9fe3eb9f3b3135dc471d416038cb10594e2a47535ab1827d307744dc4cd6a1",
+    "results/pilot/local/gemma_smoke_v1.meta.json": "69bf8581cda03d00ca3e40252636f6c1cf660dad53d079f0a41f8679788b12e1",
+    "results/pilot/local/gemma_smoke_v1.summary.json": "06cd960bdb6bb61fd0836925ac9c6bbf84d0db6a30965209732cd3c66bab0ba4",
+    "src/vlmbench/pilot_runtime.py": "2dab35bf0f8dc01249f035b7dc28812fb441f12e9eef164e9b3896d5c14377c5",
+    "src/vlmbench/parse.py": "5423ae0dd0846746d5e55c43cbe26178838763510fdfcf2bb31dd39d7c4212fb",
+    "configs/inference/pilot_4bit.yaml": "f433bec065767546a2d9fd7b4d1da26bc25419ba3dbab294f44a0f9df36b141a",
+    "configs/models.yaml": "1dd606624bc55cf10e97955081cbb70a6e22914355752438e643e00e505d9ef7",
+    "configs/prompts.yaml": "780695da78db41e52404f14e22bdface4d08b50bc61e16ffcb6077d32fc241d8"
+  }
+}

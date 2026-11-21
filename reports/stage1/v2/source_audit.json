@@ -1,0 +1,463 @@
+{
+  "all_matched": true,
+  "n_rows": 30,
+  "status_counts": {
+    "matched": 30
+  },
+  "upstream_repository": "YanNeu/RePOPE",
+  "upstream_revision": "bcf22e5690d587cce34e1728af3efdcfaf747d29",
+  "upstream_snapshot": {
+    "repository": "YanNeu/RePOPE",
+    "revision": "bcf22e5690d587cce34e1728af3efdcfaf747d29",
+    "retrieved_at_utc": "2026-11-09T11:39:06.673988+00:00",
+    "files": {
+      "random": {
+        "sha256": "f464fcaf60b24ce2f280cf33f122e000dbdd35c8e88f77c4141c9c2cba864611",
+        "bytes": 340368,
+        "url": "https://raw.githubusercontent.com/YanNeu/RePOPE/bcf22e5690d587cce34e1728af3efdcfaf747d29/annotations/coco_repope_random.json"
+      },
+      "popular": {
+        "sha256": "57832b055bae5fd6176278a4f104c98ddd84811f7d26dfcb93d481f6c9da09a5",
+        "bytes": 333773,
+        "url": "https://raw.githubusercontent.com/YanNeu/RePOPE/bcf22e5690d587cce34e1728af3efdcfaf747d29/annotations/coco_repope_popular.json"
+      },
+      "adversarial": {
+        "sha256": "8c346dbb060bf422ff92e769fa68e5ab3e8a777cb28a26e973387441e05c9ccf",
+        "bytes": 328764,
+        "url": "https://raw.githubusercontent.com/YanNeu/RePOPE/bcf22e5690d587cce34e1728af3efdcfaf747d29/annotations/coco_repope_adversarial.json"
+      }
+    },
+    "downloaded_bytes": 1002905,
+    "license_status": "No redistribution license inferred from annotations or mirror card"
+  },
+  "upstream_annotation_rows": 8185,
+  "scope": "Exact category/image_id/question/label agreement for supplied manifest only",
+  "limitations": [
+    "Annotation agreement does not certify visual ground truth or human QA",
+    "No comparison of image bytes to original COCO files"
+  ],
+  "rows": [
+    {
+      "sample_id": "repope_random_c4c6ed415738856a",
+      "category": "random",
+      "image_id": "000000310196",
+      "question_en": "Is there a car in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 2,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_60bde3ffdbeb915a",
+      "category": "random",
+      "image_id": "000000210789",
+      "question_en": "Is there a cell phone in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 12,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_0c85be5b0dd173fb",
+      "category": "random",
+      "image_id": "000000429109",
+      "question_en": "Is there a bicycle in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 15,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "category": "random",
+      "image_id": "000000458338",
+      "question_en": "Is there a person in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 27,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_64834620fb6341a2",
+      "category": "random",
+      "image_id": "000000283412",
+      "question_en": "Is there a dog in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 31,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_5bc6635955bf7758",
+      "category": "popular",
+      "image_id": "000000456178",
+      "question_en": "Is there a cup in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 252,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_7fc690337f8b692a",
+      "category": "popular",
+      "image_id": "000000485564",
+      "question_en": "Is there a person in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 261,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_716a10b680cf69a9",
+      "category": "popular",
+      "image_id": "000000205729",
+      "question_en": "Is there a backpack in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 271,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_e7d5cec624c594ce",
+      "category": "popular",
+      "image_id": "000000329717",
+      "question_en": "Is there a handbag in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 287,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_cc7655930e0f0b02",
+      "category": "popular",
+      "image_id": "000000515904",
+      "question_en": "Is there a vase in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 301,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_2986dcb00859aac0",
+      "category": "popular",
+      "image_id": "000000437347",
+      "question_en": "Is there a person in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 309,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_da4866dafa3c2514",
+      "category": "popular",
+      "image_id": "000000236865",
+      "question_en": "Is there an orange in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 327,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_bc6010056e9bc682",
+      "category": "popular",
+      "image_id": "000000217397",
+      "question_en": "Is there a car in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 332,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_6ee7711adb839ddf",
+      "category": "popular",
+      "image_id": "000000060213",
+      "question_en": "Is there a bed in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 339,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_popular_369fd6c407dcd82a",
+      "category": "popular",
+      "image_id": "000000054025",
+      "question_en": "Is there a dining table in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 344,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_d4666a3393309c75",
+      "category": "random",
+      "image_id": "000000265719",
+      "question_en": "Is there a person in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 37,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_7f3a44891819162f",
+      "category": "random",
+      "image_id": "000000461331",
+      "question_en": "Is there a bowl in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 44,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_bdb8917227abab2f",
+      "category": "random",
+      "image_id": "000000017708",
+      "question_en": "Is there a fire hydrant in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 56,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_e66ab178648ded94",
+      "category": "adversarial",
+      "image_id": "000000209755",
+      "question_en": "Is there a dining table in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 562,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_9ec964d4498569af",
+      "category": "adversarial",
+      "image_id": "000000397705",
+      "question_en": "Is there a couch in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 576,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_919d5a55becf4a0b",
+      "category": "adversarial",
+      "image_id": "000000287305",
+      "question_en": "Is there a bus in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 581,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_6fd41e8b495f07ed",
+      "category": "adversarial",
+      "image_id": "000000105732",
+      "question_en": "Is there a backpack in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 595,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "category": "adversarial",
+      "image_id": "000000534121",
+      "question_en": "Is there a boat in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 605,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_afe87003b3234d90",
+      "category": "adversarial",
+      "image_id": "000000520524",
+      "question_en": "Is there a car in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 611,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_1883a30c14dd472b",
+      "category": "adversarial",
+      "image_id": "000000094944",
+      "question_en": "Is there a handbag in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 628,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_8cb9a375076dc3ac",
+      "category": "adversarial",
+      "image_id": "000000572075",
+      "question_en": "Is there a cup in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 632,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_16ad496cf15413f6",
+      "category": "adversarial",
+      "image_id": "000000387098",
+      "question_en": "Is there a couch in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 642,
+          "label": "no"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_adversarial_2542d07233dd67d6",
+      "category": "adversarial",
+      "image_id": "000000237767",
+      "question_en": "Is there a remote in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 669,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_4e1f26c1af41c444",
+      "category": "random",
+      "image_id": "000000353180",
+      "question_en": "Is there a bus in the image?",
+      "manifest_label": "yes",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 71,
+          "label": "yes"
+        }
+      ]
+    },
+    {
+      "sample_id": "repope_random_4496c746473fff08",
+      "category": "random",
+      "image_id": "000000300368",
+      "question_en": "Is there a teddy bear in the image?",
+      "manifest_label": "no",
+      "status": "matched",
+      "upstream_matches": [
+        {
+          "question_id": 92,
+          "label": "no"
+        }
+      ]
+    }
+  ],
+  "input_manifest_sha256": "522d7fc680e4a694ffb11d7e54b4b8ce4556db565d2d96ac3bc8a8aab2b0f88d",
+  "output_manifest_sha256": "abd5c5b89f271f3fe1b6f2e514b27c465567b98a5caae03bf7743ce75024a4d6"
+}

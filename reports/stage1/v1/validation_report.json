@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "mode": "pilot",
+  "n_rows": 10,
+  "n_unique_images": 10,
+  "qa_status": {
+    "pending": 10
+  },
+  "translation_status": {
+    "requires_review": 10
+  },
+  "warnings": [
+    "Pilot validation does not approve translations or source labels for final evaluation"
+  ],
+  "issues": []
+}

@@ -1,0 +1,47 @@
+{
+  "date_local": "2026-11-20",
+  "full_suite": {
+    "passed": 334,
+    "elapsed_seconds": 5.15,
+    "new_tests_vs_v22": 16
+  },
+  "root_dry_runs": 12,
+  "extracted_zip_dry_runs": 6,
+  "compatibility_alias_checks": 2,
+  "all_team_pilot_rows_human_QA_approved": true,
+  "same_sample_ids_across_models_and_platform_labels": true,
+  "root_and_extracted_protocol_hashes_match": true,
+  "protected_runtime_parser_configs_manifests_raw_and_team_workspace_hashes_preserved": true,
+  "legacy_entrypoints_archived_byte_for_byte": true,
+  "new_model_inferences": 0,
+  "new_weights_downloads": 0,
+  "new_human_approvals": 0,
+  "actual_cloud_generation_verified": false,
+  "pilot_zip_bytes": 2526785,
+  "pilot_zip_sha256": "11474aa05ff8945850886f3f830d7d277b1bc6210513891ca6f8aea1579995ee",
+  "git_ready": true,
+  "git_diff_check_passed": true,
+  "local_links_checked": 91,
+  "missing_links": [],
+  "commit_push_upload_performed": false,
+  "scope_note": "legacy scope string retained; live qa_status/image_qa_status comes from approved team manifest",
+  "outputs_sha256": {
+    "reports/stage1/v11/before_update.json": "82a8cf0e9b19b2cc6646ae5cad30ee1317ffe956c6a57e9040e7ed7be496ade1",
+    "reports/stage1/v11/bundle_check.json": "5c6ec302dc23a1374dbde91c072dc430b52a303b9c36b069c5c8e6a2aeba7e08",
+    "reports/stage1/v11/completion.md": "d05533f4aef3e29d3c2617f9290fdacf6654d1dcb2f6ae0616a506fe8b6d8ca3",
+    "reports/stage1/v11/dry_runs.json": "805facf440a4c0d457e1b062b23c1d09618c9d5f8ac79caf97d22f710dd3af27",
+    "reports/stage1/v11/git_readiness.json": "641c9dcb80f39646ba2234e0faa68feca33dd9372b1c10cc3b2e1207a4cdfbee",
+    "reports/stage1/v11/pilot_bundle.json": "e3adf3167ff44f7171e9b39c504bd8cb8368eda20058534f553126eb6a3738a1"
+  },
+  "new_source_sha256": {
+    "src/vlmbench/pilot_launcher.py": "6d5c38f636c165a57ef9b6b1b004bb6fc569d65e236fdd8074b5222bc5e752e3",
+    "scripts/run_pilot.py": "00243fc32121d94361900ed31f2f01dc89c9435424453a7a0af20f8fa62df14e",
+    "scripts/run_local_pilot.py": "4fb351524e52ddb255ffc4c06363496844dffc42543f7e44d3566424bd2a70ed",
+    "scripts/run_gemma_pilot.py": "8dfea9b00a75ec68965fe9e3cf1a57689ddfdbef4e816210b030f66891d51204",
+    "scripts/generate_cloud_notebooks.py": "19130e546f0996b9e7c2748733c988f1fa17b9e19ba7cf57b702ab550cfc9a89",
+    "notebooks/pilot_colab.ipynb": "a24188b0cddbb2beaa781502666c2535084b44bf8e4e3bf9cfd9dcd5d3f28bbf",
+    "notebooks/pilot_kaggle.ipynb": "b4d071dac30e9b0e12f7156224cede24cffa2bb1d092a9e99225f4f83ebe6e58",
+    "configs/inference/team_qwen_v1.yaml": "6347c0b1be0c7e698159100826fe2458a19ce8e30b1a937248fadbc1f226f28f",
+    "configs/inference/team_gemma_v1.yaml": "bb8987ae8c78e725c5911bf534c3e0889e6029498a3a8c0ddc71728e03981ae6"
+  }
+}

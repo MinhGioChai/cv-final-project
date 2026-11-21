@@ -1,0 +1,9 @@
+{
+  "kind": "temporary_offline_smoke_not_new_cloud_release",
+  "rows": 30,
+  "images": 30,
+  "files": 182,
+  "all_archived_file_checksums_match": true,
+  "current_v3_docs_included": true,
+  "original_exports_zip_unchanged": true
+}

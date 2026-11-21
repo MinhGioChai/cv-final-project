@@ -1,0 +1,23 @@
+{
+  "phase": "model_load_or_run",
+  "error": {
+    "type": "OSError",
+    "message": "The paging file is too small for this operation to complete. (os error 1455)"
+  },
+  "model": "gemma",
+  "platform": "local",
+  "protocol_hash": "e1b96887db25c76b4203daf14aae3409cb14076b9e8ef558c3f9392a758ff1f3",
+  "selected_rows": 2,
+  "expected_inferences": 4,
+  "sample_ids": [
+    "repope_random_0c85be5b0dd173fb",
+    "repope_random_4496c746473fff08"
+  ],
+  "dry_run": false,
+  "image_qa_status": {
+    "pending": 2
+  },
+  "scope": "engineering_pilot_image_qa_pending",
+  "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "precision": "nf4_fp16"
+}

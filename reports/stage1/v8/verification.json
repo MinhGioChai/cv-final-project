@@ -1,0 +1,61 @@
+{
+  "date_local": "2026-11-19",
+  "full_suite": {
+    "passed": 241,
+    "new_tests": 44,
+    "elapsed_seconds": 3.49,
+    "environment": ".venv"
+  },
+  "label_qa": {
+    "rows": 30,
+    "human_approvals_created": 0,
+    "source_manifest_unchanged": true,
+    "translation_approved": 30,
+    "qa_pending": 30,
+    "pending_import_dry_run_only": true,
+    "html_javascript_syntax": "Node --check passed",
+    "visual_browser_qa": "not_verified; Computer Use stopped because current browser URL could not be determined confidently; no bypass attempted"
+  },
+  "new_metadata_download_bytes": 25919368,
+  "metadata_offline_replay": "passed, zero new downloads",
+  "inventory_and_selection_replay_byte_identical": true,
+  "main_repope": {
+    "user_confirmed_target": 600,
+    "user_confirmed_image_cap": 2,
+    "candidate_rows": 600,
+    "unique_image_refs": 383,
+    "duplicate_content": 0,
+    "dedup_policy": "assistant_proposed_before_freeze",
+    "images_materialized": 0,
+    "inferences_run": 0,
+    "frozen": false
+  },
+  "protected_v7_artifacts_unchanged": 12,
+  "protected_v7_core_source_unchanged_except_cli": true,
+  "qwen_and_gemma_raw_unchanged": true,
+  "local_links_checked": 162,
+  "missing_links": 0,
+  "git_diff_check_passed": true,
+  "computer_use_retry_or_bypass": false,
+  "artifact_sha256": {
+    "reports/stage1/v8/completion.md": "7d76c10a10e8522ce0baaba6566816ed7d58b9f54a3735f72c18e90c8e2f2b47",
+    "reports/stage1/v8/label_qa_review.html": "ac4e43a881071653acef072491b08dce8cd1818391d8ea68def1b6f2d358d87c",
+    "reports/stage1/v8/main_inventory.json": "37788788affb8cc64ade006d19301e2964265a81e85841ec679f4d5c3670296a",
+    "reports/stage1/v8/main_inventory_v2.json": "ebec90c770f1f90e48bdfdf78ab880db4e078d207abce6be2944fe7986a584cb",
+    "reports/stage1/v8/repope_sampling_v1.json": "cb1897d23ef3c05ca4aadd99c4168f3a33c20bcc07de45205019b2e85bc50acd",
+    "reports/stage1/v8/source_snapshot_receipt.json": "af2881c8d504bcdd3e1d97e7f01c228bb71c90845156ce94a1d633146dc6c5c8"
+  },
+  "new_source_sha256": {
+    "src/vlmbench/label_qa.py": "e082e739ba385bd8ddb1585c0246512448eb8d8a178bbb20ff16c25883b9e92d",
+    "src/vlmbench/label_qa_template.html": "00223628c53e045164fff82e75ecdae81930256a30128cd323611cf708b198f0",
+    "src/vlmbench/main_sampling.py": "5db5122f2631e76faaadd392e67978159a3dd46536906609b1a767439c5ffb48",
+    "src/vlmbench/datasets/candidates.py": "2bac644ffb10219e5eeb4cc51ffc4024db48491476e2feafbc4d71a8d8ef8386",
+    "src/vlmbench/datasets/vsr.py": "97d8da5a6605ef078f31c8b071d52c75130c8caf2a42885d836a9eff51a481f3",
+    "src/vlmbench/datasets/tallyqa.py": "fb09c997613f2d69ec57fd3a8f68395a9b548481e746f9e93f94a6b6ac5089c6",
+    "src/vlmbench/datasets/oxford_pet.py": "3176e77e2e45a04816aa2048573d5bc3d936515b293e88a197043ac848275258",
+    "src/vlmbench/datasets/repope_frame.py": "0ed23f0dd052eb2abeccbdcb443b5d67d29a3e4dadbec2d2ade91c73ed18d379",
+    "scripts/fetch_main_metadata.py": "8c9bb87d1993db3921d6535bd9acf480d6afed0dcb4a25091f6d3c161acadc45",
+    "scripts/prepare_main_inventory.py": "813d90f940761c507c4961487c08f39084eefa0c4309dca0c95a1de9ad6f2d43",
+    "scripts/select_main_repope.py": "f29e2ed273cebc8a3c35f7b5e18037028aea35a2ecd8ae3f6d2620d42843f294"
+  }
+}

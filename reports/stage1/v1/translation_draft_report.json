@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "f0abd24b039539d06f5a3081980de5e3a48bb5f0b9c1dfc5dd96a21d42c960a8",
+  "dictionary_sha256": "aa1814ae04913650c0562bd45e56d861ba6fbb3ff16c0fc11b17372303cdf7c9",
+  "template_version": "repope_object_existence_vi_v1",
+  "sample_ids": [
+    "repope_random_0c85be5b0dd173fb",
+    "repope_random_18d195a3eee26a4f",
+    "repope_popular_cc7655930e0f0b02",
+    "repope_popular_6ee7711adb839ddf",
+    "repope_popular_369fd6c407dcd82a",
+    "repope_random_7f3a44891819162f",
+    "repope_random_bdb8917227abab2f",
+    "repope_adversarial_9ec964d4498569af",
+    "repope_adversarial_104803044cb7c965",
+    "repope_adversarial_1883a30c14dd472b"
+  ],
+  "n_rows": 10,
+  "draft_reasons": {
+    "DRAFT_REQUIRES_HUMAN_REVIEW": 10
+  },
+  "dictionary_statuses": {
+    "pending": 10
+  },
+  "existing_review_preserved": true,
+  "human_approvals_created": 0,
+  "warning": "Drafts remain pending; the import step validates human decisions"
+}

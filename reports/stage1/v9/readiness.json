@@ -1,0 +1,30 @@
+{
+  "date_local": "2026-11-19",
+  "frozen": false,
+  "main_ready": false,
+  "metadata_selected_rows": 1000,
+  "expected_inferences": 4000,
+  "materialized_rows": 600,
+  "verified_unique_images": 383,
+  "remaining_rows_without_images": 400,
+  "main_translation_approved": 0,
+  "main_translation_requires_review": 600,
+  "remaining_rows_without_vi_draft": 400,
+  "main_image_label_qa_approved": 0,
+  "pilot_image_label_qa_pending": 30,
+  "pilot_translation_approved": 30,
+  "gate_codes": {
+    "MAIN_QA_NOT_APPROVED": 600
+  },
+  "offline_replay_no_downloads": true,
+  "first_two_smoke_images_preserved": true,
+  "image_bytes_verified": 19484714,
+  "images_source_provider": "MM-Hallu/RePOPE pinned snapshot",
+  "new_model_inferences": 0,
+  "next_actions": [
+    "Human QA pilot JSON",
+    "Images and VI drafts for VSR/TallyQA/Pet",
+    "Human QA main images/labels/translations",
+    "Baseline metadata/runner and final freeze before authorized main inference"
+  ]
+}

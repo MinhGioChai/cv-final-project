@@ -1,0 +1,31 @@
+{
+  "datasets": {
+    "vsr": {
+      "rows": 120,
+      "requires_review": 120,
+      "approved": 0,
+      "bilingual_draft_created": true
+    },
+    "tallyqa": {
+      "rows": 120,
+      "requires_review": 120,
+      "approved": 0,
+      "bilingual_draft_created": true
+    },
+    "oxford_pet": {
+      "rows": 160,
+      "requires_review": 160,
+      "approved": 0,
+      "bilingual_draft_created": true
+    }
+  },
+  "human_approvals_created": 0,
+  "outputs": {
+    "data/main/preparation_v3/vsr_vi_proposals.json": "31a5ad60078761bece4c4945e8503dcfbd3dc4af89315161ed02f95a2985e0ad",
+    "data/main/preparation_v3/vsr_bilingual_draft.csv": "b9a35ab5fe6833c9df763bbe2b1ce07f974cdd97973747a206220d2ea415992c",
+    "data/main/preparation_v3/tallyqa_vi_proposals.json": "797bb2ac65b311e409c0e6b5df8ad5aa55f90935e498f9bd8a5dbb5de4f5c86e",
+    "data/main/preparation_v3/tallyqa_bilingual_draft.csv": "d7b53c2b12c3d6161631f4e31ecf32c18c5657111241079b79d18e20178aab87",
+    "data/main/preparation_v3/oxford_pet_vi_proposals.json": "83ed0663280ab326fefb34289aa8cc28f52d1c6665ae8b9ad75a95dabbebf0f1",
+    "data/main/preparation_v3/oxford_pet_bilingual_draft.csv": "c586eebe55495bdb0054c1977cd9061163b414ddaa5aea8190ec10f2f3c25766"
+  }
+}

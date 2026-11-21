@@ -1,0 +1,78 @@
+{
+  "date_local": "2026-11-19",
+  "full_suite": {
+    "passed": 269,
+    "new_tests": 28,
+    "elapsed_seconds": 7.31,
+    "environment": ".venv",
+    "pytest_cache_provider": "disabled due existing cache ACL warning"
+  },
+  "selection": {
+    "rows": 1000,
+    "unique_image_refs": 783,
+    "offline_replay_identical": true,
+    "repope_v8_bytes_preserved": true,
+    "decision_status": "user_delegated_preparation_not_freeze"
+  },
+  "repope_materialization": {
+    "images": 383,
+    "rows": 600,
+    "verified_jpeg_bytes": 19484714,
+    "offline_replay_new_download_bytes": 0,
+    "offline_replay_manifest_identical": true,
+    "first_two_smoke_images_preserved": true,
+    "pilot_id_overlap": 0,
+    "pilot_sha256_overlap": 0,
+    "byte_equivalence_to_original_coco": "not_independently_established"
+  },
+  "main_translations": {
+    "requires_review": 600,
+    "approved": 0,
+    "offline_replay_identical": true,
+    "risk_notes_present": true
+  },
+  "pilot": {
+    "qa_pending": 30,
+    "translation_approved": 30,
+    "original_manifest_unchanged": true,
+    "new_human_review_json_found": false
+  },
+  "main_gate": {
+    "ready": false,
+    "codes": {
+      "MAIN_QA_NOT_APPROVED": 600
+    },
+    "other_issues": 0
+  },
+  "new_model_inferences": 0,
+  "v8_artifacts_and_recorded_sources_preserved": true,
+  "v7_evidence_and_core_sources_preserved": true,
+  "old_raw_hashes": {
+    "qwen": "4e4f911296c4baf79df1f27e91c6b23ad39f51f9beae46fc625a847838a9eb25",
+    "gemma": "b976b663ab017a5837728590884cd8928855b8d77a5eba170e7ca4ef4a136de1"
+  },
+  "local_links_checked": 161,
+  "missing_links": 0,
+  "git_diff_check_passed": true,
+  "visual_qa": "v8 browser QA remains unverified; no Computer Use attempted/bypassed in this resume",
+  "outputs_sha256": {
+    "reports/stage1/v9/completion.md": "eeaa5e5833b2f93983b18ee50fc74c21d453d4ff0ec40dc6f93523c1e7a667b4",
+    "reports/stage1/v9/image_source_checks.json": "cba3439061484e300409cdea338a49028ca2f5ee244104743630d535d94e81a1",
+    "reports/stage1/v9/main_selection_v1.json": "aed9a6b7a4100bb233855e00ba06a53a50e18e9f7cb04d6cbf45dd06c2c3b43c",
+    "reports/stage1/v9/readiness.json": "9449302d17846c199651f673a40564231fda63a5e95b8d18b5cd9e646950a667",
+    "reports/stage1/v9/repope_images_complete.json": "4acf3d844791ab29c5d8a059c7a5950c823fd5e3215a8e144e71c3c965a2b7f7",
+    "reports/stage1/v9/repope_image_smoke.json": "f58b64d49f4728ef128c3f89d2da1e3275cd62b1a807b8fb7464372c6ecfd0a7",
+    "reports/stage1/v9/repope_translations_complete.json": "1018eef60905c38ad0080ed49c799700b3ee113b61b9ce01a5a6527ea7209b01",
+    "reports/stage1/v9/repope_translation_proposals.json": "06f1b39df692b0bbff8740acb8f82fcd5ddd168f30119171bfa988dd75ebe9a5"
+  },
+  "new_source_sha256": {
+    "src/vlmbench/main_images.py": "75d735d7573b614498ec334f966c68af1489e76c58b8c3844d362b8180ff6cae",
+    "src/vlmbench/task_sampling.py": "d1c14f4552e808ab552c96dcf6df1ce3b3aea7f21f84492cf17e33a7d7061fca",
+    "src/vlmbench/main_translations.py": "56d036b82b5bc540a8347178242f4270ecf4c3fe3a59754640f1672d6655833d",
+    "scripts/prepare_main_selection.py": "1555dfcb3ef89c10ccd02c7b0ccf6cc5de80507710dbd0477999167335252e7d",
+    "scripts/prepare_repope_images.py": "1a256b0e95780c94227ba9f135ef873541fb853a78b7987569cf643095247819",
+    "scripts/prepare_repope_translations.py": "a8fa923ff11579dc29164533a53ab21b0236e2c0adec194a249ca58640464a34",
+    "configs/main_preparation_v3.yaml": "e613d6d293e10fa8643292a13ad641fcc3adb21d79235b7dcd630db5cbf65c9b",
+    "data/dictionaries/main_object_vi_proposals_v1.json": "967ecb333adfdceac553b9ad1ed8188c60d17b43a8fa9a379377a72d54905fe0"
+  }
+}

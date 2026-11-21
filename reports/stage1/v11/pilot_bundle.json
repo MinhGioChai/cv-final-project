@@ -1,0 +1,19 @@
+{
+  "output": "exports/pilot_team_v1.zip",
+  "bytes": 2526785,
+  "sha256": "11474aa05ff8945850886f3f830d7d277b1bc6210513891ca6f8aea1579995ee",
+  "n_rows": 30,
+  "n_images": 30,
+  "files": 377,
+  "excludes": [
+    ".git",
+    ".env",
+    "HF tokens",
+    "virtual environments",
+    "model weights",
+    "raw metadata caches",
+    "private results/ checkpoints"
+  ],
+  "includes_public_pilot_snapshots": true,
+  "scope": "current team pilot handoff, no new inference"
+}

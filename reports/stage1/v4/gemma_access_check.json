@@ -1,0 +1,5 @@
+{
+  "model": "google/gemma-3-4b-it",
+  "anonymous_config_status": 401,
+  "accessible_without_token": false
+}
