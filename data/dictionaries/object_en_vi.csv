@@ -1,0 +1,20 @@
+object_en,object_vi,classifier_vi,status,reviewer_id,reviewed_at,notes
+bicycle,xe đạp,chiếc,pending,,,Thêm từ chỉ loại theo phản hồi người dùng
+person,người,,pending,,,Dùng người nào; không thêm cái trước người
+vase,bình hoa,cái,pending,,,Thêm từ chỉ loại theo phản hồi người dùng
+bed,giường,chiếc,pending,,,Thêm từ chỉ loại theo phản hồi người dùng
+dining table,bàn ăn,cái,pending,,,Thêm từ chỉ loại theo phản hồi người dùng
+bowl,bát,cái,pending,,,Người dùng đề xuất cách nói có cái bát nào không
+fire hydrant,trụ cứu hỏa,cái,pending,,,Bản sửa với từ chỉ loại chờ review
+couch,ghế sofa,chiếc,pending,,,Thêm từ chỉ loại theo phản hồi người dùng
+boat,thuyền,con,pending,,,Dùng con thuyền theo cách diễn đạt tự nhiên
+handbag,túi xách,chiếc,pending,,,Thêm từ chỉ loại theo phản hồi người dùng
+backpack,ba lô,chiếc,pending,,,Đối tượng mới trong pilot mở rộng
+bus,xe buýt,chiếc,pending,,,Đối tượng mới trong pilot mở rộng
+car,ô tô,chiếc,pending,,,Đối tượng mới trong pilot mở rộng
+cell phone,điện thoại di động,chiếc,pending,,,Đối tượng mới trong pilot mở rộng
+cup,cốc,cái,pending,,,Đối tượng mới trong pilot mở rộng
+dog,chó,con,pending,,,Đối tượng mới trong pilot mở rộng
+orange,cam,quả,pending,,,Đối tượng mới trong pilot mở rộng
+remote,điều khiển từ xa,cái,pending,,,Đối tượng mới trong pilot mở rộng
+teddy bear,gấu bông,con,pending,,,Đối tượng mới trong pilot mở rộng

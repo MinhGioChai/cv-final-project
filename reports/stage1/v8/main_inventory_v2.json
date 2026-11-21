@@ -1,0 +1,409 @@
+{
+  "schema_version": "main_inventory_v1",
+  "frozen": false,
+  "main_ready": false,
+  "scope": "metadata feasibility only; not a sampled/materialized/QA-approved main manifest",
+  "proposal_sha256": "56c78042b04a9e9a7db3289ef65a0856a8f71c8c61e399fb9edf7b07f65eaf7f",
+  "source_receipt_sha256": "7ef803f13e3f6db00ea2b73458438d8f4e3acf0d4ab26f08042a39c7a432af4c",
+  "pilot_registry_sha256": "02f9deadc3e2670e5de2ec8b27ebf6516a7105b72728e25bd024693d6ac8422f",
+  "pilot_images_excluded": 30,
+  "datasets": {
+    "repope": {
+      "before_exclusions": {
+        "rows": 8185,
+        "unique_image_refs": 500,
+        "max_rows_per_image": 18,
+        "label_counts": {
+          "yes": 3539,
+          "no": 4646
+        },
+        "categories": {
+          "adversarial": 2684,
+          "popular": 2727,
+          "random": 2774
+        },
+        "duplicate_image_question_label_rows": 3406,
+        "duplicate_within_category_rows": 0
+      },
+      "after_exclusions": {
+        "rows": 7680,
+        "unique_image_refs": 470,
+        "max_rows_per_image": 18,
+        "label_counts": {
+          "yes": 3315,
+          "no": 4365
+        },
+        "categories": {
+          "adversarial": 2522,
+          "popular": 2557,
+          "random": 2601
+        },
+        "duplicate_image_question_label_rows": 3193,
+        "duplicate_within_category_rows": 0
+      },
+      "pilot_rows_excluded_by_image_id": 505,
+      "frame_path": "data/raw/main_metadata_v1/candidate_frames/repope.jsonl",
+      "frame_sha256": "416760f6888398223caaac0ee5610995e9c4c04a837b382c792ceb9e567c2a55",
+      "target_rows_proposed": 600,
+      "source_split": "annotations"
+    },
+    "vsr": {
+      "before_exclusions": {
+        "rows": 2195,
+        "unique_image_refs": 1874,
+        "max_rows_per_image": 5,
+        "label_counts": {
+          "yes": 1181,
+          "no": 1014
+        },
+        "categories": {
+          "above": 65,
+          "across": 3,
+          "across from": 12,
+          "adjacent to": 12,
+          "against": 6,
+          "ahead of": 8,
+          "along": 2,
+          "alongside": 9,
+          "around": 1,
+          "at": 1,
+          "at the back of": 22,
+          "at the edge of": 37,
+          "at the left side of": 96,
+          "at the right side of": 80,
+          "at the side of": 8,
+          "attached to": 11,
+          "away from": 35,
+          "behind": 150,
+          "below": 64,
+          "beneath": 53,
+          "beside": 37,
+          "beyond": 5,
+          "by": 15,
+          "close to": 20,
+          "connected to": 5,
+          "consists of": 4,
+          "contains": 66,
+          "detached from": 4,
+          "down from": 5,
+          "enclosed by": 2,
+          "facing": 64,
+          "facing away from": 39,
+          "far away from": 50,
+          "far from": 25,
+          "has as a part": 8,
+          "in": 60,
+          "in front of": 142,
+          "in the middle of": 19,
+          "inside": 39,
+          "into": 9,
+          "left of": 40,
+          "near": 23,
+          "next to": 60,
+          "off": 14,
+          "on": 117,
+          "on top of": 105,
+          "opposite to": 9,
+          "out of": 1,
+          "outside": 9,
+          "over": 25,
+          "parallel to": 22,
+          "part of": 14,
+          "perpendicular to": 12,
+          "right of": 29,
+          "surrounding": 20,
+          "through": 1,
+          "touching": 273,
+          "toward": 6,
+          "under": 114,
+          "with": 4,
+          "within": 4
+        },
+        "duplicate_image_question_label_rows": 0,
+        "duplicate_within_category_rows": 0
+      },
+      "after_exclusions": {
+        "rows": 2194,
+        "unique_image_refs": 1873,
+        "max_rows_per_image": 5,
+        "label_counts": {
+          "yes": 1181,
+          "no": 1013
+        },
+        "categories": {
+          "above": 65,
+          "across": 3,
+          "across from": 12,
+          "adjacent to": 12,
+          "against": 6,
+          "ahead of": 8,
+          "along": 2,
+          "alongside": 9,
+          "around": 1,
+          "at": 1,
+          "at the back of": 22,
+          "at the edge of": 37,
+          "at the left side of": 96,
+          "at the right side of": 80,
+          "at the side of": 8,
+          "attached to": 11,
+          "away from": 35,
+          "behind": 150,
+          "below": 64,
+          "beneath": 53,
+          "beside": 37,
+          "beyond": 5,
+          "by": 15,
+          "close to": 20,
+          "connected to": 5,
+          "consists of": 4,
+          "contains": 66,
+          "detached from": 4,
+          "down from": 5,
+          "enclosed by": 2,
+          "facing": 64,
+          "facing away from": 38,
+          "far away from": 50,
+          "far from": 25,
+          "has as a part": 8,
+          "in": 60,
+          "in front of": 142,
+          "in the middle of": 19,
+          "inside": 39,
+          "into": 9,
+          "left of": 40,
+          "near": 23,
+          "next to": 60,
+          "off": 14,
+          "on": 117,
+          "on top of": 105,
+          "opposite to": 9,
+          "out of": 1,
+          "outside": 9,
+          "over": 25,
+          "parallel to": 22,
+          "part of": 14,
+          "perpendicular to": 12,
+          "right of": 29,
+          "surrounding": 20,
+          "through": 1,
+          "touching": 273,
+          "toward": 6,
+          "under": 114,
+          "with": 4,
+          "within": 4
+        },
+        "duplicate_image_question_label_rows": 0,
+        "duplicate_within_category_rows": 0
+      },
+      "pilot_rows_excluded_by_image_id": 1,
+      "frame_path": "data/raw/main_metadata_v1/candidate_frames/vsr.jsonl",
+      "frame_sha256": "bc04f42881b55fd29b56a51616a8afa89d3d2a3895d8640e4a75ea7a387b4557",
+      "target_rows_proposed": 120,
+      "source_split": "random/test"
+    },
+    "tallyqa": {
+      "before_exclusions": {
+        "rows": 38589,
+        "unique_image_refs": 26451,
+        "max_rows_per_image": 10,
+        "label_counts": {
+          "2": 8115,
+          "1": 19161,
+          "4": 1554,
+          "9": 115,
+          "3": 2935,
+          "6": 452,
+          "8": 204,
+          "5": 630,
+          "11": 42,
+          "0": 4972,
+          "7": 222,
+          "10": 81,
+          "12": 58,
+          "13": 20,
+          "15": 13,
+          "14": 15
+        },
+        "categories": {
+          "complex": 15598,
+          "simple": 22991
+        },
+        "duplicate_image_question_label_rows": 0,
+        "duplicate_within_category_rows": 0
+      },
+      "after_exclusions": {
+        "rows": 38589,
+        "unique_image_refs": 26451,
+        "max_rows_per_image": 10,
+        "label_counts": {
+          "2": 8115,
+          "1": 19161,
+          "4": 1554,
+          "9": 115,
+          "3": 2935,
+          "6": 452,
+          "8": 204,
+          "5": 630,
+          "11": 42,
+          "0": 4972,
+          "7": 222,
+          "10": 81,
+          "12": 58,
+          "13": 20,
+          "15": 13,
+          "14": 15
+        },
+        "categories": {
+          "complex": 15598,
+          "simple": 22991
+        },
+        "duplicate_image_question_label_rows": 0,
+        "duplicate_within_category_rows": 0
+      },
+      "pilot_rows_excluded_by_image_id": 0,
+      "frame_path": "data/raw/main_metadata_v1/candidate_frames/tallyqa.jsonl",
+      "frame_sha256": "f52ebe7749e38d0c275616a4e9e0857aebac1f351794a96364d0c8119de7c58a",
+      "target_rows_proposed": 120,
+      "source_split": "test"
+    },
+    "oxford_pet": {
+      "before_exclusions": {
+        "rows": 799,
+        "unique_image_refs": 799,
+        "max_rows_per_image": 1,
+        "label_counts": {
+          "A": 100,
+          "B": 100,
+          "C": 100,
+          "D": 100,
+          "E": 99,
+          "F": 100,
+          "G": 100,
+          "H": 100
+        },
+        "categories": {
+          "american_bulldog": 100,
+          "american_pit_bull_terrier": 100,
+          "basset_hound": 100,
+          "beagle": 100,
+          "boxer": 99,
+          "chihuahua": 100,
+          "english_cocker_spaniel": 100,
+          "english_setter": 100
+        },
+        "duplicate_image_question_label_rows": 0,
+        "duplicate_within_category_rows": 0
+      },
+      "after_exclusions": {
+        "rows": 799,
+        "unique_image_refs": 799,
+        "max_rows_per_image": 1,
+        "label_counts": {
+          "A": 100,
+          "B": 100,
+          "C": 100,
+          "D": 100,
+          "E": 99,
+          "F": 100,
+          "G": 100,
+          "H": 100
+        },
+        "categories": {
+          "american_bulldog": 100,
+          "american_pit_bull_terrier": 100,
+          "basset_hound": 100,
+          "beagle": 100,
+          "boxer": 99,
+          "chihuahua": 100,
+          "english_cocker_spaniel": 100,
+          "english_setter": 100
+        },
+        "duplicate_image_question_label_rows": 0,
+        "duplicate_within_category_rows": 0
+      },
+      "pilot_rows_excluded_by_image_id": 0,
+      "frame_path": "data/raw/main_metadata_v1/candidate_frames/oxford_pet.jsonl",
+      "frame_sha256": "826757de1417e6fb0180ae3a07252db72fc596d9dfb6fadba24ed7229ec9ae4b",
+      "target_rows_proposed": 160,
+      "source_split": "test"
+    }
+  },
+  "repope_image_cap_feasibility": {
+    "1": {
+      "status": "infeasible_for_this_sampler",
+      "image_cap": 1,
+      "image_capacity_upper_bound": 470,
+      "target": 600,
+      "failed_stratum": "popular/no"
+    },
+    "2": {
+      "status": "feasible_for_this_seed_and_greedy_sampler",
+      "image_cap": 2,
+      "selected": {
+        "n_rows": 600,
+        "n_unique_images": 379,
+        "rows_per_image": {
+          "median": 2.0,
+          "max": 2
+        },
+        "strata": {
+          "adversarial/no": 100,
+          "adversarial/yes": 100,
+          "popular/no": 100,
+          "popular/yes": 100,
+          "random/no": 100,
+          "random/yes": 100
+        }
+      },
+      "quotas": {
+        "random/yes": 100,
+        "random/no": 100,
+        "popular/yes": 100,
+        "popular/no": 100,
+        "adversarial/yes": 100,
+        "adversarial/no": 100
+      },
+      "selected_source_ids_sha256": "dec8fdf9974918d331b1e4c9fc269872aa5011e3a4907fad40b3fa80d4086e76",
+      "selected_content_summary": {
+        "rows": 600,
+        "unique_image_refs": 379,
+        "max_rows_per_image": 2,
+        "label_counts": {
+          "no": 300,
+          "yes": 300
+        },
+        "categories": {
+          "adversarial": 200,
+          "popular": 200,
+          "random": 200
+        },
+        "duplicate_image_question_label_rows": 21,
+        "duplicate_within_category_rows": 0
+      }
+    }
+  },
+  "pet_class_map_proposed": {
+    "american_bulldog": "A",
+    "american_pit_bull_terrier": "B",
+    "basset_hound": "C",
+    "beagle": "D",
+    "boxer": "E",
+    "chihuahua": "F",
+    "english_cocker_spaniel": "G",
+    "english_setter": "H"
+  },
+  "pet_official_test_rows": 3669,
+  "pet_official_trainval_rows": 3680,
+  "pet_test_trainval_overlap": 0,
+  "vsr_zeroshot_rows_observed": 1222,
+  "outstanding": [
+    "Group confirms RePOPE image cap, VSR split and eight Pet classes before sampling/freeze",
+    "Resolve/download only selected image references; verify SHA256 against pilot exclusions too",
+    "Human image/label QA and EN-VI translation review",
+    "Baseline metadata and main runner/freeze"
+  ],
+  "human_approvals_created": 0,
+  "images_materialized": 0,
+  "inferences_run": 0
+}

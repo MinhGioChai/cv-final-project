@@ -1,0 +1,11 @@
+object_en,object_vi,status,reviewer_id,reviewed_at,notes
+bicycle,xe đạp,pending,,,Bản nháp chờ người duyệt
+person,người,pending,,,Bản nháp chờ người duyệt
+vase,bình hoa,pending,,,Bản nháp chờ người duyệt
+bed,giường,pending,,,Bản nháp chờ người duyệt
+dining table,bàn ăn,pending,,,Bản nháp chờ người duyệt
+bowl,bát,pending,,,Cần thống nhất bát hoặc chén theo hướng dẫn dịch
+fire hydrant,trụ cứu hỏa,pending,,,Bản nháp chờ người duyệt
+couch,ghế sofa,pending,,,Bản nháp chờ người duyệt
+boat,thuyền,pending,,,Bản nháp chờ người duyệt
+handbag,túi xách,pending,,,Bản nháp chờ người duyệt

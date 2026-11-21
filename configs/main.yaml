@@ -1,0 +1,13 @@
+# Design only. Stage 2 preparation/inference is not implemented or authorized here.
+experiment_id: v42_main_NOT_FROZEN
+seed: 42
+require_approved: true
+targets:
+  repope: 600
+  vsr: 120
+  tallyqa: 120
+  oxford_pet: 160
+languages: [en, vi]
+models: [qwen, gemma]
+expected_inferences: 4000
+frozen: false

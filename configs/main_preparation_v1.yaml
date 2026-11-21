@@ -1,0 +1,18 @@
+# Proposal only. Neither this file nor emitted candidates authorize inference/freeze.
+frozen: false
+seed: 42
+vsr_variant: random
+targets: {repope: 600, vsr: 120, tallyqa: 120, oxford_pet: 160}
+pet_breeds_proposed:
+  - american_bulldog
+  - american_pit_bull_terrier
+  - basset_hound
+  - beagle
+  - boxer
+  - chihuahua
+  - english_cocker_spaniel
+  - english_setter
+proposal_notes:
+  - Eight dog breeds in alphabetical source-name order; needs group confirmation before freeze.
+  - RePOPE target unchanged; assess image caps 1 and 2 rather than silently relaxing.
+  - VSR random/test proposed; keep zeroshot inventory separate.

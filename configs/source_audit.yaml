@@ -1,0 +1,4 @@
+repository: YanNeu/RePOPE
+revision: bcf22e5690d587cce34e1728af3efdcfaf747d29
+cache_dir: data/raw/repope/upstream/bcf22e5690d587cce34e1728af3efdcfaf747d29
+max_download_mb: 5

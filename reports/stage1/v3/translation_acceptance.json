@@ -1,0 +1,10 @@
+{
+  "source": "project_user_message_in_current_conversation",
+  "user_statement": "Còn về phần bản dịch mình thấy ổn rồi nhé",
+  "scope": "Current 30-row Vietnamese pilot translations, classifier template v2",
+  "accepted_draft_manifest_sha256": "4e10d46adfbb0e3c1753c8b398993f39d050e43a58502ac7dca7256b9f89d55f",
+  "language_accepted": true,
+  "image_label_qa_accepted": false,
+  "second_reviewer_claimed": false,
+  "application": "Record actual user language acceptance for bounded pilot runs; keep image/label QA pending and final benchmark gates separate. No fictional CSV reviewer or exact human review time is created."
+}

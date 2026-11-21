@@ -1,0 +1,155 @@
+{
+  "purpose": "Exclude every image ever used in pilot/preflight from final",
+  "images": [
+    {
+      "image_namespace": "coco",
+      "image_id": "000000017708",
+      "image_sha256": "171ea0096a941e25347138ca0ec6185751aa12277bd119f439a4c8d9605abfd6"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000054025",
+      "image_sha256": "25b897d0da9f1f4bf44a975021aaf77e0a8907ac24b5807005e3addc7cc4f4cd"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000060213",
+      "image_sha256": "b0c36baba1e713c34b817b6e4eaba3f9738dcc45ca04b57f293bc33345709954"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000094944",
+      "image_sha256": "1f43a83b8b23e98fd0962502cd03a1628f55c4e2d4af8aa253942509f51be8c1"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000105732",
+      "image_sha256": "6a4fb2558460002bbac03574b12d6f5dc3f12169ef41987fd66dfbc2e94f99fe"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000205729",
+      "image_sha256": "f30243c73bc2a2c9e7e4d654d244176742e9906ad6eb857dc37a194fb958f082"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000209755",
+      "image_sha256": "3660151b108113212a69061144a74d0138c004db704ac12591262d5d30579206"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000210789",
+      "image_sha256": "2702ddb24e657fa3eaeddc4e1df3e91c8b1a89d0ceb5d56680f91ffdf43742ed"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000217397",
+      "image_sha256": "2c3a15b3299b022013a5a0cc08cdf2e3a4539610e90cdaf47803f4860ff1b721"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000236865",
+      "image_sha256": "814ec8b337f914812f58365d0bda1999e4ba8587e6cb8c619938584e4ddb6249"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000237767",
+      "image_sha256": "9cacaaff07b216f6d4799ec52af06108ec27377de5fba2fafd456eb676053ebd"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000265719",
+      "image_sha256": "eaacf7066eb8727834da32f9567b0c06c55ad18aa68f0d24284d417a8a4573a8"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000283412",
+      "image_sha256": "a49bbddc841741de877965b14fc98c4eae3e1c68f8694ef8ff0ec7b202f7694c"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000287305",
+      "image_sha256": "44510f7683b76fccd434188f136480aa21b365f8a87ed82dc9b8965dde9e6590"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000300368",
+      "image_sha256": "9e7aa1e50425a7a31cbf9262399ec811d3d81921308b1f307a3f2c6e1758599b"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000310196",
+      "image_sha256": "ec35fad9251d52904cc5d8c8397bb30ea92edc7a35e698c415220c34e5d0ecf2"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000329717",
+      "image_sha256": "a60092d2606d5af338deb3ec12b7f50f5bb6e8dccd10b37c3425742074fca886"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000353180",
+      "image_sha256": "f86603fcc06aa6fae2e5f3f94298977691fd5b81e38d6d0ed905c663bb29cc14"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000387098",
+      "image_sha256": "1a573ae0ea494c24e7f4bedb6d5c531797d8c726e11ea5ea3dde5b6d2d394dde"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000397705",
+      "image_sha256": "23b41dd5ba637ed9e82619afbef1dee153e489f3cba2f4d77523219cac9e016d"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000429109",
+      "image_sha256": "4f5b25f4fd26e7d405d87b412e62743ff525b2a7cb7b7944d5afeef3d374e941"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000437347",
+      "image_sha256": "e220efd4fa1b35064ae88257b6ab0045e23f6c6a2be01f96888ba3be125ca714"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000456178",
+      "image_sha256": "2cd184f0d2eeeb61360d58e987c9b92d2a5d8417debff6451d6042f1eb06fd09"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000458338",
+      "image_sha256": "951a5538d6f2ef30e160d1a9d91c1752bbc7d0129b67513ba09a395f18c6c833"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000461331",
+      "image_sha256": "35a6b06513b666950360593ea15bc5a93609cba65c5cac1e5c32962118a0f33c"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000485564",
+      "image_sha256": "9da5a360dd067e940966211d4cb8d2ea4aeda22ee9d0745c044fa11d6186d01b"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000515904",
+      "image_sha256": "cf0a8b8d1e1751e31386dcd7505f9c7703d876c185838a19ade1783f72c3c468"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000520524",
+      "image_sha256": "b7ef4bfbf922bce1dd9db22f50c6c8fb7ec8b3a83247e6186795d98fcf193470"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000534121",
+      "image_sha256": "b2e177944dbe701d45928c1627dd8ede133690d3eab3dde796071e00a06dc16b"
+    },
+    {
+      "image_namespace": "coco",
+      "image_id": "000000572075",
+      "image_sha256": "f780b0d1226633cee80a8174aefcfc04b59febe01a3f4ad576e85dfadab89e22"
+    }
+  ]
+}

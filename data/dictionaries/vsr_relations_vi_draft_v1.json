@@ -1,0 +1,26 @@
+{
+  "status": "assistant_draft_requires_human_review",
+  "extra_nouns": {"cow":"con bò", "bear":"con gấu", "mouse":"con chuột", "apple":"quả táo", "scissors":"cái kéo"},
+  "relations": {
+    "above":"ở phía trên", "across":"nằm ngang qua", "across from":"ở phía đối diện với",
+    "adjacent to":"ở sát cạnh", "against":"tựa vào", "ahead of":"ở phía trước",
+    "along":"ở dọc theo", "alongside":"ở bên cạnh", "around":"ở quanh", "at":"ở chỗ",
+    "at the back of":"ở phía sau", "at the edge of":"ở mép", "at the left side of":"ở bên trái",
+    "at the right side of":"ở bên phải", "at the side of":"ở bên cạnh", "attached to":"gắn vào",
+    "away from":"ở cách xa", "behind":"ở phía sau", "below":"ở phía dưới", "beneath":"ở bên dưới",
+    "beside":"ở bên cạnh", "beyond":"ở xa hơn về phía bên kia", "by":"ở cạnh", "close to":"ở gần",
+    "connected to":"nối với", "consists of":"bao gồm", "contains":"chứa", "detached from":"tách rời khỏi",
+    "down from":"ở phía dưới so với", "enclosed by":"được bao quanh bởi", "facing":"hướng mặt về phía",
+    "facing away from":"quay mặt ra xa", "far away from":"ở cách xa", "far from":"ở xa",
+    "has as a part":"có một phần là", "in":"ở trong", "in front of":"ở phía trước",
+    "in the middle of":"ở giữa", "inside":"ở bên trong", "into":"ở vào bên trong", "left of":"ở bên trái",
+    "near":"ở gần", "next to":"ở ngay cạnh", "off":"ở ngoài, không ở trên", "on":"ở trên",
+    "on top of":"ở trên cùng của", "opposite to":"ở đối diện với", "out of":"ở ngoài",
+    "outside":"ở bên ngoài", "over":"ở phía trên", "parallel to":"song song với", "part of":"là một phần của",
+    "perpendicular to":"vuông góc với", "right of":"ở bên phải", "surrounding":"bao quanh",
+    "through":"xuyên qua", "touching":"chạm vào", "toward":"hướng về phía", "under":"ở dưới",
+    "with":"ở cùng với", "within":"ở bên trong phạm vi của"
+  },
+  "risk_relations": ["across", "against", "along", "at", "beyond", "down from", "into", "off", "on", "on top of", "out of", "over", "within", "has as a part", "consists of"],
+  "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp."
+}

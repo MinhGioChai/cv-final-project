@@ -1,0 +1,18 @@
+# User confirmed 600 RePOPE rows and cap 2 on 2026-11-19; other choices remain proposals.
+frozen: false
+seed: 42
+vsr_variant: random
+targets: {repope: 600, vsr: 120, tallyqa: 120, oxford_pet: 160}
+repope_max_rows_per_image: 2
+repope_image_cap_decision: user_confirmed_2026_11_19
+repope_avoid_exact_content_duplicates: true
+repope_content_policy_status: proposed_before_freeze
+pet_breeds_proposed:
+  - american_bulldog
+  - american_pit_bull_terrier
+  - basset_hound
+  - beagle
+  - boxer
+  - chihuahua
+  - english_cocker_spaniel
+  - english_setter

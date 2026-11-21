@@ -1,0 +1,43 @@
+{
+  "scope": "unfrozen_metadata_selection_not_main_manifest",
+  "seed": 42,
+  "rows": 600,
+  "unique_image_refs": 383,
+  "max_rows_per_image": 2,
+  "content_duplicates": 0,
+  "unique_content_policy": true,
+  "quotas": {
+    "random/yes": 100,
+    "random/no": 100,
+    "popular/yes": 100,
+    "popular/no": 100,
+    "adversarial/yes": 100,
+    "adversarial/no": 100
+  },
+  "strata": {
+    "adversarial/no": 100,
+    "adversarial/yes": 100,
+    "popular/yes": 100,
+    "popular/no": 100,
+    "random/no": 100,
+    "random/yes": 100
+  },
+  "algorithm": "stable-source-ID ordering, seeded bucket shuffles, scarcity-first greedy, global image cap and optional content uniqueness",
+  "config_sha256": "62b889e0283d85f81d4b1955d5789952f125a25e76a4b285dd9c81cbc6212c15",
+  "source_frame_sha256": "416760f6888398223caaac0ee5610995e9c4c04a837b382c792ceb9e567c2a55",
+  "pilot_registry_sha256": "02f9deadc3e2670e5de2ec8b27ebf6516a7105b72728e25bd024693d6ac8422f",
+  "user_confirmed_image_cap": 2,
+  "content_policy_status": "proposed_before_freeze",
+  "frozen": false,
+  "main_ready": false,
+  "source_field_changes": 0,
+  "images_materialized": 0,
+  "human_approvals_created": 0,
+  "outstanding": [
+    "Image acquisition + hash exclusions",
+    "Human image/label QA and translations",
+    "Review exact-content deduplication policy before freeze",
+    "Baseline metadata/runner/freeze"
+  ],
+  "selection_sha256": "025e2376aa2d8311f33dafbe5e3963c5433c4385d38a8adcef403b9fd4a20b94"
+}

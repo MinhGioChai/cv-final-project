@@ -1,0 +1,18 @@
+# User delegated the remaining preparation choices on 2026-11-19. Not a run approval.
+frozen: false
+seed: 42
+decision_status: user_delegated_preparation_2026_11_19
+vsr_variant: random
+targets: {repope: 600, vsr: 120, tallyqa: 120, oxford_pet: 160}
+repope_max_rows_per_image: 2
+repope_selection: data/main/preparation_v1/repope_candidates.jsonl
+remaining_image_cap: 1
+pet_breeds:
+  - american_bulldog
+  - american_pit_bull_terrier
+  - basset_hound
+  - beagle
+  - boxer
+  - chihuahua
+  - english_cocker_spaniel
+  - english_setter

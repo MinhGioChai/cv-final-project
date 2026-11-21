@@ -1,0 +1,15 @@
+# Stage 0: bounded engineering sample, NOT a QA-approved research pilot.
+experiment_id: v42_stage0_preflight
+dataset: repope
+source_revision: 032906d23542254438e3bfd6ace379902b0b6847
+source_split: train
+pool_rows_per_page: 100
+pool_page_offsets: [0, 3000, 6000]
+sample_size: 10
+seed: 42
+max_rows_per_image: 1
+max_download_mb: 20
+cache_dir: data/raw/repope/stage0
+manifest: data/pilot/pilot_manifest.csv
+report_dir: reports/stage0
+require_approved: false

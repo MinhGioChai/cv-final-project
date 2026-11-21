@@ -1,0 +1,1088 @@
+{
+  "scope": "assistant_draft_not_human_review",
+  "selection_sha256": "e507751701739160d43beb6de3eff6271d20216910a4c39efad627ba4d4697e0",
+  "glossary_sha256": "e0b72babd4be2755cdfa5300b56ca30a6db74817ac29252840544f7c51e14ed0",
+  "rows": [
+    {
+      "sample_id": "tallyqa_024dd0a70f7aa3eb",
+      "question_en": "How many babies are eating food?",
+      "question_vi": "Có bao nhiêu em bé đang ăn thức ăn?",
+      "source_record_sha256": "183ab29986b529ef8470dd3446f9370fde5a3933f7550f917f542791ec61c566",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_0469e2937d23aafd",
+      "question_en": "How many dogs are in the photo?",
+      "question_vi": "Có bao nhiêu con chó trong ảnh?",
+      "source_record_sha256": "0f1b8206f7cf9fca61ade159f79c24c4e8af9b803b113c70bf6744d9495b0cd2",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_05b652c307db907b",
+      "question_en": "How many vents are there in the floor?",
+      "question_vi": "Có bao nhiêu lỗ thông gió trên sàn?",
+      "source_record_sha256": "c2f09d918cfe56f4d457755fbeca3f10f52bb7232a01f16ec9c4a8c08d4ed7f5",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_0703460aac975481",
+      "question_en": "How many people are drinking water near the flower?",
+      "question_vi": "Có bao nhiêu người đang uống nước gần bông hoa?",
+      "source_record_sha256": "457d232192c4d32e9def38a5529f7613457467380fd83c950c8f119de58b7dba",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_072339a05988095b",
+      "question_en": "How many toilets are in the picture?",
+      "question_vi": "Có bao nhiêu cái bồn cầu trong ảnh?",
+      "source_record_sha256": "3ff3a30f45582b693095d0e74bf8fa4ef6ebdff40c3c009acb3ff8d28f6027b9",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_074f3aef9772248b",
+      "question_en": "How many surfboards are there?",
+      "question_vi": "Có bao nhiêu chiếc ván lướt sóng?",
+      "source_record_sha256": "96c3d54518503c35e178ebac31e3a4c4ac984869bf3fe770bf020f217e011fde",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_0874c41d0432f5b1",
+      "question_en": "How many cats are there?",
+      "question_vi": "Có bao nhiêu con mèo?",
+      "source_record_sha256": "5e6d061f9bd6f42f03b419731c132ee1ea3cc39f25eb355074a75465251aa22f",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_0d5e41d32aa11b4a",
+      "question_en": "How many trunks are visible?",
+      "question_vi": "Có thể nhìn thấy bao nhiêu cái vòi?",
+      "source_record_sha256": "a101bf455539f7fc50b18ca63957b9d389df49f029eeee88273b04e9a8796871",
+      "translation_status": "requires_review",
+      "review_note": "trunks đa nghĩa: bản nháp đang dùng vòi; cần đối chiếu nghĩa với ảnh.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_13cc0809733bf658",
+      "question_en": "How many zebras are in the picture?",
+      "question_vi": "Có bao nhiêu con ngựa vằn trong ảnh?",
+      "source_record_sha256": "39fd257ee06412de41d37da0eadb156c7b26a2373670507d4636d9c7b4a40716",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_14d1acf082abafca",
+      "question_en": "How many red kites are there?",
+      "question_vi": "Có bao nhiêu con diều màu đỏ?",
+      "source_record_sha256": "d98b9bffa7860c2b013d181ca32f1d0a6c7ed45bf7715e0bc2db07c97c846806",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_18a514b89512e38e",
+      "question_en": "How many big bolders?",
+      "question_vi": "Có bao nhiêu tảng đá lớn?",
+      "source_record_sha256": "d58341d56273a9d0ee06e02bab6c59187b6d3afa7d8271e9bc56d14add96b2f7",
+      "translation_status": "requires_review",
+      "review_note": "Nguồn viết bolders; bản nháp diễn giải là boulders/tảng đá, cần xác nhận.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_1e11722869cbf5d9",
+      "question_en": "How many elephants are pictured?",
+      "question_vi": "Có bao nhiêu con voi trong ảnh?",
+      "source_record_sha256": "2a5e1a352c7a8a0e45a719e28b7a0c18f6060549d73a034e630b887697f75796",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_1f7a454cfb3f28dd",
+      "question_en": "How many birds are visible?",
+      "question_vi": "Có thể nhìn thấy bao nhiêu con chim?",
+      "source_record_sha256": "3880da6c2c457344b0c178a5a6f2fe6b06d1c72f83ad37b325c47954b62f7733",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_21b681860c28812b",
+      "question_en": "How many windows on this building are on its roof?",
+      "question_vi": "Có bao nhiêu cửa sổ của tòa nhà này nằm trên mái của nó?",
+      "source_record_sha256": "fc711a0be4e4e42fdb7df1e098adc3058784186cc3783d8d21e16c2d1b1646b9",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_22b4e9627239b1ef",
+      "question_en": "How many airplanes are falling down to the ground?",
+      "question_vi": "Có bao nhiêu chiếc máy bay đang rơi xuống mặt đất?",
+      "source_record_sha256": "ffdcf1a21b9b0ead1f322560c584945de77b0a5d33ef5bed1295ee6432cea922",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_25e698744365a08a",
+      "question_en": "How many giraffes are pictured?",
+      "question_vi": "Có bao nhiêu con hươu cao cổ trong ảnh?",
+      "source_record_sha256": "aabf3d9613059aef1e3b56b67e2530cc44d793dd5ee801b8fbe041c35113f51a",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_29e6129c7165b790",
+      "question_en": "How many flag poles are in the picture?",
+      "question_vi": "Có bao nhiêu cột cờ trong ảnh?",
+      "source_record_sha256": "27e6b0b72556e07cc7b91c169244489ad5d5d0f2fbd426b28459c0930649c9bc",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_2b897dbd9e796a19",
+      "question_en": "How many cats are in the photo?",
+      "question_vi": "Có bao nhiêu con mèo trong ảnh?",
+      "source_record_sha256": "b07f370d60bab7cfacd2bdd4b4188eeef54affd2ec4224ac7060e4bf32a44a64",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_2dc205f99fd91aa2",
+      "question_en": "How many levels is the bus?",
+      "question_vi": "Chiếc xe buýt có bao nhiêu tầng?",
+      "source_record_sha256": "4fc01bbc672272ba09d13dcaa9460b063197f41ab988c3f4e0d82641f3833895",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_2df1794ff46f6f17",
+      "question_en": "How many people are using a laptop computer?",
+      "question_vi": "Có bao nhiêu người đang sử dụng máy tính xách tay?",
+      "source_record_sha256": "c569a4569a7ba125974ce3f5d8205977fe213bd93bfcb30815d0c15a8279acd1",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_2f2f25607d058051",
+      "question_en": "How many traffic light with the visible lights are there in the image?",
+      "question_vi": "Có bao nhiêu đèn tín hiệu giao thông có phần đèn nhìn thấy được trong ảnh?",
+      "source_record_sha256": "d911a8718279fb8284c1bfb5cfbec5b207e134b1b389ae9a66e5508048272a6c",
+      "translation_status": "requires_review",
+      "review_note": "Giữ điều kiện visible lights; câu nguồn thiếu tự nhiên.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_301a0910d8b59ea5",
+      "question_en": "How many airplane in the sky near the flying man?",
+      "question_vi": "Có bao nhiêu chiếc máy bay trên bầu trời gần người đàn ông đang bay?",
+      "source_record_sha256": "7842564749dcebc704999613d38c9faf66145ca9e1ea8e041cb9110d41237fda",
+      "translation_status": "requires_review",
+      "review_note": "Giữ flying man theo nguồn, không sửa sự kiện vì có vẻ bất thường.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_303bd1d3509530c8",
+      "question_en": "How many burners on the white stove?",
+      "question_vi": "Có bao nhiêu bếp đốt trên chiếc bếp màu trắng?",
+      "source_record_sha256": "e44060c34ebd55e3bc48b308d094104daa0040df9f53e410500614ee79cd99f4",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_3235f2f1ef82e388",
+      "question_en": "How many women are wearing coats?",
+      "question_vi": "Có bao nhiêu phụ nữ đang mặc áo khoác?",
+      "source_record_sha256": "56c96df52b46ba9123c60c085918ee900b15cecdec11ff739f776d6a6c4294c8",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_32524a2a76333ae0",
+      "question_en": "How many people wearing hats are also riding horses?",
+      "question_vi": "Có bao nhiêu người vừa đội mũ vừa đang cưỡi ngựa?",
+      "source_record_sha256": "0c0ec353ee762c282244488daaf3bf3941056ca846646022caf751dc09d6ea25",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_32af442aa0ebcf86",
+      "question_en": "How many people are seen?",
+      "question_vi": "Có thể nhìn thấy bao nhiêu người?",
+      "source_record_sha256": "2372bc7abc7988f1e3fde55e54bc658083f096c24453e52d09f9bb931fad68c1",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_3392cd8a533f2c07",
+      "question_en": "How many wheels are on the skateboard?",
+      "question_vi": "Có bao nhiêu cái bánh xe trên chiếc ván trượt?",
+      "source_record_sha256": "bd61fab9f765a79af208fe0a5e7485afa43b729d03c0fed87ca956090b178abf",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_3569abfd5836ce65",
+      "question_en": "How many people are driving motors?",
+      "question_vi": "Có bao nhiêu người đang lái xe máy?",
+      "source_record_sha256": "1eebc29b6191ca47ab63989ba2b55e39c588dd6c8549fbe948527db19600c1b8",
+      "translation_status": "requires_review",
+      "review_note": "Nguồn motors được diễn giải là xe máy; cần kiểm tra.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_3994502472ec6a8e",
+      "question_en": "How many Words are on the man's shirt?",
+      "question_vi": "Có bao nhiêu từ trên áo của người đàn ông?",
+      "source_record_sha256": "29c59177a4e6350b0f638cc76830c33c2b8ee0ae9966932cdec95d88fff915de",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_4086e3b2868d5d5f",
+      "question_en": "How many chairs?",
+      "question_vi": "Có bao nhiêu chiếc ghế?",
+      "source_record_sha256": "1b8eb367900b6ac3b669992d4bb21c3da2b2f27b5c31a527413b6cc82bb8a82d",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_4095d94f17b204a4",
+      "question_en": "How many people are wearing glasses?",
+      "question_vi": "Có bao nhiêu người đang đeo kính?",
+      "source_record_sha256": "078e50d1af2d690343f48c08fca9ed371a1f769772d3cb15a4ccda1b06236576",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_42a884901d401663",
+      "question_en": "How many horses are visible?",
+      "question_vi": "Có thể nhìn thấy bao nhiêu con ngựa?",
+      "source_record_sha256": "a7a8a4d3c060cc4f42bdd7ad1f16a18dc4b1edc3ffdc055d966fcda3a0accd0f",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_43489ed7c2263ec9",
+      "question_en": "How many people are in the picture?",
+      "question_vi": "Có bao nhiêu người trong ảnh?",
+      "source_record_sha256": "d8fc953b9e5939243070715dd27fd77f29d0080395bb8cf5575208c9d0a7b5ad",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_43795618c271b55c",
+      "question_en": "How many signs are there?",
+      "question_vi": "Có bao nhiêu biển báo?",
+      "source_record_sha256": "e509cf9b15eae57752aa6094e64c8c2e914611929310b0e76117f8edf6d2e35b",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_473df8e8f0deb895",
+      "question_en": "How many cats are there?",
+      "question_vi": "Có bao nhiêu con mèo?",
+      "source_record_sha256": "73f9015c4a5895ee797414daeef89ad33c0dbd0946a031a2bf950bbb550b36c9",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_484654db47b5ea33",
+      "question_en": "How many people are not wearing a blue hat?",
+      "question_vi": "Có bao nhiêu người không đội mũ màu xanh dương?",
+      "source_record_sha256": "fe6ad4de39297364dd621385e8efc937defc72193ef49cc81527326a1a730d7c",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_4863b475857fedf2",
+      "question_en": "How many vehicles are to the right of the smart car?",
+      "question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+      "source_record_sha256": "594c0f905d2f623882ef523bd867d3cb6450ee3b81b36ea51c2cb51b23461fb0",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_4982fa401104527a",
+      "question_en": "How many people are either standing or sitting on a metal object attached to the ground?",
+      "question_vi": "Có bao nhiêu người đang đứng hoặc ngồi trên một vật bằng kim loại gắn với mặt đất?",
+      "source_record_sha256": "62f66b27c34b7b809dc8c2b97f76145848f2b5428ae75c260060564f9ab23b4b",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_4a05e70e08170e39",
+      "question_en": "How many people are riding a red motor bike?",
+      "question_vi": "Có bao nhiêu người đang đi xe máy màu đỏ?",
+      "source_record_sha256": "92d6c110a523e8b0f85ef8a9c9671d1d66c3566fe28e22ca18ff3c3a41a991da",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_4af4e882fa00f00f",
+      "question_en": "How many people are pictured?",
+      "question_vi": "Có bao nhiêu người trong ảnh?",
+      "source_record_sha256": "050a6a0d6263029549e26ce0225cf10abc3e8afd838fa58fd639971183d32d9b",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_4be49665abc078bd",
+      "question_en": "How many people in the picture?",
+      "question_vi": "Có bao nhiêu người trong ảnh?",
+      "source_record_sha256": "ca20d48fe3290b3509735f9edd4c6ccca0298820b0f8a5bfe8021951f5aa02b5",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_5001e524fcc289da",
+      "question_en": "How many people are using a toilet?",
+      "question_vi": "Có bao nhiêu người đang sử dụng bồn cầu?",
+      "source_record_sha256": "4e0a4ac40b1e4fb212dfe90034ed32887b6c95be3fde768fc9153b7f91684224",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_55b28ff5a65499b6",
+      "question_en": "How many baskets are on the shelves in the background?",
+      "question_vi": "Có bao nhiêu cái giỏ trên các kệ ở phía sau?",
+      "source_record_sha256": "0deb1d4f387c180b80f0b584faf8f5aad4bd973c9853777b8f88a01058f01326",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_5a8aa14b00e2852c",
+      "question_en": "How many wings does the plane have?",
+      "question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+      "source_record_sha256": "7dc0a9b634f107e1579b615944261a44fbcffaa1072712783948f317b37b81a8",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_5be3d1872f045a6f",
+      "question_en": "How many rings is the lady wearing that is holding the banana?",
+      "question_vi": "Người phụ nữ đang cầm quả chuối đeo bao nhiêu chiếc nhẫn?",
+      "source_record_sha256": "5ad264c0adc3416fc059dc1ad2bbb8669547f1df13882d4ccf073ac696fe795a",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_5fa670bb6035d8fb",
+      "question_en": "How many baskets have donuts with pink frosting in them?",
+      "question_vi": "Có bao nhiêu cái giỏ đựng bánh donut có lớp phủ đường màu hồng?",
+      "source_record_sha256": "ece980c8092a7fb1189938510c22a7eb736757273cf97a6087fe776f1f1af3bd",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_608e7833bd02bb52",
+      "question_en": "How many red fire trucks?",
+      "question_vi": "Có bao nhiêu chiếc xe cứu hỏa màu đỏ?",
+      "source_record_sha256": "10372533f23ddcb80c180d2138240fc61c2239ca49f02f0134097d6d48bc7ac1",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_650840f874a65470",
+      "question_en": "How many people are standing on the field?",
+      "question_vi": "Có bao nhiêu người đang đứng trên sân?",
+      "source_record_sha256": "fdf8eaec5fd44419e496a59d95f3b8cb1791562b88b1416efe510e35b8b2dd39",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_6533c8f274b10fa5",
+      "question_en": "How many blue and white fire hydrants do you see?",
+      "question_vi": "Bạn nhìn thấy bao nhiêu trụ cứu hỏa có màu xanh dương và trắng?",
+      "source_record_sha256": "b9715be4e506402ae5fe678f9be7de07633f8415fb1d2ed8ffdf321036c2a5a7",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_6be309ab72ca44ef",
+      "question_en": "How many plates are in the picture?",
+      "question_vi": "Có bao nhiêu cái đĩa trong ảnh?",
+      "source_record_sha256": "938e549a6a4d93de28ce87233037e0945ae4accc9a7760c563dce01d3a031f17",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_6d88fa13c5797bf3",
+      "question_en": "How many birds are there?",
+      "question_vi": "Có bao nhiêu con chim?",
+      "source_record_sha256": "577d0110c0741d143a731a22280d1de837b28c9332c169b4005104adb1c044d1",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_6f360e650f992f3d",
+      "question_en": "How many men are holding pizza?",
+      "question_vi": "Có bao nhiêu người đàn ông đang cầm bánh pizza?",
+      "source_record_sha256": "0616d6051f106099ea5562a36d54901a913e1f903221d3a2edeb3276b7f30127",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_701b01ff0c7c1012",
+      "question_en": "How many ox animals are shown?",
+      "question_vi": "Có bao nhiêu con bò đực trong ảnh?",
+      "source_record_sha256": "cd61ce9521dfbefa0abebe2a2ab1430b49aa8eea5ae318b4e5f43ef5038ac5e9",
+      "translation_status": "requires_review",
+      "review_note": "ox thường là bò đực thiến/bò kéo; kiểm tra thuật ngữ và đối tượng.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_73e637495df00a05",
+      "question_en": "How many busses are in this picture?",
+      "question_vi": "Có bao nhiêu chiếc xe buýt trong ảnh này?",
+      "source_record_sha256": "97a51f31d4c1b318720a6da2f5b2ae068105220ee97278c08de56458b5ba165c",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_76b3f8bf733c5a36",
+      "question_en": "How many zebras are there?",
+      "question_vi": "Có bao nhiêu con ngựa vằn?",
+      "source_record_sha256": "d6146c5b260729371132d20065a62a80a8e94797e5f69b7bd574011cf6098eaf",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_795eee81560d5215",
+      "question_en": "How many zebras are to the right of the buildings?",
+      "question_vi": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+      "source_record_sha256": "17e12e3584316b731421b4038b1d13bcf13e1d17f2850398195aa4b299712b53",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_7b6448563d50a9bc",
+      "question_en": "How many people are playing football?",
+      "question_vi": "Có bao nhiêu người đang chơi bóng đá?",
+      "source_record_sha256": "5ffa88a0b2dbf1e1b23a9fdfb041e83f3e49e4b3e2340f1a414c4aefacf71e5e",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_7bec68b8b9edefd7",
+      "question_en": "How many boys are on a phone?",
+      "question_vi": "Có bao nhiêu cậu bé đang dùng điện thoại?",
+      "source_record_sha256": "7617c82becbb2afbb1a60020512669954f14812fdbcd7251039394d3be8cf6d5",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_7f9f8a102f87995a",
+      "question_en": "How many planes are in photo?",
+      "question_vi": "Có bao nhiêu chiếc máy bay trong ảnh?",
+      "source_record_sha256": "709c384adf251e21bda05055e75cd768251ca2dd7e8c7f9e369a9e9ad1e1ca3e",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_808d829f48d79fb9",
+      "question_en": "How many man sit on the horse?",
+      "question_vi": "Có bao nhiêu người đàn ông ngồi trên con ngựa?",
+      "source_record_sha256": "0a61c2bbf9db36837a2c4adc2c8f2a44135e1004f1b92809eda28d7bc6b29f2f",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_810742fd1e6b5f98",
+      "question_en": "How many chocolate donuts are on the plate?",
+      "question_vi": "Có bao nhiêu cái bánh donut sô cô la trên đĩa?",
+      "source_record_sha256": "2f5d953086d67a1b3559b2218d354e7662337fd51fce7a03982316c565fe77c1",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_81808ea8c1d3e4cf",
+      "question_en": "How many women are on the couch?",
+      "question_vi": "Có bao nhiêu phụ nữ trên ghế sofa?",
+      "source_record_sha256": "0b660ce9c634db01a5fd8bfe014e62d58cd2c525428e4188aa90c8fea8c1191b",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_86c80aa53a4b7db6",
+      "question_en": "How many people are in the photo?",
+      "question_vi": "Có bao nhiêu người trong ảnh?",
+      "source_record_sha256": "304780f7eb483ad4f624b6725c1fdd40505636cdb18f807cf6ab97be12b759f9",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_8b55a19107b3fe20",
+      "question_en": "How many bags have a flower pattern on them?",
+      "question_vi": "Có bao nhiêu chiếc túi có họa tiết hoa?",
+      "source_record_sha256": "c57ccf1a4e67143183b354c40cef043785de7ff5cda996759023f6858c1f44e5",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_8e709691eb9f1f1a",
+      "question_en": "How many people are looking at the camera?",
+      "question_vi": "Có bao nhiêu người đang nhìn vào máy ảnh?",
+      "source_record_sha256": "1c6a2fb4ad8d716df6ab763b3209b0b7ff14dae1ffceb000f4abbbfd723edc92",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_8ef387f9a499e7ff",
+      "question_en": "How many bowls are on the table?",
+      "question_vi": "Có bao nhiêu cái bát trên bàn?",
+      "source_record_sha256": "d33de09d34210ecc55e9b63cf4e02a2bf6bc54ee1ca787b0cb6d29d769410b74",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_9038009d6d8628f7",
+      "question_en": "How many people are near a dog?",
+      "question_vi": "Có bao nhiêu người ở gần một con chó?",
+      "source_record_sha256": "e41ba192e26b12fc72a536625f4df06ddf87901c94f214422fb899212c5af94c",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_90b2caf2da29e707",
+      "question_en": "How many tennis players are in the photo?",
+      "question_vi": "Có bao nhiêu người chơi quần vợt trong ảnh?",
+      "source_record_sha256": "3343f0d66208bdc2f0eeb33dba26d33ecb5cabfd9b90df5eef620199d407e911",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_9174f6846f2a4dcc",
+      "question_en": "How many clocks are in the photo?",
+      "question_vi": "Có bao nhiêu chiếc đồng hồ trong ảnh?",
+      "source_record_sha256": "0fd48fd334b11e9e31d36452abe33041d00a99e715a276c88dc6bea396a7f69a",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_922654596f279c76",
+      "question_en": "How many blue vehicles are in the picture?",
+      "question_vi": "Có bao nhiêu phương tiện màu xanh dương trong ảnh?",
+      "source_record_sha256": "eda8cd450e122f37d13f9710d0cc522b4eeb86e39407f4b76c1ab28549a4224c",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_923b5f1a700bb723",
+      "question_en": "How many signs are in the photo?",
+      "question_vi": "Có bao nhiêu biển báo trong ảnh?",
+      "source_record_sha256": "3740dc2dfd385d64f679d3bfc1f93c2128daa72715467dac5bb2248f0aaf772c",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_976e0b07cae8d922",
+      "question_en": "How many men are there?",
+      "question_vi": "Có bao nhiêu người đàn ông?",
+      "source_record_sha256": "cc5fc95ca29d493998e458eb1725ef066bfb0ed713111710b43cd2c874df0538",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_9cb14975affc991a",
+      "question_en": "How many people are holding phone?",
+      "question_vi": "Có bao nhiêu người đang cầm điện thoại?",
+      "source_record_sha256": "44ff3a9b065d2173d2a507a7f8d304e3771e6df65ca1da46980eb21c45f3f6ce",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_9f8aa311b43ef859",
+      "question_en": "How many animals are there?",
+      "question_vi": "Có bao nhiêu con vật?",
+      "source_record_sha256": "521f45105608536f319b6965950745d1cbcdbf5c95932950249498f62b52b767",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_a66684bdd206104a",
+      "question_en": "How many toppings do you think are on this pizza?",
+      "question_vi": "Bạn nghĩ có bao nhiêu loại đồ phủ trên chiếc bánh pizza này?",
+      "source_record_sha256": "08f38f22fa491aa7d1bcb4aa5be5102ff8cc1dc729b6bd807b8ee8f374a8d2d3",
+      "translation_status": "requires_review",
+      "review_note": "toppings có thể là loại hoặc từng miếng; bản nháp dùng loại, cần xác nhận đơn vị đếm.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_a6b6b138039d1c40",
+      "question_en": "How many utensils are visible?",
+      "question_vi": "Có thể nhìn thấy bao nhiêu dụng cụ ăn uống?",
+      "source_record_sha256": "3f082a6881005049d4ead2fd7ef54c591f2ae1bbae30627fec7bfd28fd69962b",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_ad1147cc4087c817",
+      "question_en": "How many fish are visible in this picture?",
+      "question_vi": "Có thể nhìn thấy bao nhiêu con cá trong ảnh này?",
+      "source_record_sha256": "b15f44b84a853123f63fca13b4b104034dd9b8001e25d47155038b9381719a4c",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_ada778008d3f6a75",
+      "question_en": "How many trains are there?",
+      "question_vi": "Có bao nhiêu đoàn tàu?",
+      "source_record_sha256": "c8c91881d886f2cc29fba0fedd4e16a7fb6a0a5a3f9255dd25b5d296e5024c0a",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_af90165a9f4d0a04",
+      "question_en": "How many people are wearing protective face gear?",
+      "question_vi": "Có bao nhiêu người đang đeo đồ bảo hộ mặt?",
+      "source_record_sha256": "b75b9a2dba7ca5b8d11277d7cdd9b4daef9a57ccc3fb3f874f593794c6fd2814",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_b19c60cf3c5581e8",
+      "question_en": "How many players are on each team?",
+      "question_vi": "Mỗi đội có bao nhiêu người chơi?",
+      "source_record_sha256": "581242f8f13bbc7ff6d278e4af926e972754aa68066f5e84cb4255701edc8499",
+      "translation_status": "requires_review",
+      "review_note": "each team: kiểm tra có số lượng thống nhất cho mỗi đội.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_b565e202a26df0a5",
+      "question_en": "How many horses?",
+      "question_vi": "Có bao nhiêu con ngựa?",
+      "source_record_sha256": "d6b8489bd2be5f61937c47844238abea0fe17dab801ee1a80420c09769b50d79",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_b65bd5cac2354552",
+      "question_en": "How many pictures are hanging on the wall to the left?",
+      "question_vi": "Có bao nhiêu bức tranh treo trên bức tường ở bên trái?",
+      "source_record_sha256": "8994209a0a7f33a0eae19b70469fa0444b58d96d4bf96f9b23744b1763b1b416",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_b961c2435a7a536c",
+      "question_en": "How many patterned mammals in this picture?",
+      "question_vi": "Có bao nhiêu động vật có vú có hoa văn trên cơ thể trong ảnh này?",
+      "source_record_sha256": "d52a4936a35875b2f536cf1f061d9b483e2cb187485fef8f0e2028ffe1264d78",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_b9c77dad0e22a3dc",
+      "question_en": "How many people are there?",
+      "question_vi": "Có bao nhiêu người?",
+      "source_record_sha256": "16a5990a4aafdb85b95bbe603deab247d9a4eda2734758e29bcd14214c68287f",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_bc9a7483962da805",
+      "question_en": "How many umbrellas are pictured?",
+      "question_vi": "Có bao nhiêu chiếc ô trong ảnh?",
+      "source_record_sha256": "fd2526bc74fa19001db665099afec5d702cb6525cb4fe6e18a046782967b3b33",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_bdc8f6fbc7dcdf7a",
+      "question_en": "How many people are riding bike on the road?",
+      "question_vi": "Có bao nhiêu người đang đi xe đạp trên đường?",
+      "source_record_sha256": "6247186fd7c1e72072472b974a788db8ab9d0b55e0058fab7f567f2497813c0a",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_bf5673871042d7dc",
+      "question_en": "How many kites are in the air?",
+      "question_vi": "Có bao nhiêu con diều trên không trung?",
+      "source_record_sha256": "c080e46adc6e8ea83b397e050141f0e627a3fc623419a9b5875ecc86b4aa8607",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_c13d3fa6bf7990a2",
+      "question_en": "How many sinks are there?",
+      "question_vi": "Có bao nhiêu cái bồn rửa?",
+      "source_record_sha256": "91012a73f4e6670399db8cfb9c25175b82fbfdda1d4962615feaed7fbeed104e",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_c29f7a209fdb7bbc",
+      "question_en": "How many green window frames are there?",
+      "question_vi": "Có bao nhiêu khung cửa sổ màu xanh lá?",
+      "source_record_sha256": "aee5b2ad99d4ef074cd8da8f617fdde478c124d3a196c412613c6db9acd50277",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_c691cd8fbde6e515",
+      "question_en": "How many of the items on the couch are living things?",
+      "question_vi": "Có bao nhiêu thứ trên ghế sofa là sinh vật sống?",
+      "source_record_sha256": "5e7495a8c43dd1c08a580f554cdad613261ea236ac64d5c5923eb47be2698904",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_c917f1d780b62e1a",
+      "question_en": "How many elephants are in this photo?",
+      "question_vi": "Có bao nhiêu con voi trong ảnh này?",
+      "source_record_sha256": "0372e5d1dcbfdded40425c7ef00d3066ee8358af26e88df36af19e215ae756c3",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_ca66077ec2341c11",
+      "question_en": "How many people are wearing tie?",
+      "question_vi": "Có bao nhiêu người đang đeo cà vạt?",
+      "source_record_sha256": "075fe297575db06c7b66e80c4d4dbfafe2b99e00c72c86c34b5cfe0aa5bb18a2",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_caa75127f70876ae",
+      "question_en": "How many people are wearing red shirts?",
+      "question_vi": "Có bao nhiêu người đang mặc áo màu đỏ?",
+      "source_record_sha256": "21703adfe249a57de1ef075722d6f5cb629302288b14782b7a98f14d6ec9db83",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_cae1473a26d834cb",
+      "question_en": "How many giraffes are in the picture?",
+      "question_vi": "Có bao nhiêu con hươu cao cổ trong ảnh?",
+      "source_record_sha256": "78e8ee25c7df1ff8242d4ff4473fac5ebb9ac2d13174819b07f051e435aa3cce",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d11737d245e3a203",
+      "question_en": "How many people are on the path?",
+      "question_vi": "Có bao nhiêu người trên lối đi?",
+      "source_record_sha256": "dce1db1296044fbee32c22c4e2d1e90e2955d7706f9c96f1d99280069bcd2d8d",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d127797ce3fc4a55",
+      "question_en": "How many signs are there?",
+      "question_vi": "Có bao nhiêu biển báo?",
+      "source_record_sha256": "8dc42ac28281abe80ee392923e9cd02bfece3f6410f2f7f5eca508f7db160300",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d325488c42c1e728",
+      "question_en": "How many of the girl's legs have bandages on them?",
+      "question_vi": "Có bao nhiêu chân của cô gái được băng bó?",
+      "source_record_sha256": "d2169ec9eccf2ae455fcd749ecbae1b391a4eda8133c8255b5510c98d9aa5bf5",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d383d03707a6197a",
+      "question_en": "How many cows?",
+      "question_vi": "Có bao nhiêu con bò?",
+      "source_record_sha256": "07b71292631b8c59cd936a2484113d20359c6bb2854118f4c146fae9af6f7c0f",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d4c10ba4dd6aff41",
+      "question_en": "How many destinations are on the lcd screen?",
+      "question_vi": "Có bao nhiêu điểm đến trên màn hình LCD?",
+      "source_record_sha256": "43eaa873147361f1380bf8ba9ad88126ec0e7d1fd6993bf79fc5c280d2bb8a28",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d585c8d8041875b7",
+      "question_en": "How many donuts are there in photo?",
+      "question_vi": "Có bao nhiêu cái bánh donut trong ảnh?",
+      "source_record_sha256": "ca3fde8d7fd9cd792bfcd7041787586ab953ce7c320d92655ce888a0bd161914",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d6dae2195434d53b",
+      "question_en": "How many people are wearing black pants?",
+      "question_vi": "Có bao nhiêu người đang mặc quần màu đen?",
+      "source_record_sha256": "4486ebea6cfb4bc61afed04d4369d6fa0ebe3a60b6d4631d7193b0e2503db627",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d7256f18d456de8b",
+      "question_en": "How many boats are in the water?",
+      "question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+      "source_record_sha256": "f238ee32facdc120a21bae55620562d96c2787d8899f219c9846b62bfb31cdbb",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_d8ae70e227d412c4",
+      "question_en": "How many people are visible?",
+      "question_vi": "Có thể nhìn thấy bao nhiêu người?",
+      "source_record_sha256": "c12a118edd0d7234d6a02a23798837a5611e9ffea47f7a20e066af5cc2e6a03b",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_ddaae58ff99f266e",
+      "question_en": "How many cats are on a blue chair?",
+      "question_vi": "Có bao nhiêu con mèo trên một chiếc ghế màu xanh dương?",
+      "source_record_sha256": "8c59e2c8440e319b7632052302dae61f27fd2b16530f620770dfcbef94dc2317",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_e0e60999d6894d18",
+      "question_en": "How many boys are there?",
+      "question_vi": "Có bao nhiêu cậu bé?",
+      "source_record_sha256": "a539dd40e0e5f5274787c832a4d05f4191bd5cec523963b72314a0feffdaec50",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_e4d6eb0e2358dc7c",
+      "question_en": "How many people are in the photo?",
+      "question_vi": "Có bao nhiêu người trong ảnh?",
+      "source_record_sha256": "56f4cf0197c9fecf8c9f5494d54e3ca16cda4f9c147ea512c41eac049b9052de",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_e50da7d9b611531a",
+      "question_en": "How many people are driving motors the right of the cars?",
+      "question_vi": "Có bao nhiêu người đang lái xe máy ở bên phải những chiếc ô tô?",
+      "source_record_sha256": "9468dd3686b30bc2a115b970539cd55878dcfd4327f2683328367bc25bc5de4e",
+      "translation_status": "requires_review",
+      "review_note": "Nguồn motors và cấu trúc the right of thiếu tự nhiên; kiểm tra ngữ nghĩa.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_e66a3f47968da5c8",
+      "question_en": "How many trains are there?",
+      "question_vi": "Có bao nhiêu đoàn tàu?",
+      "source_record_sha256": "c27a0cd634bdd118608ff6d05d64d0aa9c34abf67659a860ed7a6b6ba8901956",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_e86fb1bf977de5f2",
+      "question_en": "How many tall trees in the background of the photo are visible to the left of the motorcycle?",
+      "question_vi": "Có thể nhìn thấy bao nhiêu cây cao ở phía sau của ảnh, bên trái chiếc xe máy?",
+      "source_record_sha256": "b51393be32f38dbf50d035e19fe570b9b31fc9569d542b434d529e2d527f5eb0",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_eae18b44205a3a7a",
+      "question_en": "How many people are playing kite?",
+      "question_vi": "Có bao nhiêu người đang chơi thả diều?",
+      "source_record_sha256": "e0d656b878f7c629c46ba8771ceba3d4e69d0b4b6526fc8753bce6ccac0f1040",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_f2a496a0001a6092",
+      "question_en": "How many people at the table are wearing tie dye?",
+      "question_vi": "Có bao nhiêu người ở bàn đang mặc trang phục nhuộm loang màu?",
+      "source_record_sha256": "9d007411779935863336bb5ee7c0e699dc85b4dd4996d31e5c5493334cd3dff1",
+      "translation_status": "requires_review",
+      "review_note": "tie dye là kiểu nhuộm loang, không phải cà vạt.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_f5d5a24710ca5702",
+      "question_en": "How many people are riding a horse?",
+      "question_vi": "Có bao nhiêu người đang cưỡi ngựa?",
+      "source_record_sha256": "53e88764523ea043e1a5762fa2cce587bffbb14fdd996d61f6ceb49a693f674a",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_f60095e7f8416b0f",
+      "question_en": "How many planes are there?",
+      "question_vi": "Có bao nhiêu chiếc máy bay?",
+      "source_record_sha256": "f2a454f36e33978de13c82b24512fe5d3ca19c14a1308f022e48eb1e5510caa5",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_f70d81860c300303",
+      "question_en": "How many blonde people are there?",
+      "question_vi": "Có bao nhiêu người tóc vàng?",
+      "source_record_sha256": "59512dbc504c4d42f8f01b886029ce9812f082dbcb67ec777852483806bdbb13",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_f847fa9e40640552",
+      "question_en": "How many full pizzas are in the image?",
+      "question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+      "source_record_sha256": "b1f57aa2c33355fa203905182187f39251bf690b02750f0b094c87250ecb99f9",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_fd4a4259bb7dcc22",
+      "question_en": "How many people the sun shining in on them?",
+      "question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+      "source_record_sha256": "e6de7df6e6009cbbec7d09af086efdb43948dd8f44251481d4e9cb0f0d086d13",
+      "translation_status": "requires_review",
+      "review_note": "Câu nguồn sai ngữ pháp; bản nháp giữ ý ánh nắng chiếu vào người.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_fdd3cec9e239c681",
+      "question_en": "How many toilets are there?",
+      "question_vi": "Có bao nhiêu cái bồn cầu?",
+      "source_record_sha256": "acbe0323a8b647c49c80b00806e4213749019616d8347fba357cc96078a99e04",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_fde1a7858bcbfb4f",
+      "question_en": "How many elephants are there?",
+      "question_vi": "Có bao nhiêu con voi?",
+      "source_record_sha256": "45c4b0978b095a8dfbacb927e0ee05861987a8afc9a5fd8fb72232afe4bb5fb3",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_fe3b2c9021f24c04",
+      "question_en": "How many posters are there?",
+      "question_vi": "Có bao nhiêu tấm áp phích?",
+      "source_record_sha256": "2ba36ebb01d5183fa0917fafab448b19045b3b9af80aaa4e74216c8333a1104f",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "tallyqa_ff3edba9abbcb061",
+      "question_en": "How many animals are there?",
+      "question_vi": "Có bao nhiêu con vật?",
+      "source_record_sha256": "498ae2324d0096a4de870eaa65ce338c33ca00c259131a551a9da33fdb484301",
+      "translation_status": "requires_review",
+      "review_note": "",
+      "human_approval_created": false
+    }
+  ],
+  "human_approvals_created": 0
+}

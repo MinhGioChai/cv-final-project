@@ -1,0 +1,1208 @@
+{
+  "scope": "assistant_draft_not_human_review",
+  "selection_sha256": "b94b22fc954e786b3e17bf1f6b2e9f506d084539b9ff66606bb4129775a27921",
+  "glossary_sha256": "b3fe27394404a3860fe267fdba3d16129a7f0db38fe2b9a867b4576e452091c3",
+  "rows": [
+    {
+      "sample_id": "vsr_03826887ef250eea",
+      "question_en": "The bench is parallel to the person.",
+      "question_vi": "Chiếc ghế dài song song với người.",
+      "source_record_sha256": "2ffd93ba5700294d04b991f82a63bd32cc8b56c8ce39c969264dc174e1b85e9a",
+      "translation_status": "requires_review",
+      "relation": "parallel to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_04e2b3b96a226ac6",
+      "question_en": "The pizza is attached to the person.",
+      "question_vi": "Cái bánh pizza gắn vào người.",
+      "source_record_sha256": "f2c81315c72c1c7257e910f483968c49271427f804b2eb2f396944a774b68b2a",
+      "translation_status": "requires_review",
+      "relation": "attached to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_04fe3a04f580c220",
+      "question_en": "The backpack contains the cat.",
+      "question_vi": "Chiếc ba lô chứa con mèo.",
+      "source_record_sha256": "97efd01cd75195f50b3248559cebb13a0d9219b191314e4825dc9005adb623f5",
+      "translation_status": "requires_review",
+      "relation": "contains",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_06558ea1db0d38dd",
+      "question_en": "The cow is at the left side of the car.",
+      "question_vi": "Con bò ở bên trái chiếc ô tô.",
+      "source_record_sha256": "f9c5f9ee854353d4437d88eca0b4e41e1abd78a0ad129995ee29324c3643ee91",
+      "translation_status": "requires_review",
+      "relation": "at the left side of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_06b14b5b423a6e32",
+      "question_en": "The car is parallel to the motorcycle.",
+      "question_vi": "Chiếc ô tô song song với chiếc xe máy.",
+      "source_record_sha256": "aeb04388c4ed22b9c932f19c002372cbd9afbed2100a56cce881f5f76454a82b",
+      "translation_status": "requires_review",
+      "relation": "parallel to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_06b7b13cbbb08d85",
+      "question_en": "The sheep is outside the bottle.",
+      "question_vi": "Con cừu ở bên ngoài cái chai.",
+      "source_record_sha256": "c8e39011e7dfc437ccc1042031b2b811bbd4dca9a2dcead2a4e515a6f000a407",
+      "translation_status": "requires_review",
+      "relation": "outside",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_06fd06e9a503f396",
+      "question_en": "The cat is on top of the car.",
+      "question_vi": "Con mèo ở trên cùng của chiếc ô tô.",
+      "source_record_sha256": "27655de88b0dce856f7714f0d9c46dc18955160ee67077ab8e3a2f180ee60ba4",
+      "translation_status": "requires_review",
+      "relation": "on top of",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_09232ad6ecef6c01",
+      "question_en": "The bus is far from the parking meter.",
+      "question_vi": "Chiếc xe buýt ở xa chiếc đồng hồ thu phí đỗ xe.",
+      "source_record_sha256": "4dea53f86c0bbc39f0e379be58422b51cc03895e3d4955a0daee3830a8d52c60",
+      "translation_status": "requires_review",
+      "relation": "far from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_10e135b0801ed0fd",
+      "question_en": "The teddy bear is enclosed by the chair.",
+      "question_vi": "Con gấu bông được bao quanh bởi chiếc ghế.",
+      "source_record_sha256": "7ac32ad8149807797c5043d91b33edf02d99c04e491cb4a867142645f03219b3",
+      "translation_status": "requires_review",
+      "relation": "enclosed by",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_12b4fbf9210acf55",
+      "question_en": "The vase is toward the person.",
+      "question_vi": "Cái bình hoa hướng về phía người.",
+      "source_record_sha256": "853c06d1f95753a614b37b571b82f8a07cbf7a4cc31a8a4474ae4a665013af6d",
+      "translation_status": "requires_review",
+      "relation": "toward",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_16000a401f819450",
+      "question_en": "The dog is into the toilet.",
+      "question_vi": "Con chó ở vào bên trong cái bồn cầu.",
+      "source_record_sha256": "72f047f0bac7dce755c914751c78ac2e42a09762f656b5112dada6858ff1fbbb",
+      "translation_status": "requires_review",
+      "relation": "into",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_16936770714d9408",
+      "question_en": "The oven is surrounding the cake.",
+      "question_vi": "Chiếc lò nướng bao quanh cái bánh ngọt.",
+      "source_record_sha256": "89e81cda4ee388218060eef1939dbf58cac623f60f8042b83a4823da39e26fc3",
+      "translation_status": "requires_review",
+      "relation": "surrounding",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_1b85d6ec0d3ed658",
+      "question_en": "The cow is far from the bicycle.",
+      "question_vi": "Con bò ở xa chiếc xe đạp.",
+      "source_record_sha256": "bdbbf339540ef066c09898bd94567dff8f74969955a955c740c8bd85f2525bca",
+      "translation_status": "requires_review",
+      "relation": "far from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_1d4f4f68e4d1298f",
+      "question_en": "The teddy bear is on the couch.",
+      "question_vi": "Con gấu bông ở trên chiếc ghế sofa.",
+      "source_record_sha256": "f9270a18c614646e15f93190baee47b4d596608bc14c874e997328100cb6a659",
+      "translation_status": "requires_review",
+      "relation": "on",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_1e44a746815cf37b",
+      "question_en": "The cat is in the suitcase.",
+      "question_vi": "Con mèo ở trong chiếc va li.",
+      "source_record_sha256": "35028b3a6efce92f3c0c7af5d48c45c5dd8d2f6676984c749206a3f7fa4dafc0",
+      "translation_status": "requires_review",
+      "relation": "in",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_1e8ce5787b34c91d",
+      "question_en": "The umbrella is at the right side of the cat.",
+      "question_vi": "Chiếc ô ở bên phải con mèo.",
+      "source_record_sha256": "de20eec65794a06fcbeae77ded889ea3784a168a884d9cdb7fdb3b75786ffca0",
+      "translation_status": "requires_review",
+      "relation": "at the right side of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_1eef4ed1cb48cbe5",
+      "question_en": "The cake is in the middle of the dining table.",
+      "question_vi": "Cái bánh ngọt ở giữa cái bàn ăn.",
+      "source_record_sha256": "c94ace789d84fa633f26701d78a04e175db93b2a6be99b404ffed128f682d0fc",
+      "translation_status": "requires_review",
+      "relation": "in the middle of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_216096fe0250c785",
+      "question_en": "The tie is around the person.",
+      "question_vi": "Chiếc cà vạt ở quanh người.",
+      "source_record_sha256": "d2dcdda2e4b8b2dc39f42202c428094ef183ee78fb3dbeabecef4810ec746de1",
+      "translation_status": "requires_review",
+      "relation": "around",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_2681acedfc75eb17",
+      "question_en": "The person is below the umbrella.",
+      "question_vi": "Người ở phía dưới chiếc ô.",
+      "source_record_sha256": "11535719a1305501f5f3b53e9812d4260a5b3f5fe92621d4b7bb940a782ff8be",
+      "translation_status": "requires_review",
+      "relation": "below",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_2c4c800c6fcff88d",
+      "question_en": "The cat is on top of the car.",
+      "question_vi": "Con mèo ở trên cùng của chiếc ô tô.",
+      "source_record_sha256": "02d61573aa731bd53380b48ea08917f6a57f5c838bd1d893bace1b1731cef52b",
+      "translation_status": "requires_review",
+      "relation": "on top of",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_2d26049101ef94b0",
+      "question_en": "The pizza is inside the oven.",
+      "question_vi": "Cái bánh pizza ở bên trong chiếc lò nướng.",
+      "source_record_sha256": "ce064514e981e4601aace922043de086ff79b30cdf38ab549f5914fa9b9f61b3",
+      "translation_status": "requires_review",
+      "relation": "inside",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_2dc075a6c3f13651",
+      "question_en": "The train is on top of the dining table.",
+      "question_vi": "Đoàn tàu ở trên cùng của cái bàn ăn.",
+      "source_record_sha256": "3f1788d70e2b096ff91cf13b67177acc0fb86475b2e0be2d6612172576b29621",
+      "translation_status": "requires_review",
+      "relation": "on top of",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_2f12e391ef76ebaf",
+      "question_en": "The toilet is part of the train.",
+      "question_vi": "Cái bồn cầu là một phần của đoàn tàu.",
+      "source_record_sha256": "6af66e95f7f2a7d12a640ff27037434e348aab1cf932e9edadc3c9f62262061d",
+      "translation_status": "requires_review",
+      "relation": "part of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_30435d2027f6bacc",
+      "question_en": "The bottle is adjacent to the pizza.",
+      "question_vi": "Cái chai ở sát cạnh cái bánh pizza.",
+      "source_record_sha256": "37ad7f50a8af135351011189c4f36da62eb5e0b2e9469f778d62e1f336048e86",
+      "translation_status": "requires_review",
+      "relation": "adjacent to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_38da8976f2443ffc",
+      "question_en": "The person is toward the keyboard.",
+      "question_vi": "Người hướng về phía cái bàn phím.",
+      "source_record_sha256": "fa4cc01087b796fa9b0874a7bb31c6b5746996dfb673767b33ca5113c41d958c",
+      "translation_status": "requires_review",
+      "relation": "toward",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_3d5bba6ebe2609ed",
+      "question_en": "The umbrella is over the cup.",
+      "question_vi": "Chiếc ô ở phía trên cái cốc.",
+      "source_record_sha256": "7f7f892992cd40b3b108216fe9e33b1c5c5d9fc0c4de65bd87fbfdf78883016d",
+      "translation_status": "requires_review",
+      "relation": "over",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_3e281d12ef3e7f88",
+      "question_en": "The teddy bear is next to the mouse.",
+      "question_vi": "Con gấu bông ở ngay cạnh con chuột.",
+      "source_record_sha256": "7f772a202d6fac132bf32819ce4814e24d7fe14fc2f8596612ca33812977cd7e",
+      "translation_status": "requires_review",
+      "relation": "next to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_3f8818951f371a82",
+      "question_en": "The cow is right of the bench.",
+      "question_vi": "Con bò ở bên phải chiếc ghế dài.",
+      "source_record_sha256": "b812b95b9a35b4df5e3280cf461e5ab770bc783a308911f4f25cc758c1f42b08",
+      "translation_status": "requires_review",
+      "relation": "right of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_3fab5414f853d702",
+      "question_en": "The person is along the couch.",
+      "question_vi": "Người ở dọc theo chiếc ghế sofa.",
+      "source_record_sha256": "0c8139d5ff603157a4a853b672672453ed30c236871c5ecf2dba20ade9002760",
+      "translation_status": "requires_review",
+      "relation": "along",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_42083c60af1cc6e7",
+      "question_en": "The person is surrounding the banana.",
+      "question_vi": "Người bao quanh quả chuối.",
+      "source_record_sha256": "15a9d2edcc4f74b5174ae17b452921ef9840fbf1e091f3d392e439275c64cca8",
+      "translation_status": "requires_review",
+      "relation": "surrounding",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_44aa2b1f34e03eb9",
+      "question_en": "The cat is next to the cake.",
+      "question_vi": "Con mèo ở ngay cạnh cái bánh ngọt.",
+      "source_record_sha256": "e122380d3d72fcd2fd2dbcc4345f9f8f0a75925d51a303e163448b4b2fce61ee",
+      "translation_status": "requires_review",
+      "relation": "next to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_483363d3e28ec995",
+      "question_en": "The apple is connected to the dining table.",
+      "question_vi": "Quả táo nối với cái bàn ăn.",
+      "source_record_sha256": "133ac40bed4e163a34beefd013ac8abbbad15d33a5806a81a0fc3c6d4f5313bf",
+      "translation_status": "requires_review",
+      "relation": "connected to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_48bbc15b1a01e869",
+      "question_en": "The bed is at the right side of the dining table.",
+      "question_vi": "Chiếc giường ở bên phải cái bàn ăn.",
+      "source_record_sha256": "1e39a7add6a81507469a300f3f5f7cbb2d778f6cc8eb86ae304bb4f1c578e035",
+      "translation_status": "requires_review",
+      "relation": "at the right side of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_4b2ddbbc5b4c3bb9",
+      "question_en": "The keyboard is close to the cake.",
+      "question_vi": "Cái bàn phím ở gần cái bánh ngọt.",
+      "source_record_sha256": "d2bfdbeccca1892e12f811ab175b5ff8e809e7c81a9a983078c9a6398d539a27",
+      "translation_status": "requires_review",
+      "relation": "close to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_4c671067395b3b9d",
+      "question_en": "The person is off the couch.",
+      "question_vi": "Người ở ngoài, không ở trên chiếc ghế sofa.",
+      "source_record_sha256": "1e2568f3060bcd924c792aeab5c6300bb6461fa56f715c8ce3f07b379dc7673a",
+      "translation_status": "requires_review",
+      "relation": "off",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_4fdeffed193ac08b",
+      "question_en": "The bed is beside the person.",
+      "question_vi": "Chiếc giường ở bên cạnh người.",
+      "source_record_sha256": "233375f24fe54a1fb0b3a1ee2981615e88f8feeca2bc91f949e11b2449ace253",
+      "translation_status": "requires_review",
+      "relation": "beside",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_5009791a49c16fd6",
+      "question_en": "The suitcase is connected to the motorcycle.",
+      "question_vi": "Chiếc va li nối với chiếc xe máy.",
+      "source_record_sha256": "307c317ad27b76cf0d0442b9ec27c8ad82931772a663d7d87ee68397c9212e0c",
+      "translation_status": "requires_review",
+      "relation": "connected to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_5b08ac69073fba40",
+      "question_en": "The laptop is facing the sandwich.",
+      "question_vi": "Chiếc máy tính xách tay hướng mặt về phía cái bánh sandwich.",
+      "source_record_sha256": "7476ee7473f82fe1d00260474cb834c23db114399cc3c02f555120e66451111a",
+      "translation_status": "requires_review",
+      "relation": "facing",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_5ba5a75cfcb293fe",
+      "question_en": "The pizza is at the edge of the dining table.",
+      "question_vi": "Cái bánh pizza ở mép cái bàn ăn.",
+      "source_record_sha256": "a88a1902a94670b5afd9fca2f9b16c4043efd87f94637c5560e82e7c7ca496b1",
+      "translation_status": "requires_review",
+      "relation": "at the edge of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_600b39eb2efc2f17",
+      "question_en": "The car is down from the parking meter.",
+      "question_vi": "Chiếc ô tô ở phía dưới so với chiếc đồng hồ thu phí đỗ xe.",
+      "source_record_sha256": "9cf520e753e3f3860e22cb2303d7878d32a90c97c71fc77cd52bb15229b2875b",
+      "translation_status": "requires_review",
+      "relation": "down from",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_6160cd04f948b730",
+      "question_en": "The bicycle is beside the dining table.",
+      "question_vi": "Chiếc xe đạp ở bên cạnh cái bàn ăn.",
+      "source_record_sha256": "677658b2c2f0c68757b93f057a2dbc624e30b9b90945f9f8693b606406061207",
+      "translation_status": "requires_review",
+      "relation": "beside",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_61a56c0c5c2760d2",
+      "question_en": "The chair is beyond the suitcase.",
+      "question_vi": "Chiếc ghế ở xa hơn về phía bên kia chiếc va li.",
+      "source_record_sha256": "eb6b208c98717839574467a7736b3c73d0cf19739123cb6a8cb6180aa84cfa02",
+      "translation_status": "requires_review",
+      "relation": "beyond",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_69a47054740ba54e",
+      "question_en": "The cat is close to the tv.",
+      "question_vi": "Con mèo ở gần chiếc tivi.",
+      "source_record_sha256": "e89a4cb852d7e4f7fe1e0d6f4c7c7ce42139831a11a53a0f63db4886f3be6579",
+      "translation_status": "requires_review",
+      "relation": "close to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_6a3dc932d98e90bc",
+      "question_en": "The pizza is in front of the person.",
+      "question_vi": "Cái bánh pizza ở phía trước người.",
+      "source_record_sha256": "12aa17f5770870bdfd170a88c6b3838dc21e4ebeab29e3c526697b81a8b2c9f4",
+      "translation_status": "requires_review",
+      "relation": "in front of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_702cf64353f2f1c5",
+      "question_en": "The bear is on the cake.",
+      "question_vi": "Con gấu ở trên cái bánh ngọt.",
+      "source_record_sha256": "78476f18d73aa671489489d2df55a8fa11b00a85fd927dcf853e2ff868e9012a",
+      "translation_status": "requires_review",
+      "relation": "on",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_70858ce04143e424",
+      "question_en": "The keyboard is at the back of the dog.",
+      "question_vi": "Cái bàn phím ở phía sau con chó.",
+      "source_record_sha256": "09baa80de033f9377b00c97c32dac91e6d553ab87772c98be7bc55de7c851a6d",
+      "translation_status": "requires_review",
+      "relation": "at the back of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_720a35187bfbedf2",
+      "question_en": "The potted plant is at the left side of the bench.",
+      "question_vi": "Chậu cây ở bên trái chiếc ghế dài.",
+      "source_record_sha256": "1bba359688c94e1dfc821366a21ef538ba3843f46cdff61ee28a654d93fb93dc",
+      "translation_status": "requires_review",
+      "relation": "at the left side of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_7216cd899c1756b7",
+      "question_en": "The cat is in the middle of the bench.",
+      "question_vi": "Con mèo ở giữa chiếc ghế dài.",
+      "source_record_sha256": "20f6786f660ed9af4e4aae925de6b78a35b8dd73a3ab004b83645c90671506ef",
+      "translation_status": "requires_review",
+      "relation": "in the middle of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_7274af2446a667f8",
+      "question_en": "The broccoli is at the side of the bowl.",
+      "question_vi": "Cây bông cải xanh ở bên cạnh cái bát.",
+      "source_record_sha256": "8aa22c2a134ad9c4b617aefcb11db284988e320d15799375ef0718786074f143",
+      "translation_status": "requires_review",
+      "relation": "at the side of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_7331d26d4c305264",
+      "question_en": "The couch is near the dog.",
+      "question_vi": "Chiếc ghế sofa ở gần con chó.",
+      "source_record_sha256": "e876f0c6b35d8833b417540324dc4f86702b49969cc345c94595a2222236236a",
+      "translation_status": "requires_review",
+      "relation": "near",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_75fca7b2bda0b0d2",
+      "question_en": "The umbrella is attached to the bicycle.",
+      "question_vi": "Chiếc ô gắn vào chiếc xe đạp.",
+      "source_record_sha256": "f530c8d523c84055c0a82d365494a1441c13fe4329717342cd41cb88b6ce0da0",
+      "translation_status": "requires_review",
+      "relation": "attached to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_7658bcc5398f8a38",
+      "question_en": "The person is detached from the sheep.",
+      "question_vi": "Người tách rời khỏi con cừu.",
+      "source_record_sha256": "fe93e4f63a43ca4ace944f9b5660f15b2f1fc87ab0b0e88e8ebba646c1fa0e77",
+      "translation_status": "requires_review",
+      "relation": "detached from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_777431f7274dd6df",
+      "question_en": "The dining table is in front of the cat.",
+      "question_vi": "Cái bàn ăn ở phía trước con mèo.",
+      "source_record_sha256": "a1069fb86489283a04651d36eabafd4aad2e3ea59f26616f611fb1cbb607139d",
+      "translation_status": "requires_review",
+      "relation": "in front of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_793b22041628d21f",
+      "question_en": "The couch is above the umbrella.",
+      "question_vi": "Chiếc ghế sofa ở phía trên chiếc ô.",
+      "source_record_sha256": "1cf412b26a9d8aa1a1aaaf6ad8afb50f26b0bfa44bc902b9e0ed8b51551d5c48",
+      "translation_status": "requires_review",
+      "relation": "above",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_7a5d0ba8b4e1dc44",
+      "question_en": "The clock is over the cat.",
+      "question_vi": "Chiếc đồng hồ ở phía trên con mèo.",
+      "source_record_sha256": "01c5d8cf0a5587ecf6a1a22ead4163bac2e22dfe361e5550e7103537320c1059",
+      "translation_status": "requires_review",
+      "relation": "over",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_7b08579f7a17cbef",
+      "question_en": "The person is facing away from the cow.",
+      "question_vi": "Người quay mặt ra xa con bò.",
+      "source_record_sha256": "64193f27c0d5b233e5e974d5e277fab112d2e860994a0ce62103d8d2d6893aea",
+      "translation_status": "requires_review",
+      "relation": "facing away from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_7bd527bfb186f0a4",
+      "question_en": "The suitcase is outside the bottle.",
+      "question_vi": "Chiếc va li ở bên ngoài cái chai.",
+      "source_record_sha256": "f7071df69f90e4c52f7bf3919a65153975088390f5d0d9fbde7ef62a3738eeaa",
+      "translation_status": "requires_review",
+      "relation": "outside",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_7d0f5cfa4adf44f3",
+      "question_en": "The cake has as a part the cat.",
+      "question_vi": "Cái bánh ngọt có một phần là con mèo.",
+      "source_record_sha256": "669fb7a4347e194b36950b2ccb2dddc197c0f1ee127d931695f699c1c37953ed",
+      "translation_status": "requires_review",
+      "relation": "has as a part",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_85dc8fb66272c4a4",
+      "question_en": "The dining table is at the right side of the refrigerator.",
+      "question_vi": "Cái bàn ăn ở bên phải chiếc tủ lạnh.",
+      "source_record_sha256": "aa1204d089f28641e2e35d0e83bb4290803f412c1c6f3d3c3baae4749311b900",
+      "translation_status": "requires_review",
+      "relation": "at the right side of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_86728a1166e0c758",
+      "question_en": "The bed is left of the bench.",
+      "question_vi": "Chiếc giường ở bên trái chiếc ghế dài.",
+      "source_record_sha256": "4a2c38f88c15decc9b9c41cb116fd7d380c5de75d76d5127d763cd4b37240f48",
+      "translation_status": "requires_review",
+      "relation": "left of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_88869354c36d5a8d",
+      "question_en": "The cake is beneath the hot dog.",
+      "question_vi": "Cái bánh ngọt ở bên dưới cái bánh mì kẹp xúc xích.",
+      "source_record_sha256": "f5859908a219cd762aedb2aca796d25f1a1299be6b1487452ca70972343d4f8d",
+      "translation_status": "requires_review",
+      "relation": "beneath",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_8b607185b408540f",
+      "question_en": "The person is above the giraffe.",
+      "question_vi": "Người ở phía trên con hươu cao cổ.",
+      "source_record_sha256": "6f30b43f74aa4fc0cd5dc162f8aad2022c9abde7a003eeb7fef781ee1ea2d2cd",
+      "translation_status": "requires_review",
+      "relation": "above",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_8ee7245f753964b0",
+      "question_en": "The train is perpendicular to the bus.",
+      "question_vi": "Đoàn tàu vuông góc với chiếc xe buýt.",
+      "source_record_sha256": "fbe0fea3b67482203990fbc5d1f780f2611087c15e4be9a33ea94d191cd45fc7",
+      "translation_status": "requires_review",
+      "relation": "perpendicular to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_91bb2edb466bb02c",
+      "question_en": "The cat is enclosed by the sink.",
+      "question_vi": "Con mèo được bao quanh bởi cái bồn rửa.",
+      "source_record_sha256": "b5a81a3d1be67d5a198775133ed26ae04847fd5ee79d5cd58a6d1823290b9f01",
+      "translation_status": "requires_review",
+      "relation": "enclosed by",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_9434975a7003def5",
+      "question_en": "The bed is adjacent to the couch.",
+      "question_vi": "Chiếc giường ở sát cạnh chiếc ghế sofa.",
+      "source_record_sha256": "88382d5375297da18d27a1b26ed7858c668f90a47f93adcbfa77cbf5a29764d4",
+      "translation_status": "requires_review",
+      "relation": "adjacent to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_9d7cee856bb7ea5c",
+      "question_en": "The zebra is ahead of the person.",
+      "question_vi": "Con ngựa vằn ở phía trước người.",
+      "source_record_sha256": "706294f3198a5350abb84e1988413a4ea95f2f62906fac3084c3cba87133038e",
+      "translation_status": "requires_review",
+      "relation": "ahead of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_a317ef2f1c7272b8",
+      "question_en": "The tv is under the cat.",
+      "question_vi": "Chiếc tivi ở dưới con mèo.",
+      "source_record_sha256": "7d2110ecf1432dbe145236a802d74014b20747b5a9755d984736f1184162172e",
+      "translation_status": "requires_review",
+      "relation": "under",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_a84fbef2849a6b3a",
+      "question_en": "The person is opposite to the tv.",
+      "question_vi": "Người ở đối diện với chiếc tivi.",
+      "source_record_sha256": "ba6d5d307841623cf17f0259fa600e612f2f0dceb785c7be99bce254e7deb53d",
+      "translation_status": "requires_review",
+      "relation": "opposite to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_aa75d26d1b8d0dc7",
+      "question_en": "The bed is detached from the person.",
+      "question_vi": "Chiếc giường tách rời khỏi người.",
+      "source_record_sha256": "7313c09406de23158b83caff8ed64fe2f257104cab77a307e8f8ada78096cbfb",
+      "translation_status": "requires_review",
+      "relation": "detached from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_aacb6aeaa418fc04",
+      "question_en": "The person is away from the cake.",
+      "question_vi": "Người ở cách xa cái bánh ngọt.",
+      "source_record_sha256": "2dff8ca3b2b72817a93096deb29bb63d4068d9604aea8a0975a7fa3a629b4615",
+      "translation_status": "requires_review",
+      "relation": "away from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_abcde47fe1cc78cd",
+      "question_en": "The cake consists of the truck.",
+      "question_vi": "Cái bánh ngọt bao gồm chiếc xe tải.",
+      "source_record_sha256": "c61ba2649ec66cb82c417b6b3232b7bed999b12a57c06516e82a91177ab6d319",
+      "translation_status": "requires_review",
+      "relation": "consists of",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_ad575278b61a81ce",
+      "question_en": "The dining table is opposite to the bus.",
+      "question_vi": "Cái bàn ăn ở đối diện với chiếc xe buýt.",
+      "source_record_sha256": "e29cb17cf73319632f953ebbb4604e5e3b3ace9a323a00fe98ad520a90f4851d",
+      "translation_status": "requires_review",
+      "relation": "opposite to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_af9e172c98f9a328",
+      "question_en": "The airplane is perpendicular to the truck.",
+      "question_vi": "Chiếc máy bay vuông góc với chiếc xe tải.",
+      "source_record_sha256": "efac6af6ba07eabb87f2d9a13449dc3c17d231a7a5a13bac4aea0ba7d5934b0f",
+      "translation_status": "requires_review",
+      "relation": "perpendicular to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_b216743aa225dd4a",
+      "question_en": "The teddy bear is away from the dining table.",
+      "question_vi": "Con gấu bông ở cách xa cái bàn ăn.",
+      "source_record_sha256": "a7ccf0d4c9b7f8dddfa545b25648d856a7fb3be2e41541bc94516f3b36411d72",
+      "translation_status": "requires_review",
+      "relation": "away from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_b311bcf55d1ba32b",
+      "question_en": "The elephant is ahead of the car.",
+      "question_vi": "Con voi ở phía trước chiếc ô tô.",
+      "source_record_sha256": "943b59b94b1340b3142959ee39bbe252db940b000de62ea71911a4fa165352cb",
+      "translation_status": "requires_review",
+      "relation": "ahead of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_b58e95761e124449",
+      "question_en": "The sheep is inside the bottle.",
+      "question_vi": "Con cừu ở bên trong cái chai.",
+      "source_record_sha256": "8ca605179a5e702831d221851f2cf25d1b3ae889ebd2ac045b886be8f4511c30",
+      "translation_status": "requires_review",
+      "relation": "inside",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_b8bc53356c9a1bde",
+      "question_en": "The fire hydrant is beyond the motorcycle.",
+      "question_vi": "Cái trụ cứu hỏa ở xa hơn về phía bên kia chiếc xe máy.",
+      "source_record_sha256": "a1999b8881f016fbd18d88f57e7960be5d67148eefb30cd4c73bb6d75885954a",
+      "translation_status": "requires_review",
+      "relation": "beyond",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_b8c503ec37ebc5c2",
+      "question_en": "The cat is into the toilet.",
+      "question_vi": "Con mèo ở vào bên trong cái bồn cầu.",
+      "source_record_sha256": "c98654af1759338204eacb2be4898e1f0a6853fa2b22bda9ec9f248cdc3dca3f",
+      "translation_status": "requires_review",
+      "relation": "into",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_b97299083f42887f",
+      "question_en": "The cake has as a part the person.",
+      "question_vi": "Cái bánh ngọt có một phần là người.",
+      "source_record_sha256": "5a2e2d23f8339fbde63592d9f5210401ba112f465d93dc56d82362e3e4bc86e9",
+      "translation_status": "requires_review",
+      "relation": "has as a part",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_b973dee24e77b853",
+      "question_en": "The cake is near the banana.",
+      "question_vi": "Cái bánh ngọt ở gần quả chuối.",
+      "source_record_sha256": "0610b61db021df46640f58c48c47fcf9b00912572ad494f5b7d24ed3882b9fff",
+      "translation_status": "requires_review",
+      "relation": "near",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_bc03f1486728e1f9",
+      "question_en": "The person is against the motorcycle.",
+      "question_vi": "Người tựa vào chiếc xe máy.",
+      "source_record_sha256": "bfe1d668dd88aea59d4b7b8ddd61e80177a857bcd956d21444e1867fbc923bda",
+      "translation_status": "requires_review",
+      "relation": "against",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_bc1684a06acc56ed",
+      "question_en": "The person is against the couch.",
+      "question_vi": "Người tựa vào chiếc ghế sofa.",
+      "source_record_sha256": "9eaae780f2a29ca17de448f745a04facde46cfbeb1c5c8e1330765f4da56b1ce",
+      "translation_status": "requires_review",
+      "relation": "against",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_bcdaf33c07625677",
+      "question_en": "The person is off the keyboard.",
+      "question_vi": "Người ở ngoài, không ở trên cái bàn phím.",
+      "source_record_sha256": "25a31338a71f6e6b211118ad7c3788fa0869396812aaa0ca68b6571f73f49d20",
+      "translation_status": "requires_review",
+      "relation": "off",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_c4a20676bc363c21",
+      "question_en": "The stop sign is behind the car.",
+      "question_vi": "Biển báo dừng ở phía sau chiếc ô tô.",
+      "source_record_sha256": "5e5a7f26b742b0d6c09b01ae25e4cce826d6b99bdb5cc7afd4220f740cbcae2e",
+      "translation_status": "requires_review",
+      "relation": "behind",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_c4b04cab117816c8",
+      "question_en": "The cat is by the toilet.",
+      "question_vi": "Con mèo ở cạnh cái bồn cầu.",
+      "source_record_sha256": "223e8fd32760abfa72862046fa9adc55a8d3e7cedf9a2ac0e399e9acdce09d51",
+      "translation_status": "requires_review",
+      "relation": "by",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_c746f3becf725620",
+      "question_en": "The person is with the dog.",
+      "question_vi": "Người ở cùng với con chó.",
+      "source_record_sha256": "63f400b5c8255e0765971f62a15dbdfc5635f0e4a9f3e39b8f1f50a05ba54962",
+      "translation_status": "requires_review",
+      "relation": "with",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_ca92c789eadd78f4",
+      "question_en": "The carrot is with the person.",
+      "question_vi": "Củ cà rốt ở cùng với người.",
+      "source_record_sha256": "9d35769905b6be5d93558b442fef92e50866bc5107acaf49300f19eb1eecf619",
+      "translation_status": "requires_review",
+      "relation": "with",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_cbda0ea66d6d032f",
+      "question_en": "The scissors is alongside the person.",
+      "question_vi": "Cái kéo ở bên cạnh người.",
+      "source_record_sha256": "83620d80108aa94b6231e69157a29a27e5283c2e5a4b08a4e5d6f30b58c138ab",
+      "translation_status": "requires_review",
+      "relation": "alongside",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_cd0a91c6210744b4",
+      "question_en": "The bed is beneath the suitcase.",
+      "question_vi": "Chiếc giường ở bên dưới chiếc va li.",
+      "source_record_sha256": "e6c0d5c597924b27f808163035878a89c73192c7c83dc0fcd7168ea9269d67d8",
+      "translation_status": "requires_review",
+      "relation": "beneath",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_ce4e2a56efdbb6a8",
+      "question_en": "The bird is facing the elephant.",
+      "question_vi": "Con chim hướng mặt về phía con voi.",
+      "source_record_sha256": "6663e0d56017ad22a7675bfd4a65ee0b5ea377e37a2bda36693ebf900b242afe",
+      "translation_status": "requires_review",
+      "relation": "facing",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_ce7ead78b762f269",
+      "question_en": "The teddy bear is left of the cup.",
+      "question_vi": "Con gấu bông ở bên trái cái cốc.",
+      "source_record_sha256": "a9dfcccf6f1fbf4cd1c12a1d2bb38157973aa057e360c09e04d85791cf7127f6",
+      "translation_status": "requires_review",
+      "relation": "left of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_ced44ea0cc83bca1",
+      "question_en": "The person is touching the teddy bear.",
+      "question_vi": "Người chạm vào con gấu bông.",
+      "source_record_sha256": "c6969a5cb27dd7a868545e9c08ac98b4c2dc9a736eac2d219b0ce81f85dea3bb",
+      "translation_status": "requires_review",
+      "relation": "touching",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_d0681e4285a42478",
+      "question_en": "The teddy bear is at the back of the cat.",
+      "question_vi": "Con gấu bông ở phía sau con mèo.",
+      "source_record_sha256": "bb503148209f990bfd4b9068a14faae532670edcbcdc950be4a6d676f6c6c41d",
+      "translation_status": "requires_review",
+      "relation": "at the back of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_d1e184211b49e2eb",
+      "question_en": "The tv is across from the boat.",
+      "question_vi": "Chiếc tivi ở phía đối diện với con thuyền.",
+      "source_record_sha256": "6f875071e68dd9ad71e36ccb6b79ba4f8b3b406c9838be2cd02c315732c8a0ef",
+      "translation_status": "requires_review",
+      "relation": "across from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_d55f572067d0465e",
+      "question_en": "The person is part of the cake.",
+      "question_vi": "Người là một phần của cái bánh ngọt.",
+      "source_record_sha256": "7a134857c4103c664598b21eb5b2bc114ab7dde97ab52a92580ea3914a57b428",
+      "translation_status": "requires_review",
+      "relation": "part of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_d60800dc8f6bd449",
+      "question_en": "The umbrella is opposite to the bed.",
+      "question_vi": "Chiếc ô ở đối diện với chiếc giường.",
+      "source_record_sha256": "740cc6ad4807b263524a564e58110de2dd0f0a316a25130815e0289bf89ba78a",
+      "translation_status": "requires_review",
+      "relation": "opposite to",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_d6df3f2ecf50c6bf",
+      "question_en": "The dog is under the dining table.",
+      "question_vi": "Con chó ở dưới cái bàn ăn.",
+      "source_record_sha256": "a2619cdd59b18c35a71d4ad57ebf32b5b262ed8058b09afeab6a67e1f6904940",
+      "translation_status": "requires_review",
+      "relation": "under",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_d831ccce401f1a1f",
+      "question_en": "The potted plant is right of the train.",
+      "question_vi": "Chậu cây ở bên phải đoàn tàu.",
+      "source_record_sha256": "00c5eaf06f9a39855aa8fa5737aeffe369245839afe37e441f28e02a73e96b90",
+      "translation_status": "requires_review",
+      "relation": "right of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_d8fcd4809e3dfca8",
+      "question_en": "The cat is at the pizza.",
+      "question_vi": "Con mèo ở chỗ cái bánh pizza.",
+      "source_record_sha256": "8b79af7e793a9dd88b4003dff6632d32524acf828a3f46fde676ea716f04278b",
+      "translation_status": "requires_review",
+      "relation": "at",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_df858e1a33fadd30",
+      "question_en": "The car is across from the dog.",
+      "question_vi": "Chiếc ô tô ở phía đối diện với con chó.",
+      "source_record_sha256": "640fd9fe58caf5167d8992b561e04713cb161c7c97a5daa167a73b793ebce4ec",
+      "translation_status": "requires_review",
+      "relation": "across from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_e0311ac4d6d7aa9a",
+      "question_en": "The cat is facing away from the toilet.",
+      "question_vi": "Con mèo quay mặt ra xa cái bồn cầu.",
+      "source_record_sha256": "0b0dca64b1ae19d96c5abf4d1f8e09849533d493431fc34dc7a31ae93596f94b",
+      "translation_status": "requires_review",
+      "relation": "facing away from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_e297f5119f768a01",
+      "question_en": "The horse is far away from the bus.",
+      "question_vi": "Con ngựa ở cách xa chiếc xe buýt.",
+      "source_record_sha256": "f1fd618fe0a3720aa2985547875161125f3b44e288c0f81dd84f043ceded617f",
+      "translation_status": "requires_review",
+      "relation": "far away from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_e41f8ae4d44d1eae",
+      "question_en": "The person is out of the couch.",
+      "question_vi": "Người ở ngoài chiếc ghế sofa.",
+      "source_record_sha256": "5467078ae82bb773fec94e33b7a679cde5b1ddba719ca680b090e44244dca3b5",
+      "translation_status": "requires_review",
+      "relation": "out of",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_e733903cb77e7075",
+      "question_en": "The cow is down from the person.",
+      "question_vi": "Con bò ở phía dưới so với người.",
+      "source_record_sha256": "2f65718da1204adf68735060a7664c0afc7efe5d5310877ef0b8f179e33f8e56",
+      "translation_status": "requires_review",
+      "relation": "down from",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_e919fbf3c3fe92b1",
+      "question_en": "The cat is in the sink.",
+      "question_vi": "Con mèo ở trong cái bồn rửa.",
+      "source_record_sha256": "012bd91ba2cb4b0b8e7de4c41c2b941465d44ef07ba6d01997b888999949a5bb",
+      "translation_status": "requires_review",
+      "relation": "in",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_e96f5c3489792a16",
+      "question_en": "The bed is across the couch.",
+      "question_vi": "Chiếc giường nằm ngang qua chiếc ghế sofa.",
+      "source_record_sha256": "47b33b61b0e4fd6e2d37d44466e3e61fe95beef0e07f3682b86c9b0e3e7de20c",
+      "translation_status": "requires_review",
+      "relation": "across",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_ea149310c3425120",
+      "question_en": "The refrigerator is behind the person.",
+      "question_vi": "Chiếc tủ lạnh ở phía sau người.",
+      "source_record_sha256": "c638e5ec11d7c0a59d67e597a8a56e7df1695ff9f56cd50e358ce7429e764a1d",
+      "translation_status": "requires_review",
+      "relation": "behind",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_ec12ae823686bf18",
+      "question_en": "The motorcycle is far away from the banana.",
+      "question_vi": "Chiếc xe máy ở cách xa quả chuối.",
+      "source_record_sha256": "eaf00ee5672648116b990f30368266095d48b9901dc8eb7874b8c30db46d9d1e",
+      "translation_status": "requires_review",
+      "relation": "far away from",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_eda24fe20a87a516",
+      "question_en": "The cup contains the cat.",
+      "question_vi": "Cái cốc chứa con mèo.",
+      "source_record_sha256": "0f5044a1f5c18784fd8a57e61a08c90feb4a6b6131f2c5dd04a06a2d4f297c5e",
+      "translation_status": "requires_review",
+      "relation": "contains",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_efeea953c7bc7b40",
+      "question_en": "The cat is below the teddy bear.",
+      "question_vi": "Con mèo ở phía dưới con gấu bông.",
+      "source_record_sha256": "2597cb0d0d5a093edc1bbbdc7af172490e77e651b3a4e4fe2c03f4c0e9c72975",
+      "translation_status": "requires_review",
+      "relation": "below",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_f1334c03356b7dd0",
+      "question_en": "The dining table is within the boat.",
+      "question_vi": "Cái bàn ăn ở bên trong phạm vi của con thuyền.",
+      "source_record_sha256": "edb9e69af0dfd209878120351283b23505a7e47ff9ac0b8fa5d0cc320541d36b",
+      "translation_status": "requires_review",
+      "relation": "within",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_f28921dbab2d5536",
+      "question_en": "The cat is within the backpack.",
+      "question_vi": "Con mèo ở bên trong phạm vi của chiếc ba lô.",
+      "source_record_sha256": "38143cb76409d09963b18a633681a9fd165945d496cefb3d5df893e18f6c5896",
+      "translation_status": "requires_review",
+      "relation": "within",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_f3c21a620b6a76f1",
+      "question_en": "The cake is alongside the laptop.",
+      "question_vi": "Cái bánh ngọt ở bên cạnh chiếc máy tính xách tay.",
+      "source_record_sha256": "96737abbeb666f7c25cc8a1eb1095f7b22d8f695edecc8347dfb698c568f1dac",
+      "translation_status": "requires_review",
+      "relation": "alongside",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_f411e4fbd401a054",
+      "question_en": "The cat is by the toilet.",
+      "question_vi": "Con mèo ở cạnh cái bồn cầu.",
+      "source_record_sha256": "94262aa6266098e075250b27dd99e821974f199e48af622d64c28d901f199919",
+      "translation_status": "requires_review",
+      "relation": "by",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_f42b9659d7c02662",
+      "question_en": "The carrot is at the side of the cat.",
+      "question_vi": "Củ cà rốt ở bên cạnh con mèo.",
+      "source_record_sha256": "f2d48a1211f556cf84e86a46588549cdc872feed5d7fcafe5b25ab0859b85ea4",
+      "translation_status": "requires_review",
+      "relation": "at the side of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_f49e2d9b03a6fbd2",
+      "question_en": "The donut is through the dog.",
+      "question_vi": "Cái bánh donut xuyên qua con chó.",
+      "source_record_sha256": "fdfe073e818e77ea7974c2a1975aabf0ee135308e8741a9b64ce5447f3f8064f",
+      "translation_status": "requires_review",
+      "relation": "through",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_fad771a8bd07d085",
+      "question_en": "The dog is touching the toilet.",
+      "question_vi": "Con chó chạm vào cái bồn cầu.",
+      "source_record_sha256": "cd2f7ddf50b0b6893c2264c4799a4ad36b3316ddde4387b0a0ed5edc6244cf12",
+      "translation_status": "requires_review",
+      "relation": "touching",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_fb598aaa890a4efc",
+      "question_en": "The cake consists of the dog.",
+      "question_vi": "Cái bánh ngọt bao gồm con chó.",
+      "source_record_sha256": "1747771909eb8615aceb665169b9718ba7ce072ac269fd1be93816f202f97e3b",
+      "translation_status": "requires_review",
+      "relation": "consists of",
+      "review_note": "Giữ nguyên các phát biểu lạ/sai của nguồn, không sửa theo ảnh hoặc nhãn. Các quan hệ đa nghĩa và hướng nhìn cần người review đối chiếu; into trong câu tĩnh của nguồn đặc biệt cần kiểm tra. Không coi các cách dịch trùng nhau là quan hệ nguồn đã được gộp.",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_fbaa318aae47f2d2",
+      "question_en": "The person is right of the refrigerator.",
+      "question_vi": "Người ở bên phải chiếc tủ lạnh.",
+      "source_record_sha256": "1223294e57da07e2adf776d3afe7745beae79ec0483a0c0d324d14e71570737f",
+      "translation_status": "requires_review",
+      "relation": "right of",
+      "review_note": "",
+      "human_approval_created": false
+    },
+    {
+      "sample_id": "vsr_fcc1bf389a3bbb9b",
+      "question_en": "The dog is at the edge of the bed.",
+      "question_vi": "Con chó ở mép chiếc giường.",
+      "source_record_sha256": "f704fe75de150c0443032cec48e25acabf62b8a91f8ca82cc233319f40b51264",
+      "translation_status": "requires_review",
+      "relation": "at the edge of",
+      "review_note": "",
+      "human_approval_created": false
+    }
+  ],
+  "human_approvals_created": 0
+}

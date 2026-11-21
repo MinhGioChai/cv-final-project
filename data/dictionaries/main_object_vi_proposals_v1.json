@@ -1,0 +1,29 @@
+{
+  "schema_version": "main_object_vi_proposals_v1",
+  "status": "assistant_draft_requires_human_review",
+  "phrases": {
+    "airplane": "chiếc máy bay", "banana": "quả chuối", "baseball bat": "cây gậy bóng chày",
+    "baseball glove": "chiếc găng tay bóng chày", "bench": "chiếc ghế dài", "bird": "con chim",
+    "book": "cuốn sách", "bottle": "cái chai", "broccoli": "cây bông cải xanh", "cake": "cái bánh ngọt",
+    "carrot": "củ cà rốt", "cat": "con mèo", "chair": "chiếc ghế", "clock": "chiếc đồng hồ",
+    "donut": "cái bánh donut", "elephant": "con voi", "fork": "cái nĩa", "frisbee": "chiếc đĩa ném",
+    "giraffe": "con hươu cao cổ", "horse": "con ngựa", "hot dog": "cái bánh mì kẹp xúc xích",
+    "keyboard": "cái bàn phím", "knife": "con dao", "laptop": "chiếc máy tính xách tay",
+    "microwave": "chiếc lò vi sóng", "motorcycle": "chiếc xe máy", "oven": "chiếc lò nướng",
+    "parking meter": "chiếc đồng hồ thu phí đỗ xe", "pizza": "cái bánh pizza", "potted plant": "chậu cây",
+    "refrigerator": "chiếc tủ lạnh", "sandwich": "cái bánh sandwich", "sheep": "con cừu",
+    "sink": "cái bồn rửa", "skis": "đôi ván trượt tuyết", "snowboard": "chiếc ván trượt tuyết đơn",
+    "spoon": "cái muỗng", "sports ball": "quả bóng thể thao", "stop sign": "biển báo dừng",
+    "suitcase": "chiếc va li", "surfboard": "chiếc ván lướt sóng", "tennis racket": "chiếc vợt quần vợt",
+    "tie": "chiếc cà vạt", "toaster": "chiếc máy nướng bánh mì", "toilet": "cái bồn cầu",
+    "toothbrush": "chiếc bàn chải đánh răng", "traffic light": "cái đèn tín hiệu giao thông",
+    "train": "đoàn tàu", "truck": "chiếc xe tải", "tv": "chiếc tivi", "umbrella": "chiếc ô",
+    "wine glass": "chiếc ly rượu vang", "zebra": "con ngựa vằn"
+  },
+  "risk_notes": {
+    "skis": "Kiểm tra nghĩa số nhiều/đôi ván và phân biệt với snowboard; không tự approve.",
+    "snowboard": "Kiểm tra thuật ngữ ván trượt tuyết đơn và phân biệt với skis.",
+    "parking meter": "Thuật ngữ ít thông dụng ở Việt Nam; cần review tương đương ngữ nghĩa.",
+    "hot dog": "Kiểm tra cách gọi bánh mì kẹp xúc xích và đối tượng trong ảnh."
+  }
+}
