@@ -15,7 +15,7 @@ PATTERNS={
     'signed_asset_url':re.compile(r'https?://[^\s"<>]+[?&](?:X-Amz-Signature|X-Goog-Signature|Signature)=',re.I),
     'url_password':re.compile(r'https?://[^/\s:@]+:[^/\s@]+@'),
 }
-TEXT_SUFFIXES={'.py','.md','.txt','.toml','.yaml','.yml','.json','.jsonl','.csv','.html','.ipynb'}
+TEXT_SUFFIXES={'.py','.cjs','.md','.txt','.toml','.yaml','.yml','.json','.jsonl','.csv','.html','.ipynb'}
 LOCAL_PREFIXES=('.venv/','.venv-infer/','.cache/','.pytest_cache/','data/raw/','data/external_images/','exports/','results/','.git/')
 
 

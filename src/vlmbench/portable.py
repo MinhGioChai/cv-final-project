@@ -18,7 +18,7 @@ def build_pilot_bundle(root: Path, output: Path, manifest: str = "data/pilot/sta
         if (root / name).is_file():
             files.add(root / name)
     for folder, suffixes in (("src", {".py", ".html"}), ("configs", {".yaml"}), ("scripts", {".py"}),
-                             ("notebooks", {".ipynb"}), ("docs", {".md"}), ("tests", {".py", ".md"})):
+                             ("notebooks", {".ipynb"}), ("docs", {".md"}), ("tests", {".py", ".md", ".cjs"})):
         files.update(path for path in (root / folder).rglob("*") if path.is_file() and path.suffix in suffixes and "__pycache__" not in path.parts)
     for folder, suffixes in (("reports", {".md", ".json", ".jsonl", ".csv"}), ("data/reviews", {".csv", ".json"}),
                              ("data/dictionaries", {".csv", ".json", ".txt"}), ("data/pilot", {".csv", ".json"})):

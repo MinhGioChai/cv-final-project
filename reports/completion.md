@@ -1,11 +1,12 @@
 # Completion — trạng thái và context hiện tại
 
-**v26 · 21/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v27 · 21/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
 Đọc thêm [stage data/QA gần nhất](stage1/v10/completion.md),
-[pilot tooling mới nhất](stage1/v11/completion.md),
+[pilot tooling](stage1/v11/completion.md),
+[review tooling A/B mới nhất](stage1/v12/completion.md),
 [công bố GitHub và kiểm chứng tái lập](releases/2026-11-21/README.md),
 [Handoff V3](../docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md),
 [protocol](../docs/research/RESEARCH_PROTOCOL_V3.md) và
@@ -36,9 +37,9 @@
 | Gemma pilot | Cùng 10 ảnh/20 lượt, NF4/BF16, valid 20/20, resume giữ hash; [v7](stage1/v7/completion.md) |
 | Pilot QA | 30 translation approved; JSON người dùng được import ngày 20/11, 30 image/label QA approved; `data/pilot/stage1_qa_v1/pilot_manifest.csv` |
 | Main drafts | Đủ ảnh/EN–VI nháp cho 1.000 row, 783 JPEG/hash khác nhau; source và ID/byte leakage checks đạt; tất cả main requires_review/QA pending |
-| Review main | 22 gói tối đa 50 câu, offline HTML + fixed CSV/JSON; hai reviewer dịch, QA riêng; chưa có main human import |
+| Review main | 22 gói v2 tối đa 50 câu; A/B mỗi người kiểm dịch và ảnh/nhãn, một JSON cuối/gói; chưa có main human import |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
-| Tests | Ngày 21/11: 334 passed/5,56 s trên đúng Git tree phần tài liệu (8033908); từng phần trước cũng được kiểm từ cây Git riêng. Không phải inference/QA mới |
+| Tests | v27 ngày 21/11: 359 passed/8,74 s, thêm 25 tests review A/B/JS/CLI; chưa visual browser QA, không phải inference/QA thật |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
 | Hướng dẫn/structure | Một HUONG_DAN_NHOM.md từ mục tiêu đến push; root scripts 19→9, data/8 và legacy/2. Data/config/runtime paths giữ nguyên |
@@ -55,12 +56,12 @@ QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch
 
 ## Việc tiếp theo
 
-1. Nhóm clone repo đã push, nhận riêng ZIP workspace từ người giữ project và
+1. Nhóm clone repo đã push, nhận riêng main_review_v2.zip từ người giữ project và
    làm thử một gói review/lưu/mở lại JSON trước khi triển khai rộng. ZIP không
    được upload/chia sẻ tự động trong phiên này.
-2. Review main theo [workflow](../docs/research/MAIN_REVIEW_V1.md): mở
-   `reports/stage1/v10/main_review/index.html` sau khi nhận ZIP; tải JSON và
-   lưu `data/reviews/main_review_v1/<packet>_reviewed.json`. Không làm lại pilot.
+2. Review main theo [workflow v2](../docs/research/MAIN_REVIEW_V2.md): mở
+   `reports/stage1/v12/main_review/index.html` sau khi nhận ZIP; tải JSON và
+   lưu `data/reviews/main_review_v2/<packet>_reviewed_v2.json`. Không làm lại pilot.
 3. Dry-run/import các JSON thật vào version mới; xử lý rejected/uncertain,
    tổng hợp đúng 1.000 IDs, đối soát source/ảnh/leakage trước final.
 4. Song song review, hoàn thiện metadata/schema baseline và full runner;
@@ -164,3 +165,20 @@ Git giữ nguồn/template/generator cho 22 gói, không chứa HTML nhúng ản
 ZIP/model/env. Các dữ liệu/runner/config/raw lịch sử và lịch sử completion
 không đổi. Main vẫn pending review, Stage 1 IN_PROGRESS; không inference,
 download model hay tạo human approval. Bước tiếp là chia sẻ ZIP riêng và review.
+
+### v27 — 21/11/2026: Hai người A/B kiểm cả dịch và ảnh/nhãn
+
+Người dùng chọn rõ A làm cả hai, B kiểm lại cả hai; không dùng single reviewer.
+Tạo backend/template v2 và 22 gói mới, CLI mặc định v2 với --version v1 để xử lý
+lịch sử. Mỗi người dùng cùng ID cho hai quyết định; cả hai ID khác nhau phải
+approve bản cuối/quan sát khớp nguồn. Thay VI giữ lượt cũ trong history và yêu
+cầu duyệt lại, không tự biến QA v1 một người thành hai người.
+
+Full suite mới 359 passed/8,74 s; JS mock-DOM → backend và CLI dry-run/import
+synthetic đạt. Đối chiếu 1.000 ảnh nhúng, 22 pending packets/783 ảnh và 225
+protected hashes đạt; main vẫn pending và readiness=false. Đóng gói riêng
+exports/main_review_v2.zip (~83,4 MiB); hai ZIP cũ giữ nguyên. Cập nhật guide,
+protocol, README; công bố thay đổi bằng một commit review riêng theo yêu cầu
+push từng việc. Không model run, download hoặc human approval mới. Chi tiết
+và giới hạn kiểm chứng tại [v12](stage1/v12/completion.md). Bước tiếp: chia sẻ
+ZIP v2, thử lưu/tải/mở lại vài mẫu rồi A → B → import JSON thật.

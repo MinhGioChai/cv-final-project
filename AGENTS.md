@@ -30,6 +30,13 @@ their original paths; consult the maintenance move map when tracing them.
 Generated review HTML, raw data and
 environments stay local or in the private team ZIP, not Git.
 
+Main review now uses v2 (user decision 2026-11-21): A checks both translation
+and image/label, then B checks both in the same JSON. Both distinct IDs are
+required for both gates; A alone is insufficient. See docs/research/MAIN_REVIEW_V2.md.
+Keep v1 backend/template/packets and the two previous ZIPs unchanged; v1 CLI
+requires --version v1. Current pages are reports/stage1/v12/main_review/ and
+the private review-only archive is exports/main_review_v2.zip.
+
 - Update `reports/completion.md` with current verified state, decisions,
   outstanding work, and a concrete next action; append a dated version entry.
 - Keep previous stage reports and evidence. Add a completion report under

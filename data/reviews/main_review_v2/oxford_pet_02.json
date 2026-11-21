@@ -1,0 +1,2164 @@
+{
+  "context": {
+    "schema_version": "main_review_v2",
+    "policy": "two_reviewers_translation_and_image_v2",
+    "manifest_sha256": "a18f28248a45979aa05202bf5dff0a6f8b86c2210542ef39807ec27dd20c6e12",
+    "template_sha256": "e6b8fc28e6aacf7447a636a2390f59eeb457bc59b4f05b0c53b792052fee32b3",
+    "sample_ids": [
+      "oxford_pet_4ec3aac9a54341ce",
+      "oxford_pet_50261b68c22207f2",
+      "oxford_pet_50b61b3dd769ec6a",
+      "oxford_pet_5185e786a254be9d",
+      "oxford_pet_530e91403dc055f5",
+      "oxford_pet_53b3c72498afc2f4",
+      "oxford_pet_53d3c39a98af09c2",
+      "oxford_pet_53e57b2f204b832f",
+      "oxford_pet_567c5248118c2681",
+      "oxford_pet_574f25393f68f889",
+      "oxford_pet_57cfd01b4c4c30d9",
+      "oxford_pet_58174057810fa18b",
+      "oxford_pet_58a66cc25f72e49b",
+      "oxford_pet_5997c540637c8f41",
+      "oxford_pet_59efa1c6c914838b",
+      "oxford_pet_5da3dac66e4a4cc4",
+      "oxford_pet_5f04a689361647b1",
+      "oxford_pet_5f4b5d5a539a81a7",
+      "oxford_pet_60ae3ffe21a68e6d",
+      "oxford_pet_645c30997f9abe05",
+      "oxford_pet_66c94f49d5fbf79a",
+      "oxford_pet_66e6c708df456cd8",
+      "oxford_pet_69f3b99da0258537",
+      "oxford_pet_6d11d9e69bc4fcdc",
+      "oxford_pet_6e2001eb3038790c",
+      "oxford_pet_71e6751af094eb6c",
+      "oxford_pet_723d0bccc3334d3e",
+      "oxford_pet_729ec884dc778bb2",
+      "oxford_pet_73084a3e1a620e1a",
+      "oxford_pet_741ab383e9df2bf7",
+      "oxford_pet_7520d131e5ca6def",
+      "oxford_pet_759bc6ebd0e9bb20",
+      "oxford_pet_76941f63403534d0",
+      "oxford_pet_7bd8c1b79c4ce89d",
+      "oxford_pet_8234d55ce81efc13",
+      "oxford_pet_8291090688aff498",
+      "oxford_pet_87220ade00442912",
+      "oxford_pet_89cf3386bfba99b8",
+      "oxford_pet_8a3104f0cdcb8ed0",
+      "oxford_pet_8d7195b320fc8c3d",
+      "oxford_pet_8e5bd3dc23fa665c",
+      "oxford_pet_90984219b769b560",
+      "oxford_pet_90da31354b86f329",
+      "oxford_pet_92d92be1dbc71dd4",
+      "oxford_pet_96bee639e1ec3cbc",
+      "oxford_pet_987430f737fc724c",
+      "oxford_pet_9a1d6d83312a2832",
+      "oxford_pet_9c75ee859ba54dd5",
+      "oxford_pet_9d92d7fafa0e8ddb",
+      "oxford_pet_a02d3d176f25e8f6"
+    ],
+    "row_sha256": {
+      "oxford_pet_4ec3aac9a54341ce": "353fe745c6e37d9d46a786c68ff6b3069ab3a1824e1bb03aaa9c095914c2c2f9",
+      "oxford_pet_50261b68c22207f2": "72197386c9c3831fcc95fef79719cad751d9bb926e28b779b65ff6d1079e9897",
+      "oxford_pet_50b61b3dd769ec6a": "71103e633f842d62eaa92191fe00d369c1f1a4a6749ca54d6ec070eb19f21ece",
+      "oxford_pet_5185e786a254be9d": "6bedb4d1f609df03554f2b8bef1a598062133133ec6441ce8adcec3db7dbdb5d",
+      "oxford_pet_530e91403dc055f5": "0a06aa164fe3ce0d29d3bda3ad6c318305e738ad3742935ad9b4bec98a966c01",
+      "oxford_pet_53b3c72498afc2f4": "78d102935bc12c65ffcc9ad834aeb082a3109def902a638013a246902ca52db7",
+      "oxford_pet_53d3c39a98af09c2": "e0e5886461ae1525872d423d5872f9b2dc0ce2961afcd9cb0edcbb5f34140696",
+      "oxford_pet_53e57b2f204b832f": "7af7619b3ddc43beab3f22f99a979552725c4941d364fc87596e98ac8cebc833",
+      "oxford_pet_567c5248118c2681": "5de0b24c4c92f6e671b50db4154f39c36291303f378ee316c46a22983150fc06",
+      "oxford_pet_574f25393f68f889": "8ae0d31c81589ecf52087e57dced7550080f8affeca165baddc7a53237e4f634",
+      "oxford_pet_57cfd01b4c4c30d9": "eb030e7c7addeffb790abba166a30d34689bc9863a7c258cc496d29ceadba8f8",
+      "oxford_pet_58174057810fa18b": "2e55724915b46ad92b9a1544fe2211f860331dec5c7943fe2a74a259975b6b98",
+      "oxford_pet_58a66cc25f72e49b": "d4bafc57066210eee4dd0301376373a0dbcd0eaeba3ed2c8919fad54f8f31802",
+      "oxford_pet_5997c540637c8f41": "7a0e0655d2d765d3129e0aa21748d71d2db20b45ac16d8b4b9ecb2851981e78d",
+      "oxford_pet_59efa1c6c914838b": "5af338e2e05d7f244e008cefee9910a3c8754a4d4e9b7613e709b73c59890388",
+      "oxford_pet_5da3dac66e4a4cc4": "f11233495fa0490b974b5fdb970bcaa4d0e1251e11f29dce3e0cebacc8c5c4ab",
+      "oxford_pet_5f04a689361647b1": "2661973a8b5439a05960de69f6f8b16aeda5877c1eede9354467a18e0e3fc9a4",
+      "oxford_pet_5f4b5d5a539a81a7": "a053c8cf953ae4d9eb0532f412e108cf5d022adc15a07916cc860ad28d79dfac",
+      "oxford_pet_60ae3ffe21a68e6d": "f18c87c3140efa415e28f7e50ed65f6c56421d51b168a70bc19dd1f85417e3c4",
+      "oxford_pet_645c30997f9abe05": "44d46cf06406b367f31f58059747931b8e5dee0ff4b996cbef0e9fbc249277d3",
+      "oxford_pet_66c94f49d5fbf79a": "92aca387590af1011017410b0d3e91c10fe63d4eb6c60a716acb9c945aef56df",
+      "oxford_pet_66e6c708df456cd8": "e3c049b7f0f60bfa9e88419f3f454129744080d93cb21e58c3266bd88afe4f5f",
+      "oxford_pet_69f3b99da0258537": "be2ca475afc8e2f7964f75608081f5fe55275603b45461db4c708f384a706ce2",
+      "oxford_pet_6d11d9e69bc4fcdc": "29422b7ea8a520f05bf790465987520b47f74d05c7bb736bfdf608306963df6e",
+      "oxford_pet_6e2001eb3038790c": "1d713a45cacb62fe72e9de1169e0627e60a90c4c894f18ed55765be9054cca86",
+      "oxford_pet_71e6751af094eb6c": "97c127a702c7017613e44bad459f200770d7f4382967ef4824258023989c8d49",
+      "oxford_pet_723d0bccc3334d3e": "5e2e49f7a1c72b93e11dc91814c6d142727dce2745df23aaf1d9257c5b11aeb6",
+      "oxford_pet_729ec884dc778bb2": "bc576d761a1811c7da15f44fe1968e73cf034671e3d27626560a5abba4a97681",
+      "oxford_pet_73084a3e1a620e1a": "c0567d36483fefc49f0e89f49960caec67813074977de6c37c5763d728d18d72",
+      "oxford_pet_741ab383e9df2bf7": "eaff3182a4130b7672c9d2e25bab992795091e08c20813d20b44f4a8346e81ea",
+      "oxford_pet_7520d131e5ca6def": "57440f4127894268530ddaa45805873b6331cdb660108cee90e810826d957a53",
+      "oxford_pet_759bc6ebd0e9bb20": "10d234a3f4514b64ce8e9a03ff59d8c585a45cb1fda5ba06dcd7e42cee747020",
+      "oxford_pet_76941f63403534d0": "2d6fe1d4cf9f985670835e1dfc1245a42512810b3cb1a18d63e48c5becfdac6a",
+      "oxford_pet_7bd8c1b79c4ce89d": "0df86cb78bd267c3fe8eefd79e8e1c1aa80822c27f2fae5f1115704e102b1ead",
+      "oxford_pet_8234d55ce81efc13": "0b28769a552698932ecd0bf9b16483e8d84a0c593b5df05bf524ddcfe5b93ba5",
+      "oxford_pet_8291090688aff498": "c344b00d6933273e560188191c5f067d8b55a66087138b2cba23df29fbda4620",
+      "oxford_pet_87220ade00442912": "721af7dc19b818698f083ab6d86086b20098522459412be129bfe67e5e1d3309",
+      "oxford_pet_89cf3386bfba99b8": "04d227cf08099a70297312882a06e07f6f2b6a71e0e6af43f16cdd9d4a8448be",
+      "oxford_pet_8a3104f0cdcb8ed0": "449f864aab0ed31ee8f1f18817222d265609464f1fa7ea08ff9d1f2f8237a60a",
+      "oxford_pet_8d7195b320fc8c3d": "508c29472108fb19328c7567b0f3ef8dbfe552b0c0dca72f773cd33f7210c53d",
+      "oxford_pet_8e5bd3dc23fa665c": "84f66520064df955626f474b0391bac8e168e8cbdb607c4c479de9597936740a",
+      "oxford_pet_90984219b769b560": "a3e1bb4847452a087414bcea588b72e92902a117290a95ede723305c2d86a082",
+      "oxford_pet_90da31354b86f329": "c228fec5620942cbdf64ef9cde991a5638b2006898ec62402fee19e82d7282b5",
+      "oxford_pet_92d92be1dbc71dd4": "b2d3a9be082592663a022ff95b75a63dbf689fd1c491bb4a7e7c815bcf969376",
+      "oxford_pet_96bee639e1ec3cbc": "1f380270dfc0b78d722b1a90ba878f42608737a38afe4b52d113f969b544bd4d",
+      "oxford_pet_987430f737fc724c": "eab8d68d153148d6d9552597b1c4316a9b91140ebbd9566d65ac7db4e78f0661",
+      "oxford_pet_9a1d6d83312a2832": "90c0c571b9d11da1bbb974902ebb4b3acc31cc3ee537c94060e51c776bdd76f6",
+      "oxford_pet_9c75ee859ba54dd5": "f0786c64bfb848617b6b8eb12c1b8d3ed95d61de36a1cee7bb58a828997651da",
+      "oxford_pet_9d92d7fafa0e8ddb": "289cbb493d0bd544eb51878b8985d38e08853ed66634f9d376c3712fa1ce1d7a",
+      "oxford_pet_a02d3d176f25e8f6": "5acf07b0f9d287f41b3bc34558dfc321411ed15b8e685aad80c27153aec5e314"
+    }
+  },
+  "decisions": [
+    {
+      "sample_id": "oxford_pet_4ec3aac9a54341ce",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_50261b68c22207f2",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_50b61b3dd769ec6a",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_5185e786a254be9d",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_530e91403dc055f5",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_53b3c72498afc2f4",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_53d3c39a98af09c2",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_53e57b2f204b832f",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_567c5248118c2681",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_574f25393f68f889",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_57cfd01b4c4c30d9",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_58174057810fa18b",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_58a66cc25f72e49b",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_5997c540637c8f41",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_59efa1c6c914838b",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_5da3dac66e4a4cc4",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_5f04a689361647b1",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_5f4b5d5a539a81a7",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_60ae3ffe21a68e6d",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_645c30997f9abe05",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_66c94f49d5fbf79a",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_66e6c708df456cd8",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_69f3b99da0258537",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_6d11d9e69bc4fcdc",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_6e2001eb3038790c",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_71e6751af094eb6c",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_723d0bccc3334d3e",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_729ec884dc778bb2",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_73084a3e1a620e1a",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_741ab383e9df2bf7",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_7520d131e5ca6def",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_759bc6ebd0e9bb20",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_76941f63403534d0",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_7bd8c1b79c4ce89d",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_8234d55ce81efc13",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_8291090688aff498",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_87220ade00442912",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_89cf3386bfba99b8",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_8a3104f0cdcb8ed0",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_8d7195b320fc8c3d",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_8e5bd3dc23fa665c",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_90984219b769b560",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_90da31354b86f329",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_92d92be1dbc71dd4",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_96bee639e1ec3cbc",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_987430f737fc724c",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_9a1d6d83312a2832",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_9c75ee859ba54dd5",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_9d92d7fafa0e8ddb",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "oxford_pet_a02d3d176f25e8f6",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "pending",
+          "reviewer_id": "",
+          "reviewed_at": "",
+          "notes": "",
+          "reviewed_question_vi": "",
+          "observed_answer": ""
+        }
+      },
+      "history": []
+    }
+  ]
+}

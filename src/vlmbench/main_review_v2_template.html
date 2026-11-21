@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Review main v2 — A và B</title>
+<style>
+body{font:16px system-ui;max-width:1250px;margin:auto;padding:20px;background:#f4f6fa;color:#17243c;line-height:1.5}
+button,input,select,textarea{font:inherit;padding:9px;max-width:100%;box-sizing:border-box}button{cursor:pointer}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:14px 0}.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
+.panel{background:white;padding:18px;border-radius:10px}img{width:100%;max-height:650px;object-fit:contain}
+label{display:block;margin:12px 0}textarea{width:100%;min-height:70px}#notice{color:#963900;min-height:30px}#hint{color:#785000}
+pre{white-space:pre-wrap}dialog{max-width:95vw}dialog img{max-height:85vh}fieldset{border:1px solid #ccd5e4;border-radius:8px;margin:14px 0}
+@media(max-width:750px){.grid{grid-template-columns:1fr}}
+</style>
+<h1>Review main — mỗi người kiểm cả dịch và ảnh/nhãn</h1>
+<p><strong>A:</strong> chọn Lượt A, kiểm cả hai phần, lưu từng mẫu rồi tải JSON gửi B.
+<strong>B:</strong> mở JSON của A, nhập ID của B, chọn Lượt B và kiểm lại cả hai phần. Sau đó tải JSON cuối để gửi tổng hợp.</p>
+<p>Cần hai người khác nhau. Sửa VI làm các lượt cũ chuyển vào lịch sử; cả hai cần duyệt bản cuối.
+Chưa rõ thì giữ pending và ghi chú. Không sửa nhãn nguồn; không có đáp án model.</p>
+<div class="bar">
+<label>ID / tên của bạn <input id="reviewer" autocomplete="off"></label>
+<label>Lượt đang làm <select id="slot"><option value="reviewer_a">Lượt A — dịch và ảnh/nhãn</option><option value="reviewer_b">Lượt B — kiểm lại cả hai</option></select></label>
+<button id="download">Tải JSON review</button>
+<label>Mở JSON đã lưu <input id="restore" type="file" accept=".json"></label>
+</div>
+<div class="bar"><button id="prev">← Trước</button><select id="jump" aria-label="Chọn mẫu"></select><button id="next">Sau →</button><span id="progress"></span></div>
+<div class="grid">
+<div class="panel"><img id="image" alt="Ảnh cần review"><button id="zoomButton">Xem ảnh lớn</button><p id="identity"></p></div>
+<div class="panel">
+<p id="en"></p><label>Bản dịch VI <textarea id="vi"></textarea></label><p id="hint"></p>
+<fieldset><legend>1. Kiểm bản dịch</legend>
+<label>Quyết định dịch <select id="translationStatus"><option value="pending">Pending — chưa chốt</option><option value="approved">Approved — đúng và tương đương</option><option value="rejected">Rejected — cần xử lý</option></select></label>
+<label>Ghi chú bản dịch <textarea id="translationNotes"></textarea></label>
+</fieldset>
+<fieldset><legend>2. Kiểm ảnh và nhãn</legend>
+<p id="truth"></p><pre id="labels"></pre>
+<label>Đáp án bạn quan sát <input id="observed" placeholder="yes/no; số nguyên; A–H; hoặc uncertain"></label>
+<label>Quyết định ảnh/nhãn <select id="imageStatus"><option value="pending">Pending — chưa chốt</option><option value="approved">Approved — quan sát khớp nhãn</option><option value="rejected">Rejected — cần xử lý</option></select></label>
+<label>Ghi chú ảnh/nhãn <textarea id="imageNotes"></textarea></label>
+</fieldset>
+<button id="save">Lưu cả hai phần của lượt này</button>
+<pre id="evidence"></pre><p id="notice" role="status"></p>
+<details><summary>Lịch sử các lượt trước</summary><pre id="history"></pre></details>
+</div></div>
+<dialog id="zoom"><button id="closeZoom">Đóng</button><img id="largeImage" alt="Ảnh phóng lớn"></dialog>
+<script type="application/json" id="payload">__MAIN_REVIEW_PAYLOAD__</script>
+<script>
+'use strict';
+const payload=JSON.parse(document.getElementById('payload').textContent);
+const cards=payload.cards, slots=['reviewer_a','reviewer_b'], $=id=>document.getElementById(id);
+const blankDecision=()=>({status:'pending',reviewer_id:'',reviewed_at:'',notes:'',reviewed_question_vi:'',observed_answer:''});
+const blankRound=()=>({translation:blankDecision(),image_qa:blankDecision()});
+const clone=x=>JSON.parse(JSON.stringify(x));
+const normalized=x=>x.trim().toLowerCase();
+const stable=x=>JSON.stringify(x,(_,v)=>v&&typeof v==='object'&&!Array.isArray(v)?Object.fromEntries(Object.entries(v).sort(([a],[b])=>a.localeCompare(b))):v);
+function exactKeys(x,keys){return x&&typeof x==='object'&&!Array.isArray(x)&&stable(Object.keys(x).sort())===stable([...keys].sort());}
+function recorded(p){return Object.entries(blankDecision()).some(([k,v])=>p[k]!==v);}
+function observedTruth(card,value){
+  if(value==='uncertain')return null;
+  if(['object_existence','spatial'].includes(card.task)&&['yes','no'].includes(value))return value;
+  if(card.task==='counting'&&/^(0|[1-9][0-9]*)$/.test(value))return Number(value);
+  if(card.task==='fine_grained'&&/^[A-H]$/.test(value))return value;
+  throw Error('Đáp án quan sát: nhập yes/no, số nguyên không âm, A–H hoặc uncertain đúng tác vụ.');
+}
+function identity(p){
+  if(!p.reviewer_id.trim()||!/(Z|[+-]\d{2}:\d{2})$/.test(p.reviewed_at)||!Number.isFinite(Date.parse(p.reviewed_at)))
+    throw Error('Quyết định cần ID và thời gian có múi giờ.');
+}
+function validateRound(round,card,text){
+  if(!exactKeys(round,['translation','image_qa']))throw Error('Sai cấu trúc lượt review.');
+  const owners=new Set();
+  for(const name of ['translation','image_qa']){
+    const p=round[name];
+    if(!exactKeys(p,Object.keys(blankDecision()))||!Object.values(p).every(v=>typeof v==='string')||!['pending','approved','rejected'].includes(p.status))throw Error('Quyết định không hợp lệ.');
+    if(!recorded(p))continue;
+    identity(p);owners.add(normalized(p.reviewer_id));
+    if(p.reviewed_question_vi!==text)throw Error('Quyết định thuộc bản VI cũ; cần duyệt lại.');
+    if(p.status==='rejected'&&!p.notes.trim())throw Error('Rejected cần ghi chú.');
+    if(name==='translation'&&p.observed_answer)throw Error('Phần dịch không chứa đáp án quan sát.');
+    if(name==='image_qa'&&(p.status!=='pending'||p.observed_answer)){
+      const observed=observedTruth(card,p.observed_answer);
+      if(p.observed_answer==='uncertain'&&!p.notes.trim())throw Error('Uncertain cần ghi chú.');
+      if(p.status==='approved'&&observed!==card.ground_truth)throw Error('Quan sát chưa khớp nhãn; giữ pending/rejected và ghi chú.');
+    }
+  }
+  if(owners.size>1)throw Error('Một lượt phải do cùng một người kiểm cả hai phần.');
+  return [...owners][0]||'';
+}
+function validate(x){
+  if(!exactKeys(x,['context','decisions'])||stable(x.context)!==stable(payload.review.context)||!Array.isArray(x.decisions)||x.decisions.length!==cards.length||new Set(x.decisions.map(d=>d.sample_id)).size!==cards.length)throw Error('JSON không thuộc đúng gói v2 hoặc thiếu/trùng IDs.');
+  for(const c of cards){
+    const d=x.decisions.find(d=>d.sample_id===c.sample_id);
+    if(!exactKeys(d,['sample_id','question_vi',...slots,'history'])||typeof d.question_vi!=='string'||!d.question_vi.trim()||!Array.isArray(d.history))throw Error('Sai cấu trúc mẫu/VI.');
+    const owners=slots.map(s=>validateRound(d[s],c,d.question_vi));
+    if(owners[0]&&owners[0]===owners[1])throw Error('Lượt A và B phải có hai ID khác nhau.');
+    for(const h of d.history){
+      if(!exactKeys(h,['reviewer_slot','question_vi','review','archived_at','reason'])||!slots.includes(h.reviewer_slot)||typeof h.question_vi!=='string'||!h.question_vi.trim()||!['translation_changed','review_replaced'].includes(h.reason))throw Error('Lịch sử không hợp lệ.');
+      identity({reviewer_id:'history',reviewed_at:h.archived_at});validateRound(h.review,c,h.question_vi);
+    }
+  }
+  return x;
+}
+let review=clone(payload.review), index=0, slot='reviewer_a';
+const key='vlmbench-main-review-v2:'+review.context.manifest_sha256+':'+review.context.template_sha256;
+try{const saved=localStorage.getItem(key);if(saved)review=validate(JSON.parse(saved));}catch(e){$('notice').textContent='Không nạp được bản tự lưu: '+e.message;}
+function decision(){return review.decisions.find(d=>d.sample_id===cards[index].sample_id);}
+function dirty(){const d=decision(),p=d[slot];return $('vi').value!==d.question_vi||$('translationStatus').value!==p.translation.status||$('translationNotes').value!==p.translation.notes||$('imageStatus').value!==p.image_qa.status||$('imageNotes').value!==p.image_qa.notes||$('observed').value!==p.image_qa.observed_answer;}
+function render(){
+  const c=cards[index],d=decision(),p=d[slot];
+  $('image').src=c.image;$('identity').textContent=payload.packet+' · '+c.sample_id+' · '+c.task;
+  $('en').textContent='EN: '+c.question_en;$('vi').value=d.question_vi;$('hint').textContent=c.review_note;
+  $('translationStatus').value=p.translation.status;$('translationNotes').value=p.translation.notes;
+  $('imageStatus').value=p.image_qa.status;$('imageNotes').value=p.image_qa.notes;$('observed').value=p.image_qa.observed_answer;
+  $('truth').textContent='Nhãn nguồn: '+String(c.ground_truth)+(c.task==='spatial'?' (yes=TRUE, no=FALSE)':'');
+  $('labels').textContent=Object.entries(c.labels).map(([k,v])=>k+': '+v).join('\n');
+  $('evidence').textContent=slots.map((s,i)=>{const p=d[s];return (i?'B':'A')+': dịch '+p.translation.status+'; ảnh/nhãn '+p.image_qa.status+'; ID '+(p.translation.reviewer_id||p.image_qa.reviewer_id||'chưa có');}).join('\n');
+  $('history').textContent=d.history.length?JSON.stringify(d.history,null,2):'Chưa có lượt cũ.';
+  const done=review.decisions.filter(d=>slots.every(s=>d[s].translation.status==='approved'&&d[s].image_qa.status==='approved')).length;
+  $('progress').textContent=(index+1)+'/'+cards.length+' · Đủ hai lượt: '+done+'/'+cards.length;
+  $('jump').value=index;$('prev').disabled=index===0;$('next').disabled=index===cards.length-1;$('notice').textContent='';
+}
+function navigate(n){if(dirty()){$('notice').textContent='Lưu trước khi chuyển mẫu.';$('jump').value=index;return;}index=n;render();}
+cards.forEach((c,i)=>{const o=document.createElement('option');o.value=i;o.textContent=(i+1)+' · '+c.image_id;$('jump').append(o);});
+$('prev').onclick=()=>navigate(index-1);$('next').onclick=()=>navigate(index+1);$('jump').onchange=()=>navigate(Number($('jump').value));
+$('slot').onchange=()=>{if(dirty()){$('slot').value=slot;$('notice').textContent='Lưu trước khi đổi lượt.';return;}slot=$('slot').value;render();};
+function archive(d,s,reason,now){
+  if(['translation','image_qa'].some(k=>recorded(d[s][k])))d.history.push({reviewer_slot:s,question_vi:d.question_vi,review:clone(d[s]),archived_at:now,reason});
+}
+$('save').onclick=()=>{
+  try{
+    const original=decision(),d=clone(original),c=cards[index],id=$('reviewer').value.trim(),text=$('vi').value,now=new Date().toISOString();
+    if(!id)throw Error('Nhập ID / tên của chính bạn.');
+    if(!text.trim())throw Error('Bản VI không được trống.');
+    const own=validateRound(d[slot],c,d.question_vi),other=slots.find(s=>s!==slot),otherOwner=validateRound(d[other],c,d.question_vi);
+    if(own&&own!==normalized(id))throw Error('Lượt này thuộc ID khác; chọn đúng lượt của bạn.');
+    if(otherOwner===normalized(id))throw Error('A và B phải là hai người khác nhau.');
+    const make=(status,notes,observed='')=>({status,reviewer_id:id,reviewed_at:now,notes:notes.trim(),reviewed_question_vi:text,observed_answer:observed});
+    const next={translation:make($('translationStatus').value,$('translationNotes').value),image_qa:make($('imageStatus').value,$('imageNotes').value,$('observed').value.trim())};
+    validateRound(next,c,text);
+    const changed=text!==d.question_vi;
+    if(changed){for(const s of slots){archive(d,s,'translation_changed',now);d[s]=blankRound();}d.question_vi=text;}
+    else archive(d,slot,'review_replaced',now);
+    d[slot]=next;
+    const candidate=clone(review);candidate.decisions[candidate.decisions.findIndex(p=>p.sample_id===d.sample_id)]=d;
+    validate(candidate);review=candidate;render();
+    let message=changed?'Đã lưu. Bản VI đổi: các lượt cũ nằm trong lịch sử; lượt còn lại cần duyệt lại.':'Đã lưu cả hai phần. Tải JSON trước khi đóng trang.';
+    try{localStorage.setItem(key,JSON.stringify(review));}catch(e){message+=' Không tự lưu được vào browser; hãy tải JSON ngay.';}
+    $('notice').textContent=message;
+  }catch(e){$('notice').textContent=e.message;}
+};
+$('download').onclick=()=>{
+  try{if(dirty())throw Error('Lưu mẫu hiện tại trước khi tải.');validate(review);
+    const blob=new Blob([JSON.stringify(review,null,2)+'\n'],{type:'application/json;charset=utf-8'}),a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);a.download=payload.packet+'_reviewed_v2.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+  }catch(e){$('notice').textContent=e.message;}
+};
+$('restore').onchange=async()=>{
+  try{if(dirty())throw Error('Lưu mẫu hiện tại trước khi mở JSON.');const file=$('restore').files[0];if(!file)return;
+    const restored=validate(JSON.parse(await file.text()));review=restored;render();
+    try{localStorage.setItem(key,JSON.stringify(review));}catch(e){$('notice').textContent='Đã nạp JSON; không tự lưu được vào browser, hãy tải JSON trước khi đóng.';}
+  }catch(e){$('notice').textContent=e.message;}
+};
+$('zoomButton').onclick=()=>{$('largeImage').src=$('image').src;$('zoom').showModal();};$('closeZoom').onclick=()=>$('zoom').close();
+render();
+</script>
+</html>

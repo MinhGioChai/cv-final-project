@@ -133,7 +133,7 @@ Cloud notebooks đã cập nhật code, chưa có real Colab/Kaggle generation �
 Các con số trên có các mức bằng chứng khác nhau: 20 lượt/model là inference
 thật đã có; QA pilot 30 là quyết định người thật đã import; main 1.000 là
 draft đã kiểm kỹ thuật, chưa có human approval. Lần kiểm thử software gần
-nhất được ghi ở completion là 334 tests đạt; tests/dry-run không phải thêm
+nhất được ghi ở completion là 359 tests đạt; tests/dry-run không phải thêm
 lượt inference hoặc thêm người duyệt.
 
 ### 2.2 Mốc đang chờ: đưa nhóm vào review main
@@ -142,8 +142,9 @@ lượt inference hoặc thêm người duyệt.
 Hai ZIP vẫn phải được người giữ project chia sẻ riêng. Project chưa
 nhận/import JSON review main; chưa có kết quả benchmark chính để phân tích.
 
-Bộ review nằm tại `reports/stage1/v10/main_review/index.html` trên máy giữ
-project hoặc sau khi giải nén ZIP workspace. Phân bố 22 gói:
+Bộ review hiện hành **v2** nằm tại `reports/stage1/v12/main_review/index.html`
+trên máy giữ project hoặc sau khi giải nén `main_review_v2.zip`. Mỗi người
+A/B đều kiểm bản dịch và ảnh/nhãn. Phân bố 22 gói:
 
 | Nhóm gói | Số gói | Số mẫu trong từng gói | Tổng mẫu |
 |---|---:|---|---:|
@@ -154,10 +155,11 @@ project hoặc sau khi giải nén ZIP workspace. Phân bố 22 gói:
 | Tổng | 22 | Tối đa 50/gói | 1.000 |
 
 Các HTML nhúng ảnh được giữ ngoài Git. Push repo thôi chưa làm nhóm nhận
-được trang/ảnh review; cần chia sẻ riêng `team_workspace_v1.zip`. Ngược lại,
+được trang/ảnh review; cần chia sẻ riêng `main_review_v2.zip`. Ngược lại,
 người chỉ review có thể mở ZIP ngay, không cần chờ clone/cài Python/GPU.
-Mỗi gói cần đủ hai quyết định dịch và QA ảnh/nhãn riêng; số gói không đồng
-nghĩa với số người. Nhóm tự phối hợp, tránh điền hộ quyết định hoặc sửa đè JSON.
+Mỗi gói cần **hai người A/B, mỗi người kiểm cả dịch và ảnh/nhãn**. A gửi JSON
+cho B mở tiếp; mỗi gói nộp một JSON cuối. Chỉ A làm chưa đủ. Nhóm tự phối hợp,
+không điền hộ ID hoặc sửa đè JSON; không cần người C riêng.
 
 ### 2.3 Những phần chưa được triển khai/xác nhận
 
@@ -188,8 +190,8 @@ metadata/full runner; không cần tất cả thành viên chạy lại pilot.
 
 | Mốc | Công việc | Đầu ra bàn giao | Khi nào được coi là xong? |
 |---|---|---|---|
-| A — Mở cộng tác ngay | Clone/kiểm repo đã push, chia sẻ guide và ZIP workspace, chọn gói review | Repo/ZIP nhóm truy cập được, thống nhất tên gói và cách chuyển JSON | Có thể nhận code hoặc mở review; thử lưu/tải/mở lại JSON một gói trước khi làm rộng |
-| B — Review main | Hai người kiểm bản dịch cuối; QA ảnh/nhãn, ghi uncertain/rejected | `<packet>_reviewed.json` theo đúng context, observations và reviewer/time thật | Import hợp lệ; mọi mẫu được xử lý rõ ràng trước freeze, không chỉ bấm hết pending |
+| A — Mở cộng tác ngay | Clone/kiểm repo đã push, chia sẻ guide và main_review_v2.zip, chọn gói review | Repo/ZIP nhóm truy cập được, thống nhất tên gói và cách chuyển JSON | Có thể nhận code hoặc mở review; thử lưu/tải/mở lại JSON một gói trước khi làm rộng |
+| B — Review main | A kiểm dịch và ảnh/nhãn, B kiểm lại cả hai; ghi uncertain/rejected | `<packet>_reviewed_v2.json` theo đúng context, observations và reviewer/time thật | Import hợp lệ; mọi mẫu được xử lý rõ ràng trước freeze, không chỉ bấm hết pending |
 | C — Baseline engineering | Metadata/prompt/config contract, full-main runner, raw/error/resume/grid checks | Code/tests, metadata spec, dry-run kế hoạch 1.000 ×2 ×2 | Kế hoạch đủ 4.000 ô, routing/labels đúng bốn task; không cần gọi model để kiểm lưới |
 | D — Tổng hợp và freeze | Ghép review, kiểm IDs/source/ảnh/leakage, chốt configs và protocol | Manifest version mới, hash/freeze receipt, run plan | QA được duyệt thật, nghi vấn đã xử lý, các thay đổi loại/thay mẫu có quyết định/log; nhóm chốt trước full-run |
 | E — Main inference | Chạy từng model theo kế hoạch được xác nhận, checkpoint/resume và kiểm coverage | JSONL/meta/errors/summaries, audit theo ô EN–VI | Đối chiếu đủ expected grid; lỗi/invalid/missing được ghi rõ, không bị giấu hoặc đổi thành đáp án hợp lệ |
@@ -215,10 +217,10 @@ Workstreams không phải phân công cứng cho từng thành viên. Ghi nhận
 
 ### 3.3 Việc đầu tiên nên làm trong đợt cộng tác này
 
-1. Clone repo theo mục 4.1; người giữ project chia sẻ riêng ZIP workspace/guide.
+1. Clone repo theo mục 4.1; người giữ project chia sẻ riêng main_review_v2.zip và guide.
 2. Chọn một gói để thử quy trình review → tải JSON → mở lại → dry-run import.
    Sau khi cách làm rõ, nhóm tiếp tục các gói còn lại và chuyển JSON tuần tự
-   giữa hai người duyệt dịch.
+   giữa A/B, mỗi người kiểm cả dịch và ảnh/nhãn.
 3. Phần kỹ thuật tiếp tục metadata/main runner và kiểm lưới dự kiến bằng
    dry-run. Đây là công việc cần thực hiện tiếp, chưa có bằng chứng đã hoàn thành.
 4. Gom JSON theo từng đợt để kiểm/import sớm, không đợi đủ 22 gói mới phát hiện
@@ -273,16 +275,18 @@ chạy được giữ nguyên, không cần xóa/cài lại để tham gia nhóm
 
 ## 5. Nhận dữ liệu và review main
 
-### 5.1 Phân biệt Git và hai ZIP
+### 5.1 Chọn đúng gói tải về
 
 | Gói/nơi lưu | Chứa gì? | Dùng khi nào? |
 |---|---|---|
 | Repository Git | Code/configs/manifests, VI drafts, review JSON/CSV, báo cáo nhỏ và pilot output snapshots | Clone, sửa code, commit/PR |
-| `team_workspace_v1.zip` (~184 MiB) | Ảnh/cache cần cho validation và 22 trang review main | Review hoặc làm code/data main |
+| `main_review_v2.zip` (~83,4 MiB) | 22 gói HTML v2 nhúng ảnh, CSV/JSON pending | Thành viên review: chỉ cần gói này |
+| `team_workspace_v1.zip` (~184 MiB) | Ảnh/cache cho validation; kèm HTML v1 lịch sử | Làm code/data, sau restore sinh review v2 bằng lệnh bên dưới |
 | `pilot_team_v1.zip` (~2,4 MiB) | Snapshot code/configs và 30 ảnh pilot | Upload vào notebook Colab/Kaggle khi cần chạy model |
 
 Nhận ZIP qua kênh chia sẻ riêng của nhóm; Git không chứa chúng. Checksums ở
-[release manifest](reports/releases/2026-11-21/publication.json) và
+[review v2 receipt](reports/stage1/v12/review_bundle.json),
+[release manifest cho hai ZIP cũ](reports/releases/2026-11-21/publication.json) và
 `reports/stage1/v11/pilot_bundle.json`.
 ZIP là snapshot: layout của code trong pilot ZIP có thể cũ hơn repo hiện tại,
 nhưng bộ launcher/config trong gói đã được kiểm dry-run. Không ghép code của
@@ -290,18 +294,22 @@ hai snapshot vào cùng cloud workspace hoặc sửa metadata để ép resume.
 
 ### 5.2 Chỉ review — không cần cài Python
 
-1. Giải nén `team_workspace_v1.zip` vào **một thư mục mới**.
-2. Mở `reports/stage1/v10/main_review/index.html` bằng trình duyệt.
-3. Chọn một gói, tối đa 50 câu. Nhập ID/biệt danh của **chính người đang review**.
-4. Chọn phần đang duyệt: bản dịch người 1, bản dịch người 2, hoặc QA ảnh/nhãn.
-5. Lưu từng mẫu, sau đó tải `<packet>_reviewed.json` trước khi đóng trang.
-6. Chuyển JSON cho người thứ hai mở tiếp hoặc gửi người phụ trách import.
-   Nếu có repo, lưu vào `data/reviews/main_review_v1/` và commit file JSON.
+1. Nhận **main_review_v2.zip**, giải nén vào một thư mục mới.
+2. Mở `reports/stage1/v12/main_review/index.html`, chọn gói nhóm đã thống nhất.
+3. **A:** nhập ID của mình, chọn **Lượt A**, kiểm dịch và ảnh/nhãn trên cùng
+   màn hình; bấm **Lưu cả hai phần của lượt này** cho từng mẫu.
+4. A tải JSON gửi B. **B:** mở cùng HTML, dùng **Mở JSON đã lưu** nạp file A,
+   nhập ID của B, chọn **Lượt B** và kiểm lại cả hai phần.
+5. B tải `<packet>_reviewed_v2.json` cuối gửi người tổng hợp. Giữ bản A/B làm
+   backup. Nếu có repo, lưu JSON cuối vào `data/reviews/main_review_v2/`.
 
-Hai người khác nhau phải duyệt đúng cùng bản dịch cuối. Sửa VI làm reset các
-quyết định dịch cũ; không điền hộ ID/ngày duyệt hoặc approved hàng loạt.
-QA ảnh/nhãn là quyết định riêng. Approved khi quan sát khớp nhãn nguồn;
-uncertain/rejected cần ghi chú và được xử lý trước freeze. Không sửa ground truth.
+Cần hai ID khác nhau; một người chưa đủ hoàn tất. Nếu B sửa VI, các lượt cũ
+chuyển vào lịch sử và không còn tính vào approval; B gửi lại JSON để A duyệt
+bản mới. Không điền hộ tên/ngày duyệt. Approved ảnh/nhãn chỉ khi quan sát khớp
+nguồn; uncertain/rejected cần ghi chú. Không sửa ground truth.
+
+Thử 2–3 mẫu → tải JSON → mở lại trước khi làm cả gói. JSON v1 không dùng trực
+tiếp trên trang v2; giữ file cũ để đối soát, không xóa hoặc tự gán approval mới.
 
 | Task | Quan sát cần nhập |
 |---|---|
@@ -321,6 +329,7 @@ không cần làm lại. Giao diện main đã kiểm backend/JS, chưa visual b
 ```powershell
 .venv/Scripts/python.exe scripts/team_workspace.py restore --archive exports/team_workspace_v1.zip
 .venv/Scripts/python.exe scripts/verify_main_draft.py --report reports/maintenance/readiness_local_v1.json
+.venv/Scripts/python.exe scripts/review_main.py export --version v2
 ```
 
 Restore kiểm context/SHA256, giữ file giống hệt và từ chối ghi đè file khác
@@ -331,10 +340,10 @@ chạy lại acquisition chỉ để làm cho gate chuyển xanh.
 
 ### 5.4 Người import JSON review
 
-Ví dụ sau khi có `repope_01_reviewed.json`, dry-run trước:
+Ví dụ sau khi có JSON cuối `repope_01_reviewed_v2.json`, dry-run trước:
 
 ```powershell
-.venv/Scripts/python.exe scripts/review_main.py import --manifest data/reviews/main_review_v1/repope_01.csv --review data/reviews/main_review_v1/repope_01_reviewed.json --output data/main/reviewed_v1/repope_01.csv --audit reports/main_review/repope_01_import_v1.json --operator YOUR_IMPORTER_ID --dry-run
+.venv/Scripts/python.exe scripts/review_main.py import --version v2 --manifest data/reviews/main_review_v2/repope_01.csv --review data/reviews/main_review_v2/repope_01_reviewed_v2.json --output data/main/reviewed_v2/repope_01.csv --audit reports/main_review/repope_01_import_v2.json --operator YOUR_IMPORTER_ID --dry-run
 ```
 
 Thay YOUR_IMPORTER_ID bằng ID người import. Hợp lệ mới bỏ `--dry-run` để lưu
@@ -414,7 +423,7 @@ bytes đã được source receipts/checkpoint tham chiếu.
 | Sampling main đã chọn | `configs/main_preparation_v3.yaml`; frozen=false |
 | Main RePOPE 600 câu | `data/main/preparation_v2/repope_bilingual_draft_manifest.csv` |
 | Main VSR/TallyQA/Pet | `data/main/preparation_v3/<dataset>_bilingual_draft.csv` |
-| Review theo gói | `data/reviews/main_review_v1/` và `scripts/review_main.py` |
+| Review theo gói hiện tại | `data/reviews/main_review_v2/`, `scripts/review_main.py` (mặc định v2); v1 phải ghi --version v1 |
 | Raw pilot nhỏ dùng chung | `reports/pilot_outputs/`, có checksums |
 | Raw/checkpoints lịch sử | Giữ nguyên manifest/config/source của chính run đó |
 
@@ -477,7 +486,7 @@ Commit message gồm tiêu đề cụ thể và phần thân ngắn:
 docs: clarify main review handoff
 
 Mục đích: giúp thành viên nhận đúng gói và gửi JSON review.
-Hoàn thành: làm rõ đường dẫn, hai người duyệt dịch và QA riêng.
+Hoàn thành: làm rõ đường dẫn và A/B mỗi người kiểm cả dịch, ảnh/nhãn.
 Kiểm chứng: đối chiếu lệnh/path; không có inference hoặc human approval mới.
 ```
 
@@ -538,7 +547,7 @@ reviewer/time thật, model revisions và raw outputs; tạo version mới khi c
 
 - [Completion hiện tại](reports/completion.md), [checklist việc P0](docs/research/IMPLEMENTATION_PLAN_V3.md).
 - [Handoff V3](docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md), [protocol nghiên cứu](docs/research/RESEARCH_PROTOCOL_V3.md).
-- [Workflow review/import chi tiết](docs/research/MAIN_REVIEW_V1.md), [pilot local/cloud](docs/run_local_colab_kaggle.md).
+- [Workflow review/import v2](docs/research/MAIN_REVIEW_V2.md), [pilot local/cloud](docs/run_local_colab_kaggle.md).
 - [Evaluation method](docs/research/EVALUATION_V1.md), [pilot outputs](reports/pilot_outputs/README.md).
 - [Báo cáo/evidence theo phiên](reports/README.md), [lịch sử completion v1–v21](reports/completion_history.md).
 

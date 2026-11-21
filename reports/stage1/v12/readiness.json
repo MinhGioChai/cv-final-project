@@ -1,0 +1,42 @@
+{
+  "scope": "unfrozen_full_main_draft_readiness_not_inference_authorization",
+  "frozen": false,
+  "selected_rows": 1000,
+  "unique_images": 783,
+  "unique_image_sha256": 783,
+  "expected_main_inferences": 4000,
+  "main_ready": false,
+  "datasets": {
+    "repope": 600,
+    "vsr": 120,
+    "tallyqa": 120,
+    "oxford_pet": 160
+  },
+  "main_qa_status": {
+    "pending": 1000
+  },
+  "main_translation_status": {
+    "requires_review": 1000
+  },
+  "gate_codes": {
+    "MAIN_QA_NOT_APPROVED": 1000
+  },
+  "other_technical_or_leakage_issues": 0,
+  "pilot_qa_status": {
+    "approved": 30
+  },
+  "pilot_translation_status": {
+    "approved": 30
+  },
+  "source_fields_preserved": true,
+  "pilot_id_or_byte_overlap": 0,
+  "duplicate_bytes_across_image_identities": 0,
+  "inferences_run_by_this_command": 0,
+  "inputs_sha256": {
+    "data/main/preparation_v2/repope_bilingual_draft_manifest.csv": "2b96cf96836e6a1dc9f2600bdffac967e0827916b6c901cf06c5181b535b2734",
+    "data/main/preparation_v3/vsr_bilingual_draft.csv": "b9a35ab5fe6833c9df763bbe2b1ce07f974cdd97973747a206220d2ea415992c",
+    "data/main/preparation_v3/tallyqa_bilingual_draft.csv": "d7b53c2b12c3d6161631f4e31ecf32c18c5657111241079b79d18e20178aab87",
+    "data/main/preparation_v3/oxford_pet_bilingual_draft.csv": "c586eebe55495bdb0054c1977cd9061163b414ddaa5aea8190ec10f2f3c25766",
+    "data/main/preparation_v2/all_candidates.jsonl": "f336eb5c8e0f2626f82ff813ab65c57fff37ea39a62fbc16c01a63c69121eec7"
+  }
+}

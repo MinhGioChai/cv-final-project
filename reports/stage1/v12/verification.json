@@ -1,0 +1,34 @@
+{
+  "date_local": "2026-11-21",
+  "scope": "workflow_v2_verification_not_human_review_or_model_inference",
+  "full_suite": {
+    "passed": 359,
+    "elapsed_seconds": 8.74,
+    "new_tests": 25,
+    "includes_node_mock_dom_interaction_and_backend_import": true
+  },
+  "real_pending_packets_validated": 22,
+  "rows": 1000,
+  "unique_images": 783,
+  "embedded_images_sha256_checked": 1000,
+  "v2_batch_csvs_identical_to_v1": true,
+  "all_v2_decisions_blank_pending": true,
+  "a_alone_does_not_approve_translation_or_qa": true,
+  "a_b_two_qa_reviews_required": true,
+  "protected_existing_files_checked": 225,
+  "protected_hash_mismatches": [],
+  "intentional_documentation_updates_excluded_from_data_hash_check": [
+    "data/README.md"
+  ],
+  "both_previous_zip_bytes_preserved": true,
+  "new_review_bundle_sha256": "755e18f486c3ff9292ca0cab941c9f24873ecea768ae9556174965a4fbc35236",
+  "bundle_members_sha256_verified": 68,
+  "standalone_html_pages": 23,
+  "draft_main_ready": false,
+  "main_technical_or_leakage_issues": 0,
+  "model_inferences": 0,
+  "new_human_approvals": 0,
+  "model_downloads": 0,
+  "visual_browser_qa": false,
+  "real_a_b_user_test": false
+}

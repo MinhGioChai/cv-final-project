@@ -8,7 +8,8 @@
 | Lịch sử completion v1–v21, giữ nguyên | [completion_history.md](completion_history.md) |
 | Công bố GitHub từng phần và kiểm chứng tái lập | [Release 21/11](releases/2026-11-21/README.md) |
 | Raw/summary pilot nhỏ cho người không GPU | [Pilot outputs](pilot_outputs/README.md) |
-| Pilot human QA hoàn tất, main drafts/22 gói review | [Stage 1 v10](stage1/v10/completion.md), [readiness](stage1/v10/readiness.json), HTML nhận qua ZIP riêng |
+| Review hiện hành: A/B mỗi người kiểm cả dịch và ảnh/nhãn | [Stage 1 v12](stage1/v12/completion.md), [ZIP receipt](stage1/v12/review_bundle.json) |
+| Pilot human QA hoàn tất, main drafts/22 gói review v1 lịch sử | [Stage 1 v10](stage1/v10/completion.md), [readiness](stage1/v10/readiness.json), HTML nhận qua ZIP riêng |
 | Selection 1000 và RePOPE draft tại v9 | [Stage 1 v9](stage1/v9/completion.md), [readiness lúc đó](stage1/v9/readiness.json) |
 | QA packet/inventory tại v8 | [Stage 1 v8](stage1/v8/completion.md), HTML QA cũ giữ local, [sampling RePOPE](stage1/v8/repope_sampling_v1.json) |
 | Audit theo handoff mới | [Audit V3 ngày 12/11](audits/2026-11-12/repository_audit_v3.md) |

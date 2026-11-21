@@ -1,3 +1,6 @@
+> Main hiện dùng [review v2](research/MAIN_REVIEW_V2.md): A/B mỗi người kiểm
+> dịch và ảnh/nhãn. Nội dung dưới giữ workflow dịch/pilot lịch sử.
+
 # Review pilot RePOPE — quy trình Stage 1
 
 **Cập nhật 20/11/2026:** đã nhận JSON người dùng và import thành công 30/30

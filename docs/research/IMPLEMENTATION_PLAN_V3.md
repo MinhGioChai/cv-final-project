@@ -24,7 +24,7 @@ Không nhắc setup/pilot như việc pending; human QA/main còn tiếp tục.
 | A08 | P0 | Quyền truy cập Gemma | DONE | Run v7 NF4/BF16 hoàn tất; không còn blocker access/pagefile/output rỗng trên subset này |
 | A09 | P0 | Metrics RQ1/RQ2 và paired evaluator | DONE | Code/CLI, bốn task toy tests, actual hai model pilot evaluation |
 | A10 | P0 | Cluster bootstrap và CI | DONE | Code/toy tests, empirical CI hai pilot, B=5000 và seed 42 |
-| A11 | P0 | Dữ liệu main bốn task | IN_PROGRESS | v10 đủ 1000 bilingual draft/783 JPEG, source/ID/byte leakage checks đạt, 22 gói review đã xuất. Tất cả main requires_review/QA pending; chưa frozen main |
+| A11 | P0 | Dữ liệu main bốn task | IN_PROGRESS | v10 đủ 1000 bilingual draft/783 JPEG, source/ID/byte leakage checks đạt, 22 gói review v2 đã xuất theo quyết định 21/11: A/B mỗi người kiểm dịch và ảnh/nhãn. Tất cả main requires_review/QA pending; chưa frozen main |
 | A12 | P0 | Chốt metadata/schema baseline V3 | TODO | Có mapping tái sử dụng, cần fields/contract bổ sung |
 | A13 | P0 | Baseline freeze và full runner | TODO | main.yaml frozen=false; runner chỉ pilot 1–30 |
 | A14 | P0 | Main inference | TODO | 4.000 expected; chưa chạy hoặc được xác nhận full-run |

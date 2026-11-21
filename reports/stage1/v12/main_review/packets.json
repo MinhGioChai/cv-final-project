@@ -1,0 +1,169 @@
+{
+  "scope": "unreviewed_main_packets",
+  "schema_version": "main_review_v2",
+  "policy": "two_reviewers_translation_and_image_v2",
+  "rows": 1000,
+  "packets": [
+    {
+      "packet": "repope_01",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_01.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_01.json",
+      "html": "reports/stage1/v12/main_review/repope_01.html"
+    },
+    {
+      "packet": "repope_02",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_02.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_02.json",
+      "html": "reports/stage1/v12/main_review/repope_02.html"
+    },
+    {
+      "packet": "repope_03",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_03.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_03.json",
+      "html": "reports/stage1/v12/main_review/repope_03.html"
+    },
+    {
+      "packet": "repope_04",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_04.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_04.json",
+      "html": "reports/stage1/v12/main_review/repope_04.html"
+    },
+    {
+      "packet": "repope_05",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_05.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_05.json",
+      "html": "reports/stage1/v12/main_review/repope_05.html"
+    },
+    {
+      "packet": "repope_06",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_06.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_06.json",
+      "html": "reports/stage1/v12/main_review/repope_06.html"
+    },
+    {
+      "packet": "repope_07",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_07.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_07.json",
+      "html": "reports/stage1/v12/main_review/repope_07.html"
+    },
+    {
+      "packet": "repope_08",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_08.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_08.json",
+      "html": "reports/stage1/v12/main_review/repope_08.html"
+    },
+    {
+      "packet": "repope_09",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_09.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_09.json",
+      "html": "reports/stage1/v12/main_review/repope_09.html"
+    },
+    {
+      "packet": "repope_10",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_10.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_10.json",
+      "html": "reports/stage1/v12/main_review/repope_10.html"
+    },
+    {
+      "packet": "repope_11",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_11.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_11.json",
+      "html": "reports/stage1/v12/main_review/repope_11.html"
+    },
+    {
+      "packet": "repope_12",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/repope_12.csv",
+      "pending_review": "data/reviews/main_review_v2/repope_12.json",
+      "html": "reports/stage1/v12/main_review/repope_12.html"
+    },
+    {
+      "packet": "vsr_01",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/vsr_01.csv",
+      "pending_review": "data/reviews/main_review_v2/vsr_01.json",
+      "html": "reports/stage1/v12/main_review/vsr_01.html"
+    },
+    {
+      "packet": "vsr_02",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/vsr_02.csv",
+      "pending_review": "data/reviews/main_review_v2/vsr_02.json",
+      "html": "reports/stage1/v12/main_review/vsr_02.html"
+    },
+    {
+      "packet": "vsr_03",
+      "rows": 20,
+      "manifest": "data/reviews/main_review_v2/vsr_03.csv",
+      "pending_review": "data/reviews/main_review_v2/vsr_03.json",
+      "html": "reports/stage1/v12/main_review/vsr_03.html"
+    },
+    {
+      "packet": "tallyqa_01",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/tallyqa_01.csv",
+      "pending_review": "data/reviews/main_review_v2/tallyqa_01.json",
+      "html": "reports/stage1/v12/main_review/tallyqa_01.html"
+    },
+    {
+      "packet": "tallyqa_02",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/tallyqa_02.csv",
+      "pending_review": "data/reviews/main_review_v2/tallyqa_02.json",
+      "html": "reports/stage1/v12/main_review/tallyqa_02.html"
+    },
+    {
+      "packet": "tallyqa_03",
+      "rows": 20,
+      "manifest": "data/reviews/main_review_v2/tallyqa_03.csv",
+      "pending_review": "data/reviews/main_review_v2/tallyqa_03.json",
+      "html": "reports/stage1/v12/main_review/tallyqa_03.html"
+    },
+    {
+      "packet": "oxford_pet_01",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/oxford_pet_01.csv",
+      "pending_review": "data/reviews/main_review_v2/oxford_pet_01.json",
+      "html": "reports/stage1/v12/main_review/oxford_pet_01.html"
+    },
+    {
+      "packet": "oxford_pet_02",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/oxford_pet_02.csv",
+      "pending_review": "data/reviews/main_review_v2/oxford_pet_02.json",
+      "html": "reports/stage1/v12/main_review/oxford_pet_02.html"
+    },
+    {
+      "packet": "oxford_pet_03",
+      "rows": 50,
+      "manifest": "data/reviews/main_review_v2/oxford_pet_03.csv",
+      "pending_review": "data/reviews/main_review_v2/oxford_pet_03.json",
+      "html": "reports/stage1/v12/main_review/oxford_pet_03.html"
+    },
+    {
+      "packet": "oxford_pet_04",
+      "rows": 10,
+      "manifest": "data/reviews/main_review_v2/oxford_pet_04.csv",
+      "pending_review": "data/reviews/main_review_v2/oxford_pet_04.json",
+      "html": "reports/stage1/v12/main_review/oxford_pet_04.html"
+    }
+  ],
+  "reviewers_required": 2,
+  "each_reviewer_checks": [
+    "translation",
+    "image_qa"
+  ],
+  "new_human_approvals": 0,
+  "model_outputs_in_packets": false
+}

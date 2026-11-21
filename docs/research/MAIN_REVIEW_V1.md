@@ -1,5 +1,8 @@
 # Kiểm duyệt main — workflow v1
 
+**Lịch sử:** từ 21/11 dùng [workflow v2](MAIN_REVIEW_V2.md), A/B mỗi người
+kiểm cả dịch và ảnh/nhãn. CLI mặc định v2; lệnh v1 dưới đây có --version v1.
+
 Ngày 20/11/2026. Pilot đã có human image/label QA approved 30/30 theo JSON
 người dùng gửi; bản dịch pilot approved 30 được giữ nguyên. Main là đợt review
 riêng: không dùng acceptance của pilot để approve 1.000 câu mới.
@@ -66,7 +69,7 @@ khớp cách dịch hoặc đáp án model. Không sử dụng API dịch/infere
 Sau khi đủ ảnh/bilingual drafts, xuất gói bằng:
 
 ```powershell
-.venv/Scripts/python.exe scripts/review_main.py export
+.venv/Scripts/python.exe scripts/review_main.py export --version v1
 ```
 
 Mỗi gói tối đa 50 câu, có một manifest CSV cố định, pending JSON và HTML offline
@@ -93,7 +96,7 @@ chưa được xác nhận bằng thao tác trình duyệt trực quan.
 Ví dụ gói đầu RePOPE; đổi packet/output version khi xử lý gói khác:
 
 ```powershell
-.venv/Scripts/python.exe scripts/review_main.py import --manifest data/reviews/main_review_v1/repope_01.csv --review data/reviews/main_review_v1/repope_01_reviewed.json --output data/main/reviewed_v1/repope_01.csv --audit reports/stage1/v10/repope_01_import.json --operator YOUR_IMPORTER_ID --dry-run
+.venv/Scripts/python.exe scripts/review_main.py import --version v1 --manifest data/reviews/main_review_v1/repope_01.csv --review data/reviews/main_review_v1/repope_01_reviewed.json --output data/main/reviewed_v1/repope_01.csv --audit reports/stage1/v10/repope_01_import.json --operator YOUR_IMPORTER_ID --dry-run
 ```
 
 Sau dry-run hợp lệ, bỏ `--dry-run` để lưu manifest/audit mới. Lệnh không ghi

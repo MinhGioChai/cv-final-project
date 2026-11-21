@@ -1,0 +1,10 @@
+{
+  "archive": "exports/main_review_v2.zip",
+  "bytes": 87428656,
+  "sha256": "755e18f486c3ff9292ca0cab941c9f24873ecea768ae9556174965a4fbc35236",
+  "schema_version": "main_review_bundle_v2",
+  "rows": 1000,
+  "packets": 22,
+  "publication": "private offline review; excluded from Git",
+  "new_human_approvals": 0
+}

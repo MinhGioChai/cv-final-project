@@ -7,6 +7,8 @@
 | `scripts/legacy/` | Chỉ có local, ngoài Git: builders Word v1 theo scope cũ, không dùng tạo report V3 |
 
 Lệnh và thứ tự thao tác tại [hướng dẫn nhóm](../HUONG_DAN_NHOM.md).
+`review_main.py` mặc định v2: export/import/bundle cho A/B mỗi người kiểm dịch
+và ảnh/nhãn; dùng `--version v1` khi tái lập workflow cũ.
 Pilot dùng `run_pilot.py`; các alias cũ vẫn còn. Script data luôn chạy từ
 project root, ví dụ `python scripts/data/prepare_main_selection.py --help`.
 Lịch sử di chuyển script nằm trong báo cáo maintenance; dữ liệu/config paths giữ nguyên.

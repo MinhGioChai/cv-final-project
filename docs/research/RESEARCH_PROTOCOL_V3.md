@@ -39,7 +39,7 @@ Ngày 19/11 người dùng chốt RePOPE 600 câu và tối đa 2 câu/ảnh sau
 Sau đó người dùng ủy quyền chọn phương án VSR/TallyQA/Pet; selection v9
 được giữ nguyên, v10 đủ ảnh và EN–VI nháp cả bốn task. Config
 `main_preparation_v3.yaml` vẫn frozen=false; main review, metadata/full runner
-và final freeze còn chờ. [Workflow hiện tại](MAIN_REVIEW_V1.md).
+và final freeze còn chờ. [Workflow hiện tại](MAIN_REVIEW_V2.md).
 
 Tám giống Pet và count/relation sampling được ghi trong config và selection
 report trước model outputs; không suy ra phân bố tự nhiên của toàn dataset.
@@ -59,8 +59,12 @@ human image/label QA hoặc xác nhận quyền phân phối lại ảnh.
 Pilot có 30 translation approved theo acceptance người dùng; ngày 20/11 đã
 import JSON human image/label QA approved 30/30 vào stage1_qa_v1 mới. Giữ
 manifest lịch sử cho protocol/raw cũ. Main 1.000 câu vẫn requires_review/QA
-pending; cần hai reviewer bản dịch và QA riêng theo workflow đã ghi, log vấn
-đề/loại trừ rồi freeze. Không tạo reviewer/approval thay con người.
+pending. Cập nhật được người dùng chốt ngày 21/11: **hai reviewer A/B, mỗi
+người kiểm cả bản dịch và ảnh/nhãn**. Hai ID khác nhau cùng duyệt bản cuối và
+quan sát khớp nhãn mới đủ điều kiện; một người chưa đủ. B xem JSON của A rồi
+kiểm lại, không phải review mù độc lập. Sửa VI giữ lượt cũ trong history và
+yêu cầu duyệt lại bản cuối. Log vấn đề/loại trừ rồi freeze. V1 giữ nguyên để
+tra lịch sử, không tự chuyển một QA v1 thành hai QA. Không tạo approval thay người.
 
 Tên trường V3 có thể được ánh xạ thay vì đổi CSV đang có:
 
