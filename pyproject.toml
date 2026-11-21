@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=80,<81", "wheel>=0.45,<0.46"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vlmbench-en-vi"
+version = "0.1.0"
+description = "Reproducible paired English–Vietnamese VLM evaluation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "Pillow>=12,<13",
+  "pydantic>=2.12,<3",
+  "PyYAML>=6.0.3,<7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9,<10"]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
