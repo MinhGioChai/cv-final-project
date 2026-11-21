@@ -1,0 +1,1512 @@
+{
+  "context": {
+    "schema_version": "main_review_v1",
+    "sample_ids": [
+      "tallyqa_6d88fa13c5797bf3",
+      "tallyqa_6f360e650f992f3d",
+      "tallyqa_701b01ff0c7c1012",
+      "tallyqa_73e637495df00a05",
+      "tallyqa_76b3f8bf733c5a36",
+      "tallyqa_795eee81560d5215",
+      "tallyqa_7b6448563d50a9bc",
+      "tallyqa_7bec68b8b9edefd7",
+      "tallyqa_7f9f8a102f87995a",
+      "tallyqa_808d829f48d79fb9",
+      "tallyqa_810742fd1e6b5f98",
+      "tallyqa_81808ea8c1d3e4cf",
+      "tallyqa_86c80aa53a4b7db6",
+      "tallyqa_8b55a19107b3fe20",
+      "tallyqa_8e709691eb9f1f1a",
+      "tallyqa_8ef387f9a499e7ff",
+      "tallyqa_9038009d6d8628f7",
+      "tallyqa_90b2caf2da29e707",
+      "tallyqa_9174f6846f2a4dcc",
+      "tallyqa_922654596f279c76",
+      "tallyqa_923b5f1a700bb723",
+      "tallyqa_976e0b07cae8d922",
+      "tallyqa_9cb14975affc991a",
+      "tallyqa_9f8aa311b43ef859",
+      "tallyqa_a66684bdd206104a",
+      "tallyqa_a6b6b138039d1c40",
+      "tallyqa_ad1147cc4087c817",
+      "tallyqa_ada778008d3f6a75",
+      "tallyqa_af90165a9f4d0a04",
+      "tallyqa_b19c60cf3c5581e8",
+      "tallyqa_b565e202a26df0a5",
+      "tallyqa_b65bd5cac2354552",
+      "tallyqa_b961c2435a7a536c",
+      "tallyqa_b9c77dad0e22a3dc",
+      "tallyqa_bc9a7483962da805",
+      "tallyqa_bdc8f6fbc7dcdf7a",
+      "tallyqa_bf5673871042d7dc",
+      "tallyqa_c13d3fa6bf7990a2",
+      "tallyqa_c29f7a209fdb7bbc",
+      "tallyqa_c691cd8fbde6e515",
+      "tallyqa_c917f1d780b62e1a",
+      "tallyqa_ca66077ec2341c11",
+      "tallyqa_caa75127f70876ae",
+      "tallyqa_cae1473a26d834cb",
+      "tallyqa_d11737d245e3a203",
+      "tallyqa_d127797ce3fc4a55",
+      "tallyqa_d325488c42c1e728",
+      "tallyqa_d383d03707a6197a",
+      "tallyqa_d4c10ba4dd6aff41",
+      "tallyqa_d585c8d8041875b7"
+    ],
+    "row_sha256": {
+      "tallyqa_6d88fa13c5797bf3": "b88f81832f60bdd5abf7f638dc08fbaafd373b1578b40682cf81690aae212d30",
+      "tallyqa_6f360e650f992f3d": "2cdb47c775cdc28e0e0b26b897865364cc464a987c89bc0e6fc649a12dd79412",
+      "tallyqa_701b01ff0c7c1012": "eab6df20dd8f4e51e99ee36c5f942ed84bd149c8cfb2800f1e5d0da4b58f95d0",
+      "tallyqa_73e637495df00a05": "53b14de5d55a57f99297ac5cf638cf188e94f4717aafea6cdcf0a670aff1c33e",
+      "tallyqa_76b3f8bf733c5a36": "e0657eb7707659d25dd11d1f7bd8df6d5852f443feccd3827f0ef3a40a7a9aca",
+      "tallyqa_795eee81560d5215": "faa7adb4d67bfa11e76dda9da4bc10ef77573c9bc0a5a673e5333b4c85f5285c",
+      "tallyqa_7b6448563d50a9bc": "1f9824776a928427cf5b3d5d2f810729f9274f0fc441da953da04723528fdd12",
+      "tallyqa_7bec68b8b9edefd7": "6bb22df060ea4e77a870440f47a92074560b1527a46a725aaa4535706e8d10c9",
+      "tallyqa_7f9f8a102f87995a": "7584d1d16d19f380273e88f192bb29a0942527a3677edde4256b46de25fe18df",
+      "tallyqa_808d829f48d79fb9": "adc8c79a3644b927d676b1623e05adc27b665208b9ad21230fac52f18442acbc",
+      "tallyqa_810742fd1e6b5f98": "211cd9923b5570f2f9695a9897195772895fb2876a8702c3f5ed07f41b09bccd",
+      "tallyqa_81808ea8c1d3e4cf": "ce87d84d79d0a84932b1e7f9bfcb753ad307379de32b0014581126fdbd5c4a34",
+      "tallyqa_86c80aa53a4b7db6": "6c0c470820565b5736b6648aab3b689d1d3b153cc17ee6695c302d2afe66fab1",
+      "tallyqa_8b55a19107b3fe20": "5c290ebe4d9dfe4ed64c50621e5322bbd57fbdb569839a457c63d1c59d73db8b",
+      "tallyqa_8e709691eb9f1f1a": "e1407af5a8dc1bc2a6ad3e6dd4c5a5e468a55191b006f6f7862fffad397bdd9c",
+      "tallyqa_8ef387f9a499e7ff": "1f19b7814248cfe8cacf48d8daa37abac29eabe132861a2b5255d98a4d576b9d",
+      "tallyqa_9038009d6d8628f7": "8914d54a81660a08a73a7012f4d127faa2df08d8981a4e97f68f1fef83c2daa7",
+      "tallyqa_90b2caf2da29e707": "77dae43674075c0cdd27c74690a55ca974fd2e3b32c103c109c6623484217806",
+      "tallyqa_9174f6846f2a4dcc": "8d0a6a1e99c27baca5beee283b81678bbf8f9415faad94aae67019449a6cc117",
+      "tallyqa_922654596f279c76": "c92f025c17eb25d324ebb4155af0f38ec69e168dd60af1575d090ebfb0b722b8",
+      "tallyqa_923b5f1a700bb723": "eeeddad7be3270b487bba63aa03f313074414e32c538fe54573f86bdbd027db1",
+      "tallyqa_976e0b07cae8d922": "25a8b3a63d358dbc76ba05c2b1eb110ee0e66c0739a4617a7eb47c61634c7c6e",
+      "tallyqa_9cb14975affc991a": "8d9030e77231c5b46b4e61fcf13a9c17265fecf31f14c35ca8cd5dd5bcc2d602",
+      "tallyqa_9f8aa311b43ef859": "d27244eccd67ba1a7f60812b0128f9f7ea4d0aef900477d6d1b38fc7a7ab281f",
+      "tallyqa_a66684bdd206104a": "9dad7df443162f31a449feab6e4141935c4a413b6a505b0ba9851fbeabb98cfc",
+      "tallyqa_a6b6b138039d1c40": "298e0e4033d29b0cfacb63226870059d9aaa1a93e6d7128c384ef89e5bc2d6a0",
+      "tallyqa_ad1147cc4087c817": "3d7183384da294414c194bb75557687c094422053b726b5dece6d8e323d7dcd4",
+      "tallyqa_ada778008d3f6a75": "0fbb0f3d9752134c1702eac10940bb99109bb3c3ebc84c46580f8b6686b5ca02",
+      "tallyqa_af90165a9f4d0a04": "ae2a275a9b3e55a81d83a123e3ebaa73625cd47141e7ac4214b44e9026885b39",
+      "tallyqa_b19c60cf3c5581e8": "fda02420ef0f2a8a43818d09f77fea106aeb7b288e08edf50e16afec51edf064",
+      "tallyqa_b565e202a26df0a5": "bdcbd9765827ed01337161b030d54507c789e47ebb7cc7968afc9d59afcadf83",
+      "tallyqa_b65bd5cac2354552": "902c90fc888ace5597b69ff78a24b53ef243b227709e2752954dbc2f39d1226d",
+      "tallyqa_b961c2435a7a536c": "d59d859ea443985805bf33397a0dfaf8b634fa1b6bd2c2ca8198de6d21172e1b",
+      "tallyqa_b9c77dad0e22a3dc": "324dcc5fa5c517e7dc77d994f912ab6edb952a19a280700c4902582820dd85f3",
+      "tallyqa_bc9a7483962da805": "4ef56de4b3b445b6e05a0b2bb6426ad90dd84febed3b3371c93ffe6dceb66895",
+      "tallyqa_bdc8f6fbc7dcdf7a": "751b0c2e6b3d6b71d01fbcb7c2d4a14b1ea9806cdf83e644ccd51c3ee751e03f",
+      "tallyqa_bf5673871042d7dc": "b57b7dd97387f21f38a0c9083e91167dcbf5c76f097e2252ce84bf2e4297e354",
+      "tallyqa_c13d3fa6bf7990a2": "682abd69bed4874dc0aa8d748c96d72fb14db83b89a76578605d6522b18ec72f",
+      "tallyqa_c29f7a209fdb7bbc": "1fcd9ca2df634de6fd5b06c4a2404fb04fba983d95ddf71e749c80d84c7165cb",
+      "tallyqa_c691cd8fbde6e515": "7430c36ece72274a016d4d40509f9a257ba53b31a9f9f151a7ac6cb7a3386370",
+      "tallyqa_c917f1d780b62e1a": "04ebce8be86bac1643f2c45057ef368fdfd874c30fe6395af7df482f4fd343de",
+      "tallyqa_ca66077ec2341c11": "81413cf409e9b0c714248e22e0d1b62b46b00f03ae9097251eed99e56050c46c",
+      "tallyqa_caa75127f70876ae": "661402f1a2c23816957b8d28599c809d4a9df94c5888e334a9acf0f6adc5762b",
+      "tallyqa_cae1473a26d834cb": "4354a264edb1e5e495ff095303db865170a13f290608cca80567d5d974be1236",
+      "tallyqa_d11737d245e3a203": "39e6a19932c323b3e4e098c931d8d7d6de4f7aa45afdbfccc27acaaaf7be56e2",
+      "tallyqa_d127797ce3fc4a55": "0e020ad5469a822bedde2bd89faf41041a878826d27e894f6348100a809f83d9",
+      "tallyqa_d325488c42c1e728": "54cbe984dededa6e2856a61bc0d538ad114a6f4c1dbc0c73becefa4859a26c91",
+      "tallyqa_d383d03707a6197a": "8704f6afd603507e28575be1c75c5a1205d4c8956fcc0763967cca2825fbc092",
+      "tallyqa_d4c10ba4dd6aff41": "41b3895f1d232535c53b9ecf30f944d5d077e9dbcb620d39cfd7de67393733f1",
+      "tallyqa_d585c8d8041875b7": "c27c1fe7cafcdc6b0219bb089cfe95c9dbd454a2063bb8742d02295e67d9200e"
+    },
+    "manifest_sha256": "dec299f8145a31fea734728d13ec46a76d79b6c90b43b32587b9612d199779c2"
+  },
+  "decisions": [
+    {
+      "sample_id": "tallyqa_6d88fa13c5797bf3",
+      "question_vi": "Có bao nhiêu con chim?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_6f360e650f992f3d",
+      "question_vi": "Có bao nhiêu người đàn ông đang cầm bánh pizza?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_701b01ff0c7c1012",
+      "question_vi": "Có bao nhiêu con bò đực trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_73e637495df00a05",
+      "question_vi": "Có bao nhiêu chiếc xe buýt trong ảnh này?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_76b3f8bf733c5a36",
+      "question_vi": "Có bao nhiêu con ngựa vằn?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_795eee81560d5215",
+      "question_vi": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_7b6448563d50a9bc",
+      "question_vi": "Có bao nhiêu người đang chơi bóng đá?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_7bec68b8b9edefd7",
+      "question_vi": "Có bao nhiêu cậu bé đang dùng điện thoại?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_7f9f8a102f87995a",
+      "question_vi": "Có bao nhiêu chiếc máy bay trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_808d829f48d79fb9",
+      "question_vi": "Có bao nhiêu người đàn ông ngồi trên con ngựa?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_810742fd1e6b5f98",
+      "question_vi": "Có bao nhiêu cái bánh donut sô cô la trên đĩa?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_81808ea8c1d3e4cf",
+      "question_vi": "Có bao nhiêu phụ nữ trên ghế sofa?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_86c80aa53a4b7db6",
+      "question_vi": "Có bao nhiêu người trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_8b55a19107b3fe20",
+      "question_vi": "Có bao nhiêu chiếc túi có họa tiết hoa?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_8e709691eb9f1f1a",
+      "question_vi": "Có bao nhiêu người đang nhìn vào máy ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_8ef387f9a499e7ff",
+      "question_vi": "Có bao nhiêu cái bát trên bàn?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_9038009d6d8628f7",
+      "question_vi": "Có bao nhiêu người ở gần một con chó?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_90b2caf2da29e707",
+      "question_vi": "Có bao nhiêu người chơi quần vợt trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_9174f6846f2a4dcc",
+      "question_vi": "Có bao nhiêu chiếc đồng hồ trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_922654596f279c76",
+      "question_vi": "Có bao nhiêu phương tiện màu xanh dương trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_923b5f1a700bb723",
+      "question_vi": "Có bao nhiêu biển báo trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_976e0b07cae8d922",
+      "question_vi": "Có bao nhiêu người đàn ông?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_9cb14975affc991a",
+      "question_vi": "Có bao nhiêu người đang cầm điện thoại?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_9f8aa311b43ef859",
+      "question_vi": "Có bao nhiêu con vật?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_a66684bdd206104a",
+      "question_vi": "Bạn nghĩ có bao nhiêu loại đồ phủ trên chiếc bánh pizza này?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_a6b6b138039d1c40",
+      "question_vi": "Có thể nhìn thấy bao nhiêu dụng cụ ăn uống?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_ad1147cc4087c817",
+      "question_vi": "Có thể nhìn thấy bao nhiêu con cá trong ảnh này?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_ada778008d3f6a75",
+      "question_vi": "Có bao nhiêu đoàn tàu?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_af90165a9f4d0a04",
+      "question_vi": "Có bao nhiêu người đang đeo đồ bảo hộ mặt?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_b19c60cf3c5581e8",
+      "question_vi": "Mỗi đội có bao nhiêu người chơi?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_b565e202a26df0a5",
+      "question_vi": "Có bao nhiêu con ngựa?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_b65bd5cac2354552",
+      "question_vi": "Có bao nhiêu bức tranh treo trên bức tường ở bên trái?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_b961c2435a7a536c",
+      "question_vi": "Có bao nhiêu động vật có vú có hoa văn trên cơ thể trong ảnh này?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_b9c77dad0e22a3dc",
+      "question_vi": "Có bao nhiêu người?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_bc9a7483962da805",
+      "question_vi": "Có bao nhiêu chiếc ô trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_bdc8f6fbc7dcdf7a",
+      "question_vi": "Có bao nhiêu người đang đi xe đạp trên đường?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_bf5673871042d7dc",
+      "question_vi": "Có bao nhiêu con diều trên không trung?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_c13d3fa6bf7990a2",
+      "question_vi": "Có bao nhiêu cái bồn rửa?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_c29f7a209fdb7bbc",
+      "question_vi": "Có bao nhiêu khung cửa sổ màu xanh lá?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_c691cd8fbde6e515",
+      "question_vi": "Có bao nhiêu thứ trên ghế sofa là sinh vật sống?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_c917f1d780b62e1a",
+      "question_vi": "Có bao nhiêu con voi trong ảnh này?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_ca66077ec2341c11",
+      "question_vi": "Có bao nhiêu người đang đeo cà vạt?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_caa75127f70876ae",
+      "question_vi": "Có bao nhiêu người đang mặc áo màu đỏ?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_cae1473a26d834cb",
+      "question_vi": "Có bao nhiêu con hươu cao cổ trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_d11737d245e3a203",
+      "question_vi": "Có bao nhiêu người trên lối đi?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_d127797ce3fc4a55",
+      "question_vi": "Có bao nhiêu biển báo?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_d325488c42c1e728",
+      "question_vi": "Có bao nhiêu chân của cô gái được băng bó?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_d383d03707a6197a",
+      "question_vi": "Có bao nhiêu con bò?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_d4c10ba4dd6aff41",
+      "question_vi": "Có bao nhiêu điểm đến trên màn hình LCD?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "tallyqa_d585c8d8041875b7",
+      "question_vi": "Có bao nhiêu cái bánh donut trong ảnh?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    }
+  ]
+}

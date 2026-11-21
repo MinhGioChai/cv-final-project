@@ -1,0 +1,1512 @@
+{
+  "context": {
+    "schema_version": "main_review_v1",
+    "sample_ids": [
+      "vsr_03826887ef250eea",
+      "vsr_04e2b3b96a226ac6",
+      "vsr_04fe3a04f580c220",
+      "vsr_06558ea1db0d38dd",
+      "vsr_06b14b5b423a6e32",
+      "vsr_06b7b13cbbb08d85",
+      "vsr_06fd06e9a503f396",
+      "vsr_09232ad6ecef6c01",
+      "vsr_10e135b0801ed0fd",
+      "vsr_12b4fbf9210acf55",
+      "vsr_16000a401f819450",
+      "vsr_16936770714d9408",
+      "vsr_1b85d6ec0d3ed658",
+      "vsr_1d4f4f68e4d1298f",
+      "vsr_1e44a746815cf37b",
+      "vsr_1e8ce5787b34c91d",
+      "vsr_1eef4ed1cb48cbe5",
+      "vsr_216096fe0250c785",
+      "vsr_2681acedfc75eb17",
+      "vsr_2c4c800c6fcff88d",
+      "vsr_2d26049101ef94b0",
+      "vsr_2dc075a6c3f13651",
+      "vsr_2f12e391ef76ebaf",
+      "vsr_30435d2027f6bacc",
+      "vsr_38da8976f2443ffc",
+      "vsr_3d5bba6ebe2609ed",
+      "vsr_3e281d12ef3e7f88",
+      "vsr_3f8818951f371a82",
+      "vsr_3fab5414f853d702",
+      "vsr_42083c60af1cc6e7",
+      "vsr_44aa2b1f34e03eb9",
+      "vsr_483363d3e28ec995",
+      "vsr_48bbc15b1a01e869",
+      "vsr_4b2ddbbc5b4c3bb9",
+      "vsr_4c671067395b3b9d",
+      "vsr_4fdeffed193ac08b",
+      "vsr_5009791a49c16fd6",
+      "vsr_5b08ac69073fba40",
+      "vsr_5ba5a75cfcb293fe",
+      "vsr_600b39eb2efc2f17",
+      "vsr_6160cd04f948b730",
+      "vsr_61a56c0c5c2760d2",
+      "vsr_69a47054740ba54e",
+      "vsr_6a3dc932d98e90bc",
+      "vsr_702cf64353f2f1c5",
+      "vsr_70858ce04143e424",
+      "vsr_720a35187bfbedf2",
+      "vsr_7216cd899c1756b7",
+      "vsr_7274af2446a667f8",
+      "vsr_7331d26d4c305264"
+    ],
+    "row_sha256": {
+      "vsr_03826887ef250eea": "2d077baadf2264bf61b9d117d5a3d7a5190a4dee46b9463ab73603baec6cd7f4",
+      "vsr_04e2b3b96a226ac6": "6ea7c54aca033b5c8c22c70dcc518489a2d425d8617782775ccb2c88be710a7c",
+      "vsr_04fe3a04f580c220": "7285b7facecf1d646110dae6f7e48784e18eb2fbec6d50d2de48cf873b575f53",
+      "vsr_06558ea1db0d38dd": "6ee1a91c6b0318128066140c461a0c1f82136339beb0a6583ab25cd2dc65ef55",
+      "vsr_06b14b5b423a6e32": "21589eab86fb6fabf394ca7bec6ddef4a63cd2ba6a491679f7ad0dd36dcd219f",
+      "vsr_06b7b13cbbb08d85": "26d40a7ffce88cb7442f5e17ba559f6dfe77a3c27c89722db33687471adc533e",
+      "vsr_06fd06e9a503f396": "f3050f4a8d90bf60f64132f4d49939913208843fc947746cf965bf908fa08b84",
+      "vsr_09232ad6ecef6c01": "bfe9d4878d174e5f12896d1942164ac2d806fd3e97afa6698d8b42da99da4f6f",
+      "vsr_10e135b0801ed0fd": "56ca00118043c7fadd24d0648a3eb1b39c4be7ac33d6452213c1bfa547e10122",
+      "vsr_12b4fbf9210acf55": "3c9a9348dba6d6ee9cbd4a63612d9b950374999ab382cd3523e3b9f5088cdd19",
+      "vsr_16000a401f819450": "c18a864302e53d261f17e8ba7b61e7935e64a7adf80c3b32143017afc3eff86f",
+      "vsr_16936770714d9408": "ae88ae494325705d890bc88da393499f0235b2f7e1ba04fd2c4f7e0e8eadbaad",
+      "vsr_1b85d6ec0d3ed658": "bca0f4c4dbab0c24cb55f681625582164969b12ab9bb38a19f5b5612578d40fe",
+      "vsr_1d4f4f68e4d1298f": "73f738fa01118d3b10094995eb04dc844f6b13df1d055140c03dcbea99e30c04",
+      "vsr_1e44a746815cf37b": "c24044e2e4eadc090554cf26fe4a0062aaef7c0bf822cc8ba98bfca591b1a7d7",
+      "vsr_1e8ce5787b34c91d": "d0e0398c95770ed0e2e928eab58879445ceb4cbec61e5a3e839ea051aaae4b3e",
+      "vsr_1eef4ed1cb48cbe5": "7f0d7a74b2c4703ecbad1300a0abab29819215632482d7069b10de56a893ccc3",
+      "vsr_216096fe0250c785": "fa16861b7fafced0ad4c4f0519d86c37f5cd83407769690d4fd8b60bb2217065",
+      "vsr_2681acedfc75eb17": "cbe6a5970601067cebbdf72e037f422ef1d9af175a34f971f4d10c19aaed5428",
+      "vsr_2c4c800c6fcff88d": "5c2c3b6213edbd84f4c2448e8898c3c1e7cbf6798482fb9b19cee0ae8e76f075",
+      "vsr_2d26049101ef94b0": "b0bf6a6a63a65919d5225ccaaf2bda57cf682722bd8fdec6ce717d77af3e7eb9",
+      "vsr_2dc075a6c3f13651": "60827d075a82b5948ddd29e3fd611bd3dd745196c161de540d1f43af3128b144",
+      "vsr_2f12e391ef76ebaf": "0c7de37ba81a21e294e55d1d28cf8530130ae53ab228d893373a6b2f64d5bf6e",
+      "vsr_30435d2027f6bacc": "ec1688fe2838375724c8320a99031322d36c6fae02432363d9aa0cea97438d43",
+      "vsr_38da8976f2443ffc": "b38ca20e6c5522bbb7a3033631bb1ee419f25443c160912ab98fb5de6b1cd9a7",
+      "vsr_3d5bba6ebe2609ed": "88f74f55208198a4f52d112ced71b66bef8c28e29c7b5c4fecbf57f3b797825e",
+      "vsr_3e281d12ef3e7f88": "e9655a0cc1be78cdc9460a94ea5333eb076b54800254109620ffa9a4a06564c2",
+      "vsr_3f8818951f371a82": "58325eb3898d9ec15461e0d669c24481c9fcc38dc246777f5b5ae5bc91801d13",
+      "vsr_3fab5414f853d702": "63460cc61a1ead41b226ddb5cd36fdea4209b51567cf107f75bdef81a5f0fb8d",
+      "vsr_42083c60af1cc6e7": "0087755ce0a0c9347993eff1a3596304dbe45f1618075479953268f487ea288c",
+      "vsr_44aa2b1f34e03eb9": "21749559052de21406e2ef0e77285acc9ea255a3e1da92c5c8ffb5603eb4326d",
+      "vsr_483363d3e28ec995": "ea5249d3aa9038ed6c58d7a352e287028f33c7d386f6affe3b30272b63eb7b49",
+      "vsr_48bbc15b1a01e869": "79da48e1bf0268696e22e81ac245749d85791ea65ad6427cd73039f1b0622b4f",
+      "vsr_4b2ddbbc5b4c3bb9": "ba77d1cd468081f72af45ba0c9398f296920af2b6028bd1ba3368e6cc5bc9be2",
+      "vsr_4c671067395b3b9d": "d945fa643f89278c5345e41a973c4759d0ac83f81e40762c6a2541ba66a7c615",
+      "vsr_4fdeffed193ac08b": "27eec8016305cff0a468207c40b1fe29ebc143d40ed5c5be0e26c283f4da623d",
+      "vsr_5009791a49c16fd6": "adbdacf579370c9e4cdd6fd50f94f3b652181dec598fdbb8e52c1d50858d232a",
+      "vsr_5b08ac69073fba40": "ea61e69519c671f52f0608c254a489e57b5fbe78579160e72721973d3a0e1a83",
+      "vsr_5ba5a75cfcb293fe": "c7f1caafdb7ec77dbb9b1712b251ce3578ae4e7ba6262fd3ec94e7e28d8dda25",
+      "vsr_600b39eb2efc2f17": "8187ae310e0b17b251e5f0b2ec4f19c03b1a22edfb3d50ded873626ea9631889",
+      "vsr_6160cd04f948b730": "df4506a6fba3e47c966ddbd2743c44712da9dc22b8632ffd99b91dce1ef019de",
+      "vsr_61a56c0c5c2760d2": "54da59cad21ebd45fe0fd7efba2120863b49fd5dc3abaae7e6261de707e7871c",
+      "vsr_69a47054740ba54e": "17261a5f80429c73d39532d2f6cd81ca90818642094a4b81912d7346c5b28e66",
+      "vsr_6a3dc932d98e90bc": "1d82aa8080fd70b3b6fdc75f05ee67be1d30d453f56353d01c7656e9f2977973",
+      "vsr_702cf64353f2f1c5": "a36da6b5c2d3b23f9087b95c3890de510b5d95f7fd39c04811d8a1f8689cad7a",
+      "vsr_70858ce04143e424": "fef673f6a4d97b083698851750c3827457abb419cb197426ccb8685e65402f57",
+      "vsr_720a35187bfbedf2": "ee95fdc4a2cbb6b8b6d89564336856ba66ec25bde115435755285da2f86a8ba0",
+      "vsr_7216cd899c1756b7": "7d3530bf45037676b8b390b72701ce7fa9c82e6f79c299a88987a9ac86c9c147",
+      "vsr_7274af2446a667f8": "b71e3b65ed2a18a62923efdfd5c7fe3053468deef0e1155b364ab0394d505297",
+      "vsr_7331d26d4c305264": "b41f7ddfefdfb09e9cd0e4cb356d80c4b747cbf56c8ba671520f7a8557aa549c"
+    },
+    "manifest_sha256": "666c05cdc9dbbba355388f90567011efe1fdb9f786768aa2d5ff72c74f4f80b3"
+  },
+  "decisions": [
+    {
+      "sample_id": "vsr_03826887ef250eea",
+      "question_vi": "Chiếc ghế dài song song với người.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_04e2b3b96a226ac6",
+      "question_vi": "Cái bánh pizza gắn vào người.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_04fe3a04f580c220",
+      "question_vi": "Chiếc ba lô chứa con mèo.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_06558ea1db0d38dd",
+      "question_vi": "Con bò ở bên trái chiếc ô tô.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_06b14b5b423a6e32",
+      "question_vi": "Chiếc ô tô song song với chiếc xe máy.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_06b7b13cbbb08d85",
+      "question_vi": "Con cừu ở bên ngoài cái chai.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_06fd06e9a503f396",
+      "question_vi": "Con mèo ở trên cùng của chiếc ô tô.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_09232ad6ecef6c01",
+      "question_vi": "Chiếc xe buýt ở xa chiếc đồng hồ thu phí đỗ xe.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_10e135b0801ed0fd",
+      "question_vi": "Con gấu bông được bao quanh bởi chiếc ghế.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_12b4fbf9210acf55",
+      "question_vi": "Cái bình hoa hướng về phía người.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_16000a401f819450",
+      "question_vi": "Con chó ở vào bên trong cái bồn cầu.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_16936770714d9408",
+      "question_vi": "Chiếc lò nướng bao quanh cái bánh ngọt.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_1b85d6ec0d3ed658",
+      "question_vi": "Con bò ở xa chiếc xe đạp.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_1d4f4f68e4d1298f",
+      "question_vi": "Con gấu bông ở trên chiếc ghế sofa.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_1e44a746815cf37b",
+      "question_vi": "Con mèo ở trong chiếc va li.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_1e8ce5787b34c91d",
+      "question_vi": "Chiếc ô ở bên phải con mèo.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_1eef4ed1cb48cbe5",
+      "question_vi": "Cái bánh ngọt ở giữa cái bàn ăn.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_216096fe0250c785",
+      "question_vi": "Chiếc cà vạt ở quanh người.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_2681acedfc75eb17",
+      "question_vi": "Người ở phía dưới chiếc ô.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_2c4c800c6fcff88d",
+      "question_vi": "Con mèo ở trên cùng của chiếc ô tô.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_2d26049101ef94b0",
+      "question_vi": "Cái bánh pizza ở bên trong chiếc lò nướng.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_2dc075a6c3f13651",
+      "question_vi": "Đoàn tàu ở trên cùng của cái bàn ăn.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_2f12e391ef76ebaf",
+      "question_vi": "Cái bồn cầu là một phần của đoàn tàu.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_30435d2027f6bacc",
+      "question_vi": "Cái chai ở sát cạnh cái bánh pizza.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_38da8976f2443ffc",
+      "question_vi": "Người hướng về phía cái bàn phím.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_3d5bba6ebe2609ed",
+      "question_vi": "Chiếc ô ở phía trên cái cốc.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_3e281d12ef3e7f88",
+      "question_vi": "Con gấu bông ở ngay cạnh con chuột.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_3f8818951f371a82",
+      "question_vi": "Con bò ở bên phải chiếc ghế dài.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_3fab5414f853d702",
+      "question_vi": "Người ở dọc theo chiếc ghế sofa.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_42083c60af1cc6e7",
+      "question_vi": "Người bao quanh quả chuối.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_44aa2b1f34e03eb9",
+      "question_vi": "Con mèo ở ngay cạnh cái bánh ngọt.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_483363d3e28ec995",
+      "question_vi": "Quả táo nối với cái bàn ăn.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_48bbc15b1a01e869",
+      "question_vi": "Chiếc giường ở bên phải cái bàn ăn.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_4b2ddbbc5b4c3bb9",
+      "question_vi": "Cái bàn phím ở gần cái bánh ngọt.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_4c671067395b3b9d",
+      "question_vi": "Người ở ngoài, không ở trên chiếc ghế sofa.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_4fdeffed193ac08b",
+      "question_vi": "Chiếc giường ở bên cạnh người.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_5009791a49c16fd6",
+      "question_vi": "Chiếc va li nối với chiếc xe máy.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_5b08ac69073fba40",
+      "question_vi": "Chiếc máy tính xách tay hướng mặt về phía cái bánh sandwich.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_5ba5a75cfcb293fe",
+      "question_vi": "Cái bánh pizza ở mép cái bàn ăn.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_600b39eb2efc2f17",
+      "question_vi": "Chiếc ô tô ở phía dưới so với chiếc đồng hồ thu phí đỗ xe.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_6160cd04f948b730",
+      "question_vi": "Chiếc xe đạp ở bên cạnh cái bàn ăn.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_61a56c0c5c2760d2",
+      "question_vi": "Chiếc ghế ở xa hơn về phía bên kia chiếc va li.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_69a47054740ba54e",
+      "question_vi": "Con mèo ở gần chiếc tivi.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_6a3dc932d98e90bc",
+      "question_vi": "Cái bánh pizza ở phía trước người.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_702cf64353f2f1c5",
+      "question_vi": "Con gấu ở trên cái bánh ngọt.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_70858ce04143e424",
+      "question_vi": "Cái bàn phím ở phía sau con chó.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_720a35187bfbedf2",
+      "question_vi": "Chậu cây ở bên trái chiếc ghế dài.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_7216cd899c1756b7",
+      "question_vi": "Con mèo ở giữa chiếc ghế dài.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_7274af2446a667f8",
+      "question_vi": "Cây bông cải xanh ở bên cạnh cái bát.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "vsr_7331d26d4c305264",
+      "question_vi": "Chiếc ghế sofa ở gần con chó.",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    }
+  ]
+}

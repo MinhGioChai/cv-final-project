@@ -1,0 +1,1512 @@
+{
+  "context": {
+    "schema_version": "main_review_v1",
+    "sample_ids": [
+      "repope_3e7232c4e73e5377",
+      "repope_0641dc06259b79a4",
+      "repope_a5fa3231ac262e90",
+      "repope_dc32707a2384c506",
+      "repope_093066e2dcc0eeff",
+      "repope_aa76ce2c3c40ad39",
+      "repope_abf64292dedc85fe",
+      "repope_c3c1643da02b196d",
+      "repope_48edef20b7f7572d",
+      "repope_b460c7f60e15cff7",
+      "repope_9cf908e0551d2720",
+      "repope_84ffc5647cfc006d",
+      "repope_fab643a7f7274613",
+      "repope_628e85c82c6a2351",
+      "repope_d95ace61ad033c16",
+      "repope_64d74de8bda27ec9",
+      "repope_34d7adb1c95f6c32",
+      "repope_f7f00c4692fd1d27",
+      "repope_9e8268a080765f42",
+      "repope_31358de29a646a90",
+      "repope_cf1b8e4f65382938",
+      "repope_853fb64951d570aa",
+      "repope_e065730dba3ea259",
+      "repope_124f347f9876cb46",
+      "repope_704654b665bc8f44",
+      "repope_059493fda5495bb4",
+      "repope_35804b847cea73bc",
+      "repope_fea3bb97aae9c2da",
+      "repope_b843626e761e4a85",
+      "repope_06a2cfb8bc53280e",
+      "repope_99a5cdcb4630c0e8",
+      "repope_ac21e5890f94a80d",
+      "repope_36dd4a69abc321e4",
+      "repope_3c3ec15103c08e4a",
+      "repope_cd244971ef7cc11f",
+      "repope_fc781651a0b2786e",
+      "repope_585c752b2631c873",
+      "repope_9aad2e825e9f880c",
+      "repope_d94f09921d6a5155",
+      "repope_fc37c5d4e25b047c",
+      "repope_a65b2a5dfc24ecbe",
+      "repope_1239d3ed6fc92e35",
+      "repope_f11332b86a3b2d7c",
+      "repope_dc1d20f4058e15de",
+      "repope_dc8c443b11aa7967",
+      "repope_7cc6fefe3048f9e5",
+      "repope_e43e7e3011ac29c6",
+      "repope_74c569ea9495ae1a",
+      "repope_bac3827c8eebefbb",
+      "repope_69650e4130b1dfc4"
+    ],
+    "row_sha256": {
+      "repope_3e7232c4e73e5377": "f30dd63f1667b51778ffee3de80f2605b79e1134466a31feed4481152e678548",
+      "repope_0641dc06259b79a4": "07681585a311926cee5bece64e315f473b99194652c5ee4dc0cb4617f97a3f67",
+      "repope_a5fa3231ac262e90": "970f0ee4e6d9b860b836343737718aec2ee3d58f336610a7277e97df37f49c79",
+      "repope_dc32707a2384c506": "adc23e65031985d9d2ebae926694a6c77246a909f05a47056b26b29a77e70c80",
+      "repope_093066e2dcc0eeff": "df69d7c2bfece5a8b3797170be026736972dc3b42d02bc36411cf32877a690cf",
+      "repope_aa76ce2c3c40ad39": "a2101d4424d49ec107f9f633e312acbd68d62f3d26b39555e023bd03f146a7b1",
+      "repope_abf64292dedc85fe": "2cd7e8d7fc16959e24f2831b31cec094dd46aa2c6849eda992938900d257e0bb",
+      "repope_c3c1643da02b196d": "69282b2dc382fc930b90f894e5d25c703c122a64b7cdec5aff5396f660d094fe",
+      "repope_48edef20b7f7572d": "7f0a643b3ddbfe86712107eb35d1f0e1e4850b7a9537cc67d47ca5f25d14f4f8",
+      "repope_b460c7f60e15cff7": "b26404ee6db31a97809e47c006be4de86ee0817603d1243724c68bbd30a12bdc",
+      "repope_9cf908e0551d2720": "f5e0932fce0841a6d0c11b1e0cf853269c8bbe9874b92f70b1316ecb357d16e5",
+      "repope_84ffc5647cfc006d": "709404c8667490fc43df93e7a5e6a34849b62842539215d5dd36e24f82724e07",
+      "repope_fab643a7f7274613": "c6ad2112c6668de15ab4093304b7a89f7c73c77644c45a2f2762ee778f6e2695",
+      "repope_628e85c82c6a2351": "c646fd6951835f41f23c90f73c6eb293dbde091547eedef17c032cd2c01dd3fb",
+      "repope_d95ace61ad033c16": "d0e4d149342b73c94918a071941573f74aca449adb55a68371b35e26a8687bd3",
+      "repope_64d74de8bda27ec9": "0108bbf600287f36c2be86bf9984ccde4338d446bdc8cfaaac929e44b776d4a3",
+      "repope_34d7adb1c95f6c32": "1f3ade8edd4c5030e7f671a1280c40a1f07b9f5c3e6aa0e90c0eaae438f46465",
+      "repope_f7f00c4692fd1d27": "db5859cf00cc16009bd973e170350f4e21bc633396f5b9b2a1020206f1e4e9f4",
+      "repope_9e8268a080765f42": "90487a3debe632fd0d01bc25c184a830ef1e9dea465e12fe860fdd97e92d3cab",
+      "repope_31358de29a646a90": "1a2e195fd2341e47d54a33d506fbe33214c149ab493e1d915910480e8f24edc6",
+      "repope_cf1b8e4f65382938": "bd50102d4474e2ac6bcf71fc24718903f671f423efe76baed13f6c66ac008d04",
+      "repope_853fb64951d570aa": "3af9e2ffa0660391fee8fa12a4925bd5802f24e05bf46090f917178079fbdcfc",
+      "repope_e065730dba3ea259": "e17bac7a23e1cf65a395c78b1dbe991d8ddad809eb8b6faa031b7e3b3b5f0f97",
+      "repope_124f347f9876cb46": "a43b39358f4caf821584b20c7bc7627b206122f6dd0487ad82c81c09fa98d0c2",
+      "repope_704654b665bc8f44": "ebf923268a6226d6164f401f707bbaf50a0fb16b7439aea815ae11f4f7bc3134",
+      "repope_059493fda5495bb4": "1285f8f0e7a3f44df8567ca3a2d1d10581ec3b0c504e109412011673a22b4772",
+      "repope_35804b847cea73bc": "c4d5da510ad44d8d1f17e93a8c7090c8e0b8e50c70fc9ca10595d5de64314046",
+      "repope_fea3bb97aae9c2da": "7fff9860e4da08c19d9950979158da9522a3f9c5f4921a108fe29ab4f2bacc69",
+      "repope_b843626e761e4a85": "84cade10d8510c7d971b40bf32250da7f0b890f7c776d2794a02972b4f7fc73a",
+      "repope_06a2cfb8bc53280e": "b28039b5be1fe23e47a99c6fc041d02379feafe87699f801187c8fbe27bed536",
+      "repope_99a5cdcb4630c0e8": "068d310b5b0c2649c685c93974db44e8797639ebc2871d0e9f01aa9002fc1b30",
+      "repope_ac21e5890f94a80d": "bf8126657da1d1ff6dbe0184b31c44a2d996b8ef0377c885948f885e4e2f66c4",
+      "repope_36dd4a69abc321e4": "2b48bdce7b8afb8d2853e5b2836464763d9b305c51a2c15ede947387d1b2355e",
+      "repope_3c3ec15103c08e4a": "5be220fca25f3b880db26b32d647484c4468df4522af8be7b094f10565d8fb87",
+      "repope_cd244971ef7cc11f": "3a5a26a4047e417969588000517eec91bbdc1a766926057cda978214ec1fed46",
+      "repope_fc781651a0b2786e": "223c689f09d467134a4a8debcfbc5a577241b9eb92e75bf2c4bf51fedff5755e",
+      "repope_585c752b2631c873": "2167880ff7ca30632792fc823698dce633404706c33860e03e3a16feb8e54cc2",
+      "repope_9aad2e825e9f880c": "dea86256521c57f556a6c6124d7c3af80583000bf7a47ecf22ec4d538004e995",
+      "repope_d94f09921d6a5155": "733cc5336f2302eb1abced088761b310b352667eed1859c7bd5f34ea886e40d5",
+      "repope_fc37c5d4e25b047c": "39aa67b64e87a2a3a875d1262f8506133cd7e41bc265477f7e9a932e8fb4f36d",
+      "repope_a65b2a5dfc24ecbe": "3c0cd43a2484a542cdfea26d081a42084911c642c2be5112b41b9f1380378066",
+      "repope_1239d3ed6fc92e35": "861e3c54543cf49d7ac58a4379ed80c2a88124d2f8cc0ff63e60c5c547e367d7",
+      "repope_f11332b86a3b2d7c": "fd18d48d0f5aa48eb95069cd10aa05d02f8b486c6f32710f5a9e292a8c442bec",
+      "repope_dc1d20f4058e15de": "01a26b8e980d40439a6ddc0c957d78f59e503f71fe1050e38ab8dee2d3b67dca",
+      "repope_dc8c443b11aa7967": "78212a163eeb56e82124a958512c73a2d322b53dbacf4c240c5be58f64801bd5",
+      "repope_7cc6fefe3048f9e5": "bfe7c38608019ba9473c839c8f096af40ea126f2f796623568e404bcdbcbb5b7",
+      "repope_e43e7e3011ac29c6": "bc92e5a9ee4d25027880e6b9e22de7671a284cb4f3a2416f3e835875d48436f7",
+      "repope_74c569ea9495ae1a": "0aa7863b0ea91a3c2a7c270e3ea909ac0a88455b85a90114ba2e53344c55dbca",
+      "repope_bac3827c8eebefbb": "9a3bfb6c89e272c7202c59b3d03553d33eeb061195551e60656737a55931fbb8",
+      "repope_69650e4130b1dfc4": "d0e7492af9e81fd7c6df77683965b2fc46ad51b2a7dd08aa4c286d53ddd8c944"
+    },
+    "manifest_sha256": "1e895513eebdd3f8c90933f99e9d62307cfd0f8d041e6bcd214ed995ce399c9c"
+  },
+  "decisions": [
+    {
+      "sample_id": "repope_3e7232c4e73e5377",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_0641dc06259b79a4",
+      "question_vi": "Trong ảnh có cái chai nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_a5fa3231ac262e90",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_dc32707a2384c506",
+      "question_vi": "Trong ảnh có con chó nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_093066e2dcc0eeff",
+      "question_vi": "Trong ảnh có chiếc ghế nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_aa76ce2c3c40ad39",
+      "question_vi": "Trong ảnh có chiếc ghế nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_abf64292dedc85fe",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_c3c1643da02b196d",
+      "question_vi": "Trong ảnh có cái nĩa nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_48edef20b7f7572d",
+      "question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_b460c7f60e15cff7",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_9cf908e0551d2720",
+      "question_vi": "Trong ảnh có cái bàn phím nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_84ffc5647cfc006d",
+      "question_vi": "Trong ảnh có cái bình hoa nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_fab643a7f7274613",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_628e85c82c6a2351",
+      "question_vi": "Trong ảnh có chiếc giường nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_d95ace61ad033c16",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_64d74de8bda27ec9",
+      "question_vi": "Trong ảnh có chiếc găng tay bóng chày nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_34d7adb1c95f6c32",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_f7f00c4692fd1d27",
+      "question_vi": "Trong ảnh có chiếc xe buýt nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_9e8268a080765f42",
+      "question_vi": "Trong ảnh có con chó nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_31358de29a646a90",
+      "question_vi": "Trong ảnh có cái bàn ăn nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_cf1b8e4f65382938",
+      "question_vi": "Trong ảnh có chiếc đồng hồ nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_853fb64951d570aa",
+      "question_vi": "Trong ảnh có chiếc ô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_e065730dba3ea259",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_124f347f9876cb46",
+      "question_vi": "Trong ảnh có chiếc giường nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_704654b665bc8f44",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_059493fda5495bb4",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_35804b847cea73bc",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_fea3bb97aae9c2da",
+      "question_vi": "Trong ảnh có con dao nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_b843626e761e4a85",
+      "question_vi": "Trong ảnh có cái cốc nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_06a2cfb8bc53280e",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_99a5cdcb4630c0e8",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_ac21e5890f94a80d",
+      "question_vi": "Trong ảnh có chiếc vợt quần vợt nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_36dd4a69abc321e4",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_3c3ec15103c08e4a",
+      "question_vi": "Trong ảnh có chiếc ghế dài nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_cd244971ef7cc11f",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_fc781651a0b2786e",
+      "question_vi": "Trong ảnh có chiếc xe máy nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_585c752b2631c873",
+      "question_vi": "Trong ảnh có chiếc xe tải nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_9aad2e825e9f880c",
+      "question_vi": "Trong ảnh có chậu cây nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_d94f09921d6a5155",
+      "question_vi": "Trong ảnh có chiếc máy tính xách tay nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_fc37c5d4e25b047c",
+      "question_vi": "Trong ảnh có quả cam nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_a65b2a5dfc24ecbe",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_1239d3ed6fc92e35",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_f11332b86a3b2d7c",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_dc1d20f4058e15de",
+      "question_vi": "Trong ảnh có chiếc ba lô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_dc8c443b11aa7967",
+      "question_vi": "Trong ảnh có chiếc ba lô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_7cc6fefe3048f9e5",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_e43e7e3011ac29c6",
+      "question_vi": "Trong ảnh có người nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_74c569ea9495ae1a",
+      "question_vi": "Trong ảnh có chiếc ô tô nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_bac3827c8eebefbb",
+      "question_vi": "Trong ảnh có cái bàn ăn nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    },
+    {
+      "sample_id": "repope_69650e4130b1dfc4",
+      "question_vi": "Trong ảnh có con dao nào không?",
+      "translation_1": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "translation_2": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      },
+      "image_qa": {
+        "status": "pending",
+        "reviewer_id": "",
+        "reviewed_at": "",
+        "notes": "",
+        "reviewed_question_vi": "",
+        "observed_answer": ""
+      }
+    }
+  ]
+}
