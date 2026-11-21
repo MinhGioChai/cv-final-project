@@ -17,7 +17,7 @@ sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
 - Main: đủ 1.000 câu EN–VI nháp/783 ảnh, đang chờ human review.
 - Review v2: A kiểm dịch và ảnh/nhãn, B kiểm lại cả hai; nhận riêng
   `main_review_v2.zip`, mở `reports/stage1/v12/main_review/index.html`.
-  [Workflow A/B](docs/research/MAIN_REVIEW_V2.md).
+  [Hướng dẫn review chi tiết từng bước cho A/B](docs/research/MAIN_REVIEW_V2.md).
 - Chưa freeze hoặc chạy 4.000 inference chính. RQ1–RQ2 là core;
   RQ3–RQ4 là mở rộng có điều kiện. Không training/fine-tuning.
 - Không cần GPU để làm review, tests hoặc phân tích pilot đã có.

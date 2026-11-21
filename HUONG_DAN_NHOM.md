@@ -294,6 +294,11 @@ hai snapshot vào cùng cloud workspace hoặc sửa metadata để ép resume.
 
 ### 5.2 Chỉ review — không cần cài Python
 
+Đọc [hướng dẫn review chi tiết](docs/research/MAIN_REVIEW_V2.md): từng bước A/B,
+tiêu chí dịch/ảnh theo từng task, pending/rejected, lưu/mở lại JSON và xử lý lỗi.
+Bản HTML đọc offline để gửi cùng ZIP là `exports/HUONG_DAN_REVIEW_V2.html`,
+nhận riêng từ người giữ project; không cần cài đặt để đọc.
+
 1. Nhận **main_review_v2.zip**, giải nén vào một thư mục mới.
 2. Mở `reports/stage1/v12/main_review/index.html`, chọn gói nhóm đã thống nhất.
 3. **A:** nhập ID của mình, chọn **Lượt A**, kiểm dịch và ảnh/nhãn trên cùng

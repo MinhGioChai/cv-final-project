@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v27 · 21/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v28 · 21/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -39,7 +39,7 @@
 | Main drafts | Đủ ảnh/EN–VI nháp cho 1.000 row, 783 JPEG/hash khác nhau; source và ID/byte leakage checks đạt; tất cả main requires_review/QA pending |
 | Review main | 22 gói v2 tối đa 50 câu; A/B mỗi người kiểm dịch và ảnh/nhãn, một JSON cuối/gói; chưa có main human import |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
-| Tests | v27 ngày 21/11: 359 passed/8,74 s, thêm 25 tests review A/B/JS/CLI; chưa visual browser QA, không phải inference/QA thật |
+| Tests | v27 ngày 21/11: 359 passed/8,74 s. v28 chỉ docs, không chạy lại suite; chưa visual browser QA, không phải inference/QA thật |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
 | Hướng dẫn/structure | Một HUONG_DAN_NHOM.md từ mục tiêu đến push; root scripts 19→9, data/8 và legacy/2. Data/config/runtime paths giữ nguyên |
@@ -56,17 +56,20 @@ QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch
 
 ## Việc tiếp theo
 
-1. Nhóm clone repo đã push, nhận riêng main_review_v2.zip từ người giữ project và
-   làm thử một gói review/lưu/mở lại JSON trước khi triển khai rộng. ZIP không
-   được upload/chia sẻ tự động trong phiên này.
+1. Người dùng báo nhóm đang review. Gửi kèm hướng dẫn HTML chi tiết
+   `exports/HUONG_DAN_REVIEW_V2.html` với main_review_v2.zip; nhóm thử lưu/mở lại
+   vài mẫu rồi tiếp tục theo đúng A/B. Chưa import thêm human QA trong phiên này.
 2. Review main theo [workflow v2](../docs/research/MAIN_REVIEW_V2.md): mở
    `reports/stage1/v12/main_review/index.html` sau khi nhận ZIP; tải JSON và
    lưu `data/reviews/main_review_v2/<packet>_reviewed_v2.json`. Không làm lại pilot.
 3. Dry-run/import các JSON thật vào version mới; xử lý rejected/uncertain,
    tổng hợp đúng 1.000 IDs, đối soát source/ảnh/leakage trước final.
-4. Song song review, hoàn thiện metadata/schema baseline và full runner;
-   sau gates chốt configs/protocol,
-   freeze sau gates rồi xin xác nhận full-run. Không coi pilot runner là main runner.
+4. Song song review, ưu tiên chốt metadata/schema baseline (run/model/tokenizer
+   revisions, prompt/config/image hashes, dtype/generation, code/environment,
+   valid/error/missing), rồi xây full runner bốn task với dry-run lưới 4.000 ô
+   và tests resume/error bằng CPU. Tích hợp evaluator/CI đã có, không làm lại
+   chúng từ đầu. Đây vẫn là công việc cần triển khai, chưa có runner main mới.
+   Sau gates chốt configs/protocol, freeze rồi xin xác nhận full-run.
 5. Sau run được duyệt: paired metrics/CI, error analysis, Results–Discussion,
    report/slides V3. Word v1 ngày 11/11 giữ scope V4.2, chưa revise V3 hoặc có
    bằng chứng đã nộp. RQ3/RQ4 chỉ xét sau core ổn định và gate riêng.
@@ -182,3 +185,23 @@ protocol, README; công bố thay đổi bằng một commit review riêng theo 
 push từng việc. Không model run, download hoặc human approval mới. Chi tiết
 và giới hạn kiểm chứng tại [v12](stage1/v12/completion.md). Bước tiếp: chia sẻ
 ZIP v2, thử lưu/tải/mở lại vài mẫu rồi A → B → import JSON thật.
+
+### v28 — 21/11/2026: Hướng dẫn chi tiết cho reviewer và việc làm song song
+
+Hoàn tất yêu cầu hướng dẫn đang dở: mở rộng MAIN_REVIEW_V2.md tại chỗ thành
+14 mục cho người review và giữ phụ lục operator, thêm bản HTML độc lập ở
+exports/HUONG_DAN_REVIEW_V2.html để gửi cùng ZIP. Bao gồm cách mở gói, đúng
+tên nút, A/B nối tiếp, checklist dịch, QA bốn task/mapping Pet, trạng thái,
+sửa VI/history, tải/khôi phục JSON, bộ đếm và lỗi/bàn giao. README và guide
+trỏ vào tài liệu hiện có, không tạo thêm entry point Markdown trùng lặp.
+
+Đã đối chiếu labels/UI/schema, kiểm cấu trúc HTML/14 mục/anchors, Git links
+và diff; HTML không scripts/assets từ mạng. Không visual browser QA, không
+chạy lại suite: 359 tests vẫn là kết quả v27. Không đổi code, template review,
+manifests, JSON quyết định hoặc nội dung ZIP; không inference/human approval mới.
+Khi kiểm bàn giao, main_review_v2.zip không còn ở exports; đã đóng lại từ bộ
+HTML hiện có, bytes/SHA256 khớp hoàn toàn receipt v12 (755e18f4…). Hai ZIP cũ
+giữ hash; không ghi đè ZIP có sẵn hoặc sửa receipt lịch sử.
+Người dùng hỏi việc làm khi nhóm đang review: ưu tiên metadata contract →
+full-runner CPU dry-run 4.000 ô → tích hợp evaluation/CI, chuẩn bị Method/khung
+Results song song. Đây là kế hoạch, không nâng trạng thái A12/A13 thành DONE.
