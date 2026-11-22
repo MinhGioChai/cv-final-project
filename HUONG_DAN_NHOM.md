@@ -183,8 +183,10 @@ chỉ vì thành viên mới tham gia. Thực hiện checks phù hợp với tha
 | Viết/tổng hợp report | Không | Mục 2, 7 và evidence được link cuối file | Nội dung đúng scope/phiên bản, phân biệt pilot/main |
 | Đưa thay đổi lên GitHub | Không | Mục 8 | Commit theo từng việc, kiểm thử và PR rõ nội dung |
 
-Nhóm tự chọn workstreams. Công việc gần nhất là **main human review**, cùng
-metadata/full runner; không cần tất cả thành viên chạy lại pilot.
+Theo yêu cầu ngày 22/11, nhóm dùng [phân công 5 người TV1–TV5](docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md).
+Công việc gần nhất là **main human review**; metadata/runner CPU đã có,
+các mảng tổng hợp dữ liệu, GPU smoke, phân tích và report tiếp tục song song.
+Không cần tất cả thành viên chạy lại pilot.
 
 ### 3.1 Thứ tự công việc tiếp theo và điều kiện qua mốc
 
@@ -202,7 +204,14 @@ không phải đứng chờ: có thể hoàn thiện contract/runner và dùng s
 tests/dry-run. Rà Related Work, chuẩn bị bảng kết quả và khung report cũng có
 thể làm sớm; phần Results/Discussion phải dựa trên kết quả thật khi đã có.
 
-### 3.2 Các workstream để nhóm tự chọn
+### 3.2 Phân công 5 người và các mảng công việc
+
+Report [tiến độ và phân công](docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md)
+chia TV1 dữ liệu/QA cuối, TV2 inference/GPU, TV3 phân tích định lượng,
+TV4 phân tích lỗi/Related Work, TV5 báo cáo/tái lập. TV1–TV5 là ký hiệu để nhóm
+thay bằng tên thật. Mỗi phần có việc làm ngay, việc chờ QA/raw, đầu ra,
+điều kiện hoàn tất và mốc commit. Mục 9 chia 22 gói review thành 400 lượt
+kiểm mẫu/người, tính cả A và B; giữ các gói/người đã nhận nếu đang review.
 
 | Workstream | Việc cụ thể | Có thể bắt đầu ngay? | Evidence cần lưu |
 |---|---|---|---|
@@ -212,8 +221,10 @@ thể làm sớm; phần Results/Discussion phải dựa trên kết quả thậ
 | Research/report | Related Work, mô tả thiết kế/QA, khung bảng, limitations | Có; chưa viết kết luận main | Nội dung có nguồn và bảng phân biệt đã làm/planned |
 | Compute/reproducibility | Kiểm pilot khi cần, ghi môi trường, kiểm cloud GPU phù hợp | Có nếu có GPU; không bắt buộc tất cả cùng chạy | Raw/meta/summary/errors và hardware/package settings thật |
 
-Workstreams không phải phân công cứng cho từng thành viên. Ghi nhận việc
-đang làm qua issue/branch/PR hoặc bảng nhóm để tránh đụng cùng một file.
+Các mảng trên mô tả kỹ năng và sản phẩm; phân công cụ thể dùng report TV1–TV5.
+Ghi nhận việc đang làm qua issue/branch/PR hoặc bảng nhóm để tránh đụng cùng
+một file. Mỗi người viết phần chuyên môn và commit công việc thực sự của mình;
+TV5 tích hợp báo cáo chung, không viết thay cả nhóm.
 
 ### 3.3 Việc đầu tiên nên làm trong đợt cộng tác này
 

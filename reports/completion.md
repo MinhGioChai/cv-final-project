@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v29 · 22/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v30 · 22/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -27,7 +27,9 @@
 - Main **frozen=false**; 4.000 inference chính chưa chạy/chưa được xác nhận
   full-run. Không tự giảm scope, thay labels hoặc loại theo output của model.
 - Source labels/provenance và pilot ID/SHA exclusions giữ nguyên. Không
-  tạo reviewer/approval hoặc gán công việc theo tên thành viên.
+  tạo reviewer/approval. Theo yêu cầu mới ngày 22/11, đã chia 5 vai trò TV1–TV5
+  tại [report phân công](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md);
+  nhóm điền tên thật sau, không gán lại tác giả các commit đã có.
 
 ## Đã hoàn thành có bằng chứng
 
@@ -58,6 +60,9 @@ QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch
 
 ## Việc tiếp theo
 
+0. Nhóm đọc [report tiến độ và phân công 5 người](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md),
+   điền tên TV1–TV5 và ghi nhận gói đang review. Bắt đầu các đầu ra làm ngay
+   của từng vai trò; bảng chia 400 lượt kiểm mẫu/người là đề xuất cho gói chưa chốt.
 1. Người dùng báo nhóm đang review. Gửi kèm hướng dẫn HTML chi tiết
    `exports/HUONG_DAN_REVIEW_V2.html` với main_review_v2.zip; nhóm thử lưu/mở lại
    vài mẫu rồi tiếp tục theo đúng A/B. Chưa import thêm human QA trong phiên này.
@@ -229,3 +234,31 @@ fixture, rồi suite đạt; không giả lập chúng thành dữ liệu/thí n
 Chi tiết tại [v13](stage1/v13/completion.md) và [contract](../docs/research/BASELINE_V1.md).
 Bước tiếp cụ thể: nhận/import JSON A/B, tổng hợp main final, chốt/freeze và
 xác nhận GPU smoke; không cần chạy lại pilot hoặc viết lại evaluator.
+
+### v30 — 22/11/2026: Report tiến độ và phân công 5 người
+
+Người dùng yêu cầu chia công việc còn lại cho đủ 5 người và tạo report để
+xin góp ý ChatGPT. Đây là yêu cầu mới cho phép phân công theo 5 ký hiệu:
+TV1 dữ liệu/QA cuối, TV2 inference/GPU, TV3 định lượng, TV4 phân tích lỗi/
+Related Work, TV5 báo cáo/tái lập. Mỗi phần ghi việc làm ngay và việc phụ
+thuộc QA/raw, đầu ra, điều kiện hoàn tất, phần viết và branch/PR/commit.
+Không gán tên thật, tạo approval hoặc đổi tác giả/lịch sử Git.
+
+Report có tổng quan V3, dữ liệu/metrics, bằng chứng tiến độ, gates M1–M5,
+giới hạn và 6 câu hỏi phản biện cho ChatGPT. Đối chiếu đủ 22 gói/1.000 mẫu:
+hai lượt A/B tạo 2.000 lượt kiểm mẫu, cân bằng 400/người; giữ công việc đang
+làm nếu đã nhận gói. A và B vẫn phải là hai người thật, mỗi người duyệt cả
+dịch và ảnh/nhãn trong cùng JSON. Đây là kế hoạch, không phải review đã xong.
+
+Nguồn canonical là docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md, đã link
+từ README/docs index/hướng dẫn nhóm. Bản gửi ChatGPT ở exports:
+EN_VI_VLM_Tien_do_va_Phan_cong_5_nguoi_v1.pdf và .md. PDF 11 trang đã render
+và kiểm bố cục từng trang, glyph tiếng Việt và text; Markdown export khớp
+nguồn. Word không xuất do canonical renderer thiếu LibreOffice; không bàn
+giao DOCX chưa kiểm. Artifacts/QA local giữ ngoài Git.
+
+Phiên này chỉ tài liệu và kiểm report; không chạy lại software suite, GPU,
+download, import human QA hoặc freeze. 396 tests/18,91 s vẫn là lần v13,
+không phải test run v30. Main chưa có kết quả, Stage 1 IN_PROGRESS và RQ3/RQ4
+vẫn conditional P1. Bước tiếp: nhóm thống nhất TV1–TV5, tiếp tục A/B và làm
+đầu ra song song; nhận JSON thật để tổng hợp main trước freeze/GPU smoke.

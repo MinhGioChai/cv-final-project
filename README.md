@@ -35,6 +35,7 @@ private results được giữ ngoài Git.
 | Cần gì | Mở đâu |
 |---|---|
 | Hiểu project và tham gia | [Hướng dẫn nhóm](HUONG_DAN_NHOM.md) |
+| Tiến độ nghiên cứu và phân công 5 người | [Report TV1–TV5](docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md) |
 | Việc P0 còn thiếu | [Implementation plan](docs/research/IMPLEMENTATION_PLAN_V3.md) |
 | Protocol và tài liệu chuyên sâu | [Docs](docs/README.md) |
 | Bằng chứng/lịch sử | [Reports](reports/README.md) |

@@ -8,6 +8,7 @@ Mục lục này dành cho lúc cần chi tiết; completion ghi trạng thái s
 | Yêu cầu hiện hành | [Handoff V3](handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md) |
 | Thiết kế/metrics/gates nghiên cứu | [Research Protocol](research/RESEARCH_PROTOCOL_V3.md) |
 | Checklist công việc P0/P1 | [Implementation Plan](research/IMPLEMENTATION_PLAN_V3.md) |
+| Tổng quan, tiến độ và phân công 5 người | [Report TV1–TV5](research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md) |
 | Review main và import | [Main review v2 — A/B](research/MAIN_REVIEW_V2.md) |
 | Pilot local/Colab/Kaggle | [Pilot guide](run_local_colab_kaggle.md), [Gemma](setup_gemma.md) |
 | Scoring và CI | [Evaluation v1](research/EVALUATION_V1.md) |
