@@ -1,0 +1,38 @@
+# CPU planning only until main human review and a protocol-bound freeze receipt.
+schema_version: baseline_v1
+experiment_id: en_vi_main_v3_draft_v1
+frozen: false
+freeze_receipt: null
+seed: 42
+manifests:
+  - data/main/preparation_v2/repope_bilingual_draft_manifest.csv
+  - data/main/preparation_v3/vsr_bilingual_draft.csv
+  - data/main/preparation_v3/tallyqa_bilingual_draft.csv
+  - data/main/preparation_v3/oxford_pet_bilingual_draft.csv
+source_selection: data/main/preparation_v2/all_candidates.jsonl
+pilot_manifest: data/pilot/stage1_qa_v1/pilot_manifest.csv
+pilot_exclusions: data/pilot/image_exclusions.json
+prompts: configs/prompts_baseline_v1.yaml
+targets: {repope: 600, vsr: 120, tallyqa: 120, oxford_pet: 160}
+languages: [en, vi]
+models:
+  qwen:
+    model_id: Qwen/Qwen2.5-VL-3B-Instruct
+    revision: 66285546d2b821cf421d4f5eb2576359d3770cd3
+    processor_revision: 66285546d2b821cf421d4f5eb2576359d3770cd3
+    tokenizer_revision: 66285546d2b821cf421d4f5eb2576359d3770cd3
+    precision: nf4_fp16
+    attention: eager
+  gemma:
+    model_id: google/gemma-3-4b-it
+    revision: 093f9f388b31de276ce2de164bdc2081324b9767
+    processor_revision: 093f9f388b31de276ce2de164bdc2081324b9767
+    tokenizer_revision: 093f9f388b31de276ce2de164bdc2081324b9767
+    precision: nf4_bf16
+    attention: eager
+generation: {do_sample: false, batch_size: 1, max_new_tokens: 8}
+preprocess:
+  policy_id: rgb_thumbnail_lanczos_v1
+  image_max_edge: 512
+  qwen_min_pixels: 200704
+  qwen_max_pixels: 401408

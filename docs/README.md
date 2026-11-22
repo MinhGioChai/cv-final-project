@@ -11,6 +11,7 @@ Mục lục này dành cho lúc cần chi tiết; completion ghi trạng thái s
 | Review main và import | [Main review v2 — A/B](research/MAIN_REVIEW_V2.md) |
 | Pilot local/Colab/Kaggle | [Pilot guide](run_local_colab_kaggle.md), [Gemma](setup_gemma.md) |
 | Scoring và CI | [Evaluation v1](research/EVALUATION_V1.md) |
+| Main metadata và runner CPU preflight | [Baseline v1](research/BASELINE_V1.md) |
 | Dựng lại dữ liệu khi cần | [Source inventory](research/MAIN_DATA_PREPARATION_V1.md), [RePOPE](research/MAIN_PREPARATION_V2.md) |
 | Yêu cầu môn học | [Topic 14](../project_topics.md) |
 | Bằng chứng/lịch sử | [Reports](../reports/README.md), [archive](archive/README.md) |

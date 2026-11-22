@@ -18,6 +18,9 @@ sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
 - Review v2: A kiểm dịch và ảnh/nhãn, B kiểm lại cả hai; nhận riêng
   `main_review_v2.zip`, mở `reports/stage1/v12/main_review/index.html`.
   [Hướng dẫn review chi tiết từng bước cho A/B](docs/research/MAIN_REVIEW_V2.md).
+- Baseline v1: đã có metadata, runner bốn task và CPU dry-run 4.000 cells;
+  [hướng dẫn main](docs/research/BASELINE_V1.md). Chạy kiểm kế hoạch bằng
+  `.venv/Scripts/python.exe scripts/run_main.py plan`.
 - Chưa freeze hoặc chạy 4.000 inference chính. RQ1–RQ2 là core;
   RQ3–RQ4 là mở rộng có điều kiện. Không training/fine-tuning.
 - Không cần GPU để làm review, tests hoặc phân tích pilot đã có.

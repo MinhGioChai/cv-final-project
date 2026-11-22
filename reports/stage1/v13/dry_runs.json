@@ -1,0 +1,51 @@
+{
+  "scope": "local CPU preflights; platform labels are not real cloud runs",
+  "runs": [
+    {
+      "model": "qwen",
+      "platform_label": "local",
+      "protocol_hash": "b6acbaa6963ae44f740523a1d27c6119a6c3dc5121ac473a24cba024b04efb98",
+      "expected_inferences": 2000,
+      "sample_ids_sha256": "12835ec09d0649351759bb0c8cd71c94caf5b05ba337cc0d7561b0e7f796bd98"
+    },
+    {
+      "model": "qwen",
+      "platform_label": "colab",
+      "protocol_hash": "b6acbaa6963ae44f740523a1d27c6119a6c3dc5121ac473a24cba024b04efb98",
+      "expected_inferences": 2000,
+      "sample_ids_sha256": "12835ec09d0649351759bb0c8cd71c94caf5b05ba337cc0d7561b0e7f796bd98"
+    },
+    {
+      "model": "qwen",
+      "platform_label": "kaggle",
+      "protocol_hash": "b6acbaa6963ae44f740523a1d27c6119a6c3dc5121ac473a24cba024b04efb98",
+      "expected_inferences": 2000,
+      "sample_ids_sha256": "12835ec09d0649351759bb0c8cd71c94caf5b05ba337cc0d7561b0e7f796bd98"
+    },
+    {
+      "model": "gemma",
+      "platform_label": "local",
+      "protocol_hash": "b6acbaa6963ae44f740523a1d27c6119a6c3dc5121ac473a24cba024b04efb98",
+      "expected_inferences": 2000,
+      "sample_ids_sha256": "12835ec09d0649351759bb0c8cd71c94caf5b05ba337cc0d7561b0e7f796bd98"
+    },
+    {
+      "model": "gemma",
+      "platform_label": "colab",
+      "protocol_hash": "b6acbaa6963ae44f740523a1d27c6119a6c3dc5121ac473a24cba024b04efb98",
+      "expected_inferences": 2000,
+      "sample_ids_sha256": "12835ec09d0649351759bb0c8cd71c94caf5b05ba337cc0d7561b0e7f796bd98"
+    },
+    {
+      "model": "gemma",
+      "platform_label": "kaggle",
+      "protocol_hash": "b6acbaa6963ae44f740523a1d27c6119a6c3dc5121ac473a24cba024b04efb98",
+      "expected_inferences": 2000,
+      "sample_ids_sha256": "12835ec09d0649351759bb0c8cd71c94caf5b05ba337cc0d7561b0e7f796bd98"
+    }
+  ],
+  "blocked_execute_verified_before_runtime_imports": true,
+  "heavy_packages_imported": false,
+  "real_model_inferences": 0,
+  "human_approvals_created": 0
+}

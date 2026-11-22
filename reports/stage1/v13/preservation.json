@@ -1,0 +1,20 @@
+{
+  "base_commit": "d895db980065dc95df54f42db346a7cc7a07e310",
+  "tracked_data_config_core_stage_files_checked": 289,
+  "mismatches": [],
+  "protected_sha256": {
+    "src/vlmbench/pilot_runtime.py": "2dab35bf0f8dc01249f035b7dc28812fb441f12e9eef164e9b3896d5c14377c5",
+    "src/vlmbench/gemma_diagnostic.py": "3fa5ce9fe0d052be253805c668343d84a09b0633d7c4c4c389bded282b236bb8",
+    "src/vlmbench/parse.py": "5423ae0dd0846746d5e55c43cbe26178838763510fdfcf2bb31dd39d7c4212fb",
+    "src/vlmbench/main_review_v2.py": "2e93fa1cf5f424d4cedc4cdd35feb86345c472c5a01dd3783b282bbe4818b4ea",
+    "src/vlmbench/main_review_v2_template.html": "e6b8fc28e6aacf7447a636a2390f59eeb457bc59b4f05b0c53b792052fee32b3",
+    "data/main/preparation_v2/all_candidates.jsonl": "f336eb5c8e0f2626f82ff813ab65c57fff37ea39a62fbc16c01a63c69121eec7",
+    "reports/completion_history.md": "6842f0e9e1e868612f1ac5d0e290ab3ee85dcc03708887100d2ff930e2bda92b"
+  },
+  "pilot_snapshots_still_equal_original_raw": {
+    "reports/pilot_outputs/qwen_smoke_v1.jsonl": "4e4f911296c4baf79df1f27e91c6b23ad39f51f9beae46fc625a847838a9eb25",
+    "reports/pilot_outputs/gemma_bf16_trace_v2.jsonl": "b976b663ab017a5837728590884cd8928855b8d77a5eba170e7ca4ef4a136de1"
+  },
+  "new_human_approvals": 0,
+  "real_model_inferences": 0
+}

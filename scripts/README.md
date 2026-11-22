@@ -7,6 +7,8 @@
 | `scripts/legacy/` | Chỉ có local, ngoài Git: builders Word v1 theo scope cũ, không dùng tạo report V3 |
 
 Lệnh và thứ tự thao tác tại [hướng dẫn nhóm](../HUONG_DAN_NHOM.md).
+`run_main.py` mặc định CPU plan; dry-run bốn task không gọi model. Main execution
+có QA/freeze gates; xem [baseline v1](../docs/research/BASELINE_V1.md).
 `review_main.py` mặc định v2: export/import/bundle cho A/B mỗi người kiểm dịch
 và ảnh/nhãn; dùng `--version v1` khi tái lập workflow cũ.
 Pilot dùng `run_pilot.py`; các alias cũ vẫn còn. Script data luôn chạy từ

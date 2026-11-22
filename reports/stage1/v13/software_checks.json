@@ -1,0 +1,20 @@
+{
+  "date_local": "2026-11-22",
+  "scope": "baseline engineering only; real main data still pending human review",
+  "full_suite": {
+    "passed": 396,
+    "elapsed_seconds": 18.91,
+    "new_baseline_tests": 37
+  },
+  "initial_targeted_test_correction": "29 passed/3 failed: synthetic VI fixture lacked routing tags and one test used Windows default encoding; corrected fixtures/UTF-8, then 32 and expanded 37 passed",
+  "cpu_only_tests": true,
+  "both_fake_models_feed_existing_four_task_evaluator_and_cluster_ci": true,
+  "resume_failure_invalid_oom_interrupt_and_corrupt_checkpoint_tests": true,
+  "draft_execution_blocked_before_model_import": true,
+  "main_grid_cells": 4000,
+  "real_model_inferences": 0,
+  "new_model_downloads": 0,
+  "new_human_approvals": 0,
+  "actual_main_gpu_run_verified": false,
+  "actual_cloud_generation_verified": false
+}

@@ -25,8 +25,8 @@ Không nhắc setup/pilot như việc pending; human QA/main còn tiếp tục.
 | A09 | P0 | Metrics RQ1/RQ2 và paired evaluator | DONE | Code/CLI, bốn task toy tests, actual hai model pilot evaluation |
 | A10 | P0 | Cluster bootstrap và CI | DONE | Code/toy tests, empirical CI hai pilot, B=5000 và seed 42 |
 | A11 | P0 | Dữ liệu main bốn task | IN_PROGRESS | v10 đủ 1000 bilingual draft/783 JPEG, source/ID/byte leakage checks đạt, 22 gói review v2 đã xuất theo quyết định 21/11: A/B mỗi người kiểm dịch và ảnh/nhãn. Tất cả main requires_review/QA pending; chưa frozen main |
-| A12 | P0 | Chốt metadata/schema baseline V3 | TODO | Có mapping tái sử dụng, cần fields/contract bổ sung |
-| A13 | P0 | Baseline freeze và full runner | TODO | main.yaml frozen=false; runner chỉ pilot 1–30 |
+| A12 | P0 | Chốt metadata/schema baseline V3 | DONE | Engineering contract v1 có fields/strict schemas và CPU tests, [v13](../../reports/stage1/v13/completion.md); final settings/protocol freeze còn A13 |
+| A13 | P0 | Baseline freeze và full runner | IN_PROGRESS | Main runner bốn task v1/dry-run 4.000 cells và resume/error/eval integration đã CPU-tested; QA/final freeze và main GPU smoke còn chờ |
 | A14 | P0 | Main inference | TODO | 4.000 expected; chưa chạy hoặc được xác nhận full-run |
 | A15 | P0 | Reproducibility pilot | DONE | Hash/revisions/resume/raw hiện có; main reproducibility chưa làm |
 | A16 | P0 | Báo cáo theo V3 | IN_PROGRESS | Word v1 theo V4.2 đã có, chưa revise V3; nộp chưa xác nhận |
@@ -104,7 +104,7 @@ buộc. Không loại model không khả thi mà không báo và xin quyết đ�
 | src/vlmbench/datasets/vsr.py | Metadata adapter và 120 selected JPEG/bilingual draft đã có tại v10; chờ main QA |
 | src/vlmbench/datasets/tallyqa.py | Test/simple-complex/VG identity và 120 selected JPEG/bilingual draft đã có; chờ main QA |
 | src/vlmbench/datasets/oxford_pet.py | Eight-way mapping/test subset và 160 selected JPEG/bilingual draft đã có; chờ main QA |
-| configs/baseline_v3.yaml | Tạo bản mới khi freeze decisions, không sửa config pilot đã chạy |
+| configs/baseline_v3_draft.yaml | Draft v1 mới đã có cho CPU planning, frozen=false; sau QA dùng final config/receipt mới, không sửa pilot |
 | src/vlmbench/cli.py và schemas.py | Mở rộng có version/mapping sau khi contract được duyệt |
 
 Giữ package src/vlmbench thay vì đổi thành src/evaluation, src/inference chỉ

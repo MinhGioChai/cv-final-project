@@ -1,12 +1,13 @@
 # Completion — trạng thái và context hiện tại
 
-**v28 · 21/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v29 · 22/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
 Đọc thêm [stage data/QA gần nhất](stage1/v10/completion.md),
 [pilot tooling](stage1/v11/completion.md),
 [review tooling A/B mới nhất](stage1/v12/completion.md),
+[baseline contract/runner mới nhất](stage1/v13/completion.md),
 [công bố GitHub và kiểm chứng tái lập](releases/2026-11-21/README.md),
 [Handoff V3](../docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md),
 [protocol](../docs/research/RESEARCH_PROTOCOL_V3.md) và
@@ -39,10 +40,11 @@
 | Main drafts | Đủ ảnh/EN–VI nháp cho 1.000 row, 783 JPEG/hash khác nhau; source và ID/byte leakage checks đạt; tất cả main requires_review/QA pending |
 | Review main | 22 gói v2 tối đa 50 câu; A/B mỗi người kiểm dịch và ảnh/nhãn, một JSON cuối/gói; chưa có main human import |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
-| Tests | v27 ngày 21/11: 359 passed/8,74 s. v28 chỉ docs, không chạy lại suite; chưa visual browser QA, không phải inference/QA thật |
+| Baseline main v1 | Metadata/config/record schemas, prompt routing bốn task, CPU grid 4.000 cells và gated runner/resume/error đã có; adapters reuse, chưa main GPU inference/freeze |
+| Tests | Ngày 22/11 full suite 396 passed/18,91 s, thêm 37 baseline tests; fake outputs hai model qua evaluator/CI. Chưa main GPU hoặc visual browser QA |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
-| Hướng dẫn/structure | Một HUONG_DAN_NHOM.md từ mục tiêu đến push; root scripts 19→9, data/8 và legacy/2. Data/config/runtime paths giữ nguyên |
+| Hướng dẫn/structure | HUONG_DAN_NHOM.md; root commands 10 sau thêm run_main.py, data/8 và legacy/2. Data/config/runtime paths cũ giữ nguyên |
 
 **Gemma reminder đã đóng:** setup và engineering pilot đã hoàn tất, không
 nhắc như việc pending. Lỗi FP16 NaN/PAD được khắc phục bằng runner BF16 tại
@@ -64,17 +66,15 @@ QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch
    lưu `data/reviews/main_review_v2/<packet>_reviewed_v2.json`. Không làm lại pilot.
 3. Dry-run/import các JSON thật vào version mới; xử lý rejected/uncertain,
    tổng hợp đúng 1.000 IDs, đối soát source/ảnh/leakage trước final.
-4. Song song review, ưu tiên chốt metadata/schema baseline (run/model/tokenizer
-   revisions, prompt/config/image hashes, dtype/generation, code/environment,
-   valid/error/missing), rồi xây full runner bốn task với dry-run lưới 4.000 ô
-   và tests resume/error bằng CPU. Tích hợp evaluator/CI đã có, không làm lại
-   chúng từ đầu. Đây vẫn là công việc cần triển khai, chưa có runner main mới.
-   Sau gates chốt configs/protocol, freeze rồi xin xác nhận full-run.
+4. Engineering baseline v1 đã có; dùng `scripts/run_main.py plan` để kiểm CPU.
+   Sau review, chốt final manifest/configs/prompts và freeze receipt đúng protocol,
+   rồi xác nhận bounded main smoke bốn task trên GPU trước full-run. Config draft
+   hiện frozen=false, execution_ready=false; không tự bật để vượt QA.
 5. Sau run được duyệt: paired metrics/CI, error analysis, Results–Discussion,
    report/slides V3. Word v1 ngày 11/11 giữ scope V4.2, chưa revise V3 hoặc có
    bằng chứng đã nộp. RQ3/RQ4 chỉ xét sau core ổn định và gate riêng.
 
-**Stage 1 vẫn IN_PROGRESS.** Main QA/metadata/runner/freeze còn thiếu, không
+**Stage 1 vẫn IN_PROGRESS.** Main QA/final freeze và kiểm main GPU còn thiếu, không
 đánh dấu xong stage vì đã có đủ ảnh/draft. Giao diện review đã kiểm cú pháp JS
 và backend tests; chưa visual browser QA. Không retry/bypass Computer Use stop cũ.
 
@@ -205,3 +205,27 @@ giữ hash; không ghi đè ZIP có sẵn hoặc sửa receipt lịch sử.
 Người dùng hỏi việc làm khi nhóm đang review: ưu tiên metadata contract →
 full-runner CPU dry-run 4.000 ô → tích hợp evaluation/CI, chuẩn bị Method/khung
 Results song song. Đây là kế hoạch, không nâng trạng thái A12/A13 thành DONE.
+
+### v29 — 22/11/2026: Baseline metadata và runner main v1 bằng CPU
+
+Người dùng cho phép triển khai tiếp trong lúc nhóm review và sẽ gửi JSON sau.
+Thêm baseline_contract.py/baseline_runtime.py, run_main.py và hai config/prompt
+draft mới. Strict fields/revisions, nguồn/ảnh/prompt/code/env hashes, raw/valid/
+invalid/error/attempt, source IDs, model dtype/NF4 và bốn task đều có contract.
+VSR dùng TRUE/FALSE normalize yes/no; Pet giữ manifest question và map A–H.
+Không đổi pilot runtime/parser/configs, review v2, data/labels/exclusions hoặc raw.
+
+CPU dry-run thật đủ 1.000 row/783 ảnh, 4.000 cells, 2.000/model; sáu platform-label
+plans cùng IDs/protocol. Fake adapters kiểm resume, explicit retry, invalid,
+Ctrl+C, OOM, corrupted metadata/JSONL và đưa output hai model qua evaluator/CI cũ.
+Full suite mới 396 passed/18,91 s, thêm 37 tests. Old data/config/core/stage files
+so với Git blobs đạt 289 files; raw snapshots giữ bytes. A12 DONE ở phạm vi
+engineering contract; A13 IN_PROGRESS vì final QA/freeze/main GPU còn chờ.
+
+Execution draft bị chặn trước runtime/model load. Chưa tạo freeze receipt thật,
+main human approvals, model downloads hoặc actual main generation. Initial 3
+targeted-test failures do synthetic VI routing/Windows encoding đã sửa trong
+fixture, rồi suite đạt; không giả lập chúng thành dữ liệu/thí nghiệm thật.
+Chi tiết tại [v13](stage1/v13/completion.md) và [contract](../docs/research/BASELINE_V1.md).
+Bước tiếp cụ thể: nhận/import JSON A/B, tổng hợp main final, chốt/freeze và
+xác nhận GPU smoke; không cần chạy lại pilot hoặc viết lại evaluator.

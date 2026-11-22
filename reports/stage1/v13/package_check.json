@@ -1,0 +1,14 @@
+{
+  "date_local": "2026-11-22",
+  "scope": "offline installed-wheel CPU check, not main inference",
+  "built_and_installed_wheel_offline": true,
+  "baseline_imported_from_isolated_install": true,
+  "planner_produces_4000_cells_without_images": true,
+  "installed_protocol_matches_workspace": true,
+  "missing_image_execution_blockers_reported": true,
+  "cli_help_passed": true,
+  "torch_or_transformers_imported": false,
+  "network_calls": 0,
+  "real_model_inferences": 0,
+  "fresh_dependency_download_tested": false
+}

@@ -84,7 +84,14 @@ và kiểm thử round trip; không rename hàng loạt hoặc thay hash evidenc
 
 ## Inference và output
 
-Runner hiện chỉ nhận RePOPE engineering pilot 1–30 row. Qwen đã chạy thật,
+Ngày 22/11 đã thêm baseline contract và main runner v1 cho cả bốn task,
+metadata/raw/valid/error/resume và lưới CPU 4.000 cells. Dùng configs/prompts
+draft mới, không thay bytes/schema/configs pilot. Actual main execution vẫn
+chặn bởi human QA v2, final config frozen và protocol-bound freeze receipt;
+chưa có main GPU generation. [Contract và commands](BASELINE_V1.md),
+[kiểm chứng v13](../../reports/stage1/v13/completion.md).
+
+Runner pilot lịch sử chỉ nhận RePOPE engineering pilot 1–30 row. Qwen đã chạy thật,
 runner legacy NF4/FP16 giữ hash. Gemma đã hoàn tất 10 mẫu/20 lượt NF4/BF16
 ngày 19/11 qua runner riêng giới hạn 1–10 row, có raw token/logit trace và
 model-declared terminal EOS handling. FP16 diagnostic xác nhận NaN/PAD,
@@ -108,9 +115,10 @@ V3 cần run_id, prompt_variant, image_variant, prompt_hash, valid, invalid_reas
 và metadata tokenizer revision, quantization/dtype/device, generation config,
 package versions, code_commit. Code cũ đã có raw_response, parsed_prediction,
 parse_status/reason, experiment_id, protocol_hash/run_config_hash, prompt_text,
-image hash, timestamps và một phần settings/runtime trong .meta.json. Cần
-mapping/export hoặc schema baseline mới cho các trường còn thiếu; không coi
-field khác tên là không có chức năng tương đương, cũng không coi đã đủ V3.
+image hash, timestamps và một phần settings/runtime trong .meta.json. Baseline
+v1 ngày 22/11 đã bổ sung strict record/config schemas và mapping các tên cũ,
+tokenizer pins, variants, validity, dtype/device/quantization và code/env state;
+metadata engineering đã có, final freeze và actual main run vẫn còn chờ.
 Không bịa commit cho working tree chưa commit: ghi HEAD và dirty/source hashes.
 
 Tách run failure, generation thành công nhưng INVALID, và missing chưa có

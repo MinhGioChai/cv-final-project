@@ -3,6 +3,7 @@
 | Cần xem | File hoặc thư mục |
 |---|---|
 | Trạng thái hiện tại và context qua phiên | [completion.md](completion.md) |
+| Baseline metadata, runner main và CPU grid 4.000 cells | [Stage 1 v13](stage1/v13/completion.md), [plan](stage1/v13/draft_plan.json) |
 | Một hướng dẫn để hiểu project/tham gia/push | [Hướng dẫn nhóm](../HUONG_DAN_NHOM.md) |
 | Rerun pilot local/Colab/Kaggle hiện tại | [Stage 1 v11](stage1/v11/completion.md), [dry-runs](stage1/v11/dry_runs.json) |
 | Lịch sử completion v1–v21, giữ nguyên | [completion_history.md](completion_history.md) |

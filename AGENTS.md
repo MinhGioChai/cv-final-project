@@ -37,6 +37,13 @@ Keep v1 backend/template/packets and the two previous ZIPs unchanged; v1 CLI
 requires --version v1. Current pages are reports/stage1/v12/main_review/ and
 the private review-only archive is exports/main_review_v2.zip.
 
+Baseline engineering v1 (2026-11-22) is in baseline_contract.py/baseline_runtime.py,
+with scripts/run_main.py and configs/baseline_v3_draft.yaml. CPU planning does
+not approve/freeze data. Main execution requires reviewed v2 proofs and a
+protocol-bound freeze receipt; actual main GPU inference is still pending.
+Read docs/research/BASELINE_V1.md and reports/stage1/v13/completion.md; do not
+expand the historical pilot runner to run main.
+
 - Update `reports/completion.md` with current verified state, decisions,
   outstanding work, and a concrete next action; append a dated version entry.
 - Keep previous stage reports and evidence. Add a completion report under

@@ -1,6 +1,6 @@
 # Hướng dẫn tổng hợp — hiểu project và tham gia cùng nhóm
 
-**Cập nhật 21/11/2026.** Đây là điểm bắt đầu cho thành viên mới: mục tiêu,
+**Cập nhật 22/11/2026.** Đây là điểm bắt đầu cho thành viên mới: mục tiêu,
 trạng thái, cài đặt, dữ liệu, review, chạy pilot và đưa thay đổi lên GitHub.
 Các link cuối file dùng để tra sâu khi cần. Trạng thái sống nằm trong
 [completion](reports/completion.md); khi số liệu tiến độ thay đổi, ưu tiên file đó.
@@ -116,13 +116,13 @@ buộc để nghiệm thu core theo V3.
 
 ## 2. Hiện đã có gì, còn làm gì?
 
-### 2.1 Ảnh chụp tiến độ tại ngày 21/11/2026
+### 2.1 Ảnh chụp tiến độ tại ngày 22/11/2026
 
 | Hạng mục | Đã có | Còn thiếu |
 |---|---|---|
 | Pilot | Mỗi model 10 ảnh × EN/VI =20 lượt thật valid; pilot QA approved 30/30 | Rerun khi có nhu cầu kiểm tra, không bắt buộc làm lại |
 | Main data | 1.000 câu EN–VI nháp/783 ảnh, source và leakage checks | Human review toàn main, xử lý uncertain/rejected |
-| Software | Parser, review/import, pilot runner, metrics, image-cluster bootstrap và CPU tests | Metadata/schema baseline, full-main runner và freeze |
+| Software | Parser, review/import, pilot runner, metrics/CI; baseline metadata và runner bốn task v1 có CPU tests | Final review/freeze, kiểm main GPU smoke và inference thật |
 | Thực nghiệm chính | Chưa chạy | Sau gates và xác nhận: 1.000 ×2 ngôn ngữ ×2 model =4.000 lượt |
 | Báo cáo | Proposal/context Word v1 và evidence pilot | Results–Discussion/report/slides theo V3 sau main |
 
@@ -133,7 +133,7 @@ Cloud notebooks đã cập nhật code, chưa có real Colab/Kaggle generation �
 Các con số trên có các mức bằng chứng khác nhau: 20 lượt/model là inference
 thật đã có; QA pilot 30 là quyết định người thật đã import; main 1.000 là
 draft đã kiểm kỹ thuật, chưa có human approval. Lần kiểm thử software gần
-nhất được ghi ở completion là 359 tests đạt; tests/dry-run không phải thêm
+nhất được ghi ở completion là 396 tests đạt; tests/dry-run không phải thêm
 lượt inference hoặc thêm người duyệt.
 
 ### 2.2 Mốc đang chờ: đưa nhóm vào review main
@@ -164,7 +164,7 @@ không điền hộ ID hoặc sửa đè JSON; không cần người C riêng.
 ### 2.3 Những phần chưa được triển khai/xác nhận
 
 - Main human QA/translation approvals và xử lý hết các mẫu nghi vấn.
-- Hợp đồng metadata/schema baseline và runner full-main cho cả bốn task.
+- Chốt final metadata/configs sau review và kiểm main GPU smoke; contract/runner v1 đã có CPU tests.
 - Freeze manifest, prompts, configs, revisions và kế hoạch run chính.
 - Main inference 4.000 lượt dự kiến, metrics/CI/error analysis từ main.
 - Report/slides theo kết quả main; Word v1 cũ chưa phải report V3 hoàn chỉnh.
@@ -221,8 +221,8 @@ Workstreams không phải phân công cứng cho từng thành viên. Ghi nhận
 2. Chọn một gói để thử quy trình review → tải JSON → mở lại → dry-run import.
    Sau khi cách làm rõ, nhóm tiếp tục các gói còn lại và chuyển JSON tuần tự
    giữa A/B, mỗi người kiểm cả dịch và ảnh/nhãn.
-3. Phần kỹ thuật tiếp tục metadata/main runner và kiểm lưới dự kiến bằng
-   dry-run. Đây là công việc cần thực hiện tiếp, chưa có bằng chứng đã hoàn thành.
+3. Metadata/main runner v1 và CPU dry-run đã có tại mục 7. Phần kỹ thuật tiếp
+   tục chốt final config sau review, rồi kiểm main GPU smoke khi được xác nhận.
 4. Gom JSON theo từng đợt để kiểm/import sớm, không đợi đủ 22 gói mới phát hiện
    sai context hoặc mất quyết định. Giữ pending nếu thực sự chưa rõ.
 
@@ -392,9 +392,25 @@ project xác minh; dry-runs có platform label không phải kết quả chạy 
 
 Chi tiết thao tác và GPU/secret errors ở [pilot guide](docs/run_local_colab_kaggle.md).
 Các alias `run_local_pilot.py`, `run_gemma_pilot.py` vẫn dùng được. Runner này
-chỉ cho pilot; main runner và baseline freeze còn là việc cần hoàn thiện.
+chỉ cho pilot. Main dùng `scripts/run_main.py`; baseline v1 đã có CPU tests,
+còn final QA/freeze và GPU smoke trước inference thật.
 
 ## 7. Phân tích, viết code và chọn file đúng
+
+### Kiểm baseline main trong lúc nhóm review
+
+```powershell
+.venv/Scripts/python.exe scripts/run_main.py plan
+.venv/Scripts/python.exe scripts/run_main.py run --model qwen --dry-run
+.venv/Scripts/python.exe scripts/run_main.py run --model gemma --dry-run
+```
+
+CPU plan kiểm 1.000 row/783 ảnh và lưới 4.000 cells; dry-run từng model có
+2.000 cells. Không gọi model, tải weights hoặc tự approve/freeze dữ liệu.
+QA pending và frozen=false làm execution_ready=false là đúng trạng thái.
+Thiếu ảnh cần restore workspace ZIP; code không tự tải corpus trong preflight.
+Metadata, prompts, resume và gates tại [baseline v1](docs/research/BASELINE_V1.md).
+Khi có review thật sẽ tổng hợp final manifest/config mới rồi mới freeze.
 
 ### Cấu trúc sử dụng hằng ngày
 

@@ -1,0 +1,15 @@
+# Candidate baseline prompts, not final frozen prompts; historical pilot prompts stay intact.
+prompt_version: baseline_v1_draft
+tasks:
+  object_existence:
+    en: '{question} Reply with only YES or NO.'
+    vi: '{question} Chỉ trả lời YES hoặc NO.'
+  spatial:
+    en: 'Is this statement true for the image: "{question}"? Reply with only TRUE or FALSE.'
+    vi: 'Mệnh đề sau có đúng với ảnh không: "{question}"? Chỉ trả lời TRUE hoặc FALSE.'
+  counting:
+    en: '{question} Reply with one nonnegative integer.'
+    vi: '{question} Chỉ trả lời một số nguyên không âm.'
+  fine_grained:
+    en: '{question} Choose from these breeds: {candidates}. Reply with one letter A–H.'
+    vi: '{question} Chọn trong các giống sau: {candidates}. Chỉ trả lời một chữ cái A–H.'
