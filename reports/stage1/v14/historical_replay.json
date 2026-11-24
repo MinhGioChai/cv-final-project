@@ -1,0 +1,15 @@
+{
+  "source_commit": "1a253f6dc94e4432f657493241daa28d9d4d5f11",
+  "source_files_restored": 41,
+  "scope": "CPU replay with historical source; no historical files rewritten",
+  "result": {
+    "historical_source_module": "C:\\Users\\ADMIN\\cv-final-project\\reports\\maintenance\\2026-11-24\\option_b\\legacy_source_1a253f6\\src\\vlmbench\\__init__.py",
+    "diagnostic_fingerprint": "441f8ab4fbe8255fc6ab7282a79771fc0d8ddfadd893875e8417cbb55a696550",
+    "historical_records_replayed": 240,
+    "metrics_exact_match": true,
+    "legacy_A_grid_cells": 4000,
+    "model_generation_calls": 0,
+    "torch_or_transformers_imported": false
+  },
+  "exit_code": 0
+}

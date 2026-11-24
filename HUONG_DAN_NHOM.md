@@ -228,6 +228,10 @@ TV5 tích hợp báo cáo chung, không viết thay cả nhóm.
 
 ### 3.3 Việc đầu tiên nên làm trong đợt cộng tác này
 
+Cập nhật24/11: nhóm đã chọn [Option B cho main](docs/research/MAIN_OPTION_B_V1.md).
+Main CLI mặc định candidate B chưa frozen; review HTML/JSON/ZIP không đổi,
+không cần duyệt lại vì preprocessing. Sau QA/freeze mới chạy M3 bốn task.
+
 1. Clone repo theo mục 4.1; người giữ project chia sẻ riêng main_review_v2.zip và guide.
 2. Chọn một gói để thử quy trình review → tải JSON → mở lại → dry-run import.
    Sau khi cách làm rõ, nhóm tiếp tục các gói còn lại và chuyển JSON tuần tự

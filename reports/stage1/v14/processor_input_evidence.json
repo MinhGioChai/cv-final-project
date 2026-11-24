@@ -1,0 +1,203 @@
+{
+  "scope": "Real CPU processors fed by the new MAIN preprocessing helper on approved PILOT images; not M3/GPU inference",
+  "model_weights_loaded": false,
+  "new_model_generations": 0,
+  "configs": {
+    "qwen": {
+      "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "processor_class": "Qwen2_5_VLProcessor",
+      "image_processor_class": "Qwen2VLImageProcessorFast",
+      "image_processor_settings": {
+        "_processor_class": "Qwen2_5_VLProcessor",
+        "size": {
+          "shortest_edge": 3136,
+          "longest_edge": 12845056
+        },
+        "min_pixels": 200704,
+        "max_pixels": 401408,
+        "patch_size": 14,
+        "temporal_patch_size": 2,
+        "merge_size": 2,
+        "image_mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "image_std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ],
+        "image_processor_type": "Qwen2VLImageProcessorFast",
+        "crop_size": null,
+        "pad_size": null,
+        "do_resize": true,
+        "default_to_square": true,
+        "resample": 3,
+        "do_center_crop": null,
+        "do_rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "do_normalize": true,
+        "do_pad": null,
+        "do_convert_rgb": true,
+        "return_tensors": null,
+        "data_format": "channels_first",
+        "input_data_format": null,
+        "device": null,
+        "disable_grouping": null
+      },
+      "preprocessor_config_sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+      "passed_kwargs": {
+        "min_pixels": 200704,
+        "max_pixels": 401408
+      }
+    },
+    "gemma": {
+      "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "processor_class": "Gemma3Processor",
+      "image_processor_class": "Gemma3ImageProcessor",
+      "image_processor_settings": {
+        "_processor_class": "Gemma3Processor",
+        "image_processor_type": "Gemma3ImageProcessor",
+        "image_seq_length": 256,
+        "do_resize": true,
+        "size": {
+          "height": 896,
+          "width": 896
+        },
+        "resample": 2,
+        "do_rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "do_normalize": true,
+        "image_mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "image_std": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "do_convert_rgb": null,
+        "do_pan_and_scan": false,
+        "pan_and_scan_min_crop_size": null,
+        "pan_and_scan_max_num_crops": null,
+        "pan_and_scan_min_ratio_to_activate": null
+      },
+      "preprocessor_config_sha256": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d",
+      "passed_kwargs": {
+        "do_pan_and_scan": false,
+        "use_fast": false
+      }
+    }
+  },
+  "records": [
+    {
+      "model": "qwen",
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "is_approved_pilot": true,
+      "source_sha256": "b2e177944dbe701d45928c1627dd8ede133690d3eab3dde796071e00a06dc16b",
+      "original_wh": [
+        640,
+        480
+      ],
+      "processor_received_wh": [
+        640,
+        480
+      ],
+      "policy_id": "original_rgb_processor_v1",
+      "mode": "RGB",
+      "processor_cpu_ms": 49.34190004132688,
+      "processor_output_shape": [
+        1564,
+        1176
+      ],
+      "input_token_count": 427,
+      "image_grid_thw": [
+        [
+          1,
+          34,
+          46
+        ]
+      ]
+    },
+    {
+      "model": "qwen",
+      "sample_id": "repope_adversarial_16ad496cf15413f6",
+      "is_approved_pilot": true,
+      "source_sha256": "1a573ae0ea494c24e7f4bedb6d5c531797d8c726e11ea5ea3dde5b6d2d394dde",
+      "original_wh": [
+        640,
+        480
+      ],
+      "processor_received_wh": [
+        640,
+        480
+      ],
+      "policy_id": "original_rgb_processor_v1",
+      "mode": "RGB",
+      "processor_cpu_ms": 10.124799911864102,
+      "processor_output_shape": [
+        1564,
+        1176
+      ],
+      "input_token_count": 427,
+      "image_grid_thw": [
+        [
+          1,
+          34,
+          46
+        ]
+      ]
+    },
+    {
+      "model": "gemma",
+      "sample_id": "repope_adversarial_104803044cb7c965",
+      "is_approved_pilot": true,
+      "source_sha256": "b2e177944dbe701d45928c1627dd8ede133690d3eab3dde796071e00a06dc16b",
+      "original_wh": [
+        640,
+        480
+      ],
+      "processor_received_wh": [
+        640,
+        480
+      ],
+      "policy_id": "original_rgb_processor_v1",
+      "mode": "RGB",
+      "processor_cpu_ms": 50.85020000115037,
+      "processor_output_shape": [
+        1,
+        3,
+        896,
+        896
+      ],
+      "input_token_count": 283
+    },
+    {
+      "model": "gemma",
+      "sample_id": "repope_adversarial_16ad496cf15413f6",
+      "is_approved_pilot": true,
+      "source_sha256": "1a573ae0ea494c24e7f4bedb6d5c531797d8c726e11ea5ea3dde5b6d2d394dde",
+      "original_wh": [
+        640,
+        480
+      ],
+      "processor_received_wh": [
+        640,
+        480
+      ],
+      "policy_id": "original_rgb_processor_v1",
+      "mode": "RGB",
+      "processor_cpu_ms": 48.140999977476895,
+      "processor_output_shape": [
+        1,
+        3,
+        896,
+        896
+      ],
+      "input_token_count": 283
+    }
+  ]
+}

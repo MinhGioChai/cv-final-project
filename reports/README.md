@@ -3,6 +3,7 @@
 | Cần xem | File hoặc thư mục |
 |---|---|
 | Trạng thái hiện tại và context qua phiên | [completion.md](completion.md) |
+| Main Option B đã được chọn | [Stage1 v14](stage1/v14/completion.md), [candidate plan](stage1/v14/candidate_plan.json); code/CPU checks đạt, chưa freeze/M3 |
 | Full validation bốn task v1 | [Report lịch sử](validation/image_ab_v1/report.md), [GPU kernel check](validation/image_ab_v1/gpu_kernel_preflight.json); còn thiếu task coverage, độc lập diagnostic mới |
 | RePOPE-only diagnostic mới | [Report](validation/repope_image_ab_v1/report.md), [metrics](validation/repope_image_ab_v1/metrics.json); 30 ảnh/240 cells GPU thật, độc lập full validation và M3 |
 | Baseline metadata, runner main và CPU grid 4.000 cells | [Stage 1 v13](stage1/v13/completion.md), [plan](stage1/v13/draft_plan.json) |

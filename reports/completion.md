@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v33 · 24/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v34 · 24/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -8,6 +8,7 @@
 [pilot tooling](stage1/v11/completion.md),
 [review tooling A/B mới nhất](stage1/v12/completion.md),
 [baseline contract/runner mới nhất](stage1/v13/completion.md),
+[main Option B đã chọn và CPU/M3 tooling mới nhất](stage1/v14/completion.md),
 [công bố GitHub và kiểm chứng tái lập](releases/2026-11-21/README.md),
 [Handoff V3](../docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md),
 [protocol](../docs/research/RESEARCH_PROTOCOL_V3.md) và
@@ -26,6 +27,10 @@
   split/classes/count-bin policy ghi trong `configs/main_preparation_v3.yaml`.
 - Main **frozen=false**; 4.000 inference chính chưa chạy/chưa được xác nhận
   full-run. Không tự giảm scope, thay labels hoặc loại theo output của model.
+- Ngày24/11 nhóm **đã chọn Option B** cho main: source JPEG → RGB giữ W×H →
+  pinned processor. Candidate chính thức `configs/baseline_v3_option_b_v1.yaml`,
+  policy `original_rgb_processor_v1`, image_max_edge=null; chưa freeze/receipt.
+  Qwen min/max pixels, Gemma896×896/no-pan-and-scan/NF4BF16 và mọi pins giữ nguyên.
 - Source labels/provenance và pilot ID/SHA exclusions giữ nguyên. Không
   tạo reviewer/approval. Theo yêu cầu mới ngày 22/11, đã chia 5 vai trò TV1–TV5
   tại [report phân công](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md);
@@ -43,8 +48,8 @@
 | Main drafts | Đủ ảnh/EN–VI nháp cho 1.000 row, 783 JPEG/hash khác nhau; source và ID/byte leakage checks đạt; tất cả main requires_review/QA pending |
 | Review main | 22 gói v2 tối đa 50 câu; A/B mỗi người kiểm dịch và ảnh/nhãn, một JSON cuối/gói; chưa có main human import |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
-| Baseline main v1 | Metadata/config/record schemas, prompt routing bốn task, CPU grid 4.000 cells và gated runner/resume/error đã có; adapters reuse, chưa main GPU inference/freeze |
-| Tests | Ngày24/11 full suite423 passed/23,60s sau measurement, thêm7 diagnostic tests (27 A/B tests tổng); [receipt/JUnit](validation/repope_image_ab_v1/software_checks.json). Main GPU/visual browser QA chưa làm |
+| Baseline main | B đã áp dụng và default ở main CLI, A config giữ nguyên; grid4.000, gates/resume và bounded smoke bốn task có logging. Chưa main GPU/freeze/M3; [v14](stage1/v14/completion.md) |
+| Tests | Ngày24/11 full suite441passed/24,00s, thêm18cases OptionB/M3 selection; [receipt/JUnit](stage1/v14/software_checks.json). Probe processor CPU4calls, lịch sử240raw replay exact; không GPU run mới |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
 | Hướng dẫn/structure | HUONG_DAN_NHOM.md; root scripts thêm validate_image_ab.py riêng cho diagnostic, data/8 và legacy/2 giữ nguyên. Data/config/runtime paths cũ giữ nguyên |
@@ -68,8 +73,9 @@ Phase1 có [48 measured cells thật](validation/repope_image_ab_v1/phase1_metri
 Phase2 reuse48 +192 mới, tổng30 ảnh/240 cells valid,16 warm-up riêng;0 invalid/
 failed/OOM/missing. [Report và recommendation](validation/repope_image_ab_v1/report.md)
 đề xuất B vì giữ chi tiết đến processor với chi phí quan sát được chấp nhận
-cho diagnostic; không chọn bằng Accuracy. Chờ nhóm phê duyệt, main config
-vẫn A/frozen=false. Source/provenance/hash/exclusion/human QA gates giữ nguyên.
+cho diagnostic; không chọn bằng Accuracy. Nhóm đã phê duyệt B trong phiên
+v34; main CLI dùng candidate B mới, vẫn frozen=false. Source/provenance/
+hash/exclusion/human QA gates giữ nguyên. Review JSON/HTML/ZIP không đổi.
 Ưu tiên vẫn main QA → protocol freeze → main GPU smoke → main inference;
 không C/RQ3/RQ4/main run hoặc tự đổi/freeze config. Raw private ZIP:
 exports/repope_image_ab_diagnostic_v1.zip, receipt/hash ở report; không cần
@@ -86,7 +92,8 @@ chạy lại diagnostic khi resume nếu không có thay đổi cấu hình ho�
    lưu `data/reviews/main_review_v2/<packet>_reviewed_v2.json`. Không làm lại pilot.
 3. Dry-run/import các JSON thật vào version mới; xử lý rejected/uncertain,
    tổng hợp đúng 1.000 IDs, đối soát source/ảnh/leakage trước final.
-4. Engineering baseline v1 đã có; dùng `scripts/run_main.py plan` để kiểm CPU.
+4. B đã triển khai; dùng `scripts/run_main.py plan` mặc định candidate B hoặc
+   thêm `--smoke-per-task 1` để chuẩn bị M3. [Policy/commands](../docs/research/MAIN_OPTION_B_V1.md).
    Sau review, chốt final manifest/configs/prompts và freeze receipt đúng protocol,
    rồi xác nhận bounded main smoke bốn task trên GPU trước full-run. Config draft
    hiện frozen=false, execution_ready=false; không tự bật để vượt QA.
@@ -381,3 +388,44 @@ Diagnostic đã hoàn tất phạm vi30 RePOPE; Stage1/M1 vẫn IN_PROGRESS, M2c
 freeze, M3NOT_RUN. Tiếp theo nhóm chốt A/B, hoàn tất main human QA/import,
 tạo final config/protocol/receipt mới rồi bounded main GPU smoke bốn task;
 không chạy lại pilot vô cớ hoặc trì hoãn main để mở thêm diagnostic.
+
+### v34 — 24/11/2026: Chính thức chọn B cho main, chưa final freeze
+
+Người dùng và task đính kèm chốt B, cho phép triển khai code/config độc lập
+main QA. Thêm candidate baseline_v3_option_b_v1.yaml (frozen=false/null receipt),
+policy original_rgb_processor_v1/image_max_edge=null. Main helper decode/RGB
+giữ kích thước nguồn; chỉ A lịch sử thumbnail. CLI default B; model/processor
+pins, NF4/dtype, generation, prompts/parser, seed, sampling/labels/IDs không đổi.
+Không thay review packets/HTML/JSON/ZIP, source JPEG hoặc diagnostic raw cũ.
+
+Schema giữ tên v1, additive policy/version và optional input-dimension fields
+cho tương thích; B success yêu cầu W×H nguồn/input khớp. Policy/settings,
+processor pins/flags và code hashes đi vào protocol mới. Option A config vẫn
+giữ bytes và có thể đọc qua --config; không gán hashes mới vào outputs cũ.
+Historical replay dùng đúng source1a253f6 tái tính240records exact metrics,
+không Torch/Transformers/GPU. Không mở lại diagnostic hoặc sửa source cũ.
+
+M3 đã chuẩn bị --smoke-per-task1/2: đủ bốn task/ENVI/hai model, IDs ghi riêng
+trong identity/fingerprint, full grid vẫn4.000. Gate kiểm toàn bộ main QA/
+freeze/provenance/leakage trước load; không dùngprefix --max-cells để giả
+coverage. Scope main_gpu_smoke tách main benchmark. Observer hiện có được
+reuse cho main shape/grid/input tokens và reserved-memory trace, không đổi
+processor kwargs. Chưa chạy M3 và chưa có main generation.
+
+Kiểm thực: full441passed/24,00s, targeted82passed/17,38s, thêm18cases;
+4.000-cell plan/6 CPU platform-label dry-runs đạt; hai execute attempts
+bị main gates chặn trước runtime. Helper B giữ RGB/W×H/SHA trên813ảnh.
+Processors thật CPU nhận640×480 trên approved pilot ở cảQwen/Gemma,
+Qwen grid34×46 vàGemma896×896 như pins. Không loadmodel weights hoặc
+generation mới. Một targeted fixture issue do evaluator extra field đã sửa
+trước full suite. Evidence/report/commands tại [v14](stage1/v14/completion.md).
+
+Policy đã chọn không phải dataset/protocol freeze: M1 IN_PROGRESS (1000QA
+pending), M2 PENDING, M3 NOT_RUN. Gemma reserved6332MiB vẫn không phải
+physical residency và chưa bảo đảm main6GB. Tiếp theo import QA thật,
+chốt final manifest/config/protocol/receipt mới, rồi main GPU smoke bốn task;
+không tự frozen=true, full4.000 inference, RQ3/RQ4 hoặc training.
+
+Code/config/tests Option B đã push riêng lên origin/main tại
+`96417fa204a20163d38d1b8b86e5452a8809e885`; tài liệu/evidence v34 được công bố
+trong commit kế tiếp. Không chạy lại các kiểm tra đã đạt chỉ để hoàn tất push.

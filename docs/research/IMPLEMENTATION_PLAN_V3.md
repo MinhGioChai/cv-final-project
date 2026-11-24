@@ -8,6 +8,11 @@ module đã có. Đây là kế hoạch, chưa là phê duyệt full-run hoặc 
 
 ## Checklist hiện tại
 
+Ngày24/11 nhóm chọn Option B cho main: [policy/commands](MAIN_OPTION_B_V1.md),
+candidate `baseline_v3_option_b_v1.yaml` vẫn frozen=false. B đã triển khai CPU
+độc lập human QA; A13 chưa hoàn tất vì final manifests/freeze/M3 còn chờ.
+RePOPE-only diagnostic240cells không hoàn thành M3. Ngày thuyết trình03/12/2026.
+
 **Nhắc Gemma đã hoàn tất ngày 19/11:** NF4/BF16 10 mẫu/20 lượt valid, có
 resume và evaluation/CI tại [v7](../../reports/stage1/v7/completion.md).
 Không nhắc setup/pilot như việc pending; human QA/main còn tiếp tục.

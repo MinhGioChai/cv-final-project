@@ -21,13 +21,16 @@ sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
 - Baseline v1: đã có metadata, runner bốn task và CPU dry-run 4.000 cells;
   [hướng dẫn main](docs/research/BASELINE_V1.md). Chạy kiểm kế hoạch bằng
   `.venv/Scripts/python.exe scripts/run_main.py plan`.
+- Main preprocessing đã chốt **Option B**: RGB kích thước nguồn → pinned
+  processor. Default candidate `configs/baseline_v3_option_b_v1.yaml` vẫn
+  chưa frozen. [Policy, bằng chứng và checklist M3](docs/research/MAIN_OPTION_B_V1.md).
 - Chưa freeze hoặc chạy 4.000 inference chính. RQ1–RQ2 là core;
   RQ3–RQ4 là mở rộng có điều kiện. Không training/fine-tuning.
 - Không cần GPU để làm review, tests hoặc phân tích pilot đã có.
 - RePOPE-only A/B diagnostic: [report, metrics và lệnh](reports/validation/repope_image_ab_v1/report.md).
   Đã chạy GPU thật 30 ảnh/240 measured cells, cả hai model valid, không OOM;
   tái sử dụng 48 cells Phase 1. Đây không phải validation bốn task hoặc M3.
-  Đề xuất B chờ nhóm duyệt; main config và freeze gate giữ nguyên.
+  Nhóm đã chọn B sau diagnostic; main human QA/freeze gates vẫn giữ nguyên.
 
 Trạng thái có bằng chứng và bước tiếp: [completion](reports/completion.md).
 Nguồn yêu cầu: [Handoff V3](docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md).

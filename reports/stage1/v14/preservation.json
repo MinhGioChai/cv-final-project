@@ -1,0 +1,57 @@
+{
+  "reference_commit": "1a253f6dc94e4432f657493241daa28d9d4d5f11",
+  "prior_git_files_unchanged_outside_authorized_delta": 440,
+  "EOL_only_vs_Git": [
+    "notebooks/pilot_colab.ipynb",
+    "notebooks/pilot_kaggle.ipynb"
+  ],
+  "authorized_existing_file_delta": [
+    "HUONG_DAN_NHOM.md",
+    "README.md",
+    "docs/README.md",
+    "docs/research/BASELINE_V1.md",
+    "docs/research/IMPLEMENTATION_PLAN_V3.md",
+    "docs/research/RESEARCH_PROTOCOL_V3.md",
+    "reports/README.md",
+    "reports/completion.md",
+    "scripts/README.md",
+    "scripts/run_main.py",
+    "src/vlmbench/baseline_contract.py",
+    "src/vlmbench/baseline_runtime.py",
+    "tests/test_baseline.py"
+  ],
+  "source_images_hash_matched": 813,
+  "historical_diagnostic_files_hash_matched": 18,
+  "legacy_pilot_raw_hash_matched": 2,
+  "review_v2_JSON_CSV_unchanged": 44,
+  "review_HTML_matches_original_archive": 23,
+  "private_archives": [
+    {
+      "path": "exports/main_review_v2.zip",
+      "sha256_matches_historical_receipt": true
+    },
+    {
+      "path": "exports/pilot_team_v1.zip",
+      "sha256_matches_historical_receipt": true
+    },
+    {
+      "path": "exports/repope_image_ab_diagnostic_v1.zip",
+      "sha256_matches_historical_receipt": true
+    },
+    {
+      "path": "exports/team_workspace_v1.zip",
+      "sha256_matches_historical_receipt": true
+    }
+  ],
+  "local_links_checked": 164,
+  "only_candidate_changes": [
+    "experiment_id",
+    "preprocess.policy_id",
+    "preprocess.image_max_edge"
+  ],
+  "human_review_or_data_changed": false,
+  "source_JPEG_changed": false,
+  "main_freeze_created": false,
+  "main_GPU_smoke_executed": false,
+  "new_model_generation_calls": 0
+}

@@ -1,6 +1,6 @@
 # Research Protocol V3
 
-Audit 12/11, cập nhật trạng thái 20/11/2026. Tài liệu này diễn giải
+Audit 12/11, cập nhật quyết định preprocessing 24/11/2026. Tài liệu này diễn giải
 [handoff V3 của người dùng](../handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md) theo code
 hiện có, không phải protocol đã frozen hoặc kết quả nghiên cứu. Khi khác biệt,
 ưu tiên chỉ dẫn mới của người dùng rồi V3; V4.2 là lịch sử/tham khảo.
@@ -83,6 +83,28 @@ hy vọng parser tự nhận. Nếu cần interoperability, tạo mapping/export
 và kiểm thử round trip; không rename hàng loạt hoặc thay hash evidence.
 
 ## Inference và output
+
+### Option B đã được nhóm chọn ngày 24/11/2026
+
+Main candidate hiện hành là `configs/baseline_v3_option_b_v1.yaml`, policy
+`original_rgb_processor_v1`: source JPEG → RGB giữ W×H nguồn → model processor.
+Không thumbnail512, crop/pad/resize hoặc ép vuông thủ công trước processor.
+Qwen giữ pixel budget200704/401408 và revisions hiện có; Gemma giữ no-pan-and-scan,
+slow processor896×896, NF4/BF16. Không sửa xử lý tỷ lệ bên trong processor.
+
+Quyết định dựa trên giữ thông tin thị giác đến processor và feasibility từ
+240 RePOPE A/B cells thật, không khẳng định B Accuracy cao hơn. Pilot nhỏ/
+one repeat không thay validation bốn task/M3. Gemma vẫn có áp lực VRAM cao.
+Chi tiết và [commands/checklist M3](MAIN_OPTION_B_V1.md),
+[evidence triển khai](../../reports/stage1/v14/completion.md).
+
+**Chỉ policy được duyệt, chưa final freeze:** candidate vẫn frozen=false,
+không có receipt, main QA1.000 mẫu vẫn chờ. Config A/pilot/diagnostic/raw cũ
+giữ nguyên; policy/settings/code hashes mới không được gán vào run lịch sử.
+Preprocess và processor pins đi vào protocol/run fingerprints. Main review
+HTML/JSON không thay đổi vì đã dùng ảnh gốc. Scope/RQ/gates V3 giữ nguyên.
+
+### Contract và runtime
 
 Ngày 22/11 đã thêm baseline contract và main runner v1 cho cả bốn task,
 metadata/raw/valid/error/resume và lưới CPU 4.000 cells. Dùng configs/prompts

@@ -9,6 +9,9 @@
 Lệnh và thứ tự thao tác tại [hướng dẫn nhóm](../HUONG_DAN_NHOM.md).
 `run_main.py` mặc định CPU plan; dry-run bốn task không gọi model. Main execution
 có QA/freeze gates; xem [baseline v1](../docs/research/BASELINE_V1.md).
+Default candidate là `baseline_v3_option_b_v1.yaml`: RGB kích thước nguồn,
+không thumbnail trước processor. `--smoke-per-task 1` chuẩn bị bound16cells
+đủ hai model/bốn task/ENVI, vẫn qua toàn bộ gates. [Policy/M3](../docs/research/MAIN_OPTION_B_V1.md).
 `validate_image_ab.py` phục vụ technical pilot trước freeze với hardware,
 plan/run/analyze riêng; mode mặc định full vẫn cần 30 ảnh/bốn task/QA/provenance/
 exclusions. Mode mới `--mode repope-diagnostic --size 6` chỉ nhận canonical

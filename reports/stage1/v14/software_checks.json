@@ -1,0 +1,18 @@
+{
+  "date_local": "2026-11-24",
+  "full_suite_command": ".venv/Scripts/python.exe -m pytest -q --junitxml reports/stage1/v14/software_tests.xml",
+  "full_suite_terminal_result": "441 passed in 24.00s",
+  "passed": 441,
+  "failed": 0,
+  "new_cases": 18,
+  "targeted_command": ".venv/Scripts/python.exe -m pytest tests/test_baseline.py tests/test_image_ab.py -q",
+  "targeted_result": "82 passed in 17.38s",
+  "initial_targeted_failure": "One legacy Prediction test read evaluator-annotated records with _evaluation_line_number; test fixture corrected to read original JSONL. No production defect hidden by deleting evidence.",
+  "scope": "CPU software validation and synthetic adapter tests; not main GPU inference",
+  "new_GPU_generations": 0,
+  "new_main_generations": 0,
+  "new_human_approvals": 0,
+  "main_freeze_created": false,
+  "additional_real_probe": "4 CPU processor calls on two approved pilot images with main Option B helper; no model weights or generation",
+  "historical_replay": "Exact historical source 1a253f6 replays 240 existing GPU records with identical metrics; no Torch/Transformers import or GPU rerun"
+}

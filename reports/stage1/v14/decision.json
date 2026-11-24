@@ -1,0 +1,17 @@
+{
+  "date_local": "2026-11-24",
+  "source": "Project user decision in conversation and attached task",
+  "user_statement": "được rồi, vậy chúng ta sẽ chốt phương án B",
+  "approved_scope": "Option B for MAIN image preprocessing only",
+  "policy_id": "original_rgb_processor_v1",
+  "candidate_config": "configs/baseline_v3_option_b_v1.yaml",
+  "research_protocol": "V3, preprocessing decision update 2026-11-24",
+  "runtime_protocol_schema": "baseline_protocol_v1; policy version and hashes distinguish the new candidate",
+  "diagnostic_reference": "1a253f6, reports/validation/repope_image_ab_v1/report.md",
+  "reason": "Preserve source image information until the pinned model processor; not a claim of better Accuracy",
+  "dataset_QA_or_final_freeze_approved": false,
+  "main_frozen": false,
+  "main_inference_authorized_by_this_decision": false,
+  "M3_complete": false,
+  "presentation_date": "2026-12-03"
+}

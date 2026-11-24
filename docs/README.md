@@ -13,6 +13,7 @@ Mục lục này dành cho lúc cần chi tiết; completion ghi trạng thái s
 | Pilot local/Colab/Kaggle | [Pilot guide](run_local_colab_kaggle.md), [Gemma](setup_gemma.md) |
 | Scoring và CI | [Evaluation v1](research/EVALUATION_V1.md) |
 | Main metadata và runner CPU preflight | [Baseline v1](research/BASELINE_V1.md) |
+| Option B đã chọn cho main | [Candidate, policy version và M3 checklist](research/MAIN_OPTION_B_V1.md), [evidence v14](../reports/stage1/v14/completion.md) |
 | Ảnh review, thumbnail và model processor | [Audit 24/11 và kế hoạch so sánh pilot](../reports/audits/2026-11-24/image_pipeline_audit.md) |
 | Full A/B validation bốn task v1 | [Harness, coverage blocker và evidence thật](../reports/validation/image_ab_v1/report.md) |
 | RePOPE-only diagnostic độc lập | [240 measured cells GPU thật, reuse và recommendation](../reports/validation/repope_image_ab_v1/report.md); không hoàn thành M3 |

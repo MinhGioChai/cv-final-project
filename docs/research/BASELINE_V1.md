@@ -1,5 +1,11 @@
 # Baseline contract and main runner v1
 
+**Cập nhật24/11:** main CLI mặc định candidate Option B tại
+`configs/baseline_v3_option_b_v1.yaml`, policy `original_rgb_processor_v1`.
+Chưa freeze. [Method/checklist M3 hiện hành](MAIN_OPTION_B_V1.md) và
+[evidence v14](../../reports/stage1/v14/completion.md). Config draft A cũ vẫn
+đọc được qua --config; bảng/thiết kế gốc22/11 bên dưới ghi cả lựa chọn lịch sử.
+
 Ngày 22/11/2026. Hợp đồng này bổ sung metadata và runner bốn task cho RQ1/RQ2,
 để phát triển bằng CPU trong lúc nhóm review. Manifest hiện tại vẫn là draft;
 configs baseline và prompts mới chưa frozen. Không thay schema/bytes pilot cũ.
@@ -20,7 +26,7 @@ results, ngoài Git; summary nhỏ có thể lưu làm evidence. Lệnh plan là
 không import torch/transformers, không tải weights và không gọi model.
 Mỗi dry-run model riêng có 2.000 cells và giữ đầy đủ 1.000 sample IDs.
 
-Config `configs/baseline_v3_draft.yaml` tham chiếu bốn manifest hiện tại,
+Config A lịch sử `configs/baseline_v3_draft.yaml` và candidate B mới tham chiếu cùng bốn manifest hiện tại,
 source selection 1.000 IDs, pilot approved manifest và exclusion registry.
 Queue sắp theo alias model, sample ID, rồi EN/VI; không lấy mẫu lại hoặc đổi seed.
 Ảnh không có trong Git: nếu clone chưa restore dữ liệu, plan báo lỗi preflight
@@ -38,7 +44,7 @@ Queue sắp theo alias model, sample ID, rồi EN/VI; không lấy mẫu lại h
 | Processor/tokenizer | Pin rõ revision; adapters hiện yêu cầu cùng revision với model |
 | Precision | Qwen NF4/FP16; Gemma NF4/BF16, không fallback |
 | Generation | Greedy, batch=1, seed=42; max_new_tokens hiện là 8, chưa final freeze |
-| Ảnh | RGB, thumbnail LANCZOS, max edge 512; Qwen min/max pixels; Gemma no pan-and-scan, slow processor |
+| Ảnh | Main B: RGB kích thước nguồn, không manual resize; A lịch sử: thumbnail LANCZOS max512. Cùng Qwen min/max pixels; Gemma no pan-and-scan/slow processor |
 | Prompt variants | baseline; image_variant=original; không mở RQ3/RQ4 |
 
 Prompt mới tại `configs/prompts_baseline_v1.yaml`. Mỗi task/ngôn ngữ phải giữ
@@ -51,7 +57,7 @@ nhãn vì phát biểu có vẻ sai. Prompt không nhận ground truth làm plac
 Đây là candidate settings cho baseline, không phải kết quả thực nghiệm hoặc
 quyết định freeze cuối. Pilot vẫn dùng configs/prompts lịch sử của chính run.
 
-Audit ngày 24/11 xác nhận thumbnail 512 được đưa vào processor thật; review
+Audit trước quyết định B ngày24/11 xác nhận đường A đưa thumbnail512 vào processor; review
 HTML dùng nguyên JPEG. Processor Gemma tiếp tục resize về 896×896, có méo tỷ
 lệ với ảnh không vuông; Qwen resize theo grid/pixel budget nên có thể phóng
 to thumbnail trở lại. `image_variant=original` chỉ variant nguồn, không có

@@ -1,0 +1,125 @@
+{
+  "schema_version": "baseline_protocol_v1",
+  "settings": {
+    "schema_version": "baseline_v1",
+    "experiment_id": "en_vi_main_v3_option_b_v1",
+    "frozen": false,
+    "freeze_receipt": null,
+    "seed": 42,
+    "manifests": [
+      "data/main/preparation_v2/repope_bilingual_draft_manifest.csv",
+      "data/main/preparation_v3/vsr_bilingual_draft.csv",
+      "data/main/preparation_v3/tallyqa_bilingual_draft.csv",
+      "data/main/preparation_v3/oxford_pet_bilingual_draft.csv"
+    ],
+    "source_selection": "data/main/preparation_v2/all_candidates.jsonl",
+    "pilot_manifest": "data/pilot/stage1_qa_v1/pilot_manifest.csv",
+    "pilot_exclusions": "data/pilot/image_exclusions.json",
+    "prompts": "configs/prompts_baseline_v1.yaml",
+    "targets": {
+      "repope": 600,
+      "vsr": 120,
+      "tallyqa": 120,
+      "oxford_pet": 160
+    },
+    "languages": [
+      "en",
+      "vi"
+    ],
+    "models": {
+      "qwen": {
+        "model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+        "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+        "processor_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+        "tokenizer_revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+        "precision": "nf4_fp16",
+        "attention": "eager"
+      },
+      "gemma": {
+        "model_id": "google/gemma-3-4b-it",
+        "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+        "processor_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+        "tokenizer_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+        "precision": "nf4_bf16",
+        "attention": "eager"
+      }
+    },
+    "generation": {
+      "do_sample": false,
+      "batch_size": 1,
+      "max_new_tokens": 8
+    },
+    "preprocess": {
+      "policy_id": "original_rgb_processor_v1",
+      "image_max_edge": null,
+      "qwen_min_pixels": 200704,
+      "qwen_max_pixels": 401408
+    }
+  },
+  "prompt_version": "baseline_v1_draft",
+  "inputs_sha256": {
+    "data/main/preparation_v2/repope_bilingual_draft_manifest.csv": "2b96cf96836e6a1dc9f2600bdffac967e0827916b6c901cf06c5181b535b2734",
+    "data/main/preparation_v3/vsr_bilingual_draft.csv": "b9a35ab5fe6833c9df763bbe2b1ce07f974cdd97973747a206220d2ea415992c",
+    "data/main/preparation_v3/tallyqa_bilingual_draft.csv": "d7b53c2b12c3d6161631f4e31ecf32c18c5657111241079b79d18e20178aab87",
+    "data/main/preparation_v3/oxford_pet_bilingual_draft.csv": "c586eebe55495bdb0054c1977cd9061163b414ddaa5aea8190ec10f2f3c25766",
+    "configs/baseline_v3_option_b_v1.yaml": "8c45b705e32080a85604a1434453d1d1ddeefe1bfd3a071e7d89bac1292b1baa",
+    "data/main/preparation_v2/all_candidates.jsonl": "f336eb5c8e0f2626f82ff813ab65c57fff37ea39a62fbc16c01a63c69121eec7",
+    "data/pilot/stage1_qa_v1/pilot_manifest.csv": "e19b8601a9f0771ebc79c35ac347abf8a1764a9e2aa183c44288b961d3fc30b3",
+    "data/pilot/image_exclusions.json": "02f9deadc3e2670e5de2ec8b27ebf6516a7105b72728e25bd024693d6ac8422f",
+    "configs/prompts_baseline_v1.yaml": "00b1745e482697dd99a7e2c39c2ef6164dc90050d299852cdebcd5254d7351c9"
+  },
+  "implementation_sha256": {
+    "baseline_contract.py": "209503a1def9373a337a56f1c6c537c6e8c500b1ddac467d2247c9119afd30db",
+    "baseline_runtime.py": "b0e46744f5068b8e88f92930ef2e127a28c6b735ac106cd45a3c7aaf3e6945e8",
+    "parse.py": "5423ae0dd0846746d5e55c43cbe26178838763510fdfcf2bb31dd39d7c4212fb",
+    "pilot_runtime.py": "2dab35bf0f8dc01249f035b7dc28812fb441f12e9eef164e9b3896d5c14377c5",
+    "gemma_diagnostic.py": "3fa5ce9fe0d052be253805c668343d84a09b0633d7c4c4c389bded282b236bb8",
+    "main_review_v2.py": "2e93fa1cf5f424d4cedc4cdd35feb86345c472c5a01dd3783b282bbe4818b4ea",
+    "main_review.py": "b62eefaf957517cc73eca753c937b26b0e9b7cf9b4b4029cef6a78339a855897",
+    "translate.py": "548ce84627784641db91b98fc75548d009c033690c4fd18791452a2626d56d37",
+    "qa.py": "b250a8e67194f5b536c40cbd022fa3856004064b930ccf0d01c79d5ab902b344",
+    "schemas.py": "ae647aee7f7b2c4a4142ba99b3c3ff92915ee72b5cdcba290355d53f3d7f7c06",
+    "io_utils.py": "a44a236fed19d90f4c000419c32ac702d7d5a295cbb21c2951aadeeac077f624",
+    "reviews.py": "6e6c3ae6966983c5c1a94eee5062cbbb6b58a0d974ac4652f34dee5bc172e57a",
+    "environment.py": "b5cd1094a421b84a64be774b5579e529551f0b2dbb4e0c21acd0e43aff18ca4b",
+    "pilot_launcher.py": "6d5c38f636c165a57ef9b6b1b004bb6fc569d65e236fdd8074b5222bc5e752e3",
+    "image_ab.py": "e7fceb0c78814e9dbda00ac6c42bcaeeaf159a3dba503476b38bfee1cc274ed4"
+  },
+  "grid_sha256": "ed64fcec029cf6b9787594b1c2846a147312ac4b5a4ffcb7ff2bad8a612b513e",
+  "external_labels": {
+    "object_existence": [
+      "YES",
+      "NO"
+    ],
+    "spatial": [
+      "TRUE",
+      "FALSE"
+    ],
+    "counting": "nonnegative_integer",
+    "fine_grained": {
+      "A": "American Bulldog",
+      "B": "American Pit Bull Terrier",
+      "C": "Basset Hound",
+      "D": "Beagle",
+      "E": "Boxer",
+      "F": "Chihuahua",
+      "G": "English Cocker Spaniel",
+      "H": "English Setter"
+    }
+  },
+  "processor_policy": {
+    "qwen": {
+      "min_pixels": 200704,
+      "max_pixels": 401408,
+      "use_fast": "checkpoint_default"
+    },
+    "gemma": {
+      "do_pan_and_scan": false,
+      "use_fast": false
+    }
+  },
+  "stored_binary_labels": {
+    "TRUE": "yes",
+    "FALSE": "no"
+  }
+}

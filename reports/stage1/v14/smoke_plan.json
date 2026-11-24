@@ -1,0 +1,206 @@
+{
+  "protocol_hash": "04dc43550ecbc1135c649f68c550ce78f4a6cff11c9bfd6d6989415863732cc0",
+  "selection": {
+    "scope": "bounded_main_gpu_smoke_after_QA_and_freeze",
+    "per_task": 1,
+    "sample_ids": [
+      "oxford_pet_00a458d0562ffc35",
+      "repope_0072d332dabd5afc",
+      "tallyqa_024dd0a70f7aa3eb",
+      "vsr_03826887ef250eea"
+    ],
+    "tasks": {
+      "object_existence": 1,
+      "spatial": 1,
+      "counting": 1,
+      "fine_grained": 1
+    },
+    "expected_cells_per_model": 8,
+    "expected_cells_both_models": 16
+  },
+  "cells": [
+    {
+      "cell_id": "bae82b24095d34b5f2a5f2732293016ff2d060c4b1d05f2fc94e2c838890eb2e",
+      "sample_id": "oxford_pet_00a458d0562ffc35",
+      "model": "gemma",
+      "language": "en",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Which dog breed is shown? Choose from these breeds: A: American Bulldog; B: American Pit Bull Terrier; C: Basset Hound; D: Beagle; E: Boxer; F: Chihuahua; G: English Cocker Spaniel; H: English Setter. Reply with one letter A–H.",
+      "prompt_hash": "880005613c271fbfa30e20ed8b658fad45c36a47dc9b341daf7e6d958ac037c4",
+      "source_row_sha256": "56c5b9f40bca51531662662d3cbe3c1440190bc95741b8ddb3e65b410bb14eb0"
+    },
+    {
+      "cell_id": "59e72266112f5d0a1c06409a7df698f3ae278d7e0c4cd58e70d8405ba662f0f0",
+      "sample_id": "oxford_pet_00a458d0562ffc35",
+      "model": "gemma",
+      "language": "vi",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Con chó trong ảnh thuộc giống nào? Chọn trong các giống sau: A: American Bulldog; B: American Pit Bull Terrier; C: Basset Hound; D: Beagle; E: Boxer; F: Chihuahua; G: English Cocker Spaniel; H: English Setter. Chỉ trả lời một chữ cái A–H.",
+      "prompt_hash": "f162fcc482db7dcccdf2046becc63db63c4ebe93339817ece5388b14a2e487c6",
+      "source_row_sha256": "56c5b9f40bca51531662662d3cbe3c1440190bc95741b8ddb3e65b410bb14eb0"
+    },
+    {
+      "cell_id": "470e3525624dcc79660f67a342851d107be4be90b3574555f5dda8d9fa9cf887",
+      "sample_id": "repope_0072d332dabd5afc",
+      "model": "gemma",
+      "language": "en",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Is there a bottle in the image? Reply with only YES or NO.",
+      "prompt_hash": "c27383883615ed016e9cb3afa7b86099bc2ce1ec89ec8d414efecaf4e2816079",
+      "source_row_sha256": "7974fd6e0fdc2a9912082a9acb2ce812a07dff9e53c72057193b404cb0d01c42"
+    },
+    {
+      "cell_id": "0ded757fb325d918cc687228773f874cbd1a0bf6d3f852ea6a1576afa2f2a246",
+      "sample_id": "repope_0072d332dabd5afc",
+      "model": "gemma",
+      "language": "vi",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Trong ảnh có cái chai nào không? Chỉ trả lời YES hoặc NO.",
+      "prompt_hash": "192ab261ca8ab0086e24e9f38d9808f3f891571bd19012ce9f89e8ae1c69b828",
+      "source_row_sha256": "7974fd6e0fdc2a9912082a9acb2ce812a07dff9e53c72057193b404cb0d01c42"
+    },
+    {
+      "cell_id": "e7a00462fcdf65c396e33ac80799e038a62108db325dd51e754e7fb45a0629a5",
+      "sample_id": "tallyqa_024dd0a70f7aa3eb",
+      "model": "gemma",
+      "language": "en",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "How many babies are eating food? Reply with one nonnegative integer.",
+      "prompt_hash": "9b8df12aa33f155023e6a1bba31c3de30ca1506eff478769b90b9fde4aaa13f2",
+      "source_row_sha256": "d34abd630b720b907b0f2efbd28a4112deacdaff753f8a5bfd65c5e8de60b8a7"
+    },
+    {
+      "cell_id": "733e00699a06f008b222e82c850a6c4914dd7b9bb80ad67a6d99d0153570c606",
+      "sample_id": "tallyqa_024dd0a70f7aa3eb",
+      "model": "gemma",
+      "language": "vi",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Có bao nhiêu em bé đang ăn thức ăn? Chỉ trả lời một số nguyên không âm.",
+      "prompt_hash": "0f2c875d3a5b98aff7da1ad5ca5d54b0d41b3791aaef8220bd8831d1f483c8c9",
+      "source_row_sha256": "d34abd630b720b907b0f2efbd28a4112deacdaff753f8a5bfd65c5e8de60b8a7"
+    },
+    {
+      "cell_id": "66d0a2488c78c2edaae461fde04be2f604462aafc6cfeea872add1877c4c0840",
+      "sample_id": "vsr_03826887ef250eea",
+      "model": "gemma",
+      "language": "en",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Is this statement true for the image: \"The bench is parallel to the person.\"? Reply with only TRUE or FALSE.",
+      "prompt_hash": "9afcbfd24dbdaab8e01192eb5918e4392aef269f8b6edca16cd3ec90c7f24c8d",
+      "source_row_sha256": "2d077baadf2264bf61b9d117d5a3d7a5190a4dee46b9463ab73603baec6cd7f4"
+    },
+    {
+      "cell_id": "f8cef07966749af4e8e9b3d42af845d079825b5b25eea33a7acfe27118d0aec6",
+      "sample_id": "vsr_03826887ef250eea",
+      "model": "gemma",
+      "language": "vi",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Mệnh đề sau có đúng với ảnh không: \"Chiếc ghế dài song song với người.\"? Chỉ trả lời TRUE hoặc FALSE.",
+      "prompt_hash": "4fb8a848cc7d161d8d14993588519e91e25bf4de13932fc0b48590f1869fce32",
+      "source_row_sha256": "2d077baadf2264bf61b9d117d5a3d7a5190a4dee46b9463ab73603baec6cd7f4"
+    },
+    {
+      "cell_id": "40b330edcc4325a2b1955eae8552980a373c425e430e26e5549ee090a9e95482",
+      "sample_id": "oxford_pet_00a458d0562ffc35",
+      "model": "qwen",
+      "language": "en",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Which dog breed is shown? Choose from these breeds: A: American Bulldog; B: American Pit Bull Terrier; C: Basset Hound; D: Beagle; E: Boxer; F: Chihuahua; G: English Cocker Spaniel; H: English Setter. Reply with one letter A–H.",
+      "prompt_hash": "880005613c271fbfa30e20ed8b658fad45c36a47dc9b341daf7e6d958ac037c4",
+      "source_row_sha256": "56c5b9f40bca51531662662d3cbe3c1440190bc95741b8ddb3e65b410bb14eb0"
+    },
+    {
+      "cell_id": "9bbc66692b9612ee9207207fb742277e867ed84d7ecb33c239c6336aa332f542",
+      "sample_id": "oxford_pet_00a458d0562ffc35",
+      "model": "qwen",
+      "language": "vi",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Con chó trong ảnh thuộc giống nào? Chọn trong các giống sau: A: American Bulldog; B: American Pit Bull Terrier; C: Basset Hound; D: Beagle; E: Boxer; F: Chihuahua; G: English Cocker Spaniel; H: English Setter. Chỉ trả lời một chữ cái A–H.",
+      "prompt_hash": "f162fcc482db7dcccdf2046becc63db63c4ebe93339817ece5388b14a2e487c6",
+      "source_row_sha256": "56c5b9f40bca51531662662d3cbe3c1440190bc95741b8ddb3e65b410bb14eb0"
+    },
+    {
+      "cell_id": "90f2c46cd03c3acc66486a2c64d28432faa3ffd502e8119159e98f1db74beaa7",
+      "sample_id": "repope_0072d332dabd5afc",
+      "model": "qwen",
+      "language": "en",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Is there a bottle in the image? Reply with only YES or NO.",
+      "prompt_hash": "c27383883615ed016e9cb3afa7b86099bc2ce1ec89ec8d414efecaf4e2816079",
+      "source_row_sha256": "7974fd6e0fdc2a9912082a9acb2ce812a07dff9e53c72057193b404cb0d01c42"
+    },
+    {
+      "cell_id": "204466ae1b026bc0fdfc6ea88c3f5121b21a4b4ddf621e92537c2cf737ec4416",
+      "sample_id": "repope_0072d332dabd5afc",
+      "model": "qwen",
+      "language": "vi",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Trong ảnh có cái chai nào không? Chỉ trả lời YES hoặc NO.",
+      "prompt_hash": "192ab261ca8ab0086e24e9f38d9808f3f891571bd19012ce9f89e8ae1c69b828",
+      "source_row_sha256": "7974fd6e0fdc2a9912082a9acb2ce812a07dff9e53c72057193b404cb0d01c42"
+    },
+    {
+      "cell_id": "300ea9baf6add3513ecf7104600857fb321f2b49da4624bf1dbbe0ada8ccdded",
+      "sample_id": "tallyqa_024dd0a70f7aa3eb",
+      "model": "qwen",
+      "language": "en",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "How many babies are eating food? Reply with one nonnegative integer.",
+      "prompt_hash": "9b8df12aa33f155023e6a1bba31c3de30ca1506eff478769b90b9fde4aaa13f2",
+      "source_row_sha256": "d34abd630b720b907b0f2efbd28a4112deacdaff753f8a5bfd65c5e8de60b8a7"
+    },
+    {
+      "cell_id": "9a447d0a8dc97ce3c9c39258179f77adbc6cabf5c0b3db1dc5a244c08dab461d",
+      "sample_id": "tallyqa_024dd0a70f7aa3eb",
+      "model": "qwen",
+      "language": "vi",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Có bao nhiêu em bé đang ăn thức ăn? Chỉ trả lời một số nguyên không âm.",
+      "prompt_hash": "0f2c875d3a5b98aff7da1ad5ca5d54b0d41b3791aaef8220bd8831d1f483c8c9",
+      "source_row_sha256": "d34abd630b720b907b0f2efbd28a4112deacdaff753f8a5bfd65c5e8de60b8a7"
+    },
+    {
+      "cell_id": "f2fc62449a07f5472fb552b141d1725afeb59b0c52c6d8ba215a7d867a4a87f5",
+      "sample_id": "vsr_03826887ef250eea",
+      "model": "qwen",
+      "language": "en",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Is this statement true for the image: \"The bench is parallel to the person.\"? Reply with only TRUE or FALSE.",
+      "prompt_hash": "9afcbfd24dbdaab8e01192eb5918e4392aef269f8b6edca16cd3ec90c7f24c8d",
+      "source_row_sha256": "2d077baadf2264bf61b9d117d5a3d7a5190a4dee46b9463ab73603baec6cd7f4"
+    },
+    {
+      "cell_id": "6f9284c491379c4be3f865de93cd00fcdafb62376a561696f2f8ac24316b7327",
+      "sample_id": "vsr_03826887ef250eea",
+      "model": "qwen",
+      "language": "vi",
+      "prompt_variant": "baseline",
+      "image_variant": "original",
+      "prompt_text": "Mệnh đề sau có đúng với ảnh không: \"Chiếc ghế dài song song với người.\"? Chỉ trả lời TRUE hoặc FALSE.",
+      "prompt_hash": "4fb8a848cc7d161d8d14993588519e91e25bf4de13932fc0b48590f1869fce32",
+      "source_row_sha256": "2d077baadf2264bf61b9d117d5a3d7a5190a4dee46b9463ab73603baec6cd7f4"
+    }
+  ],
+  "execution_ready": false,
+  "main_gates": {
+    "MAIN_QA_NOT_APPROVED": 1000,
+    "BASELINE_NOT_FROZEN": 1,
+    "FREEZE_RECEIPT_REQUIRED": 1
+  },
+  "M3_complete": false
+}
