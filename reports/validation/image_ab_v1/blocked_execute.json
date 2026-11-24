@@ -1,0 +1,91 @@
+{
+  "scope": "real_gate_check_no_adapter_load_no_model_inference",
+  "attempts": [
+    {
+      "model": "qwen",
+      "command": "C:\\Users\\ADMIN\\cv-final-project\\.venv\\Scripts\\python.exe scripts/validate_image_ab.py run --model qwen --output results/pilot/image_ab_v1/coverage_gate_check/qwen --execute",
+      "exit_code": 2,
+      "stdout": {
+        "status": "blocked",
+        "reason": "Explicit --execute and complete four-task, QA, provenance and exclusion gates required",
+        "plan": {
+          "scope": "technical_image_AB_validation_not_main",
+          "config_fingerprint": "20bab7cfd3b1f202a01a7508fa0180ab2256c53e40e0661625f0c8c34fa1cfbc",
+          "manifest": "data/pilot/stage1_qa_v1/pilot_manifest.csv",
+          "rows": 30,
+          "tasks": {
+            "object_existence": 30
+          },
+          "expected_cells": 240,
+          "expected_per_model": 120,
+          "warmups_per_model": 4,
+          "repeats": 1,
+          "execution_ready": false,
+          "issues": [
+            {
+              "code": "TASK_COVERAGE_MISSING",
+              "task": "spatial"
+            },
+            {
+              "code": "TASK_COVERAGE_MISSING",
+              "task": "counting"
+            },
+            {
+              "code": "TASK_COVERAGE_MISSING",
+              "task": "fine_grained"
+            }
+          ],
+          "main_frozen": false,
+          "main_freeze_receipt": null,
+          "model_generations": 0,
+          "new_human_approvals": 0
+        }
+      },
+      "stderr": "",
+      "run_directory_created": false
+    },
+    {
+      "model": "gemma",
+      "command": "C:\\Users\\ADMIN\\cv-final-project\\.venv\\Scripts\\python.exe scripts/validate_image_ab.py run --model gemma --output results/pilot/image_ab_v1/coverage_gate_check/gemma --execute",
+      "exit_code": 2,
+      "stdout": {
+        "status": "blocked",
+        "reason": "Explicit --execute and complete four-task, QA, provenance and exclusion gates required",
+        "plan": {
+          "scope": "technical_image_AB_validation_not_main",
+          "config_fingerprint": "20bab7cfd3b1f202a01a7508fa0180ab2256c53e40e0661625f0c8c34fa1cfbc",
+          "manifest": "data/pilot/stage1_qa_v1/pilot_manifest.csv",
+          "rows": 30,
+          "tasks": {
+            "object_existence": 30
+          },
+          "expected_cells": 240,
+          "expected_per_model": 120,
+          "warmups_per_model": 4,
+          "repeats": 1,
+          "execution_ready": false,
+          "issues": [
+            {
+              "code": "TASK_COVERAGE_MISSING",
+              "task": "spatial"
+            },
+            {
+              "code": "TASK_COVERAGE_MISSING",
+              "task": "counting"
+            },
+            {
+              "code": "TASK_COVERAGE_MISSING",
+              "task": "fine_grained"
+            }
+          ],
+          "main_frozen": false,
+          "main_freeze_receipt": null,
+          "model_generations": 0,
+          "new_human_approvals": 0
+        }
+      },
+      "stderr": "",
+      "run_directory_created": false
+    }
+  ]
+}

@@ -14,6 +14,7 @@ Mục lục này dành cho lúc cần chi tiết; completion ghi trạng thái s
 | Scoring và CI | [Evaluation v1](research/EVALUATION_V1.md) |
 | Main metadata và runner CPU preflight | [Baseline v1](research/BASELINE_V1.md) |
 | Ảnh review, thumbnail và model processor | [Audit 24/11 và kế hoạch so sánh pilot](../reports/audits/2026-11-24/image_pipeline_audit.md) |
+| A/B GPU validation trước freeze | [Harness, coverage blocker và evidence thật](../reports/validation/image_ab_v1/report.md) |
 | Dựng lại dữ liệu khi cần | [Source inventory](research/MAIN_DATA_PREPARATION_V1.md), [RePOPE](research/MAIN_PREPARATION_V2.md) |
 | Yêu cầu môn học | [Topic 14](../project_topics.md) |
 | Bằng chứng/lịch sử | [Reports](../reports/README.md), [archive](archive/README.md) |

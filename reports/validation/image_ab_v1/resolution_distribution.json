@@ -1,0 +1,19 @@
+{
+  "source": "reports/audits/2026-11-24/image_dimensions.jsonl",
+  "source_sha256": "32f63ec07072173e66ee365696ed50970b9f2e4785c3cb04ba0f5e3310fc516b",
+  "unique_images": 813,
+  "longest_edge_bins": {
+    "513-640": 458,
+    "<=512": 352,
+    ">640": 3
+  },
+  "dataset_counts": {
+    "pilot/repope": 30,
+    "main/repope": 383,
+    "main/vsr": 120,
+    "main/tallyqa": 120,
+    "main/oxford_pet": 160
+  },
+  "max512_would_downscale": 461,
+  "new_image_processing": false
+}

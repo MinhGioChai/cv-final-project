@@ -24,6 +24,9 @@ sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
 - Chưa freeze hoặc chạy 4.000 inference chính. RQ1–RQ2 là core;
   RQ3–RQ4 là mở rộng có điều kiện. Không training/fine-tuning.
 - Không cần GPU để làm review, tests hoặc phân tích pilot đã có.
+- Validation ảnh A/B trước freeze: [report và lệnh](reports/validation/image_ab_v1/report.md).
+  GPU FP16/BF16 kernel check đạt; pilot hiện chỉ RePOPE nên chưa chạy model A/B
+  đủ bốn task. Đã đề xuất 24 mẫu bổ sung ngoài main, còn chờ ảnh và human QA.
 
 Trạng thái có bằng chứng và bước tiếp: [completion](reports/completion.md).
 Nguồn yêu cầu: [Handoff V3](docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md).

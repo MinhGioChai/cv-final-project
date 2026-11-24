@@ -1,0 +1,275 @@
+{
+  "scope": "proposal_not_manifest_not_QA_not_inference",
+  "seed_policy": "sha256(image_ab_v1:42:sample_id)",
+  "main_selection_read_only": true,
+  "source_frames": {
+    "vsr": {
+      "path": "data/raw/main_metadata_v1/candidate_frames/vsr.jsonl",
+      "sha256": "bc04f42881b55fd29b56a51616a8afa89d3d2a3895d8640e4a75ea7a387b4557"
+    },
+    "tallyqa": {
+      "path": "data/raw/main_metadata_v1/candidate_frames/tallyqa.jsonl",
+      "sha256": "f52ebe7749e38d0c275616a4e9e0857aebac1f351794a96364d0c8119de7c58a"
+    },
+    "oxford_pet": {
+      "path": "data/raw/main_metadata_v1/candidate_frames/oxford_pet.jsonl",
+      "sha256": "826757de1417e6fb0180ae3a07252db72fc596d9dfb6fadba24ed7229ec9ae4b"
+    }
+  },
+  "selected": [
+    {
+      "sample_id": "repope_adversarial_8cb9a375076dc3ac",
+      "dataset": "repope",
+      "image_id": "000000572075",
+      "status": "existing_QA_approved",
+      "category": "adversarial",
+      "ground_truth": "no"
+    },
+    {
+      "sample_id": "repope_adversarial_2542d07233dd67d6",
+      "dataset": "repope",
+      "image_id": "000000237767",
+      "status": "existing_QA_approved",
+      "category": "adversarial",
+      "ground_truth": "yes"
+    },
+    {
+      "sample_id": "repope_popular_bc6010056e9bc682",
+      "dataset": "repope",
+      "image_id": "000000217397",
+      "status": "existing_QA_approved",
+      "category": "popular",
+      "ground_truth": "no"
+    },
+    {
+      "sample_id": "repope_popular_cc7655930e0f0b02",
+      "dataset": "repope",
+      "image_id": "000000515904",
+      "status": "existing_QA_approved",
+      "category": "popular",
+      "ground_truth": "yes"
+    },
+    {
+      "sample_id": "repope_random_7f3a44891819162f",
+      "dataset": "repope",
+      "image_id": "000000461331",
+      "status": "existing_QA_approved",
+      "category": "random",
+      "ground_truth": "no"
+    },
+    {
+      "sample_id": "repope_random_18d195a3eee26a4f",
+      "dataset": "repope",
+      "image_id": "000000458338",
+      "status": "existing_QA_approved",
+      "category": "random",
+      "ground_truth": "yes"
+    },
+    {
+      "sample_id": "vsr_e6fd92af4f08bef9",
+      "dataset": "vsr",
+      "image_id": "000000318365",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "below",
+      "ground_truth": "yes"
+    },
+    {
+      "sample_id": "vsr_8c26c5c5ec24cd5a",
+      "dataset": "vsr",
+      "image_id": "000000101348",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "touching",
+      "ground_truth": "yes"
+    },
+    {
+      "sample_id": "vsr_3f9983e65e2672ae",
+      "dataset": "vsr",
+      "image_id": "000000051985",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "away from",
+      "ground_truth": "yes"
+    },
+    {
+      "sample_id": "vsr_feff36f7446a85e8",
+      "dataset": "vsr",
+      "image_id": "000000346614",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "beneath",
+      "ground_truth": "yes"
+    },
+    {
+      "sample_id": "vsr_e7716ace4a9d2dee",
+      "dataset": "vsr",
+      "image_id": "000000308221",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "touching",
+      "ground_truth": "no"
+    },
+    {
+      "sample_id": "vsr_3ef95f89edf306ce",
+      "dataset": "vsr",
+      "image_id": "000000484066",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "facing",
+      "ground_truth": "no"
+    },
+    {
+      "sample_id": "vsr_38821c91bced0caf",
+      "dataset": "vsr",
+      "image_id": "000000541288",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "touching",
+      "ground_truth": "no"
+    },
+    {
+      "sample_id": "vsr_e46ed518970bfedb",
+      "dataset": "vsr",
+      "image_id": "000000351550",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "in front of",
+      "ground_truth": "no"
+    },
+    {
+      "sample_id": "tallyqa_44e8b5d3dc631896",
+      "dataset": "tallyqa",
+      "image_id": "2408109",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "simple",
+      "ground_truth": 1
+    },
+    {
+      "sample_id": "tallyqa_f0d35a24a2749861",
+      "dataset": "tallyqa",
+      "image_id": "2343751",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "simple",
+      "ground_truth": 1
+    },
+    {
+      "sample_id": "tallyqa_cd43bf90b68ca95f",
+      "dataset": "tallyqa",
+      "image_id": "2377268",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "simple",
+      "ground_truth": 1
+    },
+    {
+      "sample_id": "tallyqa_e62e9d554efdd9fa",
+      "dataset": "tallyqa",
+      "image_id": "2407221",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "simple",
+      "ground_truth": 2
+    },
+    {
+      "sample_id": "tallyqa_6f93fe18bbc0afca",
+      "dataset": "tallyqa",
+      "image_id": "2363516",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "complex",
+      "ground_truth": 1
+    },
+    {
+      "sample_id": "tallyqa_d19f75a78da11f1c",
+      "dataset": "tallyqa",
+      "image_id": "2372698",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "complex",
+      "ground_truth": 3
+    },
+    {
+      "sample_id": "tallyqa_74f315ed25b07909",
+      "dataset": "tallyqa",
+      "image_id": "2409760",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "complex",
+      "ground_truth": 1
+    },
+    {
+      "sample_id": "tallyqa_cbc766bcb0ee4805",
+      "dataset": "tallyqa",
+      "image_id": "2369330",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "complex",
+      "ground_truth": 1
+    },
+    {
+      "sample_id": "oxford_pet_f33c6c2a5fa59a75",
+      "dataset": "oxford_pet",
+      "image_id": "american_bulldog_45",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "american_bulldog",
+      "ground_truth": "A"
+    },
+    {
+      "sample_id": "oxford_pet_0f462d652eacaba9",
+      "dataset": "oxford_pet",
+      "image_id": "american_pit_bull_terrier_6",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "american_pit_bull_terrier",
+      "ground_truth": "B"
+    },
+    {
+      "sample_id": "oxford_pet_ad09e91547f18ec8",
+      "dataset": "oxford_pet",
+      "image_id": "basset_hound_4",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "basset_hound",
+      "ground_truth": "C"
+    },
+    {
+      "sample_id": "oxford_pet_f8a845e6bfe6aa8e",
+      "dataset": "oxford_pet",
+      "image_id": "beagle_36",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "beagle",
+      "ground_truth": "D"
+    },
+    {
+      "sample_id": "oxford_pet_604664ea4e886b4f",
+      "dataset": "oxford_pet",
+      "image_id": "boxer_63",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "boxer",
+      "ground_truth": "E"
+    },
+    {
+      "sample_id": "oxford_pet_6997d61918592f04",
+      "dataset": "oxford_pet",
+      "image_id": "chihuahua_44",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "chihuahua",
+      "ground_truth": "F"
+    },
+    {
+      "sample_id": "oxford_pet_aad0c12f7d4c6cdf",
+      "dataset": "oxford_pet",
+      "image_id": "english_cocker_spaniel_47",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "english_cocker_spaniel",
+      "ground_truth": "G"
+    },
+    {
+      "sample_id": "oxford_pet_fb162741d407a2f0",
+      "dataset": "oxford_pet",
+      "image_id": "english_setter_25",
+      "status": "metadata_only_pending_image_checksum_EN_VI_and_image_label_QA",
+      "category": "english_setter",
+      "ground_truth": "H"
+    }
+  ],
+  "dataset_counts": {
+    "repope": 6,
+    "vsr": 8,
+    "tallyqa": 8,
+    "oxford_pet": 8
+  },
+  "supplement_count": 24,
+  "main_image_ID_overlap": 0,
+  "main_sample_ID_overlap": 0,
+  "checksum_overlap": "pending materialization; ID exclusion does not prove byte exclusion",
+  "images_downloaded": 0,
+  "new_human_approvals": 0,
+  "generations": 0,
+  "next": "Acquire original assets to a NEW pilot-only directory, verify against 813 existing hashes, translate and review both languages/image labels; retain proof in new pilot manifest. Do not modify main or pilot history."
+}

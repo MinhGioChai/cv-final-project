@@ -1,0 +1,24 @@
+{
+  "date_local": "2026-11-24",
+  "scope": "CPU software tests, not GPU predictions or human review",
+  "final_suite": {
+    "command": ".venv/Scripts/python.exe -m pytest -q",
+    "passed": 416,
+    "failed": 0,
+    "duration_seconds": 20.77,
+    "new_image_ab_tests": 20,
+    "evidence": "Result transcribed from the executed command output after final metadata snapshot checks: 416 passed in 20.77s"
+  },
+  "earlier_checks": [
+    "Initial targeted run: 14 passed, 4 failed; untrusted/changed rows tried reading absent source fixtures. Planner now reports missing proof without treating rows as approved supplements.",
+    "Targeted run before orchestration test: 19 passed in 2.20s.",
+    "Intermediate regression before added orchestration test: 415 passed in 21.44s.",
+    "Added orchestration test initially failed on Windows default codec reading UTF-8 synthetic prompts; test read fixed to explicit UTF-8, then 416 passed in 18.06s.",
+    "Added persisted config/prompt snapshots and warmup fingerprints, then final full suite 416 passed in 20.77s."
+  ],
+  "synthetic_test_data": "Only pytest temporary directories; fake adapters and torch are software fixtures, never copied into research evidence",
+  "GPU_VLM_generations": 0,
+  "main_inferences": 0,
+  "new_human_approvals": 0,
+  "hardware_evidence": "gpu_kernel_preflight.json records real FP16/BF16 CUDA kernels only"
+}

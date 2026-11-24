@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v31 · 24/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v32 · 24/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -43,10 +43,10 @@
 | Review main | 22 gói v2 tối đa 50 câu; A/B mỗi người kiểm dịch và ảnh/nhãn, một JSON cuối/gói; chưa có main human import |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
 | Baseline main v1 | Metadata/config/record schemas, prompt routing bốn task, CPU grid 4.000 cells và gated runner/resume/error đã có; adapters reuse, chưa main GPU inference/freeze |
-| Tests | Ngày 22/11 full suite 396 passed/18,91 s, thêm 37 baseline tests; fake outputs hai model qua evaluator/CI. Chưa main GPU hoặc visual browser QA |
+| Tests | Ngày 24/11 full suite 416 passed/20,77 s, thêm20 A/B tests; fake adapters chỉ software tests. CUDA kernel FP16/BF16 thật đạt, chưa VLM A/B/main GPU hoặc visual browser QA |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
-| Hướng dẫn/structure | HUONG_DAN_NHOM.md; root commands 10 sau thêm run_main.py, data/8 và legacy/2. Data/config/runtime paths cũ giữ nguyên |
+| Hướng dẫn/structure | HUONG_DAN_NHOM.md; root scripts thêm validate_image_ab.py riêng cho diagnostic, data/8 và legacy/2 giữ nguyên. Data/config/runtime paths cũ giữ nguyên |
 
 **Gemma reminder đã đóng:** setup và engineering pilot đã hoàn tất, không
 nhắc như việc pending. Lỗi FP16 NaN/PAD được khắc phục bằng runner BF16 tại
@@ -60,11 +60,16 @@ QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch
 
 ## Việc tiếp theo
 
-Trước final preprocessing, đọc [image pipeline audit 24/11](audits/2026-11-24/image_pipeline_audit.md).
-512 là thumbnail trước VLM, không phải ảnh review; Gemma còn ép 896×896.
-Nhóm cần quyết định kế hoạch sensitivity pilot A–B (30 ảnh, 240 cells,
-repeats/warm-up ghi riêng; C mặc định processor tùy chọn) trước khi thay main.
-Hiện mới đo kích thước/tensor CPU, chưa so prediction/VRAM/latency GPU.
+**Ngày thuyết trình: 03/12/2026**, người dùng xác nhận. Người dùng đã cho phép
+triển khai technical A/B validation trước freeze, một repeat/240 cells nếu
+pilot đủ bốn task; không C/RQ3/RQ4/main. [Report hiện tại](validation/image_ab_v1/report.md):
+30 pilot chỉ RePOPE nên execute bị chặn trước model load. GPU kernel FP16/BF16
+thật đạt nhưng VLM A/B vẫn 0 cells. Đã có harness/20 tests mới và proposal
+6 RePOPE cũ +8 VSR +8 TallyQA +8 Pet ngoài main theo IDs. Tiếp theo nhóm xem
+24 candidates, lấy ảnh/kiểm checksum/dịch và human QA/proof trong manifest
+pilot mới; không sửa main hoặc tạo approved tự động. Tạm giữ A trong draft,
+chưa đủ evidence chuyển B/freeze. Audit cũ có C như đề xuất lịch sử, yêu cầu
+mới chỉ A/B và không chạy C.
 
 0. Nhóm đọc [report tiến độ và phân công 5 người](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md),
    điền tên TV1–TV5 và ghi nhận gói đang review. Bắt đầu các đầu ra làm ngay
@@ -301,3 +306,38 @@ không chạy lại full suite. 396 tests vẫn là v13 ngày 22/11. Stage 1 v�
 IN_PROGRESS, main frozen=false; Gemma engineering pilot cũ đã xong. Bước
 tiếp là nhóm quyết định A/B/C và repeats, rồi mới triển khai harness pilot
 riêng và xác nhận bounded GPU run; tiếp tục nhận JSON main A/B như trước.
+
+### v32 — 24/11/2026: Harness A/B và coverage blocker trước GPU validation
+
+Người dùng cho phép triển khai/chạy A/B kỹ thuật có điều kiện đủ bốn task,
+240 measured cells, không C/main/freeze; xác nhận thuyết trình 03/12/2026.
+Đã kiểm 30/30 approved pilot chỉ RePOPE. Không chạy 240 cells thiếu coverage.
+RTX 3060 Laptop 6 GB, capability 8.6: CUDA matmul FP16 và BF16 thật đạt;
+không gọi VLM, không load/download weights. Hai execute attempts CPU bị
+TASK_COVERAGE_MISSING spatial/counting/fine_grained chặn trước adapter load,
+không tạo run directories. Coverage là blocker, chưa có bằng chứng load/
+OOM/model-access mới. Main gates vẫn 1000 QA pending, chưa frozen/receipt/M3.
+
+Thêm image_ab.py và validate_image_ab.py: kế thừa MainAdapter/loaders/parser/
+prompt renderer, A thumbnail512 so B original với cùng processor instance;
+pilot-only gates/provenance/exclusions, fingerprints, observer shapes/grid,
+raw/parse/correctness/errors, common latency, allocated/reserved baseline/
+peaks, excluded warm-ups và atomic cells. Một repeat, AB/BA xen kẽ, 4 warm-up
+per model; không tự resume/fallback. Analysis giữ paired/four-way-valid
+denominators; metrics hiện null/NOT_RUN, không dùng giả thay GPU evidence.
+
+Proposal metadata cụ thể 6 RePOPE đã QA +8 VSR +8 TallyQA +8 Pet. 24 candidates
+chọn từ pinned frames hiện có, không trùng main/pilot IDs. Chưa acquire ảnh,
+kiểm byte exclusions/dịch/review; cần proof thật trước manifest pilot mới.
+Distribution từ audit 813 ảnh: 352 cạnh dài <=512, 458 từ513–640, 3 >640;
+không chạy/đọc main outputs để chọn policy. Recommendation tạm giữ A trong
+draft do thiếu real GPU evidence cho B, không khẳng định A accuracy cao hơn.
+
+Full suite mới **416 passed/20,77 s**, gồm20 A/B tests. Fake adapter/torch chỉ
+trong pytest tmp để kiểm orchestration, không đưa fake predictions vào report.
+Targeted failures ban đầu về source fixture/proof và Windows codec được sửa,
+suite cuối đạt. Evidence/report/commands ở reports/validation/image_ab_v1/;
+Runtime/configs/human data/main và pilot cũ, raw, ảnh, ZIP, freeze gate giữ nguyên.
+Stage1 vẫn IN_PROGRESS; GPU A/B chưa hoàn thành. Bước tiếp cụ thể: hoàn tất
+ảnh/EN–VI/human QA 24 supplement rồi run240 cells +8 warm-ups và mới đề xuất
+protocol/hashes khác nếu nhóm chọn B; không tự đổi/freeze main config.

@@ -1,0 +1,80 @@
+{
+  "scope": "hardware_kernel_preflight_not_VLM_inference",
+  "environment": {
+    "recorded_at_utc": "2026-11-24T02:22:33.302383+00:00",
+    "python": "3.12.10",
+    "os": "Windows",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "transformers": "4.57.1",
+      "accelerate": "1.11.0",
+      "bitsandbytes": "0.48.2",
+      "qwen-vl-utils": null,
+      "Pillow": "12.3.0",
+      "tokenizers": "0.22.1",
+      "huggingface-hub": "0.36.0",
+      "safetensors": "0.6.2",
+      "numpy": "2.2.6",
+      "sentencepiece": "0.2.1",
+      "protobuf": "6.33.0"
+    },
+    "nvidia_smi_status": "ok",
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+        "total_memory_mib": 6144,
+        "driver_version": "616.87"
+      }
+    ],
+    "missing_core_inference_packages": [],
+    "torch_cuda_runtime_tested": true,
+    "model_weights_downloaded_by_check": false,
+    "status": "runtime_smoke_test_required",
+    "next_step": "Choose the inference environment, pin/install model dependencies there, then test CUDA and model loading on a QA-ready subset"
+  },
+  "torch_version": "2.7.1+cu126",
+  "cuda_build": "12.6",
+  "cuda_available": true,
+  "model_generations": 0,
+  "qwen": {
+    "model": "qwen",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "capability": [
+      8,
+      6
+    ],
+    "precision": "nf4_fp16"
+  },
+  "gemma": {
+    "model": "gemma",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "capability": [
+      8,
+      6
+    ],
+    "precision": "nf4_bf16"
+  },
+  "free_total_memory_bytes": [
+    5379194880,
+    6441926656
+  ],
+  "CUDA_kernels": {
+    "float16": {
+      "matmul_shape": [
+        32,
+        32
+      ],
+      "sum": 32768.0,
+      "passed": true
+    },
+    "bfloat16": {
+      "matmul_shape": [
+        32,
+        32
+      ],
+      "sum": 32768.0,
+      "passed": true
+    }
+  }
+}

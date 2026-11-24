@@ -1,0 +1,28 @@
+{
+  "scope": "verified_against_preexisting_git_HEAD_and_original_audit_image_hashes",
+  "git_HEAD": "5fd83458131894e66457ac87fc8b8cee27a4929f",
+  "old_tracked_git_content_unchanged": 416,
+  "EOL_only_vs_Git_blob": [
+    "notebooks/pilot_colab.ipynb",
+    "notebooks/pilot_kaggle.ipynb"
+  ],
+  "source_images_hash_matched": 813,
+  "allowed_existing_document_updates": [
+    "README.md",
+    "docs/README.md",
+    "reports/README.md",
+    "reports/completion.md",
+    "scripts/README.md"
+  ],
+  "local_links_checked": 103,
+  "main_configs_changed": false,
+  "main_manifests_changed": false,
+  "review_JSON_changed": false,
+  "new_VLM_generations": 0,
+  "frozen_main": false,
+  "new_code_hashes": {
+    "src/vlmbench/image_ab.py": "6c1c5c21da8525a258b7f63267097052a1abdcd795dd7ec6f5a48d72ca377d33",
+    "scripts/validate_image_ab.py": "090b17827255ff157d6cb514cae4f6395e827edbf7d5fad22b516b9964340e3e",
+    "tests/test_image_ab.py": "ca054eeaba62d42aa357061227acb367a9f4c65cba18abf974b0e73d4962a49b"
+  }
+}
