@@ -9,8 +9,8 @@ import pytest
 import yaml
 
 from vlmbench.baseline_contract import (BaselineConfig, MODEL_IDS, PET_LABELS, PromptSet,
-                                       build_plan, inside)
-from vlmbench.baseline_runtime import MainAdapter, Prediction, hub_mode, run_main
+                                       Preprocess, build_plan, inside, smoke_selection)
+from vlmbench.baseline_runtime import MainAdapter, Prediction, hub_mode, run_main, prepare_main_image
 from vlmbench.datasets.candidates import Candidate
 from vlmbench.evaluate import evaluate_run, read_predictions, seal_report
 from vlmbench.io_utils import read_manifest, sha256_file, write_json, write_manifest
@@ -374,3 +374,129 @@ def test_cli_plan_dry_run_preserves_outputs_and_never_imports_torch(project):
     assert run.returncode != 0 and 'blocked' in run.stderr
     probe = 'import sys; from pathlib import Path; from vlmbench.baseline_contract import build_plan; build_plan(Path.cwd(),Path("run.yaml")); assert "torch" not in sys.modules and "transformers" not in sys.modules'
     assert subprocess.run([sys.executable, '-c', probe], cwd=root, capture_output=True).returncode == 0
+
+
+def option_b_project(project):
+    root,path,config=project
+    config['preprocess'].update(policy_id='original_rgb_processor_v1',image_max_edge=None)
+    path.write_text(yaml.safe_dump(config),encoding='utf-8')
+    return root,path,config
+
+
+@pytest.mark.parametrize('policy,edge,valid',[
+    ('rgb_thumbnail_lanczos_v1',512,True),('rgb_thumbnail_lanczos_v1',1024,True),
+    ('rgb_thumbnail_lanczos_v1',None,False),('original_rgb_processor_v1',None,True),
+    ('original_rgb_processor_v1',512,False),('unknown',None,False)])
+def test_preprocessing_policy_has_explicit_resize_semantics(policy,edge,valid):
+    if valid:assert Preprocess(policy_id=policy,image_max_edge=edge).image_max_edge==edge
+    else:
+        with pytest.raises(ValueError):Preprocess(policy_id=policy,image_max_edge=edge)
+
+
+@pytest.mark.parametrize('size,mode',[((1024,768),'RGB'),((1600,160),'RGB'),((31,901),'L'),((19,13),'RGBA'),((1,1),'RGB')])
+def test_option_b_preserves_source_dimensions_RGB_and_bytes(tmp_path,monkeypatch,size,mode):
+    source=tmp_path/'synthetic_only.png';Image.new(mode,size).save(source)
+    before=source.read_bytes()
+    def forbidden(*args,**kwargs):raise AssertionError('Option B must not thumbnail')
+    monkeypatch.setattr(Image.Image,'thumbnail',forbidden)
+    image,original=prepare_main_image(source,Preprocess(policy_id='original_rgb_processor_v1',image_max_edge=None))
+    assert image.mode=='RGB' and image.size==size and original==list(size)
+    assert source.read_bytes()==before
+
+
+def test_historical_A_resize_still_supported(tmp_path):
+    source=tmp_path/'synthetic_only.png';Image.new('RGB',(1600,1200)).save(source)
+    a,original=prepare_main_image(source,Preprocess())
+    assert original==[1600,1200] and a.size==(512,384)
+    a,_=prepare_main_image(source,Preprocess(image_max_edge=1024))
+    assert a.size==(1024,768)
+
+
+def test_B_main_path_both_models_languages_keep_pixels_and_processor_settings(project,adapter,monkeypatch):
+    project=option_b_project(project);root,path,config=project
+    rows=read_manifest(root/'main.csv')
+    expected={}
+    for i,row in enumerate(rows):
+        Image.new('RGB',(1000+i,700+i),(i*20,40,80)).save(root/row.image_path)
+        row.image_sha256=sha256_file(root/row.image_path)
+        expected[row.sample_id]=(1000+i,700+i)
+    write_manifest(root/'main.csv',rows)
+    frozen=freeze_synthetic(project)
+    def forbidden(*args,**kwargs):raise AssertionError('Main B must skip thumbnail')
+    monkeypatch.setattr(Image.Image,'thumbnail',forbidden)
+    seen=[]
+    class Observe(adapter):
+        def generate(self,image,prompt):
+            seen.append((image.mode,image.size))
+            return super().generate(image,prompt)
+    for alias in ('qwen','gemma'):
+        opts=options(frozen,Observe);opts.update(alias=alias,output=f'results/main/synthetic_test_only/{alias}.jsonl')
+        assert run_main(**opts)['valid']==10
+        records=read_predictions(root/opts['output'])
+        for record in records:
+            assert tuple(record['original_image_size_wh'])==expected[record['sample_id']]
+            assert record['original_image_size_wh']==record['processor_input_size_wh']
+            assert record['image_preprocess']['policy_id']=='original_rgb_processor_v1'
+            assert record['image_preprocess']['image_max_edge'] is None
+        routed=MainAdapter(frozen,alias,offline=True)
+        assert routed.adapter.config.qwen_min_pixels==200704 and routed.adapter.config.qwen_max_pixels==401408
+        assert routed.adapter.config.precision==('nf4_fp16' if alias=='qwen' else 'nf4_bf16')
+        assert frozen.protocol['processor_policy'][alias]==({'min_pixels':200704,'max_pixels':401408,'use_fast':'checkpoint_default'}
+            if alias=='qwen' else {'do_pan_and_scan':False,'use_fast':False})
+    assert len(seen)==20 and all(mode=='RGB' and width>512 for mode,(width,height) in seen)
+
+
+def test_B_changes_protocol_not_data_grid_or_ground_truth(project):
+    root,path,config=project;a=build_plan(root,path)
+    option_b_project(project);b=build_plan(root,path)
+    assert a.protocol_hash!=b.protocol_hash
+    assert a.protocol['grid_sha256']==b.protocol['grid_sha256']
+    assert [r.model_dump() for r in a.rows]==[r.model_dump() for r in b.rows]
+    assert a.config.models==b.config.models and a.config.generation==b.config.generation
+
+
+def test_B_QA_freeze_and_smoke_gates_still_block_before_runtime(project,adapter):
+    root,path,config=option_b_project(project);selected=build_plan(root,path)
+    def forbidden():raise AssertionError('No GPU environment before gates')
+    with pytest.raises(ValueError,match='blocked'):
+        run_main(**{**options(selected,adapter),'environment_provider':forbidden},smoke_per_task=1)
+    assert not (root/'results').exists()
+    dry=run_main(**{**options(selected,adapter),'execute':False},smoke_per_task=1)
+    assert dry['bounded_smoke']['expected_cells_per_model']==8 and dry['expected_inferences']==10
+
+
+def test_four_task_bounded_smoke_leaves_full_grid_and_cannot_resume_as_full(project,adapter):
+    selected=freeze_synthetic(option_b_project(project))
+    chosen=smoke_selection(selected,1)
+    assert len(chosen['tasks'])==4 and chosen['expected_cells_both_models']==16
+    assert len(selected.cells)==20
+    for alias in ('qwen','gemma'):
+        opts=options(selected,adapter);opts.update(alias=alias,output=f'results/main/synthetic_test_only/{alias}.jsonl')
+        result=run_main(**opts,smoke_per_task=1)
+        assert result['valid']==8 and result['missing']==2
+        assert result['bounded_smoke']['missing_smoke_cells']==0
+        records=read_predictions(selected.root/opts['output'])
+        assert {r['task'] for r in records}=={'object_existence','spatial','counting','fine_grained'}
+        assert {r['language'] for r in records}=={'en','vi'}
+        assert run_main(**opts,smoke_per_task=1,resume=True)['generation_calls_this_invocation']==0
+        with pytest.raises(ValueError,match='metadata differs'):run_main(**opts,resume=True)
+    with pytest.raises(ValueError,match='truncate'):run_main(**options(selected,adapter),smoke_per_task=1,max_cells=1)
+    with pytest.raises(ValueError):smoke_selection(selected,0)
+
+
+def test_A_prediction_without_new_size_fields_remains_readable(project,adapter):
+    selected=freeze_synthetic(project);opts=options(selected,adapter)
+    run_main(**opts,max_cells=1)
+    record=json.loads((selected.root/opts['output']).read_text(encoding='utf-8').splitlines()[0])
+    record.pop('original_image_size_wh');record.pop('processor_input_size_wh')
+    assert Prediction.model_validate(record).valid
+
+
+def test_cli_defaults_to_B_candidate_without_execution(tmp_path):
+    command=[sys.executable,str(REPO/'scripts/run_main.py'),'plan','--report',str(tmp_path/'outside.json')]
+    # A default CPU plan may write only within the repository; inspect stdout with no output argument.
+    result=subprocess.run(command[:3],cwd=REPO,capture_output=True,text=True)
+    assert result.returncode==0,result.stderr
+    data=json.loads(result.stdout)
+    assert 'configs/baseline_v3_option_b_v1.yaml' in data['inputs_sha256']
+    assert data['expected_inferences']==4000 and not data['execution_ready']

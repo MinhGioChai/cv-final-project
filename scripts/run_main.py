@@ -3,7 +3,7 @@ import argparse
 import json
 from pathlib import Path
 
-from vlmbench.baseline_contract import build_plan, inside
+from vlmbench.baseline_contract import build_plan, inside, smoke_selection
 from vlmbench.baseline_runtime import run_main
 from vlmbench.io_utils import atomic_bytes, write_json
 
@@ -11,7 +11,7 @@ from vlmbench.io_utils import atomic_bytes, write_json
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=['plan', 'run'], nargs='?', default='plan')
-    parser.add_argument('--config', default='configs/baseline_v3_draft.yaml')
+    parser.add_argument('--config', default='configs/baseline_v3_option_b_v1.yaml')
     parser.add_argument('--report', help='New preflight report path (plan only)')
     parser.add_argument('--grid-output', help='New full grid JSONL under results/ (plan only)')
     parser.add_argument('--model', choices=['qwen', 'gemma'], default='qwen')
@@ -24,6 +24,7 @@ def main(argv=None):
     parser.add_argument('--resume', action='store_true')
     parser.add_argument('--retry-failed', action='store_true')
     parser.add_argument('--max-cells', type=int)
+    parser.add_argument('--smoke-per-task', type=int, choices=[1, 2], help='Bounded smoke with both languages for each of four tasks; full QA/freeze gates still required')
     parser.add_argument('--online', action='store_true', help='Permit Hub download only on explicit execution')
     args = parser.parse_args(argv)
     root = Path.cwd().resolve()
@@ -39,6 +40,8 @@ def main(argv=None):
     plan = build_plan(root, args.config)
     if args.action == 'plan':
         result = plan.summary()
+        if args.smoke_per_task is not None:
+            result['bounded_smoke'] = smoke_selection(plan, args.smoke_per_task)
         if args.report: write_json(inside(root, args.report), result)
         if args.grid_output:
             atomic_bytes(inside(root, args.grid_output), ''.join(c.model_dump_json() + '\n' for c in plan.cells).encode('utf-8'))
@@ -46,7 +49,7 @@ def main(argv=None):
         output = args.output or f'results/main/{args.platform}/{args.run_id}/{args.model}.jsonl'
         result = run_main(plan, alias=args.model, run_id=args.run_id, platform_name=args.platform, output=output,
             execute=args.execute, resume=args.resume, retry_failed=args.retry_failed, offline=not args.online,
-            max_cells=args.max_cells)
+            max_cells=args.max_cells, smoke_per_task=args.smoke_per_task)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0
 

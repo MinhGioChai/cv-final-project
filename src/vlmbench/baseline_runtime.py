@@ -13,7 +13,7 @@ from typing import Literal, Self
 from PIL import Image
 from pydantic import Field, StrictInt, model_validator
 
-from .baseline_contract import Hex40, Hex64, StrictModel, build_plan, inside
+from .baseline_contract import Hex40, Hex64, StrictModel, build_plan, inside, smoke_selection
 from .environment import inspect_environment
 from .gemma_diagnostic import GemmaTraceAdapter
 from .io_utils import atomic_bytes, sha256_file, write_json
@@ -65,7 +65,7 @@ class Prediction(StrictModel):
     recorded_at_utc: str
     qa_status: Literal['approved']
     translation_status: Literal['approved']
-    scope: Literal['main_baseline', 'synthetic_test_only']
+    scope: Literal['main_baseline', 'main_gpu_smoke', 'synthetic_test_only']
     attempt: int = Field(ge=1)
     raw_response: str | None = None
     parsed_prediction: str | StrictInt | None = None
@@ -79,9 +79,17 @@ class Prediction(StrictModel):
     peak_allocated_mib: float | None = Field(default=None, ge=0)
     generation_trace: dict | None = None
     error: dict[str, str] | None = None
+    original_image_size_wh: list[StrictInt] | None = Field(default=None, min_length=2, max_length=2)
+    processor_input_size_wh: list[StrictInt] | None = Field(default=None, min_length=2, max_length=2)
 
     @model_validator(mode='after')
     def semantics(self) -> Self:
+        for size in (self.original_image_size_wh, self.processor_input_size_wh):
+            if size is not None and any(value < 1 for value in size):
+                raise ValueError('Image dimensions must be positive')
+        if self.image_preprocess.get('policy_id') == 'original_rgb_processor_v1' and self.run_status == 'success':
+            if self.original_image_size_wh is None or self.processor_input_size_wh != self.original_image_size_wh:
+                raise ValueError('Option B processor input must retain source dimensions')
         if self.run_status == 'success':
             if self.raw_response is None:
                 raise ValueError('A successful generation requires a raw text response')
@@ -182,9 +190,21 @@ def _history(output, cells, expected):
     return records, by_key
 
 
+def prepare_main_image(path, preprocess):
+    """Decode/RGB once; only historical Option A adds a thumbnail. Never writes source bytes."""
+    with Image.open(path) as original:
+        original_wh = list(original.size)
+        image = original.convert('RGB')
+    if preprocess.policy_id == 'rgb_thumbnail_lanczos_v1':
+        image.thumbnail((preprocess.image_max_edge,) * 2, Image.Resampling.LANCZOS)
+    elif preprocess.policy_id != 'original_rgb_processor_v1':
+        raise ValueError('Unknown main preprocessing policy')
+    return image, original_wh
+
+
 def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resume=False,
              retry_failed=False, offline=True, max_cells=None, adapter_factory=None,
-             synthetic_test_only=False, environment_provider=inspect_environment):
+             synthetic_test_only=False, environment_provider=inspect_environment, smoke_per_task=None):
     if alias not in plan.config.models or platform_name not in {'local', 'colab', 'kaggle'}:
         raise ValueError('Choose qwen/gemma and local/colab/kaggle')
     if not re.fullmatch(r'[A-Za-z0-9_-]{1,80}', run_id):
@@ -194,15 +214,19 @@ def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resum
         raise ValueError('New baseline output must be JSONL under results/main')
     if max_cells is not None and (type(max_cells) is not int or max_cells < 1):
         raise ValueError('max_cells must be a positive explicit execution bound')
+    bounded = smoke_selection(plan, smoke_per_task) if smoke_per_task is not None else None
+    if bounded and max_cells is not None:
+        raise ValueError('Do not truncate the four-task smoke with max_cells')
     cells = [c for c in plan.cells if c.model == alias]
     if not execute:
-        return {**plan.summary(), 'dry_run': True, 'model': alias,
+        return {**plan.summary(), **({'bounded_smoke': bounded} if bounded else {}), 'dry_run': True, 'model': alias,
                 'expected_inferences': len(cells), 'sample_ids': [r.sample_id for r in plan.rows]}
     # Rebuild from source before heavy imports: never trust a mutated/stale plan object.
     fresh = build_plan(plan.root, plan.config_path)
     if fresh.protocol_hash != plan.protocol_hash:
         raise ValueError('Plan is stale; input/config/code changed since preflight')
     plan = fresh
+    bounded = smoke_selection(plan, smoke_per_task) if smoke_per_task is not None else None
     cells = [c for c in plan.cells if c.model == alias]
     if plan.issues:
         raise ValueError('Main execution blocked: ' + ', '.join(sorted({i['code'] for i in plan.issues})))
@@ -213,10 +237,12 @@ def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resum
     spec = plan.config.models[alias]
     environment = environment_provider()
     code = code_state(plan.root)
-    scope = 'synthetic_test_only' if synthetic_test_only else 'main_baseline'
+    scope = 'synthetic_test_only' if synthetic_test_only else 'main_gpu_smoke' if bounded else 'main_baseline'
     identity = {'protocol_hash': plan.protocol_hash, 'model': alias, 'platform': platform_name, 'run_id': run_id,
         'scope': scope, 'freeze_sha256': plan.freeze_sha256, **code,
         'environment': {k: environment[k] for k in ('python', 'os', 'packages', 'gpus')}}
+    if bounded:
+        identity['bounded_smoke'] = bounded
     run_hash = canonical_hash(identity)
     expected = {}
     by_id = {r.sample_id: r for r in plan.rows}
@@ -256,8 +282,13 @@ def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resum
     elif output.exists() or summary_path.exists():
         raise ValueError('Prediction metadata is missing; restore it before resume')
     records, by_key = _history(output, cells, expected)
+    allowed_smoke = {c.cell_id for c in cells if bounded and c.sample_id in bounded['sample_ids']}
+    if bounded and any(r['cell_id'] not in allowed_smoke for r in records):
+        raise ValueError('Checkpoint contains cells outside bounded smoke selection')
     pending = [c for c in cells if not by_key[c.cell_id] or
                (retry_failed and by_key[c.cell_id][-1]['run_status'] == 'failed')]
+    if bounded:
+        pending = [c for c in pending if c.cell_id in allowed_smoke]
     if max_cells is not None:
         pending = pending[:max_cells]
     if not meta_path.exists():
@@ -266,6 +297,7 @@ def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resum
             'expected_inferences': len(cells), 'selected_rows': len(plan.rows),
             'sample_ids': [r.sample_id for r in plan.rows], 'offline_at_creation': offline})
     adapter = None
+    processor_observer = None
     stop_reason = None
     calls = 0
     try:
@@ -273,6 +305,11 @@ def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resum
             adapter = adapter_factory(plan, alias, offline) if adapter_factory else MainAdapter(plan, alias, offline)
             try:
                 adapter.load_model()
+                if adapter_factory is None:
+                    # Reuse the diagnostic's tested pass-through observer, only for main execution.
+                    from .image_ab import ObservedProcessor
+                    processor_observer = ObservedProcessor(adapter.adapter.processor)
+                    adapter.adapter.processor = processor_observer
             except Exception as exc:
                 write_json(output.with_suffix('.load_error.json'), {'phase': 'model_load',
                     'error': safe_error(exc), 'protocol_hash': plan.protocol_hash, 'run_config_hash': run_hash})
@@ -281,14 +318,26 @@ def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resum
             row = by_id[cell.sample_id]
             record = {**expected[cell.cell_id], 'recorded_at_utc': datetime.now(timezone.utc).isoformat(),
                 'attempt': len(by_key[cell.cell_id]) + 1, 'run_status': 'failed', 'invalid_reason': 'GENERATION_FAILED'}
+            memory_before = None
+            if processor_observer is not None:
+                processor_observer.last = {}
             try:
                 if sha256_file(inside(plan.root, row.image_path)) != row.image_sha256:
                     raise ValueError('Image bytes changed after preflight')
-                with Image.open(inside(plan.root, row.image_path)) as original:
-                    image = original.convert('RGB')
-                image.thumbnail((plan.config.preprocess.image_max_edge,) * 2, Image.Resampling.LANCZOS)
+                image, original_wh = prepare_main_image(inside(plan.root, row.image_path), plan.config.preprocess)
+                record.update(original_image_size_wh=original_wh, processor_input_size_wh=list(image.size))
                 calls += 1
+                if processor_observer is not None:
+                    cuda = adapter.adapter.torch.cuda
+                    memory_before = {'allocated_mib': cuda.memory_allocated(0) / 1024 ** 2,
+                                     'reserved_mib': cuda.memory_reserved(0) / 1024 ** 2}
                 raw_result = adapter.generate(image, cell.prompt_text)
+                if processor_observer is not None and isinstance(raw_result, dict):
+                    trace = dict(raw_result.get('generation_trace') or {})
+                    trace['image_processor_observation'] = processor_observer.last
+                    trace['gpu_memory'] = {'before': memory_before,
+                        'peak_reserved_mib': cuda.max_memory_reserved(0) / 1024 ** 2}
+                    raw_result['generation_trace'] = trace
                 # Retain raw text even if the adapter's diagnostic fields fail validation.
                 if isinstance(raw_result, dict) and isinstance(raw_result.get('raw_response'), str):
                     record['raw_response'] = raw_result['raw_response']
@@ -306,6 +355,15 @@ def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resum
             except Exception as exc:
                 record.update(run_status='failed', parsed_prediction=None, parse_status='not_attempted',
                     parse_reason=None, valid=False, used_alias=False, invalid_reason='GENERATION_FAILED', error=safe_error(exc))
+                if processor_observer is not None:
+                    trace = dict(record.get('generation_trace') or {})
+                    trace['image_processor_observation'] = processor_observer.last
+                    try:
+                        trace['gpu_memory'] = {'before': memory_before,
+                            'peak_reserved_mib': adapter.adapter.torch.cuda.max_memory_reserved(0) / 1024 ** 2}
+                    except Exception as memory_exc:
+                        trace['memory_observation_error'] = safe_error(memory_exc)
+                    record['generation_trace'] = trace
                 # NaN diagnostic tensors must not corrupt JSONL; keep finite trace summaries.
                 for key in ('elapsed_ms', 'peak_allocated_mib', 'generation_trace'):
                     try: json.dumps(record.get(key), allow_nan=False)
@@ -329,5 +387,9 @@ def run_main(plan, *, alias, run_id, platform_name, output, execute=False, resum
         'sample_ids': [r.sample_id for r in plan.rows], 'valid': counts['valid'], 'invalid': counts['invalid'],
         'failed': counts['failed'], 'missing': len(cells) - len(latest), 'generation_calls_this_invocation': calls,
         'total_attempts_in_file': len(records), 'stop_reason': stop_reason}
+    if bounded:
+        smoke_latest = [r for r in latest if r['cell_id'] in allowed_smoke]
+        summary['bounded_smoke'] = {**bounded, 'recorded_cells': len(smoke_latest),
+            'missing_smoke_cells': len(allowed_smoke) - len(smoke_latest)}
     write_json(summary_path, summary)
     return summary

@@ -52,13 +52,17 @@ class Generation(StrictModel):
 
 
 class Preprocess(StrictModel):
-    policy_id: Literal['rgb_thumbnail_lanczos_v1'] = 'rgb_thumbnail_lanczos_v1'
-    image_max_edge: int = Field(default=512, ge=224, le=1024)
+    policy_id: Literal['rgb_thumbnail_lanczos_v1', 'original_rgb_processor_v1'] = 'rgb_thumbnail_lanczos_v1'
+    image_max_edge: int | None = Field(default=512, ge=224, le=1024)
     qwen_min_pixels: int = Field(default=200704, ge=784)
     qwen_max_pixels: int = Field(default=401408, ge=784)
 
     @model_validator(mode='after')
     def bounds(self) -> Self:
+        if self.policy_id == 'original_rgb_processor_v1' and self.image_max_edge is not None:
+            raise ValueError('Option B requires image_max_edge=null: no manual resize before processor')
+        if self.policy_id == 'rgb_thumbnail_lanczos_v1' and self.image_max_edge is None:
+            raise ValueError('Historical thumbnail policy requires image_max_edge')
         if self.qwen_min_pixels > self.qwen_max_pixels:
             raise ValueError('Invalid Qwen pixel bounds')
         return self
@@ -198,6 +202,22 @@ class BaselinePlan:
             'model_inferences': 0, 'new_human_approvals': 0}
 
 
+def smoke_selection(plan, per_task):
+    """Stable bounded four-task engineering selection; never changes the full grid or gates."""
+    if type(per_task) is not int or per_task not in (1, 2):
+        raise ValueError('smoke_per_task must be 1 or 2')
+    selected = []
+    for task in TASKS.values():
+        rows = sorted((r for r in plan.rows if r.task == task), key=lambda r: r.sample_id)
+        if len(rows) < per_task:
+            raise ValueError('Not enough rows for smoke task: ' + task)
+        selected.extend(rows[:per_task])
+    return {'scope': 'bounded_main_gpu_smoke_after_QA_and_freeze', 'per_task': per_task,
+        'sample_ids': sorted(r.sample_id for r in selected),
+        'tasks': dict(Counter(r.task for r in selected)),
+        'expected_cells_per_model': len(selected) * 2, 'expected_cells_both_models': len(selected) * 4}
+
+
 def build_plan(root, config_path):
     root = root.resolve()
     config_path = inside(root, config_path)
@@ -256,7 +276,7 @@ def build_plan(root, config_path):
     source_files = [Path(__file__).with_name(name + '.py') for name in (
         'baseline_contract', 'baseline_runtime', 'parse', 'pilot_runtime', 'gemma_diagnostic',
         'main_review_v2', 'main_review', 'translate', 'qa', 'schemas', 'io_utils', 'reviews',
-        'environment', 'pilot_launcher')]
+        'environment', 'pilot_launcher', 'image_ab')]
     protocol = {'schema_version': 'baseline_protocol_v1', 'settings': config.model_dump(),
         'prompt_version': prompts.prompt_version, 'inputs_sha256': {p.relative_to(root).as_posix(): sha256_file(p) for p in inputs},
         'implementation_sha256': {p.name: sha256_file(p) for p in source_files},
