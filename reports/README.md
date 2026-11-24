@@ -3,7 +3,8 @@
 | Cần xem | File hoặc thư mục |
 |---|---|
 | Trạng thái hiện tại và context qua phiên | [completion.md](completion.md) |
-| A/B preprocessing trước freeze | [Validation report](validation/image_ab_v1/report.md), [GPU kernel check](validation/image_ab_v1/gpu_kernel_preflight.json); chưa có VLM A/B vì thiếu task coverage |
+| Full validation bốn task v1 | [Report lịch sử](validation/image_ab_v1/report.md), [GPU kernel check](validation/image_ab_v1/gpu_kernel_preflight.json); còn thiếu task coverage, độc lập diagnostic mới |
+| RePOPE-only diagnostic mới | [Report](validation/repope_image_ab_v1/report.md), [metrics](validation/repope_image_ab_v1/metrics.json); 30 ảnh/240 cells GPU thật, độc lập full validation và M3 |
 | Baseline metadata, runner main và CPU grid 4.000 cells | [Stage 1 v13](stage1/v13/completion.md), [plan](stage1/v13/draft_plan.json) |
 | Một hướng dẫn để hiểu project/tham gia/push | [Hướng dẫn nhóm](../HUONG_DAN_NHOM.md) |
 | Rerun pilot local/Colab/Kaggle hiện tại | [Stage 1 v11](stage1/v11/completion.md), [dry-runs](stage1/v11/dry_runs.json) |

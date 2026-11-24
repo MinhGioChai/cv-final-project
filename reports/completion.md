@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v32 · 24/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v33 · 24/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -39,11 +39,12 @@
 | Qwen pilot | 10 ảnh × EN/VI =20 lượt thật, NF4/FP16, valid 20/20; [v4](stage1/v4/completion.md) |
 | Gemma pilot | Cùng 10 ảnh/20 lượt, NF4/BF16, valid 20/20, resume giữ hash; [v7](stage1/v7/completion.md) |
 | Pilot QA | 30 translation approved; JSON người dùng được import ngày 20/11, 30 image/label QA approved; `data/pilot/stage1_qa_v1/pilot_manifest.csv` |
+| RePOPE A/B diagnostic | 30 ảnh QA-approved,240 measured GPU cells valid,0 failed/OOM/missing;48 cells Phase1 reuse +192 mới,16 warm-up riêng. [Report](validation/repope_image_ab_v1/report.md), không phải validation bốn task/M3 |
 | Main drafts | Đủ ảnh/EN–VI nháp cho 1.000 row, 783 JPEG/hash khác nhau; source và ID/byte leakage checks đạt; tất cả main requires_review/QA pending |
 | Review main | 22 gói v2 tối đa 50 câu; A/B mỗi người kiểm dịch và ảnh/nhãn, một JSON cuối/gói; chưa có main human import |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
 | Baseline main v1 | Metadata/config/record schemas, prompt routing bốn task, CPU grid 4.000 cells và gated runner/resume/error đã có; adapters reuse, chưa main GPU inference/freeze |
-| Tests | Ngày 24/11 full suite 416 passed/20,77 s, thêm20 A/B tests; fake adapters chỉ software tests. CUDA kernel FP16/BF16 thật đạt, chưa VLM A/B/main GPU hoặc visual browser QA |
+| Tests | Ngày24/11 full suite423 passed/23,60s sau measurement, thêm7 diagnostic tests (27 A/B tests tổng); [receipt/JUnit](validation/repope_image_ab_v1/software_checks.json). Main GPU/visual browser QA chưa làm |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
 | Hướng dẫn/structure | HUONG_DAN_NHOM.md; root scripts thêm validate_image_ab.py riêng cho diagnostic, data/8 và legacy/2 giữ nguyên. Data/config/runtime paths cũ giữ nguyên |
@@ -61,15 +62,18 @@ QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch
 ## Việc tiếp theo
 
 **Ngày thuyết trình: 03/12/2026**, người dùng xác nhận. Người dùng đã cho phép
-triển khai technical A/B validation trước freeze, một repeat/240 cells nếu
-pilot đủ bốn task; không C/RQ3/RQ4/main. [Report hiện tại](validation/image_ab_v1/report.md):
-30 pilot chỉ RePOPE nên execute bị chặn trước model load. GPU kernel FP16/BF16
-thật đạt nhưng VLM A/B vẫn 0 cells. Đã có harness/20 tests mới và proposal
-6 RePOPE cũ +8 VSR +8 TallyQA +8 Pet ngoài main theo IDs. Tiếp theo nhóm xem
-24 candidates, lấy ảnh/kiểm checksum/dịch và human QA/proof trong manifest
-pilot mới; không sửa main hoặc tạo approved tự động. Tạm giữ A trong draft,
-chưa đủ evidence chuyển B/freeze. Audit cũ có C như đề xuất lịch sử, yêu cầu
-mới chỉ A/B và không chạy C.
+**REPOPE_ONLY_DIAGNOSTIC độc lập**: không cần chờ QA 24 supplement để chạy
+mọi A/B. Full validation vẫn cần bốn task; diagnostic không hoàn thành M3.
+Phase1 có [48 measured cells thật](validation/repope_image_ab_v1/phase1_metrics.json),
+Phase2 reuse48 +192 mới, tổng30 ảnh/240 cells valid,16 warm-up riêng;0 invalid/
+failed/OOM/missing. [Report và recommendation](validation/repope_image_ab_v1/report.md)
+đề xuất B vì giữ chi tiết đến processor với chi phí quan sát được chấp nhận
+cho diagnostic; không chọn bằng Accuracy. Chờ nhóm phê duyệt, main config
+vẫn A/frozen=false. Source/provenance/hash/exclusion/human QA gates giữ nguyên.
+Ưu tiên vẫn main QA → protocol freeze → main GPU smoke → main inference;
+không C/RQ3/RQ4/main run hoặc tự đổi/freeze config. Raw private ZIP:
+exports/repope_image_ab_diagnostic_v1.zip, receipt/hash ở report; không cần
+chạy lại diagnostic khi resume nếu không có thay đổi cấu hình hoặc blocker mới.
 
 0. Nhóm đọc [report tiến độ và phân công 5 người](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md),
    điền tên TV1–TV5 và ghi nhận gói đang review. Bắt đầu các đầu ra làm ngay
@@ -341,3 +345,39 @@ Runtime/configs/human data/main và pilot cũ, raw, ảnh, ZIP, freeze gate gi�
 Stage1 vẫn IN_PROGRESS; GPU A/B chưa hoàn thành. Bước tiếp cụ thể: hoàn tất
 ảnh/EN–VI/human QA 24 supplement rồi run240 cells +8 warm-ups và mới đề xuất
 protocol/hashes khác nếu nhóm chọn B; không tự đổi/freeze main config.
+
+### v33 — 24/11/2026: RePOPE diagnostic được tách khỏi full validation
+
+Người dùng cho phép mode riêng, Phase1 6 ảnh/48 cells rồi mở rộng30/240cells
+tổng nếu khả thi; ưu tiên reuse tương thích. Full-mode bốn task và M3 không
+thay đổi. Đã thêm diagnostic_plan/run, QA import row-hash/manifest binding,
+upstream source auditor offline, registry/main ID+SHA exclusions. Fingerprint
+chung qua phases, check environment/code/settings/processor trước generation
+mới; raw/reuse receipts giữ nguồn từng cell. Giữ lịch sử report v1 nguyên vẹn.
+
+Phase1 GPU thật: Qwen24/24, Gemma24/24 valid;8 warm-up riêng. Phase2 reuse
+48 measured cells, thêm96/model, đủ240 measured/30 ảnh,16 warm-up tổng;
+0 invalid/failed/OOM/missing. Raw ở results/pilot/repope_image_ab_v1/phase1/
+và phase2/, reuse receipts và analyzer đối chiếu source/row/image/prompt/
+runtime hashes. Raw giữ HEAD0a910e6/code_dirty=true và implementation hashes
+thực lúc chạy; không gán ngược commit công bố mới vào raw.
+
+Qwen p50 A540,6/B650,3ms, peak allocated2539,3/2804,5MiB; flips EN2/VI3,
+correctness57/60→54/60. Gemma p50 A12164,4/B12102,7ms, allocated5720,9/
+reserved6332MiB cả A/B; flips EN1/VI0, correctness53/60→54/60. EN–VI
+disagreements3→2/30 ở mỗi model. Đây là RePOPE pilot one-repeat, không claim
+accuracy gain/significance hoặc bốn task. Reserved không phải physical
+residency; main smoke vẫn cần kiểm tài nguyên thật.
+
+Recommendation B chỉ đề xuất: bỏ resampling dư, cost Qwen+20,3% p50 và
++265,2MiB, không lợi ích VRAM từ512 ở Gemma. Chờ nhóm duyệt policy/version/
+hashes mới, không sửa/freeze main. Full validation gate giữ nguyên. Full
+suite423 passed/23,60s,27 A/B tests gồm7 mới, sau khi GPUmeasurement kết thúc.
+Giữ813 source hashes và430 Git files ngoài các file được phép sửa; v1 reports,
+QA JSON/manifests/configs/legacy runners/history không đổi. Private ZIPraw
+không ảnh/weights/tokens, metrics/report/receipts ở report mới.
+
+Diagnostic đã hoàn tất phạm vi30 RePOPE; Stage1/M1 vẫn IN_PROGRESS, M2chưa
+freeze, M3NOT_RUN. Tiếp theo nhóm chốt A/B, hoàn tất main human QA/import,
+tạo final config/protocol/receipt mới rồi bounded main GPU smoke bốn task;
+không chạy lại pilot vô cớ hoặc trì hoãn main để mở thêm diagnostic.

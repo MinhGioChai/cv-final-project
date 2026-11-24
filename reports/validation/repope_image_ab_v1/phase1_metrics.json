@@ -1,0 +1,353 @@
+{
+  "scope": "real_GPU_records_only",
+  "expected": 48,
+  "recorded": 48,
+  "missing": 0,
+  "metrics": [
+    {
+      "model": "qwen",
+      "task": "object_existence",
+      "language": "en",
+      "branch": "A",
+      "expected": 6,
+      "recorded": 6,
+      "missing": 0,
+      "valid": 6,
+      "invalid": 0,
+      "failed": 0,
+      "oom": 0,
+      "correct": 6,
+      "accuracy_all_expected": 1.0,
+      "latency_p50_ms": 597.5373999681324,
+      "latency_p95_ms": 789.1514499497134,
+      "peak_allocated_mib": 2483.388671875,
+      "peak_reserved_mib": 2966.0
+    },
+    {
+      "model": "qwen",
+      "task": "object_existence",
+      "language": "en",
+      "branch": "B",
+      "expected": 6,
+      "recorded": 6,
+      "missing": 0,
+      "valid": 6,
+      "invalid": 0,
+      "failed": 0,
+      "oom": 0,
+      "correct": 4,
+      "accuracy_all_expected": 0.6666666666666666,
+      "latency_p50_ms": 663.4749500080943,
+      "latency_p95_ms": 903.1893500068691,
+      "peak_allocated_mib": 2638.54931640625,
+      "peak_reserved_mib": 2966.0
+    },
+    {
+      "model": "qwen",
+      "task": "object_existence",
+      "language": "vi",
+      "branch": "A",
+      "expected": 6,
+      "recorded": 6,
+      "missing": 0,
+      "valid": 6,
+      "invalid": 0,
+      "failed": 0,
+      "oom": 0,
+      "correct": 5,
+      "accuracy_all_expected": 0.8333333333333334,
+      "latency_p50_ms": 585.7829500455409,
+      "latency_p95_ms": 652.7235500107054,
+      "peak_allocated_mib": 2483.388671875,
+      "peak_reserved_mib": 2966.0
+    },
+    {
+      "model": "qwen",
+      "task": "object_existence",
+      "language": "vi",
+      "branch": "B",
+      "expected": 6,
+      "recorded": 6,
+      "missing": 0,
+      "valid": 6,
+      "invalid": 0,
+      "failed": 0,
+      "oom": 0,
+      "correct": 4,
+      "accuracy_all_expected": 0.6666666666666666,
+      "latency_p50_ms": 696.2389000691473,
+      "latency_p95_ms": 776.5856250189245,
+      "peak_allocated_mib": 2638.54931640625,
+      "peak_reserved_mib": 2966.0
+    },
+    {
+      "model": "gemma",
+      "task": "object_existence",
+      "language": "en",
+      "branch": "A",
+      "expected": 6,
+      "recorded": 6,
+      "missing": 0,
+      "valid": 6,
+      "invalid": 0,
+      "failed": 0,
+      "oom": 0,
+      "correct": 5,
+      "accuracy_all_expected": 0.8333333333333334,
+      "latency_p50_ms": 10754.396950011142,
+      "latency_p95_ms": 22242.576149990782,
+      "peak_allocated_mib": 5720.9345703125,
+      "peak_reserved_mib": 6332.0
+    },
+    {
+      "model": "gemma",
+      "task": "object_existence",
+      "language": "en",
+      "branch": "B",
+      "expected": 6,
+      "recorded": 6,
+      "missing": 0,
+      "valid": 6,
+      "invalid": 0,
+      "failed": 0,
+      "oom": 0,
+      "correct": 5,
+      "accuracy_all_expected": 0.8333333333333334,
+      "latency_p50_ms": 10383.20494996151,
+      "latency_p95_ms": 15050.679850042798,
+      "peak_allocated_mib": 5720.9345703125,
+      "peak_reserved_mib": 6332.0
+    },
+    {
+      "model": "gemma",
+      "task": "object_existence",
+      "language": "vi",
+      "branch": "A",
+      "expected": 6,
+      "recorded": 6,
+      "missing": 0,
+      "valid": 6,
+      "invalid": 0,
+      "failed": 0,
+      "oom": 0,
+      "correct": 5,
+      "accuracy_all_expected": 0.8333333333333334,
+      "latency_p50_ms": 11499.389149947092,
+      "latency_p95_ms": 16853.4162750002,
+      "peak_allocated_mib": 5720.9345703125,
+      "peak_reserved_mib": 6332.0
+    },
+    {
+      "model": "gemma",
+      "task": "object_existence",
+      "language": "vi",
+      "branch": "B",
+      "expected": 6,
+      "recorded": 6,
+      "missing": 0,
+      "valid": 6,
+      "invalid": 0,
+      "failed": 0,
+      "oom": 0,
+      "correct": 5,
+      "accuracy_all_expected": 0.8333333333333334,
+      "latency_p50_ms": 10592.746450041886,
+      "latency_p95_ms": 21458.539500046754,
+      "peak_allocated_mib": 5720.9345703125,
+      "peak_reserved_mib": 6332.0
+    }
+  ],
+  "AB_comparisons": [
+    {
+      "model": "qwen",
+      "task": "object_existence",
+      "language": "en",
+      "jointly_valid_AB": 6,
+      "prediction_flips": 2,
+      "A_correct_B_incorrect": 2,
+      "A_incorrect_B_correct": 0
+    },
+    {
+      "model": "qwen",
+      "task": "object_existence",
+      "language": "vi",
+      "jointly_valid_AB": 6,
+      "prediction_flips": 1,
+      "A_correct_B_incorrect": 1,
+      "A_incorrect_B_correct": 0
+    },
+    {
+      "model": "gemma",
+      "task": "object_existence",
+      "language": "en",
+      "jointly_valid_AB": 6,
+      "prediction_flips": 0,
+      "A_correct_B_incorrect": 0,
+      "A_incorrect_B_correct": 0
+    },
+    {
+      "model": "gemma",
+      "task": "object_existence",
+      "language": "vi",
+      "jointly_valid_AB": 6,
+      "prediction_flips": 0,
+      "A_correct_B_incorrect": 0,
+      "A_incorrect_B_correct": 0
+    }
+  ],
+  "EN_VI_consistency": [
+    {
+      "model": "qwen",
+      "task": "object_existence",
+      "four_way_valid": 6,
+      "A_disagreements": 1,
+      "B_disagreements": 0,
+      "change_B_minus_A": -1
+    },
+    {
+      "model": "gemma",
+      "task": "object_existence",
+      "four_way_valid": 6,
+      "A_disagreements": 0,
+      "B_disagreements": 0,
+      "change_B_minus_A": 0
+    }
+  ],
+  "mode": "REPOPE_ONLY_DIAGNOSTIC",
+  "M3_complete": false,
+  "config_fingerprint": "441f8ab4fbe8255fc6ab7282a79771fc0d8ddfadd893875e8417cbb55a696550",
+  "pilot_images": 6,
+  "warmup_generations": 8,
+  "new_model_generations": 56,
+  "reused_phase1_cells": 0,
+  "model_loading": [
+    {
+      "phase": "phase1",
+      "model": "qwen",
+      "loaded": true,
+      "new_measured_cells": 24,
+      "success": 24,
+      "valid": 24,
+      "oom": 0,
+      "warmups": 4,
+      "stop_report": false
+    },
+    {
+      "phase": "phase1",
+      "model": "gemma",
+      "loaded": true,
+      "new_measured_cells": 24,
+      "success": 24,
+      "valid": 24,
+      "oom": 0,
+      "warmups": 4,
+      "stop_report": false
+    }
+  ],
+  "branch_summary": [
+    {
+      "model": "qwen",
+      "branch": "A",
+      "n": 12,
+      "latency_p50_ms": 597.4912000237964,
+      "latency_p95_ms": 738.0501099920365,
+      "peak_allocated_mib": 2483.388671875,
+      "peak_reserved_mib": 2966.0,
+      "peak_incremental_allocated_mib": 177.9853515625,
+      "correct": 11,
+      "valid": 12,
+      "failed": 0,
+      "oom": 0
+    },
+    {
+      "model": "qwen",
+      "branch": "B",
+      "n": 12,
+      "latency_p50_ms": 677.6321000652388,
+      "latency_p95_ms": 875.815610034624,
+      "peak_allocated_mib": 2638.54931640625,
+      "peak_reserved_mib": 2966.0,
+      "peak_incremental_allocated_mib": 333.14599609375,
+      "correct": 8,
+      "valid": 12,
+      "failed": 0,
+      "oom": 0
+    },
+    {
+      "model": "gemma",
+      "branch": "A",
+      "n": 12,
+      "latency_p50_ms": 10754.396950011142,
+      "latency_p95_ms": 20785.350460000333,
+      "peak_allocated_mib": 5720.9345703125,
+      "peak_reserved_mib": 6332.0,
+      "peak_incremental_allocated_mib": 2620.11279296875,
+      "correct": 10,
+      "valid": 12,
+      "failed": 0,
+      "oom": 0
+    },
+    {
+      "model": "gemma",
+      "branch": "B",
+      "n": 12,
+      "latency_p50_ms": 10383.20494996151,
+      "latency_p95_ms": 19254.52457504579,
+      "peak_allocated_mib": 5720.9345703125,
+      "peak_reserved_mib": 6332.0,
+      "peak_incremental_allocated_mib": 2620.11279296875,
+      "correct": 10,
+      "valid": 12,
+      "failed": 0,
+      "oom": 0
+    }
+  ],
+  "source_files": [
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/qwen/metadata.json",
+      "sha256": "41d61e4dd9008376e6252d772b65b0f78d2b1a3a9a4267450ca23a9407af05a5",
+      "bytes": 5008
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/qwen/predictions.jsonl",
+      "sha256": "f68aebae1a810d2ffa6ad3473525f709eb8845c516a1c8a2d8ff994628810c8a",
+      "bytes": 42822
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/qwen/processor.json",
+      "sha256": "ff2bcdf64cd504e74125ae6a4c9267d839824b5f95e0f99483b83b2ba4d2896e",
+      "bytes": 101
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/qwen/warmups.json",
+      "sha256": "438fcc7101ca1137fcaa10b5975280faf4db42f9fc046c446f8b8ee10d267935",
+      "bytes": 5959
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/gemma/metadata.json",
+      "sha256": "cd3e8f958b31c5b82e594fcd1a7c3e7daa3f5107bcf2d416644f753a053d1085",
+      "bytes": 5003
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/gemma/predictions.jsonl",
+      "sha256": "2843f4d4cd35e8c55fbb5da54fab6cc418693d52509ce83b62bd910a7fb2fc20",
+      "bytes": 57551
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/gemma/processor.json",
+      "sha256": "8fd50fea23184e3a2b3d2818baf2d657cd4230695be888ff8aae7ad72a4693ec",
+      "bytes": 122
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/gemma/warmups.json",
+      "sha256": "5f51fba14f8cacf18746bd0e384e573065a0eb296d89e234009068543c106bc9",
+      "bytes": 9580
+    }
+  ],
+  "limitations": [
+    "RePOPE only; not four-task validation or M3",
+    "Small pilot, one repeat; no general accuracy/significance claim",
+    "PyTorch allocated/reserved is not physical VRAM residency; WDDM may page memory",
+    "Processor JSON is outer multimodal processor; image settings pinned by revision/settings/loader hashes"
+  ]
+}

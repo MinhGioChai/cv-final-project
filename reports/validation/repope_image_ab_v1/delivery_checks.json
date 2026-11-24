@@ -1,0 +1,15 @@
+{
+  "measured_cells": 240,
+  "warmup_generations": 16,
+  "missing": 0,
+  "invalid": 0,
+  "failed": 0,
+  "OOM": 0,
+  "local_links_checked": 109,
+  "raw_file_hashes_verified": 18,
+  "raw_ZIP_CRC_and_member_hashes_verified": true,
+  "full_mode_still_blocked_on_three_tasks": true,
+  "M3_complete": false,
+  "main_configuration_changed": false,
+  "new_policy_requires_group_approval": true
+}

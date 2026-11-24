@@ -1,0 +1,16 @@
+{
+  "status": "PROPOSAL_ONLY_GROUP_APPROVAL_REQUIRED",
+  "recommendation": "Đề xuất B cho preprocessing trước main freeze; chờ nhóm phê duyệt, chưa áp dụng vào main config.",
+  "reason": "B bỏ một lần resampling thủ công, giữ toàn bộ chi tiết JPEG nguồn đến processor được pin; vẫn giữ Qwen pixel budget 200704–401408 và Gemma no-pan-and-scan/896×896. Cả A/B chạy được 30 RePOPE với 0 invalid/failed/OOM. Chi phí B quan sát được ở Qwen: p50 650,3 ms so với 540,6 ms của A (khoảng +20,3%), peak allocated tăng 265,2 MiB; mức này còn phù hợp cho diagnostic trên máy 6 GB. Gemma có cùng tensor shape, peak allocated/reserved và latency median gần như nhau giữa hai nhánh; không có lợi ích VRAM quan sát được từ thumbnail 512. Đề xuất B dựa trên giữ thông tin thị giác đến processor và chi phí tăng có thể quản lý, không dựa trên tối đa hóa Accuracy hoặc giảm EN–VI disagreement.",
+  "limits": "Qwen trên pilot thực tế có 57/60 câu đúng ở A và 54/60 ở B; Gemma 53/60 ở A và 54/60 ở B. Các điểm này được báo đầy đủ, không coi B chính xác hơn tổng quát hoặc suy cơ chế bên trong model. Chỉ 30 ảnh RePOPE/one repeat; chưa có evidence bốn task. Gemma peak reserved 6332 MiB lớn hơn dedicated capacity báo 6144 MiB; allocator stats không phải physical residency, chưa đo shared memory/paging. B không sửa méo tỷ lệ 896×896 và không giảm pressure GPU của Gemma. Main smoke bốn task vẫn cần sau QA/freeze trước full main; nếu M3 gặp OOM phải báo lỗi/chốt phương án, không fallback ngầm.",
+  "main_config_changed": false,
+  "main_frozen": false,
+  "M3_complete": false,
+  "proposed_policy_id_if_approved": "rgb_processor_only_v2",
+  "future_changes_only_after_approval": [
+    "Add an explicit native-processor preprocessing policy to the baseline contract and runtime with tests; preserve the original 512 policy.",
+    "Create a NEW final config/protocol version with updated source/settings hashes; keep the historical draft and pilot configs unchanged.",
+    "Keep checkpoint/processor revisions, Qwen min/max pixels, Gemma dtype and no-pan-and-scan unchanged unless separately authorized.",
+    "Complete main human QA, then approve/freeze the final protocol and receipt; run a bounded four-task main GPU smoke before main inference."
+  ]
+}

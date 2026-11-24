@@ -1,0 +1,25 @@
+{
+  "protected_prior_git_files": 430,
+  "EOL_only_vs_Git": [
+    "notebooks/pilot_colab.ipynb",
+    "notebooks/pilot_kaggle.ipynb"
+  ],
+  "source_images_hash_matched": 813,
+  "main_config_changed": false,
+  "human_reviews_changed": false,
+  "main_manifests_changed": false,
+  "legacy_runners_changed": false,
+  "pilot_history_changed": false,
+  "M3_complete": false,
+  "main_blockers": {
+    "MAIN_QA_NOT_APPROVED": 1000,
+    "BASELINE_NOT_FROZEN": 1,
+    "FREEZE_RECEIPT_REQUIRED": 1
+  },
+  "new_code_sha256": {
+    "src/vlmbench/image_ab.py": "e7fceb0c78814e9dbda00ac6c42bcaeeaf159a3dba503476b38bfee1cc274ed4",
+    "src/vlmbench/repope_diagnostic.py": "9582250508e52c81deb10e482ace3b9ef5bb36973c83e7d29da5307c50cff0fd",
+    "scripts/validate_image_ab.py": "7664a3a8d4e09f94d1123416d92b360aba32546172e9edda7b9ba87362c67939",
+    "tests/test_image_ab.py": "5c609de0fdf42023c406cd5e1b303b3664ae8540d1942f774ba6d2fc9fb7d23d"
+  }
+}

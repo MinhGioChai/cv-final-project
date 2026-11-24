@@ -1,0 +1,10 @@
+{
+  "command": ".venv/Scripts/python.exe -m pytest -q --junitxml reports/validation/repope_image_ab_v1/software_tests.xml",
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 17%]\n........................................................................ [ 34%]\n........................................................................ [ 51%]\n........................................................................ [ 68%]\n........................................................................ [ 85%]\n...............................................................          [100%]\n423 passed in 23.60s\n",
+  "stderr": "",
+  "scope": "CPU regression; synthetic tests are not GPU evidence",
+  "prior_targeted_result": "27 passed in 4.96s after final scope instrumentation",
+  "new_diagnostic_tests": 7,
+  "GPU_measurement_finished_before_suite": true
+}

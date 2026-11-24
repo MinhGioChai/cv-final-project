@@ -186,9 +186,16 @@ def execute(plan,alias,output,*,execute=False):
     # No environment, torch or adapter load until the independent pilot gates pass.
     if not execute or not plan.summary['execution_ready']:
         raise ValueError('Explicit --execute and complete four-task, QA, provenance and exclusion gates required')
+    if plan.summary.get('scope')!='technical_image_AB_validation_not_main':
+        raise ValueError('Full validation requires the four-task plan; diagnostic is separate')
+    return _execute_approved_pilot(plan,alias,output,namespace=NAMESPACE)
+
+
+def _execute_approved_pilot(plan,alias,output,*,namespace,before_generate=None):
+    """Shared instrumentation after the caller's independent pilot gates pass."""
     if alias not in {'qwen','gemma'}:raise ValueError('Unknown model')
     output=inside(plan.root,output)
-    if not output.is_relative_to(plan.root/NAMESPACE):raise ValueError('Use a NEW results/pilot/image_ab_v1 run directory')
+    if not output.is_relative_to(plan.root/namespace):raise ValueError('Use a NEW '+namespace+' run directory')
     if output.exists():raise ValueError('Preserve existing run; use a new directory, no automatic retry/resume')
     environment=inspect_environment()
     import torch
@@ -197,6 +204,7 @@ def execute(plan,alias,output,*,execute=False):
     spec=plan.config.models[alias]
     adapter=MainAdapter(plan,alias,offline=True)
     identity={'config_fingerprint':plan.summary['config_fingerprint'],'model':alias,
+        'validation_scope':plan.summary['scope'],'M3_complete':False,
         'model_spec':spec.model_dump(),'environment':environment,'hardware':hardware,'code':code_state(plan.root),
         'settings_snapshot':plan.config.model_dump(),'prompts_snapshot':plan.prompts.model_dump(),
         'manifest':plan.summary['manifest'],'sample_ids':[r.sample_id for r in plan.rows]}
@@ -210,12 +218,14 @@ def execute(plan,alias,output,*,execute=False):
         processor_identity={'class':type(adapter.adapter.processor.processor).__name__,
             'config':adapter.adapter.processor.processor.to_dict()}
         write_json(output/'processor.json',processor_identity)
-        first=plan.rows[0]
+        if before_generate:before_generate(identity,processor_identity)
+        first=getattr(plan,'warmup_row',plan.rows[0])
         prompt=render_prompt(first,'en',plan.prompts)
         for branch in BRANCHES:
             for repeat in range(2):
                 warmup=measure(adapter,first,branch,plan.root,prompt=prompt)
                 warmups.append({**warmup,'sample_id':first.sample_id,'language':'en','branch':branch,
+                    'validation_scope':plan.summary['scope'],
                     'task':first.task,'ground_truth':first.ground_truth,'prompt_text':prompt,
                     'config_fingerprint':identity['config_fingerprint'],'runtime_fingerprint':identity['runtime_fingerprint'],
                     'model':alias,'excluded_warmup':True,'repeat':repeat})
@@ -223,15 +233,18 @@ def execute(plan,alias,output,*,execute=False):
                 if warmup['run_status']!='success':raise RuntimeError('Warmup failed; no fallback')
         # Same adapter/model/processor instance for A/B. No policy-dependent generation kwargs.
         for index,row in enumerate(plan.rows):
+            index=getattr(plan,'order_indices',{}).get(row.sample_id,index)
             for language in ('en','vi'):
                 prompt=render_prompt(row,language,plan.prompts)
                 branches=BRANCHES if (index+(language=='vi'))%2==0 else BRANCHES[::-1]
                 for branch in branches:
                     result=measure(adapter,row,branch,plan.root,prompt=prompt)
                     record={**result,'scope':'gpu_image_ab_pilot','sample_id':row.sample_id,'task':row.task,
+                        'validation_scope':plan.summary['scope'],
                         'language':language,'model':alias,'branch':branch,'ground_truth':row.ground_truth,
                         'image_sha256':row.image_sha256,'prompt_text':prompt,'prompt_hash':canonical_hash(prompt),
                         'config_fingerprint':identity['config_fingerprint'],'runtime_fingerprint':identity['runtime_fingerprint'],
+                        'row_sha256':row_hash(row),'source_provenance':row.metadata.get('upstream_verification',{}),
                         'recorded_at_utc':datetime.now(timezone.utc).isoformat()}
                     records.append(record)
                     atomic_bytes(output/'predictions.jsonl',''.join(json.dumps(r,ensure_ascii=False,allow_nan=False)+'\n' for r in records).encode('utf-8'))

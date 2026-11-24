@@ -1,0 +1,107 @@
+{
+  "path": "exports/repope_image_ab_diagnostic_v1.zip",
+  "sha256": "32d6df9a6a2984363727dc85a807f7aaca14ab6a17b565490325f2736574e5a4",
+  "bytes": 67322,
+  "images_included": false,
+  "weights_or_tokens_included": false,
+  "measured_cells": 240,
+  "warmup_generations": 16,
+  "files": [
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/gemma/metadata.json",
+      "sha256": "cd3e8f958b31c5b82e594fcd1a7c3e7daa3f5107bcf2d416644f753a053d1085"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/gemma/predictions.jsonl",
+      "sha256": "2843f4d4cd35e8c55fbb5da54fab6cc418693d52509ce83b62bd910a7fb2fc20"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/gemma/processor.json",
+      "sha256": "8fd50fea23184e3a2b3d2818baf2d657cd4230695be888ff8aae7ad72a4693ec"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/gemma/warmups.json",
+      "sha256": "5f51fba14f8cacf18746bd0e384e573065a0eb296d89e234009068543c106bc9"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/qwen/metadata.json",
+      "sha256": "41d61e4dd9008376e6252d772b65b0f78d2b1a3a9a4267450ca23a9407af05a5"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/qwen/predictions.jsonl",
+      "sha256": "f68aebae1a810d2ffa6ad3473525f709eb8845c516a1c8a2d8ff994628810c8a"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/qwen/processor.json",
+      "sha256": "ff2bcdf64cd504e74125ae6a4c9267d839824b5f95e0f99483b83b2ba4d2896e"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase1/qwen/warmups.json",
+      "sha256": "438fcc7101ca1137fcaa10b5975280faf4db42f9fc046c446f8b8ee10d267935"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/gemma/metadata.json",
+      "sha256": "e4f0170a8977564a40d695ab46e696f87594641b28c22f3047567dbd81243e88"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/gemma/predictions.jsonl",
+      "sha256": "caa79c9c67d644c7d8bd21c76d47ee0c29fce2f20b1831f23ba0e180eb9c024b"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/gemma/processor.json",
+      "sha256": "8fd50fea23184e3a2b3d2818baf2d657cd4230695be888ff8aae7ad72a4693ec"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/gemma/reuse.json",
+      "sha256": "68bae61cfef90d972756ef340f5ed929ffab3dc8750585c0e2b5d4121a7400ec"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/gemma/warmups.json",
+      "sha256": "cfb1d673af07ce221608720efd82d2fdcc7c8aed6e8195d385bcd9e9ec12d328"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/qwen/metadata.json",
+      "sha256": "df01ae358c94e9b9f205697853850e84e6bdc82b4ea3f6cdd6e605d813b65725"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/qwen/predictions.jsonl",
+      "sha256": "bb20d1844a5cbf97ae1237c96bbed5817840a1fd424bd7ffdc286db65c0828f9"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/qwen/processor.json",
+      "sha256": "ff2bcdf64cd504e74125ae6a4c9267d839824b5f95e0f99483b83b2ba4d2896e"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/qwen/reuse.json",
+      "sha256": "d63c31713d9ec5503e44bc00a08f6d4c4e41ea862799e18b7066ab09c1935356"
+    },
+    {
+      "path": "results/pilot/repope_image_ab_v1/phase2/qwen/warmups.json",
+      "sha256": "02cb84f9386232ba3a0768e40165746d10577d4910f722dc5108b3b8ebcbdd85"
+    },
+    {
+      "path": "reports/validation/repope_image_ab_v1/report.md",
+      "sha256": "6b6e384fdc80f578b888a82e177f9123b74d1dca3c269aafd90db6f88badac37"
+    },
+    {
+      "path": "reports/validation/repope_image_ab_v1/metrics.json",
+      "sha256": "ca21bbbe4328c812d7a7d8e34f2a0172dbbbc2447515eacaac57b01ba90a2972"
+    },
+    {
+      "path": "reports/validation/repope_image_ab_v1/phase1_metrics.json",
+      "sha256": "f19df71ab5e1c7f6f68e5a13a4bf03d7eacdfa0f18825e9c783611c0e6b2bb1e"
+    },
+    {
+      "path": "reports/validation/repope_image_ab_v1/software_checks.json",
+      "sha256": "2e902111ec6dc322c7ad3470c4df2e46a1c6a17cd770fc90bb69ef7216d010b0"
+    },
+    {
+      "path": "reports/validation/repope_image_ab_v1/main_gates.json",
+      "sha256": "dc1b430dd1c8c533389583df639c173f6b64cc63e7cfaeff66a01d0b69bd559b"
+    },
+    {
+      "path": "reports/validation/repope_image_ab_v1/preservation.json",
+      "sha256": "ae21e1d9139dea7fcb64b2f9a845799ccb9cfbb70594008c7568a96a9df12432"
+    }
+  ]
+}

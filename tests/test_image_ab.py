@@ -207,3 +207,74 @@ def test_analysis_rejects_incompatible_or_tampered_records(row_factory,tamper):
     if tamper=='correctness':saved['correctness']=not saved['correctness']
     if tamper=='synthetic_scope':saved['scope']='synthetic_test_only'
     with pytest.raises(ValueError):image_ab.summarize(selected,records)
+
+
+@pytest.fixture
+def diagnostic_project(ab_project):
+    """Synthetic attestations/sources in tmp only, not approvals of project rows."""
+    from vlmbench.io_utils import write_json
+    from vlmbench.reviews import row_hash
+    root,rows=ab_project
+    cache=root/'source';cache.mkdir()
+    for i,row in enumerate(rows):
+        row.image_id=f'{i:012d}';row.category=['random','popular','adversarial'][i//10]
+        row.ground_truth='yes' if i%2 else 'no'
+    files={}
+    for category in ('random','popular','adversarial'):
+        content=''.join(json.dumps({'image':f'COCO_val2014_{r.image_id}.jpg','text':r.question_en,
+            'label':r.ground_truth,'question_id':i})+'\n' for i,r in enumerate(rows) if r.category==category)
+        path=cache/f'coco_repope_{category}.json';path.write_text(content,encoding='utf-8')
+        files[category]={'sha256':sha256_file(path)}
+    write_json(cache/'receipt.json',{'repository':'YanNeu/RePOPE','revision':'a'*40,'files':files})
+    (root/'configs/source_audit.yaml').write_text(yaml.safe_dump({'repository':'YanNeu/RePOPE','revision':'a'*40,
+        'cache_dir':'source','max_download_mb':5}),encoding='utf-8')
+    for row in rows:
+        row.metadata['upstream_verification']={'status':'matched','revision':'a'*40,
+            'annotation_sha256':files[row.category]['sha256']}
+    manifest=root/'data/pilot/stage1_qa_v1/pilot_manifest.csv'
+    write_manifest(manifest,rows);write_manifest(root/'trusted.csv',rows)
+    review=root/'data/reviews/pilot_label_qa_v1/label_qa_reviewed_v1.json'
+    write_json(review,{'scope':'synthetic_test_only'})
+    folder=root/'reports/stage1/v10'
+    write_json(folder/'pilot_qa_validation.json',{'reviewed_manifest_sha256':sha256_file(manifest)})
+    write_json(folder/'label_qa_import_v1.json',{'review_sha256':sha256_file(review),
+        'events':[{'sample_id':r.sample_id,'after':'approved','output_row_sha256':row_hash(r)} for r in rows]})
+    write_json(root/'data/pilot/image_exclusions.json',{'images':[{'image_namespace':'coco','image_id':r.image_id,
+        'image_sha256':r.image_sha256} for r in rows]})
+    return root,rows
+
+
+def test_diagnostic_six_thirty_compatible_and_full_gate_unchanged(diagnostic_project):
+    from vlmbench.repope_diagnostic import diagnostic_plan
+    root,rows=diagnostic_project
+    small=diagnostic_plan(root,6);large=diagnostic_plan(root,30)
+    assert small.summary['execution_ready'] and small.summary['expected_cells']==48
+    assert large.summary['execution_ready'] and large.summary['expected_cells']==240
+    assert small.summary['config_fingerprint']==large.summary['config_fingerprint']
+    assert len({(r.category,r.ground_truth) for r in small.rows})==6
+    assert not image_ab.plan(root).summary['execution_ready']
+    assert small.summary['M3_complete'] is False
+    with pytest.raises(ValueError,match='four-task plan'):image_ab.execute(small,'qwen','wrong',execute=True)
+
+
+@pytest.mark.parametrize('tamper',['approval','image','source','registry','main_overlap'])
+def test_diagnostic_rejects_tampered_evidence(diagnostic_project,tamper):
+    from vlmbench.repope_diagnostic import diagnostic_plan
+    from vlmbench.io_utils import write_json
+    root,rows=diagnostic_project
+    if tamper=='approval':
+        rows[0].qa_status='pending';write_manifest(root/'data/pilot/stage1_qa_v1/pilot_manifest.csv',rows)
+    if tamper=='image':(root/rows[0].image_path).write_bytes((root/rows[1].image_path).read_bytes())
+    if tamper=='source':
+        (root/'source/coco_repope_random.json').write_text('corrupt',encoding='utf-8')
+        with pytest.raises(Exception,match='corrupt'):diagnostic_plan(root)
+        return
+    if tamper=='registry':write_json(root/'data/pilot/image_exclusions.json',{'images':[]})
+    if tamper=='main_overlap':write_manifest(root/'main.csv',[rows[0].model_copy(update={'is_pilot':False})])
+    assert not diagnostic_plan(root).summary['execution_ready']
+
+
+def test_diagnostic_expansion_requires_complete_phase1(diagnostic_project):
+    from vlmbench.repope_diagnostic import diagnostic_plan,run_diagnostic
+    root,_=diagnostic_project
+    with pytest.raises(ValueError,match='phase1'):run_diagnostic(diagnostic_plan(root,30),'qwen','anything',execute=True)

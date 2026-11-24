@@ -1,0 +1,121 @@
+{
+  "scope": "REPOPE_ONLY_DIAGNOSTIC",
+  "config_fingerprint": "441f8ab4fbe8255fc6ab7282a79771fc0d8ddfadd893875e8417cbb55a696550",
+  "manifest": "data/pilot/stage1_qa_v1/pilot_manifest.csv",
+  "rows": 30,
+  "tasks": {
+    "object_existence": 30
+  },
+  "expected_cells": 240,
+  "expected_per_model": 120,
+  "warmups_per_model": 4,
+  "repeats": 1,
+  "execution_ready": true,
+  "issues": [],
+  "main_frozen": false,
+  "main_freeze_receipt": null,
+  "model_generations": 0,
+  "new_human_approvals": 0,
+  "full_validation_issues": [
+    {
+      "code": "TASK_COVERAGE_MISSING",
+      "task": "spatial"
+    },
+    {
+      "code": "TASK_COVERAGE_MISSING",
+      "task": "counting"
+    },
+    {
+      "code": "TASK_COVERAGE_MISSING",
+      "task": "fine_grained"
+    }
+  ],
+  "M3_complete": false,
+  "binding": {
+    "mode": "REPOPE_ONLY_DIAGNOSTIC",
+    "base_fingerprint": "9f1ea87f7934dc28e61707565e2b08a2bf568d8e309c20cc1438a3cbdaf6c41f",
+    "diagnostic_implementation_sha256": "9582250508e52c81deb10e482ace3b9ef5bb36973c83e7d29da5307c50cff0fd",
+    "qa_validation_sha256": "b6153fa8c81435b1668feb179156ab205b7a7bf3e987a4f017117a4a0d499d9b",
+    "qa_import_sha256": "8f7ab342065250f5858445e7ec6b9a9cfe401f87b34a8113a1309e4c1854bd96",
+    "human_review_sha256": "111a147816f89e029d6fffc8a36281bcf5bb87fd3ee1c3afa6b7c4cb1dffe7d9",
+    "exclusions_sha256": "02f9deadc3e2670e5de2ec8b27ebf6516a7105b72728e25bd024693d6ac8422f",
+    "source_revision": "bcf22e5690d587cce34e1728af3efdcfaf747d29",
+    "source_files": {
+      "random": "f464fcaf60b24ce2f280cf33f122e000dbdd35c8e88f77c4141c9c2cba864611",
+      "popular": "57832b055bae5fd6176278a4f104c98ddd84811f7d26dfcb93d481f6c9da09a5",
+      "adversarial": "8c346dbb060bf422ff92e769fa68e5ab3e8a777cb28a26e973387441e05c9ccf"
+    },
+    "all_row_hashes": {
+      "repope_adversarial_104803044cb7c965": "29c2ad8c2db28976170bbd5c16491866441406f5057af2f63933f0e3862c0623",
+      "repope_adversarial_16ad496cf15413f6": "c1bd9f0ef23bbcbc236b39bf6b7d4a0a7ebcba798dcfa4d0d412e0094114aa14",
+      "repope_adversarial_1883a30c14dd472b": "f7fa8256af1bdc0c54ec3bc006805d55621958e6fb3aec4de16002f4625e3f4f",
+      "repope_adversarial_2542d07233dd67d6": "a83487aff9b7547fa533e4c6c9e271c6dfe899220ab903c564ba426b7f614bff",
+      "repope_adversarial_6fd41e8b495f07ed": "0233d8c48f535687c7d04816cf46ee73462507a00e92a802aa56c2106106f68b",
+      "repope_adversarial_8cb9a375076dc3ac": "94434f6b4adf4226bbf62a4fbfbc3fade165679abb938b32406baf858555671b",
+      "repope_adversarial_919d5a55becf4a0b": "5a90f604f85fa7814363661d55892957bf00d8c36fce12cfcef17c444e0d7448",
+      "repope_adversarial_9ec964d4498569af": "d8c1b50cfec5f7ac7dedbba8b555cedef425fcf123d531280beb14ef2b3d4012",
+      "repope_adversarial_afe87003b3234d90": "ad4f077b91db2f41985637f3ff89f04b124186c67aa60cbca9f508ae03a1cd57",
+      "repope_adversarial_e66ab178648ded94": "853b9a674660a4bb91b555362dae931e2eeebd9a8d67cca3fc58eb59127014dc",
+      "repope_popular_2986dcb00859aac0": "45541db3d6abcf65e8845e4537c2174d3aa649ae7d2e6ed1b99bfa30e775f5d2",
+      "repope_popular_369fd6c407dcd82a": "b03da91ce6864cc3f028e5bd9c5590ae139b994fd8017360597c32ccc8e1a8b5",
+      "repope_popular_5bc6635955bf7758": "cffd0eee8e1c0b6312f1f5d2b995d47d6fa8f43982e08a3cad49ddd0ece0e36e",
+      "repope_popular_6ee7711adb839ddf": "6db5601dff0a8ecd516ddef9318b5a7de16071969bd3738eda464e98cfbb813b",
+      "repope_popular_716a10b680cf69a9": "0948e4d3128c2435352d347925851338ae4402dd0c660cbc4c42d385634b6a90",
+      "repope_popular_7fc690337f8b692a": "f77fc22ec3595c3eaf50507f4d053865378c80d4129095c1e0baa99e6990fcd5",
+      "repope_popular_bc6010056e9bc682": "21b2533c2a8cfe0804204791b7e914d42fd0382bad821adf706eedb81fee4c4e",
+      "repope_popular_cc7655930e0f0b02": "ba2dc5e03a743bb05c68000c300fe08292602263efe86e3cc5d562038a43c042",
+      "repope_popular_da4866dafa3c2514": "b520f3f39be588a41fcd08d0a52793e2ac9a72d72af131f09f6f6b4d559121d9",
+      "repope_popular_e7d5cec624c594ce": "cf77f2928a69c2d5ceeb90216d90d6587e51d036338b21a0c07833192fc63a36",
+      "repope_random_0c85be5b0dd173fb": "1b88ff55c0b4dacaf5ea00169730bf2443e8152adbbd2ce59dd293c1ee8a6456",
+      "repope_random_18d195a3eee26a4f": "9afa4133358600f790d24258137bc4cbf3b8f41a788ef8b07f84b297edc8eb6e",
+      "repope_random_4496c746473fff08": "ab0e4a09c9b5bf98d0d701fb85107dbf7c7157bbaa06b3b8dab0e4d1fa09bbb3",
+      "repope_random_4e1f26c1af41c444": "d79d25f4ca5be4735fe369d763e21d7a541b0e662abe80560bbec77e088efce0",
+      "repope_random_60bde3ffdbeb915a": "2602c36f4a47cced94412a701ab82891f91f59a1c6caeae033b57e296b99fe3e",
+      "repope_random_64834620fb6341a2": "ec231ddcf49ae68d5a3cd7b5d38d8a7f44afef3d5ba868083a72d303f45cea47",
+      "repope_random_7f3a44891819162f": "a66ff46d5e73b9495b9d71635f39db206bad9a0a2ef84603b496cc13c1d59a42",
+      "repope_random_bdb8917227abab2f": "1afa4ab7a38d8aa10baed32fb700c6a73c7a52c98d782a5fcf3dd71a894e7005",
+      "repope_random_c4c6ed415738856a": "c3988d8d92c298153d6021188cf990af7b670be0d9962f48c1a8198660a47788",
+      "repope_random_d4666a3393309c75": "8f307b6ee6b1656d79e364ad8926b9eb28571ea78b6afeac6a30b03a748eb5fc"
+    },
+    "phase1_ids": [
+      "repope_adversarial_8cb9a375076dc3ac",
+      "repope_adversarial_afe87003b3234d90",
+      "repope_popular_2986dcb00859aac0",
+      "repope_popular_369fd6c407dcd82a",
+      "repope_random_4e1f26c1af41c444",
+      "repope_random_bdb8917227abab2f"
+    ]
+  },
+  "selected_ids": [
+    "repope_adversarial_104803044cb7c965",
+    "repope_adversarial_16ad496cf15413f6",
+    "repope_adversarial_1883a30c14dd472b",
+    "repope_adversarial_2542d07233dd67d6",
+    "repope_adversarial_6fd41e8b495f07ed",
+    "repope_adversarial_8cb9a375076dc3ac",
+    "repope_adversarial_919d5a55becf4a0b",
+    "repope_adversarial_9ec964d4498569af",
+    "repope_adversarial_afe87003b3234d90",
+    "repope_adversarial_e66ab178648ded94",
+    "repope_popular_2986dcb00859aac0",
+    "repope_popular_369fd6c407dcd82a",
+    "repope_popular_5bc6635955bf7758",
+    "repope_popular_6ee7711adb839ddf",
+    "repope_popular_716a10b680cf69a9",
+    "repope_popular_7fc690337f8b692a",
+    "repope_popular_bc6010056e9bc682",
+    "repope_popular_cc7655930e0f0b02",
+    "repope_popular_da4866dafa3c2514",
+    "repope_popular_e7d5cec624c594ce",
+    "repope_random_0c85be5b0dd173fb",
+    "repope_random_18d195a3eee26a4f",
+    "repope_random_4496c746473fff08",
+    "repope_random_4e1f26c1af41c444",
+    "repope_random_60bde3ffdbeb915a",
+    "repope_random_64834620fb6341a2",
+    "repope_random_7f3a44891819162f",
+    "repope_random_bdb8917227abab2f",
+    "repope_random_c4c6ed415738856a",
+    "repope_random_d4666a3393309c75"
+  ]
+}
