@@ -51,6 +51,14 @@ nhãn vì phát biểu có vẻ sai. Prompt không nhận ground truth làm plac
 Đây là candidate settings cho baseline, không phải kết quả thực nghiệm hoặc
 quyết định freeze cuối. Pilot vẫn dùng configs/prompts lịch sử của chính run.
 
+Audit ngày 24/11 xác nhận thumbnail 512 được đưa vào processor thật; review
+HTML dùng nguyên JPEG. Processor Gemma tiếp tục resize về 896×896, có méo tỷ
+lệ với ảnh không vuông; Qwen resize theo grid/pixel budget nên có thể phóng
+to thumbnail trở lại. `image_variant=original` chỉ variant nguồn, không có
+nghĩa giữ nguyên pixels/kích thước vào encoder. Xem [audit và kế hoạch so sánh
+pilot](../../reports/audits/2026-11-24/image_pipeline_audit.md) trước quyết định
+final preprocessing. Config/runtime/freeze gate chưa thay đổi.
+
 ## Metadata và tên trường
 
 Không rename CSV hiện có theo sơ đồ minh họa V3. Alias khi đọc contract:

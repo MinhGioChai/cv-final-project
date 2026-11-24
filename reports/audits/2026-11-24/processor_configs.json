@@ -1,0 +1,153 @@
+{
+  "transformers": "4.57.1",
+  "models": {
+    "qwen": {
+      "current_class": "Qwen2VLImageProcessorFast",
+      "current": {
+        "_processor_class": "Qwen2_5_VLProcessor",
+        "size": {
+          "shortest_edge": 3136,
+          "longest_edge": 12845056
+        },
+        "min_pixels": 200704,
+        "max_pixels": 401408,
+        "patch_size": 14,
+        "temporal_patch_size": 2,
+        "merge_size": 2,
+        "image_mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "image_std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ],
+        "image_processor_type": "Qwen2VLImageProcessorFast",
+        "crop_size": null,
+        "pad_size": null,
+        "do_resize": true,
+        "default_to_square": true,
+        "resample": 3,
+        "do_center_crop": null,
+        "do_rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "do_normalize": true,
+        "do_pad": null,
+        "do_convert_rgb": true,
+        "return_tensors": null,
+        "data_format": "channels_first",
+        "input_data_format": null,
+        "device": null,
+        "disable_grouping": null
+      },
+      "checkpoint_default_class": "Qwen2VLImageProcessorFast",
+      "checkpoint_default": {
+        "_processor_class": "Qwen2_5_VLProcessor",
+        "size": {
+          "shortest_edge": 3136,
+          "longest_edge": 12845056
+        },
+        "min_pixels": 3136,
+        "max_pixels": 12845056,
+        "patch_size": 14,
+        "temporal_patch_size": 2,
+        "merge_size": 2,
+        "image_mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "image_std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ],
+        "image_processor_type": "Qwen2VLImageProcessorFast",
+        "crop_size": null,
+        "pad_size": null,
+        "do_resize": true,
+        "default_to_square": true,
+        "resample": 3,
+        "do_center_crop": null,
+        "do_rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "do_normalize": true,
+        "do_pad": null,
+        "do_convert_rgb": true,
+        "return_tensors": null,
+        "data_format": "channels_first",
+        "input_data_format": null,
+        "device": null,
+        "disable_grouping": null
+      },
+      "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "preprocessor_config_sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0"
+    },
+    "gemma": {
+      "current_class": "Gemma3ImageProcessor",
+      "current": {
+        "_processor_class": "Gemma3Processor",
+        "image_processor_type": "Gemma3ImageProcessor",
+        "image_seq_length": 256,
+        "do_resize": true,
+        "size": {
+          "height": 896,
+          "width": 896
+        },
+        "resample": 2,
+        "do_rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "do_normalize": true,
+        "image_mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "image_std": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "do_convert_rgb": null,
+        "do_pan_and_scan": false,
+        "pan_and_scan_min_crop_size": null,
+        "pan_and_scan_max_num_crops": null,
+        "pan_and_scan_min_ratio_to_activate": null
+      },
+      "checkpoint_default_class": "Gemma3ImageProcessor",
+      "checkpoint_default": {
+        "_processor_class": "Gemma3Processor",
+        "image_processor_type": "Gemma3ImageProcessor",
+        "image_seq_length": 256,
+        "do_resize": true,
+        "size": {
+          "height": 896,
+          "width": 896
+        },
+        "resample": 2,
+        "do_rescale": true,
+        "rescale_factor": 0.00392156862745098,
+        "do_normalize": true,
+        "image_mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "image_std": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "do_convert_rgb": null,
+        "do_pan_and_scan": null,
+        "pan_and_scan_min_crop_size": null,
+        "pan_and_scan_max_num_crops": null,
+        "pan_and_scan_min_ratio_to_activate": null
+      },
+      "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "preprocessor_config_sha256": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d"
+    }
+  }
+}

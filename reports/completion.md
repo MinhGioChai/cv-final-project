@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v30 · 22/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v31 · 24/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -59,6 +59,12 @@ Raw hai run valid được copy nguyên bytes vào [pilot_outputs](pilot_outputs
 QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch sử.
 
 ## Việc tiếp theo
+
+Trước final preprocessing, đọc [image pipeline audit 24/11](audits/2026-11-24/image_pipeline_audit.md).
+512 là thumbnail trước VLM, không phải ảnh review; Gemma còn ép 896×896.
+Nhóm cần quyết định kế hoạch sensitivity pilot A–B (30 ảnh, 240 cells,
+repeats/warm-up ghi riêng; C mặc định processor tùy chọn) trước khi thay main.
+Hiện mới đo kích thước/tensor CPU, chưa so prediction/VRAM/latency GPU.
 
 0. Nhóm đọc [report tiến độ và phân công 5 người](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md),
    điền tên TV1–TV5 và ghi nhận gói đang review. Bắt đầu các đầu ra làm ngay
@@ -262,3 +268,36 @@ download, import human QA hoặc freeze. 396 tests/18,91 s vẫn là lần v13,
 không phải test run v30. Main chưa có kết quả, Stage 1 IN_PROGRESS và RQ3/RQ4
 vẫn conditional P1. Bước tiếp: nhóm thống nhất TV1–TV5, tiếp tục A/B và làm
 đầu ra song song; nhận JSON thật để tổng hợp main trước freeze/GPU smoke.
+
+### v31 — 24/11/2026: Audit image pipeline và kế hoạch so chính sách ảnh
+
+Theo yêu cầu audit sáu điểm, đã lần theo materializers, pilot/main adapters,
+review v1/v2 và processors cached đúng revisions trong transformers 4.57.1.
+JSON review chỉ context/decisions; image_path/hash ở CSV, HTML nhúng nguyên
+JPEG base64. Đã so bytes 1.000 cards v2, 1.000 v1 và 30 pilot; 46 JSON không
+có image data URL. Ghi kích thước 1.030 dòng/813 ảnh trong audit JSONL;
+review intrinsic bằng JPEG, CSS viewport-dependent chưa đo layout browser.
+
+Thumbnail RGB LANCZOS max512 được truyền vào processor ở cả pilot/main.
+CPU probe 30 pilot ×2 models ×3 policies đủ 180 records, không weights/GPU:
+Qwen current fast class resize theo patch/pixel bounds, có thể upscale;
+Gemma slow no-pan-and-scan vẫn ép 896×896, có méo tỷ lệ. Cả hai model có
+27/30 tensor A/B khác nhau; không diễn giải thành prediction flips hoặc
+số đo VRAM/thời gian. Không center crop/spatial padding trong đường đang
+dùng; không nontrivial EXIF orientation ở 813 ảnh. 1.296 file đầu vào giữ
+hash trước/sau audit, JPEG khớp manifests; không lưu đè ảnh gốc.
+
+Report/evidence và script tái kiểm ở reports/audits/2026-11-24/. Đề xuất
+30 ảnh pilot QA approved, A512 so Bảnh gốc cùng processor; C ảnh gốc/default
+Qwen budget là nhánh tách vì đổi hai yếu tố. A/B 240 cells nếu 1 repeat,
+720 measured generations nếu 3 repeats, warm-up riêng. Kế hoạch ghi raw/
+invalid/OOM, paired changes, processor/token shapes, timing stages và peak
+allocated/reserved baseline/delta; chưa thực hiện hoặc duyệt GPU comparison.
+
+Đã làm rõ docs baseline và links; không sửa configs/main/runtime, data,
+human decisions, lịch sử raw/ZIP hoặc bypass freeze gate. Lần probe đầu
+return_tensors=np không được Qwen fast hỗ trợ, helper đổi sang pt rồi đạt;
+không chạy lại full suite. 396 tests vẫn là v13 ngày 22/11. Stage 1 vẫn
+IN_PROGRESS, main frozen=false; Gemma engineering pilot cũ đã xong. Bước
+tiếp là nhóm quyết định A/B/C và repeats, rồi mới triển khai harness pilot
+riêng và xác nhận bounded GPU run; tiếp tục nhận JSON main A/B như trước.

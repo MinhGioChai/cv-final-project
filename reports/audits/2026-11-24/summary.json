@@ -1,0 +1,156 @@
+{
+  "date_local": "2026-11-24",
+  "code_commit": "c215d3cb1d4a8c8b3fa111cd7b17757f848d332e",
+  "scope": "read_only_cpu_image_inventory_not_inference",
+  "summaries": {
+    "pilot/repope": {
+      "rows": 30,
+      "images": 30,
+      "original_width_range": [
+        369,
+        640
+      ],
+      "original_height_range": [
+        333,
+        640
+      ],
+      "pre_processor_width_range": [
+        363,
+        512
+      ],
+      "pre_processor_height_range": [
+        314,
+        512
+      ],
+      "images_downscaled_512": 27,
+      "nontrivial_exif_orientation": 0
+    },
+    "main/oxford_pet": {
+      "rows": 160,
+      "images": 160,
+      "original_width_range": [
+        258,
+        500
+      ],
+      "original_height_range": [
+        225,
+        500
+      ],
+      "pre_processor_width_range": [
+        258,
+        500
+      ],
+      "pre_processor_height_range": [
+        225,
+        500
+      ],
+      "images_downscaled_512": 0,
+      "nontrivial_exif_orientation": 0
+    },
+    "main/repope": {
+      "rows": 600,
+      "images": 383,
+      "original_width_range": [
+        333,
+        640
+      ],
+      "original_height_range": [
+        234,
+        640
+      ],
+      "pre_processor_width_range": [
+        288,
+        512
+      ],
+      "pre_processor_height_range": [
+        187,
+        512
+      ],
+      "images_downscaled_512": 325,
+      "nontrivial_exif_orientation": 0
+    },
+    "main/tallyqa": {
+      "rows": 120,
+      "images": 120,
+      "original_width_range": [
+        256,
+        1024
+      ],
+      "original_height_range": [
+        256,
+        768
+      ],
+      "pre_processor_width_range": [
+        256,
+        512
+      ],
+      "pre_processor_height_range": [
+        256,
+        500
+      ],
+      "images_downscaled_512": 3,
+      "nontrivial_exif_orientation": 0
+    },
+    "main/vsr": {
+      "rows": 120,
+      "images": 120,
+      "original_width_range": [
+        335,
+        640
+      ],
+      "original_height_range": [
+        334,
+        640
+      ],
+      "pre_processor_width_range": [
+        335,
+        512
+      ],
+      "pre_processor_height_range": [
+        287,
+        512
+      ],
+      "images_downscaled_512": 106,
+      "nontrivial_exif_orientation": 0
+    }
+  },
+  "main_html_cards_byte_verified": 1000,
+  "review_json": [
+    {
+      "folder": "data/reviews/main_review_v1",
+      "files_checked": 22,
+      "with_image_data_url": 0
+    },
+    {
+      "folder": "data/reviews/main_review_v2",
+      "files_checked": 22,
+      "with_image_data_url": 0
+    },
+    {
+      "folder": "data/reviews/pilot_label_qa_v1",
+      "files_checked": 2,
+      "with_image_data_url": 0
+    }
+  ],
+  "legacy_html_cards_byte_verified": {
+    "main_v1": 1000,
+    "pilot": 30
+  },
+  "Pillow": "12.3.0",
+  "originals_match_manifest": true,
+  "input_files_hash_verified_unchanged": 1296,
+  "display_size": "intrinsic measured; rendered CSS size depends on viewport; no browser layout measurement",
+  "dimension_records": 1030,
+  "frozen": false,
+  "freeze_receipt": null,
+  "processor_probe": {
+    "scope": "CPU_image_processors_only_no_weights_no_predictions",
+    "pilot_rows": 30,
+    "records": 180,
+    "policies": [
+      "B_original_same_processor",
+      "A_512_current",
+      "C_original_checkpoint_default"
+    ]
+  }
+}
