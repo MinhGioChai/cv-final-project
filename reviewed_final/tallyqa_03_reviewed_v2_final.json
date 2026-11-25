@@ -1,0 +1,949 @@
+{
+  "context": {
+    "schema_version": "main_review_v2",
+    "policy": "two_reviewers_translation_and_image_v2",
+    "manifest_sha256": "8e6b091f84c5404566fb10b44e7f5e9298a908a7c0ed8cd802d5834d6225440d",
+    "template_sha256": "e6b8fc28e6aacf7447a636a2390f59eeb457bc59b4f05b0c53b792052fee32b3",
+    "sample_ids": [
+      "tallyqa_d6dae2195434d53b",
+      "tallyqa_d7256f18d456de8b",
+      "tallyqa_d8ae70e227d412c4",
+      "tallyqa_ddaae58ff99f266e",
+      "tallyqa_e0e60999d6894d18",
+      "tallyqa_e4d6eb0e2358dc7c",
+      "tallyqa_e50da7d9b611531a",
+      "tallyqa_e66a3f47968da5c8",
+      "tallyqa_e86fb1bf977de5f2",
+      "tallyqa_eae18b44205a3a7a",
+      "tallyqa_f2a496a0001a6092",
+      "tallyqa_f5d5a24710ca5702",
+      "tallyqa_f60095e7f8416b0f",
+      "tallyqa_f70d81860c300303",
+      "tallyqa_f847fa9e40640552",
+      "tallyqa_fd4a4259bb7dcc22",
+      "tallyqa_fdd3cec9e239c681",
+      "tallyqa_fde1a7858bcbfb4f",
+      "tallyqa_fe3b2c9021f24c04",
+      "tallyqa_ff3edba9abbcb061"
+    ],
+    "row_sha256": {
+      "tallyqa_d6dae2195434d53b": "b2c6670a33e83c3ad72dd2e5dc82bec81db113b6a1192f09a27c11f54e85b2eb",
+      "tallyqa_d7256f18d456de8b": "ab37189720c821458ac2eb8b2e1221cc061fb5cfd78c0ddb12399fcf0cc277fa",
+      "tallyqa_d8ae70e227d412c4": "a10d88ef49c6b4c016c2c46de8eacaa2c4a80a143f1679f613293797b62e09ee",
+      "tallyqa_ddaae58ff99f266e": "7cc09e7db19fcf260a8bd604a45e4158c1c215e835a7aa4e21c661a7e650920d",
+      "tallyqa_e0e60999d6894d18": "fd4a0fe987366a07e6aba45d5df53908cf23452c1384ef6ce342febc4159ce44",
+      "tallyqa_e4d6eb0e2358dc7c": "5e5f8493e0ed2b034fe1cd76c5126d9c93b935445ea809bd3a6a09a136631044",
+      "tallyqa_e50da7d9b611531a": "3db61cf3729a1c5361fdd21b763adb0b6497a2607cb3f2ea91ffddbbcf8591bd",
+      "tallyqa_e66a3f47968da5c8": "c03e45ab8c54a58dbe69c4198a89d01898e10aaa982b968f986f1c49495b3384",
+      "tallyqa_e86fb1bf977de5f2": "e989f7e382d640e26fe9c9dad134e550a8b74bfca841edbe7a4c809f6ccae5b0",
+      "tallyqa_eae18b44205a3a7a": "57dcb3f5a7adaed26e9ca6472ced41bd6c0833c6bc2b91108baa61f842a0aeec",
+      "tallyqa_f2a496a0001a6092": "5913bfe8f7e3fc77e178d2dc1dcfb4bad6fa9097fdf7dd9b8e88e2f9db870574",
+      "tallyqa_f5d5a24710ca5702": "53a318cbe4604fd514ec2694d5e45b325f04759c178f282eb678b8529b9382c5",
+      "tallyqa_f60095e7f8416b0f": "995372f4280e845ae495f775b5a48ab8004ebad5097c9d1bbc2c54e62e269845",
+      "tallyqa_f70d81860c300303": "c3223200e9b9642103489b2ce980c6907dd9dacd3b4a1bcb781c600e93eaec6c",
+      "tallyqa_f847fa9e40640552": "8aa24e8ad36ac91f7f0ffd67c29ac9cfe45c1a8d44390b380319773327234c54",
+      "tallyqa_fd4a4259bb7dcc22": "98f3d549172aaa256dd92f63ddd5a02c76d474678c195d83ac6e1c154f507a00",
+      "tallyqa_fdd3cec9e239c681": "9edae5f1e0ca406b732238452a82d02cb79af150fd5f9e3c7d4a5572599aaf73",
+      "tallyqa_fde1a7858bcbfb4f": "d359430762269006e484c94a122c7f2652105f9faab65b8cafea1ec5f12fe3a4",
+      "tallyqa_fe3b2c9021f24c04": "ca3146831283854ef92322d76daff2a681bb68edfcbf662e972b2e88bc0f31d5",
+      "tallyqa_ff3edba9abbcb061": "ad972e4d05ab67999863eddfbe779e990957ce8ecb4d4af09cfe29c778f85638"
+    }
+  },
+  "decisions": [
+    {
+      "sample_id": "tallyqa_d6dae2195434d53b",
+      "question_vi": "Có bao nhiêu người đang mặc quần màu đen?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:17:56.719Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang mặc quần màu đen?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:17:56.719Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang mặc quần màu đen?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:31:04.987Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang mặc quần màu đen?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:31:04.987Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang mặc quần màu đen?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_d7256f18d456de8b",
+      "question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:18:10.315Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:18:10.315Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:31:30.454Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:31:30.454Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+          "observed_answer": "1"
+        }
+      },
+      "history": [
+        {
+          "reviewer_slot": "reviewer_b",
+          "question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+          "review": {
+            "translation": {
+              "status": "approved",
+              "reviewer_id": "Lanh",
+              "reviewed_at": "2026-11-25T15:31:25.204Z",
+              "notes": "",
+              "reviewed_question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+              "observed_answer": ""
+            },
+            "image_qa": {
+              "status": "pending",
+              "reviewer_id": "Lanh",
+              "reviewed_at": "2026-11-25T15:31:25.204Z",
+              "notes": "",
+              "reviewed_question_vi": "Có bao nhiêu chiếc thuyền ở dưới nước?",
+              "observed_answer": "1"
+            }
+          },
+          "archived_at": "2026-11-25T15:31:30.454Z",
+          "reason": "review_replaced"
+        }
+      ]
+    },
+    {
+      "sample_id": "tallyqa_d8ae70e227d412c4",
+      "question_vi": "Có thể nhìn thấy bao nhiêu người?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:18:24.315Z",
+          "notes": "",
+          "reviewed_question_vi": "Có thể nhìn thấy bao nhiêu người?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:18:24.315Z",
+          "notes": "",
+          "reviewed_question_vi": "Có thể nhìn thấy bao nhiêu người?",
+          "observed_answer": "3"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:31:44.688Z",
+          "notes": "",
+          "reviewed_question_vi": "Có thể nhìn thấy bao nhiêu người?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:31:44.688Z",
+          "notes": "",
+          "reviewed_question_vi": "Có thể nhìn thấy bao nhiêu người?",
+          "observed_answer": "3"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_ddaae58ff99f266e",
+      "question_vi": "Có bao nhiêu con mèo trên chiếc ghế màu xanh dương?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:18:44.046Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con mèo trên chiếc ghế màu xanh dương?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:18:44.046Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con mèo trên chiếc ghế màu xanh dương?",
+          "observed_answer": "0"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:31:53.305Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con mèo trên chiếc ghế màu xanh dương?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:31:53.305Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con mèo trên chiếc ghế màu xanh dương?",
+          "observed_answer": "0"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_e0e60999d6894d18",
+      "question_vi": "Có bao nhiêu cậu bé trai?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:18:57.670Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cậu bé trai?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:18:57.670Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cậu bé trai?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:32:02.955Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cậu bé trai?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:32:02.955Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cậu bé trai?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_e4d6eb0e2358dc7c",
+      "question_vi": "Có bao nhiêu người trong ảnh?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:19:05.242Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người trong ảnh?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:19:05.242Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người trong ảnh?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:32:13.106Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người trong ảnh?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:32:13.106Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người trong ảnh?",
+          "observed_answer": "1"
+        }
+      },
+      "history": [
+        {
+          "reviewer_slot": "reviewer_a",
+          "question_vi": "Có bao nhiêu người trong ảnh?",
+          "review": {
+            "translation": {
+              "status": "approved",
+              "reviewer_id": "mơ",
+              "reviewed_at": "2026-11-25T14:19:04.229Z",
+              "notes": "",
+              "reviewed_question_vi": "Có bao nhiêu người trong ảnh?",
+              "observed_answer": ""
+            },
+            "image_qa": {
+              "status": "approved",
+              "reviewer_id": "mơ",
+              "reviewed_at": "2026-11-25T14:19:04.229Z",
+              "notes": "",
+              "reviewed_question_vi": "Có bao nhiêu người trong ảnh?",
+              "observed_answer": "1"
+            }
+          },
+          "archived_at": "2026-11-25T14:19:05.242Z",
+          "reason": "review_replaced"
+        }
+      ]
+    },
+    {
+      "sample_id": "tallyqa_e50da7d9b611531a",
+      "question_vi": "Có bao nhiêu người đang lái xe máy ở bên phải những chiếc ô tô?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:19:25.345Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang lái xe máy ở bên phải những chiếc ô tô?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:19:25.345Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang lái xe máy ở bên phải những chiếc ô tô?",
+          "observed_answer": "0"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:32:24.323Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang lái xe máy ở bên phải những chiếc ô tô?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:32:24.323Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang lái xe máy ở bên phải những chiếc ô tô?",
+          "observed_answer": "0"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_e66a3f47968da5c8",
+      "question_vi": "Có bao nhiêu đoàn tàu?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:19:40.456Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu đoàn tàu?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:19:40.456Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu đoàn tàu?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:32:30.206Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu đoàn tàu?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:32:30.206Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu đoàn tàu?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_e86fb1bf977de5f2",
+      "question_vi": "Có bao nhiêu cái cây cao ở hậu cảnh của bức ảnh nằm về phía bên trái chiếc xe máy?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:20:27.644Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cái cây cao ở hậu cảnh của bức ảnh nằm về phía bên trái chiếc xe máy?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:20:27.644Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cái cây cao ở hậu cảnh của bức ảnh nằm về phía bên trái chiếc xe máy?",
+          "observed_answer": "10"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:34:51.809Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cái cây cao ở hậu cảnh của bức ảnh nằm về phía bên trái chiếc xe máy?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:34:51.809Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cái cây cao ở hậu cảnh của bức ảnh nằm về phía bên trái chiếc xe máy?",
+          "observed_answer": "10"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_eae18b44205a3a7a",
+      "question_vi": "Có bao nhiêu người đang chơi thả diều?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:21:07.330Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang chơi thả diều?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "rejected",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:21:07.330Z",
+          "notes": "check nhãn",
+          "reviewed_question_vi": "Có bao nhiêu người đang chơi thả diều?",
+          "observed_answer": "2"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:00.292Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang chơi thả diều?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:00.292Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang chơi thả diều?",
+          "observed_answer": "0"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_f2a496a0001a6092",
+      "question_vi": "Có bao nhiêu người ngồi tại bàn đang mặc trang phục nhuộm loang màu?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:02.313Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người ngồi tại bàn đang mặc trang phục nhuộm loang màu?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:02.313Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người ngồi tại bàn đang mặc trang phục nhuộm loang màu?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:10.426Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người ngồi tại bàn đang mặc trang phục nhuộm loang màu?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:10.426Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người ngồi tại bàn đang mặc trang phục nhuộm loang màu?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_f5d5a24710ca5702",
+      "question_vi": "Có bao nhiêu người đang cưỡi ngựa?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:09.720Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang cưỡi ngựa?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:09.720Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang cưỡi ngựa?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:18.377Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang cưỡi ngựa?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:18.377Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang cưỡi ngựa?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_f60095e7f8416b0f",
+      "question_vi": "Có bao nhiêu chiếc máy bay?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:19.113Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc máy bay?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:19.113Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc máy bay?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:24.510Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc máy bay?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:24.510Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc máy bay?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_f70d81860c300303",
+      "question_vi": "Có bao nhiêu người tóc vàng?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:28.281Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người tóc vàng?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:28.281Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người tóc vàng?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:33.577Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người tóc vàng?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:33.577Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người tóc vàng?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_f847fa9e40640552",
+      "question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:41.931Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:22:41.931Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:43.111Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:35:43.111Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+          "observed_answer": "1"
+        }
+      },
+      "history": [
+        {
+          "reviewer_slot": "reviewer_a",
+          "question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+          "review": {
+            "translation": {
+              "status": "approved",
+              "reviewer_id": "mơ",
+              "reviewed_at": "2026-11-25T14:22:39.811Z",
+              "notes": "",
+              "reviewed_question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+              "observed_answer": ""
+            },
+            "image_qa": {
+              "status": "pending",
+              "reviewer_id": "mơ",
+              "reviewed_at": "2026-11-25T14:22:39.811Z",
+              "notes": "",
+              "reviewed_question_vi": "Có bao nhiêu chiếc bánh pizza nguyên vẹn trong ảnh?",
+              "observed_answer": "1"
+            }
+          },
+          "archived_at": "2026-11-25T14:22:41.931Z",
+          "reason": "review_replaced"
+        }
+      ]
+    },
+    {
+      "sample_id": "tallyqa_fd4a4259bb7dcc22",
+      "question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:11.742Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "rejected",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:11.742Z",
+          "notes": "check nhãn",
+          "reviewed_question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+          "observed_answer": "5"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:36:06.861Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "rejected",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:36:06.861Z",
+          "notes": "4",
+          "reviewed_question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+          "observed_answer": "4"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_fdd3cec9e239c681",
+      "question_vi": "Có bao nhiêu cái bồn cầu?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:20.146Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cái bồn cầu?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:20.146Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cái bồn cầu?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:36:17.861Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cái bồn cầu?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:36:17.861Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu cái bồn cầu?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_fde1a7858bcbfb4f",
+      "question_vi": "Có bao nhiêu con voi?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:27.666Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con voi?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:27.666Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con voi?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:38:01.813Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con voi?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "rejected",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:38:01.813Z",
+          "notes": "2",
+          "reviewed_question_vi": "Có bao nhiêu con voi?",
+          "observed_answer": "2"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_fe3b2c9021f24c04",
+      "question_vi": "Có bao nhiêu tấm áp phích?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:34.286Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu tấm áp phích?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:34.286Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu tấm áp phích?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:38:12.363Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu tấm áp phích?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:38:12.363Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu tấm áp phích?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    },
+    {
+      "sample_id": "tallyqa_ff3edba9abbcb061",
+      "question_vi": "Có bao nhiêu con vật?",
+      "reviewer_a": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:42.842Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con vật?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "mơ",
+          "reviewed_at": "2026-11-25T14:24:42.842Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con vật?",
+          "observed_answer": "1"
+        }
+      },
+      "reviewer_b": {
+        "translation": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:38:22.264Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con vật?",
+          "observed_answer": ""
+        },
+        "image_qa": {
+          "status": "approved",
+          "reviewer_id": "Lanh",
+          "reviewed_at": "2026-11-25T15:38:22.264Z",
+          "notes": "",
+          "reviewed_question_vi": "Có bao nhiêu con vật?",
+          "observed_answer": "1"
+        }
+      },
+      "history": []
+    }
+  ]
+}
