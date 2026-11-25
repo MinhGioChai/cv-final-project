@@ -58,13 +58,22 @@ human image/label QA hoặc xác nhận quyền phân phối lại ảnh.
 
 Pilot có 30 translation approved theo acceptance người dùng; ngày 20/11 đã
 import JSON human image/label QA approved 30/30 vào stage1_qa_v1 mới. Giữ
-manifest lịch sử cho protocol/raw cũ. Main 1.000 câu vẫn requires_review/QA
-pending. Cập nhật được người dùng chốt ngày 21/11: **hai reviewer A/B, mỗi
+manifest lịch sử cho protocol/raw cũ. Các draft gốc 1.000 câu giữ trạng thái
+requires_review/QA pending. Quy tắc chung được chốt ngày 21/11: **hai reviewer A/B, mỗi
 người kiểm cả bản dịch và ảnh/nhãn**. Hai ID khác nhau cùng duyệt bản cuối và
 quan sát khớp nhãn mới đủ điều kiện; một người chưa đủ. B xem JSON của A rồi
 kiểm lại, không phải review mù độc lập. Sửa VI giữ lượt cũ trong history và
 yêu cầu duyệt lại bản cuối. Log vấn đề/loại trừ rồi freeze. V1 giữ nguyên để
 tra lịch sử, không tự chuyển một QA v1 thành hai QA. Không tạo approval thay người.
+
+**Ngoại lệ Pet được người dùng chốt ngày 25/11/2026:** một người dùng đã
+xác nhận kiểm dịch và chất lượng ảnh của 160 mẫu. Nhãn giống kế thừa official
+test annotations; code kiểm mapping A–H, provenance/checksums và exclusions.
+Không ghi thành hai reviewer hoặc human breed identification. Proof riêng
+`pet_human_translation_image_quality_source_labels_v1` chỉ áp dụng Pet;
+ba tác vụ còn lại vẫn bắt buộc A/B như trên. Xem [quy trình và JSON Pet](PET_SOURCE_REVIEW_V1.md).
+160 mẫu đã import vào manifest mới; còn 840 mẫu chờ review, chưa final freeze.
+Candidate draft cũ giữ nguyên trạng thái pending để bảo toàn lịch sử.
 
 Tên trường V3 có thể được ánh xạ thay vì đổi CSV đang có:
 
@@ -99,7 +108,7 @@ Chi tiết và [commands/checklist M3](MAIN_OPTION_B_V1.md),
 [evidence triển khai](../../reports/stage1/v14/completion.md).
 
 **Chỉ policy được duyệt, chưa final freeze:** candidate vẫn frozen=false,
-không có receipt, main QA1.000 mẫu vẫn chờ. Config A/pilot/diagnostic/raw cũ
+không có receipt; main vẫn chờ tổng hợp đủ QA (Pet theo ngoại lệ25/11). Config A/pilot/diagnostic/raw cũ
 giữ nguyên; policy/settings/code hashes mới không được gán vào run lịch sử.
 Preprocess và processor pins đi vào protocol/run fingerprints. Main review
 HTML/JSON không thay đổi vì đã dùng ảnh gốc. Scope/RQ/gates V3 giữ nguyên.

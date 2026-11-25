@@ -1,0 +1,15 @@
+{
+  "date_local": "2026-11-25",
+  "full_suite_command": ".venv/Scripts/python.exe -m pytest -q --junitxml reports/stage1/v15/software_tests.xml",
+  "full_suite_terminal_result": "471 passed in 37.37s",
+  "passed": 471,
+  "failed": 0,
+  "new_cases": 30,
+  "targeted_command": ".venv/Scripts/python.exe -m pytest tests/test_pet_review.py tests/test_baseline.py tests/test_main_review_v2.py -q --junitxml reports/stage1/v15/targeted_tests.xml",
+  "targeted_terminal_result": "110 passed in 20.91s",
+  "scope": "CPU tests with synthetic test sources/reviewers, plus separate real-data source/import verification; no model inference",
+  "initial_test_failures": 0,
+  "new_GPU_generations": 0,
+  "new_main_generations": 0,
+  "main_frozen": false
+}

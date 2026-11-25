@@ -1,0 +1,63 @@
+{
+  "date_local": "2026-11-25",
+  "review_sha256": "af8ad7c42f81c7f072c3e520240dbcbc87bc4f7c031c1846f507843301159edc",
+  "reviewed_manifest_sha256": "a83107338bf820f40ac48545689e47d5e4a837f3b1df97257fc80fffa8c7ac07",
+  "Pet_approved_under_source_policy": 160,
+  "Pet_label_counts": {
+    "B": 20,
+    "D": 20,
+    "E": 20,
+    "H": 20,
+    "G": 20,
+    "C": 20,
+    "A": 20,
+    "F": 20
+  },
+  "official_annotation_and_image_checks": 160,
+  "one_user_attestation": true,
+  "human_breed_identification": false,
+  "two_human_reviewers": false,
+  "baseline_proof_validated": 160,
+  "proof_inputs": [
+    "data/main/preparation_v2/all_candidates.jsonl",
+    "data/main/preparation_v3/oxford_pet_bilingual_draft.csv",
+    "data/pilot/image_exclusions.json",
+    "data/pilot/stage1_qa_v1/pilot_manifest.csv",
+    "data/raw/main_metadata_v1/pet_annotations.tar.gz",
+    "data/raw/task_images_v1/oxford_pet/receipt.json",
+    "data/reviews/pet_source_review_v1/oxford_pet_reviewed_v1.json"
+  ],
+  "staged_remaining_QA": 840,
+  "staged_expected_cells": 4000,
+  "cell_ids_and_prompts_unchanged": true,
+  "official_main_config_unchanged": true,
+  "official_draft_still_pending": 1000,
+  "execute_attempts": [
+    {
+      "model": "qwen",
+      "blocked_before_environment_model": true,
+      "error": "Main execution blocked: BASELINE_NOT_FROZEN, FREEZE_RECEIPT_REQUIRED, MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "model": "gemma",
+      "blocked_before_environment_model": true,
+      "error": "Main execution blocked: BASELINE_NOT_FROZEN, FREEZE_RECEIPT_REQUIRED, MAIN_QA_NOT_APPROVED"
+    }
+  ],
+  "reference_commit": "5c7ff365d4ac2bdb945e0d740383ca1f70dc6813",
+  "old_git_files_preserved_outside_authorized_delta": 457,
+  "source_JPEG_hashes_matched": 813,
+  "historical_raw_files_matched": 20,
+  "original_review_HTML_matched": 23,
+  "private_archives_preserved": [
+    "exports/main_review_v2.zip",
+    "exports/pilot_team_v1.zip",
+    "exports/repope_image_ab_diagnostic_v1.zip",
+    "exports/team_workspace_v1.zip"
+  ],
+  "main_frozen": false,
+  "M1": "IN_PROGRESS",
+  "M2": "PENDING",
+  "M3": "NOT_RUN",
+  "new_GPU_generations": 0
+}

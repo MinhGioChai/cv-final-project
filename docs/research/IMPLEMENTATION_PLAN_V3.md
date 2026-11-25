@@ -13,6 +13,10 @@ candidate `baseline_v3_option_b_v1.yaml` vẫn frozen=false. B đã triển khai
 độc lập human QA; A13 chưa hoàn tất vì final manifests/freeze/M3 còn chờ.
 RePOPE-only diagnostic240cells không hoàn thành M3. Ngày thuyết trình03/12/2026.
 
+Ngày25/11:160Pet đã import theo [xác nhận dịch/chất lượng ảnh và nhãn nguồn](PET_SOURCE_REVIEW_V1.md).
+Còn840mẫu A/B, không phải toàn main đã duyệt. A11/A13 vẫn IN_PROGRESS;
+draft configs giữ nguyên và chưa final freeze/M3.
+
 **Nhắc Gemma đã hoàn tất ngày 19/11:** NF4/BF16 10 mẫu/20 lượt valid, có
 resume và evaluation/CI tại [v7](../../reports/stage1/v7/completion.md).
 Không nhắc setup/pilot như việc pending; human QA/main còn tiếp tục.
@@ -29,7 +33,7 @@ Không nhắc setup/pilot như việc pending; human QA/main còn tiếp tục.
 | A08 | P0 | Quyền truy cập Gemma | DONE | Run v7 NF4/BF16 hoàn tất; không còn blocker access/pagefile/output rỗng trên subset này |
 | A09 | P0 | Metrics RQ1/RQ2 và paired evaluator | DONE | Code/CLI, bốn task toy tests, actual hai model pilot evaluation |
 | A10 | P0 | Cluster bootstrap và CI | DONE | Code/toy tests, empirical CI hai pilot, B=5000 và seed 42 |
-| A11 | P0 | Dữ liệu main bốn task | IN_PROGRESS | v10 đủ 1000 bilingual draft/783 JPEG, source/ID/byte leakage checks đạt, 22 gói review v2 đã xuất theo quyết định 21/11: A/B mỗi người kiểm dịch và ảnh/nhãn. Tất cả main requires_review/QA pending; chưa frozen main |
+| A11 | P0 | Dữ liệu main bốn task | IN_PROGRESS | Đủ1000mẫu/783JPEG.160Pet đã import theo policy riêng25/11;840mẫu RePOPE/VSR/TallyQA còn A/B. Draft gốc và22packet giữ nguyên; chưa frozen main |
 | A12 | P0 | Chốt metadata/schema baseline V3 | DONE | Engineering contract v1 có fields/strict schemas và CPU tests, [v13](../../reports/stage1/v13/completion.md); final settings/protocol freeze còn A13 |
 | A13 | P0 | Baseline freeze và full runner | IN_PROGRESS | Main runner bốn task v1/dry-run 4.000 cells và resume/error/eval integration đã CPU-tested; QA/final freeze và main GPU smoke còn chờ |
 | A14 | P0 | Main inference | TODO | 4.000 expected; chưa chạy hoặc được xác nhận full-run |

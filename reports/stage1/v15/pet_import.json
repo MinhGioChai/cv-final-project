@@ -1,0 +1,18 @@
+{
+  "schema_version": "pet_source_review_v1",
+  "policy": "pet_human_translation_image_quality_source_labels_v1",
+  "rows": 160,
+  "scope": "recorded_single_user_translation_and_image_quality_with_inherited_source_labels",
+  "human_breed_identification": false,
+  "two_human_reviewers": false,
+  "review_sha256": "af8ad7c42f81c7f072c3e520240dbcbc87bc4f7c031c1846f507843301159edc",
+  "manifest_sha256": "c586eebe55495bdb0054c1977cd9061163b414ddaa5aea8190ec10f2f3c25766",
+  "qa_status": {
+    "approved": 160
+  },
+  "translation_status": {
+    "approved": 160
+  },
+  "imported_at_utc": "2026-11-25T15:34:24.999543+00:00",
+  "frozen": false
+}

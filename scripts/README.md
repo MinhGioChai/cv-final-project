@@ -21,6 +21,8 @@ Xem [diagnostic GPU thật và lệnh](../reports/validation/repope_image_ab_v1/
 [full validation v1](../reports/validation/image_ab_v1/report.md) giữ lịch sử.
 `review_main.py` mặc định v2: export/import/bundle cho A/B mỗi người kiểm dịch
 và ảnh/nhãn; dùng `--version v1` khi tái lập workflow cũ.
+Riêng Pet từ25/11 dùng `review_pet.py`: record declaration thật hoặc import
+JSON `pet_source_review_v1`; không tạo reviewer B. [Policy/lệnh Pet](../docs/research/PET_SOURCE_REVIEW_V1.md).
 Pilot dùng `run_pilot.py`; các alias cũ vẫn còn. Script data luôn chạy từ
 project root, ví dụ `python scripts/data/prepare_main_selection.py --help`.
 Lịch sử di chuyển script nằm trong báo cáo maintenance; dữ liệu/config paths giữ nguyên.

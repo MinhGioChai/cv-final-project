@@ -1,0 +1,52 @@
+{
+  "schema_version": "baseline_plan_v1",
+  "scope": "main_baseline_preflight_not_inference",
+  "protocol_hash": "e77d67194b3156b1f0d0b300c269566309952db9c6cbdeef95a204f9ddc27a3d",
+  "frozen": false,
+  "execution_ready": false,
+  "selected_rows": 1000,
+  "unique_images": 783,
+  "expected_inferences": 4000,
+  "expected_per_model": {
+    "gemma": 2000,
+    "qwen": 2000
+  },
+  "datasets": {
+    "oxford_pet": 160,
+    "repope": 600,
+    "tallyqa": 120,
+    "vsr": 120
+  },
+  "qa_status": {
+    "approved": 160,
+    "pending": 840
+  },
+  "translation_status": {
+    "approved": 160,
+    "requires_review": 840
+  },
+  "blocking_counts": {
+    "MAIN_QA_NOT_APPROVED": 840,
+    "BASELINE_NOT_FROZEN": 1,
+    "FREEZE_RECEIPT_REQUIRED": 1
+  },
+  "grid_sha256": "427276b6c02a0fd24af94a7dd56b83eb8d2eed50140228f5d30c35a4c7ae9d12",
+  "inputs_sha256": {
+    "data/main/preparation_v2/repope_bilingual_draft_manifest.csv": "2b96cf96836e6a1dc9f2600bdffac967e0827916b6c901cf06c5181b535b2734",
+    "data/main/preparation_v3/vsr_bilingual_draft.csv": "b9a35ab5fe6833c9df763bbe2b1ce07f974cdd97973747a206220d2ea415992c",
+    "data/main/preparation_v3/tallyqa_bilingual_draft.csv": "d7b53c2b12c3d6161631f4e31ecf32c18c5657111241079b79d18e20178aab87",
+    "data/main/reviewed_pet_source_v1/oxford_pet_reviewed.csv": "a83107338bf820f40ac48545689e47d5e4a837f3b1df97257fc80fffa8c7ac07",
+    "reports/stage1/v15/pet_qa_preflight_config.yaml": "b680deb4188785cb878098e97ea9343207b90c053ca3cf7dab03de15d6c5d639",
+    "data/main/preparation_v2/all_candidates.jsonl": "f336eb5c8e0f2626f82ff813ab65c57fff37ea39a62fbc16c01a63c69121eec7",
+    "data/pilot/stage1_qa_v1/pilot_manifest.csv": "e19b8601a9f0771ebc79c35ac347abf8a1764a9e2aa183c44288b961d3fc30b3",
+    "data/pilot/image_exclusions.json": "02f9deadc3e2670e5de2ec8b27ebf6516a7105b72728e25bd024693d6ac8422f",
+    "configs/prompts_baseline_v1.yaml": "00b1745e482697dd99a7e2c39c2ef6164dc90050d299852cdebcd5254d7351c9",
+    "data/main/preparation_v3/oxford_pet_bilingual_draft.csv": "c586eebe55495bdb0054c1977cd9061163b414ddaa5aea8190ec10f2f3c25766",
+    "data/raw/main_metadata_v1/pet_annotations.tar.gz": "52425fb6de5c424942b7626b428656fcbd798db970a937df61750c0f1d358e91",
+    "data/raw/task_images_v1/oxford_pet/receipt.json": "48f36a2c326394aeb666c5f2c7c8b54b0e23f047ddb92677a329b5db30d304be",
+    "data/reviews/pet_source_review_v1/oxford_pet_reviewed_v1.json": "af8ad7c42f81c7f072c3e520240dbcbc87bc4f7c031c1846f507843301159edc"
+  },
+  "freeze_sha256": null,
+  "model_inferences": 0,
+  "new_human_approvals": 0
+}

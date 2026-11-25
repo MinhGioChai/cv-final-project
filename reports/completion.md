@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v34 · 24/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v35 · 25/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -9,6 +9,7 @@
 [review tooling A/B mới nhất](stage1/v12/completion.md),
 [baseline contract/runner mới nhất](stage1/v13/completion.md),
 [main Option B đã chọn và CPU/M3 tooling mới nhất](stage1/v14/completion.md),
+[Pet QA theo xác nhận người dùng và nhãn nguồn](stage1/v15/completion.md),
 [công bố GitHub và kiểm chứng tái lập](releases/2026-11-21/README.md),
 [Handoff V3](../docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md),
 [protocol](../docs/research/RESEARCH_PROTOCOL_V3.md) và
@@ -32,9 +33,14 @@
   policy `original_rgb_processor_v1`, image_max_edge=null; chưa freeze/receipt.
   Qwen min/max pixels, Gemma896×896/no-pan-and-scan/NF4BF16 và mọi pins giữ nguyên.
 - Source labels/provenance và pilot ID/SHA exclusions giữ nguyên. Không
-  tạo reviewer/approval. Theo yêu cầu mới ngày 22/11, đã chia 5 vai trò TV1–TV5
+  bịa reviewer/approval; chỉ ghi nhận quyết định thật. Theo yêu cầu ngày 22/11, đã chia 5 vai trò TV1–TV5
   tại [report phân công](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md);
   nhóm điền tên thật sau, không gán lại tác giả các commit đã có.
+- Ngoại lệ người dùng chốt25/11 cho **Pet160mẫu**: một xác nhận thật về dịch/
+  chất lượng ảnh; giống chó kế thừa official annotations, mapping/hash/exclusions
+  kiểm bằng code. Policy `pet_human_translation_image_quality_source_labels_v1`.
+  Không có human breed identification hay reviewer B được tạo. Ba task khác
+  vẫn cần A/B; main freeze/scope/data/Option B không đổi.
 
 ## Đã hoàn thành có bằng chứng
 
@@ -45,11 +51,11 @@
 | Gemma pilot | Cùng 10 ảnh/20 lượt, NF4/BF16, valid 20/20, resume giữ hash; [v7](stage1/v7/completion.md) |
 | Pilot QA | 30 translation approved; JSON người dùng được import ngày 20/11, 30 image/label QA approved; `data/pilot/stage1_qa_v1/pilot_manifest.csv` |
 | RePOPE A/B diagnostic | 30 ảnh QA-approved,240 measured GPU cells valid,0 failed/OOM/missing;48 cells Phase1 reuse +192 mới,16 warm-up riêng. [Report](validation/repope_image_ab_v1/report.md), không phải validation bốn task/M3 |
-| Main drafts | Đủ ảnh/EN–VI nháp cho 1.000 row, 783 JPEG/hash khác nhau; source và ID/byte leakage checks đạt; tất cả main requires_review/QA pending |
-| Review main | 22 gói v2 tối đa 50 câu; A/B mỗi người kiểm dịch và ảnh/nhãn, một JSON cuối/gói; chưa có main human import |
+| Main drafts | Đủ1.000row/783JPEG. Drafts gốc/candidate cũ vẫn pending; Pet160đã import sang manifest mới, còn840mẫu chờ A/B |
+| Review main | 160Pet đã tổng hợp JSON theo declaration thật25/11+official source labels, mapping/ảnh/provenance/exclusions đạt. Còn18gói/840mẫu A/B;22packet/HTML/ZIPv2gốc giữ nguyên. [Policy/JSON Pet](../docs/research/PET_SOURCE_REVIEW_V1.md) |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
 | Baseline main | B đã áp dụng và default ở main CLI, A config giữ nguyên; grid4.000, gates/resume và bounded smoke bốn task có logging. Chưa main GPU/freeze/M3; [v14](stage1/v14/completion.md) |
-| Tests | Ngày24/11 full suite441passed/24,00s, thêm18cases OptionB/M3 selection; [receipt/JUnit](stage1/v14/software_checks.json). Probe processor CPU4calls, lịch sử240raw replay exact; không GPU run mới |
+| Tests | Ngày25/11 full suite471passed/37,37s, thêm30cases Pet; targeted110passed/20,91s. [Checks](stage1/v15/software_checks.json). V14/diagnostic giữ evidence lịch sử; không GPU run mới |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
 | Hướng dẫn/structure | HUONG_DAN_NHOM.md; root scripts thêm validate_image_ab.py riêng cho diagnostic, data/8 và legacy/2 giữ nguyên. Data/config/runtime paths cũ giữ nguyên |
@@ -75,7 +81,8 @@ failed/OOM/missing. [Report và recommendation](validation/repope_image_ab_v1/re
 đề xuất B vì giữ chi tiết đến processor với chi phí quan sát được chấp nhận
 cho diagnostic; không chọn bằng Accuracy. Nhóm đã phê duyệt B trong phiên
 v34; main CLI dùng candidate B mới, vẫn frozen=false. Source/provenance/
-hash/exclusion/human QA gates giữ nguyên. Review JSON/HTML/ZIP không đổi.
+hash/exclusion/freeze gates giữ nguyên. Human QA Pet có ngoại lệ rõ ràng v35;
+thêm JSON Pet riêng, các packet JSON/HTML/ZIPv2 cũ không đổi.
 Ưu tiên vẫn main QA → protocol freeze → main GPU smoke → main inference;
 không C/RQ3/RQ4/main run hoặc tự đổi/freeze config. Raw private ZIP:
 exports/repope_image_ab_diagnostic_v1.zip, receipt/hash ở report; không cần
@@ -84,9 +91,13 @@ chạy lại diagnostic khi resume nếu không có thay đổi cấu hình ho�
 0. Nhóm đọc [report tiến độ và phân công 5 người](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md),
    điền tên TV1–TV5 và ghi nhận gói đang review. Bắt đầu các đầu ra làm ngay
    của từng vai trò; bảng chia 400 lượt kiểm mẫu/người là đề xuất cho gói chưa chốt.
-1. Người dùng báo nhóm đang review. Gửi kèm hướng dẫn HTML chi tiết
+1. Pet160mẫu đã xong theo policy nguồn mới: JSON tại
+   `data/reviews/pet_source_review_v1/oxford_pet_reviewed_v1.json`, manifest tại
+   `data/main/reviewed_pet_source_v1/oxford_pet_reviewed.csv`. Không nạp JSON này
+   vào HTMLv2 hoặc tạo A/B cho Pet. Candidate draft cũ chưa tự đổi.
+   Nhóm tiếp tục18gói/840mẫu RePOPE/VSR/TallyQA. Gửi kèm hướng dẫn HTML chi tiết
    `exports/HUONG_DAN_REVIEW_V2.html` với main_review_v2.zip; nhóm thử lưu/mở lại
-   vài mẫu rồi tiếp tục theo đúng A/B. Chưa import thêm human QA trong phiên này.
+   vài mẫu rồi tiếp tục theo đúng A/B.
 2. Review main theo [workflow v2](../docs/research/MAIN_REVIEW_V2.md): mở
    `reports/stage1/v12/main_review/index.html` sau khi nhận ZIP; tải JSON và
    lưu `data/reviews/main_review_v2/<packet>_reviewed_v2.json`. Không làm lại pilot.
@@ -429,3 +440,31 @@ không tự frozen=true, full4.000 inference, RQ3/RQ4 hoặc training.
 Code/config/tests Option B đã push riêng lên origin/main tại
 `96417fa204a20163d38d1b8b86e5452a8809e885`; tài liệu/evidence v34 được công bố
 trong commit kế tiếp. Không chạy lại các kiểm tra đã đạt chỉ để hoàn tất push.
+
+### v35 — 25/11/2026: Pet xác nhận dịch và chất lượng ảnh, kế thừa nhãn nguồn
+
+Sau thảo luận, người dùng đồng ý quy trình riêng cho Pet và xác nhận đã kiểm
+ảnh/dịch, không thấy vấn đề. Đã lưu nguyên declaration với ID quy ước
+project_user_conversation và thời điểm ghi nhận; không suy ra thời điểm xem
+từng ảnh, không tạo reviewer B hoặc human breed identification. Policy
+pet_human_translation_image_quality_source_labels_v1 chỉ áp dụng Oxford Pet.
+Nhóm kế thừa nhãn official test annotations, không claim tự xác minh giống.
+
+Đã tạo JSON tổng hợp 160 mẫu, dry-run/import thành manifest mới ở
+data/main/reviewed_pet_source_v1/oxford_pet_reviewed.csv. Kiểm archive/source
+record/class/species/breed, A–H, image receipts/decoding/SHA và pilot exclusions
+đạt160/160, mỗi nhãn20mẫu. Baseline nhận proof riêng và recheck exact review/
+source/imported rows; policy không áp dụng được cho task khác. Evidence/file
+hashes được bind protocol; không hạ gate của ba task còn lại hoặc freeze gate.
+
+Full suite thực471passed/37,37s, thêm30cases; targeted110passed/20,91s. CPU
+staged plan4000cells với160Pet approved/840pending, giữcellIDs/prompts. Hai
+execute attempts bị QA/freeze chặn trước environment/model. Không GPU run
+hoặc main generation mới. Đối soát457Gitfiles cũ ngoài delta,813JPEG,
+20rawfiles,23HTML và4ZIP không đổi. [Evidence v15](stage1/v15/completion.md).
+
+Drafts, main configs, source labels/GT/IDs, reviewv2 packets/HTML/ZIP và raw
+lịch sử giữ nguyên. Candidate mặc định vẫn trỏ drafts1000pending; reviewed
+Pet được lưu riêng để tổng hợp final sau. M1 còn840mẫu/18gói A/B, M2 chưa
+freeze, M3 NOT_RUN. Bước tiếp: nhận JSON A/B RePOPE/VSR/TallyQA, import version
+mới và tổng hợp cùng Pet đã duyệt; không cần làm lại bốn gói Pet.

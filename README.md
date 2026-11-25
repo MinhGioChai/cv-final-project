@@ -14,7 +14,9 @@ sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
 ## Trạng thái hiện tại
 
 - Pilot: mỗi model 20 lượt thật valid; 30 mẫu pilot đã human QA approved.
-- Main: đủ 1.000 câu EN–VI nháp/783 ảnh, đang chờ human review.
+- Main: đủ 1.000 câu/783 ảnh. Pet 160 mẫu đã import theo xác nhận dịch/chất
+  lượng ảnh của người dùng và nhãn nguồn; [JSON/quy trình Pet](docs/research/PET_SOURCE_REVIEW_V1.md).
+  Còn 840 mẫu chờ review. Candidate main vẫn dùng draft, chưa final freeze.
 - Review v2: A kiểm dịch và ảnh/nhãn, B kiểm lại cả hai; nhận riêng
   `main_review_v2.zip`, mở `reports/stage1/v12/main_review/index.html`.
   [Hướng dẫn review chi tiết từng bước cho A/B](docs/research/MAIN_REVIEW_V2.md).
@@ -30,7 +32,7 @@ sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
 - RePOPE-only A/B diagnostic: [report, metrics và lệnh](reports/validation/repope_image_ab_v1/report.md).
   Đã chạy GPU thật 30 ảnh/240 measured cells, cả hai model valid, không OOM;
   tái sử dụng 48 cells Phase 1. Đây không phải validation bốn task hoặc M3.
-  Nhóm đã chọn B sau diagnostic; main human QA/freeze gates vẫn giữ nguyên.
+  Nhóm đã chọn B sau diagnostic; main vẫn cần QA theo policy từng task và final freeze.
 
 Trạng thái có bằng chứng và bước tiếp: [completion](reports/completion.md).
 Nguồn yêu cầu: [Handoff V3](docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md).

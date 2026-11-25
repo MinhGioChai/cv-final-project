@@ -1,0 +1,15 @@
+{
+  "reviewer_id": "project_user_conversation",
+  "identity_basis": "Người dùng sở hữu phiên làm việc của project; ID quy ước để ghi nhận hội thoại, không phải tên pháp lý hay reviewer thứ hai.",
+  "source": "project_user_conversation",
+  "declaration": "như vậy thì sẽ hợp lý hơn, giúp mình nhé, tổng hợp json giúp mình luôn nhé. Do mình đã kiểm tra ảnh và dịch, thấy ổn không vấn đề gì cả",
+  "policy_acceptance": "Người dùng đồng ý phương án: người kiểm dịch và chất lượng ảnh; nhãn giống kế thừa nguồn, mapping kiểm bằng code. Trước đó người dùng nói không có chuyên môn phân biệt các giống chó; không ghi nhận human breed identification.",
+  "declared_on": "2026-11-25",
+  "recorded_at_utc": "2026-11-25T15:30:59Z",
+  "actual_review_time": "not_provided",
+  "coverage": "all_samples_in_bound_manifest",
+  "translation": "approved",
+  "image_quality": "approved",
+  "breed_identity_human_verified": false,
+  "source_labels": "accepted_from_official_annotations"
+}

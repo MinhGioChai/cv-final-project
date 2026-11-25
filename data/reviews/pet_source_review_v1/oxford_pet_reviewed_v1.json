@@ -1,0 +1,4684 @@
+{
+  "schema_version": "pet_source_review_v1",
+  "policy": "pet_human_translation_image_quality_source_labels_v1",
+  "context": {
+    "manifest": "data/main/preparation_v3/oxford_pet_bilingual_draft.csv",
+    "manifest_sha256": "c586eebe55495bdb0054c1977cd9061163b414ddaa5aea8190ec10f2f3c25766",
+    "sample_ids": [
+      "oxford_pet_00a458d0562ffc35",
+      "oxford_pet_03268fc0f42caf83",
+      "oxford_pet_054f8fc084013c9c",
+      "oxford_pet_062aa8747d67a8c3",
+      "oxford_pet_0877db26fa86b358",
+      "oxford_pet_08e74e7b6f546bea",
+      "oxford_pet_0b9609a45242559f",
+      "oxford_pet_0bd0556d1703f503",
+      "oxford_pet_0e0adaf145236ace",
+      "oxford_pet_1065bf7a6a74a9a1",
+      "oxford_pet_15453af029cb2d46",
+      "oxford_pet_15f689b65d4b063b",
+      "oxford_pet_1627e6891b40072b",
+      "oxford_pet_165c65be7a7622cf",
+      "oxford_pet_187f204bbaaf31f5",
+      "oxford_pet_1a1dd9bb6528ebb8",
+      "oxford_pet_1a9a82d1bede11aa",
+      "oxford_pet_1d863e673a4af5a1",
+      "oxford_pet_1dc518787072eb71",
+      "oxford_pet_1e6b9bd7ea5cb1b4",
+      "oxford_pet_21ae25f827888269",
+      "oxford_pet_247f8cb43ee83481",
+      "oxford_pet_254012bcb95fc534",
+      "oxford_pet_25477649b80cff1e",
+      "oxford_pet_27a159d8d669a2e0",
+      "oxford_pet_2833fc1d232a2fe4",
+      "oxford_pet_284e6347f4ea93f4",
+      "oxford_pet_285578804dd2eb08",
+      "oxford_pet_29c124a841a302ce",
+      "oxford_pet_2a5bb74306c7376d",
+      "oxford_pet_2b96769b50b25615",
+      "oxford_pet_2c307d1f82f18f4b",
+      "oxford_pet_2e0d10d835da3e71",
+      "oxford_pet_3205bed793fd504d",
+      "oxford_pet_34be314eb8be5cfe",
+      "oxford_pet_3572f1b7ae0d85bd",
+      "oxford_pet_373d6ba9e8d2988b",
+      "oxford_pet_3752bcebd1777421",
+      "oxford_pet_3977c2ae9e750cd9",
+      "oxford_pet_3a1f339d50976651",
+      "oxford_pet_3aa46960da01dbad",
+      "oxford_pet_3eaba5bb86b231b8",
+      "oxford_pet_42c8e5cac83e709f",
+      "oxford_pet_43547c47e2f40670",
+      "oxford_pet_438bf3056ee9f9a8",
+      "oxford_pet_440236de2f324311",
+      "oxford_pet_4b14ca7134558365",
+      "oxford_pet_4b7e7aa3c5879573",
+      "oxford_pet_4dbd8aacc73d179a",
+      "oxford_pet_4e78c512e3065107",
+      "oxford_pet_4ec3aac9a54341ce",
+      "oxford_pet_50261b68c22207f2",
+      "oxford_pet_50b61b3dd769ec6a",
+      "oxford_pet_5185e786a254be9d",
+      "oxford_pet_530e91403dc055f5",
+      "oxford_pet_53b3c72498afc2f4",
+      "oxford_pet_53d3c39a98af09c2",
+      "oxford_pet_53e57b2f204b832f",
+      "oxford_pet_567c5248118c2681",
+      "oxford_pet_574f25393f68f889",
+      "oxford_pet_57cfd01b4c4c30d9",
+      "oxford_pet_58174057810fa18b",
+      "oxford_pet_58a66cc25f72e49b",
+      "oxford_pet_5997c540637c8f41",
+      "oxford_pet_59efa1c6c914838b",
+      "oxford_pet_5da3dac66e4a4cc4",
+      "oxford_pet_5f04a689361647b1",
+      "oxford_pet_5f4b5d5a539a81a7",
+      "oxford_pet_60ae3ffe21a68e6d",
+      "oxford_pet_645c30997f9abe05",
+      "oxford_pet_66c94f49d5fbf79a",
+      "oxford_pet_66e6c708df456cd8",
+      "oxford_pet_69f3b99da0258537",
+      "oxford_pet_6d11d9e69bc4fcdc",
+      "oxford_pet_6e2001eb3038790c",
+      "oxford_pet_71e6751af094eb6c",
+      "oxford_pet_723d0bccc3334d3e",
+      "oxford_pet_729ec884dc778bb2",
+      "oxford_pet_73084a3e1a620e1a",
+      "oxford_pet_741ab383e9df2bf7",
+      "oxford_pet_7520d131e5ca6def",
+      "oxford_pet_759bc6ebd0e9bb20",
+      "oxford_pet_76941f63403534d0",
+      "oxford_pet_7bd8c1b79c4ce89d",
+      "oxford_pet_8234d55ce81efc13",
+      "oxford_pet_8291090688aff498",
+      "oxford_pet_87220ade00442912",
+      "oxford_pet_89cf3386bfba99b8",
+      "oxford_pet_8a3104f0cdcb8ed0",
+      "oxford_pet_8d7195b320fc8c3d",
+      "oxford_pet_8e5bd3dc23fa665c",
+      "oxford_pet_90984219b769b560",
+      "oxford_pet_90da31354b86f329",
+      "oxford_pet_92d92be1dbc71dd4",
+      "oxford_pet_96bee639e1ec3cbc",
+      "oxford_pet_987430f737fc724c",
+      "oxford_pet_9a1d6d83312a2832",
+      "oxford_pet_9c75ee859ba54dd5",
+      "oxford_pet_9d92d7fafa0e8ddb",
+      "oxford_pet_a02d3d176f25e8f6",
+      "oxford_pet_a1115a5180f15217",
+      "oxford_pet_a595d5e14c5289fe",
+      "oxford_pet_a73ce0578d2d96ed",
+      "oxford_pet_a7b8583f6e71ddd7",
+      "oxford_pet_a82efe8808c37f97",
+      "oxford_pet_a99b05673e07cf92",
+      "oxford_pet_ae4f0fa1b0940582",
+      "oxford_pet_afba6def26d93a67",
+      "oxford_pet_b06b57571fe63794",
+      "oxford_pet_b1ad17f08784d47d",
+      "oxford_pet_b3087f684e1bf19a",
+      "oxford_pet_b43ff69b137e5fe6",
+      "oxford_pet_b5228626655fe77f",
+      "oxford_pet_b6f033324c9e8edc",
+      "oxford_pet_b75e42c182529b71",
+      "oxford_pet_b7ec59f3c3cb5d21",
+      "oxford_pet_b87cd9e9740d719e",
+      "oxford_pet_b8d7cd26ad28bd15",
+      "oxford_pet_bb4ec6653111ea40",
+      "oxford_pet_bc8b56b511968bc9",
+      "oxford_pet_bf99abc7e814ca49",
+      "oxford_pet_c00d0671645d6e85",
+      "oxford_pet_c13ede542b702b6e",
+      "oxford_pet_c7cb3c85ce2e2612",
+      "oxford_pet_c82785c57ab126ee",
+      "oxford_pet_c86e2b533be3f63e",
+      "oxford_pet_cba370c86cb81fbb",
+      "oxford_pet_cc823d99fdb6f767",
+      "oxford_pet_ccd4420452424bc4",
+      "oxford_pet_cce6f7162266067b",
+      "oxford_pet_cd519368f6ba762e",
+      "oxford_pet_d157aaec9d72e30a",
+      "oxford_pet_d1c478050392348f",
+      "oxford_pet_d1eb0c31de14187e",
+      "oxford_pet_d7a3f15e73c443c1",
+      "oxford_pet_db0f86f184a348bf",
+      "oxford_pet_dca5b0a3c1d64f69",
+      "oxford_pet_de843470ac37a52c",
+      "oxford_pet_e37549a3dae593aa",
+      "oxford_pet_e37a74688035100b",
+      "oxford_pet_e6058aa80092141c",
+      "oxford_pet_e6966d7d681310e3",
+      "oxford_pet_ea05318330b398fd",
+      "oxford_pet_ecc16aaa12512e3a",
+      "oxford_pet_ed99962f51f4e124",
+      "oxford_pet_ef0e456672cbc689",
+      "oxford_pet_f0b5c90e6fa5e6cd",
+      "oxford_pet_f24b1f125a6a2cd6",
+      "oxford_pet_f2b4425ac6792c33",
+      "oxford_pet_f4a15c6446bd9b58",
+      "oxford_pet_f50ece1d40444669",
+      "oxford_pet_f6682727d264df02",
+      "oxford_pet_f71936835a4b8eab",
+      "oxford_pet_f8393d7500621670",
+      "oxford_pet_f9b25531e3b1b67c",
+      "oxford_pet_fbce6cb85a780feb",
+      "oxford_pet_fbf06b9bf6050d03",
+      "oxford_pet_fd1d189e7d44d912",
+      "oxford_pet_fd50818c45b7a9d4",
+      "oxford_pet_fe9a22651e7e4f2d"
+    ],
+    "source_files_sha256": {
+      "data/main/preparation_v2/all_candidates.jsonl": "f336eb5c8e0f2626f82ff813ab65c57fff37ea39a62fbc16c01a63c69121eec7",
+      "data/raw/main_metadata_v1/pet_annotations.tar.gz": "52425fb6de5c424942b7626b428656fcbd798db970a937df61750c0f1d358e91",
+      "data/raw/task_images_v1/oxford_pet/receipt.json": "48f36a2c326394aeb666c5f2c7c8b54b0e23f047ddb92677a329b5db30d304be",
+      "data/pilot/stage1_qa_v1/pilot_manifest.csv": "e19b8601a9f0771ebc79c35ac347abf8a1764a9e2aa183c44288b961d3fc30b3",
+      "data/pilot/image_exclusions.json": "02f9deadc3e2670e5de2ec8b27ebf6516a7105b72728e25bd024693d6ac8422f"
+    },
+    "candidate_labels": {
+      "A": "American Bulldog",
+      "B": "American Pit Bull Terrier",
+      "C": "Basset Hound",
+      "D": "Beagle",
+      "E": "Boxer",
+      "F": "Chihuahua",
+      "G": "English Cocker Spaniel",
+      "H": "English Setter"
+    }
+  },
+  "human_attestation": {
+    "reviewer_id": "project_user_conversation",
+    "identity_basis": "Người dùng sở hữu phiên làm việc của project; ID quy ước để ghi nhận hội thoại, không phải tên pháp lý hay reviewer thứ hai.",
+    "source": "project_user_conversation",
+    "declaration": "như vậy thì sẽ hợp lý hơn, giúp mình nhé, tổng hợp json giúp mình luôn nhé. Do mình đã kiểm tra ảnh và dịch, thấy ổn không vấn đề gì cả",
+    "policy_acceptance": "Người dùng đồng ý phương án: người kiểm dịch và chất lượng ảnh; nhãn giống kế thừa nguồn, mapping kiểm bằng code. Trước đó người dùng nói không có chuyên môn phân biệt các giống chó; không ghi nhận human breed identification.",
+    "declared_on": "2026-11-25",
+    "recorded_at_utc": "2026-11-25T15:30:59Z",
+    "actual_review_time": "not_provided",
+    "coverage": "all_samples_in_bound_manifest",
+    "translation": "approved",
+    "image_quality": "approved",
+    "breed_identity_human_verified": false,
+    "source_labels": "accepted_from_official_annotations"
+  },
+  "decisions": [
+    {
+      "sample_id": "oxford_pet_00a458d0562ffc35",
+      "original_row_sha256": "56c5b9f40bca51531662662d3cbe3c1440190bc95741b8ddb3e65b410bb14eb0",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_98",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_98.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "5a0e11ca7210f7eb511b84323367486cea361b469df11ac1a47eea1bc07dbd7e",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "429bda81364d75b40b0297b6322e915c1c35b43a3b42222e19b6355f1fb49549",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_03268fc0f42caf83",
+      "original_row_sha256": "4b120c7d0aebf0044489cb2d6f6c10ca16b908473cafd5d20918707173e1c9d9",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_59",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_59.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "856dd55fbe33712e8f49085a773eb5e643c2a44db2c6df7ca014cb34f86eda06",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "482cd64424ab8e5d90994aa04237823426849f0a3747092082a1fb9d17bfa53d",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_054f8fc084013c9c",
+      "original_row_sha256": "1083d9926fd1c8ff175421424e536a609f02430ffc3cead8b029af6c8ff63741",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_3",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_3.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "cd71641da43e205de05c9424b88e98ec27c1decf15787a905c40efb55446c2e8",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "71c2b345f217b9c500015056da73862f69b2becac9b1ea8476b63fde78068446",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_062aa8747d67a8c3",
+      "original_row_sha256": "8b575f76a5e2d378df3bf959ba304a4c0289a4a2564ed8ee04b6fc80fe4c9ca8",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_19",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_19.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "55f419954efd9992f91ccc5c2ee153e3b288471de4a7a1fd0dd443fa8f1cc598",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "13cef2c5199a6f2b294c6c81446a27e4ac187151dc4d005724decccfa14f3bfc",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_0877db26fa86b358",
+      "original_row_sha256": "5f8bbe29ca43e1fc3b10ed7137aa4d8e745a793318fc840d455c66d27d60bd09",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_5",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_5.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "48b5ac6ba857c43604eeea633c23e6099363478e9c3b08187be7e7459b12f375",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "cebf84a6de0016c5b8335677b7f9a464b0c437602259baf78854b92e2af278f6",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_08e74e7b6f546bea",
+      "original_row_sha256": "c063e7e53427916430fc15c153b50177c365ab32a9c843f78af5b3312b7b5e1e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_93",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_93.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "266b08cbd732de2d9ec1f29b06903148fa7959acd7d9d3af8d602541d01486c4",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "857294430436f926555ae41981910197f3f267851ff2a76464649fc75daaf03f",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_0b9609a45242559f",
+      "original_row_sha256": "2f25c0dc1c7236f9f579dc0bc5db35b029ce001dc9e6391dbfbd5eeea5907d91",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_19",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_19.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "c6c6684ba0d9ab1be30bf0b8ffd71c931ae2eb8fac129de5c47251ab7ed423cc",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "06793428eb3b39970744743ead5fb24963c184e09bf304682c4fafa6bd7a4889",
+        "original_size_wh": [
+          356,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_0bd0556d1703f503",
+      "original_row_sha256": "1a204a337cb1ffdd57fb1cee60976a43b2cd6a14a6c0b8e13a99fb0dda0308ec",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_67",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_67.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "c4da9b58c618e8ee5a07f201b249fb4e9860be7a187fcec332e3bd86c88fa583",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "e9cae4a5269200f573a3de9787e55b13012a4338a62210ce66e84e07eaf9e1a8",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_0e0adaf145236ace",
+      "original_row_sha256": "5f0d393f60ac9f240e1f73e5b724ddbe33f7e453ce9024f9a3c5a0205970b344",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_68",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_68.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7d9bac366f8b7534936769a6002140f1374c337388315de7ffd42b92da1067fb",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "44bb89d7dc836e9aeda25972a5dd135c8d24e16e33942b0eea98510e524a0ca7",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_1065bf7a6a74a9a1",
+      "original_row_sha256": "9bdae570db669ad1c0e66ceecc6884ac21c4982434052764ca900a0c091f1c24",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_87",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_87.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "3f1d98cea2d14e682acfdfefe3d8f1b703584f969d08e1ade68bef350924d03b",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "f5f43833678e2c61b49ea7cc4807de0020638e51f299c451c7dfac1901251284",
+        "original_size_wh": [
+          338,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_15453af029cb2d46",
+      "original_row_sha256": "7f4232adf8421b2fa97e000a1b4b0622aae010c543207e20a7e9c2e07be38208",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_90",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_90.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "157b60971e9abaf0c77a40c79a1eca1e05c3e7ffc9aad315cfcebcd9a293e1d9",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "dc1e2e8e5a3854637b75f03b6818917c5dbe1aa11ea6619d6d93771978249590",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_15f689b65d4b063b",
+      "original_row_sha256": "34230732d65341a7e14998f1e5a0a36ed77098124e59c1a845d5d7d2abd4d576",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_74",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_74.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "0ca777f4a657b93daa46c772c5c46766cc384d86e8035240f5236871b8232f62",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "f7c3b2f1a322ad19d6df77ae1ca179c048cfc42ba81e15bff4cd5c8659dd3eaf",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_1627e6891b40072b",
+      "original_row_sha256": "b420ac3bd8777f4b40b5f776d90274735429286608ee83d88c95c0e4c8263a4a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_54",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_54.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "e3dd096914fbe96c6d44f4b6f6c9e473fcf1d00a92910390aada25224a739690",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "47c611d955467c16d682b58c5243fa05175cbdcb997b94e7c7e751ab62744626",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_165c65be7a7622cf",
+      "original_row_sha256": "0985c2007d6552e3c0294d5d89599c76913278f37d816398cd0e7d897595bceb",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_93",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_93.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "37af96e70ca32afe64e6120afd865a46a0d4e543d68e2313275d8ddf836c96e7",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "4bf42a6b58fa96a014b646f299308f50abb9d202eed017dfbd12cd1a62d445b5",
+        "original_size_wh": [
+          335,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_187f204bbaaf31f5",
+      "original_row_sha256": "1034e437e51130262fbcace3ed93a5b5911ef3288fd96b0e69fe685f286a7402",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_4",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_4.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "a77adbeef326723e229e0f4faf7ea5d7b1194dc328ff0d62bf0cbcf5ac456566",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "78b5cc0b1347024795c47ae4f6978d0fb4a50e0ebba67bae3533f7df98b18549",
+        "original_size_wh": [
+          500,
+          332
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_1a1dd9bb6528ebb8",
+      "original_row_sha256": "47a99c5e4c8c494872d32979781e42552b28949997c800b24342f2faf31059a2",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_62",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_62.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "70f7d856787d7409b7eee7b0fa7767d3e5e4ada8b78358b42144c283ffbbe446",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "2502a5a6cd3bbc13c00f686a70b702c572a6d2ba57b3c1a7bede7d084a50f0a0",
+        "original_size_wh": [
+          500,
+          332
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_1a9a82d1bede11aa",
+      "original_row_sha256": "e9eb350f3ce0da06f5f4823efc65ae6299a29c515c21f333deceb918a8eec7bc",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_29",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_29.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "aca61c154188ee9cd8b2f2d22597108493048d22aec49628b37a421be6a7b328",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "3f4cd579afdb981798207eb63ca361faf97f408b42e8d1eb577ddb0d405780db",
+        "original_size_wh": [
+          500,
+          379
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_1d863e673a4af5a1",
+      "original_row_sha256": "aaa6eacdeb7f24cf2428cee115f14cc4f8f8713d88888d5e8ff4e8ecf16ea77d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_71",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_71.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "c5a5092fe3097e6abc06c345d146b71755f66ca26b06a631b60fe923d7d084af",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "51d795fa4c3640cfac67fdf039ba11b595d409d595fcfb0bc0bd2cd9fff2d78a",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_1dc518787072eb71",
+      "original_row_sha256": "8e73c9b450ca4879ea687b2fa43995f8b77b67e9c116f8da72ed653ccbdee99c",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_39",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_39.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "477ba0ead07755dd6027f08e83570ef3ccc5a34d84f31445204e399e884c70e9",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "9903edc97a3f6d198f3978e4e8a144c849c04e9ebc7f2b7bb99e48983c0ad814",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_1e6b9bd7ea5cb1b4",
+      "original_row_sha256": "28cd7b6c4266d0aefa346f6fd45eca8011a7782a77ef79f12a11498f19a6667a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_77",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_77.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "1b839a5afaea2418257df9514b592a5e7162315341a208a1686c06f36341477b",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "a870bfcfee5296d15f982822833abbebf075533d150e75c36bbcdf2cea77ee59",
+        "original_size_wh": [
+          500,
+          336
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_21ae25f827888269",
+      "original_row_sha256": "5bc82b479f3d516ecea4ab4d71d67c6f17c933c6af24fa0e18da01809a2d0595",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_212",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_212.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "216d09bc019ffb6deea4cf57d483a1cfc8997df58fccae9cbb99a95cf4daf21a",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "c4b1fe88c7faa7a1f99d6bbdea7818116f13ae675a4b000c6698fa23da747b5f",
+        "original_size_wh": [
+          500,
+          376
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_247f8cb43ee83481",
+      "original_row_sha256": "4c8cf261331604d4041347d39314beb138d952d8506c672d391dc92b7f2e46b3",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_97",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_97.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "e5752217cbbb9a7e0e6205e79c7bc098ec2354c225bd57ac81f275bde4fbaf40",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "be8b89a00932e49632590b60cc58b5ed18c797b781ff4c917f58de8e185a6793",
+        "original_size_wh": [
+          500,
+          332
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_254012bcb95fc534",
+      "original_row_sha256": "3c10a347344033d03d9f8300d2fad6f352e38364c8feb8e2c1f3ed70a3ffdfe5",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_25",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_25.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d4456a12ce8c5dbd928a349ff2d5d31c5407b55e5d6468b1ceaa5bb15d0890de",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "e6b125f8c8bd98f993bbaca92021167eebb1219161ea2a9b73a433f02f73fb64",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_25477649b80cff1e",
+      "original_row_sha256": "a18671ca697ec4d5b1b72157a71c5597b2aa169037d9db9c2d76e6ee804ec74d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_98",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_98.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "b5ff8f432898a9fdec12e5ccdbc17872fd6aeefd4efc6f002787b2c9bd889ff5",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "6835a398fa1d5a6298ed81357c9578d0660fb68ac9b516c1a740a9ebbdb6e43d",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_27a159d8d669a2e0",
+      "original_row_sha256": "1e84cd261c041666574514fc17452c40e426ef100ec1064c8075a7e529c2e4af",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_57",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_57.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "90b0a0d2352a6dfcd2cb3e6f4a98f9ee01da6744873c6c102c353eaa234d3d4b",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "1b2c248412c70ac83013846bed60bc3f0cd36624d486a80a32893019dd81ac8d",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_2833fc1d232a2fe4",
+      "original_row_sha256": "0bfb27a41cfd69dbfcd99e5e1e4120b957f63aee49984446daa88216ab4350af",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_96",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_96.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "f1a26f9922d47b9131d1ca9fcac9465296b37f3df48e27899bb505a9012aba59",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "f54e36826b44975ad5d77e4bf58a8b4ba8129bdf6906497eef5cc22e69e452c9",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_284e6347f4ea93f4",
+      "original_row_sha256": "f227ad47d782384d74a3a4161df48d0cd81b8d318c6f4c9ec306e1f56348de10",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_30",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_30.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "a117b3b68dfdf26768ace9d1aa287c2abd7e16bdf56d34c0906d3b33392b777b",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "91cd65d4aee58cf2e9296b5888b1bf27f3c436d5603a7b35d3b179cd2b270dd6",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_285578804dd2eb08",
+      "original_row_sha256": "990b6a0e955bb1b1f633e8836619267c09f66c7c6c343b897365424060abaa6e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_193",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_193.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "32eaedb8b0db391b424825e42a9a5c9d331b0442723812b2626d195d9a971f1e",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "cf336d7bd6b7f2fac2e39600e87dfe0c993c6c77448ffae130cd3064e11de516",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_29c124a841a302ce",
+      "original_row_sha256": "dc352ba187a159f1e64cab6cfe003fccb00e7d4fcd6dbff8f191d0e765449f4e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_70",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_70.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "555e847b2317a62aca95284276f59edac707f6cc0b6f84fbc56318d6c0d87f26",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "51cc36acad59a9f6795300659b40d3e47a1bcbe58175d1a036e65807ee9a74a2",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_2a5bb74306c7376d",
+      "original_row_sha256": "5a4af24811c52fda2a5831bb73641fbe2f5a6f7369a7aa9ced5f99dbd744bf96",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_69",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_69.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "a1b0fa9d4d049f466ecfd916b6136883c1669d7bf58800313a06bd9ee1c0961b",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "5cf750d4e50b864a48d9c16c2bd79dc0f0653ad05ce4254e8107be12ccc81ea9",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_2b96769b50b25615",
+      "original_row_sha256": "ffef685dd2a133d8f08e00a94ac363c33a88ed0c8bb694c48cb9b4f84bb32d4f",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_73",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_73.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d36ad320a215d2e9be3691d25d183c674f5f8f428ccdfed813be4477c59de5c8",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "353d94ad4a5d94bfb4dc9a0009165773aac264935a5d8f57c73f9050281b900c",
+        "original_size_wh": [
+          500,
+          381
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_2c307d1f82f18f4b",
+      "original_row_sha256": "3401f68ec6827f21ed2cdc70e2d79466db1378de881c967a7e7218464ba2e50d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_58",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_58.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7005b5a9c03f3f34893d2b0d3dba9be4e54a82bb1e62c578356e976b119b60cc",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "f685b9f06d06d479807314797d5d1fdc4e9ab46a410a33db4e5b3384a2fa5920",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_2e0d10d835da3e71",
+      "original_row_sha256": "7a16f982e00524553435d093d55ab6a76a4b115714b56902ca3cba1c97f1c66d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_69",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_69.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "8f60bf018d8195df03c3f51f10366e87f42ce810498c286452d1e43ba8c84543",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "b2edb8bd62b60e20529714d146cc919aa2e8b6c89d024ebcad221167ab5b2257",
+        "original_size_wh": [
+          294,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_3205bed793fd504d",
+      "original_row_sha256": "07b7ea135680f79c6b7d1cd7eb38aa5fe8653744b6ae8a189d89c3013055db4d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_5",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_5.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "5c8d6a9553222c97610d7f40286177089a24fe36a0bc7aeea3bcf86fcfad6a3f",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "b052adddc4ccef52a278a6e5f9f8a8f39f1dbf6ba9207bb215b7c52d5a533cb1",
+        "original_size_wh": [
+          300,
+          400
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_34be314eb8be5cfe",
+      "original_row_sha256": "a3944c250c07925b688d41d35116317528bccc45c26408e43d70e6dc17ea1c50",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_81",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_81.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "644153da17719236b9cba4be631940f216e3f932af3bc0dd6b02bd586c2ff909",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "6e6c3b92869b5c732d9198e113f36d3209728042668c9a6545da93a9315b77c6",
+        "original_size_wh": [
+          362,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_3572f1b7ae0d85bd",
+      "original_row_sha256": "608de250e76d5fd965eec689dc2d459012ae6fee54c6ac0500e9989aeda5ae14",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_80",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_80.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "604cd849f7981807c3e940b791554910807ed0bb421d45b4626351eabfcaf967",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "74c5cf37bb3b45d942d85bae53fdd833a568f3477d0207921f38e1a94eb4e065",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_373d6ba9e8d2988b",
+      "original_row_sha256": "5eb81a1effe4d9a501776efcdc4d1e28c0c537ff71e58486160d55043ea5891e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_42",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_42.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d4837631394af4a317a86c69f85374dc095e89cb490dc26178838ad09523285b",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "b0d5a47138316b752f5ade23fe47a7b2fd0e765a7f93f04cd784da536106bd66",
+        "original_size_wh": [
+          300,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_3752bcebd1777421",
+      "original_row_sha256": "da499e41900868cc4b0e3fd429e806bedebda89f5026df96cd34dcd9a5816361",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_57",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_57.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "23c4b22d3898297bc2767d737fbbf97812e88c07c902fb1137dd3199f2786195",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "c1968bffa6d6cd93796621c4d43b9c46cd1fe2ef1555ba9570211eb231bb1517",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_3977c2ae9e750cd9",
+      "original_row_sha256": "589f1c2f25c68cd589627dc6c8b95cbeeb8178ce5bb1ca86f568d0cfec67338b",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_83",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_83.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "04a12e7000c4283afab8078f1c6794881cd9282556d93b4756cfeb89e492a909",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "04c290ed58509e6147e8b20fa7db06476b4a7b56751afded96bb272f98940703",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_3a1f339d50976651",
+      "original_row_sha256": "c63641ffd9e79548d05f86eb38a48c335b436a905600ca92949eb23c79b2c42f",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_37",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_37.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d1ec0774872ffb0f43f46f27448b0bc7735207c3f239a92e04541fb338219c26",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "cc0c36227f9ce3a079ec03d3e129e0dac8418ce707f21740413e296d956c2cba",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_3aa46960da01dbad",
+      "original_row_sha256": "6675e2ca6ac7be43789332c469c9b400ffc27c0a852cfd956f28a7259b48f3e1",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_60",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_60.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "e6d81f8bf5ec65ad3bd3b6ef78ed05625232b8a7ac41df6df9566da94a4a266f",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "02cd170797c4cddd27c046cad7c0f8072c3285dab0a172a1061124d563244c46",
+        "original_size_wh": [
+          500,
+          376
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_3eaba5bb86b231b8",
+      "original_row_sha256": "6fa90eb65ae55b1c9554ee0ed0c281f430884cb5a6ba5c78d3f2c1a6dc7da1b1",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_33",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_33.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "03294b01b142286a6bd4ddf2c963a66b567772ca86431d0cf1558b2e5c471a21",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "057ab2374ce1919c5188ab001725e86302acb35ed6d2f91f07e8467a41d1b8dc",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_42c8e5cac83e709f",
+      "original_row_sha256": "6a87696df7e3668a44c99e9e86597bb8a7b153aec12469b633459ead2fb39bc7",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_3",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_3.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "998134605c609c7ec3ab75fdfc963e0ff2745e9c97334c8ed7525926fb8eafba",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "a11fcac6956a0df45c23f00fb5d5cce0e39ee5410a9d86ab20b8a36d5b08543c",
+        "original_size_wh": [
+          500,
+          481
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_43547c47e2f40670",
+      "original_row_sha256": "3e342214e358f57c527c3d64966786991c76ad40f072cd5c8714ef98e6c1fc9f",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_81",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_81.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "1d87d8ee7496d4af5ecb954864666f858df53b2498c57d75b5a12525290f8731",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "367eb11d8c3ce0a97c7f9d71f5be13d6b609de5afb377e5f4b5c476dda1d299c",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_438bf3056ee9f9a8",
+      "original_row_sha256": "7218fab52cf8faccbb2b33bfcc05b44e31379fb379e7372a21549f5874d78129",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_9",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_9.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "621817cb101f604fa8d89929ec705e879ab0f4d23bd1f7adcd5714f9557e18cf",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "6b23a047360f50999888d65e09c4852dccd2f8f389a34b49dc4c6ea3fb08c842",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_440236de2f324311",
+      "original_row_sha256": "d2d8513839c1e2b4ee617dd5fbb35aa49b2f65ad55ab022f7d7ea847e0d0d2c5",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_83",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_83.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "ae478298f555a93969ed45fe19ce0497e07cc21e970743734efef8d76883b7fc",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "83d11abad891d4ea0ab21f1ce862078a90364f7fefd5e6e584fefad178b40142",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_4b14ca7134558365",
+      "original_row_sha256": "60e2fe8fa21e3430c0345b88dfd0135c43aa54793c0c43fe6ab72e6ce404d3d0",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_27",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_27.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "8401e60c974415082920417cb662aef1870d3ffec61400a8fe15cd503d72cc76",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "a04b090eff50e1e23c31de6281a233f1dbc98e102af3c646edc08023cb454344",
+        "original_size_wh": [
+          500,
+          447
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_4b7e7aa3c5879573",
+      "original_row_sha256": "28fc59c56b21531856cffbd904b1d147a1cef10e98a13107514750af66c9c92c",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_20",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_20.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "edcc06e213b248bdf08938aa3a7572b398576bc99b80b5f23d6d47a9880a489b",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "9ab8216ca9baf4bc2d256a8a12b3ab064597da59d6a69fc37b83427fc5d9259b",
+        "original_size_wh": [
+          491,
+          434
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_4dbd8aacc73d179a",
+      "original_row_sha256": "67ff34d98a961d58fa8f38578e1fd2604940294be0bc8472ffeb43b53f9fd8b0",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_65",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_65.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "5178027946486647a0bd700274f27c78d267d8b5dea36a32f81e18f27249bf41",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "245b063d2a9c864a0af22010559189d4289c732c9ff03eee22cd4c32d4a06644",
+        "original_size_wh": [
+          413,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_4e78c512e3065107",
+      "original_row_sha256": "e9e46af6d2afa27f178ba7bf543633e0679b7168bc7123d333979798b14a65e1",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_35",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_35.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "fcc07538b9fdfccd84a58c29e6b3ea53f763b75d1edce219385b957a54d4174b",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "c87d5da67e8acca7f341e3fb8c8a67fe340c5716ccaf561a7f21c763498adfab",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_4ec3aac9a54341ce",
+      "original_row_sha256": "353fe745c6e37d9d46a786c68ff6b3069ab3a1824e1bb03aaa9c095914c2c2f9",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_50",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_50.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7e370ea4af89dbbc304e7c1362873087e8aa939ef6e5d5bcd43d928ce373e436",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "7e9c70fdf034c911d65ab14474916ff690acd3d93ccddf43589937779553d03d",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_50261b68c22207f2",
+      "original_row_sha256": "72197386c9c3831fcc95fef79719cad751d9bb926e28b779b65ff6d1079e9897",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_5",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_5.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "99193cc2b4f194e80681ae91472aaaa49b6d296910e526be89b029af6d7f1d55",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "09a0488ed10c7fe858a77a70255625fe5efc1aea7851c701108abd07d17000b7",
+        "original_size_wh": [
+          456,
+          462
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_50b61b3dd769ec6a",
+      "original_row_sha256": "71103e633f842d62eaa92191fe00d369c1f1a4a6749ca54d6ec070eb19f21ece",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_198",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_198.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "bfd61d07401cb59e77250d7e21daadba8047fefc92688ab75313fe2d4d8123e4",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "974f506c683d8b610a292aa7668700b7766dae7d92ce54b09c1ad3eb9e016468",
+        "original_size_wh": [
+          300,
+          226
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_5185e786a254be9d",
+      "original_row_sha256": "6bedb4d1f609df03554f2b8bef1a598062133133ec6441ce8adcec3db7dbdb5d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_80",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_80.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "4c49b16eb0935f8609623acae8853eddc5023453f2f3da8e9a8c921885c38343",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "9e0f66b7e86f35c19597d4006fd2f7a92671a327c3297f2d55103a63ed41d63e",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_530e91403dc055f5",
+      "original_row_sha256": "0a06aa164fe3ce0d29d3bda3ad6c318305e738ad3742935ad9b4bec98a966c01",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_40",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_40.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "2cad824aa40aee44d2da5ae8b5e914becdfeb7f822a7a926005155219488f779",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "2083b25587330ee620dd919a8affe9931046b559409cb909dd9a7339e8d15976",
+        "original_size_wh": [
+          500,
+          374
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_53b3c72498afc2f4",
+      "original_row_sha256": "78d102935bc12c65ffcc9ad834aeb082a3109def902a638013a246902ca52db7",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_22",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_22.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "f21049e52977217d7ac9866c6f86e105aed93747b226480d8fd18ed10d4f39b5",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "db39479972b1863b89333235ca72e5ce1fc96974e659925bae3b3e2431441155",
+        "original_size_wh": [
+          500,
+          332
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_53d3c39a98af09c2",
+      "original_row_sha256": "e0e5886461ae1525872d423d5872f9b2dc0ce2961afcd9cb0edcbb5f34140696",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_68",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_68.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d7c77090ee1ae05a24e3b7446f0d1f12abe6e6c0ba00eb449a5dd4a63f806ac9",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "df267a717c083024e50ed926f1a1618efa1bfac40663f8601d44a69064c0d2d4",
+        "original_size_wh": [
+          500,
+          335
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_53e57b2f204b832f",
+      "original_row_sha256": "7af7619b3ddc43beab3f22f99a979552725c4941d364fc87596e98ac8cebc833",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_200",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_200.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "173d4e8fdd6fc9946870c9efdccfbee956d0cdc2780e5cb5843e0a2390cc42c9",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "7a05c3e2a1725a811b08157b833905b71ae633fb5a668e7cb0336cf0e69593d6",
+        "original_size_wh": [
+          300,
+          225
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_567c5248118c2681",
+      "original_row_sha256": "5de0b24c4c92f6e671b50db4154f39c36291303f378ee316c46a22983150fc06",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_45",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_45.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "e64c4bad5a8a21537ae6fca7d5d87101382967fdffbb3cd04a8fae31996aec00",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "b667f3b74aee679774da49c4565aaa3ee1094f1b5de57b813daf9801447ab503",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_574f25393f68f889",
+      "original_row_sha256": "8ae0d31c81589ecf52087e57dced7550080f8affeca165baddc7a53237e4f634",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_73",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_73.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "f6e69f5389d2c8ea00aca1fd1f4261ca52f492e64ebd69ddad35b52db4b30458",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "a5b08a27caa78b9d3797cc3fe92bcc86e5f4dd743aef42e39797313c19562cf3",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_57cfd01b4c4c30d9",
+      "original_row_sha256": "eb030e7c7addeffb790abba166a30d34689bc9863a7c258cc496d29ceadba8f8",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_95",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_95.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "c582def33b0d9387a47785522f79fe4583c3c8f23f79ba915cafdffdc6cf5fe7",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "028c46df6ca10f7d65164c2c53b0f5142744d6cd858656e97be536c370dbcbff",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_58174057810fa18b",
+      "original_row_sha256": "2e55724915b46ad92b9a1544fe2211f860331dec5c7943fe2a74a259975b6b98",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_72",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_72.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "2d7b3e2f60515e9e52dbc640a8b5cf2c0973ed576e182794b874f298b6c54481",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "47a726068a326cf00b5dc23218c0727b101d7e0bfd1439a4e3d1d8dfe9d00f3e",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_58a66cc25f72e49b",
+      "original_row_sha256": "d4bafc57066210eee4dd0301376373a0dbcd0eaeba3ed2c8919fad54f8f31802",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_57",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_57.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "935c09bac65fc2746688b62104f6f07e1a7e411a2f92cbb9f36b2ede69d6c2ab",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "6e099dda72d488f19f642009ad11cf59c0ab8a033b43380b7e3a5834cb56c20a",
+        "original_size_wh": [
+          337,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_5997c540637c8f41",
+      "original_row_sha256": "7a0e0655d2d765d3129e0aa21748d71d2db20b45ac16d8b4b9ecb2851981e78d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_95",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_95.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "b716cbc48560ea82857a0369e59ef5d62d9e802fd6c540ae8011abf15676422f",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "914ce483ee811a25583ae5d2e9e916a5c49c50e22ea2b7235cb96877065c9fe8",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_59efa1c6c914838b",
+      "original_row_sha256": "5af338e2e05d7f244e008cefee9910a3c8754a4d4e9b7613e709b73c59890388",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_35",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_35.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "9cafe63250e620867406d61baf98c21e3a92b314247409e73912e5608bcf6412",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "67363342dbd3f733a99a172c343ff7cccb493fdd88b30f8f02d522e5903b1ea5",
+        "original_size_wh": [
+          500,
+          361
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_5da3dac66e4a4cc4",
+      "original_row_sha256": "f11233495fa0490b974b5fdb970bcaa4d0e1251e11f29dce3e0cebacc8c5c4ab",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_39",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_39.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "01512ba72a967eb54ad3545907f872dad6a8122beabaf610705c840bba47fc81",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "be1a2e94db5c23d55ca3748ea75ef3ea54b47b863c2d80633c9590e2c647ae04",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_5f04a689361647b1",
+      "original_row_sha256": "2661973a8b5439a05960de69f6f8b16aeda5877c1eede9354467a18e0e3fc9a4",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_89",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_89.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "1d7a324e1632893dc358526f8f0473c10884f44a8df45b9c353eb4776acff655",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "d5270d78206a3e531aa9fbd2663be29aefece5c125e5ed38441c9b08a464e85f",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_5f4b5d5a539a81a7",
+      "original_row_sha256": "a053c8cf953ae4d9eb0532f412e108cf5d022adc15a07916cc860ad28d79dfac",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_62",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_62.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "aace96a9263d96263e2475ed8afd8cf991304ac34de5ed7d950a94bab788a62b",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "81e04fdec7f72002936ec2ac5fdfb17cb3818aff31eb5dfc3a5b0f45d21a8964",
+        "original_size_wh": [
+          500,
+          464
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_60ae3ffe21a68e6d",
+      "original_row_sha256": "f18c87c3140efa415e28f7e50ed65f6c56421d51b168a70bc19dd1f85417e3c4",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_47",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_47.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "4101d0e35a9da40fca5b01dd2d63c905097b96755b642d043be1b9440d2a55d0",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "0f6e82361e062fe38c64512b236e378efab13e35793e6dd0ad6e0d1b997a38c8",
+        "original_size_wh": [
+          500,
+          391
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_645c30997f9abe05",
+      "original_row_sha256": "44d46cf06406b367f31f58059747931b8e5dee0ff4b996cbef0e9fbc249277d3",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_85",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_85.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "09d630e43eb6e340cff76723082154a9a6bb80cb376e6f35106a13d1ed518aaa",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "b05fd156a670c224920810d7bee33d6ec66d166c4cdf761bc314a1b81cd42f0c",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_66c94f49d5fbf79a",
+      "original_row_sha256": "92aca387590af1011017410b0d3e91c10fe63d4eb6c60a716acb9c945aef56df",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_80",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_80.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "faa42f7a382efc00e5193e23cee19cbea6ec672e45049726132201a05c6f151a",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "71808385247f0a161cf9dd082c739807606468eb33fc91a6fb2dc4e67a848259",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_66e6c708df456cd8",
+      "original_row_sha256": "e3c049b7f0f60bfa9e88419f3f454129744080d93cb21e58c3266bd88afe4f5f",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_90",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_90.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "6accebf904662dfde038ecb01ad9f170a360ba5695323bf47b4c393337f67f3e",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "bab87501d70f9c7311cf9d4765aa674415638a0af14dd01c894903c816c28d65",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_69f3b99da0258537",
+      "original_row_sha256": "be2ca475afc8e2f7964f75608081f5fe55275603b45461db4c708f384a706ce2",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_62",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_62.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "210595e11170fefbd8d4c0c30c9bb4a01f4fadc6d9a92e751cc19fa3b69863a5",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "606f7c5bbd4cbc7dafa0e158d03276f56ffa70d57337edac309a01fd3b76ea12",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_6d11d9e69bc4fcdc",
+      "original_row_sha256": "29422b7ea8a520f05bf790465987520b47f74d05c7bb736bfdf608306963df6e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_7",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_7.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "8528e5bce5f30b60c77338cefcd702e291b6335d2afa1339c878e249c0488b69",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "753bbf21049ef56ba0d3e227369053e2a8bc6dcfc3b471097f21b596f812d4e7",
+        "original_size_wh": [
+          500,
+          357
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_6e2001eb3038790c",
+      "original_row_sha256": "1d713a45cacb62fe72e9de1169e0627e60a90c4c894f18ed55765be9054cca86",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_21",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_21.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "a873a1ce266c4a6e77db40adc8f21525a7567b071a799c1cf7dc9846c9bc482a",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "b52066ea51b0ebcdae2225de2cbade6ed62c30617e75b30cc51ada5deaf89711",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_71e6751af094eb6c",
+      "original_row_sha256": "97c127a702c7017613e44bad459f200770d7f4382967ef4824258023989c8d49",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_85",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_85.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "b8cc2cea6f55b8860c885fcd3e582e7dac1de839664ffd4d48b8eb4223aac41d",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "cbf712caa7af1ab654b134f7a247598e7595791573d06d25dc76a3a73ce7573a",
+        "original_size_wh": [
+          500,
+          355
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_723d0bccc3334d3e",
+      "original_row_sha256": "5e2e49f7a1c72b93e11dc91814c6d142727dce2745df23aaf1d9257c5b11aeb6",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_95",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_95.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "83435ea127f9ec498944eb9b4359cfa163b6ef38aadeb69f030e1df65126be04",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "fe2a20f3e9ecde4a2525a1e7762d0062f916e9879d40801e5aa99589b4bb58d1",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_729ec884dc778bb2",
+      "original_row_sha256": "bc576d761a1811c7da15f44fe1968e73cf034671e3d27626560a5abba4a97681",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_56",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_56.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "313c35d93f6ad34ad157ce9ba4f2c474cf5b072d548c822b4897046417af4b61",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "1f2a3c7450e8bab3f085eac964fc55fa7461185b83cff24775938d1d02ca947d",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_73084a3e1a620e1a",
+      "original_row_sha256": "c0567d36483fefc49f0e89f49960caec67813074977de6c37c5763d728d18d72",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_3",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_3.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7262da4dfbd29178b0bb1ddd7e55de16142a6b40b9f11175ca333b7996e61029",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "0905f137b452c31719db78b1fb43f9df1becc4c77124e3006988aed81d754e57",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_741ab383e9df2bf7",
+      "original_row_sha256": "eaff3182a4130b7672c9d2e25bab992795091e08c20813d20b44f4a8346e81ea",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_50",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_50.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "660400a6e61c99329e55369b82e42914a824819dce0d65e3b48923199ef1b992",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "7b40a4df7f70e303929b0816af537b0ade80267871364a207631056418ff3427",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_7520d131e5ca6def",
+      "original_row_sha256": "57440f4127894268530ddaa45805873b6331cdb660108cee90e810826d957a53",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_198",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_198.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7e2dba19f4bd4cc0a10a7ac7e87d645c6c798af44951e797d9a589b4e5ed698d",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "590056a4ddb6e9da36b720956c956f619426fdf1a5538705a333cae6796f953a",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_759bc6ebd0e9bb20",
+      "original_row_sha256": "10d234a3f4514b64ce8e9a03ff59d8c585a45cb1fda5ba06dcd7e42cee747020",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_29",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_29.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "525da64ad63b2911a1b5a4439f2a1c0ef56aaf1c3f1a7856f996db5edfb15b98",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "6226784405f4a8fa817ddcffcb8a812761364891304a9aa0109bfcc2006d17c8",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_76941f63403534d0",
+      "original_row_sha256": "2d6fe1d4cf9f985670835e1dfc1245a42512810b3cb1a18d63e48c5becfdac6a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_33",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_33.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "46d37c9122a4e2ed2e594876259cb33915936e173aa91dfecdf5f3e1fb8c2548",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "429c539a9173962792da9adb2d8a30ec9e835921b2d8d350bfce183e0223cbdb",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_7bd8c1b79c4ce89d",
+      "original_row_sha256": "0df86cb78bd267c3fe8eefd79e8e1c1aa80822c27f2fae5f1115704e102b1ead",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_82",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_82.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "f9c50f92096407ca3ea030c0cc87cb8b5733f18872cfb8a2ccd642e16fb7ddff",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "addf4f7c476aab21a7f91b89d34f91d1c09037c5667df49714e272365dddff54",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_8234d55ce81efc13",
+      "original_row_sha256": "0b28769a552698932ecd0bf9b16483e8d84a0c593b5df05bf524ddcfe5b93ba5",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_26",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_26.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "6ae514dcce66414871a2508733fbc6b87490adaee3dff14803af905c3f3c78fd",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "e2a6b8bba0212da9619cd62c5ed984e2ba5f96388c47b1707d10049f07a40bf8",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_8291090688aff498",
+      "original_row_sha256": "c344b00d6933273e560188191c5f067d8b55a66087138b2cba23df29fbda4620",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_83",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_83.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "b104f41f699bdd22088fc5dfe6b84989e470f6adcd402be658c33e49faaa8f2e",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "cb19aa09e4643d500547b12cb934aa9d6303d62a47eefa9b48342cac4b65ece7",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_87220ade00442912",
+      "original_row_sha256": "721af7dc19b818698f083ab6d86086b20098522459412be129bfe67e5e1d3309",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_42",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_42.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "22335ddcf9b474611c7d3dcb585a599bd3b6ddd3379d187fa46881fe2a0db3d6",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "01b14cd6be3db1ee00eca0216d9435f8d271c20a92344782b92eef749800eb8d",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_89cf3386bfba99b8",
+      "original_row_sha256": "04d227cf08099a70297312882a06e07f6f2b6a71e0e6af43f16cdd9d4a8448be",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_83",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_83.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "fa807709a503f2888e7c6b6df6922f8a702622d2977e687bc804857af2b987fb",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "95f526541c354a7106c5539b565c235617c15149a1cedf6ef255276d9648a287",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_8a3104f0cdcb8ed0",
+      "original_row_sha256": "449f864aab0ed31ee8f1f18817222d265609464f1fa7ea08ff9d1f2f8237a60a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_193",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_193.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "f7ed2feb5b88d0fe697c09c163dd29fa990b5dffd7e8d1f39767b7c668bc2c8d",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "1dd8f678b636692333399e4b488e3e9f2b162fe4c60273d659fbf6cc2f81f6aa",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_8d7195b320fc8c3d",
+      "original_row_sha256": "508c29472108fb19328c7567b0f3ef8dbfe552b0c0dca72f773cd33f7210c53d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_47",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_47.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "58641918aa91c836d32ebdd7ba0cedefeba1e35803993ae645b25e1b1e0e657b",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "1886bbdf8568b815cbfecc60cb3650da7c8b9938ce4b2d117a97642b288eaddb",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_8e5bd3dc23fa665c",
+      "original_row_sha256": "84f66520064df955626f474b0391bac8e168e8cbdb607c4c479de9597936740a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_82",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_82.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "173d692595c5b74ac058bda1a8333a36ea782bc49e5685e0bc23e28a7f1a09ef",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "643be516aa87796730752097b02663874c83e98424deccfbde6fd342c8d0140e",
+        "original_size_wh": [
+          500,
+          354
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_90984219b769b560",
+      "original_row_sha256": "a3e1bb4847452a087414bcea588b72e92902a117290a95ede723305c2d86a082",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_75",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_75.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "735d2fd7a878a560f07c7466599b5da32783d1545f749c3dcdda3270c09add90",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "751d22ddece9ed68e6419fa9e4957ba7aba6e1657b71997d8b18abf77e19425b",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_90da31354b86f329",
+      "original_row_sha256": "c228fec5620942cbdf64ef9cde991a5638b2006898ec62402fee19e82d7282b5",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_88",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_88.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "8781f784427af0a24e144463489d52cf12ce5d6ed5536fc96b38c75200e5390b",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "9995ad433b013787a4037e59b29e2162f41e39109f03e3dd0237e0b78b46480a",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_92d92be1dbc71dd4",
+      "original_row_sha256": "b2d3a9be082592663a022ff95b75a63dbf689fd1c491bb4a7e7c815bcf969376",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_92",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_92.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "2e94acef6eb8873599ab870538409739a64320e7dac621b635490e9575ca11b7",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "a2165272746895f2e7f1fe5ca10f859083c45c71ef68351651142a62ead3ef53",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_96bee639e1ec3cbc",
+      "original_row_sha256": "1f380270dfc0b78d722b1a90ba878f42608737a38afe4b52d113f969b544bd4d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_80",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_80.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "908283eb8bb0e31a8c7989d29a171438d35bf4f981c72d33a17f922abc812d63",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "495d4d8592ba4e98c480391fcd6adbe393a56578c2cd15ee201e2d4e03e19291",
+        "original_size_wh": [
+          379,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_987430f737fc724c",
+      "original_row_sha256": "eab8d68d153148d6d9552597b1c4316a9b91140ebbd9566d65ac7db4e78f0661",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_59",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_59.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "20c7c8fd24f5548e3224743c96cbe7408890b1c53649e9e35b01041c5af83bda",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "e6e727de3a7468e467ab2d6a42e7c862c46150918e0121184aada8e6be5a1d08",
+        "original_size_wh": [
+          500,
+          340
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_9a1d6d83312a2832",
+      "original_row_sha256": "90c0c571b9d11da1bbb974902ebb4b3acc31cc3ee537c94060e51c776bdd76f6",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_9",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_9.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "aa5bb43c74894a8c0e5f3b205ae03cec464f931b3c72aa84c02a8b8c8a234606",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "f7556eaf3f97cc238e1cb3da7f4a8869e9fd9384aba10311b6d04409a7dda4f4",
+        "original_size_wh": [
+          500,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_9c75ee859ba54dd5",
+      "original_row_sha256": "f0786c64bfb848617b6b8eb12c1b8d3ed95d61de36a1cee7bb58a828997651da",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_73",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_73.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d2b7951ecea6565cac2a6ef55262bc76fac3fb48dbf5ed81425f7220165a6233",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "b091407f5ff6420d3ae1dacf6f8ede92cd2457a7f17b6b4932be55b6df9f6b1c",
+        "original_size_wh": [
+          500,
+          337
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_9d92d7fafa0e8ddb",
+      "original_row_sha256": "289cbb493d0bd544eb51878b8985d38e08853ed66634f9d376c3712fa1ce1d7a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_24",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_24.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "bf8efefdb35dad068a71aa4b94ef657bec2498ccaef91c4f09ede493571c4f82",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "d15875b1ea4251567ef2e171f85034d1a33c47a6880b96694227bc4ef60bd7e0",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_a02d3d176f25e8f6",
+      "original_row_sha256": "5acf07b0f9d287f41b3bc34558dfc321411ed15b8e685aad80c27153aec5e314",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_53",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_53.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "536a564f6cb8f621341a5ba8072a6a5053fb6a33eb03b3a78d3e6cb6f72b84c5",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "8b066f19382865b319fb4325eee2f51f10ad71f6d22c0c10a48debb2644d496d",
+        "original_size_wh": [
+          500,
+          400
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_a1115a5180f15217",
+      "original_row_sha256": "29e99994b07b696657568556e62e89e5e8a761c012df272830d085cf6cf429b1",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_5",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_5.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "140d3853f0ebf93f78029f1497c1ab3ee52ff5f9df1f7b749f7c43ed13d7ec28",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "0f9c38e8c151a353f61a2d46a3a606d40b1e4fac80c999266474b781098930ce",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_a595d5e14c5289fe",
+      "original_row_sha256": "effba6d7ec76bda093cf51adeb3ab530ed0f01c7a85bde5ea16acf2744bf1609",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_38",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_38.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "5f2da7c9bfec2e0f3a36ab5290613294dc56866f77211eefe056558428c48fc3",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "46dfc9dc32e40f9e1078e06b1e2bd9d9a4d23451e43549dc35aa0327fdd486fd",
+        "original_size_wh": [
+          359,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_a73ce0578d2d96ed",
+      "original_row_sha256": "38e8dbd14b206384f27ead7d0721e846fb10132c72869584fedae8f1139eca40",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_40",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_40.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7ae015afadf113842f27d42b5b0d9660ec95b19f50a953281a9aee8e9bcbb991",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "e27f7c73b36f04ee812ed49ab081684639a01dfb7ab49d70c3d3323b1d140ba0",
+        "original_size_wh": [
+          332,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_a7b8583f6e71ddd7",
+      "original_row_sha256": "a287feb2e66ddc6a895e30b69689a41435cac2204508eacc94a676bc4f8e2065",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_6",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_6.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7ec1cdc9ca853b8fd7ebf3dc8092ba453bac2b6e4ab350a5d3fad89bad85abe5",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "889ae8e3307c91b1ab80520a9272ff130d556ea11e736d9eaf687458a3a80b87",
+        "original_size_wh": [
+          500,
+          376
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_a82efe8808c37f97",
+      "original_row_sha256": "a5e5cbfd8284c04632aa41315f374bf604643652ef88c9701e54472153a3bd86",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_61",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_61.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7728926112d8f349f6aea73a546e2cfa76d51bdb50911582cd41f492957cd378",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "1e0aae28092ac40150aa7f91f3eae8157f18fe8d04e35987372adf98fafe1c62",
+        "original_size_wh": [
+          500,
+          332
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_a99b05673e07cf92",
+      "original_row_sha256": "210e46584c1674bd5f162ae905e563e7f4266d05cac0845a4941401e15c0c906",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_85",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_85.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d7ac7eedc5d0c8a823b589a5b9f9a59bb22987b8b8f9689aa0941abb0dce2d8e",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "0c3174d10ffddf08960f90d8bfc91f2ecd4816531c47dcf64bea11a1cd8cb718",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_ae4f0fa1b0940582",
+      "original_row_sha256": "fdac9d9f8e56f362007a837c2d18773c69d1d55cba7f6ec369ec2e3fe0bf462e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_51",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_51.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "6a3de886774db19f9c24d8758464c219de5bc9bd560c86e7bd6e638e85d0d4ca",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "e6e3c253897529e53b48d30b95ad2a17af8ca3afc4ea2139b576acc89519f6d5",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_afba6def26d93a67",
+      "original_row_sha256": "e87ea3f013b1abb4fb7af19739f6c8d1e7048e62bb9bc832bb4140c09d4604ac",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_196",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_196.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "e407468fb6dcc901967c23828aa9592ac3a3c8c3e588befd0b6ab735faf422e4",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "29c121519f414ec614ee9340ac82314f5ebfc2396cf248a6aef766f9b9cc0699",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b06b57571fe63794",
+      "original_row_sha256": "20006e637cac3824a9eb3d06252697840470160eb8a63cf6732f9c0348b02a05",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_46",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_46.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "6fc4c112295456135321f4365da904a4b0427264015fd8d4b83d61e5822e1d76",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "eb12095e331d2db4d14df3d464201b72d9059490f634577229132ba2419880fb",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b1ad17f08784d47d",
+      "original_row_sha256": "3476f90ffe7186af98a6cec0abbfa99ae4ae13e51edb098bd74f0e1ebcf86f9d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_91",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_91.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "93593840e92334852de00a51a1101f4016be8b4cea26fc280a177a6b731e6b92",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "fb22451d6a5b2c1e51923636d96ee45d76c2a5c5ddc11c25c8ea692c4ed36010",
+        "original_size_wh": [
+          500,
+          341
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b3087f684e1bf19a",
+      "original_row_sha256": "d1a821b7ef981a90a310f376a62c3e4f6faa8f4723853018b23b8b531a121b82",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_70",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_70.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "b45276ec182b42189a5fecfc64a227da55f7e9f70c5c8822e96faebb867174c7",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "a678a381bb6f82eb41e50047dc5a7e8cac9bcb0d08a7f89fe533bdeb872d3eb7",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b43ff69b137e5fe6",
+      "original_row_sha256": "53e857ee7813490a100266d207fe691a92d8d4fc5a8d739e5636679bcbb81aa3",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_196",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_196.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "46b0444ead7784965ad6e8c2e4d5d2f10b0f467e4a311690b4d53e578c257b1c",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "c1a1f0b0bab117de03394eabf94b733eea0b77ea950cc42b577af088a6ca2f60",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b5228626655fe77f",
+      "original_row_sha256": "5c72935ed6bd4dd0fd3bbe8c5210733b5300cd347a2ee45db78e4a8f6fe3de7f",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_61",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_61.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "649dfc536ab9f07c9a1435713aa8fb264593e37350c2b50ea54586dea73ac78d",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "969f437bc4c9d2e7109af34fef3ecb2798bc452f40ea1ee42eede326683be7b0",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b6f033324c9e8edc",
+      "original_row_sha256": "dcc6c00df1e05140cccef35cace3aceecdc2bc415e9e2d900c72f3343a591046",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_88",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_88.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "bbea2d9c189dbf16b96219fdfa6c66f06f48f38fa02f05ce6abddd949f385b6f",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "7f3bdec60d59f194c7d4f75cbac65cfce9cd4074b0fada2379d2c09ad6c852f4",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b75e42c182529b71",
+      "original_row_sha256": "55319d0dd510cd052fa6f9ccc0fdfd17f9cff55623a97154255c916762ba85ec",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_38",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_38.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "e0d6237813e3f1eb524d6d3c8004c36acc6b908fc8dcf2fd7a667f18a7ceb33f",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "e2785f28a010df54a3908b7673e79827276c7c173efdb8896e10045a9b451b5a",
+        "original_size_wh": [
+          332,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b7ec59f3c3cb5d21",
+      "original_row_sha256": "c9a66f79ffdf77cd741503934fd0adf6aee38d1a8f6ec06f95856de84854c996",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_60",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_60.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "078c24b4fd777067af3c22c16aa7aee8d0ab8b16e1a48d438608078b28b4efe9",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "3098cfa493321fe085769d07b918455c56dc1189bfd0ad4edfa6b1c5768287e6",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b87cd9e9740d719e",
+      "original_row_sha256": "bf6bcecf87021cbe53c58d226741554ffffb54b11aa6c75e8f7b8eb14600e581",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_30",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_30.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "12233bf7872ff305483c476f0061c837246b7c2916c736f4ff8d4dba6b51c016",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "4283150581b15d06b37f3709ecc841e366375b40a3a262bed1b2d91cb40daae9",
+        "original_size_wh": [
+          500,
+          332
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_b8d7cd26ad28bd15",
+      "original_row_sha256": "495fd249539a50fd04c09c0f40b008f7e909c3905e49990c3453a5b19bcfdd08",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_57",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_57.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "12c240c3f34fa1d81176f4d3647b81c3e42f173e97c17c312691c14c1ed20ed1",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "8bad3d615afbd8ff468732956a4fbc51664675455f2819223958aa713122807d",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_bb4ec6653111ea40",
+      "original_row_sha256": "efc6f1b9c057ae5c9704339d4a1e86484fc7f740726405faaa0b054c1565987c",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_4",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_4.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d7c3b5cace5a80350db98c02315570a26831fb1156c3459a0428bc9253f32571",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "ab8b23d7353378cf8b8c2fff658f133aee628849941e76a5df6de95e07a687d1",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_bc8b56b511968bc9",
+      "original_row_sha256": "d10963817c8e9d3cf5fd3a9cd707940ce3b67dd269853e8587fa45dd0bd58d2e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_195",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_195.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d785762b0005c8fa7ee9fa07cfdce0b47e5c83af2dc325dbed8edb402f0b03d7",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "1c2e14171ed8e5288456e09e300217ee6a530401cb9035e7c303e3d9b47be7e7",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_bf99abc7e814ca49",
+      "original_row_sha256": "8d6e27a8bbe920b9016177f439066dcecde2e88b093ae5eedd5fa0a1439c9388",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_38",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_38.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7a0c25e9f3afee3f6b9377db6f9ea8fabbaf88726a1db755c563923790b5c92e",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "bddb9cb79c583220bd75d293fb61f1ffd83acf300e7430b046ea5447884de351",
+        "original_size_wh": [
+          500,
+          379
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_c00d0671645d6e85",
+      "original_row_sha256": "f421e2f473f4757fd2b45f44a094442054b999905a6a0885161994dbaa102333",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_59",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_59.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "a186db8eb3a2db7b9c13a57ca5990bd71770cf638e2966251128c8dc5d98979d",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "fb2b619e1fcd7df865d43da4b7ad4ed36bf05b61e8dbd195d9a9fd50f5783001",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_c13ede542b702b6e",
+      "original_row_sha256": "9e233174de5e09473e1cb22ef0b24371c800f4acb6640e47c38cf45de5e68d4a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_34",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_34.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "4fcbb52146690c389c87b4584e9281e78f77a14923e175b7a907d972e8cbb616",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "c9a71421d939a50faaf107a597c1b7b78e4160d91b02584bae2368ff9d305112",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_c7cb3c85ce2e2612",
+      "original_row_sha256": "16f8abbfaac31918ff052cf0422eeca3711ea68e7249017a16c1cce213cf6d33",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_34",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_34.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "c926be3adff71e31b984d686abc12eaa8f0d36f6903c50857399cb3ed901b797",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "47ba615ed586bb5f6051cfb153c0b29ef330363352ceafba12d43323b2e2822e",
+        "original_size_wh": [
+          334,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_c82785c57ab126ee",
+      "original_row_sha256": "04ddfca31f4fa810d341a975553c0d011a8ee296b9c8e0c827dcee0ece57be9f",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_26",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_26.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7b40d33cb8a2054896adf66b953bd3f5bc1f6354e6dd37ec1b3fcd7488f1b9d7",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "2d4d26ab8486350fc5add0cfa5bb34900da58769f59103ab01dda25d4953d9bb",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_c86e2b533be3f63e",
+      "original_row_sha256": "9c9fe5da1d7b48f73631a6680b5cb1d4f7b70cd694404e63199d831bd8a84693",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_76",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_76.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "14cd6f82dd716b557e10752280f4be58f2bd14367076f258d278eb9be1a4480d",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "896b18ae5976e6ad2f98fd9412b0ccd00bacea1e85b5610d2ee9110393c9ddd1",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_cba370c86cb81fbb",
+      "original_row_sha256": "5fee6a116e4f6d6c8d33f427e72a734505942a2c5eb18af749966c6c769b7f36",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_64",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_64.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "b040b39b4ff53449c156e2ad16ff57b2d77b3ddccfb726044c68809eaaa0e36a",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "1abf4a66321a038bc6e5d0c60fef2adf26c7d7071a8eed2233100323a02729fd",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_cc823d99fdb6f767",
+      "original_row_sha256": "61f8c2d164aee5e9fd7076660809a362df7df239c1c1467a624f301e2c1514db",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_27",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_27.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "ee585557b824b6ccb4f29403c27db69ddba6f709452feb772658d40a741de7a4",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "4f0b3459955bbd97d48aea932b69265e509e0ff87aeee676eb779b163cc21bc9",
+        "original_size_wh": [
+          395,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_ccd4420452424bc4",
+      "original_row_sha256": "b01b7c979c6e05101b286e1eded8225f0287b67bea5fabc85b0da74fee4b007a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_46",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_46.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "3b71f09e86d451bf1d189e2141e222f9e9c9085869eaca543362a486d9acb860",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "c13583304315242e101d42de99bf65b5a76901eed6a76248c69adfc928d3402c",
+        "original_size_wh": [
+          331,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_cce6f7162266067b",
+      "original_row_sha256": "466b74d95d607cf5722055dc8be3226cc416b942cdca5916f8c8d404ef91f961",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_51",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_51.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "b60db7f636f0ac45c14a937453afba303bf335b232c027395b2aac37432ef155",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "50d50d452b19abf71c0e2816afde18f77a471e41416afef2c945e7f1c7bb24c3",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_cd519368f6ba762e",
+      "original_row_sha256": "ff0dbe05f4313d905a135e8f273fa456ae791ca56e758c4cb1f78c710d18f0a6",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_23",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_23.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d76ae610acac1d5dd2ef23cb11cb67ad7ee868b954daaccd89e721e2025552c4",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "c1c1b18f8179cf59b7418d55d2ad9b8079d48acc1711946964903395b0a8d35f",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_d157aaec9d72e30a",
+      "original_row_sha256": "7fb5c935af851af72916f914222ad9d4c9c3d87234b1e8c4ae142252646aee17",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_197",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_197.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "273afea574ab4ed671cf5d1dc5b913fd2ea5d18c92be693390810e1b0afee714",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "b007f7c7ae6fd8b81c8ddf86ead975cd683db8e66d8c69521f02db716b0fc252",
+        "original_size_wh": [
+          500,
+          281
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_d1c478050392348f",
+      "original_row_sha256": "1ec23d7c53955f98d856798337333b612c4232a228dda5f7e3504ef2a8a9474d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_53",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_53.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "050df3c6c07b00874e1c1540cd51c1312033a2f0c5166cf112a0cb6bb86a377f",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "a9b0a2c48fb3df17627866144accba58de77cbd445e60aa01593fab4c40ea5b0",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_d1eb0c31de14187e",
+      "original_row_sha256": "166656a95d7f3dfbc606fb1a821aecbf43e43950aa7f50bdbf2d071c3b726320",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_66",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_66.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "0319c8bc9c9a41f13d0d222e4b452795d3c5e1cf221460d3acc6d6c9d79cd5bb",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "b53ed81a7ac0d1073a60fdff57a9d127bc8d02a90a2618739f3436f2878003d2",
+        "original_size_wh": [
+          396,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_d7a3f15e73c443c1",
+      "original_row_sha256": "7fddd89048a956f48d7c1831abf8202fe38889fe28a07176aad38b78c266673e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_195",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_195.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "749845e2153f1e42f0e02036a0e3748bd967b39baa0ec7c41ab8b6afb85a6abb",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "f9d816fd60ba99abcbd3343e012bc00dfc2d1985a216e3a37ae24d0c5986278f",
+        "original_size_wh": [
+          300,
+          225
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_db0f86f184a348bf",
+      "original_row_sha256": "3938b5ba5e09c638369ae9c9746bb48578bf13f3cdb3512978033bce3d619292",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_52",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_52.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "1ae86628c20412933bab0be7d07bd9535080fd5d42080ad6bea4194d993cdfa7",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "e742fce2cf25f6eeca851306e5f967b54313d813adc6ea58335eeeb5787a3477",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_dca5b0a3c1d64f69",
+      "original_row_sha256": "3de537410b7dab96cb59b1335e5e0c3e97ab4a537d8de7f8f4c62d7d05ad60c7",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "chihuahua_79",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/chihuahua_79.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "F",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "cc2cdbcf2dd4d6962682eb50210193d6ee04e90396ce3444a99bd7379cdd9a54",
+        "source_class_id": 11,
+        "source_breed_id": 6,
+        "breed": "chihuahua",
+        "source_species": 2,
+        "image_sha256": "6135147af6e8ecceeed08eaa3e69f563641596bccf14fcfd6c22dce3950c3e37",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_de843470ac37a52c",
+      "original_row_sha256": "95ba3f5b9f4c42105958dd20d06e32425fb97beb9d5aa172951763e4552808d4",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_88",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_88.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "2d7e6a93052d5e498be700fb115d2a0b620d53f0ccd7b2d439a361fc5df2841b",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "869758eca531e06991e7acb99a93e18665bc795db329717aa9384441d03319d8",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_e37549a3dae593aa",
+      "original_row_sha256": "6e4f599f140a758b72a0a8ce8ec0e438471168a363723e217fb1f05687094903",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_84",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_84.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7737afd965190f2a0a7a937218a471eaa13801d4873717bf829f704e5e52f882",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "c8e688257dbf7e0830dd42c2a2e773e61157ada0742e8d5874258fa858b2026a",
+        "original_size_wh": [
+          335,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_e37a74688035100b",
+      "original_row_sha256": "461942b9a5e5726334d0c6f56dd87d76b3177dee45efe6fc76760183c7b3c5e5",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_78",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_78.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "98870f95d6af7540366e93747aa12f4b8545c680946188742bb932c4bc7fb61c",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "7172f08cf353a7936608eba9b3768bea80665cd2b6895894d158ef7635b2b179",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_e6058aa80092141c",
+      "original_row_sha256": "555a8e3f373d332075f0b22740f95e1ed2be284d6d1a9707ebeac08703c199fc",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_60",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_60.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "f48c809486cea8a2a6c61a1ab5ba6f76adbf22b240b6bf27c8ab79d23170d9fa",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "20c4c95063fd86d6291e66a500c1cef06fc36ed7e49399f078c9a7cb439d4974",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_e6966d7d681310e3",
+      "original_row_sha256": "7475d00e935ab3be3428593627ea606ca19739e630cfad83153b375f8dfcc60a",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_95",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_95.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "9ff49c0cfe65dea8ace951d3b86eefce9133dcd07eaf0dc0cbaca782a0e45c5a",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "743614e77e26b0638c0bc2c2370239066499e380d1bde229be1da00308a75904",
+        "original_size_wh": [
+          500,
+          332
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_ea05318330b398fd",
+      "original_row_sha256": "f11c812d99aaacdc8d993010f431017b5552b0803099e55dc067444119aa8689",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_85",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_85.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "8ea9658304b0d1a89ad41776e0500d184c9c62d5763ef0b51f7f9ab3a05bae27",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "6520c9ba77f13e249153b2fddfd253bbae52734c5ca29d0065397ebe08a747a6",
+        "original_size_wh": [
+          500,
+          376
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_ecc16aaa12512e3a",
+      "original_row_sha256": "689b3e16bc61bed023943886573c218228aa5a1bbc0dbcda97c0fb117fb94e77",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_78",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_78.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "ad824ced88c5adec4976289e902efaf3491598b4144ae46bf9123a69b8a108d2",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "6db62905b78890d4d782a14f1a2c7b28248495fcf2d6b5e2c21cb3ef65db161c",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_ed99962f51f4e124",
+      "original_row_sha256": "1910a93127a7e2a77721505fbd4cd768dd030853ad91284037a96119ce5ee75e",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_46",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_46.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "e24a8d3ad78b188f3e9dc6e5936bdb7ac36d1da40bead4ebff42f29136db132f",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "efc3820beb8211b4e6787da4d8a0c702bc20117914c7ca4b50405ec18faa3f07",
+        "original_size_wh": [
+          500,
+          328
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_ef0e456672cbc689",
+      "original_row_sha256": "c1aa509b57161bca1f921f957567b3609fc4f28285823f191e598aa51d0d17eb",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_60",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_60.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "e013cdb8f87f76d1715dba6607d2ec6b35962c8145b38fa40fda954df83f2cc1",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "91e29bd07319506b41c52e4b502c463309ba46002736f5b27867b27d7c766547",
+        "original_size_wh": [
+          258,
+          258
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f0b5c90e6fa5e6cd",
+      "original_row_sha256": "14c0642d174885b4e919a82b39e0431a622b13805c6e17355046cb004c7b3966",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_82",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_82.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "607fa7c4f52d16fba6bb61d111341206b5462affed26f8b1e829d58d4faf4f85",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "9bfc706ae1d1768343dd127e2bff16bcef2372b414572d1c6674973ad8d2e2db",
+        "original_size_wh": [
+          500,
+          371
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f24b1f125a6a2cd6",
+      "original_row_sha256": "9264933683bfc45ae625039731fda57abd53ab9466832469826c503d75252ff9",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_7",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_7.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "6f5719ede666a70ade582c6750c1361ae57ab7cf091847db16b6c4c2798a9d5a",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "5476008c6457a5a131bb9988132888907848ab82ca9150500253fe6bb5d88607",
+        "original_size_wh": [
+          500,
+          334
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f2b4425ac6792c33",
+      "original_row_sha256": "26ba6a583583614afa2d13c87775303ec2ced4308de79db712dc3a78cede524c",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_setter_8",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_setter_8.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "H",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "df2643c6cc3d47fe5d3f70a5b791a42aa2f2cce406db930e9e8f993403d77b29",
+        "source_class_id": 14,
+        "source_breed_id": 8,
+        "breed": "english_setter",
+        "source_species": 2,
+        "image_sha256": "b1d6cff5c0287bc924f5e6155ed6d5adcbf18c91ffb49e317de7b49312c5d330",
+        "original_size_wh": [
+          332,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f4a15c6446bd9b58",
+      "original_row_sha256": "b52aa69f582a9ab40e9cba495f99e67a76e4d3c8530a8105fca1cf4401f81761",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_23",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_23.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "797f8781a7b6dcf0ee133ca5186e63d1e5e1de7333e1197cedc62ca095e557d0",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "99d7886f9328b28746928d7bddfabdc4b611818f4764d15b17ac131d8b8b8f39",
+        "original_size_wh": [
+          419,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f50ece1d40444669",
+      "original_row_sha256": "40572cd4e79e7fc9d9023f8f3eab700d58b3579232bb64d864cf09381265fb0f",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_44",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_44.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "df4a8fb283fd7182c67e8ade1fcbbad209a95b11cd8291ddb9391af8f383705a",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "9d270fe36e526b4b911e4b80eeaee747f0d2035ad18d655fa38856a695dddb1e",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f6682727d264df02",
+      "original_row_sha256": "a20747d46360e87aefafd476e9a9b01b5ca73c798986a4daf0d9af4a5aef985d",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_37",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_37.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "c2c981a0d73b81d2180500058113672265fa63b15e992192f97f7a3dc01ab0b5",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "9d1a1a4811ef323a1640e6c9e3320273cf892a583201fe30434f957f3faca329",
+        "original_size_wh": [
+          500,
+          374
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f71936835a4b8eab",
+      "original_row_sha256": "c28e97a65c0caeb83be1f5846087aa53591e9c025d70205d676d678d88a9dd23",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_pit_bull_terrier_79",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_pit_bull_terrier_79.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "B",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "d551ecb7466b87d78e2861413c1fb79b1a74c5e1ead3785db4de41edf9308b6a",
+        "source_class_id": 3,
+        "source_breed_id": 2,
+        "breed": "american_pit_bull_terrier",
+        "source_species": 2,
+        "image_sha256": "9a290378d6087a0336c3e4a4e197cffbaad9e2ccd97bb4237da8a9fedaaf6150",
+        "original_size_wh": [
+          374,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f8393d7500621670",
+      "original_row_sha256": "8f8b505c7d68620376bba457b2e379b22048fb40faef627b1bf5e24b6781ff36",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_90",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_90.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "40531e52c3fb12f51127cd73e46d16e0423c297dbebbb44bef7bb43b7f01d925",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "bb1afbd0ef4ad8fdb6404a8c9c88f70e4fe44b267e11359836b94ad316a22594",
+        "original_size_wh": [
+          375,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_f9b25531e3b1b67c",
+      "original_row_sha256": "6167a3a0e9a49bbc1bfaf3b07aa1569f9e2da407e2217a10d8465d24e0e787de",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_22",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_22.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "2ae96b79a45a241a1d7823f39c767231990135609a576e92a9d6bd374c3cfb58",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "d31d03beca3b70c5e257c3be4d6e03fda77323c1f3fdae761cdcd9fde04aa529",
+        "original_size_wh": [
+          500,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_fbce6cb85a780feb",
+      "original_row_sha256": "48cab8917d1a41b2cd16d04a744db6e21fa3e9fde2b56f6a811fd6ab50c27cac",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "basset_hound_198",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/basset_hound_198.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "C",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "88adf36030160e1fd1fcd22bf1b391a898998fe37e608d00eab50d39d0c42143",
+        "source_class_id": 4,
+        "source_breed_id": 3,
+        "breed": "basset_hound",
+        "source_species": 2,
+        "image_sha256": "bd9bf9b4f5a0c9be31ea3b164767eabc9cce6b583463e3a9dc1b47debf24d402",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_fbf06b9bf6050d03",
+      "original_row_sha256": "8fed835f0606158f7ada88cb4eba35f3f37da453565d06326f063818741a4f75",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "boxer_32",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/boxer_32.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "E",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "6c10ba91f7c7cd3a1b2c604d084f19a7a8d2f8d140056c33279d631473ae806c",
+        "source_class_id": 9,
+        "source_breed_id": 5,
+        "breed": "boxer",
+        "source_species": 2,
+        "image_sha256": "ba628ed599df7618f4639fac4d79b75d9d222e83aa6ec9d78908f56248f43da7",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_fd1d189e7d44d912",
+      "original_row_sha256": "9e11ea1d10319a08f60f30cffe9f83e8c8a940ebc5a4474b5cb32150537040c6",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "beagle_74",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/beagle_74.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "D",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "774fd47b11f692f0426457c7f5ede7d21fa9d4211f9c2c0573c48f42b4442a5e",
+        "source_class_id": 5,
+        "source_breed_id": 4,
+        "breed": "beagle",
+        "source_species": 2,
+        "image_sha256": "33de73c7b08f40d934591a606f6067b7767396c0f7dec8851176fcaca19e5907",
+        "original_size_wh": [
+          500,
+          375
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_fd50818c45b7a9d4",
+      "original_row_sha256": "35582ea5a1cbc60ac834c2581363b8a1ed3d8660c4c5de490c0b90120ae0fdb3",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "english_cocker_spaniel_61",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/english_cocker_spaniel_61.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "G",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "4ff4f456038157dc992a9853abec5631eff2566512e858b26c90ab67a5ad97bd",
+        "source_class_id": 13,
+        "source_breed_id": 7,
+        "breed": "english_cocker_spaniel",
+        "source_species": 2,
+        "image_sha256": "f798f226eeb7b1cc16c53c7494b555f33b04a0f30a8f2032586fbf66f2ca59db",
+        "original_size_wh": [
+          333,
+          500
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    },
+    {
+      "sample_id": "oxford_pet_fe9a22651e7e4f2d",
+      "original_row_sha256": "7141956c5895dc2d81eba4aae0470fa6bcd332bb039722089d780914162d0343",
+      "question_en": "Which dog breed is shown?",
+      "question_vi": "Con chó trong ảnh thuộc giống nào?",
+      "image_id": "american_bulldog_77",
+      "image_path": "data/raw/task_images_v1/oxford_pet/images/american_bulldog_77.jpg",
+      "translation": "approved",
+      "image_quality": "approved",
+      "ground_truth": "A",
+      "label_basis": "official_dataset_annotation_not_human_breed_identification",
+      "automated_checks": {
+        "official_test_annotation_match": true,
+        "mapping_A_H_match": true,
+        "source_record_sha256": "7ef3c78bb5320e9846ccb3d8cd83ec049d13a03dc890fd4d9e4499e19a0f77d2",
+        "source_class_id": 2,
+        "source_breed_id": 1,
+        "breed": "american_bulldog",
+        "source_species": 2,
+        "image_sha256": "19033cd0a00eb10af63543d564385564eed8f86da5a1de1ba1f455daa9b2129d",
+        "original_size_wh": [
+          500,
+          333
+        ],
+        "image_receipt_match": true,
+        "pilot_overlap": false
+      }
+    }
+  ]
+}

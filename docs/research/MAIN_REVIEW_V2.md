@@ -1,5 +1,13 @@
 # Hướng dẫn review main v2 — A và B cùng kiểm dịch, ảnh và nhãn
 
+**Cập nhật riêng Pet 25/11/2026:** người dùng đã xác nhận bản dịch/chất lượng
+ảnh của 160 mẫu; nhãn giống được kế thừa annotation chính thức và kiểm mapping
+bằng code theo [policy Pet](PET_SOURCE_REVIEW_V1.md). Không cần duyệt lại bốn
+gói Pet theo A/B. Còn 18 gói/840 mẫu RePOPE, VSR và TallyQA giữ quy trình dưới
+đây. HTML/ZIP v2 cũ vẫn còn dòng yêu cầu hai người cho Pet vì được giữ nguyên
+bản lịch sử; không điền reviewer thứ hai hoặc giống chó chỉ để đủ approved.
+JSON Pet riêng không nạp vào trang v2.
+
 Cập nhật 21/11/2026. Tài liệu này dành cho người review, không cần biết lập trình.
 Mỗi gói có hai người A/B: A kiểm bản dịch và ảnh/nhãn; B mở JSON của A rồi kiểm lại cả hai. Cuối cùng nộp một JSON chứa hai lượt. Một người chưa đủ hoàn tất.
 

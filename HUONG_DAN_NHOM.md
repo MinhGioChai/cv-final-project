@@ -116,6 +116,11 @@ buộc để nghiệm thu core theo V3.
 
 ## 2. Hiện đã có gì, còn làm gì?
 
+**Cập nhật25/11:** Oxford Pet 160 mẫu đã được người dùng xác nhận dịch/chất
+lượng ảnh và import theo [policy nhãn nguồn riêng](docs/research/PET_SOURCE_REVIEW_V1.md).
+Không ghi nhận người dùng nhận diện giống chó. Còn840 mẫu/18gói theo A/B;
+candidate main draft chưa được đổi hoặc freeze. Bảng dưới là snapshot22/11.
+
 ### 2.1 Ảnh chụp tiến độ tại ngày 22/11/2026
 
 | Hạng mục | Đã có | Còn thiếu |
@@ -308,6 +313,10 @@ nhưng bộ launcher/config trong gói đã được kiểm dry-run. Không ghé
 hai snapshot vào cùng cloud workspace hoặc sửa metadata để ép resume.
 
 ### 5.2 Chỉ review — không cần cài Python
+
+Từ25/11 bỏ qua bốn gói Pet đã tổng hợp theo [quy trình riêng](docs/research/PET_SOURCE_REVIEW_V1.md).
+RePOPE/VSR/TallyQA tiếp tục A/B. ZIP/HTML đã gửi giữ nguyên; JSON Pet riêng
+không mở trong giao diện v2 và không cần tạo reviewer thứ hai.
 
 Đọc [hướng dẫn review chi tiết](docs/research/MAIN_REVIEW_V2.md): từng bước A/B,
 tiêu chí dịch/ảnh theo từng task, pending/rejected, lưu/mở lại JSON và xử lý lỗi.

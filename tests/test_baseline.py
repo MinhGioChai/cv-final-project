@@ -25,6 +25,19 @@ def fake_environment():
     return {'python': 'synthetic_test_only', 'os': 'test', 'packages': {}, 'gpus': []}
 
 
+def test_pet_source_policy_cannot_be_used_to_approve_other_tasks(project):
+    from vlmbench.pet_review import POLICY as PET_POLICY, SCHEMA as PET_SCHEMA
+    root, path, _ = project
+    rows = read_manifest(root/'main.csv')
+    rows[0].qa_status = rows[0].translation_status = 'approved'
+    rows[0].metadata['main_review'] = {'policy':PET_POLICY,'schema_version':PET_SCHEMA,
+        'review_path':'missing.json','review_sha256':'0'*64,'original_row_sha256':'0'*64}
+    write_manifest(root/'main.csv',rows)
+    counts = build_plan(root,path).summary()['blocking_counts']
+    assert counts['PET_SOURCE_REVIEW_PROOF_INVALID'] == 1
+    assert counts['TWO_REVIEWER_PROOF_REQUIRED'] == 1
+
+
 @pytest.fixture
 def project(tmp_path, row_factory):
     config = yaml.safe_load((REPO / 'configs/baseline_v3_draft.yaml').read_text(encoding='utf-8'))

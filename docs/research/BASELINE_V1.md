@@ -110,7 +110,11 @@ Runner dựng lại preflight từ file ngay trước execute, không tin một 
 2. Ảnh đọc được/hash đúng, không overlap pilot theo namespace/ID hoặc SHA256,
    kiểm cả pilot manifest và registry.
 3. Tất cả main translation/QA approved, có proof v2 với hai ID khác nhau cùng
-   approved cả dịch và ảnh/nhãn trên bản VI cuối; chỉ đổi cột approved chưa đủ.
+   approved cả dịch và ảnh/nhãn trên bản VI cuối. Riêng Pet được người dùng
+   chốt25/11 có thể dùng [proof nhãn nguồn v1](PET_SOURCE_REVIEW_V1.md): một
+   declaration thật về dịch/chất lượng ảnh, official annotation/mapping/
+   checksum/exclusions được recheck; không phải hai người nhận diện giống.
+   Chỉ đổi cột approved chưa đủ; policy Pet không áp dụng được cho task khác.
 4. Config frozen=true và freeze receipt hợp lệ, được người có trách nhiệm
    ghi nhận với đúng protocol_hash, approved_by, approved_at có timezone, notes.
 5. Người chạy gọi rõ `run --execute`; CUDA và native BF16 cho Gemma đạt trước Hub access.

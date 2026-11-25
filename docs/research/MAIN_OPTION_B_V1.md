@@ -85,7 +85,7 @@ assets gốc; không ghép checkpoint A/B/protocol/runtime khác fingerprint.
 
 ## M3 sau khi đủ gates
 
-M1: import human QA A/B thật, xử lý uncertain/rejected và kiểm đủ1.000 IDs,
+M1: import human QA A/B thật (riêng Pet theo [policy nhãn nguồn25/11](PET_SOURCE_REVIEW_V1.md)), xử lý uncertain/rejected và kiểm đủ1.000 IDs,
 source/provenance/ảnh/exclusions. M2: nhóm chốt manifest/config/prompts cuối,
 tạo **config final mới** theo B, phê duyệt và tạo receipt bind đúng protocol.
 Không sửa draft A hoặc history để làm việc này. Chỉ sau đó mới M3.

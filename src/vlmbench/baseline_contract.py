@@ -17,13 +17,12 @@ from .qa import validate_manifest
 from .reviews import canonical_hash, row_hash
 from .schemas import ManifestRow
 from .translate import require_review_identity
+from .pet_review import PET_LABELS, POLICY as PET_REVIEW_POLICY, validate_imported as validate_pet_import
 
 Hex40 = Annotated[str, Field(pattern=r'^[0-9a-f]{40}$')]
 Hex64 = Annotated[str, Field(pattern=r'^[0-9a-f]{64}$')]
 TASKS = {'repope': 'object_existence', 'vsr': 'spatial', 'tallyqa': 'counting', 'oxford_pet': 'fine_grained'}
 MODEL_IDS = {'qwen': 'Qwen/Qwen2.5-VL-3B-Instruct', 'gemma': 'google/gemma-3-4b-it'}
-PET_LABELS = dict(zip('ABCDEFGH', ['American Bulldog', 'American Pit Bull Terrier', 'Basset Hound',
-    'Beagle', 'Boxer', 'Chihuahua', 'English Cocker Spaniel', 'English Setter']))
 
 
 class StrictModel(BaseModel):
@@ -256,10 +255,17 @@ def build_plan(root, config_path):
     exclusions = json.loads(exclusions_path.read_text(encoding='utf-8'))['images']
     excluded_ids = {(i['image_namespace'], i['image_id']) for i in exclusions}
     excluded_hashes = {i['image_sha256'] for i in exclusions}
+    pet_rows = [r for r in rows if r.metadata.get('main_review', {}).get('policy') == PET_REVIEW_POLICY]
+    pet_valid, pet_inputs = set(), []
+    if pet_rows:
+        try:
+            pet_valid, pet_inputs = validate_pet_import(root, pet_rows)
+        except (ValueError, KeyError, TypeError, OSError):
+            issues.append({'code': 'PET_SOURCE_REVIEW_PROOF_INVALID'})
     for row in rows:
         if (row.metadata['image_namespace'], row.image_id) in excluded_ids or row.image_sha256 in excluded_hashes:
             issues.append({'sample_id': row.sample_id, 'code': 'PILOT_REGISTRY_OVERLAP'})
-        if row.qa_status == row.translation_status == 'approved' and not review_proof(row):
+        if row.qa_status == row.translation_status == 'approved' and row.sample_id not in pet_valid and not review_proof(row):
             issues.append({'sample_id': row.sample_id, 'code': 'TWO_REVIEWER_PROOF_REQUIRED'})
     prompts_path = inside(root, config.prompts)
     prompts = PromptSet.model_validate(yaml.safe_load(prompts_path.read_text(encoding='utf-8')))
@@ -272,11 +278,11 @@ def build_plan(root, config_path):
                                 prompt_variant='baseline', image_variant='original')
                 cells.append(Cell(**identity, cell_id=canonical_hash(identity), prompt_text=prompt,
                     prompt_hash=hashlib.sha256(prompt.encode('utf-8')).hexdigest(), source_row_sha256=row_hash(row)))
-    inputs = paths + [config_path, source_path, pilot_path, exclusions_path, prompts_path]
+    inputs = list(dict.fromkeys(paths + [config_path, source_path, pilot_path, exclusions_path, prompts_path] + pet_inputs))
     source_files = [Path(__file__).with_name(name + '.py') for name in (
         'baseline_contract', 'baseline_runtime', 'parse', 'pilot_runtime', 'gemma_diagnostic',
         'main_review_v2', 'main_review', 'translate', 'qa', 'schemas', 'io_utils', 'reviews',
-        'environment', 'pilot_launcher', 'image_ab')]
+        'environment', 'pilot_launcher', 'image_ab', 'pet_review')]
     protocol = {'schema_version': 'baseline_protocol_v1', 'settings': config.model_dump(),
         'prompt_version': prompts.prompt_version, 'inputs_sha256': {p.relative_to(root).as_posix(): sha256_file(p) for p in inputs},
         'implementation_sha256': {p.name: sha256_file(p) for p in source_files},
