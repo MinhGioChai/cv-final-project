@@ -24,7 +24,7 @@ vlmbench = "vlmbench.cli:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-vlmbench = ["label_qa_template.html", "main_review_template.html", "main_review_v2_template.html"]
+vlmbench = ["label_qa_template.html", "main_review_template.html", "main_review_v2_template.html", "review_adjudication_template.html"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
