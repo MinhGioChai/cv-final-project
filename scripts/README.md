@@ -24,6 +24,9 @@ và ảnh/nhãn; dùng `--version v1` khi tái lập workflow cũ.
 `aggregate_reviews.py` tổng hợp đủ submissions trong `reviewed_final` với Pet
 đã duyệt, giữ các mẫu pending/rejected và xuất danh sách cần xử lý. Không sửa
 nhãn nguồn hoặc tự freeze. [Lệnh và kết quả v16](../reports/stage1/v16/completion.md).
+`adjudicate_reviews.py export` tạo HTML offline sửa VI/chốt nhãn cho28mẫu;
+`validate --review ...` kiểm JSON trả về, chưa import/freeze main.
+[HTML và hướng dẫn](../reports/stage1/v17/completion.md).
 Riêng Pet từ25/11 dùng `review_pet.py`: record declaration thật hoặc import
 JSON `pet_source_review_v1`; không tạo reviewer B. [Policy/lệnh Pet](../docs/research/PET_SOURCE_REVIEW_V1.md).
 Pilot dùng `run_pilot.py`; các alias cũ vẫn còn. Script data luôn chạy từ

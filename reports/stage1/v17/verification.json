@@ -1,0 +1,23 @@
+{
+  "date_local": "2026-11-26",
+  "html_sha256": "1d7baf4c12545de8e534ba9f4650b5ce5af35b621112cc490ff13c4ee67caf27",
+  "actual_export_rows": 28,
+  "initial_pending": 28,
+  "initial_resolved": 0,
+  "original_JPEGs_embedded_exactly": 28,
+  "context_matches_current_sources": true,
+  "source_file_hashes_verified": 51,
+  "generated_JS_syntax_check": "node --check passed",
+  "reference_commit": "866d100ff3ef73c3c5f9e2b96eac41da1ca3242d",
+  "old_git_files_preserved_outside_authorized_delta": 517,
+  "old_readonly_HTML_preserved": true,
+  "source_review_JSON_and_labels_preserved": true,
+  "new_real_human_decisions": 0,
+  "new_main_imports": 0,
+  "new_model_generations": 0,
+  "main_frozen": false,
+  "M1": "IN_PROGRESS_28",
+  "M2": "PENDING",
+  "M3": "NOT_RUN",
+  "UI_verification_scope": "real inline handlers with synthetic minimal DOM; no visual browser QA"
+}

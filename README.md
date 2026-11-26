@@ -18,6 +18,8 @@ sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
   giữ783ảnh/source labels. [Báo cáo và danh sách đối soát](reports/stage1/v16/completion.md).
   [Policy Pet](docs/research/PET_SOURCE_REVIEW_V1.md) giữ nguyên. Candidate main
   vẫn dùng draft; manifest tổng hợp mới lưu riêng, chưa final freeze.
+- Để chốt28mẫu cuối, dùng [HTML editor và hướng dẫn](reports/stage1/v17/completion.md):
+  sửa VI/nhãn, ghi lý do và tải JSON đối soát riêng; không sửa các JSON A/B cũ.
 - Review v2: A kiểm dịch và ảnh/nhãn, B kiểm lại cả hai; nhận riêng
   `main_review_v2.zip`, mở `reports/stage1/v12/main_review/index.html`.
   [Hướng dẫn review chi tiết từng bước cho A/B](docs/research/MAIN_REVIEW_V2.md).

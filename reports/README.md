@@ -4,6 +4,7 @@
 |---|---|
 | Trạng thái hiện tại và context qua phiên | [completion.md](completion.md) |
 | Tổng hợp review 26/11:972 đạt,28 cần xử lý | [Stage1 v16](stage1/v16/completion.md), [JSON](stage1/v16/aggregation.json), [danh sách đối soát](stage1/v16/needs_resolution.csv) |
+| HTML editor cho28mẫu chưa chốt | [Stage1 v17](stage1/v17/completion.md), [export receipt](stage1/v17/export.json); chưa có quyết định thật gửi lại |
 | Pet QA theo nhãn nguồn, 160 mẫu đã import | [Stage1 v15](stage1/v15/completion.md); một xác nhận thật cho dịch/chất lượng ảnh, không phải hai người nhận diện giống |
 | Main Option B đã được chọn | [Stage1 v14](stage1/v14/completion.md), [candidate plan](stage1/v14/candidate_plan.json); code/CPU checks đạt, chưa freeze/M3 |
 | Full validation bốn task v1 | [Report lịch sử](validation/image_ab_v1/report.md), [GPU kernel check](validation/image_ab_v1/gpu_kernel_preflight.json); còn thiếu task coverage, độc lập diagnostic mới |

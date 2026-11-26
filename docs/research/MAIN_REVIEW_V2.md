@@ -1,5 +1,11 @@
 # Hướng dẫn review main v2 — A và B cùng kiểm dịch, ảnh và nhãn
 
+**Người dùng chốt28mẫu cuối bằng form riêng:** [HTML editor v17](../../reports/stage1/v17/completion.md)
+cho sửa VI, ghi nhãn chốt, lý do và tên/ID người đối soát rồi tải JSON.
+Đây là quyết định adjudication riêng, không giả thành approval A/B hoặc ghi đè
+nhãn nguồn. Sau nhận JSON thật còn kiểm/import version mới trước freeze.
+JSON mới không nạp vào trang v2 hoặc trộn với18JSON đã nộp.
+
 **Tổng hợp26/11:** đã nhận18JSON, cộng Pet là972/1000mẫu đạt;28mẫu cần xử lý.
 Xem [danh sách, ảnh đối soát và hướng dẫn tiếp](../../reports/stage1/v16/completion.md).
 Không làm lại toàn bộ18gói. Góp ý dịch của A trong history chưa thay approval

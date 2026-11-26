@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v37 · 26/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v38 · 26/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -11,6 +11,7 @@
 [main Option B đã chọn và CPU/M3 tooling mới nhất](stage1/v14/completion.md),
 [Pet QA theo xác nhận người dùng và nhãn nguồn](stage1/v15/completion.md),
 [tổng hợp18JSON và28mẫu cần xử lý](stage1/v16/completion.md),
+[HTML chỉnh sửa/chốt28mẫu và JSON riêng](stage1/v17/completion.md),
 [công bố GitHub và kiểm chứng tái lập](releases/2026-11-21/README.md),
 [Handoff V3](../docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md),
 [protocol](../docs/research/RESEARCH_PROTOCOL_V3.md) và
@@ -56,7 +57,8 @@
 | Review main | Đã nhận18JSON/840mẫu:812đạt,28cần xử lý; cộng160Pet theo policy riêng thành972/1000.35VI sửa,31mẫu sửa đã đủ cảhaiQA. [Bảng/ảnh đối soát](stage1/v16/completion.md);22packet/HTML/ZIPv2gốc giữ nguyên |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
 | Baseline main | B đã áp dụng và default ở main CLI, A config giữ nguyên; grid4.000, gates/resume và bounded smoke bốn task có logging. Chưa main GPU/freeze/M3; [v14](stage1/v14/completion.md) |
-| Tests | Ngày26/11 full suite488passed/33,46s, thêm17cases aggregation; [checks](stage1/v16/software_checks.json). CPU preflight4000cells vẫn chặn28QA+freeze; không GPU run mới |
+| Editor28mẫu | HTML offline v17 cho người dùng sửa VI/chốt nhãn, ghi lý do, ID/time/history và tải/nạp JSON riêng. Ban đầu28pending, chưa có quyết định thật; không tự import/approve A/B |
+| Tests | Ngày26/11 full suite511passed/32,27s, thêm23cases editor; [checks](stage1/v17/software_checks.json). QA/freeze vẫn chặn main; không GPU run mới |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
 | Hướng dẫn/structure | HUONG_DAN_NHOM.md; root scripts thêm validate_image_ab.py riêng cho diagnostic, data/8 và legacy/2 giữ nguyên. Data/config/runtime paths cũ giữ nguyên |
@@ -72,6 +74,13 @@ Raw hai run valid được copy nguyên bytes vào [pilot_outputs](pilot_outputs
 QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch sử.
 
 ## Việc tiếp theo
+
+**Ưu tiên v38:** mở `exports/main_review_adjudication_v1.html` (khác trang
+readonly v16), nhập tên/ID, sửa VI và nhãn chốt, ghi lý do nếu đổi nhãn, tích
+hai ô kiểm tra, chọn Đã chốt rồi Lưu. Tải `main_28_adjudicated_v1.json` để gửi
+lại; có thể lưu/nạp giữa chừng. [Hướng dẫn](stage1/v17/completion.md).
+JSON là adjudication của người chốt, không sửa quyết định A/B/GT nguồn. Chưa
+có file trả về/import mới, nên main vẫn972đạt/28chờ, frozen=false/M3NOT_RUN.
 
 **Ưu tiên ngay v37:** xử lý [28mẫu còn lại](stage1/v16/needs_resolution.csv),
 hoặc mở `exports/main_review_resolution_v1.html` xem ảnh gốc/EN/VI/ghi chú.
@@ -566,3 +575,30 @@ disputes trước freeze; không tự đổi nhãn/EN/targets hoặc giảm1000m
 `e76b0a6`; manifest/report/completion được công bố trong commit tiếp theo.
 Các JSON nguồn trên Git khớp exact bytes/hashes đã dùng tổng hợp; không tự
 thay attribution của người duyệt. HTML đối soát có ảnh vẫn chỉ ở exports local.
+
+### v38 — 26/11/2026: HTML chỉnh sửa và chốt28mẫu còn lại
+
+Người dùng yêu cầu một HTML để tự sửa/chốt VI và nhãn cho28mẫu. Đã tạo
+exports/main_review_adjudication_v1.html, khoảng3MB, standalone/offline với
+nguyên28JPEG, EN/VI/nhãn gốc, ý kiến/history A/B và form quyết định mới. Không
+ghi đè readonlyHTMLv16 hoặc18JSON. UI có tên/ID người chốt, label typed,
+lý do bắt buộc khi sửa nguồn, hai ô kiểm dịch/ảnh trước resolved, lưu/nạp/
+download/tiến độ/unsaved guards; lưu tạm lỗi vẫn tải JSON được. Sửa quyết định
+đã lưu giữ history. Nguồn label được lưu riêng với resolved_ground_truth.
+
+Schema main_adjudication_v1/policy human_resolution_translation_and_label_v1
+bind28IDs/case/source hashes/template. Chỉ xuất pending và kiểm JSON; chưa
+thay main review proof gate, chưa nhập nhãn hiệu chỉnh vào CSV hay freeze.
+Tên file tải main_28_adjudicated_v1.json; không trộn vào18JSONv2. Khi có quyết
+định thật mới kiểm/import version/provenance phù hợp. [V17](stage1/v17/completion.md).
+
+Full suite thực511passed/32,27s,23cases mới. Targeted22passed/1,62s trước case
+guard CLI cuối; UI handlers synthetic chạy Node/minimalDOM và JSON roundtrip
+backend. Một lỗi mock input.value của0không ép string đã sửa; không nới parser.
+ActualHTML28pending/0resolved,28JPEG exacthash, nguồn/contextkhớp, node --check
+đạt;517Gitfiles cũ ngoài delta giữ nguyên. Chưa visualbrowserQA. Thêm template
+vào package-data, không dependency mới. Không userdecisions/QA/import/GPUrun
+mới. Bước tiếp người dùng mởHTML, chốt và gửiJSON; M1còn28/M2PENDING/M3NOT_RUN.
+
+Code/template/tests đã push riêng tại `728d86f`; hướng dẫn/receipt/completion
+được công bố trong commit tiếp theo. HTML local vẫn giữ đúng hash export.

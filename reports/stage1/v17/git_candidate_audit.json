@@ -1,0 +1,50 @@
+{
+  "scope": "local Git candidate audit; no remote publishing",
+  "ready": true,
+  "candidate_files": 536,
+  "candidate_bytes": 19912151,
+  "largest_files": [
+    {
+      "path": "data/main/reviewed_final_v1/main_reviewed.csv",
+      "bytes": 3042662
+    },
+    {
+      "path": "data/main/preparation_v2/repope_bilingual_draft_manifest.csv",
+      "bytes": 1065103
+    },
+    {
+      "path": "data/main/preparation_v1/repope_draft_manifest.csv",
+      "bytes": 751810
+    },
+    {
+      "path": "data/main/preparation_v2/all_candidates.jsonl",
+      "bytes": 716369
+    },
+    {
+      "path": "reports/audits/2026-11-24/image_dimensions.jsonl",
+      "bytes": 621888
+    },
+    {
+      "path": "reports/stage1/v16/aggregation.json",
+      "bytes": 538095
+    },
+    {
+      "path": "data/main/preparation_v1/repope_candidates.jsonl",
+      "bytes": 403413
+    },
+    {
+      "path": "data/main/preparation_v2/repope_candidates.jsonl",
+      "bytes": 403413
+    },
+    {
+      "path": "data/main/reviewed_pet_source_v1/oxford_pet_reviewed.csv",
+      "bytes": 352865
+    },
+    {
+      "path": "data/main/preparation_v3/oxford_pet_bilingual_draft.csv",
+      "bytes": 289345
+    }
+  ],
+  "issues": [],
+  "credential_check": "pattern-based; reports paths/rules/line numbers only"
+}

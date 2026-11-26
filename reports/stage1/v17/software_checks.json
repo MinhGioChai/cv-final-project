@@ -1,0 +1,18 @@
+{
+  "date_local": "2026-11-26",
+  "full_suite_command": ".venv/Scripts/python.exe -m pytest -q --junitxml reports/stage1/v17/software_tests.xml",
+  "full_suite_result": "511 passed in 32.27s",
+  "passed": 511,
+  "failed": 0,
+  "new_cases": 23,
+  "previous_full_before_path_collision_guard": "510 passed in 29.02s",
+  "targeted_command": ".venv/Scripts/python.exe -m pytest tests/test_review_adjudication.py -q --junitxml reports/stage1/v17/targeted_tests.xml",
+  "targeted_result_before_final_case": "22 passed in 1.62s",
+  "initial_UI_fixture_issue": "Minimal DOM mock returned numeric zero for input.value, unlike a browser string. Mock corrected; real parser rules not relaxed.",
+  "UI_scope": "Real inline handlers under Node minimal DOM with synthetic samples, backend round-trip; no visual browser QA",
+  "actual_HTML_checks": "28 pending / 0 resolved, exact original JPEG bytes, source/context hashes, node --check",
+  "new_real_human_decisions": 0,
+  "new_main_imports": 0,
+  "new_model_generations": 0,
+  "main_frozen": false
+}
