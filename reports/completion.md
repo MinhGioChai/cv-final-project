@@ -1,6 +1,6 @@
 # Completion — trạng thái và context hiện tại
 
-**v35 · 25/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
+**v37 · 26/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
 [completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
 
@@ -10,6 +10,7 @@
 [baseline contract/runner mới nhất](stage1/v13/completion.md),
 [main Option B đã chọn và CPU/M3 tooling mới nhất](stage1/v14/completion.md),
 [Pet QA theo xác nhận người dùng và nhãn nguồn](stage1/v15/completion.md),
+[tổng hợp18JSON và28mẫu cần xử lý](stage1/v16/completion.md),
 [công bố GitHub và kiểm chứng tái lập](releases/2026-11-21/README.md),
 [Handoff V3](../docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md),
 [protocol](../docs/research/RESEARCH_PROTOCOL_V3.md) và
@@ -51,11 +52,11 @@
 | Gemma pilot | Cùng 10 ảnh/20 lượt, NF4/BF16, valid 20/20, resume giữ hash; [v7](stage1/v7/completion.md) |
 | Pilot QA | 30 translation approved; JSON người dùng được import ngày 20/11, 30 image/label QA approved; `data/pilot/stage1_qa_v1/pilot_manifest.csv` |
 | RePOPE A/B diagnostic | 30 ảnh QA-approved,240 measured GPU cells valid,0 failed/OOM/missing;48 cells Phase1 reuse +192 mới,16 warm-up riêng. [Report](validation/repope_image_ab_v1/report.md), không phải validation bốn task/M3 |
-| Main drafts | Đủ1.000row/783JPEG. Drafts gốc/candidate cũ vẫn pending; Pet160đã import sang manifest mới, còn840mẫu chờ A/B |
-| Review main | 160Pet đã tổng hợp JSON theo declaration thật25/11+official source labels, mapping/ảnh/provenance/exclusions đạt. Còn18gói/840mẫu A/B;22packet/HTML/ZIPv2gốc giữ nguyên. [Policy/JSON Pet](../docs/research/PET_SOURCE_REVIEW_V1.md) |
+| Main drafts | Đủ1.000row/783JPEG. Manifest tổng hợp mới có972đạt/28cần xử lý; drafts/candidate cũ giữ nguyên pending, chưa final freeze |
+| Review main | Đã nhận18JSON/840mẫu:812đạt,28cần xử lý; cộng160Pet theo policy riêng thành972/1000.35VI sửa,31mẫu sửa đã đủ cảhaiQA. [Bảng/ảnh đối soát](stage1/v16/completion.md);22packet/HTML/ZIPv2gốc giữ nguyên |
 | Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
 | Baseline main | B đã áp dụng và default ở main CLI, A config giữ nguyên; grid4.000, gates/resume và bounded smoke bốn task có logging. Chưa main GPU/freeze/M3; [v14](stage1/v14/completion.md) |
-| Tests | Ngày25/11 full suite471passed/37,37s, thêm30cases Pet; targeted110passed/20,91s. [Checks](stage1/v15/software_checks.json). V14/diagnostic giữ evidence lịch sử; không GPU run mới |
+| Tests | Ngày26/11 full suite488passed/33,46s, thêm17cases aggregation; [checks](stage1/v16/software_checks.json). CPU preflight4000cells vẫn chặn28QA+freeze; không GPU run mới |
 | Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
 | Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
 | Hướng dẫn/structure | HUONG_DAN_NHOM.md; root scripts thêm validate_image_ab.py riêng cho diagnostic, data/8 và legacy/2 giữ nguyên. Data/config/runtime paths cũ giữ nguyên |
@@ -71,6 +72,27 @@ Raw hai run valid được copy nguyên bytes vào [pilot_outputs](pilot_outputs
 QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch sử.
 
 ## Việc tiếp theo
+
+**Ưu tiên ngay v37:** xử lý [28mẫu còn lại](stage1/v16/needs_resolution.csv),
+hoặc mở `exports/main_review_resolution_v1.html` xem ảnh gốc/EN/VI/ghi chú.
+11mẫu A/B cùng quan sát khác nhãn nguồn,9mẫu khác observation,3mẫu cần A duyệt
+lại VI cuối,3mẫu dịch chưa đồng thuận/pending và2mẫu QA ảnh pending. Không
+sửa source ground truth, tự approve hoặc loại mẫu. Đã nhận đủ18JSON trong
+`reviewed_final`, không cần review lại các mẫu đã đạt hoặc Pet. Manifest hiện
+tại `data/main/reviewed_final_v1/main_reviewed.csv` giữ đủ1000IDs,972đạt/28chờ.
+Long A/Long B thuộc hai người theo xác nhận thật của người dùng. M1 còn28;
+M2 chưafreeze, M3 NOT_RUN. Main candidate config chưa đổi sang manifest mới.
+
+**Feedback giảng viên tiếp nhận tại v36:** ưu tiên hoàn tất benchmark chính,
+làm rõ đóng góp so với literature; báo FNR/Yes Rate/disagreement bên cạnh FPR,
+kiểm parser EN–VI và phân tích paired correctness. File Word trao đổi với
+ChatGPT là bản đề xuất triển khai, chưa tự trở thành lệnh thực hiện mọi mục.
+Audit code đã có FNR/confusion/coverage/disagreement và hai nhóm đúng-sai
+chéo; còn thiếu Yes Rate, hai ô both-correct/both-wrong và exports tổng hợp.
+RQ1 primary/CI và RQ3/RQ4 conditional giữ nguyên. Không triển khai lại Pet:
+quyết định thật v35 mới hơn snapshot v34 và câu yêu cầu A/B trong file Word.
+Hướng tiếp theo có thể làm độc lập QA: bổ sung evaluation/exports, audit
+parser và Related Work; chưa thay code/protocol/metric trong phiên tiếp nhận.
 
 **Ngày thuyết trình: 03/12/2026**, người dùng xác nhận. Người dùng đã cho phép
 **REPOPE_ONLY_DIAGNOSTIC độc lập**: không cần chờ QA 24 supplement để chạy
@@ -95,14 +117,15 @@ chạy lại diagnostic khi resume nếu không có thay đổi cấu hình ho�
    `data/reviews/pet_source_review_v1/oxford_pet_reviewed_v1.json`, manifest tại
    `data/main/reviewed_pet_source_v1/oxford_pet_reviewed.csv`. Không nạp JSON này
    vào HTMLv2 hoặc tạo A/B cho Pet. Candidate draft cũ chưa tự đổi.
-   Nhóm tiếp tục18gói/840mẫu RePOPE/VSR/TallyQA. Gửi kèm hướng dẫn HTML chi tiết
+  18JSON đã nhận và được tổng hợp ởv16; chỉ còn28mẫu cần xử lý. Gửi kèm hướng dẫn HTML chi tiết
    `exports/HUONG_DAN_REVIEW_V2.html` với main_review_v2.zip; nhóm thử lưu/mở lại
    vài mẫu rồi tiếp tục theo đúng A/B.
 2. Review main theo [workflow v2](../docs/research/MAIN_REVIEW_V2.md): mở
    `reports/stage1/v12/main_review/index.html` sau khi nhận ZIP; tải JSON và
    lưu `data/reviews/main_review_v2/<packet>_reviewed_v2.json`. Không làm lại pilot.
-3. Dry-run/import các JSON thật vào version mới; xử lý rejected/uncertain,
-   tổng hợp đúng 1.000 IDs, đối soát source/ảnh/leakage trước final.
+3. Xử lý rejected/uncertain/pending của28mẫu, giữ bản nộp hiện tại. Tổng hợp
+   version mới từ đủ18JSON sau cập nhật và Pet đã duyệt; đối soát1000IDs/source/
+   ảnh/leakage trước final. Muốn đổi source label cần quyết định/version riêng.
 4. B đã triển khai; dùng `scripts/run_main.py plan` mặc định candidate B hoặc
    thêm `--smoke-per-task 1` để chuẩn bị M3. [Policy/commands](../docs/research/MAIN_OPTION_B_V1.md).
    Sau review, chốt final manifest/configs/prompts và freeze receipt đúng protocol,
@@ -468,3 +491,78 @@ lịch sử giữ nguyên. Candidate mặc định vẫn trỏ drafts1000pending
 Pet được lưu riêng để tổng hợp final sau. M1 còn840mẫu/18gói A/B, M2 chưa
 freeze, M3 NOT_RUN. Bước tiếp: nhận JSON A/B RePOPE/VSR/TallyQA, import version
 mới và tổng hợp cùng Pet đã duyệt; không cần làm lại bốn gói Pet.
+
+### v36 — 25/11/2026: Tiếp nhận feedback giảng viên và đối chiếu bản Word
+
+Đã đọc phản hồi giảng viên người dùng dán trong hội thoại và nội dung180
+paragraph của `Cap_nhat_project_VLM_EN_VI_feedback_giang_vien_gui_Codex.docx`
+(SHA256 `32c18b0758574ad0a888d2a169cc877d22810edd58ed4df050c6d029772baa2e`).
+Word là bản discuss với ChatGPT; phân biệt các đề xuất trong tệp với yêu cầu
+hiện tại của người dùng. Chưa tự thực thi các mục code/commit trong tệp.
+Audit bắt đầu trên main HEAD6ac3a1a, worktree sạch; chỉ cập nhật completion
+để giữ context. Không sửa Word, code, protocol, QA JSON, dataset hoặc config.
+
+Gap code được đọc trực tiếp: evaluate.py đã có confusion/FPR/FNR, valid-only
+và all-expected accuracy, coverage/excluded status counts, disagreement và
+hai off-diagonal correctness counts. Chưa có Yes Rate, both_correct/both_wrong
+và bộ exports CSV/Markdown tổng hợp được đề xuất. Parser hiện conservative,
+có aliases EN/VI và Unicode NFC cùng tests; chưa thấy căn cứ để nới parser
+hoặc đổi prompts. Statistics giữ jointly-valid negative RePOPE ΔFPR, image
+clusters và bootstrap seed42/B5000. Đây là đọc code, không phải test run mới.
+
+File Word dùng snapshot v34/441tests, mới nhất là v35/471tests có receipt;
+phần Pet còn nói A/B nên không thay thế quyết định thật v35 về một declaration
+dịch/chất lượng ảnh và nhãn nguồn. Không làm lại Pet hoặc tạo reviewer B.
+Main còn840mẫu chờ QA; M1 IN_PROGRESS, M2 PENDING, M3 NOT_RUN như trước.
+
+Đã xác minh sơ bộ nguồn học thuật gốc, chưa làm systematic literature review:
+[Ye và cộng sự, CLAIM, ACL2025](https://aclanthology.org/2025.acl-long.640/)
+đã nghiên cứu multilingual object hallucination và attention intervention;
+[He và cộng sự, NAACL2025](https://aclanthology.org/2025.naacl-long.349/)
+đánh giá hallucination sau loại vật thể khỏi ảnh;
+[Mousi và cộng sự, arXiv2602.05437v2](https://arxiv.org/abs/2602.05437v2)
+dùng true/counterfactual statements EN/Arabic/dialects. Đổi ảnh và đổi mệnh
+đề là các thiết kế khác nhau, không gộp thành cùng một RQ4. Không claim
+first/SOTA, novelty hoặc cơ chế từ language gap. Định vị đề xuất là empirical
+EN–VI paired evaluation với answer-bias/correctness/error analysis; RQ4 vẫn
+conditional/future work. Không test/inference/QA/freeze/commit/push mới.
+
+### v37 — 26/11/2026: Tổng hợp18JSON main và danh sách28mẫu cần đối soát
+
+Người dùng nộp đủ JSON trong reviewed_final, yêu cầu tổng hợp các bất đồng,
+sửa dịch và đề nghị sửa nhãn nguồn. Bắt đầu HEAD52cbdd8/main; completionv36
+và5RePOPEJSON đã dirty từ người dùng. Giữ nguyên bytes input và context đó.
+18/18 JSON đúng packet/hash/IDs/template; strict importer kiểm cả history,
+hai ID khác nhau, finalVI và ảnh, không có import error. Long A/Long B được
+người dùng xác nhận là hai người; không tạo reviewer hoặc approval mới.
+
+Đã import812/840mẫu đạt,28chưa đạt; cộngPet160giữ nguyên thành972/1000.
+RePOPE582/600, VSR120/120, TallyQA110/120, Pet160/160. Manifest mới giữ đầy
+đủ IDs/GT/source/783ảnh, pending/rejected không bị loại.35bảnVI thay đổi,
+31mẫu sửa đã đủ cảhaiQA,4mẫu sửa còn trong28. Lịch sử/góp ý A không thay
+approval trên bảnVI mới;3mẫu phải A duyệt lại sau B áp dụng câu sửa.
+
+28mẫu phân nhóm chính không trùng:11cùng observation khácsource,9observation
+bất đồng,3cầnAduyệtVImới,3dịchpending/bất đồng,2imageQA pending. Các flag phụ
+vànotes nguyên văn được giữ. TallyQA observation1000/10000 và trường hợp
+observation5/note4 được nêu rõ để đối soát, không chuyển thành nhãn mới.
+JSON/report/CSV/HTML ảnh gốc và lệnh ở [v16](stage1/v16/completion.md).
+
+Thêm workflow aggregation nhỏ, tái sử dụng v2 importer/Pet checker; không
+sửa backend/template/proofgate hiện có. Input hashes kiểm trước khi xuất,
+không ghi đè outputs. Full suite thực488passed/33,46s, thêm17cases; targeted
+70passed/8,35s trước case cuối. Bảy lỗi fixture đầu do VI nonempty/status
+missing đã sửa, không nới schema. CPU staged plan4000cells giữcellIDs/EN
+prompts;70VIprompts thay đổi do35text sửa trên2models. Hai execute attempts
+bị28QA+freeze blockers chặn trước environment/model. Không inference mới.
+
+Đối soát813JPEG,20historicalrawfiles,23HTML/4ZIP cũ và492Gitfiles ngoài delta
+được phép.18inputJSON/Pet/raw/labels/configs vẫn nguyên; ảnh trên HTML đối
+soát là nguyên JPEGbytes, chỉ scale hiển thị. M1IN_PROGRESS28mẫu, M2PENDING,
+M3NOT_RUN. Bước tiếp: giải quyết28mẫu và quyết định cách xử lý source-label
+disputes trước freeze; không tự đổi nhãn/EN/targets hoặc giảm1000mẫu.
+
+Đã push nguồn review nhận được riêng tại `e7dda40` và công cụ/tests tại
+`e76b0a6`; manifest/report/completion được công bố trong commit tiếp theo.
+Các JSON nguồn trên Git khớp exact bytes/hashes đã dùng tổng hợp; không tự
+thay attribution của người duyệt. HTML đối soát có ảnh vẫn chỉ ở exports local.

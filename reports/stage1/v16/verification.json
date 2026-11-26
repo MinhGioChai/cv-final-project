@@ -1,0 +1,52 @@
+{
+  "date_local": "2026-11-26",
+  "reference_commit": "52cbdd8",
+  "strict_replay_rows": 1000,
+  "source_reviews_hash_verified": 18,
+  "original_source_fields_preserved": true,
+  "source_labels_changed": 0,
+  "approved_total": 972,
+  "needs_resolution": 28,
+  "expected_cells": 4000,
+  "cell_ids_unchanged": true,
+  "EN_prompts_changed": 0,
+  "VI_prompts_changed": 70,
+  "VI_texts_changed": 35,
+  "VI_texts_changed_and_fully_approved": 31,
+  "main_preflight_blocking_counts": {
+    "MAIN_QA_NOT_APPROVED": 28,
+    "BASELINE_NOT_FROZEN": 1,
+    "FREEZE_RECEIPT_REQUIRED": 1
+  },
+  "blocked_attempts": [
+    {
+      "model": "qwen",
+      "blocked_before_environment_model": true,
+      "reason": "Main execution blocked: BASELINE_NOT_FROZEN, FREEZE_RECEIPT_REQUIRED, MAIN_QA_NOT_APPROVED"
+    },
+    {
+      "model": "gemma",
+      "blocked_before_environment_model": true,
+      "reason": "Main execution blocked: BASELINE_NOT_FROZEN, FREEZE_RECEIPT_REQUIRED, MAIN_QA_NOT_APPROVED"
+    }
+  ],
+  "source_JPEG_hashes_verified": 813,
+  "historical_raw_files_verified": 20,
+  "original_review_HTML_preserved": 23,
+  "old_private_archives_preserved": 4,
+  "private_resolution_HTML_embeds_exact_source_JPEGs": 28,
+  "old_git_files_preserved": 492,
+  "preexisting_user_input_edits_preserved": [
+    "reviewed_final/repope_01_reviewed_v2.json",
+    "reviewed_final/repope_02_reviewed_v2.json",
+    "reviewed_final/repope_03_reviewed_v2.json",
+    "reviewed_final/repope_04_reviewed_v2.json",
+    "reviewed_final/repope_05_reviewed_v2.json"
+  ],
+  "new_human_approvals_created": 0,
+  "main_config_unchanged": true,
+  "M1": "IN_PROGRESS",
+  "M2": "PENDING",
+  "M3": "NOT_RUN",
+  "new_model_generations": 0
+}

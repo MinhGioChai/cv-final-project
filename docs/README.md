@@ -10,6 +10,7 @@ Mục lục này dành cho lúc cần chi tiết; completion ghi trạng thái s
 | Checklist công việc P0/P1 | [Implementation Plan](research/IMPLEMENTATION_PLAN_V3.md) |
 | Tổng quan, tiến độ và phân công 5 người | [Report TV1–TV5](research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md) |
 | Review main và import | [Main review v2 — A/B](research/MAIN_REVIEW_V2.md) |
+| Tổng hợp JSON đã nộp và 28 mẫu cần xử lý | [Stage1 v16](../reports/stage1/v16/completion.md), [CSV đối soát](../reports/stage1/v16/needs_resolution.csv) |
 | Ngoại lệ Pet: dịch/ảnh do người kiểm, giống kế thừa nhãn nguồn | [Policy và JSON 160 mẫu](research/PET_SOURCE_REVIEW_V1.md) |
 | Pilot local/Colab/Kaggle | [Pilot guide](run_local_colab_kaggle.md), [Gemma](setup_gemma.md) |
 | Scoring và CI | [Evaluation v1](research/EVALUATION_V1.md) |

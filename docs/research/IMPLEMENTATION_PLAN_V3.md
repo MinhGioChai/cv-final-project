@@ -17,6 +17,10 @@ Ngày25/11:160Pet đã import theo [xác nhận dịch/chất lượng ảnh và
 Còn840mẫu A/B, không phải toàn main đã duyệt. A11/A13 vẫn IN_PROGRESS;
 draft configs giữ nguyên và chưa final freeze/M3.
 
+Ngày26/11: đã tổng hợp18JSON+Pet,972mẫu đạt/28mẫu cần đối soát. [V16](../../reports/stage1/v16/completion.md).
+Không sửa source labels hoặc khôi phục approval trong history. M1 còn28mẫu;
+M2/M3 vẫn chờ, candidate draft chưa tự đổi.
+
 **Nhắc Gemma đã hoàn tất ngày 19/11:** NF4/BF16 10 mẫu/20 lượt valid, có
 resume và evaluation/CI tại [v7](../../reports/stage1/v7/completion.md).
 Không nhắc setup/pilot như việc pending; human QA/main còn tiếp tục.
@@ -33,7 +37,7 @@ Không nhắc setup/pilot như việc pending; human QA/main còn tiếp tục.
 | A08 | P0 | Quyền truy cập Gemma | DONE | Run v7 NF4/BF16 hoàn tất; không còn blocker access/pagefile/output rỗng trên subset này |
 | A09 | P0 | Metrics RQ1/RQ2 và paired evaluator | DONE | Code/CLI, bốn task toy tests, actual hai model pilot evaluation |
 | A10 | P0 | Cluster bootstrap và CI | DONE | Code/toy tests, empirical CI hai pilot, B=5000 và seed 42 |
-| A11 | P0 | Dữ liệu main bốn task | IN_PROGRESS | Đủ1000mẫu/783JPEG.160Pet đã import theo policy riêng25/11;840mẫu RePOPE/VSR/TallyQA còn A/B. Draft gốc và22packet giữ nguyên; chưa frozen main |
+| A11 | P0 | Dữ liệu main bốn task | IN_PROGRESS | Đủ1000mẫu/783JPEG.26/11tổng hợp972đạt/28cần đối soát; Pet policy giữ nguyên. Draft/22packet/source labels giữ nguyên, chưa frozen |
 | A12 | P0 | Chốt metadata/schema baseline V3 | DONE | Engineering contract v1 có fields/strict schemas và CPU tests, [v13](../../reports/stage1/v13/completion.md); final settings/protocol freeze còn A13 |
 | A13 | P0 | Baseline freeze và full runner | IN_PROGRESS | Main runner bốn task v1/dry-run 4.000 cells và resume/error/eval integration đã CPU-tested; QA/final freeze và main GPU smoke còn chờ |
 | A14 | P0 | Main inference | TODO | 4.000 expected; chưa chạy hoặc được xác nhận full-run |

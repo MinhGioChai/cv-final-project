@@ -1,0 +1,11 @@
+{
+  "date_local": "2026-11-26",
+  "scope": "VSR submitted packets vsr_01, vsr_02, vsr_03",
+  "question": "Trong ba gói VSR, hai ID Long A và Long B là hai người khác nhau, hay cùng một người dùng hai ID?",
+  "user_answer_verbatim": "Hai người khác nhau",
+  "source": "explicit project user reply in conversation",
+  "reviewer_ids_confirmed_distinct_by_user": ["Long A", "Long B"],
+  "identity_verification": "project user attestation, not external identity verification",
+  "new_review_decisions_created": 0,
+  "raw_review_JSON_modified": false
+}

@@ -14,9 +14,10 @@ sử để bắt đầu; hướng dẫn chuyên sâu được link khi cần.
 ## Trạng thái hiện tại
 
 - Pilot: mỗi model 20 lượt thật valid; 30 mẫu pilot đã human QA approved.
-- Main: đủ 1.000 câu/783 ảnh. Pet 160 mẫu đã import theo xác nhận dịch/chất
-  lượng ảnh của người dùng và nhãn nguồn; [JSON/quy trình Pet](docs/research/PET_SOURCE_REVIEW_V1.md).
-  Còn 840 mẫu chờ review. Candidate main vẫn dùng draft, chưa final freeze.
+- Main: đã tổng hợp18 JSON và Pet riêng, **972/1.000 mẫu đạt, 28 mẫu cần xử lý**,
+  giữ783ảnh/source labels. [Báo cáo và danh sách đối soát](reports/stage1/v16/completion.md).
+  [Policy Pet](docs/research/PET_SOURCE_REVIEW_V1.md) giữ nguyên. Candidate main
+  vẫn dùng draft; manifest tổng hợp mới lưu riêng, chưa final freeze.
 - Review v2: A kiểm dịch và ảnh/nhãn, B kiểm lại cả hai; nhận riêng
   `main_review_v2.zip`, mở `reports/stage1/v12/main_review/index.html`.
   [Hướng dẫn review chi tiết từng bước cho A/B](docs/research/MAIN_REVIEW_V2.md).

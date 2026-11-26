@@ -1,0 +1,51 @@
+{
+  "schema_version": "baseline_plan_v1",
+  "scope": "main_baseline_preflight_not_inference",
+  "protocol_hash": "1f1edf6be814c10ada0a3e039c2dccf83b03188ab432b0650e72eeab69a5c4df",
+  "frozen": false,
+  "execution_ready": false,
+  "selected_rows": 1000,
+  "unique_images": 783,
+  "expected_inferences": 4000,
+  "expected_per_model": {
+    "gemma": 2000,
+    "qwen": 2000
+  },
+  "datasets": {
+    "oxford_pet": 160,
+    "repope": 600,
+    "tallyqa": 120,
+    "vsr": 120
+  },
+  "qa_status": {
+    "approved": 974,
+    "rejected": 21,
+    "pending": 5
+  },
+  "translation_status": {
+    "approved": 993,
+    "requires_review": 4,
+    "rejected": 3
+  },
+  "blocking_counts": {
+    "MAIN_QA_NOT_APPROVED": 28,
+    "BASELINE_NOT_FROZEN": 1,
+    "FREEZE_RECEIPT_REQUIRED": 1
+  },
+  "grid_sha256": "dcaf5ac0c9684101a9a94ba7205632117c4a550c37979e8192222d2162cf9641",
+  "inputs_sha256": {
+    "data/main/reviewed_final_v1/main_reviewed.csv": "6db733ba5899dfc8926f1d5986b434f5e52a0a90786180adc5c10a84d0d7ef4e",
+    "reports/stage1/v16/aggregation_preflight.yaml": "1a130c9cf7698df75b5a0a265851935dd6e0c55a7fa66a235bde7c69d63a739e",
+    "data/main/preparation_v2/all_candidates.jsonl": "f336eb5c8e0f2626f82ff813ab65c57fff37ea39a62fbc16c01a63c69121eec7",
+    "data/pilot/stage1_qa_v1/pilot_manifest.csv": "e19b8601a9f0771ebc79c35ac347abf8a1764a9e2aa183c44288b961d3fc30b3",
+    "data/pilot/image_exclusions.json": "02f9deadc3e2670e5de2ec8b27ebf6516a7105b72728e25bd024693d6ac8422f",
+    "configs/prompts_baseline_v1.yaml": "00b1745e482697dd99a7e2c39c2ef6164dc90050d299852cdebcd5254d7351c9",
+    "data/main/preparation_v3/oxford_pet_bilingual_draft.csv": "c586eebe55495bdb0054c1977cd9061163b414ddaa5aea8190ec10f2f3c25766",
+    "data/raw/main_metadata_v1/pet_annotations.tar.gz": "52425fb6de5c424942b7626b428656fcbd798db970a937df61750c0f1d358e91",
+    "data/raw/task_images_v1/oxford_pet/receipt.json": "48f36a2c326394aeb666c5f2c7c8b54b0e23f047ddb92677a329b5db30d304be",
+    "data/reviews/pet_source_review_v1/oxford_pet_reviewed_v1.json": "af8ad7c42f81c7f072c3e520240dbcbc87bc4f7c031c1846f507843301159edc"
+  },
+  "freeze_sha256": null,
+  "model_inferences": 0,
+  "new_human_approvals": 0
+}

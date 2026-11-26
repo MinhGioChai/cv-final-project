@@ -75,6 +75,12 @@ ba tác vụ còn lại vẫn bắt buộc A/B như trên. Xem [quy trình và J
 160 mẫu đã import vào manifest mới; còn 840 mẫu chờ review, chưa final freeze.
 Candidate draft cũ giữ nguyên trạng thái pending để bảo toàn lịch sử.
 
+**Trạng thái26/11:** đã import18JSON/840mẫu và Pet160 từ version đã duyệt:
+RePOPE582/600, VSR120/120, TallyQA110/120, Pet160/160 đạt cả hai gate theo
+policy tương ứng.28mẫu còn pending/rejected được giữ trong manifest tổng hợp
+mới; không đổi source labels/EN/IDs hoặc frozen. Hai ID VSR Long A/Long B
+được người dùng xác nhận thuộc hai người. [Aggregation và đối soát](../../reports/stage1/v16/completion.md).
+
 Tên trường V3 có thể được ánh xạ thay vì đổi CSV đang có:
 
 | Trường V3 | Trường hiện tại | Hành động tối thiểu đề xuất |

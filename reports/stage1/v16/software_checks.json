@@ -1,0 +1,16 @@
+{
+  "date_local": "2026-11-26",
+  "full_suite_command": ".venv/Scripts/python.exe -m pytest -q --junitxml reports/stage1/v16/software_tests.xml",
+  "full_suite_result": "488 passed in 33.46s",
+  "passed": 488,
+  "failed": 0,
+  "new_cases": 17,
+  "targeted_command": ".venv/Scripts/python.exe -m pytest tests/test_review_aggregation.py tests/test_main_review_v2.py tests/test_pet_review.py -q --junitxml reports/stage1/v16/targeted_tests.xml",
+  "targeted_result_before_final_added_case": "70 passed in 8.35s",
+  "initial_targeted_result": "7 failed, 63 passed in 8.69s",
+  "initial_failure_correction": "Synthetic unit rows with nonempty VI were incorrectly left translation_status=missing. Fixtures corrected to requires_review; no schema relaxation or real-data edit.",
+  "scope": "CPU software/synthetic tests plus separate real submitted-review import and source/gate verification",
+  "new_human_approvals_created": 0,
+  "new_model_generations": 0,
+  "main_frozen": false
+}

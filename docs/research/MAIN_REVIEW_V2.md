@@ -1,5 +1,11 @@
 # Hướng dẫn review main v2 — A và B cùng kiểm dịch, ảnh và nhãn
 
+**Tổng hợp26/11:** đã nhận18JSON, cộng Pet là972/1000mẫu đạt;28mẫu cần xử lý.
+Xem [danh sách, ảnh đối soát và hướng dẫn tiếp](../../reports/stage1/v16/completion.md).
+Không làm lại toàn bộ18gói. Góp ý dịch của A trong history chưa thay approval
+trên VI mới; hai observation cùng khác nhãn nguồn vẫn là đề nghị đối soát,
+không tự sửa ground truth. Các bản gửi trong `reviewed_final` giữ nguyên.
+
 **Cập nhật riêng Pet 25/11/2026:** người dùng đã xác nhận bản dịch/chất lượng
 ảnh của 160 mẫu; nhãn giống được kế thừa annotation chính thức và kiểm mapping
 bằng code theo [policy Pet](PET_SOURCE_REVIEW_V1.md). Không cần duyệt lại bốn

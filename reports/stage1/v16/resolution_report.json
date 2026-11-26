@@ -1,0 +1,11 @@
+{
+  "rows": 28,
+  "CSV": "reports/stage1/v16/needs_resolution.csv",
+  "csv_sha256": "03f93c06823d8d70f8bc2e975ba5a4e78f670039183eee773debc09e4c37fc0d",
+  "private_HTML": "exports/main_review_resolution_v1.html",
+  "html_sha256": "b03a98733a94c373bdaf568b9139897676ef70d3cb858ef041afed43cd123f07",
+  "image_policy": "original JPEG bytes embedded without resampling; display scaling only",
+  "human_decisions_created": 0,
+  "image_sources_modified": false,
+  "accepted_total": 972
+}

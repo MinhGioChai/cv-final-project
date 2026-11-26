@@ -21,6 +21,9 @@ Xem [diagnostic GPU thật và lệnh](../reports/validation/repope_image_ab_v1/
 [full validation v1](../reports/validation/image_ab_v1/report.md) giữ lịch sử.
 `review_main.py` mặc định v2: export/import/bundle cho A/B mỗi người kiểm dịch
 và ảnh/nhãn; dùng `--version v1` khi tái lập workflow cũ.
+`aggregate_reviews.py` tổng hợp đủ submissions trong `reviewed_final` với Pet
+đã duyệt, giữ các mẫu pending/rejected và xuất danh sách cần xử lý. Không sửa
+nhãn nguồn hoặc tự freeze. [Lệnh và kết quả v16](../reports/stage1/v16/completion.md).
 Riêng Pet từ25/11 dùng `review_pet.py`: record declaration thật hoặc import
 JSON `pet_source_review_v1`; không tạo reviewer B. [Policy/lệnh Pet](../docs/research/PET_SOURCE_REVIEW_V1.md).
 Pilot dùng `run_pilot.py`; các alias cũ vẫn còn. Script data luôn chạy từ

@@ -1,0 +1,2290 @@
+{
+  "scope": "pending_human_resolution_not_new_ground_truth",
+  "rows": 28,
+  "cases": [
+    {
+      "sample_id": "repope_402b1ed58c3c09a0",
+      "dataset": "repope",
+      "packet": "repope_01",
+      "image_path": "data/raw/main_images_v1/repope/images/000000275863.jpg",
+      "image_sha256": "d8b60747f7a46266be78c59cc3a947e282ef4b9eb368a1b7ab85ee34d8c3161c",
+      "category": "adversarial",
+      "question_en": "Is there a dining table in the image?",
+      "question_vi_original": "Trong ảnh có cái bàn ăn nào không?",
+      "question_vi_final": "Trong ảnh có cái bàn ăn nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_01_reviewed_v2.json",
+      "review_sha256": "1a6837d6222c8d06c3a560a2e1aa16303a6b0e5fc86fe1ce4e09297537eddb51",
+      "decision": {
+        "sample_id": "repope_402b1ed58c3c09a0",
+        "question_vi": "Trong ảnh có cái bàn ăn nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T02:24:29.663Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T02:24:29.663Z",
+            "notes": "no",
+            "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:11:10.020Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:11:10.020Z",
+            "notes": "không có bàn",
+            "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "repope_5440bf012a192cbc",
+      "dataset": "repope",
+      "packet": "repope_01",
+      "image_path": "data/raw/main_images_v1/repope/images/000000498100.jpg",
+      "image_sha256": "d58321fb9c11fef02a14d890cc99a5283dd3a996b3781d1f5ea458e53cf7efbb",
+      "category": "adversarial",
+      "question_en": "Is there a potted plant in the image?",
+      "question_vi_original": "Trong ảnh có chậu cây nào không?",
+      "question_vi_final": "Trong ảnh có cây trồng trong chậu nào không?",
+      "source_ground_truth": "no",
+      "translation_status": "requires_review",
+      "qa_status": "pending",
+      "primary_issue": "rereview_after_translation_change",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "rereview_after_translation_change",
+        "translation_changed",
+        "translation_not_fully_approved",
+        "translation_status_disagreement"
+      ],
+      "action": "Reviewer có lượt pending cần mở bản VI cuối và duyệt lại; không suy approval từ góp ý trong history.",
+      "review_path": "reviewed_final/repope_01_reviewed_v2.json",
+      "review_sha256": "1a6837d6222c8d06c3a560a2e1aa16303a6b0e5fc86fe1ce4e09297537eddb51",
+      "decision": {
+        "sample_id": "repope_5440bf012a192cbc",
+        "question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "pending",
+            "reviewer_id": "",
+            "reviewed_at": "",
+            "notes": "",
+            "reviewed_question_vi": "",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "pending",
+            "reviewer_id": "",
+            "reviewed_at": "",
+            "notes": "",
+            "reviewed_question_vi": "",
+            "observed_answer": ""
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:13:40.085Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:13:40.085Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Trong ảnh có chậu cây nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T02:25:26.035Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T02:25:26.035Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": "no"
+              }
+            },
+            "archived_at": "2026-11-26T02:47:46.025Z",
+            "reason": "review_replaced"
+          },
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Trong ảnh có chậu cây nào không?",
+            "review": {
+              "translation": {
+                "status": "rejected",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T02:47:46.025Z",
+                "notes": "Trong ảnh có cây trồng trong chậu nào không?",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T02:47:46.025Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": "no"
+              }
+            },
+            "archived_at": "2026-11-26T08:13:40.085Z",
+            "reason": "translation_changed"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_91dda65bc56a75ca",
+      "dataset": "repope",
+      "packet": "repope_01",
+      "image_path": "data/raw/main_images_v1/repope/images/000000278226.jpg",
+      "image_sha256": "09e2fddf342f0a17aa63f646eee87ae9880b9319a0e3234b0af64c83a49ab432",
+      "category": "adversarial",
+      "question_en": "Is there a chair in the image?",
+      "question_vi_original": "Trong ảnh có chiếc ghế nào không?",
+      "question_vi_final": "Trong ảnh có chiếc ghế nào không?",
+      "source_ground_truth": "no",
+      "translation_status": "approved",
+      "qa_status": "pending",
+      "primary_issue": "image_qa_disagreement_or_incomplete",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement"
+      ],
+      "action": "Reviewer có lượt pending/rejected cần kiểm lại và ghi quyết định thật; cùng đáp án chưa thay thế approved.",
+      "review_path": "reviewed_final/repope_01_reviewed_v2.json",
+      "review_sha256": "1a6837d6222c8d06c3a560a2e1aa16303a6b0e5fc86fe1ce4e09297537eddb51",
+      "decision": {
+        "sample_id": "repope_91dda65bc56a75ca",
+        "question_vi": "Trong ảnh có chiếc ghế nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T02:20:08.540Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc ghế nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T02:20:08.540Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc ghế nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:06:24.965Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc ghế nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "pending",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:06:24.965Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc ghế nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "repope_9aad2e825e9f880c",
+      "dataset": "repope",
+      "packet": "repope_02",
+      "image_path": "data/raw/main_images_v1/repope/images/000000211674.jpg",
+      "image_sha256": "43b43ff3676149d1cd582488b8567fb647d7b115f35c7677b845f52a80b73e96",
+      "category": "adversarial",
+      "question_en": "Is there a potted plant in the image?",
+      "question_vi_original": "Trong ảnh có chậu cây nào không?",
+      "question_vi_final": "Trong ảnh có chậu cây nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "rejected",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "translation_not_fully_approved",
+        "translation_status_disagreement"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_02_reviewed_v2.json",
+      "review_sha256": "9f6be881a9f29f973802b9b6a8065a81bb646e11ea420419de7aaed0e6c92ad0",
+      "decision": {
+        "sample_id": "repope_9aad2e825e9f880c",
+        "question_vi": "Trong ảnh có chậu cây nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T02:46:39.371Z",
+            "notes": "Trong ảnh có cây trồng trong chậu không?",
+            "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T02:46:39.371Z",
+            "notes": "no",
+            "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:36:45.788Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "pending",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:36:45.788Z",
+            "notes": "khớp lại nhãn no của người duyệt 1",
+            "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Trong ảnh có chậu cây nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T02:44:19.082Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T02:44:19.082Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": "yes"
+              }
+            },
+            "archived_at": "2026-11-26T02:46:39.371Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_5988fc0fedca459e",
+      "dataset": "repope",
+      "packet": "repope_03",
+      "image_path": "data/raw/main_images_v1/repope/images/000000038645.jpg",
+      "image_sha256": "959430338bf6112a9fbccc1dff4f2b702ad9406cf9d3cd28b969421b1789f004",
+      "category": "adversarial",
+      "question_en": "Is there a potted plant in the image?",
+      "question_vi_original": "Trong ảnh có chậu cây nào không?",
+      "question_vi_final": "Trong ảnh có cây trồng trong chậu nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "requires_review",
+      "qa_status": "pending",
+      "primary_issue": "rereview_after_translation_change",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "rereview_after_translation_change",
+        "translation_changed",
+        "translation_not_fully_approved",
+        "translation_status_disagreement"
+      ],
+      "action": "Reviewer có lượt pending cần mở bản VI cuối và duyệt lại; không suy approval từ góp ý trong history.",
+      "review_path": "reviewed_final/repope_03_reviewed_v2.json",
+      "review_sha256": "99933ae4ac31c51b3da9522c26aff614b401860d3b047cd574981c9917fd1b48",
+      "decision": {
+        "sample_id": "repope_5988fc0fedca459e",
+        "question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "pending",
+            "reviewer_id": "",
+            "reviewed_at": "",
+            "notes": "",
+            "reviewed_question_vi": "",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "pending",
+            "reviewer_id": "",
+            "reviewed_at": "",
+            "notes": "",
+            "reviewed_question_vi": "",
+            "observed_answer": ""
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:15:54.245Z",
+            "notes": "đã đổi lại theo bản dịch của A",
+            "reviewed_question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:15:54.245Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Trong ảnh có chậu cây nào không?",
+            "review": {
+              "translation": {
+                "status": "rejected",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T02:54:32.496Z",
+                "notes": "Trong ảnh có cây trồng trong chậu nào không?",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T02:54:32.496Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": "yes"
+              }
+            },
+            "archived_at": "2026-11-26T08:43:49.106Z",
+            "reason": "translation_changed"
+          },
+          {
+            "reviewer_slot": "reviewer_b",
+            "question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "Khôi",
+                "reviewed_at": "2026-11-26T08:43:49.106Z",
+                "notes": "đã đổi lại theo bản dịch của A",
+                "reviewed_question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Khôi",
+                "reviewed_at": "2026-11-26T08:43:49.106Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+                "observed_answer": "yes"
+              }
+            },
+            "archived_at": "2026-11-26T09:15:54.245Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_7ead072ab3ebf96c",
+      "dataset": "repope",
+      "packet": "repope_03",
+      "image_path": "data/raw/main_images_v1/repope/images/000000325347.jpg",
+      "image_sha256": "121ee059d117c350598a2fa760c32a056e3f9ec420900a8fc5e7334abef3d275",
+      "category": "adversarial",
+      "question_en": "Is there a sports ball in the image?",
+      "question_vi_original": "Trong ảnh có quả bóng thể thao nào không?",
+      "question_vi_final": "Trong ảnh có quả bóng thể thao nào không?",
+      "source_ground_truth": "no",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_03_reviewed_v2.json",
+      "review_sha256": "99933ae4ac31c51b3da9522c26aff614b401860d3b047cd574981c9917fd1b48",
+      "decision": {
+        "sample_id": "repope_7ead072ab3ebf96c",
+        "question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T02:52:08.722Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T02:52:08.722Z",
+            "notes": "yes",
+            "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:15:34.824Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:15:34.824Z",
+            "notes": "đáp án là yes",
+            "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_b",
+            "question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "Khôi",
+                "reviewed_at": "2026-11-26T08:41:35.338Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Khôi",
+                "reviewed_at": "2026-11-26T08:41:35.338Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+                "observed_answer": "no"
+              }
+            },
+            "archived_at": "2026-11-26T09:15:34.824Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_973c58f521d09304",
+      "dataset": "repope",
+      "packet": "repope_03",
+      "image_path": "data/raw/main_images_v1/repope/images/000000214421.jpg",
+      "image_sha256": "95ad630a4802b8e06c9a8894e7f89a6132ca2f2d8d04a1dd6db73301f4735d84",
+      "category": "adversarial",
+      "question_en": "Is there a potted plant in the image?",
+      "question_vi_original": "Trong ảnh có chậu cây nào không?",
+      "question_vi_final": "Trong ảnh có cây trồng trong chậu nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "requires_review",
+      "qa_status": "pending",
+      "primary_issue": "rereview_after_translation_change",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "rereview_after_translation_change",
+        "translation_changed",
+        "translation_not_fully_approved",
+        "translation_status_disagreement"
+      ],
+      "action": "Reviewer có lượt pending cần mở bản VI cuối và duyệt lại; không suy approval từ góp ý trong history.",
+      "review_path": "reviewed_final/repope_03_reviewed_v2.json",
+      "review_sha256": "99933ae4ac31c51b3da9522c26aff614b401860d3b047cd574981c9917fd1b48",
+      "decision": {
+        "sample_id": "repope_973c58f521d09304",
+        "question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "pending",
+            "reviewer_id": "",
+            "reviewed_at": "",
+            "notes": "",
+            "reviewed_question_vi": "",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "pending",
+            "reviewer_id": "",
+            "reviewed_at": "",
+            "notes": "",
+            "reviewed_question_vi": "",
+            "observed_answer": ""
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:48:55.000Z",
+            "notes": "chỉnh lại dịch đúng theo A",
+            "reviewed_question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:48:55.000Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cây trồng trong chậu nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Trong ảnh có chậu cây nào không?",
+            "review": {
+              "translation": {
+                "status": "rejected",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T03:01:05.681Z",
+                "notes": "Trong ảnh có cây trồng trong chậu nào không?",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Nguyễn Đăng Minh",
+                "reviewed_at": "2026-11-26T03:01:05.681Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+                "observed_answer": "yes"
+              }
+            },
+            "archived_at": "2026-11-26T08:48:55.000Z",
+            "reason": "translation_changed"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_66e577af1074a78b",
+      "dataset": "repope",
+      "packet": "repope_04",
+      "image_path": "data/raw/main_images_v1/repope/images/000000554002.jpg",
+      "image_sha256": "9141ce2c58d8ea084f5b1ad198076cb0ce5865a1d803f9bbce54ab457fa74480",
+      "category": "adversarial",
+      "question_en": "Is there a dining table in the image?",
+      "question_vi_original": "Trong ảnh có cái bàn ăn nào không?",
+      "question_vi_final": "Trong ảnh có cái bàn ăn nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_04_reviewed_v2.json",
+      "review_sha256": "0e315d4f41b6e4ac3c6e618e261b11544632d01c9ded9da15d3720892ae1c559",
+      "decision": {
+        "sample_id": "repope_66e577af1074a78b",
+        "question_vi": "Trong ảnh có cái bàn ăn nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:03:57.082Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:03:57.082Z",
+            "notes": "no",
+            "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:56:10.227Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:56:10.227Z",
+            "notes": "chỉnh lại thành no",
+            "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "repope_a29f1a238c4ca090",
+      "dataset": "repope",
+      "packet": "repope_04",
+      "image_path": "data/raw/main_images_v1/repope/images/000000350898.jpg",
+      "image_sha256": "4ca815c8165a19d1fea11c9bbe09d56b4e2684836eb908d35a89f161846e4920",
+      "category": "adversarial",
+      "question_en": "Is there a bottle in the image?",
+      "question_vi_original": "Trong ảnh có cái chai nào không?",
+      "question_vi_final": "Trong ảnh có cái chai nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_04_reviewed_v2.json",
+      "review_sha256": "0e315d4f41b6e4ac3c6e618e261b11544632d01c9ded9da15d3720892ae1c559",
+      "decision": {
+        "sample_id": "repope_a29f1a238c4ca090",
+        "question_vi": "Trong ảnh có cái chai nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:06:10.464Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái chai nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:06:10.464Z",
+            "notes": "no",
+            "reviewed_question_vi": "Trong ảnh có cái chai nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:58:52.935Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái chai nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T08:58:52.935Z",
+            "notes": "trong ảnh không hề có cái chai nào, đáp án là no",
+            "reviewed_question_vi": "Trong ảnh có cái chai nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "repope_b6e877469249077d",
+      "dataset": "repope",
+      "packet": "repope_04",
+      "image_path": "data/raw/main_images_v1/repope/images/000000170365.jpg",
+      "image_sha256": "6e964e3d88e616009c46c7196c5b6106f5b98878f1c6a404f7b7adf6583f7ccc",
+      "category": "adversarial",
+      "question_en": "Is there a sink in the image?",
+      "question_vi_original": "Trong ảnh có cái bồn rửa nào không?",
+      "question_vi_final": "Trong ảnh có cái bồn rửa nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "pending",
+      "primary_issue": "image_qa_disagreement_or_incomplete",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement"
+      ],
+      "action": "Reviewer có lượt pending/rejected cần kiểm lại và ghi quyết định thật; cùng đáp án chưa thay thế approved.",
+      "review_path": "reviewed_final/repope_04_reviewed_v2.json",
+      "review_sha256": "0e315d4f41b6e4ac3c6e618e261b11544632d01c9ded9da15d3720892ae1c559",
+      "decision": {
+        "sample_id": "repope_b6e877469249077d",
+        "question_vi": "Trong ảnh có cái bồn rửa nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:06:24.380Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bồn rửa nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "pending",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:06:24.380Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bồn rửa nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:17:31.614Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bồn rửa nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:17:31.614Z",
+            "notes": "đáp án đã đúng",
+            "reviewed_question_vi": "Trong ảnh có cái bồn rửa nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_b",
+            "question_vi": "Trong ảnh có cái bồn rửa nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "Khôi",
+                "reviewed_at": "2026-11-26T08:59:06.325Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có cái bồn rửa nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Khôi",
+                "reviewed_at": "2026-11-26T08:59:06.325Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có cái bồn rửa nào không?",
+                "observed_answer": "yes"
+              }
+            },
+            "archived_at": "2026-11-26T09:17:31.614Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_2791c036987ece1f",
+      "dataset": "repope",
+      "packet": "repope_05",
+      "image_path": "data/raw/main_images_v1/repope/images/000000097994.jpg",
+      "image_sha256": "aa0d4ed65f2342a6bfbe4eb4d8d21ac753070d91a512e668b65121b2b9dc3451",
+      "category": "popular",
+      "question_en": "Is there a person in the image?",
+      "question_vi_original": "Trong ảnh có người nào không?",
+      "question_vi_final": "Trong ảnh có người nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_05_reviewed_v2.json",
+      "review_sha256": "8ed2598ec12959b430c15b57b77cf863982b7daecd41bacd8fc9d169135319a8",
+      "decision": {
+        "sample_id": "repope_2791c036987ece1f",
+        "question_vi": "Trong ảnh có người nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:18:54.868Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:18:54.868Z",
+            "notes": "no",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:12:32.686Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:12:32.686Z",
+            "notes": "trong ảnh không hề có người",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "repope_8cfef6a0b08c0026",
+      "dataset": "repope",
+      "packet": "repope_05",
+      "image_path": "data/raw/main_images_v1/repope/images/000000542145.jpg",
+      "image_sha256": "0b91086c2919cc14817a645833e9665495ea3b471df609cfb95436b1b61f301b",
+      "category": "popular",
+      "question_en": "Is there a toothbrush in the image?",
+      "question_vi_original": "Trong ảnh có chiếc bàn chải đánh răng nào không?",
+      "question_vi_final": "Trong ảnh có chiếc bàn chải đánh răng nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_05_reviewed_v2.json",
+      "review_sha256": "8ed2598ec12959b430c15b57b77cf863982b7daecd41bacd8fc9d169135319a8",
+      "decision": {
+        "sample_id": "repope_8cfef6a0b08c0026",
+        "question_vi": "Trong ảnh có chiếc bàn chải đánh răng nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:16:53.553Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc bàn chải đánh răng nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:16:53.553Z",
+            "notes": "no",
+            "reviewed_question_vi": "Trong ảnh có chiếc bàn chải đánh răng nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:10:16.558Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc bàn chải đánh răng nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:10:16.558Z",
+            "notes": "đáp án là no giống như Nguyễn Đăng Minh",
+            "reviewed_question_vi": "Trong ảnh có chiếc bàn chải đánh răng nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "repope_9186d66e73469902",
+      "dataset": "repope",
+      "packet": "repope_05",
+      "image_path": "data/raw/main_images_v1/repope/images/000000281028.jpg",
+      "image_sha256": "6ac181e618ebc9956f67838c66714d083ada5e79a7e54f2cf56811f483bb0ea8",
+      "category": "popular",
+      "question_en": "Is there a person in the image?",
+      "question_vi_original": "Trong ảnh có người nào không?",
+      "question_vi_final": "Trong ảnh có người nào không?",
+      "source_ground_truth": "no",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "observation_disagreement"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/repope_05_reviewed_v2.json",
+      "review_sha256": "8ed2598ec12959b430c15b57b77cf863982b7daecd41bacd8fc9d169135319a8",
+      "decision": {
+        "sample_id": "repope_9186d66e73469902",
+        "question_vi": "Trong ảnh có người nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:18:34.537Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Nguyễn Đăng Minh",
+            "reviewed_at": "2026-11-26T03:18:34.537Z",
+            "notes": "yes",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:19:04.339Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Khôi",
+            "reviewed_at": "2026-11-26T09:19:04.339Z",
+            "notes": "đáp án vẫn là no",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_b",
+            "question_vi": "Trong ảnh có người nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "Khôi",
+                "reviewed_at": "2026-11-26T09:12:13.475Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có người nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "Khôi",
+                "reviewed_at": "2026-11-26T09:12:13.475Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có người nào không?",
+                "observed_answer": "no"
+              }
+            },
+            "archived_at": "2026-11-26T09:19:04.339Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_530b0b07f69caf44",
+      "dataset": "repope",
+      "packet": "repope_09",
+      "image_path": "data/raw/main_images_v1/repope/images/000000184338.jpg",
+      "image_sha256": "37f3b240e88abf29fa23c1d6d62638e90abadb4b2f50d4fc0050e802224f8acf",
+      "category": "random",
+      "question_en": "Is there a person in the image?",
+      "question_vi_original": "Trong ảnh có người nào không?",
+      "question_vi_final": "Trong ảnh có người nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_09_reviewed_v2.json",
+      "review_sha256": "cecf3ee7e76754057eff83f822c26fb949d6364c17916ace20400ed8b3397fb3",
+      "decision": {
+        "sample_id": "repope_530b0b07f69caf44",
+        "question_vi": "Trong ảnh có người nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:24:51.537Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:24:51.537Z",
+            "notes": "no",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T16:16:55.196Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T16:16:55.196Z",
+            "notes": "check lại nhãn",
+            "reviewed_question_vi": "Trong ảnh có người nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_b",
+            "question_vi": "Trong ảnh có người nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T16:07:42.213Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có người nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "approved",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T16:07:42.213Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có người nào không?",
+                "observed_answer": "yes"
+              }
+            },
+            "archived_at": "2026-11-25T16:08:46.846Z",
+            "reason": "review_replaced"
+          },
+          {
+            "reviewer_slot": "reviewer_b",
+            "question_vi": "Trong ảnh có người nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T16:08:46.846Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có người nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "rejected",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T16:08:46.846Z",
+                "notes": "check lại nhãn",
+                "reviewed_question_vi": "Trong ảnh có người nào không?",
+                "observed_answer": "no"
+              }
+            },
+            "archived_at": "2026-11-25T16:16:55.196Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_dfd81c7633cdfea1",
+      "dataset": "repope",
+      "packet": "repope_10",
+      "image_path": "data/raw/main_images_v1/repope/images/000000349936.jpg",
+      "image_sha256": "67e500b72a05885d5bc1c93440576ed803256b46bcf7403a18aca446f0720709",
+      "category": "random",
+      "question_en": "Is there an oven in the image?",
+      "question_vi_original": "Trong ảnh có chiếc lò nướng nào không?",
+      "question_vi_final": "Trong ảnh có chiếc lò nướng nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/repope_10_reviewed_v2.json",
+      "review_sha256": "a89e1365472e10928323baa99a4638165f4b5082da8b4bcdd50b9a6e4488d1c4",
+      "decision": {
+        "sample_id": "repope_dfd81c7633cdfea1",
+        "question_vi": "Trong ảnh có chiếc lò nướng nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:30:37.501Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc lò nướng nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:30:37.501Z",
+            "notes": "no",
+            "reviewed_question_vi": "Trong ảnh có chiếc lò nướng nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T16:22:49.528Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc lò nướng nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T16:22:49.528Z",
+            "notes": "check nhãn",
+            "reviewed_question_vi": "Trong ảnh có chiếc lò nướng nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "repope_12dc10e9c0b0ad9d",
+      "dataset": "repope",
+      "packet": "repope_11",
+      "image_path": "data/raw/main_images_v1/repope/images/000000325347.jpg",
+      "image_sha256": "121ee059d117c350598a2fa760c32a056e3f9ec420900a8fc5e7334abef3d275",
+      "category": "random",
+      "question_en": "Is there a microwave in the image?",
+      "question_vi_original": "Trong ảnh có chiếc lò vi sóng nào không?",
+      "question_vi_final": "Trong ảnh có chiếc lò vi sóng nào không?",
+      "source_ground_truth": "no",
+      "translation_status": "requires_review",
+      "qa_status": "approved",
+      "primary_issue": "translation_disagreement_or_incomplete",
+      "flags": [
+        "translation_not_fully_approved",
+        "translation_status_disagreement"
+      ],
+      "action": "Xử lý góp ý dịch/mơ hồ câu nguồn; cần hai reviewer thật duyệt cùng bản VI cuối.",
+      "review_path": "reviewed_final/repope_11_reviewed_v2_final.json",
+      "review_sha256": "adebf3fd0de4740f3e10113c73b6ddf54b6cce74ebf2b2e17a5f97a89ac35976",
+      "decision": {
+        "sample_id": "repope_12dc10e9c0b0ad9d",
+        "question_vi": "Trong ảnh có chiếc lò vi sóng nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "pending",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T09:49:23.136Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc lò vi sóng nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T09:49:23.136Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc lò vi sóng nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:38:03.471Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc lò vi sóng nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:38:03.471Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có chiếc lò vi sóng nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Trong ảnh có chiếc lò vi sóng nào không?",
+            "review": {
+              "translation": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T03:52:14.741Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chiếc lò vi sóng nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T03:52:14.741Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có chiếc lò vi sóng nào không?",
+                "observed_answer": "no"
+              }
+            },
+            "archived_at": "2026-11-25T09:49:23.136Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_21557d7fa635be2c",
+      "dataset": "repope",
+      "packet": "repope_11",
+      "image_path": "data/raw/main_images_v1/repope/images/000000283168.jpg",
+      "image_sha256": "4034404b360e78fceb2dada79a8c5ef50b0eb1a7ed8f0d439988aa21b2bd1cf9",
+      "category": "random",
+      "question_en": "Is there a sandwich in the image?",
+      "question_vi_original": "Trong ảnh có cái bánh sandwich nào không?",
+      "question_vi_final": "Trong ảnh có cái bánh sandwich nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "rejected",
+      "qa_status": "rejected",
+      "primary_issue": "translation_disagreement_or_incomplete",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "translation_not_fully_approved",
+        "translation_status_disagreement"
+      ],
+      "action": "Xử lý góp ý dịch/mơ hồ câu nguồn; cần hai reviewer thật duyệt cùng bản VI cuối.",
+      "review_path": "reviewed_final/repope_11_reviewed_v2_final.json",
+      "review_sha256": "adebf3fd0de4740f3e10113c73b6ddf54b6cce74ebf2b2e17a5f97a89ac35976",
+      "decision": {
+        "sample_id": "repope_21557d7fa635be2c",
+        "question_vi": "Trong ảnh có cái bánh sandwich nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T09:59:12.276Z",
+            "notes": "này là sandwich hay bánh khác",
+            "reviewed_question_vi": "Trong ảnh có cái bánh sandwich nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T09:59:12.276Z",
+            "notes": "check lại loại bánh",
+            "reviewed_question_vi": "Trong ảnh có cái bánh sandwich nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:42:38.789Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bánh sandwich nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:42:38.789Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có cái bánh sandwich nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Trong ảnh có cái bánh sandwich nào không?",
+            "review": {
+              "translation": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T04:01:23.689Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có cái bánh sandwich nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T04:01:23.689Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có cái bánh sandwich nào không?",
+                "observed_answer": "yes"
+              }
+            },
+            "archived_at": "2026-11-25T09:59:12.276Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "repope_efc23f70e2a96339",
+      "dataset": "repope",
+      "packet": "repope_11",
+      "image_path": "data/raw/main_images_v1/repope/images/000000365317.jpg",
+      "image_sha256": "5da8e7c5a23a265783aab94b6e92a21a75b89ab94776a931684737574a23bd3d",
+      "category": "random",
+      "question_en": "Is there a sports ball in the image?",
+      "question_vi_original": "Trong ảnh có quả bóng thể thao nào không?",
+      "question_vi_final": "Trong ảnh có quả bóng thể thao nào không?",
+      "source_ground_truth": "yes",
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "observation_disagreement"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/repope_11_reviewed_v2_final.json",
+      "review_sha256": "adebf3fd0de4740f3e10113c73b6ddf54b6cce74ebf2b2e17a5f97a89ac35976",
+      "decision": {
+        "sample_id": "repope_efc23f70e2a96339",
+        "question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T09:59:44.801Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T09:59:44.801Z",
+            "notes": "không thấy có quả bóng",
+            "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "observed_answer": "no"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:44:18.080Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T10:44:18.080Z",
+            "notes": "",
+            "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "observed_answer": "yes"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "review": {
+              "translation": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T04:06:13.563Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T04:06:13.563Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+                "observed_answer": "no"
+              }
+            },
+            "archived_at": "2026-11-25T09:59:44.801Z",
+            "reason": "review_replaced"
+          },
+          {
+            "reviewer_slot": "reviewer_b",
+            "question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+            "review": {
+              "translation": {
+                "status": "approved",
+                "reviewer_id": "Lanh",
+                "reviewed_at": "2026-11-25T10:43:37.890Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "Lanh",
+                "reviewed_at": "2026-11-25T10:43:37.890Z",
+                "notes": "",
+                "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+                "observed_answer": "yes"
+              }
+            },
+            "archived_at": "2026-11-25T10:44:18.080Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "tallyqa_14d1acf082abafca",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_01",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/713310.jpg",
+      "image_sha256": "4ab6d650eea00fb50841f26e4fdb31e02772ecb77e06af5bd36847e6ba643289",
+      "category": "complex",
+      "question_en": "How many red kites are there?",
+      "question_vi_original": "Có bao nhiêu con diều màu đỏ?",
+      "question_vi_final": "Có bao nhiêu con diều màu đỏ?",
+      "source_ground_truth": 2,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/tallyqa_01_reviewed_v2_final.json",
+      "review_sha256": "b3cc9804436a598ca7c2b9dcf49c609cb19776617c7dcc47a6ff3b06392348ef",
+      "decision": {
+        "sample_id": "tallyqa_14d1acf082abafca",
+        "question_vi": "Có bao nhiêu con diều màu đỏ?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:22:19.511Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu con diều màu đỏ?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:22:19.511Z",
+            "notes": "quán sát thấy kết quả khác nhãn",
+            "reviewed_question_vi": "Có bao nhiêu con diều màu đỏ?",
+            "observed_answer": "3"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:05:25.378Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu con diều màu đỏ?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:05:25.378Z",
+            "notes": "3",
+            "reviewed_question_vi": "Có bao nhiêu con diều màu đỏ?",
+            "observed_answer": "3"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Có bao nhiêu con diều màu đỏ?",
+            "review": {
+              "translation": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T07:52:33.333Z",
+                "notes": "",
+                "reviewed_question_vi": "Có bao nhiêu con diều màu đỏ?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T07:52:33.333Z",
+                "notes": "",
+                "reviewed_question_vi": "Có bao nhiêu con diều màu đỏ?",
+                "observed_answer": "3"
+              }
+            },
+            "archived_at": "2026-11-25T10:22:19.511Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "tallyqa_18a514b89512e38e",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_01",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2326365.jpg",
+      "image_sha256": "692a8c719f029c3f2c9a777fd8f1c05144a58b1aebcead31a9395e9ad7595fce",
+      "category": "complex",
+      "question_en": "How many big bolders?",
+      "question_vi_original": "Có bao nhiêu tảng đá lớn?",
+      "question_vi_final": "Có bao nhiêu tảng đá lớn?",
+      "source_ground_truth": 4,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "observation_disagreement"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/tallyqa_01_reviewed_v2_final.json",
+      "review_sha256": "b3cc9804436a598ca7c2b9dcf49c609cb19776617c7dcc47a6ff3b06392348ef",
+      "decision": {
+        "sample_id": "tallyqa_18a514b89512e38e",
+        "question_vi": "Có bao nhiêu tảng đá lớn?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:22:44.400Z",
+            "notes": "như nào được coi là tảng đã lớn giữa đống đá size same same nhau như này vậy?",
+            "reviewed_question_vi": "Có bao nhiêu tảng đá lớn?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:22:44.400Z",
+            "notes": "quan sát thực tế thấy khác nhãn",
+            "reviewed_question_vi": "Có bao nhiêu tảng đá lớn?",
+            "observed_answer": "1000"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:06:50.553Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu tảng đá lớn?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:06:50.553Z",
+            "notes": "12",
+            "reviewed_question_vi": "Có bao nhiêu tảng đá lớn?",
+            "observed_answer": "12"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Có bao nhiêu tảng đá lớn?",
+            "review": {
+              "translation": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T07:54:55.649Z",
+                "notes": "như nào được coi là tảng đã lớn giữa đống đá size same same nhau như này vậy?",
+                "reviewed_question_vi": "Có bao nhiêu tảng đá lớn?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T07:54:55.649Z",
+                "notes": "",
+                "reviewed_question_vi": "Có bao nhiêu tảng đá lớn?",
+                "observed_answer": "1000"
+              }
+            },
+            "archived_at": "2026-11-25T10:22:44.400Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "tallyqa_21b681860c28812b",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_01",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2322934.jpg",
+      "image_sha256": "73ee887ad54500fe40791269421f240d3250ad739aba9bf34c5460c41c92e605",
+      "category": "complex",
+      "question_en": "How many windows on this building are on its roof?",
+      "question_vi_original": "Có bao nhiêu cửa sổ của tòa nhà này nằm trên mái của nó?",
+      "question_vi_final": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+      "source_ground_truth": 8,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "observation_disagreement",
+        "translation_changed"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/tallyqa_01_reviewed_v2_final.json",
+      "review_sha256": "b3cc9804436a598ca7c2b9dcf49c609cb19776617c7dcc47a6ff3b06392348ef",
+      "decision": {
+        "sample_id": "tallyqa_21b681860c28812b",
+        "question_vi": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:23:16.765Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:23:16.765Z",
+            "notes": "qua sát thực tế thầy khác nhãn",
+            "reviewed_question_vi": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+            "observed_answer": "9"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:08:54.555Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:08:54.555Z",
+            "notes": "16",
+            "reviewed_question_vi": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+            "observed_answer": "16"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+            "review": {
+              "translation": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T07:57:47.202Z",
+                "notes": "",
+                "reviewed_question_vi": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T07:57:47.202Z",
+                "notes": "",
+                "reviewed_question_vi": "Có bao nhiêu cửa sổ nằm trên mái của tòa nhà này?",
+                "observed_answer": "9"
+              }
+            },
+            "archived_at": "2026-11-25T10:23:16.765Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "tallyqa_4863b475857fedf2",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_01",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2342672.jpg",
+      "image_sha256": "782ad762202ac44d851f81d931fd8b2ecdcb1c411a45e8d77513dab346e69137",
+      "category": "complex",
+      "question_en": "How many vehicles are to the right of the smart car?",
+      "question_vi_original": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+      "question_vi_final": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+      "source_ground_truth": 2,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "numeric_note_differs_from_observation",
+        "observation_disagreement"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/tallyqa_01_reviewed_v2_final.json",
+      "review_sha256": "b3cc9804436a598ca7c2b9dcf49c609cb19776617c7dcc47a6ff3b06392348ef",
+      "decision": {
+        "sample_id": "tallyqa_4863b475857fedf2",
+        "question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:28:22.457Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:28:22.457Z",
+            "notes": "quan sát thực tế khác nhãn",
+            "reviewed_question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+            "observed_answer": "10000"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:15:23.949Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:15:23.949Z",
+            "notes": "4",
+            "reviewed_question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+            "observed_answer": "5"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+            "review": {
+              "translation": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T08:50:35.524Z",
+                "notes": "",
+                "reviewed_question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T08:50:35.524Z",
+                "notes": "",
+                "reviewed_question_vi": "Có bao nhiêu phương tiện ở bên phải chiếc xe Smart?",
+                "observed_answer": "10000"
+              }
+            },
+            "archived_at": "2026-11-25T10:28:22.457Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "tallyqa_5a8aa14b00e2852c",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_01",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2396961.jpg",
+      "image_sha256": "f3245e54f70202c2b24eb19660b2e111977a02c7d89128ba2837f760c2b61a9a",
+      "category": "simple",
+      "question_en": "How many wings does the plane have?",
+      "question_vi_original": "Chiếc máy bay có bao nhiêu cánh?",
+      "question_vi_final": "Chiếc máy bay có bao nhiêu cánh?",
+      "source_ground_truth": 2,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "observation_disagreement"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/tallyqa_01_reviewed_v2_final.json",
+      "review_sha256": "b3cc9804436a598ca7c2b9dcf49c609cb19776617c7dcc47a6ff3b06392348ef",
+      "decision": {
+        "sample_id": "tallyqa_5a8aa14b00e2852c",
+        "question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:29:29.062Z",
+            "notes": "",
+            "reviewed_question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T10:29:29.062Z",
+            "notes": "quan sát thực tế khác nhãn",
+            "reviewed_question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+            "observed_answer": "5"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:17:17.284Z",
+            "notes": "",
+            "reviewed_question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T11:17:17.284Z",
+            "notes": "",
+            "reviewed_question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+            "observed_answer": "2"
+          }
+        },
+        "history": [
+          {
+            "reviewer_slot": "reviewer_a",
+            "question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+            "review": {
+              "translation": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T08:56:53.853Z",
+                "notes": "",
+                "reviewed_question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+                "observed_answer": ""
+              },
+              "image_qa": {
+                "status": "pending",
+                "reviewer_id": "mơ",
+                "reviewed_at": "2026-11-25T08:56:53.853Z",
+                "notes": "",
+                "reviewed_question_vi": "Chiếc máy bay có bao nhiêu cánh?",
+                "observed_answer": "5"
+              }
+            },
+            "archived_at": "2026-11-25T10:29:29.062Z",
+            "reason": "review_replaced"
+          }
+        ]
+      }
+    },
+    {
+      "sample_id": "tallyqa_795eee81560d5215",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_02",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2354263.jpg",
+      "image_sha256": "6a66579a8aceb43b064a52bb503c04fc556844cd048f94a6db4da5321290e150",
+      "category": "complex",
+      "question_en": "How many zebras are to the right of the buildings?",
+      "question_vi_original": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+      "question_vi_final": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+      "source_ground_truth": 2,
+      "translation_status": "rejected",
+      "qa_status": "approved",
+      "primary_issue": "translation_disagreement_or_incomplete",
+      "flags": [
+        "translation_not_fully_approved",
+        "translation_status_disagreement"
+      ],
+      "action": "Xử lý góp ý dịch/mơ hồ câu nguồn; cần hai reviewer thật duyệt cùng bản VI cuối.",
+      "review_path": "reviewed_final/tallyqa_02_reviewed_v2_final.json",
+      "review_sha256": "68110e7e57bb12ddea14c3356eeca18256d2fb08ccca252a5af5ca3f2f020c48",
+      "decision": {
+        "sample_id": "tallyqa_795eee81560d5215",
+        "question_vi": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+        "reviewer_a": {
+          "translation": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:03:12.425Z",
+            "notes": "câu hỏi kỳ lạ, chỗ kia dịch là \"tòa nhà\" ổn không?",
+            "reviewed_question_vi": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:03:12.425Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+            "observed_answer": "2"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T14:30:13.905Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T14:30:13.905Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu con ngựa vằn ở bên phải các tòa nhà?",
+            "observed_answer": "2"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "tallyqa_d585c8d8041875b7",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_02",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2413407.jpg",
+      "image_sha256": "672502fd6fa274e3cb2f37f4920fa069fe3b4277852fdb5581255bfd1460a54a",
+      "category": "simple",
+      "question_en": "How many donuts are there in photo?",
+      "question_vi_original": "Có bao nhiêu cái bánh donut trong ảnh?",
+      "question_vi_final": "Có bao nhiêu cái bánh donut trong ảnh?",
+      "source_ground_truth": 4,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "agreed_observation_differs_from_source",
+      "flags": [
+        "agreed_observation_differs_from_source",
+        "image_qa_not_fully_approved"
+      ],
+      "action": "Đối soát annotation nguồn và ảnh. Đây là đề nghị sửa nhãn, chưa phải nhãn mới được phê duyệt.",
+      "review_path": "reviewed_final/tallyqa_02_reviewed_v2_final.json",
+      "review_sha256": "68110e7e57bb12ddea14c3356eeca18256d2fb08ccca252a5af5ca3f2f020c48",
+      "decision": {
+        "sample_id": "tallyqa_d585c8d8041875b7",
+        "question_vi": "Có bao nhiêu cái bánh donut trong ảnh?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:17:08.828Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu cái bánh donut trong ảnh?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:17:08.828Z",
+            "notes": "4 hay 5 nhỉ",
+            "reviewed_question_vi": "Có bao nhiêu cái bánh donut trong ảnh?",
+            "observed_answer": "5"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T15:11:47.022Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu cái bánh donut trong ảnh?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T15:11:47.022Z",
+            "notes": "5",
+            "reviewed_question_vi": "Có bao nhiêu cái bánh donut trong ảnh?",
+            "observed_answer": "5"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "tallyqa_eae18b44205a3a7a",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_03",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2371301.jpg",
+      "image_sha256": "814bd5c70c297dad516f061301b84dc70842e44a87f791ed2dafeeeed9295058",
+      "category": "complex",
+      "question_en": "How many people are playing kite?",
+      "question_vi_original": "Có bao nhiêu người đang chơi thả diều?",
+      "question_vi_final": "Có bao nhiêu người đang chơi thả diều?",
+      "source_ground_truth": 0,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "observation_disagreement"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/tallyqa_03_reviewed_v2_final.json",
+      "review_sha256": "63a012be3eb9db53c85e7133892daecfc858a7e3198d449c542d0adfc2c6455d",
+      "decision": {
+        "sample_id": "tallyqa_eae18b44205a3a7a",
+        "question_vi": "Có bao nhiêu người đang chơi thả diều?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:21:07.330Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu người đang chơi thả diều?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:21:07.330Z",
+            "notes": "check nhãn",
+            "reviewed_question_vi": "Có bao nhiêu người đang chơi thả diều?",
+            "observed_answer": "2"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T15:35:00.292Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu người đang chơi thả diều?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T15:35:00.292Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu người đang chơi thả diều?",
+            "observed_answer": "0"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "tallyqa_fd4a4259bb7dcc22",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_03",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2400282.jpg",
+      "image_sha256": "5a6ffcf770dcced4286c173e7580f1bcfa8528f0178207307749e7a9e4697dc6",
+      "category": "complex",
+      "question_en": "How many people the sun shining in on them?",
+      "question_vi_original": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+      "question_vi_final": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+      "source_ground_truth": 3,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "observation_disagreement"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/tallyqa_03_reviewed_v2_final.json",
+      "review_sha256": "63a012be3eb9db53c85e7133892daecfc858a7e3198d449c542d0adfc2c6455d",
+      "decision": {
+        "sample_id": "tallyqa_fd4a4259bb7dcc22",
+        "question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:24:11.742Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:24:11.742Z",
+            "notes": "check nhãn",
+            "reviewed_question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+            "observed_answer": "5"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T15:36:06.861Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T15:36:06.861Z",
+            "notes": "4",
+            "reviewed_question_vi": "Có bao nhiêu người đang được ánh nắng chiếu vào?",
+            "observed_answer": "4"
+          }
+        },
+        "history": []
+      }
+    },
+    {
+      "sample_id": "tallyqa_fde1a7858bcbfb4f",
+      "dataset": "tallyqa",
+      "packet": "tallyqa_03",
+      "image_path": "data/raw/task_images_v1/tallyqa/images/2370594.jpg",
+      "image_sha256": "59ff68a80e2a6eb26ca59fa519280c2dcaca1a897945a2813ac10a1b010f382e",
+      "category": "simple",
+      "question_en": "How many elephants are there?",
+      "question_vi_original": "Có bao nhiêu con voi?",
+      "question_vi_final": "Có bao nhiêu con voi?",
+      "source_ground_truth": 1,
+      "translation_status": "approved",
+      "qa_status": "rejected",
+      "primary_issue": "observation_disagreement",
+      "flags": [
+        "image_qa_not_fully_approved",
+        "image_qa_status_disagreement",
+        "observation_disagreement"
+      ],
+      "action": "A/B đối soát lại ảnh và cùng câu hỏi; giữ nguyên nhãn nguồn trong lúc chờ quyết định.",
+      "review_path": "reviewed_final/tallyqa_03_reviewed_v2_final.json",
+      "review_sha256": "63a012be3eb9db53c85e7133892daecfc858a7e3198d449c542d0adfc2c6455d",
+      "decision": {
+        "sample_id": "tallyqa_fde1a7858bcbfb4f",
+        "question_vi": "Có bao nhiêu con voi?",
+        "reviewer_a": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:24:27.666Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu con voi?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "approved",
+            "reviewer_id": "mơ",
+            "reviewed_at": "2026-11-25T14:24:27.666Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu con voi?",
+            "observed_answer": "1"
+          }
+        },
+        "reviewer_b": {
+          "translation": {
+            "status": "approved",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T15:38:01.813Z",
+            "notes": "",
+            "reviewed_question_vi": "Có bao nhiêu con voi?",
+            "observed_answer": ""
+          },
+          "image_qa": {
+            "status": "rejected",
+            "reviewer_id": "Lanh",
+            "reviewed_at": "2026-11-25T15:38:01.813Z",
+            "notes": "2",
+            "reviewed_question_vi": "Có bao nhiêu con voi?",
+            "observed_answer": "2"
+          }
+        },
+        "history": []
+      }
+    }
+  ]
+}
