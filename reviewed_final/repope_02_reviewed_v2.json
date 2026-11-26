@@ -133,20 +133,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:29:44.329Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:29:44.329Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -174,20 +174,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:29:52.326Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có cái chai nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:29:52.326Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có cái chai nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -215,20 +215,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:00.361Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:00.361Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -256,20 +256,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:06.896Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có con chó nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:06.896Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có con chó nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -297,20 +297,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:13.584Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ghế nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:13.584Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ghế nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -338,20 +338,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:21.129Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ghế nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:21.129Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ghế nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -379,20 +379,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:28.341Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:28.341Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -420,20 +420,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:35.267Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có cái nĩa nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:35.267Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có cái nĩa nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -461,20 +461,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:43.956Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:43.956Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có quả bóng thể thao nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -502,20 +502,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:55.132Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:30:55.132Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -543,20 +543,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:04.001Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có cái bàn phím nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:04.001Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có cái bàn phím nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -584,20 +584,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:13.238Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có cái bình hoa nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:13.238Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có cái bình hoa nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -625,20 +625,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:22.607Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:22.607Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -666,20 +666,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:30.033Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc giường nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:30.033Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc giường nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -707,20 +707,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:37.897Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:37.897Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -748,20 +748,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:45.024Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc găng tay bóng chày nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:45.024Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc găng tay bóng chày nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -789,20 +789,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:51.322Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:51.322Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -830,20 +830,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:57.320Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc xe buýt nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:31:57.320Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc xe buýt nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -871,20 +871,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:03.830Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có con chó nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:03.830Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có con chó nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -912,20 +912,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:09.558Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:09.558Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -953,20 +953,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:18.179Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc đồng hồ nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:18.179Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc đồng hồ nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -994,20 +994,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:26.902Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:26.902Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1035,20 +1035,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:34.058Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:34.058Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1076,20 +1076,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:39.836Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc giường nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:39.836Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc giường nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -1117,20 +1117,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:47.399Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:47.399Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1158,20 +1158,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:54.377Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:32:54.377Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -1199,20 +1199,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:03.584Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:03.584Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1240,20 +1240,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:16.770Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có con dao nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:16.770Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có con dao nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1281,20 +1281,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:24.792Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có cái cốc nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:24.792Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có cái cốc nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1322,20 +1322,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:33.060Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:33.060Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1363,20 +1363,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:40.304Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:40.304Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1404,20 +1404,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:51.530Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc vợt quần vợt nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:33:51.530Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc vợt quần vợt nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1445,23 +1445,48 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:03.957Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:03.957Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
-      "history": []
+      "history": [
+        {
+          "reviewer_slot": "reviewer_b",
+          "question_vi": "Trong ảnh có người nào không?",
+          "review": {
+            "translation": {
+              "status": "approved",
+              "reviewer_id": "Khôi",
+              "reviewed_at": "2026-11-26T08:33:58.613Z",
+              "notes": "",
+              "reviewed_question_vi": "Trong ảnh có người nào không?",
+              "observed_answer": ""
+            },
+            "image_qa": {
+              "status": "approved",
+              "reviewer_id": "Khôi",
+              "reviewed_at": "2026-11-26T08:33:58.613Z",
+              "notes": "",
+              "reviewed_question_vi": "Trong ảnh có người nào không?",
+              "observed_answer": "yes"
+            }
+          },
+          "archived_at": "2026-11-26T08:34:03.957Z",
+          "reason": "review_replaced"
+        }
+      ]
     },
     {
       "sample_id": "repope_3c3ec15103c08e4a",
@@ -1486,20 +1511,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:15.592Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ghế dài nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:15.592Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ghế dài nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -1527,20 +1552,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:26.856Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:26.856Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -1568,20 +1593,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:34.623Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc xe máy nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:34.623Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc xe máy nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -1609,20 +1634,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:47.904Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc xe tải nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:34:47.904Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc xe tải nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -1650,20 +1675,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:36:45.788Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
           "observed_answer": ""
         },
         "image_qa": {
           "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
-          "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:36:45.788Z",
+          "notes": "khớp lại nhãn no của người duyệt 1",
+          "reviewed_question_vi": "Trong ảnh có chậu cây nào không?",
+          "observed_answer": "no"
         }
       },
       "history": [
@@ -1716,20 +1741,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:37:12.431Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc máy tính xách tay nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:37:12.431Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc máy tính xách tay nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -1757,20 +1782,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:37:20.459Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có quả cam nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:37:20.459Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có quả cam nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1798,20 +1823,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:38:48.592Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:38:48.592Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -1839,20 +1864,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:38:57.847Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:38:57.847Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1880,20 +1905,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:09.848Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:09.848Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1921,20 +1946,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:17.189Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ba lô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:17.189Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ba lô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -1962,20 +1987,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:24.269Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ba lô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:24.269Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ba lô nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": [
@@ -2028,20 +2053,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:31.574Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:31.574Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -2069,20 +2094,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:38.890Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:38.890Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có người nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
@@ -2110,20 +2135,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:53.543Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:39:53.543Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có chiếc ô tô nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -2151,20 +2176,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:40:05.913Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:40:05.913Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có cái bàn ăn nào không?",
+          "observed_answer": "no"
         }
       },
       "history": []
@@ -2192,20 +2217,20 @@
       },
       "reviewer_b": {
         "translation": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:40:21.627Z",
           "notes": "",
-          "reviewed_question_vi": "",
+          "reviewed_question_vi": "Trong ảnh có con dao nào không?",
           "observed_answer": ""
         },
         "image_qa": {
-          "status": "pending",
-          "reviewer_id": "",
-          "reviewed_at": "",
+          "status": "approved",
+          "reviewer_id": "Khôi",
+          "reviewed_at": "2026-11-26T08:40:21.627Z",
           "notes": "",
-          "reviewed_question_vi": "",
-          "observed_answer": ""
+          "reviewed_question_vi": "Trong ảnh có con dao nào không?",
+          "observed_answer": "yes"
         }
       },
       "history": []
