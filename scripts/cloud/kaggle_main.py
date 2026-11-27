@@ -50,8 +50,13 @@ def canonical_hash(value):
 
 
 def dataset_label(input_root,path):
-    """Kaggle mounts each attached Dataset as /kaggle/input/<slug>/..."""
+    """Dataset id from the mount path.
+
+    Older Kaggle mounts use /kaggle/input/<slug>/...; the mount seen by TV2 on 2026-11-27
+    is /kaggle/input/datasets/<owner>/<slug>/..., which is reported as <owner>/<slug>.
+    """
     parts=Path(path).relative_to(input_root).parts
+    if len(parts)>3 and parts[0]=='datasets':return f'{parts[1]}/{parts[2]}'
     return parts[0] if len(parts)>1 else None
 
 

@@ -52,6 +52,11 @@ def test_locate_single_zip_reports_dataset_slug(mounts):
     assert found['kind']=='zip' and found['dataset']=='my-private-set'
 
 
+def test_locate_reports_owner_and_slug_for_current_kaggle_mount(mounts):
+    inp,_=mounts;make_zip(inp/'datasets/some-owner/my-private-set'/(km.MASTER_ZIP+'.bin'))
+    assert km.locate(inp)['dataset']=='some-owner/my-private-set'
+
+
 def test_renamed_zip_bin_avoids_kaggle_auto_extract_and_keeps_sha_check(mounts):
     inp,work=mounts;_,sha=make_zip(inp/'set'/(km.MASTER_ZIP+'.bin'))
     assert km.locate(inp)['kind']=='zip'
