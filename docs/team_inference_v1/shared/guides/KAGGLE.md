@@ -77,7 +77,13 @@ Mọi lệnh nhận `--role TV2|TV4` (mặc định TV2). `--report` chỉ ghi f
   - `diagnose`: 2× Tesla T4, 15360 MiB, driver 580.178.04, compute capability 7.5,
     `cuda_available: true`, `gpu_preflight('qwen')` đạt (`nf4_fp16`), Internet có, không có
     `HF_TOKEN` (Qwen không cần). Package fingerprint `b41b1301…`.
-  - Không load model, không generation. Restore ảnh, plan, `runner-check` trên Kaggle: chưa ghi nhận.
+  - `restore-assets`: 785/785 file kiểm và ghi (783 JPEG + 2 source inputs), 0 network call.
+  - `team_assignment.py plan --assignment TV2.yaml`: qwen/vi, 1.000 cells (600 object_existence,
+    120 spatial, 120 counting, 160 fine_grained) trên grid 4.000, protocol hash lịch sử
+    `74353c78…`, `phase_b_execution_ready: false`.
+  - `runner-check`: `ready: false`; blockers: `run_main.py` chưa có `--language`,
+    thiếu `configs/baseline_v3_team_final_v2.yaml`, chưa có execution approval.
+  - Không load model, không generation, không chạy shard.
 - **Lưu ý cho TV4/TV5:** T4 có compute capability 7.5, không đạt native BF16 (cần ≥ 8.0) mà
   Gemma yêu cầu. Accelerator GPU T4 x2 trên tài khoản TV2 không dùng được cho Gemma; TV4 cần
   kiểm GPU khác trên tài khoản của mình hoặc môi trường BF16 được TV5 xác nhận.
