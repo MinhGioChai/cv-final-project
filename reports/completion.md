@@ -1,156 +1,78 @@
 # Completion — trạng thái và context hiện tại
 
-**v38 · 26/11/2026 (Asia/Saigon).** Điểm vào: [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
-[README](../README.md). Lịch sử **v1–v21 được giữ nguyên bytes** tại
-[completion_history.md](completion_history.md); không bị xóa khi rút gọn file này.
-
-Đọc thêm [stage data/QA gần nhất](stage1/v10/completion.md),
-[pilot tooling](stage1/v11/completion.md),
-[review tooling A/B mới nhất](stage1/v12/completion.md),
-[baseline contract/runner mới nhất](stage1/v13/completion.md),
-[main Option B đã chọn và CPU/M3 tooling mới nhất](stage1/v14/completion.md),
-[Pet QA theo xác nhận người dùng và nhãn nguồn](stage1/v15/completion.md),
-[tổng hợp18JSON và28mẫu cần xử lý](stage1/v16/completion.md),
-[HTML chỉnh sửa/chốt28mẫu và JSON riêng](stage1/v17/completion.md),
-[công bố GitHub và kiểm chứng tái lập](releases/2026-11-21/README.md),
+**v47 · 27/11/2026 (Asia/Saigon).** Đọc [hướng dẫn nhóm](../HUONG_DAN_NHOM.md),
 [Handoff V3](../docs/handoffs/EN_VI_VLM_CODEX_HANDOFF_V3.md),
-[protocol](../docs/research/RESEARCH_PROTOCOL_V3.md) và
-[checklist](../docs/research/IMPLEMENTATION_PLAN_V3.md) trước khi triển khai tiếp.
+[protocol](../docs/research/RESEARCH_PROTOCOL_V3.md),
+[implementation plan](../docs/research/IMPLEMENTATION_PLAN_V3.md) và
+[stage mới nhất v25](stage1/v25/completion.md) trước khi làm tiếp.
+Giữ nguyên lịch sử v1–v21 trong completion_history.md và nhật ký v22–v46 bên dưới.
 
-## Scope và các quyết định cần giữ
+## Phạm vi và dữ liệu đã chốt
 
-- Zero-shot paired EN–VI, cùng ảnh/nghĩa/ground truth trong mỗi cặp. Qwen2.5-VL-3B
-  và Gemma 3 4B IT; không training/LoRA/paid inference hoặc tự đổi model.
-- V3 supersedes V4.2: RQ1 RePOPE negative-only ΔFPR và RQ2 bốn task là P0.
-  RQ3 paraphrase/RQ4 visual evidence là conditional P1, chưa triển khai;
-  negation riêng là future work. Người dùng hỏi tiến độ có tính RQ3/RQ4,
-  chưa có quyết định mới chạy hai mở rộng này.
-- Main 600 RePOPE +120 VSR +120 TallyQA +160 Pet =1.000 row, 783 ảnh.
-  RePOPE cap2/ảnh được người dùng chốt; các task khác cap1, seed42,
-  split/classes/count-bin policy ghi trong `configs/main_preparation_v3.yaml`.
-- Main **frozen=false**; 4.000 inference chính chưa chạy/chưa được xác nhận
-  full-run. Không tự giảm scope, thay labels hoặc loại theo output của model.
-- Ngày24/11 nhóm **đã chọn Option B** cho main: source JPEG → RGB giữ W×H →
-  pinned processor. Candidate chính thức `configs/baseline_v3_option_b_v1.yaml`,
-  policy `original_rgb_processor_v1`, image_max_edge=null; chưa freeze/receipt.
-  Qwen min/max pixels, Gemma896×896/no-pan-and-scan/NF4BF16 và mọi pins giữ nguyên.
-- Source labels/provenance và pilot ID/SHA exclusions giữ nguyên. Không
-  bịa reviewer/approval; chỉ ghi nhận quyết định thật. Theo yêu cầu ngày 22/11, đã chia 5 vai trò TV1–TV5
-  tại [report phân công](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md);
-  nhóm điền tên thật sau, không gán lại tác giả các commit đã có.
-- Ngoại lệ người dùng chốt25/11 cho **Pet160mẫu**: một xác nhận thật về dịch/
-  chất lượng ảnh; giống chó kế thừa official annotations, mapping/hash/exclusions
-  kiểm bằng code. Policy `pet_human_translation_image_quality_source_labels_v1`.
-  Không có human breed identification hay reviewer B được tạo. Ba task khác
-  vẫn cần A/B; main freeze/scope/data/Option B không đổi.
+- Zero-shot paired EN–VI, Qwen2.5-VL-3B và Gemma 3 4B; RQ1/RQ2 là P0.
+  Không training hoặc tự mở RQ3/RQ4. Hạn thuyết trình 03/12/2026.
+- Main: 1.000 mẫu / 783 ảnh / 4.000 cells; 600 RePOPE, 120 VSR,
+  120 TallyQA, 160 Pet. Giữ pilot exclusions, source hashes và review history.
+- Option B: JPEG gốc → RGB giữ kích thước → pinned processor; không thumbnail 512.
+- Pet dùng ngoại lệ đã được người dùng chấp thuận: duyệt dịch/chất lượng ảnh,
+  giống kế thừa official source labels/mapping; không bịa reviewer B hoặc nhận diện giống.
+- TallyQA: 112 QA nguyên bản + 5 câu hỏi nguồn có nhãn sửa + 3 QA viết lại,
+  category 61 simple / 59 complex. Ba QA mới có hai proof thật; donut dùng “phủ socola”.
+  Sensitivity 117 loại ba QA viết lại, vẫn giữ năm nhãn sửa; chưa có main results.
+- RePOPE 294 yes / 306 no sau adjudication; không ép cân bằng hoặc đổi ground truth.
+  A và B khác ID duyệt cả dịch và ảnh/nhãn, trừ ngoại lệ Pet; giữ raw JSON nguyên bytes.
 
-## Đã hoàn thành có bằng chứng
+## Trạng thái đã kiểm chứng
 
-| Hạng mục | Trạng thái thật |
+| Hạng mục | Trạng thái |
 |---|---|
-| Foundation | Schema/CLI, atomic I/O, dataset adapters, sampler, parser, resume/leakage và review tooling |
-| Qwen pilot | 10 ảnh × EN/VI =20 lượt thật, NF4/FP16, valid 20/20; [v4](stage1/v4/completion.md) |
-| Gemma pilot | Cùng 10 ảnh/20 lượt, NF4/BF16, valid 20/20, resume giữ hash; [v7](stage1/v7/completion.md) |
-| Pilot QA | 30 translation approved; JSON người dùng được import ngày 20/11, 30 image/label QA approved; `data/pilot/stage1_qa_v1/pilot_manifest.csv` |
-| RePOPE A/B diagnostic | 30 ảnh QA-approved,240 measured GPU cells valid,0 failed/OOM/missing;48 cells Phase1 reuse +192 mới,16 warm-up riêng. [Report](validation/repope_image_ab_v1/report.md), không phải validation bốn task/M3 |
-| Main drafts | Đủ1.000row/783JPEG. Manifest tổng hợp mới có972đạt/28cần xử lý; drafts/candidate cũ giữ nguyên pending, chưa final freeze |
-| Review main | Đã nhận18JSON/840mẫu:812đạt,28cần xử lý; cộng160Pet theo policy riêng thành972/1000.35VI sửa,31mẫu sửa đã đủ cảhaiQA. [Bảng/ảnh đối soát](stage1/v16/completion.md);22packet/HTML/ZIPv2gốc giữ nguyên |
-| Evaluation/statistics | Metrics bốn task, expected pairing/invalid/missing và image-cluster bootstrap; thực tế đã phân tích hai pilot; các task khác mới synthetic tests |
-| Baseline main | B đã áp dụng và default ở main CLI, A config giữ nguyên; grid4.000, gates/resume và bounded smoke bốn task có logging. Chưa main GPU/freeze/M3; [v14](stage1/v14/completion.md) |
-| Editor28mẫu | HTML offline v17 cho người dùng sửa VI/chốt nhãn, ghi lý do, ID/time/history và tải/nạp JSON riêng. Ban đầu28pending, chưa có quyết định thật; không tự import/approve A/B |
-| Tests | Ngày26/11 full suite511passed/32,27s, thêm23cases editor; [checks](stage1/v17/software_checks.json). QA/freeze vẫn chặn main; không GPU run mới |
-| Git/team handoff | Đã push riêng 6 phần foundation/data/eval/pilot/review/docs lên origin/main; commit audit ghi đủ SHAs và receipts. Ảnh/HTML sinh/ZIP/env/weights ở ngoài Git; xem release log |
-| Rerun pilot | Launcher chung local/Colab/Kaggle, configs team QA approved, default 2/max10; Qwen NF4/FP16, Gemma NF4/BF16; ZIP pilot riêng |
-| Hướng dẫn/structure | HUONG_DAN_NHOM.md; root scripts thêm validate_image_ab.py riêng cho diagnostic, data/8 và legacy/2 giữ nguyên. Data/config/runtime paths cũ giữ nguyên |
+| Engineering pilot | Hai model đã chạy thật; Gemma pilot đã hoàn tất, không nhắc lại như pending |
+| Pilot QA | 30/30 approved, không làm lại |
+| Image diagnostic | RePOPE-only 30 ảnh / 240 measured GPU cells, không phải validation bốn task hoặc M3 |
+| Main QA / M1 | **DONE**, 1.000/1.000 đạt; [adjudication v22](stage1/v22/completion.md) |
+| Local freeze / M2 | **DONE v1**, protocol hash `74353c78c3bbed176b75fd1bae6792bc8cf7c8eebaac4383829ac4cdc0cc9d69` |
+| Main smoke / M3 | **PARTIAL_QWEN_ONLY**: 16/16 valid, 0 invalid/failed/OOM/missing trên RTX 3060 Laptop 6 GB; [v23](stage1/v23/completion.md) |
+| Team handoff | **Phase A**: bốn configs, bốn hướng dẫn cá nhân, Git/PR ownership, hai notebook starter, một master private và bốn ZIP nhỏ tham chiếu chung |
+| Software checks | Đợt publish: **527 passed / 41,46s** trên đúng public tree, tách WIP; đợt v24 full local có 567 passed. Không suy ra GPU/cloud passed |
+| Sharding / cloud main | **Chưa triển khai/kiểm chứng đầy đủ**: core chưa có `--language`; PR của TV1–TV4 còn chờ |
+| Full main / metrics | **NOT RUN**; chưa được phép tự chạy 4.000 cells, Gemma main smoke hoặc các shard |
 
-**Gemma reminder đã đóng:** setup và engineering pilot đã hoàn tất, không
-nhắc như việc pending. Lỗi FP16 NaN/PAD được khắc phục bằng runner BF16 tại
-v7; giữ diagnostics/raw cũ. V11 đã đồng bộ notebooks Gemma BF16 qua launcher
-chung và GPU guard; cloud Colab/Kaggle vẫn chưa có actual generation được xác minh.
+Frozen config `configs/baseline_v3_final_v1.yaml`, receipt
+`data/freezes/main_v3_final_v1.json`, manifest
+`data/main/adjudicated_confirmed_v1/main_reviewed.csv` giữ nguyên.
+Qwen raw `results/main/local/qwen_main_smoke_16_v1/qwen.jsonl` giữ SHA
+`77f7295298cf6e63c55e28a5eb7fd35fa8b4c90d3f1f07dfbfac9649f4553f32`.
+Authorization cũ chỉ 16 Qwen cells; không tự chạy lại hoặc suy rộng thành quyền full run.
 
-Raw hai run valid được copy nguyên bytes vào [pilot_outputs](pilot_outputs/README.md)
-để nhóm phân tích CPU; bản gốc vẫn trong results local. Các metrics/CI chỉ từ
-10 ảnh/model, năm negative; không suy thành kết luận main hoặc language gap.
-QA nhập sau không làm thay đổi scope/bytes của raw và báo cáo lịch sử.
+## Bàn giao nhóm và việc tiếp theo
 
-## Việc tiếp theo
+Mở [START_HERE cho nhóm](../docs/team_inference_v1/START_HERE.md) và
+[file ownership](../docs/team_inference_v1/FILE_OWNERSHIP.md).
+TV1 phát triển language sharding; TV2 hoàn thiện Kaggle/data loading;
+TV3 hoàn thiện Colab/Gemma GPU compatibility; TV4 export/collection/recovery;
+TV5 publish common base, review/integrate và tổng hợp nghiên cứu.
+Không gán role cho tên thật, giả tác giả hoặc làm commit hình thức.
 
-**Ưu tiên v38:** mở `exports/main_review_adjudication_v1.html` (khác trang
-readonly v16), nhập tên/ID, sửa VI và nhãn chốt, ghi lý do nếu đổi nhãn, tích
-hai ô kiểm tra, chọn Đã chốt rồi Lưu. Tải `main_28_adjudicated_v1.json` để gửi
-lại; có thể lưu/nạp giữa chừng. [Hướng dẫn](stage1/v17/completion.md).
-JSON là adjudication của người chốt, không sửa quyết định A/B/GT nguồn. Chưa
-có file trả về/import mới, nên main vẫn972đạt/28chờ, frozen=false/M3NOT_RUN.
+**Bước cụ thể tiếp theo:** hạ tầng/hướng dẫn Phase A đã publish; TV5 còn review/tích hợp common base đầy đủ với các QA/freeze WIP giữ local. Sau đó mỗi người clone,
+tạo branch và tự triển khai/kiểm chứng phần được giao, tự commit/push/PR.
+Sau merge/tests, chốt cùng 40-hex commit/release, đánh giá fingerprint và phê duyệt
+implementation/protocol v2 rồi mới thực hiện cloud smoke và shard inference được phép.
+Không sửa frozen v1 để bỏ qua gates; thay runtime cần version/approval mới.
 
-**Ưu tiên ngay v37:** xử lý [28mẫu còn lại](stage1/v16/needs_resolution.csv),
-hoặc mở `exports/main_review_resolution_v1.html` xem ảnh gốc/EN/VI/ghi chú.
-11mẫu A/B cùng quan sát khác nhãn nguồn,9mẫu khác observation,3mẫu cần A duyệt
-lại VI cuối,3mẫu dịch chưa đồng thuận/pending và2mẫu QA ảnh pending. Không
-sửa source ground truth, tự approve hoặc loại mẫu. Đã nhận đủ18JSON trong
-`reviewed_final`, không cần review lại các mẫu đã đạt hoặc Pet. Manifest hiện
-tại `data/main/reviewed_final_v1/main_reviewed.csv` giữ đủ1000IDs,972đạt/28chờ.
-Long A/Long B thuộc hai người theo xác nhận thật của người dùng. M1 còn28;
-M2 chưafreeze, M3 NOT_RUN. Main candidate config chưa đổi sang manifest mới.
+Master `exports/VLM_ENVI_Main_Inference_Team_v1.zip` có một source snapshot
+và 783 JPEG + hai pinned source inputs. Bốn member ZIP không nhân bản core/data,
+chỉ trỏ cùng master SHA. Master là private; bốn ZIP cá nhân chỉ có guides/config đã được người dùng cho phép publish tại `hướng dẫn thực nghiệm/`.
+Snapshot có WIP và không có `.git`, chưa phải pinned release cho Phase B.
+SHA/build/restore receipts nằm ở [stage v24](stage1/v24/completion.md).
 
-**Feedback giảng viên tiếp nhận tại v36:** ưu tiên hoàn tất benchmark chính,
-làm rõ đóng góp so với literature; báo FNR/Yes Rate/disagreement bên cạnh FPR,
-kiểm parser EN–VI và phân tích paired correctness. File Word trao đổi với
-ChatGPT là bản đề xuất triển khai, chưa tự trở thành lệnh thực hiện mọi mục.
-Audit code đã có FNR/confusion/coverage/disagreement và hai nhóm đúng-sai
-chéo; còn thiếu Yes Rate, hai ô both-correct/both-wrong và exports tổng hợp.
-RQ1 primary/CI và RQ3/RQ4 conditional giữ nguyên. Không triển khai lại Pet:
-quyết định thật v35 mới hơn snapshot v34 và câu yêu cầu A/B trong file Word.
-Hướng tiếp theo có thể làm độc lập QA: bổ sung evaluation/exports, audit
-parser và Related Work; chưa thay code/protocol/metric trong phiên tiếp nhận.
+Chưa kiểm chứng Colab/Kaggle allocation, packages/Secrets/HF access từng account,
+native BF16/VRAM thực tế hoặc student PRs. Gemma không tự fallback FP16;
+TV4 cần môi trường BF16 được xác nhận nếu Kaggle không phù hợp.
+Khác GPU/platform giữa EN và VI cần ghi provenance và thảo luận confound.
+Feedback giảng viên về literature/novelty, Yes Rate, parser/failure analysis và
+paired transitions vẫn phải hoàn thiện cùng kết quả main; không claim đã trả lời RQ.
 
-**Ngày thuyết trình: 03/12/2026**, người dùng xác nhận. Người dùng đã cho phép
-**REPOPE_ONLY_DIAGNOSTIC độc lập**: không cần chờ QA 24 supplement để chạy
-mọi A/B. Full validation vẫn cần bốn task; diagnostic không hoàn thành M3.
-Phase1 có [48 measured cells thật](validation/repope_image_ab_v1/phase1_metrics.json),
-Phase2 reuse48 +192 mới, tổng30 ảnh/240 cells valid,16 warm-up riêng;0 invalid/
-failed/OOM/missing. [Report và recommendation](validation/repope_image_ab_v1/report.md)
-đề xuất B vì giữ chi tiết đến processor với chi phí quan sát được chấp nhận
-cho diagnostic; không chọn bằng Accuracy. Nhóm đã phê duyệt B trong phiên
-v34; main CLI dùng candidate B mới, vẫn frozen=false. Source/provenance/
-hash/exclusion/freeze gates giữ nguyên. Human QA Pet có ngoại lệ rõ ràng v35;
-thêm JSON Pet riêng, các packet JSON/HTML/ZIPv2 cũ không đổi.
-Ưu tiên vẫn main QA → protocol freeze → main GPU smoke → main inference;
-không C/RQ3/RQ4/main run hoặc tự đổi/freeze config. Raw private ZIP:
-exports/repope_image_ab_diagnostic_v1.zip, receipt/hash ở report; không cần
-chạy lại diagnostic khi resume nếu không có thay đổi cấu hình hoặc blocker mới.
-
-0. Nhóm đọc [report tiến độ và phân công 5 người](../docs/research/TEAM_PROGRESS_AND_ASSIGNMENT_V1.md),
-   điền tên TV1–TV5 và ghi nhận gói đang review. Bắt đầu các đầu ra làm ngay
-   của từng vai trò; bảng chia 400 lượt kiểm mẫu/người là đề xuất cho gói chưa chốt.
-1. Pet160mẫu đã xong theo policy nguồn mới: JSON tại
-   `data/reviews/pet_source_review_v1/oxford_pet_reviewed_v1.json`, manifest tại
-   `data/main/reviewed_pet_source_v1/oxford_pet_reviewed.csv`. Không nạp JSON này
-   vào HTMLv2 hoặc tạo A/B cho Pet. Candidate draft cũ chưa tự đổi.
-  18JSON đã nhận và được tổng hợp ởv16; chỉ còn28mẫu cần xử lý. Gửi kèm hướng dẫn HTML chi tiết
-   `exports/HUONG_DAN_REVIEW_V2.html` với main_review_v2.zip; nhóm thử lưu/mở lại
-   vài mẫu rồi tiếp tục theo đúng A/B.
-2. Review main theo [workflow v2](../docs/research/MAIN_REVIEW_V2.md): mở
-   `reports/stage1/v12/main_review/index.html` sau khi nhận ZIP; tải JSON và
-   lưu `data/reviews/main_review_v2/<packet>_reviewed_v2.json`. Không làm lại pilot.
-3. Xử lý rejected/uncertain/pending của28mẫu, giữ bản nộp hiện tại. Tổng hợp
-   version mới từ đủ18JSON sau cập nhật và Pet đã duyệt; đối soát1000IDs/source/
-   ảnh/leakage trước final. Muốn đổi source label cần quyết định/version riêng.
-4. B đã triển khai; dùng `scripts/run_main.py plan` mặc định candidate B hoặc
-   thêm `--smoke-per-task 1` để chuẩn bị M3. [Policy/commands](../docs/research/MAIN_OPTION_B_V1.md).
-   Sau review, chốt final manifest/configs/prompts và freeze receipt đúng protocol,
-   rồi xác nhận bounded main smoke bốn task trên GPU trước full-run. Config draft
-   hiện frozen=false, execution_ready=false; không tự bật để vượt QA.
-5. Sau run được duyệt: paired metrics/CI, error analysis, Results–Discussion,
-   report/slides V3. Word v1 ngày 11/11 giữ scope V4.2, chưa revise V3 hoặc có
-   bằng chứng đã nộp. RQ3/RQ4 chỉ xét sau core ổn định và gate riêng.
-
-**Stage 1 vẫn IN_PROGRESS.** Main QA/final freeze và kiểm main GPU còn thiếu, không
-đánh dấu xong stage vì đã có đủ ảnh/draft. Giao diện review đã kiểm cú pháp JS
-và backend tests; chưa visual browser QA. Không retry/bypass Computer Use stop cũ.
-
-Các maintenance reports/Word/snapshots được nhắc trong lịch sử dưới đây chỉ
-giữ local trên máy gốc, ngoài Git; stage evidence nhỏ và completion history
-v1–v21 vẫn được đưa vào repo. Trạng thái cũ được giữ đúng thời điểm ghi.
+Đã push hai commit hạ tầng/hướng dẫn: `5b7da87` và `2f6cac4`; báo cáo/context ghi trong commit tiếp theo. Không chạy inference mới. Mở [hướng dẫn thực nghiệm](../hướng%20dẫn%20thực%20nghiệm/README.md) để tải bốn gói cá nhân. WIP adjudication/freeze, master/ảnh/weights vẫn giữ local.
 
 ## Nhật ký phiên bản mới
 
@@ -602,3 +524,180 @@ mới. Bước tiếp người dùng mởHTML, chốt và gửiJSON; M1còn28/M2
 
 Code/template/tests đã push riêng tại `728d86f`; hướng dẫn/receipt/completion
 được công bố trong commit tiếp theo. HTML local vẫn giữ đúng hash export.
+
+### v39 — 26/11/2026: Kiểm JSON28mẫu và báo cáo trước quyết định
+
+Lưu nguyên receivedJSON/SHA, strictvalidate25resolved/3needs_discussion.
+Ba QA đề xuất ởnotes/GTnull;13đề nghị đổi nhãn thuộc25mẫu chưa import.
+Tạo Markdown/HTML/PDF6trang với3JPEGgốc; render/đọc cả6trang, không clipping/
+mất dấu. PDFdependencies riêng ngoàiGit, không đổi requirements. Không main
+import/QA/freeze/inference. [V18](stage1/v18/completion.md). Nhận xét/phương án
+là trước quyết định v40, không yêu cầu thay lại ảnh hoặc ép quota.
+
+### v40 — 26/11/2026: Tích hợp đúng3TallyQA custom revisions có gates
+
+Nhóm chọn same-image custom QA. Registry lưu fulloriginalrow/history/source
+hashes và revisionbinding. V1pending giữ typo; sau người dùng xác nhận “phủ”,
+V2 lưu câu mới và chainV1/SHA/userdeclaration. Count4→1,2→4,4→2;997rowkhác,
+813ảnh nguồn/reviews/Pet/configs gốc không đổi. Models/OptionB/pins/decoding
+và RQ1primary giữ nguyên. [V19](stage1/v19/completion.md).
+
+A mơ/B Lanh thuộc QA gốc, imageQA rejected; Khôi đặt3needs_discussion, QA mới
+trongnotes. Không suy thành approvals. Form chỉ3mẫu để hai người đã kiểm xác
+nhận finalrevision bằngIDthật/currenttimestamp, không backdate. Tally120=
+117original+3custom;59simple/58complex/3pendingclassification. Sensitivity
+dùng cùngraw/pairedrows cho120và117; hiệnNOT_RUN/metricsnull, không research
+output synthetic hoặc inference mới.
+
+Fullsuite thực532passed/36,17s; targeted76passed/17,982s và UI1passed/1,72s.
+CPUplan1000rows/783images/4000cells giữcellIDs,12promptcells thay theo3QA.
+Hai executionattempts bịQA/freeze chặn trước environment/model. Kiểm813ảnh
+duy nhất từ1030auditrows (hai denominator khác nhau),48inputhashes,
+rawdiagnostic córeceipt và2historicalpilotJSONL; không mainGPU mới.
+
+M1vẫn28chưađủgate:25resolved đãnhận nhưng chưaimport, gồm13source-labelrequests
+ngoài exact3scope.972mẫu đủcảhaiQA, khôngclaim997approved. M2PENDING/M3NOT_RUN.
+Tiếp theo nhận3confirmationV2, tíchhợp25quyếtđịnh theo policy được duyệt,
+rồi finalfreeze/receipt→mainGPU smoke→inference. Không tự phêduyệt freeze.
+
+### v41 — 26/11/2026: Nhập proof thật cho3TallyQA revisionV2
+
+Nhận tallyqa_three_revision_confirmed_v1(1).json từDownloads, copynguyênbytes
+vào data/reviews/tallyqa_revisions_v1/tallyqa_three_revision_confirmed_v1.json,
+SHA41ed6787faf249748114837f297e8b8d96a27bf99eb219f06380cce23ed68a84.
+Khôi/Nguyễn Đăng Minh là hai ID khác nhau, cùng approved3/3, ENVI/ảnh/count/
+classification khớp finalrevision/context/recordhashes. Không sửa timestamps/
+approvals. Importedmanifest/candidate confirmedV2 riêng, giữ pendingV19/registry
+và997rowkhác. Classification S/C/S→61simple/59complex; không ép60/60 hoặc
+ghi thành officialannotation. [Stage1v20](stage1/v20/completion.md).
+
+Mới chạy21tests passed/2,87s; full532tests là phiên trước. CPUplan1.000rows/
+783images/4.000cells, cellIDs/prompts không đổi so pendingV2. Replayproof/
+manifest và813imagehashes đạt; hai executeattempts bịQA/freeze chặn trước
+environment/model. Không mainGPU/inference/freeze mới, sensitivityNOT_RUN.
+
+Main975đủhai gate/25chờ; RePOPE582,VSR120,TallyQA113,Pet160. M1IN_PROGRESS25,
+M2PENDING/M3NOT_RUN. Tiếp theo tíchhợp25quyếtđịnh theo policy được duyệt,
+gồm13source-labelrequests, không tự thayGT mẫu khác ởtask này. Không review
+lại975mẫu/Pet; đủQA mới finalfreeze/receipt→mainGPU smoke→inference.
+HEAD/branch giữnguyên, công việc v18/v19 chưacommit được bảo toàn; khôngpushmới.
+
+### v42 — 26/11/2026: Nhập25adjudications,980đạt/20chờxácnhậnB
+
+Người dùng yêu cầu“làm cho mình nhé” sau khi đề nghị tích hợp25resolutions.
+Đãáp13labelcorrections(8RePOPE,5TallyQA)+1VI vàooverlayversionriêng, giữ975row
+khác/sourcefiles/originalrow/GT/reviewhistory/images. AdjudicatorKhôi được
+biểu diễn từ actualresolved attestation, giữID/time; không tạoapprovalmới.
+5casecó người khác đãapprovedđủtrênVI/GTkhôngđổi được táidùng;20casecònthiếu
+người thứhai vẫnpending. Không nângrejected/observations thànhapproved,
+không đếmKhôi2lần. [Stage1v21](stage1/v21/completion.md).
+
+TạoHTML20mẫu từtemplatev2cũ, actualAseeded/Bblank; BkhácKhôikiểm dịch+ảnh/
+nhãncuối rồi gửiadjudication_final_20_reviewed_v2.json. Khôngreviewlại980mẫu.
+Followup táidùngstrictv2backend; exactA/VI/context/packet/provenance/phảiđúng.
+Candidatebaseline_v3_adjudicated_v1.yaml vẫnunfrozen, main980đạt/20chờ,
+M1IN_PROGRESS20/M2PENDING/M3NOT_RUN. Không mainGPU/freeze/inference mới.
+
+Fullsuite550passed/51,18s;targeted16passed/13,12s trước2baselinecases. Kiểm
+813imagehashes/570priorfilesngoàidelta, exact25replay,13GT+1VI,975rowskhác,
+cellIDs4000nguyên và2VIpromptcellsthay. Hai executeattempts bịQA/freeze chặn
+trướcenvironment/model. HTML20JPEGgốc/node--checkđạt; chưa visualbrowserQA.
+
+RePOPEcandidatelabels294yes/306no khôngépbalance;Tally112QAnguyênbản+
+5labelcorr+3rewritten. Sensitivity117giữ5labelcorr, loại3rewritten; ghi rõ
+composition,khônggọi117QAnguyênbảnhoàntoàn. Metricsnull/NOT_RUN, không thêmRQ.
+Lưu ýdiningtablenote“nghiêngvề”còntrong20pending,khôngclaimgoldchắcchắn.
+HEADkhôngđổi,khôngreset/overwritepriorWIP hoặccommit/pushmới.
+
+### v43 — 27/11/2026: Hoàn tất bàn giao phần import bị gián đoạn
+
+Đọc lại completionv42/stagev21 và receipt cuối:551tests đạt,0failures/errors/
+skips, JUnit52,889s; lần chạy thực ghi26/11. Đây là kết quả cuối sau guardID
+UnicodeNFC/NFD, thay cho550tests trước bước bổ sung; không chạy lại tests khi
+resume. Plan hiện tại khớp finalprotocolhash và tất cảinput fingerprints.
+Không inference/freeze mới. [Receipt](stage1/v21/finalization_2026_11_27.json).
+
+Trạng thái không đổi:25resolutions đã nhập,13GT+1VI sửa,980đạt/20pending,
+M1IN_PROGRESS20/M2PENDING/M3NOT_RUN. BkhácKhôi kiểm20mẫu trongHTMLriêng,
+khôngreviewlại980/Pet/3QAviếtlại. SauJSONBthật mới import/recheckversion mới
+và nhóm quyết địnhfinalfreeze/receipt trước mainGPU smoke/inference.
+Preservepriorwork/source/history; khôngcommit/push/reset. Hạn03/12/2026.
+
+### v44 — 27/11/2026: Hoàn tất humanQA1.000/1.000, M1DONE
+
+Nhận adjudication_final_20_reviewed_v2.json, copynguyênbytes, SHA530f73cd0b292bcca36b7c31af669c9fe4bf281026cd42a39ece6e931a00752c.
+Strictcontext/packet/IDs/A/VI/history đạt; BNguyễn Đăng Minh khácKhôi.
+Raw19/20approvedđủ, repo pe530b0b07f69caf44 imageQApending/observedno.
+Hỏi rõ và người dùng xác nhận“approve nhé, bạn ấy quên ko điền”. Giữraw,
+ghi user-reportedmissingstatus confirmation, archiveBpendinghistory, ghi
+timestampbâygiờ khôngbackdate hoặcgiảdirectreviewersession. Proofdẫnxuất
+adjudication_final_20_reviewed_v2_confirmed_v1.json SHAa0f18b81f18619b80902e12bc86eeee37d11369f94948464b1f5d9d962d8ce87.
+[Stage1v22](stage1/v22/completion.md).
+
+Importcandidate mới data/main/adjudicated_confirmed_v1/main_reviewed.csv,
+configbaseline_v3_reviewed_v1.yaml. ĐủQA600RePOPE+120VSR+120TallyQA+160Pet,
+1000IDs/783ảnh/4000cells. Chỉproof/status thay so v21,GT/EN/VI/prompts nguyên.
+Raw/source/975rowsngoài25/history vàpriorWIP giữ nguyên.813sourceJPEGhashes
+đạt, exactregistry/proofreplay vàexclusions/sourcegates đạt.38tests mới
+passed17,29s; full551tests là lịch sử, không chạy lại.
+
+M1DONE,M2PENDING,M3NOT_RUN. Hai executeattempts bịfreeze/receipt chặn trước
+environment/model, khôngmainprediction/GPU mới. Preflight chỉ2freeze issues.
+Đã chuẩn bịfreeze_review.md đểnhómduyệtconfig/manifest/prompts; chưa tự
+frozen=true/receipt/mainGPU. Tiếp theoM2approved→smoke16cells bốntask→mainrun
+được cho phép→RQ1/RQ2/report. Không thêmRQ3/RQ4/training hoặc thayprecision.
+Đây hoàn tấtM1humanQA,khôngclaimStage1overall/M3hoặcresearchmetricsDONE.
+
+### v45 — 27/11/2026: M2 freeze approved và QwenGPU smoke16/16valid
+
+Người dùng yêu cầu16lượt bất kỳmodel/language trên máy. ChọnQwen,
+2sample/task×4task×ENVI=16cells. Sau khi giải thíchM2gate và cấu hìnhv22,
+người dùng xác nhận“Đồng ý chốt cấu hình và chạy 16 lượt Qwen”. Lưu explicit
+authorization, configfinalmới baseline_v3_final_v1.yaml vàreceiptbind
+protocolhash74353c78c3bbed176b75fd1bae6792bc8cf7c8eebaac4383829ac4cdc0cc9d69.
+Chỉđổiexperimentid/frozen/receipt, giữmodels/data/prompts/decoding/sourcecandidate.
+Approval chỉ16Qwen, khôngfull4.000/Gemma. [Stage1v23](stage1/v23/completion.md).
+
+RealRTX3060Laptop6GB,torch2.7.1+cu126,CUD A12.6,Qwenrevision66285546…,
+NF4/FP16,eager,OptionB,offlinecachedweights. Load2shards vàgenerate16calls
+thật,16valid,0invalid/failed/OOM/missing_smoke,0warmup/retryngoài16.
+OriginalW×H→processor giữ trên16cells, traceoutputshapes/VRAM/latency cóđủ.
+Latency p50~1000ms,p95~1542ms,first2812ms,peakallocated2804,55MiB/
+reserved3216MiB (allocatorstats). ĐúngGT13/16,EN7/8,VI6/8,1/8pairdisagree;
+chỉdescriptive8samplekhôngclaimgeneralaccuracy/languagegap.
+
+RawSHA77f7295298cf6e63c55e28a5eb7fd35fa8b4c90d3f1f07dfbfac9649f4553f32,
+copyexact/CSV/meta/paired_explicit8IDs vàmetrics được lưu. Tất cảfreeze
+input/implementationhashkhớp; sourcecandidategiữ bytes. Không runtimecode/
+unit-test changes hoặc oldtests rerun; kiểm mới làGPUthật+strictverification.
+Summaryfullgridmissing1984làunattemptedcells, không phải lỗi smoke16.
+
+M1DONE/M2DONE/M3PARTIAL_QWEN_ONLY. Gemmamainsmoke chưa chạy, fullmainchưa
+đượcphêduyệt. Tiếp theo xin thực hiệnGemmasmoke khiusercho phép,rồi mới
+quyếtđịnhfullrun. Khôngtựrunchốngscope, khôngRQ3/RQ4/training. HEAD/WIP/
+sourcehistorygiữ, khôngcommit/pushmới. Deadline03/12/2026.
+
+
+### v46 — 27/11/2026: Bàn giao Phase A để từng thành viên đóng góp thật
+
+Theo yêu cầu bổ sung, chuẩn bị bốn assignment configs/guides, hai notebook starter,
+Git/PR/file ownership, private master ZIP và bốn thin packages dùng chung SHA.
+Không làm thay language sharding/cloud workflow/collection của TV1–TV4, không
+giả author/PR hoặc nhận phần scaffolding của Codex là đóng góp sinh viên.
+CPU suite mới 567 passed; build/isolated restore receipts ở stage1/v24.
+Local M1/M2 v1 và Qwen M3 partial giữ nguyên; không cloud GPU inference mới.
+Phase B cần PR integration, cùng pinned release, approval/freeze v2 và cloud smoke.
+
+
+### v47 — 27/11/2026: Công bố bốn gói hướng dẫn thực nghiệm
+
+Theo yêu cầu người dùng, chuyển đúng bốn member ZIP từ exports vào thư mục
+`hướng dẫn thực nghiệm`, giữ nguyên bytes/SHA. Master vẫn ở exports và phân phối
+nội bộ; không có link Drive được bịa hoặc public images. Push riêng công cụ/config/
+notebook Phase A (`5b7da87`), sau đó role guides/bốn ZIP/checksums (`2f6cac4`).
+Kiểm đúng proposed public tree trên HEAD cũ: 527 passed/41,46s; giữ WIP khác ngoài
+commits. GitHub connector ghi bị403, native Git fetch/push thành công; remote bốn
+ZIP khớp local Git blob SHAs. Không giả author/sinh viên PR hoặc cloud/GPU passed.
+Report/receipts mới ở stage1/v25. Runtime/data/freeze/raw smoke/history cũ nguyên
+bytes; M1 DONE, local M2 v1 DONE, M3 PARTIAL_QWEN_ONLY. Common execution base/
+sharding/PR integration/release mới/cloud verification còn chờ. Không main run mới.
