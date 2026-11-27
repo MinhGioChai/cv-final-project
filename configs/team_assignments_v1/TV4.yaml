@@ -1,0 +1,11 @@
+schema_version: main_team_assignment_v1
+role: TV4
+model: gemma
+language: vi
+preferred_platform: kaggle
+branch: work/main-gemma-vi
+expected_cells: 1000
+audit_protocol: configs/baseline_v3_final_v1.yaml
+phase_b_protocol: configs/baseline_v3_team_final_v2.yaml
+release_record: data/releases/main_team_v2.json
+bf16_fallback: verified_bf16_environment

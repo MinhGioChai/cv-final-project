@@ -1,6 +1,13 @@
 .venv/
 .venv-infer/
+.venv-cloud/
 exports/
+# Only the four reviewed public instruction ZIPs may be committed.
+/hướng dẫn thực nghiệm/*.zip
+!/hướng dẫn thực nghiệm/TV1_QWEN_EN_Package.zip
+!/hướng dẫn thực nghiệm/TV2_QWEN_VI_Package.zip
+!/hướng dẫn thực nghiệm/TV3_GEMMA_EN_Package.zip
+!/hướng dẫn thực nghiệm/TV4_GEMMA_VI_Package.zip
 __pycache__/
 *.py[cod]
 *.egg-info/

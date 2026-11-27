@@ -1,5 +1,9 @@
 # Pilot notebooks hiện tại
 
+Main development mới: `main_colab_starter.ipynb` và `main_kaggle_starter.ipynb`,
+chung platform, chọn role bằng cấu hình. Đây là Phase A starters dành cho TV2/TV3
+hoàn thiện qua PR, chưa là cloud inference workflow đã kiểm chứng. [Hướng dẫn nhóm](../docs/team_inference_v1/START_HERE.md).
+
 - `pilot_colab.ipynb`: upload **pilot_team_v1.zip**, GPU session, optional Drive.
 - `pilot_kaggle.ipynb`: attach private pilot Dataset, GPU/Internet, results ZIP.
 
