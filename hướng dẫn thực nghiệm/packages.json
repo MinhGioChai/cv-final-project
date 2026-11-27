@@ -1,0 +1,50 @@
+{
+  "schema_version": "main_team_public_member_packages_v1",
+  "date_local": "2026-11-27",
+  "phase": "A_DEVELOPMENT_HANDOFF_NOT_PHASE_B_RELEASE",
+  "master": {
+    "filename": "VLM_ENVI_Main_Inference_Team_v1.zip",
+    "distribution": "private; request from TV5",
+    "download_url": null,
+    "sha256": "29f7b3326df239df1f2bea8286ea38c4cd12ed11f0438cae861b3b998d0689f5",
+    "bytes": 98531572,
+    "project_source_digest": "4a944ce56e1cf500d72bdfbf8aaa5422b8230d7cb3a34b54fd869df2636aa35d"
+  },
+  "members": [
+    {
+      "role": "TV1",
+      "old_path": "exports/TV1_QWEN_EN_Package.zip",
+      "path": "hướng dẫn thực nghiệm/TV1_QWEN_EN_Package.zip",
+      "sha256": "defb3b6abc273f817e8e8e0765dfccb1aabfef188f8eae45e785480a66f55a9e",
+      "bytes": 10423,
+      "archive_members": 9
+    },
+    {
+      "role": "TV2",
+      "old_path": "exports/TV2_QWEN_VI_Package.zip",
+      "path": "hướng dẫn thực nghiệm/TV2_QWEN_VI_Package.zip",
+      "sha256": "600461aa2cb4e2d86c82d83122e7375ce09649bbc009e2327b4ab39ec7cb4d88",
+      "bytes": 10428,
+      "archive_members": 9
+    },
+    {
+      "role": "TV3",
+      "old_path": "exports/TV3_GEMMA_EN_Package.zip",
+      "path": "hướng dẫn thực nghiệm/TV3_GEMMA_EN_Package.zip",
+      "sha256": "7024ff47702a323f1cc49311b87a2aa9fdbdc4db853a992980a69a0c5a3913bb",
+      "bytes": 10447,
+      "archive_members": 9
+    },
+    {
+      "role": "TV4",
+      "old_path": "exports/TV4_GEMMA_VI_Package.zip",
+      "path": "hướng dẫn thực nghiệm/TV4_GEMMA_VI_Package.zip",
+      "sha256": "71ad2480159d0b96d3e8856cea14d3f8138fc796fb6ecf75228ac4f0475a5843",
+      "bytes": 10528,
+      "archive_members": 9
+    }
+  ],
+  "private_images_in_member_packages": false,
+  "credentials_found_by_pattern_check": false,
+  "GPU_execution_ready": false
+}

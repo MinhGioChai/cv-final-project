@@ -1,5 +1,11 @@
 # Hướng dẫn tổng hợp — hiểu project và tham gia cùng nhóm
 
+**Thực nghiệm — cập nhật 27/11/2026:** tải bốn gói cá nhân và đọc
+[hướng dẫn thực nghiệm](hướng%20dẫn%20thực%20nghiệm/README.md).
+Master được TV5 gửi riêng; public ZIP chỉ có hướng dẫn/config. Đây là Phase A
+development/PR, chưa phải release chạy full main. Các phần review bên dưới
+giữ bối cảnh 22/11; dùng hướng dẫn thực nghiệm để bắt đầu phần việc hiện tại.
+
 **Cập nhật 22/11/2026.** Đây là điểm bắt đầu cho thành viên mới: mục tiêu,
 trạng thái, cài đặt, dữ liệu, review, chạy pilot và đưa thay đổi lên GitHub.
 Các link cuối file dùng để tra sâu khi cần. Trạng thái sống nằm trong

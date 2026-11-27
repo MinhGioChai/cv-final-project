@@ -1,0 +1,19 @@
+{
+  "date_local": "2026-11-27",
+  "scope": "HEAD plus only proposed public tools/configs/notebooks/guides/member packages; unrelated adjudication/freeze WIP excluded",
+  "base_head": "6f3a5309398b26ff034eba6ea0e346aeac99b59c",
+  "actual_tests": 527,
+  "failed": 0,
+  "errors": 0,
+  "console_seconds": 41.46,
+  "junit_seconds": 41.322,
+  "test_command": "python -m pytest -q -p no:cacheprovider",
+  "packages_moved": 4,
+  "member_zip_bytes_and_SHA_unchanged": true,
+  "member_archives_contain_only_md_yaml_json": true,
+  "private_master_published": false,
+  "master_sha256": "29f7b3326df239df1f2bea8286ea38c4cd12ed11f0438cae861b3b998d0689f5",
+  "actual_cloud_or_model_inference_this_task": 0,
+  "phase_b_ready": false,
+  "CPU_tests_are_not_GPU_evidence": true
+}
