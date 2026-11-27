@@ -52,6 +52,18 @@ def test_locate_single_zip_reports_dataset_slug(mounts):
     assert found['kind']=='zip' and found['dataset']=='my-private-set'
 
 
+def test_renamed_zip_bin_avoids_kaggle_auto_extract_and_keeps_sha_check(mounts):
+    inp,work=mounts;_,sha=make_zip(inp/'set'/(km.MASTER_ZIP+'.bin'))
+    assert km.locate(inp)['kind']=='zip'
+    assert km.prepare(inp,work,expected_sha256=sha)['provenance']=='master_zip_sha_pinned'
+
+
+def test_auto_extracted_nested_assets_are_reported_with_hint(mounts):
+    inp,work=mounts;tree=make_tree(inp/'set'/NAME)
+    (tree/'main_assets/main_assets_v1/data').mkdir(parents=True);(tree/'main_assets/main_assets_v1/data/x.jpg').write_bytes(b'x')
+    with pytest.raises(km.KaggleSetupError,match='zip.bin'):km.prepare(inp,work,allow_extracted=True)
+
+
 def test_locate_refuses_missing_mount_and_empty_input(tmp_path,mounts):
     inp,_=mounts
     with pytest.raises(km.KaggleSetupError,match='Add Input'):km.locate(tmp_path/'absent')

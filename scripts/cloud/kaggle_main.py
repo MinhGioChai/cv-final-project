@@ -23,6 +23,9 @@ import zipfile
 
 BUNDLE_NAME='VLM_ENVI_Main_Inference_Team_v1'
 MASTER_ZIP=BUNDLE_NAME+'.zip'
+# Kaggle Datasets auto-extract uploaded .zip files (seen on TV2's Dataset, 2026-11-27).
+# Uploading the same bytes as .zip.bin keeps the archive intact and the SHA256 checkable.
+MASTER_NAMES=(MASTER_ZIP,MASTER_ZIP+'.bin')
 # Master SHA256 published by TV5 in the shared team guide (v1, 2026-11-27).
 EXPECTED_MASTER_SHA256='29f7b3326df239df1f2bea8286ea38c4cd12ed11f0438cae861b3b998d0689f5'
 MANIFEST='BUNDLE_MANIFEST.json'
@@ -57,14 +60,14 @@ def locate(input_root):
     input_root=Path(input_root)
     if not input_root.is_dir():
         raise KaggleSetupError(f'{input_root} not found: attach the private Dataset with Add Input first')
-    zips=sorted(p for p in input_root.rglob(MASTER_ZIP) if p.is_file())
+    zips=sorted(p for name in MASTER_NAMES for p in input_root.rglob(name) if p.is_file())
     dirs=sorted(p.parent for p in input_root.rglob(MANIFEST) if p.parent.name==BUNDLE_NAME)
     # A directory that holds the ZIP is not a second bundle; only extracted trees count.
     dirs=[d for d in dirs if not any(z.is_relative_to(d) for z in zips)]
     candidates=[('zip',p) for p in zips]+[('extracted',p) for p in dirs]
     if not candidates:
         other=sorted(str(p) for p in input_root.rglob('*.zip'))[:20]
-        raise KaggleSetupError(f'No {MASTER_ZIP} or extracted {BUNDLE_NAME}/{MANIFEST} under {input_root}. '
+        raise KaggleSetupError(f'No {" / ".join(MASTER_NAMES)} or extracted {BUNDLE_NAME}/{MANIFEST} under {input_root}. '
             f'ZIP files seen: {other or "none"}')
     if len(candidates)>1:
         listing=', '.join(f'{kind}:{path}' for kind,path in candidates)
@@ -86,7 +89,9 @@ def check_manifest(meta,actual):
     if not isinstance(files,dict) or not files:raise KaggleSetupError('Manifest has no file records')
     missing=sorted(set(files)-set(actual));extra=sorted(set(actual)-set(files))
     if missing or extra:
-        raise KaggleSetupError(f'Bundle file set differs from manifest: missing={missing[:10]} extra={extra[:10]}')
+        hint=(' Kaggle probably auto-extracted a nested ZIP; upload the master as '
+            f'{MASTER_ZIP}.bin instead.') if extra else ''
+        raise KaggleSetupError(f'Bundle file set differs from manifest: missing={missing[:10]} extra={extra[:10]}.{hint}')
     bad=sorted(n for n,(size,digest) in actual.items() if (size,digest)!=(files[n]['bytes'],files[n]['sha256']))
     if bad:raise KaggleSetupError(f'Hash/size mismatch in {len(bad)} file(s): {bad[:10]}')
     if canonical_hash(meta['project_source_sha256'])!=meta['project_source_digest']:
@@ -157,7 +162,7 @@ def prepare(input_root,working_root,master=None,allow_extracted=False,expected_s
         if not allow_extracted:
             raise KaggleSetupError(f'Only an extracted tree was found at {source}. Its manifest can be checked but '
                 'not pinned to the master SHA. Ask TV5 to confirm, then rerun with --allow-extracted, '
-                'or upload the ZIP so it is not auto-extracted.')
+                f'or upload the unchanged master bytes as {MASTER_ZIP}.bin so Kaggle keeps the archive.')
         report=verify_tree(source)
         shutil.copytree(source,target,symlinks=False)
     copied=verify_tree(target)
