@@ -53,6 +53,8 @@ Mọi lệnh nhận `--role TV2|TV4` (mặc định TV2). `--report` chỉ ghi f
 | `Only an extracted tree was found` | Kaggle đã tự giải nén ZIP. Tạo Dataset version mới với file `.zip.bin` (mục trên). Chỉ dùng `--allow-extracted` khi TV5 đồng ý |
 | `Bundle file set differs ... extra=` | Kaggle giải nén cả ZIP lồng bên trong (ví dụ `main_assets_v1.zip`); dùng `.zip.bin` |
 | `already exists` | Workspace đã được chuẩn bị trong phiên; dùng lại, hoặc mở phiên mới. Tool không ghi đè |
+| `ensurepip ... returned non-zero exit status 1` khi cài venv | Python 3.13 của kernel không có `ensurepip`. Dùng cell cài của notebook (uv + CPython 3.12.16), không tự pip install vào kernel |
+| `Error in sitecustomize ... No module named 'wrapt'` | `sitecustomize` của Kaggle chạy trong venv dựa trên Python kernel; chỉ là cảnh báo. Không gặp khi venv dùng CPython của uv |
 | `nvidia_smi_error` trong report | Chưa bật GPU hoặc hết quota; giữ report, bật Accelerator rồi chạy lại |
 | `run_main.py has no --language` | TV1 PR chưa tích hợp. Dừng, không tự viết vòng generate |
 
@@ -63,8 +65,22 @@ Mọi lệnh nhận `--role TV2|TV4` (mặc định TV2). `--report` chỉ ghi f
 - Local: `verify_tree` trên bản master đã giải nén của TV2 khớp manifest 717/717 file.
 - Master ZIP của TV2 (98.531.572 byte) khớp SHA `29f7b332…` và 717/717 file (`verify_zip`
   và `main_team_bundle.py verify`).
-- Kaggle thật: đã xác nhận Dataset tự giải nén `.zip`. Upload `.zip.bin`, GPU, Internet,
-  cài venv: **chưa chạy**. Khi chạy, thêm vào đây Dataset version, GPU/VRAM thật và lỗi gặp phải.
+- Kaggle thật, TV2, 27/11/2026 (Interactive session, tài khoản TV2):
+  - Dataset version 1 (`.zip`) bị tự giải nén; version 2 (`.zip.bin`, 98,53 MB) giữ nguyên 1 file.
+  - Mount thật: `/kaggle/input/datasets/<owner>/vlm-envi-main-v1/…zip.bin`.
+  - `locate` → `kind: zip`; `prepare` → SHA `29f7b332…` khớp, 717/717 file, bản copy trong
+    `/kaggle/working` được kiểm lại; tool commit `6a6b7d3`.
+  - Kernel Python 3.13.16 không có `ensurepip`; `setup_inference.py` hỏng ở `python -m venv`.
+    Đã cài thành công bằng uv 0.13.10 + CPython 3.12.16 (có ensurepip) chạy `setup_inference.py`
+    nguyên bản: torch 2.7.1+cu126, torchvision 0.22.1+cu126, transformers 4.57.1,
+    accelerate 1.11.0, bitsandbytes 0.48.2; `pip check` sạch.
+  - `diagnose`: 2× Tesla T4, 15360 MiB, driver 580.178.04, compute capability 7.5,
+    `cuda_available: true`, `gpu_preflight('qwen')` đạt (`nf4_fp16`), Internet có, không có
+    `HF_TOKEN` (Qwen không cần). Package fingerprint `b41b1301…`.
+  - Không load model, không generation. Restore ảnh, plan, `runner-check` trên Kaggle: chưa ghi nhận.
+- **Lưu ý cho TV4/TV5:** T4 có compute capability 7.5, không đạt native BF16 (cần ≥ 8.0) mà
+  Gemma yêu cầu. Accelerator GPU T4 x2 trên tài khoản TV2 không dùng được cho Gemma; TV4 cần
+  kiểm GPU khác trên tài khoản của mình hoặc môi trường BF16 được TV5 xác nhận.
 
 Availability/quota/hardware cần kiểm trên tài khoản thật. Chạy shard cần pinned release,
 approval/freeze và smoke sau integration.
